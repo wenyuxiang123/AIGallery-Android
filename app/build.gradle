@@ -70,8 +70,11 @@ dependencies {
     implementation 'androidx.camera:camera-lifecycle:1.3.1'
     implementation 'androidx.camera:camera-view:1.3.1'
 
-    // AI Edge / TFLite
-    implementation 'com.google.ai.edge:litertlm:0.1.0'
+    // AI Edge / LiteRT (replaced invalid com.google.ai.edge:litertlm:0.1.0)
+    // Using com.google.ai.edge.litertlm:litertlm-android for LLM inference
+    implementation 'com.google.ai.edge.litertlm:litertlm-android:0.11.0'
+    // LiteRT core library for model inference
+    implementation 'com.google.ai.edge.litert:litert:2.1.4'
 
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
