@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base SplashScreen Theme -->
+    <style name="Base.Theme.SplashScreen" parent="@style/Base.Theme.SplashScreen">
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_screen_animated_icon</item>
+    </style>
+
+    <!-- Main Gallery Theme -->
+    <style name="Theme.Gallery" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">#ff131314</item>
+        <item name="android:navigationBarColor">#ff131314</item>
+        <item name="android:windowBackground">#ff131314</item>
+        <item name="colorPrimary">#ff4285F4</item>
+        <item name="colorPrimaryDark">#ff131314</item>
+        <item name="colorAccent">#ff4285F4</item>
+    </style>
+
+    <!-- SplashScreen Theme with post theme transition -->
+    <style name="Theme.SplashScreen" parent="@style/Base.Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/Theme.Gallery</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen_animated_icon</item>
+        <item name="windowSplashScreenBackground">#ff131314</item>
+    </style>
+
+    <!-- Gallery SplashScreen Theme -->
+    <style name="Theme.Gallery.SplashScreen" parent="@style/Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/Theme.Gallery</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen_animated_icon</item>
+        <item name="windowSplashScreenBackground">#ff131314</item>
+    </style>
+
+    <!-- OSS Licenses Theme -->
+    <style name="Theme.Gallery.OssLicenses" parent="@style/Theme.AppCompat">
+    </style>
+</resources>

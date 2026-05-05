@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom attr for SplashScreen post theme transition -->
+    <attr name="postSplashScreenTheme" format="reference" />
+</resources>
