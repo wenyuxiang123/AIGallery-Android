@@ -17,4 +17,46 @@ import kotlinx.coroutines.CoroutineScope;
 
 /* JADX INFO: compiled from: MobileActionsScreen.kt */
 /* JADX INFO: loaded from: classes5.dex */
-@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}
+@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+@DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsScreenKt$MobileActionsScreen$1$1", m932f = "MobileActionsScreen.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
+final class MobileActionsScreenKt$MobileActionsScreen$1$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final /* synthetic */ Context $context;
+    final /* synthetic */ ManagedActivityResultLauncher<String, Boolean> $recordAudioClipsPermissionLauncher;
+    final /* synthetic */ MutableState<Boolean> $recordAudioPermissionGranted$delegate;
+    int label;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    MobileActionsScreenKt$MobileActionsScreen$1$1(Context context, ManagedActivityResultLauncher<String, Boolean> managedActivityResultLauncher, MutableState<Boolean> mutableState, Continuation<? super MobileActionsScreenKt$MobileActionsScreen$1$1> continuation) {
+        super(2, continuation);
+        this.$context = context;
+        this.$recordAudioClipsPermissionLauncher = managedActivityResultLauncher;
+        this.$recordAudioPermissionGranted$delegate = mutableState;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new MobileActionsScreenKt$MobileActionsScreen$1$1(this.$context, this.$recordAudioClipsPermissionLauncher, this.$recordAudioPermissionGranted$delegate, continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        return ((MobileActionsScreenKt$MobileActionsScreen$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object $result) {
+        IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        switch (this.label) {
+            case 0:
+                ResultKt.throwOnFailure($result);
+                if (ContextCompat.checkSelfPermission(this.$context, "android.permission.RECORD_AUDIO") == 0) {
+                    MobileActionsScreenKt.MobileActionsScreen_aA_HZ9I$lambda$2(this.$recordAudioPermissionGranted$delegate, true);
+                } else {
+                    this.$recordAudioClipsPermissionLauncher.launch("android.permission.RECORD_AUDIO");
+                }
+                return Unit.INSTANCE;
+            default:
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+    }
+}

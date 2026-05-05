@@ -8,4 +8,16 @@ import kotlin.Metadata;
 
 /* JADX INFO: compiled from: ThemeSettings.kt */
 /* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u0017\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\b¨\u0006\t"}
+@Metadata(m921d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u0017\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\b¨\u0006\t"}, m922d2 = {"Lcom/google/ai/edge/gallery/ui/theme/ThemeSettings;", "", "<init>", "()V", "themeOverride", "Landroidx/compose/runtime/MutableState;", "Lcom/google/ai/edge/gallery/proto/Theme;", "getThemeOverride", "()Landroidx/compose/runtime/MutableState;", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+public final class ThemeSettings {
+    public static final int $stable = 0;
+    public static final ThemeSettings INSTANCE = new ThemeSettings();
+    private static final MutableState<Theme> themeOverride = SnapshotStateKt__SnapshotStateKt.mutableStateOf$default(Theme.THEME_AUTO, null, 2, null);
+
+    private ThemeSettings() {
+    }
+
+    public final MutableState<Theme> getThemeOverride() {
+        return themeOverride;
+    }
+}

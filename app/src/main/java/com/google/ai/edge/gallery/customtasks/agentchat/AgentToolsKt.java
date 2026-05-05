@@ -6,4 +6,12 @@ import kotlin.jvm.internal.Intrinsics;
 
 /* JADX INFO: compiled from: AgentTools.kt */
 /* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\u001a\u000e\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0001\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0004"}
+@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\u001a\u000e\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0001\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0004"}, m922d2 = {"TAG", "", "getSkillSecretKey", "skillName", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+public final class AgentToolsKt {
+    private static final String TAG = "AGAgentTools";
+
+    public static final String getSkillSecretKey(String skillName) {
+        Intrinsics.checkNotNullParameter(skillName, "skillName");
+        return "skill___" + skillName;
+    }
+}
