@@ -3,7 +3,7 @@ package com.google.ai.edge.gallery;
 import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import com.google.firebase.FirebaseApp;
 import com.google.ai.edge.gallery.data.DataStoreRepository;
-import com.google.ai.edge.gallery.p006ui.theme.ThemeSettings;
+import com.google.ai.edge.gallery.ui.theme.ThemeSettings;
 import dagger.hilt.android.HiltAndroidApp;
 import javax.inject.Inject;
 import kotlin.Metadata;

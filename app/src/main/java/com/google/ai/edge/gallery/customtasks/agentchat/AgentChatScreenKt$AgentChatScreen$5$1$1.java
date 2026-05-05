@@ -14,7 +14,7 @@ import com.google.ai.edge.gallery.common.AgentAction;
 import com.google.ai.edge.gallery.common.AskInfoAgentAction;
 import com.google.ai.edge.gallery.common.CallJsAgentAction;
 import com.google.ai.edge.gallery.data.Model;
-import com.google.ai.edge.gallery.p006ui.llmchat.LlmChatViewModel;
+import com.google.ai.edge.gallery.ui.llmchat.LlmChatViewModel;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;

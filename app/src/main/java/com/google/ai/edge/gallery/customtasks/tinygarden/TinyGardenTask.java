@@ -18,7 +18,7 @@ import com.google.ai.edge.gallery.data.Category;
 import com.google.ai.edge.gallery.data.CategoryInfo;
 import com.google.ai.edge.gallery.data.Model;
 import com.google.ai.edge.gallery.data.Task;
-import com.google.ai.edge.gallery.p006ui.llmchat.LlmChatModelHelper;
+import com.google.ai.edge.gallery.ui.llmchat.LlmChatModelHelper;
 import com.google.ai.edge.gallery.runtime.LlmModelHelper;
 import com.google.ai.edge.litertlm.Contents;
 import com.google.ai.edge.litertlm.ToolKt;

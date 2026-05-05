@@ -82,14 +82,14 @@ import com.google.ai.edge.gallery.C2421R;
 import com.google.ai.edge.gallery.GalleryEvent;
 import com.google.ai.edge.gallery.data.Model;
 import com.google.ai.edge.gallery.data.Task;
-import com.google.ai.edge.gallery.p006ui.common.MarkdownTextKt;
-import com.google.ai.edge.gallery.p006ui.common.chat.ChatMessageWarning;
-import com.google.ai.edge.gallery.p006ui.common.chat.MessageBodyWarningKt;
-import com.google.ai.edge.gallery.p006ui.common.textandvoiceinput.HoldToDictateUiState;
-import com.google.ai.edge.gallery.p006ui.common.textandvoiceinput.HoldToDictateViewModel;
-import com.google.ai.edge.gallery.p006ui.common.textandvoiceinput.VoiceRecognizerOverlayKt;
-import com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerUiState;
-import com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerViewModel;
+import com.google.ai.edge.gallery.ui.common.MarkdownTextKt;
+import com.google.ai.edge.gallery.ui.common.chat.ChatMessageWarning;
+import com.google.ai.edge.gallery.ui.common.chat.MessageBodyWarningKt;
+import com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateUiState;
+import com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel;
+import com.google.ai.edge.gallery.ui.common.textandvoiceinput.VoiceRecognizerOverlayKt;
+import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerUiState;
+import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -150,7 +150,7 @@ public final class MobileActionsScreenKt {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public static final void m10521MobileActionsScreenaA_HZ9I(final com.google.ai.edge.gallery.data.Task r48, final com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerViewModel r49, com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r50, final float r51, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r52, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r53, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r54, final kotlin.jvm.functions.Function0<kotlin.Unit> r55, androidx.compose.runtime.Composer r56, final int r57, final int r58) {
+    public static final void m10521MobileActionsScreenaA_HZ9I(final com.google.ai.edge.gallery.data.Task r48, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r49, com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r50, final float r51, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r52, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r53, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r54, final kotlin.jvm.functions.Function0<kotlin.Unit> r55, androidx.compose.runtime.Composer r56, final int r57, final int r58) {
         /*
             Method dump skipped, instruction units count: 1191
             To view this dump add '--comments-level debug' option
@@ -241,7 +241,7 @@ public final class MobileActionsScreenKt {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public static final void m10520MainUi_WMjBM(final com.google.ai.edge.gallery.data.Task r237, final com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerViewModel r238, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r239, final float r240, final com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r241, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r242, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r243, com.google.ai.edge.gallery.p006ui.common.textandvoiceinput.HoldToDictateViewModel r244, final kotlin.jvm.functions.Function0<kotlin.Unit> r245, androidx.compose.runtime.Composer r246, final int r247, final int r248) {
+    public static final void m10520MainUi_WMjBM(final com.google.ai.edge.gallery.data.Task r237, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r238, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r239, final float r240, final com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r241, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r242, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r243, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel r244, final kotlin.jvm.functions.Function0<kotlin.Unit> r245, androidx.compose.runtime.Composer r246, final int r247, final int r248) {
         /*
             Method dump skipped, instruction units count: 8271
             To view this dump add '--comments-level debug' option

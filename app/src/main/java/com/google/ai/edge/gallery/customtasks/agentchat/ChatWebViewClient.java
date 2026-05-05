@@ -6,7 +6,7 @@ import android.webkit.WebView;
 import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import com.google.android.gms.common.internal.ImagesContract;
 import com.google.android.gms.common.internal.ServiceSpecificExtraArgs;
-import com.google.ai.edge.gallery.p006ui.common.BaseGalleryWebViewClient;
+import com.google.ai.edge.gallery.ui.common.BaseGalleryWebViewClient;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;

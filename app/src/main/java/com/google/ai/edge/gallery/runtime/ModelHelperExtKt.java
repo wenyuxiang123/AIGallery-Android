@@ -3,7 +3,7 @@ package com.google.ai.edge.gallery.runtime;
 import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import com.google.ai.edge.gallery.data.Model;
 import com.google.ai.edge.gallery.data.RuntimeType;
-import com.google.ai.edge.gallery.p006ui.llmchat.LlmChatModelHelper;
+import com.google.ai.edge.gallery.ui.llmchat.LlmChatModelHelper;
 import com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;

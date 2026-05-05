@@ -1,0 +1,117 @@
+package com.google.ai.edge.gallery.ui.common;
+
+import androidx.compose.p000ui.graphics.vector.ImageVector;
+import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
+import androidx.compose.runtime.Composer;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: EmptyState.kt */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(m921d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001BB\u0012\b\b\u0001\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\u0013\b\u0002\u0010\t\u001a\r\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\b\n¢\u0006\u0004\b\u000b\u0010\fJ\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000f\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0003J\u0019\u0010\u0019\u001a\r\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\b\nHÆ\u0003¢\u0006\u0002\u0010\u0014JI\u0010\u001a\u001a\u00020\u00002\b\b\u0003\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\u0013\b\u0002\u0010\t\u001a\r\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\b\nHÆ\u0001¢\u0006\u0002\u0010\u001bJ\u0013\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001f\u001a\u00020\u0003HÖ\u0001J\t\u0010 \u001a\u00020!HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u001e\u0010\t\u001a\r\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\b\n¢\u0006\n\n\u0002\u0010\u0015\u001a\u0004\b\u0013\u0010\u0014¨\u0006\""}, m922d2 = {"Lcom/google/ai/edge/gallery/ui/common/EmptyStateButtonConfig;", "", "buttonLabelResId", "", "buttonIcon", "Landroidx/compose/ui/graphics/vector/ImageVector;", "onButtonClick", "Lkotlin/Function0;", "", "extraContent", "Landroidx/compose/runtime/Composable;", "<init>", "(ILandroidx/compose/ui/graphics/vector/ImageVector;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;)V", "getButtonLabelResId", "()I", "getButtonIcon", "()Landroidx/compose/ui/graphics/vector/ImageVector;", "getOnButtonClick", "()Lkotlin/jvm/functions/Function0;", "getExtraContent", "()Lkotlin/jvm/functions/Function2;", "Lkotlin/jvm/functions/Function2;", "component1", "component2", "component3", "component4", "copy", "(ILandroidx/compose/ui/graphics/vector/ImageVector;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;)Lcom/google/ai/edge/gallery/ui/common/EmptyStateButtonConfig;", "equals", "", "other", "hashCode", "toString", "", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+public final /* data */ class EmptyStateButtonConfig {
+    public static final int $stable = 0;
+    private final ImageVector buttonIcon;
+    private final int buttonLabelResId;
+    private final Function2<Composer, Integer, Unit> extraContent;
+    private final Function0<Unit> onButtonClick;
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public static /* synthetic */ EmptyStateButtonConfig copy$default(EmptyStateButtonConfig emptyStateButtonConfig, int i, ImageVector imageVector, Function0 function0, Function2 function2, int i2, Object obj) {
+        if ((i2 & 1) != 0) {
+            i = emptyStateButtonConfig.buttonLabelResId;
+        }
+        if ((i2 & 2) != 0) {
+            imageVector = emptyStateButtonConfig.buttonIcon;
+        }
+        if ((i2 & 4) != 0) {
+            function0 = emptyStateButtonConfig.onButtonClick;
+        }
+        if ((i2 & 8) != 0) {
+            function2 = emptyStateButtonConfig.extraContent;
+        }
+        return emptyStateButtonConfig.copy(i, imageVector, function0, function2);
+    }
+
+    /* JADX INFO: renamed from: component1, reason: from getter */
+    public final int getButtonLabelResId() {
+        return this.buttonLabelResId;
+    }
+
+    /* JADX INFO: renamed from: component2, reason: from getter */
+    public final ImageVector getButtonIcon() {
+        return this.buttonIcon;
+    }
+
+    public final Function0<Unit> component3() {
+        return this.onButtonClick;
+    }
+
+    public final Function2<Composer, Integer, Unit> component4() {
+        return this.extraContent;
+    }
+
+    public final EmptyStateButtonConfig copy(int buttonLabelResId, ImageVector buttonIcon, Function0<Unit> onButtonClick, Function2<? super Composer, ? super Integer, Unit> extraContent) {
+        Intrinsics.checkNotNullParameter(onButtonClick, "onButtonClick");
+        Intrinsics.checkNotNullParameter(extraContent, "extraContent");
+        return new EmptyStateButtonConfig(buttonLabelResId, buttonIcon, onButtonClick, extraContent);
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof EmptyStateButtonConfig)) {
+            return false;
+        }
+        EmptyStateButtonConfig emptyStateButtonConfig = (EmptyStateButtonConfig) other;
+        return this.buttonLabelResId == emptyStateButtonConfig.buttonLabelResId && Intrinsics.areEqual(this.buttonIcon, emptyStateButtonConfig.buttonIcon) && Intrinsics.areEqual(this.onButtonClick, emptyStateButtonConfig.onButtonClick) && Intrinsics.areEqual(this.extraContent, emptyStateButtonConfig.extraContent);
+    }
+
+    public int hashCode() {
+        return (((((Integer.hashCode(this.buttonLabelResId) * 31) + (this.buttonIcon == null ? 0 : this.buttonIcon.hashCode())) * 31) + this.onButtonClick.hashCode()) * 31) + this.extraContent.hashCode();
+    }
+
+    public String toString() {
+        return "EmptyStateButtonConfig(buttonLabelResId=" + this.buttonLabelResId + ", buttonIcon=" + this.buttonIcon + ", onButtonClick=" + this.onButtonClick + ", extraContent=" + this.extraContent + ")";
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public EmptyStateButtonConfig(int buttonLabelResId, ImageVector buttonIcon, Function0<Unit> onButtonClick, Function2<? super Composer, ? super Integer, Unit> extraContent) {
+        Intrinsics.checkNotNullParameter(onButtonClick, "onButtonClick");
+        Intrinsics.checkNotNullParameter(extraContent, "extraContent");
+        this.buttonLabelResId = buttonLabelResId;
+        this.buttonIcon = buttonIcon;
+        this.onButtonClick = onButtonClick;
+        this.extraContent = extraContent;
+    }
+
+    public /* synthetic */ EmptyStateButtonConfig(int i, ImageVector imageVector, Function0 function0, Function2 function2, int i2, DefaultConstructorMarker defaultConstructorMarker) {
+        this(i, (i2 & 2) != 0 ? null : imageVector, (i2 & 4) != 0 ? new Function0() { // from class: com.google.ai.edge.gallery.ui.common.EmptyStateButtonConfig$$ExternalSyntheticLambda0
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                return Unit.INSTANCE;
+            }
+        } : function0, (i2 & 8) != 0 ? ComposableSingletons$EmptyStateKt.INSTANCE.getLambda$1137270977$app_debug() : function2);
+    }
+
+    public final int getButtonLabelResId() {
+        return this.buttonLabelResId;
+    }
+
+    public final ImageVector getButtonIcon() {
+        return this.buttonIcon;
+    }
+
+    public final Function0<Unit> getOnButtonClick() {
+        return this.onButtonClick;
+    }
+
+    public final Function2<Composer, Integer, Unit> getExtraContent() {
+        return this.extraContent;
+    }
+}

@@ -8,8 +8,8 @@ import androidx.compose.runtime.State;
 import com.google.ai.edge.gallery.data.ConfigKey;
 import com.google.ai.edge.gallery.data.NumberSliderConfig;
 import com.google.ai.edge.gallery.data.ValueType;
-import com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerUiState;
-import com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerViewModel;
+import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerUiState;
+import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -60,7 +60,7 @@ public final class ExampleCustomTaskScreenKt {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public static final void ExampleCustomTaskScreen(final com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerViewModel r126, com.google.ai.edge.gallery.customtasks.examplecustomtask.ExampleCustomTaskViewModel r127, androidx.compose.runtime.Composer r128, final int r129, final int r130) {
+    public static final void ExampleCustomTaskScreen(final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r126, com.google.ai.edge.gallery.customtasks.examplecustomtask.ExampleCustomTaskViewModel r127, androidx.compose.runtime.Composer r128, final int r129, final int r130) {
         /*
             Method dump skipped, instruction units count: 2758
             To view this dump add '--comments-level debug' option

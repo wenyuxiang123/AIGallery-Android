@@ -38,7 +38,7 @@ import androidx.compose.runtime.CompositionLocalMap;
 import androidx.compose.runtime.Updater;
 import androidx.compose.runtime.internal.ComposableLambdaKt;
 import com.google.ai.edge.gallery.C2421R;
-import com.google.ai.edge.gallery.p006ui.common.ClickableLinkKt;
+import com.google.ai.edge.gallery.ui.common.ClickableLinkKt;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.Unit;

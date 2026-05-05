@@ -39,7 +39,7 @@ import androidx.compose.runtime.ScopeUpdateScope;
 import androidx.compose.runtime.SnapshotStateKt__SnapshotStateKt;
 import androidx.compose.runtime.Updater;
 import androidx.compose.runtime.internal.ComposableLambdaKt;
-import com.google.ai.edge.gallery.p006ui.common.MarkdownTextKt;
+import com.google.ai.edge.gallery.ui.common.MarkdownTextKt;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;

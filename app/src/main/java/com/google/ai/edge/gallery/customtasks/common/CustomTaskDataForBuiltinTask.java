@@ -1,7 +1,7 @@
 package com.google.ai.edge.gallery.customtasks.common;
 
 import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
-import com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerViewModel;
+import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;

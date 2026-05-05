@@ -1,0 +1,70 @@
+package com.google.ai.edge.gallery.ui.navigation;
+
+import android.content.Context;
+import android.util.Log;
+import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
+import com.google.ai.edge.gallery.data.Model;
+import com.google.ai.edge.gallery.data.Task;
+import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.CoroutineScope;
+
+/* JADX INFO: compiled from: GalleryNavGraph.kt */
+/* JADX INFO: loaded from: classes4.dex */
+@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+@DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.navigation.GalleryNavGraphKt$CustomTaskScreen$4$3$3$1$1", m932f = "GalleryNavGraph.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
+final class GalleryNavGraphKt$CustomTaskScreen$4$3$3$1$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final /* synthetic */ Context $context;
+    final /* synthetic */ Object $instanceToCleanUp;
+    final /* synthetic */ ModelManagerViewModel $modelManagerViewModel;
+    final /* synthetic */ Model $newSelectedModel;
+    final /* synthetic */ Model $prevModel;
+    final /* synthetic */ Task $task;
+    int label;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    GalleryNavGraphKt$CustomTaskScreen$4$3$3$1$1(Model model, Model model2, ModelManagerViewModel modelManagerViewModel, Context context, Task task, Object obj, Continuation<? super GalleryNavGraphKt$CustomTaskScreen$4$3$3$1$1> continuation) {
+        super(2, continuation);
+        this.$prevModel = model;
+        this.$newSelectedModel = model2;
+        this.$modelManagerViewModel = modelManagerViewModel;
+        this.$context = context;
+        this.$task = task;
+        this.$instanceToCleanUp = obj;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new GalleryNavGraphKt$CustomTaskScreen$4$3$3$1$1(this.$prevModel, this.$newSelectedModel, this.$modelManagerViewModel, this.$context, this.$task, this.$instanceToCleanUp, continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        return ((GalleryNavGraphKt$CustomTaskScreen$4$3$3$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object $result) {
+        IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        switch (this.label) {
+            case 0:
+                ResultKt.throwOnFailure($result);
+                if (!Intrinsics.areEqual(this.$prevModel.getName(), this.$newSelectedModel.getName())) {
+                    ModelManagerViewModel.cleanupModel$default(this.$modelManagerViewModel, this.$context, this.$task, this.$prevModel, this.$instanceToCleanUp, null, 16, null);
+                }
+                Log.d("AGGalleryNavGraph", "from model picker. new: " + this.$newSelectedModel.getName());
+                this.$modelManagerViewModel.selectModel(this.$newSelectedModel);
+                return Unit.INSTANCE;
+            default:
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+    }
+}

@@ -75,7 +75,7 @@ import androidx.core.view.accessibility.AccessibilityEventCompat;
 import androidx.profileinstaller.ProfileVerifier;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.ai.edge.gallery.C2421R;
-import com.google.ai.edge.gallery.p006ui.theme.ThemeKt;
+import com.google.ai.edge.gallery.ui.theme.ThemeKt;
 import com.google.ai.edge.gallery.proto.Skill;
 import java.util.Iterator;
 import java.util.List;

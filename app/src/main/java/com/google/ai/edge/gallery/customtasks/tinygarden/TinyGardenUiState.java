@@ -1,7 +1,7 @@
 package com.google.ai.edge.gallery.customtasks.tinygarden;
 
 import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
-import com.google.ai.edge.gallery.p006ui.common.chat.ChatMessage;
+import com.google.ai.edge.gallery.ui.common.chat.ChatMessage;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;

@@ -4,7 +4,7 @@ import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.RecomposeScopeImplKt;
 import androidx.navigation.NavHostController;
-import com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerViewModel;
+import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel;
 import kotlin.Metadata;
 import kotlin.Unit;
 
@@ -24,7 +24,7 @@ public final class GalleryAppKt {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public static final void GalleryApp(final androidx.navigation.NavHostController r8, final com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerViewModel r9, androidx.compose.runtime.Composer r10, final int r11, final int r12) {
+    public static final void GalleryApp(final androidx.navigation.NavHostController r8, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r9, androidx.compose.runtime.Composer r10, final int r11, final int r12) {
         /*
             java.lang.String r0 = "modelManagerViewModel"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r9, r0)
@@ -110,7 +110,7 @@ public final class GalleryAppKt {
             r1 = r8
             r3 = r9
             r4 = r10
-            com.google.ai.edge.gallery.p006ui.navigation.GalleryNavGraphKt.GalleryNavHost(r1, r2, r3, r4, r5, r6)
+            com.google.ai.edge.gallery.ui.navigation.GalleryNavGraphKt.GalleryNavHost(r1, r2, r3, r4, r5, r6)
             boolean r0 = androidx.compose.runtime.ComposerKt.isTraceInProgress()
             if (r0 == 0) goto L9a
             androidx.compose.runtime.ComposerKt.traceEventEnd()

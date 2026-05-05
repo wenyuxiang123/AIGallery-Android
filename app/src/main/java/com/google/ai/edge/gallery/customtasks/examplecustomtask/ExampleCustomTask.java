@@ -15,7 +15,7 @@ import com.google.ai.edge.gallery.customtasks.common.CustomTaskData;
 import com.google.ai.edge.gallery.data.CategoryInfo;
 import com.google.ai.edge.gallery.data.Model;
 import com.google.ai.edge.gallery.data.Task;
-import com.google.ai.edge.gallery.p006ui.modelmanager.ModelManagerViewModel;
+import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel;
 import java.io.File;
 import javax.inject.Inject;
 import kotlin.Metadata;
