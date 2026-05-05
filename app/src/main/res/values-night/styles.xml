@@ -3,20 +3,13 @@
     <style name="Base.Theme.SplashScreen.DayNight" parent="@style/Base.Theme.SplashScreen">
         <item name="isLightTheme">false</item>
     </style>
-    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat">
-    </style>
-    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat">
-    </style>
-    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog">
-    </style>
-    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert">
-    </style>
-    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth">
-    </style>
-    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge">
-    </style>
-    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar">
-    </style>
+    
+    
+    
+    
+    
+    
+    
     <style name="Theme.Gallery.OssLicenses" parent="@style/Theme.AppCompat">
     </style>
     <style name="Theme.Gallery.SplashScreen" parent="@style/Theme.SplashScreen">
@@ -24,6 +17,5 @@
         <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen_animated_icon</item>
         <item name="windowSplashScreenBackground">#ff131314</item>
     </style>
-    <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark">
-    </style>
+    
 </resources>
