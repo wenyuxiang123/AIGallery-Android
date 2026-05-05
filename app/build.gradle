@@ -17,11 +17,10 @@ android {
         versionName "1.0.12"
     }
 
-    packagingOptions {
-        pickFirst '**/libLiteRt.so'
-        pickFirst '**/libtensorflowlite_jni.so'
-        pickFirst '**/libtensorflowlite_c.so'
-        pickFirst '**/libtflite_jni.so'
+    packaging {
+        jniLibs {
+            pickFirsts += ["**/*.so"]
+        }
     }
 
     buildTypes {
