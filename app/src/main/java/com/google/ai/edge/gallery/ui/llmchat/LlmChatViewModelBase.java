@@ -123,10 +123,9 @@ public class LlmChatViewModelBase extends ChatViewModel {
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r21) {
             /*
-                Method dump skipped, instruction units count: 326
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.llmchat.LlmChatViewModelBase.C27603.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r21) {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -143,10 +142,9 @@ public class LlmChatViewModelBase extends ChatViewModel {
         */
         public static final kotlin.Unit invokeSuspend$lambda$0(com.google.ai.edge.gallery.ui.llmchat.LlmChatViewModelBase r26, com.google.ai.edge.gallery.data.Model r27, java.lang.String r28, long r29, kotlin.jvm.internal.Ref.BooleanRef r31, kotlin.jvm.functions.Function1 r32, kotlin.jvm.functions.Function0 r33, java.lang.String r34, boolean r35, java.lang.String r36) {
             /*
-                Method dump skipped, instruction units count: 419
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.llmchat.LlmChatViewModelBase.C27603.invokeSuspend$lambda$0(com.google.ai.edge.gallery.ui.llmchat.LlmChatViewModelBase, com.google.ai.edge.gallery.data.Model, java.lang.String, long, kotlin.jvm.internal.Ref$BooleanRef, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function0, java.lang.String, boolean, java.lang.String):kotlin.Unit");
+        public static final kotlin.Unit invokeSuspend$lambda$0(com.google.ai.edge.gallery.ui.llmchat.LlmChatViewModelBase r26, com.google.ai.edge.gallery.data.Model r27, java.lang.String r28, long r29, kotlin.jvm.internal.Ref.BooleanRef r31, kotlin.jvm.functions.Function1 r32, kotlin.jvm.functions.Function0 r33, java.lang.String r34, boolean r35, java.lang.String r36) {
+            // Method dump skipped - placeholder implementation
+            return false;
         }
 
         /* JADX INFO: Access modifiers changed from: private */

@@ -1018,7 +1018,7 @@ public final class GalleryNavGraphKt {
         if (arguments == null || (string = arguments.getString("modelName")) == null) {
             string = "";
         }
-        ?? r9 = string;
+        String r9 = string;
         Bundle arguments2 = backStackEntry.getArguments();
         if (arguments2 == null || (string2 = arguments2.getString("taskId")) == null) {
             string2 = "";
@@ -1450,11 +1450,9 @@ public final class GalleryNavGraphKt {
     */
     private static final void CustomTaskScreen(final com.google.ai.edge.gallery.data.Task r40, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r41, final boolean r42, final boolean r43, final boolean r44, final kotlin.jvm.functions.Function0<kotlin.Unit> r45, final kotlin.jvm.functions.Function3<? super androidx.compose.p000ui.unit.C1654Dp, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> r46, androidx.compose.runtime.Composer r47, final int r48) {
         /*
-            Method dump skipped, instruction units count: 1103
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.navigation.GalleryNavGraphKt.CustomTaskScreen(com.google.ai.edge.gallery.data.Task, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, boolean, boolean, boolean, kotlin.jvm.functions.Function0, kotlin.jvm.functions.Function3, androidx.compose.runtime.Composer, int):void");
-    }
+    private static final void CustomTaskScreen(final com.google.ai.edge.gallery.data.Task r40, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r41, final boolean r42, final boolean r43, final boolean r44, final kotlin.jvm.functions.Function0<kotlin.Unit> r45, final kotlin.jvm.functions.Function3<? super androidx.compose.p000ui.unit.C1654Dp, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> r46, androidx.compose.runtime.Composer r47, final int r48) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final ModelManagerUiState CustomTaskScreen$lambda$97(State<ModelManagerUiState> state) {
         Object thisObj$iv = state.getValue();

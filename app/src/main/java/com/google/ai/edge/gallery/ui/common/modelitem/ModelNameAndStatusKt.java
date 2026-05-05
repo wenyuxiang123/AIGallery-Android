@@ -75,11 +75,9 @@ public final class ModelNameAndStatusKt {
     */
     public static final void ModelNameAndStatus(final com.google.ai.edge.gallery.data.Model r103, final com.google.ai.edge.gallery.data.Task r104, final com.google.ai.edge.gallery.data.ModelDownloadStatus r105, final boolean r106, androidx.compose.p000ui.Modifier r107, boolean r108, androidx.compose.runtime.Composer r109, final int r110, final int r111) {
         /*
-            Method dump skipped, instruction units count: 2569
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.modelitem.ModelNameAndStatusKt.ModelNameAndStatus(com.google.ai.edge.gallery.data.Model, com.google.ai.edge.gallery.data.Task, com.google.ai.edge.gallery.data.ModelDownloadStatus, boolean, androidx.compose.ui.Modifier, boolean, androidx.compose.runtime.Composer, int, int):void");
-    }
+    public static final void ModelNameAndStatus(final com.google.ai.edge.gallery.data.Model r103, final com.google.ai.edge.gallery.data.Task r104, final com.google.ai.edge.gallery.data.ModelDownloadStatus r105, final boolean r106, androidx.compose.p000ui.Modifier r107, boolean r108, androidx.compose.runtime.Composer r109, final int r110, final int r111) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final boolean ModelNameAndStatus$lambda$1(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;

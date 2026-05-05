@@ -44,11 +44,9 @@ public final class ModelDownloadStatusInfoPanelKt {
     */
     public static final void ModelDownloadStatusInfoPanel(final com.google.ai.edge.gallery.data.Model r88, final com.google.ai.edge.gallery.data.Task r89, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r90, androidx.compose.runtime.Composer r91, final int r92) {
         /*
-            Method dump skipped, instruction units count: 1507
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.chat.ModelDownloadStatusInfoPanelKt.ModelDownloadStatusInfoPanel(com.google.ai.edge.gallery.data.Model, com.google.ai.edge.gallery.data.Task, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, androidx.compose.runtime.Composer, int):void");
-    }
+    public static final void ModelDownloadStatusInfoPanel(final com.google.ai.edge.gallery.data.Model r88, final com.google.ai.edge.gallery.data.Task r89, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r90, androidx.compose.runtime.Composer r91, final int r92) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final ModelManagerUiState ModelDownloadStatusInfoPanel$lambda$0(State<ModelManagerUiState> state) {
         Object thisObj$iv = state.getValue();

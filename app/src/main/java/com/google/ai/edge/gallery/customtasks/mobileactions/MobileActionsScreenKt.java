@@ -152,11 +152,9 @@ public final class MobileActionsScreenKt {
     */
     public static final void m10521MobileActionsScreenaA_HZ9I(final com.google.ai.edge.gallery.data.Task r48, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r49, com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r50, final float r51, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r52, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r53, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r54, final kotlin.jvm.functions.Function0<kotlin.Unit> r55, androidx.compose.runtime.Composer r56, final int r57, final int r58) {
         /*
-            Method dump skipped, instruction units count: 1191
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsScreenKt.m10521MobileActionsScreenaA_HZ9I(com.google.ai.edge.gallery.data.Task, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel, float, kotlin.jvm.functions.Function1, androidx.compose.runtime.snapshots.SnapshotStateList, java.util.List, kotlin.jvm.functions.Function0, androidx.compose.runtime.Composer, int, int):void");
-    }
+    public static final void m10521MobileActionsScreenaA_HZ9I(final com.google.ai.edge.gallery.data.Task r48, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r49, com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r50, final float r51, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r52, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r53, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r54, final kotlin.jvm.functions.Function0<kotlin.Unit> r55, androidx.compose.runtime.Composer r56, final int r57, final int r58) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final boolean MobileActionsScreen_aA_HZ9I$lambda$1(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
@@ -243,11 +241,9 @@ public final class MobileActionsScreenKt {
     */
     public static final void m10520MainUi_WMjBM(final com.google.ai.edge.gallery.data.Task r237, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r238, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r239, final float r240, final com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r241, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r242, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r243, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel r244, final kotlin.jvm.functions.Function0<kotlin.Unit> r245, androidx.compose.runtime.Composer r246, final int r247, final int r248) {
         /*
-            Method dump skipped, instruction units count: 8271
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsScreenKt.m10520MainUi_WMjBM(com.google.ai.edge.gallery.data.Task, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, java.util.List, float, com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel, kotlin.jvm.functions.Function1, androidx.compose.runtime.snapshots.SnapshotStateList, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel, kotlin.jvm.functions.Function0, androidx.compose.runtime.Composer, int, int):void");
-    }
+    public static final void m10520MainUi_WMjBM(final com.google.ai.edge.gallery.data.Task r237, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r238, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r239, final float r240, final com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r241, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r242, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r243, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel r244, final kotlin.jvm.functions.Function0<kotlin.Unit> r245, androidx.compose.runtime.Composer r246, final int r247, final int r248) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final ModelManagerUiState MainUi___WMjBM$lambda$8(State<ModelManagerUiState> state) {
         Object thisObj$iv = state.getValue();

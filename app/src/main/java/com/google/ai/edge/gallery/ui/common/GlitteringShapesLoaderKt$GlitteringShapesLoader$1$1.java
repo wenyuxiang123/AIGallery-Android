@@ -82,10 +82,9 @@ final class GlitteringShapesLoaderKt$GlitteringShapesLoader$1$1 extends SuspendL
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r21) {
             /*
-                Method dump skipped, instruction units count: 252
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.GlitteringShapesLoaderKt$GlitteringShapesLoader$1$1.C26701.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r21) {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
     }
 

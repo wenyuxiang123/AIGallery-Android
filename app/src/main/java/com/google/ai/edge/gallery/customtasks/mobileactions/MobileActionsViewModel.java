@@ -234,10 +234,9 @@ public final class MobileActionsViewModel extends ViewModel {
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r14) {
             /*
-                Method dump skipped, instruction units count: 300
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel.C25431.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r14) {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
 
         /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$processUserPrompt$1$1, reason: invalid class name */

@@ -67,9 +67,8 @@ final class SkillTesterBottomSheetKt$SkillTesterBottomSheet$1$1$5$1$1 extends Su
     */
     public final java.lang.Object invokeSuspend(java.lang.Object r17) {
         /*
-            Method dump skipped, instruction units count: 370
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.SkillTesterBottomSheetKt$SkillTesterBottomSheet$1$1$5$1$1.invokeSuspend(java.lang.Object):java.lang.Object");
-    }
+    public final java.lang.Object invokeSuspend(java.lang.Object r17) {
+            // Method dump skipped - placeholder implementation
+            return null;
+        }
 }

@@ -1149,11 +1149,9 @@ public final class PromptTemplatesPanelKt {
         */
     public static final void PromptTemplatesPanel(com.google.ai.edge.gallery.data.Model r234, com.google.ai.edge.gallery.ui.llmsingleturn.LlmSingleTurnViewModel r235, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r236, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r237, kotlin.jvm.functions.Function1<? super com.google.ai.edge.gallery.data.Model, kotlin.Unit> r238, androidx.compose.p000ui.Modifier r239, androidx.compose.runtime.Composer r240, int r241, int r242) {
         /*
-            Method dump skipped, instruction units count: 5840
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.llmsingleturn.PromptTemplatesPanelKt.PromptTemplatesPanel(com.google.ai.edge.gallery.data.Model, com.google.ai.edge.gallery.ui.llmsingleturn.LlmSingleTurnViewModel, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, androidx.compose.ui.Modifier, androidx.compose.runtime.Composer, int, int):void");
-    }
+    public static final void PromptTemplatesPanel(com.google.ai.edge.gallery.data.Model r234, com.google.ai.edge.gallery.ui.llmsingleturn.LlmSingleTurnViewModel r235, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r236, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r237, kotlin.jvm.functions.Function1<? super com.google.ai.edge.gallery.data.Model, kotlin.Unit> r238, androidx.compose.p000ui.Modifier r239, androidx.compose.runtime.Composer r240, int r241, int r242) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final LlmSingleTurnUiState PromptTemplatesPanel$lambda$1(State<LlmSingleTurnUiState> state) {
         Object thisObj$iv = state.getValue();

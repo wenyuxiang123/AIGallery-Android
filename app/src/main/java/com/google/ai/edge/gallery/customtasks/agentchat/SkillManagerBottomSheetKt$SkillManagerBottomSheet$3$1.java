@@ -68,9 +68,8 @@ final class SkillManagerBottomSheetKt$SkillManagerBottomSheet$3$1 extends Suspen
     */
     public final java.lang.Object invokeSuspend(java.lang.Object r21) {
         /*
-            Method dump skipped, instruction units count: 452
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerBottomSheetKt$SkillManagerBottomSheet$3$1.invokeSuspend(java.lang.Object):java.lang.Object");
-    }
+    public final java.lang.Object invokeSuspend(java.lang.Object r21) {
+            // Method dump skipped - placeholder implementation
+            return null;
+        }
 }

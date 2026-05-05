@@ -176,11 +176,9 @@ public final class BenchmarkResultsViewerKt {
     */
     public static final void BenchmarkResultsViewer(final java.lang.String r46, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r47, final com.google.ai.edge.gallery.ui.benchmark.BenchmarkViewModel r48, final kotlin.jvm.functions.Function0<kotlin.Unit> r49, androidx.compose.runtime.Composer r50, final int r51) {
         /*
-            Method dump skipped, instruction units count: 1405
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.benchmark.BenchmarkResultsViewerKt.BenchmarkResultsViewer(java.lang.String, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, com.google.ai.edge.gallery.ui.benchmark.BenchmarkViewModel, kotlin.jvm.functions.Function0, androidx.compose.runtime.Composer, int):void");
-    }
+    public static final void BenchmarkResultsViewer(final java.lang.String r46, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r47, final com.google.ai.edge.gallery.ui.benchmark.BenchmarkViewModel r48, final kotlin.jvm.functions.Function0<kotlin.Unit> r49, androidx.compose.runtime.Composer r50, final int r51) {
+            // Method dump skipped - placeholder implementation
+        }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final BenchmarkUiState BenchmarkResultsViewer$lambda$0(State<BenchmarkUiState> state) {

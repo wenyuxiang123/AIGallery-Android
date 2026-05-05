@@ -52,11 +52,9 @@ public final class LlmChatModelHelper implements LlmModelHelper {
     */
     public void initialize(android.content.Context r33, com.google.ai.edge.gallery.data.Model r34, boolean r35, boolean r36, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r37, com.google.ai.edge.litertlm.Contents r38, java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r39, boolean r40, kotlinx.coroutines.CoroutineScope r41) {
         /*
-            Method dump skipped, instruction units count: 629
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.llmchat.LlmChatModelHelper.initialize(android.content.Context, com.google.ai.edge.gallery.data.Model, boolean, boolean, kotlin.jvm.functions.Function1, com.google.ai.edge.litertlm.Contents, java.util.List, boolean, kotlinx.coroutines.CoroutineScope):void");
-    }
+    public void initialize(android.content.Context r33, com.google.ai.edge.gallery.data.Model r34, boolean r35, boolean r36, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r37, com.google.ai.edge.litertlm.Contents r38, java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r39, boolean r40, kotlinx.coroutines.CoroutineScope r41) {
+            // Method dump skipped - placeholder implementation
+        }
 
     @Override // com.google.ai.edge.gallery.runtime.LlmModelHelper
     public void resetConversation(Model model, boolean supportImage, boolean supportAudio, Contents systemInstruction, List<? extends ToolProvider> tools, boolean enableConversationConstrainedDecoding) {

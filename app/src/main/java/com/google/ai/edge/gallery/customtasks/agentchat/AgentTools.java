@@ -277,10 +277,10 @@ public final class AgentTools implements ToolSet {
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r38) {
             /*
-                Method dump skipped, instruction units count: 1566
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.AgentTools.C24341.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r38) {
+        public final java.lang.Object invokeSuspend(java.lang.Object r38) {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
     }
 

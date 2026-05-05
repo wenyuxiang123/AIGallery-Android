@@ -321,11 +321,10 @@ public final class ZoomableImageKt {
                             */
                             public final java.lang.Object invokeSuspend(java.lang.Object r24) {
                                 /*
-                                    Method dump skipped, instruction units count: 388
-                                    To view this dump add '--comments-level debug' option
-                                */
-                                throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$ZoomableImage$gestureModifier$1$1.C27381.invokeSuspend(java.lang.Object):java.lang.Object");
-                            }
+                            public final java.lang.Object invokeSuspend(java.lang.Object r24) {
+            // Method dump skipped - placeholder implementation
+            return null;
+        }
 
                             /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$ZoomableImage$gestureModifier$1$1$1$1, reason: invalid class name */
                             /* JADX INFO: compiled from: ZoomableImage.kt */

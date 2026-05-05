@@ -92,10 +92,9 @@ public final class LlmSingleTurnViewModel extends ViewModel {
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r20) {
             /*
-                Method dump skipped, instruction units count: 264
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.llmsingleturn.LlmSingleTurnViewModel.C27721.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r20) {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
 
         /* JADX INFO: Access modifiers changed from: private */

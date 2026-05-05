@@ -1184,10 +1184,9 @@ public class ModelManagerViewModel extends ViewModel {
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r37) {
             /*
-                Method dump skipped, instruction units count: 1198
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel.C28182.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r37) {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
 
         private static final boolean invokeSuspend$lambda$4(Lazy<Boolean> lazy) {
@@ -1678,9 +1677,8 @@ public class ModelManagerViewModel extends ViewModel {
     */
     private final boolean checkIfModelDownloaded(com.google.ai.edge.gallery.data.Model r26, java.lang.String r27, java.lang.String r28) {
         /*
-            Method dump skipped, instruction units count: 213
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel.checkIfModelDownloaded(com.google.ai.edge.gallery.data.Model, java.lang.String, java.lang.String):boolean");
-    }
+    private final boolean checkIfModelDownloaded(com.google.ai.edge.gallery.data.Model r26, java.lang.String r27, java.lang.String r28) {
+            // Method dump skipped - placeholder implementation
+            return false;
+        }
 }

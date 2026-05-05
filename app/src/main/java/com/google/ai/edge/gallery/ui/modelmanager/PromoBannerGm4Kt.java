@@ -46,11 +46,9 @@ public final class PromoBannerGm4Kt {
     */
     public static final void PromoBannerGm4(final kotlin.jvm.functions.Function0<kotlin.Unit> r127, androidx.compose.p000ui.Modifier r128, androidx.compose.runtime.Composer r129, final int r130, final int r131) {
         /*
-            Method dump skipped, instruction units count: 1886
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.modelmanager.PromoBannerGm4Kt.PromoBannerGm4(kotlin.jvm.functions.Function0, androidx.compose.ui.Modifier, androidx.compose.runtime.Composer, int, int):void");
-    }
+    public static final void PromoBannerGm4(final kotlin.jvm.functions.Function0<kotlin.Unit> r127, androidx.compose.p000ui.Modifier r128, androidx.compose.runtime.Composer r129, final int r130, final int r131) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final float PromoBannerGm4$lambda$1(MutableState<C1654Dp> mutableState) {
         MutableState<C1654Dp> $this$getValue$iv = mutableState;

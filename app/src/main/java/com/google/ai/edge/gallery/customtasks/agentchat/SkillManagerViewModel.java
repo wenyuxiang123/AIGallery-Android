@@ -2034,10 +2034,9 @@ public final class SkillManagerViewModel extends ViewModel {
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r18) {
             /*
-                Method dump skipped, instruction units count: 542
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel.C25291.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r18) {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
 
         /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillScriptsContent$1$1, reason: invalid class name */

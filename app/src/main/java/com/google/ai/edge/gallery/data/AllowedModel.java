@@ -356,11 +356,10 @@ public final /* data */ class AllowedModel {
     */
     public final com.google.ai.edge.gallery.data.Model toModel() {
         /*
-            Method dump skipped, instruction units count: 1168
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.data.AllowedModel.toModel():com.google.ai.edge.gallery.data.Model");
-    }
+    public final com.google.ai.edge.gallery.data.Model toModel() {
+            // Method dump skipped - placeholder implementation
+            return null;
+        }
 
     public String toString() {
         return this.modelId + "/" + this.modelFile;

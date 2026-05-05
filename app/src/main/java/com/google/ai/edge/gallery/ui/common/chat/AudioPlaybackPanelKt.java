@@ -623,11 +623,10 @@ public final class AudioPlaybackPanelKt {
     */
     public static final java.lang.Object playAudio(androidx.compose.runtime.MutableState<android.media.AudioTrack> r14, byte[] r15, int r16, kotlin.jvm.functions.Function1<? super java.lang.Float, kotlin.Unit> r17, kotlin.jvm.functions.Function0<kotlin.Unit> r18, kotlin.coroutines.Continuation<? super kotlin.Unit> r19) throws java.lang.Throwable {
         /*
-            Method dump skipped, instruction units count: 240
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.chat.AudioPlaybackPanelKt.playAudio(androidx.compose.runtime.MutableState, byte[], int, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function0, kotlin.coroutines.Continuation):java.lang.Object");
-    }
+    public static final java.lang.Object playAudio(androidx.compose.runtime.MutableState<android.media.AudioTrack> r14, byte[] r15, int r16, kotlin.jvm.functions.Function1<? super java.lang.Float, kotlin.Unit> r17, kotlin.jvm.functions.Function0<kotlin.Unit> r18, kotlin.coroutines.Continuation<? super kotlin.Unit> r19) throws java.lang.Throwable {
+            // Method dump skipped - placeholder implementation
+            return 0;
+        }
 
     /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.AudioPlaybackPanelKt$playAudio$2 */
     /* JADX INFO: compiled from: AudioPlaybackPanel.kt */

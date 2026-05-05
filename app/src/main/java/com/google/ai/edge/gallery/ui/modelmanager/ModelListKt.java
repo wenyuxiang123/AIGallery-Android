@@ -756,11 +756,10 @@ public final class ModelListKt {
     */
     public static final kotlin.Unit ModelList$lambda$45$lambda$44$lambda$43$lambda$29(final com.google.ai.edge.gallery.data.Task r115, float r116, final float r117, float r118, androidx.compose.runtime.State r119, androidx.compose.runtime.State r120, androidx.compose.foundation.lazy.LazyItemScope r121, androidx.compose.runtime.Composer r122, int r123) {
         /*
-            Method dump skipped, instruction units count: 2573
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.modelmanager.ModelListKt.ModelList$lambda$45$lambda$44$lambda$43$lambda$29(com.google.ai.edge.gallery.data.Task, float, float, float, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.foundation.lazy.LazyItemScope, androidx.compose.runtime.Composer, int):kotlin.Unit");
-    }
+    public static final kotlin.Unit ModelList$lambda$45$lambda$44$lambda$43$lambda$29(final com.google.ai.edge.gallery.data.Task r115, float r116, final float r117, float r118, androidx.compose.runtime.State r119, androidx.compose.runtime.State r120, androidx.compose.foundation.lazy.LazyItemScope r121, androidx.compose.runtime.Composer r122, int r123) {
+            // Method dump skipped - placeholder implementation
+            return 0;
+        }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX INFO: renamed from: ModelList$lambda$45$lambda$44$lambda$43$lambda$29$lambda$28$lambda$15$lambda$14 */

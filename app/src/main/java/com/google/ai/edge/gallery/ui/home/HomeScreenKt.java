@@ -2112,11 +2112,10 @@ public final class HomeScreenKt {
         */
     public static final kotlin.Unit HomeScreen$lambda$55$lambda$54(boolean r119, boolean r120, java.util.List r121, kotlinx.coroutines.CoroutineScope r122, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r123, kotlin.jvm.functions.Function1 r124, androidx.compose.runtime.State r125, androidx.compose.foundation.layout.PaddingValues r126, androidx.compose.runtime.Composer r127, int r128) {
         /*
-            Method dump skipped, instruction units count: 2408
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.home.HomeScreenKt.HomeScreen$lambda$55$lambda$54(boolean, boolean, java.util.List, kotlinx.coroutines.CoroutineScope, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, kotlin.jvm.functions.Function1, androidx.compose.runtime.State, androidx.compose.foundation.layout.PaddingValues, androidx.compose.runtime.Composer, int):kotlin.Unit");
-    }
+    public static final kotlin.Unit HomeScreen$lambda$55$lambda$54(boolean r119, boolean r120, java.util.List r121, kotlinx.coroutines.CoroutineScope r122, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r123, kotlin.jvm.functions.Function1 r124, androidx.compose.runtime.State r125, androidx.compose.foundation.layout.PaddingValues r126, androidx.compose.runtime.Composer r127, int r128) {
+            // Method dump skipped - placeholder implementation
+            return false;
+        }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX INFO: renamed from: HomeScreen$lambda$55$lambda$54$lambda$53$lambda$52$lambda$39$lambda$38 */
@@ -3383,11 +3382,10 @@ public final class HomeScreenKt {
     */
     public static final kotlin.Unit TaskList$lambda$122(java.util.Map r83, java.util.List r84, boolean r85, final float r86, boolean r87, final kotlin.jvm.functions.Function1 r88, androidx.compose.runtime.MutableState r89, androidx.compose.foundation.pager.PagerScope r90, int r91, androidx.compose.runtime.Composer r92, int r93) {
         /*
-            Method dump skipped, instruction units count: 1775
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.home.HomeScreenKt.TaskList$lambda$122(java.util.Map, java.util.List, boolean, float, boolean, kotlin.jvm.functions.Function1, androidx.compose.runtime.MutableState, androidx.compose.foundation.pager.PagerScope, int, androidx.compose.runtime.Composer, int):kotlin.Unit");
-    }
+    public static final kotlin.Unit TaskList$lambda$122(java.util.Map r83, java.util.List r84, boolean r85, final float r86, boolean r87, final kotlin.jvm.functions.Function1 r88, androidx.compose.runtime.MutableState r89, androidx.compose.foundation.pager.PagerScope r90, int r91, androidx.compose.runtime.Composer r92, int r93) {
+            // Method dump skipped - placeholder implementation
+            return false;
+        }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit TaskList$lambda$122$lambda$110$lambda$109(float $progress, GraphicsLayerScope graphicsLayer) {
@@ -3430,11 +3428,9 @@ public final class HomeScreenKt {
     */
     private static final void TaskCard(final com.google.ai.edge.gallery.data.Task r33, final int r34, final boolean r35, final kotlin.jvm.functions.Function0<kotlin.Unit> r36, androidx.compose.p000ui.Modifier r37, java.lang.String r38, boolean r39, androidx.compose.runtime.Composer r40, final int r41, final int r42) {
         /*
-            Method dump skipped, instruction units count: 969
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.home.HomeScreenKt.TaskCard(com.google.ai.edge.gallery.data.Task, int, boolean, kotlin.jvm.functions.Function0, androidx.compose.ui.Modifier, java.lang.String, boolean, androidx.compose.runtime.Composer, int, int):void");
-    }
+    private static final void TaskCard(final com.google.ai.edge.gallery.data.Task r33, final int r34, final boolean r35, final kotlin.jvm.functions.Function0<kotlin.Unit> r36, androidx.compose.p000ui.Modifier r37, java.lang.String r38, boolean r39, androidx.compose.runtime.Composer r40, final int r41, final int r42) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final int TaskCard$lambda$126(State<Integer> state) {
         Object thisObj$iv = state.getValue();

@@ -207,10 +207,9 @@ public final class AICoreModelHelper implements LlmModelHelper {
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r10) {
             /*
-                Method dump skipped, instruction units count: 262
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.C26141.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r10) {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
 
         /* JADX INFO: renamed from: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$initialize$1$1, reason: invalid class name */
@@ -236,11 +235,10 @@ public final class AICoreModelHelper implements LlmModelHelper {
             */
             public final java.lang.Object emit(com.google.mlkit.genai.common.DownloadStatus r11, kotlin.coroutines.Continuation<? super kotlin.Unit> r12) {
                 /*
-                    Method dump skipped, instruction units count: 276
-                    To view this dump add '--comments-level debug' option
-                */
-                throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.C26141.AnonymousClass1.emit(com.google.mlkit.genai.common.DownloadStatus, kotlin.coroutines.Continuation):java.lang.Object");
-            }
+            public final java.lang.Object emit(com.google.mlkit.genai.common.DownloadStatus r11, kotlin.coroutines.Continuation<? super kotlin.Unit> r12) {
+            // Method dump skipped - placeholder implementation
+            return null;
+        }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             public /* bridge */ /* synthetic */ Object emit(Object value, Continuation $completion) {
@@ -326,10 +324,9 @@ public final class AICoreModelHelper implements LlmModelHelper {
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r9) {
             /*
-                Method dump skipped, instruction units count: 212
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.C26111.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r9) {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
     }
 
@@ -575,11 +572,10 @@ public final class AICoreModelHelper implements LlmModelHelper {
     */
     public final java.lang.Object executeRunInference(final com.google.ai.edge.gallery.runtime.aicore.AICoreModelInstance r17, java.lang.String r18, final float r19, final int r20, java.util.List<android.graphics.Bitmap> r21, java.lang.String r22, kotlin.jvm.functions.Function3<? super java.lang.String, ? super java.lang.Boolean, ? super java.lang.String, kotlin.Unit> r23, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r24, kotlin.coroutines.Continuation<? super kotlin.Unit> r25) {
         /*
-            Method dump skipped, instruction units count: 408
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.executeRunInference(com.google.ai.edge.gallery.runtime.aicore.AICoreModelInstance, java.lang.String, float, int, java.util.List, java.lang.String, kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function1, kotlin.coroutines.Continuation):java.lang.Object");
-    }
+    public final java.lang.Object executeRunInference(final com.google.ai.edge.gallery.runtime.aicore.AICoreModelInstance r17, java.lang.String r18, final float r19, final int r20, java.util.List<android.graphics.Bitmap> r21, java.lang.String r22, kotlin.jvm.functions.Function3<? super java.lang.String, ? super java.lang.Boolean, ? super java.lang.String, kotlin.Unit> r23, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r24, kotlin.coroutines.Continuation<? super kotlin.Unit> r25) {
+            // Method dump skipped - placeholder implementation
+            return false;
+        }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit executeRunInference$lambda$0(float $temperature, int $topK, GenerateContentRequest.Builder generateContentRequest) {

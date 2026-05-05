@@ -112,10 +112,9 @@ public final class BenchmarkViewModel extends ViewModel {
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r27) {
             /*
-                Method dump skipped, instruction units count: 886
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.benchmark.BenchmarkViewModel.C26421.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r27) {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
     }
 

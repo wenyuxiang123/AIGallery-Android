@@ -123,11 +123,10 @@ final class AgentChatScreenKt$AgentChatScreen$5$1$1 extends SuspendLambda implem
     */
     public final java.lang.Object invokeSuspend(java.lang.Object r26) {
         /*
-            Method dump skipped, instruction units count: 740
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.AgentChatScreenKt$AgentChatScreen$5$1$1.invokeSuspend(java.lang.Object):java.lang.Object");
-    }
+    public final java.lang.Object invokeSuspend(java.lang.Object r26) {
+            // Method dump skipped - placeholder implementation
+            return null;
+        }
 
     /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.AgentChatScreenKt$AgentChatScreen$5$1$1$1 */
     /* JADX INFO: compiled from: AgentChatScreen.kt */

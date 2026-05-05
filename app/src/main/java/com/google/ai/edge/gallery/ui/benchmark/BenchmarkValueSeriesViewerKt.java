@@ -347,11 +347,10 @@ public final class BenchmarkValueSeriesViewerKt {
                             */
                             public final java.lang.Object invokeSuspend(java.lang.Object r17) {
                                 /*
-                                    Method dump skipped, instruction units count: 216
-                                    To view this dump add '--comments-level debug' option
-                                */
-                                throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.benchmark.C2641xa5b08d9c.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object");
-                            }
+                            public final java.lang.Object invokeSuspend(java.lang.Object r17) {
+            // Method dump skipped - placeholder implementation
+            return null;
+        }
                         }
 
                         @Override // androidx.compose.p000ui.input.pointer.PointerInputEventHandler

@@ -60,11 +60,9 @@ public final class MessageBodyLoadingKt {
     */
     public static final void MessageBodyLoading(com.google.ai.edge.gallery.ui.common.chat.ChatMessageLoading r47, androidx.compose.runtime.Composer r48, final int r49, final int r50) {
         /*
-            Method dump skipped, instruction units count: 674
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.chat.MessageBodyLoadingKt.MessageBodyLoading(com.google.ai.edge.gallery.ui.common.chat.ChatMessageLoading, androidx.compose.runtime.Composer, int, int):void");
-    }
+    public static final void MessageBodyLoading(com.google.ai.edge.gallery.ui.common.chat.ChatMessageLoading r47, androidx.compose.runtime.Composer r48, final int r49, final int r50) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final float MessageBodyLoading$lambda$0(State<Float> state) {
         Object thisObj$iv = state.getValue();

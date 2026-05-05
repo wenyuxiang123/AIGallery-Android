@@ -105,11 +105,9 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
     */
     public static final void AddSkillFromFeatureListBottomSheet(final com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel r53, final kotlin.jvm.functions.Function0<kotlin.Unit> r54, final kotlin.jvm.functions.Function0<kotlin.Unit> r55, androidx.compose.runtime.Composer r56, int r57) {
         /*
-            Method dump skipped, instruction units count: 1375
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.AddSkillFromFeaturedListBottomSheetKt.AddSkillFromFeatureListBottomSheet(com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel, kotlin.jvm.functions.Function0, kotlin.jvm.functions.Function0, androidx.compose.runtime.Composer, int):void");
-    }
+    public static final void AddSkillFromFeatureListBottomSheet(final com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel r53, final kotlin.jvm.functions.Function0<kotlin.Unit> r54, final kotlin.jvm.functions.Function0<kotlin.Unit> r55, androidx.compose.runtime.Composer r56, int r57) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final String AddSkillFromFeatureListBottomSheet$lambda$1(MutableState<String> mutableState) {
         MutableState<String> $this$getValue$iv = mutableState;

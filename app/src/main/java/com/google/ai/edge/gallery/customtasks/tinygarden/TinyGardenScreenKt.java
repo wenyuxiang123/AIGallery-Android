@@ -125,11 +125,9 @@ public final class TinyGardenScreenKt {
     */
     public static final void m10536TinyGardenScreenaA_HZ9I(final com.google.ai.edge.gallery.data.Task r97, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r98, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r99, final float r100, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r101, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r102, final kotlinx.coroutines.flow.Flow<com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenCommand> r103, com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel r104, androidx.compose.runtime.Composer r105, final int r106, final int r107) {
         /*
-            Method dump skipped, instruction units count: 1867
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenScreenKt.m10536TinyGardenScreenaA_HZ9I(com.google.ai.edge.gallery.data.Task, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, java.util.List, float, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlinx.coroutines.flow.Flow, com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel, androidx.compose.runtime.Composer, int, int):void");
-    }
+    public static final void m10536TinyGardenScreenaA_HZ9I(final com.google.ai.edge.gallery.data.Task r97, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r98, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r99, final float r100, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r101, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r102, final kotlinx.coroutines.flow.Flow<com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenCommand> r103, com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel r104, androidx.compose.runtime.Composer r105, final int r106, final int r107) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final TinyGardenUiState TinyGardenScreen_aA_HZ9I$lambda$0(State<TinyGardenUiState> state) {
         Object thisObj$iv = state.getValue();
@@ -215,11 +213,9 @@ public final class TinyGardenScreenKt {
     */
     public static final void m10535MainUi_WMjBM(final com.google.ai.edge.gallery.data.Task r154, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r155, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r156, final float r157, final com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel r158, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r159, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r160, final kotlinx.coroutines.flow.Flow<com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenCommand> r161, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel r162, androidx.compose.runtime.Composer r163, final int r164, final int r165) {
         /*
-            Method dump skipped, instruction units count: 5106
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenScreenKt.m10535MainUi_WMjBM(com.google.ai.edge.gallery.data.Task, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, java.util.List, float, com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlinx.coroutines.flow.Flow, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel, androidx.compose.runtime.Composer, int, int):void");
-    }
+    public static final void m10535MainUi_WMjBM(final com.google.ai.edge.gallery.data.Task r154, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r155, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r156, final float r157, final com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel r158, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r159, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r160, final kotlinx.coroutines.flow.Flow<com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenCommand> r161, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel r162, androidx.compose.runtime.Composer r163, final int r164, final int r165) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final ModelManagerUiState MainUi___WMjBM$lambda$11(State<ModelManagerUiState> state) {
         Object thisObj$iv = state.getValue();

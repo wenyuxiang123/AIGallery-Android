@@ -62,11 +62,9 @@ public final class ExampleCustomTaskScreenKt {
     */
     public static final void ExampleCustomTaskScreen(final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r126, com.google.ai.edge.gallery.customtasks.examplecustomtask.ExampleCustomTaskViewModel r127, androidx.compose.runtime.Composer r128, final int r129, final int r130) {
         /*
-            Method dump skipped, instruction units count: 2758
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.examplecustomtask.ExampleCustomTaskScreenKt.ExampleCustomTaskScreen(com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, com.google.ai.edge.gallery.customtasks.examplecustomtask.ExampleCustomTaskViewModel, androidx.compose.runtime.Composer, int, int):void");
-    }
+    public static final void ExampleCustomTaskScreen(final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r126, com.google.ai.edge.gallery.customtasks.examplecustomtask.ExampleCustomTaskViewModel r127, androidx.compose.runtime.Composer r128, final int r129, final int r130) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final ModelManagerUiState ExampleCustomTaskScreen$lambda$0(State<ModelManagerUiState> state) {
         Object thisObj$iv = state.getValue();

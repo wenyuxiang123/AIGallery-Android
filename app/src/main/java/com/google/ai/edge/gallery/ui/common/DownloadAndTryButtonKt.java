@@ -112,11 +112,9 @@ public final class DownloadAndTryButtonKt {
     */
     public static final void m10870DownloadAndTryButtoncTzpE40(final com.google.ai.edge.gallery.data.Task r130, final com.google.ai.edge.gallery.data.Model r131, final boolean r132, final com.google.ai.edge.gallery.data.ModelDownloadStatusType r133, final float r134, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r135, final kotlin.jvm.functions.Function0<kotlin.Unit> r136, androidx.compose.p000ui.Modifier r137, com.google.ai.edge.gallery.ui.common.tos.TosViewModel r138, androidx.compose.p000ui.Modifier r139, boolean r140, boolean r141, long r142, androidx.compose.runtime.Composer r144, final int r145, final int r146, final int r147) {
         /*
-            Method dump skipped, instruction units count: 4365
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.DownloadAndTryButtonKt.m10870DownloadAndTryButtoncTzpE40(com.google.ai.edge.gallery.data.Task, com.google.ai.edge.gallery.data.Model, boolean, com.google.ai.edge.gallery.data.ModelDownloadStatusType, float, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, kotlin.jvm.functions.Function0, androidx.compose.ui.Modifier, com.google.ai.edge.gallery.ui.common.tos.TosViewModel, androidx.compose.ui.Modifier, boolean, boolean, long, androidx.compose.runtime.Composer, int, int, int):void");
-    }
+    public static final void m10870DownloadAndTryButtoncTzpE40(final com.google.ai.edge.gallery.data.Task r130, final com.google.ai.edge.gallery.data.Model r131, final boolean r132, final com.google.ai.edge.gallery.data.ModelDownloadStatusType r133, final float r134, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r135, final kotlin.jvm.functions.Function0<kotlin.Unit> r136, androidx.compose.p000ui.Modifier r137, com.google.ai.edge.gallery.ui.common.tos.TosViewModel r138, androidx.compose.p000ui.Modifier r139, boolean r140, boolean r141, long r142, androidx.compose.runtime.Composer r144, final int r145, final int r146, final int r147) {
+            // Method dump skipped - placeholder implementation
+        }
 
     private static final boolean DownloadAndTryButton_cTzpE40$lambda$1(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
@@ -282,11 +280,10 @@ public final class DownloadAndTryButtonKt {
     */
     public static final kotlin.Unit DownloadAndTryButton_cTzpE40$lambda$36(boolean r61, boolean r62, com.google.ai.edge.gallery.data.Model r63, com.google.ai.edge.gallery.data.Task r64, boolean r65, boolean r66, boolean r67, androidx.compose.foundation.layout.RowScope r68, androidx.compose.runtime.Composer r69, int r70) {
         /*
-            Method dump skipped, instruction units count: 752
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.DownloadAndTryButtonKt.DownloadAndTryButton_cTzpE40$lambda$36(boolean, boolean, com.google.ai.edge.gallery.data.Model, com.google.ai.edge.gallery.data.Task, boolean, boolean, boolean, androidx.compose.foundation.layout.RowScope, androidx.compose.runtime.Composer, int):kotlin.Unit");
-    }
+    public static final kotlin.Unit DownloadAndTryButton_cTzpE40$lambda$36(boolean r61, boolean r62, com.google.ai.edge.gallery.data.Model r63, com.google.ai.edge.gallery.data.Task r64, boolean r65, boolean r66, boolean r67, androidx.compose.foundation.layout.RowScope r68, androidx.compose.runtime.Composer r69, int r70) {
+            // Method dump skipped - placeholder implementation
+            return false;
+        }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final float DownloadAndTryButton_cTzpE40$lambda$44$lambda$39$lambda$38(Animatable $animatedProgress) {

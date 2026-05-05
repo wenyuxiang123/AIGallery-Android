@@ -206,11 +206,9 @@ public final class SkillManagerBottomSheetKt {
     */
     public static final void SkillManagerBottomSheet(com.google.ai.edge.gallery.customtasks.agentchat.AgentTools r77, final com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel r78, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r79, androidx.compose.runtime.Composer r80, final int r81) {
         /*
-            Method dump skipped, instruction units count: 3811
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerBottomSheetKt.SkillManagerBottomSheet(com.google.ai.edge.gallery.customtasks.agentchat.AgentTools, com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel, kotlin.jvm.functions.Function1, androidx.compose.runtime.Composer, int):void");
-    }
+    public static final void SkillManagerBottomSheet(com.google.ai.edge.gallery.customtasks.agentchat.AgentTools r77, final com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel r78, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r79, androidx.compose.runtime.Composer r80, final int r81) {
+            // Method dump skipped - placeholder implementation
+        }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SkillManagerUiState SkillManagerBottomSheet$lambda$0(State<SkillManagerUiState> state) {

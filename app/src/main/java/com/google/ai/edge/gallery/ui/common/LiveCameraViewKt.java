@@ -486,11 +486,10 @@ public final class LiveCameraViewKt {
     */
     public static final java.lang.Object startCamera(android.content.Context r18, androidx.lifecycle.LifecycleOwner r19, kotlin.jvm.functions.Function2<? super android.graphics.Bitmap, ? super androidx.camera.core.ImageProxy, kotlin.Unit> r20, int r21, int r22, androidx.camera.core.CameraSelector r23, kotlin.coroutines.Continuation<? super androidx.camera.lifecycle.ProcessCameraProvider> r24) {
         /*
-            Method dump skipped, instruction units count: 242
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.LiveCameraViewKt.startCamera(android.content.Context, androidx.lifecycle.LifecycleOwner, kotlin.jvm.functions.Function2, int, int, androidx.camera.core.CameraSelector, kotlin.coroutines.Continuation):java.lang.Object");
-    }
+    public static final java.lang.Object startCamera(android.content.Context r18, androidx.lifecycle.LifecycleOwner r19, kotlin.jvm.functions.Function2<? super android.graphics.Bitmap, ? super androidx.camera.core.ImageProxy, kotlin.Unit> r20, int r21, int r22, androidx.camera.core.CameraSelector r23, kotlin.coroutines.Continuation<? super androidx.camera.lifecycle.ProcessCameraProvider> r24) {
+            // Method dump skipped - placeholder implementation
+            return 0;
+        }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void startCamera$lambda$19$lambda$18(CameraSelector $cameraSelector, Function2 $onBitmap, ImageProxy imageProxy) {

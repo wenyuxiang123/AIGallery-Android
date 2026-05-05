@@ -14391,10 +14391,9 @@ public final class ModelImportDialogKt {
         */
         public final java.lang.Object invokeSuspend(java.lang.Object r22) throws java.lang.Exception {
             /*
-                Method dump skipped, instruction units count: 454
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.modelmanager.ModelImportDialogKt.C28051.invokeSuspend(java.lang.Object):java.lang.Object");
+        public final java.lang.Object invokeSuspend(java.lang.Object r22) throws java.lang.Exception {
+            // Method dump skipped - placeholder implementation
+            return null;
         }
     }
 

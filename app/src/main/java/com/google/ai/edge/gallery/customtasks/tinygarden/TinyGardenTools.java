@@ -51,11 +51,10 @@ public final class TinyGardenTools implements ToolSet {
     */
     public final java.util.Map<java.lang.String, java.lang.Object> plantSeed(@com.google.ai.edge.litertlm.ToolParam(description = "The name of the seed to plant.") java.lang.String r14, @com.google.ai.edge.litertlm.ToolParam(description = "The IDs of the plots to plant a seed in.") java.util.List<java.lang.Integer> r15) {
         /*
-            Method dump skipped, instruction units count: 226
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenTools.plantSeed(java.lang.String, java.util.List):java.util.Map");
-    }
+    public final java.util.Map<java.lang.String, java.lang.Object> plantSeed(@com.google.ai.edge.litertlm.ToolParam(description = "The name of the seed to plant.") java.lang.String r14, @com.google.ai.edge.litertlm.ToolParam(description = "The IDs of the plots to plant a seed in.") java.util.List<java.lang.Integer> r15) {
+            // Method dump skipped - placeholder implementation
+            return 0;
+        }
 
     @Tool(description = "Harvest one or more garden plots.")
     public final Map<String, Object> harvestPlots(@ToolParam(description = "The IDs of the plots to harvest.") List<Integer> plots) {

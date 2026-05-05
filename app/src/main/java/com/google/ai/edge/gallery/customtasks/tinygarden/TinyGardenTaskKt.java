@@ -29,9 +29,8 @@ public final class TinyGardenTaskKt {
     */
     public static final java.lang.String getTinyGardenSystemPrompt(java.lang.String r11, java.lang.String r12, java.lang.String r13) {
         /*
-            Method dump skipped, instruction units count: 202
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenTaskKt.getTinyGardenSystemPrompt(java.lang.String, java.lang.String, java.lang.String):java.lang.String");
-    }
+    public static final java.lang.String getTinyGardenSystemPrompt(java.lang.String r11, java.lang.String r12, java.lang.String r13) {
+            // Method dump skipped - placeholder implementation
+            return "";
+        }
 }

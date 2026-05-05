@@ -359,11 +359,10 @@ public final class SettingsDialogKt {
     */
     public static final kotlin.Unit SettingsDialog$lambda$63$lambda$62(final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r180, final androidx.compose.runtime.MutableState r181, java.time.format.DateTimeFormatter r182, androidx.compose.runtime.MutableState r183, final androidx.compose.p000ui.focus.FocusManager r184, androidx.compose.p000ui.focus.FocusRequester r185, androidx.compose.runtime.MutableState r186, androidx.compose.runtime.MutableState r187, final androidx.compose.runtime.MutableState r188, final kotlin.jvm.functions.Function0 r189, androidx.compose.foundation.layout.ColumnScope r190, androidx.compose.runtime.Composer r191, int r192) {
         /*
-            Method dump skipped, instruction units count: 5053
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.home.SettingsDialogKt.SettingsDialog$lambda$63$lambda$62(com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, androidx.compose.runtime.MutableState, java.time.format.DateTimeFormatter, androidx.compose.runtime.MutableState, androidx.compose.ui.focus.FocusManager, androidx.compose.ui.focus.FocusRequester, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, kotlin.jvm.functions.Function0, androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, int):kotlin.Unit");
-    }
+    public static final kotlin.Unit SettingsDialog$lambda$63$lambda$62(final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r180, final androidx.compose.runtime.MutableState r181, java.time.format.DateTimeFormatter r182, androidx.compose.runtime.MutableState r183, final androidx.compose.p000ui.focus.FocusManager r184, androidx.compose.p000ui.focus.FocusRequester r185, androidx.compose.runtime.MutableState r186, androidx.compose.runtime.MutableState r187, final androidx.compose.runtime.MutableState r188, final kotlin.jvm.functions.Function0 r189, androidx.compose.foundation.layout.ColumnScope r190, androidx.compose.runtime.Composer r191, int r192) {
+            // Method dump skipped - placeholder implementation
+            return 0;
+        }
 
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$22$lambda$21 */
