@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_splash_screen_animated_icon__58"
+        android:duration="1833"
+        android:startOffset="0"
+        android:valueFrom="0"
+        android:valueTo="200"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/_splash_screen_animated_icon__59"
+        android:duration="800"
+        android:startOffset="1833"
+        android:valueFrom="200"
+        android:valueTo="450"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+</set>

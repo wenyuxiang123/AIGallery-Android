@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_splash_screen_animated_icon__0">
+    <target
+        android:name="_R_G_L_3_G"
+        android:animation="@drawable/_splash_screen_animated_icon__5"/>
+    <target
+        android:name="_R_G_L_3_G_N_1_T_0"
+        android:animation="@drawable/_splash_screen_animated_icon__14"/>
+    <target
+        android:name="_R_G_L_2_G"
+        android:animation="@drawable/_splash_screen_animated_icon__17"/>
+    <target
+        android:name="_R_G_L_2_G"
+        android:animation="@drawable/_splash_screen_animated_icon__20"/>
+    <target
+        android:name="_R_G_L_2_G_N_1_T_0"
+        android:animation="@drawable/_splash_screen_animated_icon__29"/>
+    <target
+        android:name="_R_G_L_1_G"
+        android:animation="@drawable/_splash_screen_animated_icon__32"/>
+    <target
+        android:name="_R_G_L_1_G"
+        android:animation="@drawable/_splash_screen_animated_icon__35"/>
+    <target
+        android:name="_R_G_L_1_G_N_1_T_0"
+        android:animation="@drawable/_splash_screen_animated_icon__44"/>
+    <target
+        android:name="_R_G_L_0_G"
+        android:animation="@drawable/_splash_screen_animated_icon__47"/>
+    <target
+        android:name="_R_G_L_0_G"
+        android:animation="@drawable/_splash_screen_animated_icon__50"/>
+    <target
+        android:name="_R_G_L_0_G_N_1_T_0"
+        android:animation="@drawable/_splash_screen_animated_icon__57"/>
+    <target
+        android:name="time_group"
+        android:animation="@drawable/_splash_screen_animated_icon__60"/>
+</animated-vector>

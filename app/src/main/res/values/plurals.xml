@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="delete_selected_skills_content">
+        <item quantity="one">Are you sure you want to delete %d skill?</item>
+        <item quantity="other">Are you sure you want to delete %d skills?</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMY_1">
+    </plurals>
+    <plurals name="model_list_number_of_models_available">
+        <item quantity="one">%d model available</item>
+        <item quantity="other">%d models available</item>
+    </plurals>
+    <plurals name="parameter">
+        <item quantity="one">Parameter</item>
+        <item quantity="other">Parameters</item>
+    </plurals>
+    <plurals name="runs">
+        <item quantity="one">%d run</item>
+        <item quantity="other">%d runs</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMY_5">
+    </plurals>
+    <plurals name="selected_custom_skills_count">
+        <item quantity="one">%d selected</item>
+        <item quantity="other">%d selected</item>
+    </plurals>
+    <plurals name="skills_count">
+        <item quantity="one">%d skill</item>
+        <item quantity="other">%d skills</item>
+    </plurals>
+</resources>

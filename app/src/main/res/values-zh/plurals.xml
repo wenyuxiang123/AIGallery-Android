@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="delete_selected_skills_content">
+        <item quantity="one">确定要删除选中的 %d 个技能吗？</item>
+        <item quantity="other">确定要删除选中的 %d 个技能吗？</item>
+    </plurals>
+    <plurals name="model_list_number_of_models_available">
+        <item quantity="one">%d 个可用模型</item>
+        <item quantity="other">%d 个可用模型</item>
+    </plurals>
+    <plurals name="parameter">
+        <item quantity="one">参数</item>
+        <item quantity="other">参数</item>
+    </plurals>
+    <plurals name="runs">
+        <item quantity="one">%d 次运行</item>
+        <item quantity="other">%d 次运行</item>
+    </plurals>
+    <plurals name="selected_custom_skills_count">
+        <item quantity="one">已选择 %d 个</item>
+        <item quantity="other">已选择 %d 个</item>
+    </plurals>
+    <plurals name="skills_count">
+        <item quantity="one">%d 个技能</item>
+        <item quantity="other">%d 个技能</item>
+    </plurals>
+</resources>
