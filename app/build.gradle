@@ -82,6 +82,9 @@ dependencies {
     // LiteRT core library for model inference
     implementation 'com.google.ai.edge.litert:litert:2.1.4'
 
+    // Protobuf (required for proto/ generated message classes)
+    implementation 'com.google.protobuf:protobuf-javalite:3.25.1'
+
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
 
