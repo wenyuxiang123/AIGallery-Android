@@ -17,6 +17,12 @@ android {
         versionName "1.0.12"
     }
 
+    packaging {
+        jniLibs {
+            pickFirsts += ["**/libLiteRt.so"]
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
