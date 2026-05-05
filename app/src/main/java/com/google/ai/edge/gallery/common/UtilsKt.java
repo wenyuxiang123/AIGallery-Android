@@ -17,7 +17,6 @@ import androidx.compose.p000ui.focus.FocusEventModifierKt;
 import androidx.compose.p000ui.focus.FocusManager;
 import androidx.compose.p000ui.focus.FocusState;
 import androidx.compose.p000ui.platform.CompositionLocalsKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.Density;
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.ComposerKt;
@@ -62,9 +61,9 @@ import kotlin.text.Charsets;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: Utils.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000j\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0012\n\u0002\b\u0002\n\u0002\u0010\u0017\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\"\n\u0002\b\u0003\u001a\u000e\u0010\u0003\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u0001\u001a\u000e\u0010\u0005\u001a\u00020\u00012\u0006\u0010\u0006\u001a\u00020\u0001\u001a!\u0010\u0007\u001a\n\u0012\u0004\u0012\u0002H\t\u0018\u00010\b\"\u0006\b\u0000\u0010\t\u0018\u00012\u0006\u0010\n\u001a\u00020\u0001H\u0086\b\u001a \u0010\u000b\u001a\u0004\u0018\u0001H\t\"\u0006\b\u0000\u0010\t\u0018\u00012\u0006\u0010\u0006\u001a\u00020\u0001H\u0086\b¢\u0006\u0002\u0010\f\u001a\"\u0010\r\u001a\u0004\u0018\u00010\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\b\b\u0002\u0010\u0013\u001a\u00020\u0014\u001a\u0010\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0016H\u0002\u001a(\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u001b\u001a\u00020\u00142\u0006\u0010\u001c\u001a\u00020\u00142\u0006\u0010\u001d\u001a\u00020\u0014H\u0002\u001a\u0016\u0010\u001e\u001a\u00020\u00142\u0006\u0010\u001f\u001a\u00020\u00162\u0006\u0010 \u001a\u00020\u0014\u001a(\u0010!\u001a\u0004\u0018\u00010\"2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010#\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u00142\u0006\u0010%\u001a\u00020\u0014\u001a\u0016\u0010&\u001a\u00020\"2\u0006\u0010'\u001a\u00020\"2\u0006\u0010(\u001a\u00020\u0014\u001a \u0010)\u001a\u00020\u00142\u0006\u0010*\u001a\u00020+2\u0006\u0010$\u001a\u00020\u00142\u0006\u0010%\u001a\u00020\u0014H\u0002\u001a\u0010\u0010,\u001a\u0004\u0018\u00010-2\u0006\u0010.\u001a\u00020/\u001a\u0006\u00100\u001a\u000201\u001a\n\u00102\u001a\u000203*\u000203\u001a\u0016\u00104\u001a\u0002012\u000e\u00105\u001a\n\u0012\u0004\u0012\u00020\u0001\u0018\u000106\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000¨\u00067²\u0006\n\u00108\u001a\u000201X\u008a\u008e\u0002²\u0006\n\u00109\u001a\u000201X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "LOCAL_URL_BASE", "cleanUpMediapipeTaskErrorMessage", "message", "processLlmResponse", "response", "getJsonResponse", "Lcom/google/ai/edge/gallery/common/JsonObjAndTextContent;", ExifInterface.GPS_DIRECTION_TRUE, ImagesContract.URL, "parseJson", "(Ljava/lang/String;)Ljava/lang/Object;", "convertWavToMonoWithMaxSeconds", "Lcom/google/ai/edge/gallery/common/AudioClip;", "context", "Landroid/content/Context;", "stereoUri", "Landroid/net/Uri;", "maxSeconds", "", "convert8BitTo16Bit", "", "eightBitData", "resample", "", "inputSamples", "originalSampleRate", "targetSampleRate", "channels", "calculatePeakAmplitude", "buffer", "bytesRead", "decodeSampledBitmapFromUri", "Landroid/graphics/Bitmap;", "uri", "reqWidth", "reqHeight", "rotateBitmap", "bitmap", "orientation", "calculateInSampleSize", "options", "Landroid/graphics/BitmapFactory$Options;", "readFileToByteBuffer", "Ljava/nio/ByteBuffer;", "file", "Ljava/io/File;", "isPixel10", "", "clearFocusOnKeyboardDismiss", "Landroidx/compose/ui/Modifier;", "isAICoreSupported", "allowedDeviceModels", "", "app_debug", "isFocused", "keyboardAppearedSinceLastFocused"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u00020\u00142\u0006\u0010*\u001a\u00020+2\u0006\u0010$\u001a\u00020\u00142\u0006\u0010%\u001a\u00020\u0014H\u0002\u001a\u0010\u0010,\u001a\u0004\u0018\u00010-2\u0006\u0010.\u001a\u00020/\u001a\u0006\u00100\u001a\u000201\u001a\n\u00102\u001a\u000203*\u000203\u001a\u0016\u00104\u001a\u0002012\u000e\u00105\u001a\n\u0012\u0004\u0012\u00020\u0001\u0018\u000106\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0086T¢\u0006\u0002\n\u0000¨\u00067²\u0006\n\u00108\u001a\u000201X\u008a\u008e\u0002²\u0006\n\u00109\u001a\u000201X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "LOCAL_URL_BASE", "cleanUpMediapipeTaskErrorMessage", "message", "processLlmResponse", "response", "getJsonResponse", "Lcom/google/ai/edge/gallery/common/JsonObjAndTextContent;", ExifInterface.GPS_DIRECTION_TRUE, ImagesContract.URL, "parseJson", "(Ljava/lang/String;)Ljava/lang/Object;", "convertWavToMonoWithMaxSeconds", "Lcom/google/ai/edge/gallery/common/AudioClip;", "context", "Landroid/content/Context;", "stereoUri", "Landroid/net/Uri;", "maxSeconds", "", "convert8BitTo16Bit", "", "eightBitData", "resample", "", "inputSamples", "originalSampleRate", "targetSampleRate", "channels", "calculatePeakAmplitude", "buffer", "bytesRead", "decodeSampledBitmapFromUri", "Landroid/graphics/Bitmap;", "uri", "reqWidth", "reqHeight", "rotateBitmap", "bitmap", "orientation", "calculateInSampleSize", "options", "Landroid/graphics/BitmapFactory$Options;", "readFileToByteBuffer", "Ljava/nio/ByteBuffer;", "file", "Ljava/io/File;", "isPixel10", "", "clearFocusOnKeyboardDismiss", "Landroidx/compose/ui/Modifier;", "isAICoreSupported", "allowedDeviceModels", "", "app_debug", "isFocused", "keyboardAppearedSinceLastFocused"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class UtilsKt {
     public static final String LOCAL_URL_BASE = "https://appassets.androidplatform.net";
     private static final String TAG = "AGUtils";
@@ -465,7 +464,7 @@ public final class UtilsKt {
         }, 1, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Modifier clearFocusOnKeyboardDismiss$lambda$13(Modifier composed, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(composed, "$this$composed");
         $composer.startReplaceGroup(-488122430);
@@ -550,18 +549,18 @@ public final class UtilsKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean clearFocusOnKeyboardDismiss$lambda$13$lambda$8(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void clearFocusOnKeyboardDismiss$lambda$13$lambda$9(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit clearFocusOnKeyboardDismiss$lambda$13$lambda$12$lambda$11(MutableState $isFocused$delegate, MutableState $keyboardAppearedSinceLastFocused$delegate, FocusState it) {
         Intrinsics.checkNotNullParameter(it, "it");
         if (clearFocusOnKeyboardDismiss$lambda$13$lambda$5($isFocused$delegate) != it.isFocused()) {

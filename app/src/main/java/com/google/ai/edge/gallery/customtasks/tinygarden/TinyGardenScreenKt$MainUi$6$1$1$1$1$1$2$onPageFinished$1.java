@@ -2,7 +2,6 @@ package com.google.ai.edge.gallery.customtasks.tinygarden;
 
 import android.util.Log;
 import android.webkit.WebView;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.MutableState;
 import kotlin.Metadata;
 import kotlin.Result;
@@ -16,9 +15,9 @@ import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.DelayKt;
 
-/* JADX INFO: compiled from: TinyGardenScreen.kt */
-/* JADX INFO: loaded from: classes8.dex */
-@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenScreenKt$MainUi$6$1$1$1$1$1$2$onPageFinished$1", m932f = "TinyGardenScreen.kt", m933i = {}, m934l = {540}, m935m = "invokeSuspend", m936n = {}, m938s = {})
 final class TinyGardenScreenKt$MainUi$6$1$1$1$1$1$2$onPageFinished$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ MutableState<WebView> $webViewRef$delegate;

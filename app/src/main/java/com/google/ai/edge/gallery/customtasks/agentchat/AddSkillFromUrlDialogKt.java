@@ -40,7 +40,6 @@ import androidx.compose.p000ui.text.TextRangeKt;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.input.TextFieldValue;
 import androidx.compose.p000ui.text.input.VisualTransformation;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.window.AndroidDialog_androidKt;
 import androidx.compose.runtime.Applier;
@@ -74,13 +73,13 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: AddSkillFromUrlDialog.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u00004\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a1\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00040\b2\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00040\bH\u0007¢\u0006\u0002\u0010\n\u001a\u000e\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u0002\"\u0014\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000e²\u0006\n\u0010\u000f\u001a\u00020\u0010X\u008a\u0084\u0002²\u0006\n\u0010\u0011\u001a\u00020\u0012X\u008a\u008e\u0002²\u0006\n\u0010\u0013\u001a\u00020\fX\u008a\u008e\u0002"}, m922d2 = {"APPROVED_SKILL_HOSTS", "", "", "AddSkillFromUrlDialog", "", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "onDismissRequest", "Lkotlin/Function0;", "onSuccess", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "isHostApproved", "", ImagesContract.URL, "app_debug", "uiState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;", "textFieldValue", "Landroidx/compose/ui/text/input/TextFieldValue;", "showDisclaimerDialog"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "isHostApproved", "", ImagesContract.URL, "app_debug", "uiState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;", "textFieldValue", "Landroidx/compose/ui/text/input/TextFieldValue;", "showDisclaimerDialog"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AddSkillFromUrlDialogKt {
     private static final List<String> APPROVED_SKILL_HOSTS = CollectionsKt.listOf("google-ai-edge.github.io");
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromUrlDialog$lambda$35(SkillManagerViewModel skillManagerViewModel, Function0 function0, Function0 function02, int i, Composer composer, int i2) {
         AddSkillFromUrlDialog(skillManagerViewModel, function0, function02, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -256,7 +255,7 @@ public final class AddSkillFromUrlDialogKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromUrlDialog$lambda$11$lambda$10(SkillManagerViewModel $skillManagerViewModel, final Function0 $onDismissRequest, final Function0 $onSuccess, final MutableState $textFieldValue$delegate, String url) {
         Intrinsics.checkNotNullParameter(url, "url");
         $skillManagerViewModel.validateAndAddSkillFromUrl(url, new Function0() { // from class: com.google.ai.edge.gallery.customtasks.agentchat.AddSkillFromUrlDialogKt$$ExternalSyntheticLambda12
@@ -273,21 +272,21 @@ public final class AddSkillFromUrlDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromUrlDialog$lambda$11$lambda$10$lambda$8(Function0 $onDismissRequest, Function0 $onSuccess) {
         $onDismissRequest.invoke();
         $onSuccess.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromUrlDialog$lambda$11$lambda$10$lambda$9(MutableState $textFieldValue$delegate, String error) {
         Intrinsics.checkNotNullParameter(error, "error");
         $textFieldValue$delegate.setValue(TextFieldValue.m9441copy3r_uNRQ$default(AddSkillFromUrlDialog$lambda$3($textFieldValue$delegate), (AnnotatedString) null, TextRangeKt.TextRange(0, AddSkillFromUrlDialog$lambda$3($textFieldValue$delegate).getText().length()), (TextRange) null, 5, (Object) null));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromUrlDialog$lambda$13$lambda$12(boolean $validating, Function0 $onDismissRequest) {
         if (!$validating) {
             $onDismissRequest.invoke();
@@ -295,7 +294,7 @@ public final class AddSkillFromUrlDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromUrlDialog$lambda$30(MutableInteractionSource $interactionSource, final boolean $validating, final SkillManagerViewModel $skillManagerViewModel, final String $validationError, final MutableState $textFieldValue$delegate, final Function0 $onDismissRequest, final Function1 $validateAndAddSkill, final MutableState $showDisclaimerDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C90@3689L7,96@3884L47,100@3980L3590,91@3701L3869:AddSkillFromUrlDialog.kt#41d64j");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -337,13 +336,13 @@ public final class AddSkillFromUrlDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromUrlDialog$lambda$30$lambda$15$lambda$14(FocusManager $focusManager) {
         FocusManager.clearFocus$default($focusManager, false, 1, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromUrlDialog$lambda$30$lambda$29(boolean $validating, final SkillManagerViewModel $skillManagerViewModel, String $validationError, final MutableState $textFieldValue$delegate, final Function0 $onDismissRequest, final Function1 $validateAndAddSkill, final MutableState $showDisclaimerDialog$delegate, ColumnScope Card, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -605,8 +604,8 @@ public final class AddSkillFromUrlDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromUrlDialog$lambda$30$lambda$29$lambda$28$lambda$21$lambda$17$lambda$16 */
+    
+    
     public static final Unit m424xe388b027(SkillManagerViewModel $skillManagerViewModel, MutableState $textFieldValue$delegate, TextFieldValue newValue) {
         Intrinsics.checkNotNullParameter(newValue, "newValue");
         String oldText = AddSkillFromUrlDialog$lambda$3($textFieldValue$delegate).getText();
@@ -617,8 +616,8 @@ public final class AddSkillFromUrlDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromUrlDialog$lambda$30$lambda$29$lambda$28$lambda$21$lambda$19 */
+    
+    
     public static final Unit m425x2dacc6eb(MutableState $textFieldValue$delegate, Function2 innerTextField, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(innerTextField, "innerTextField");
         ComposerKt.sourceInformation($composer, "C136@5459L39,130@5180L965:AddSkillFromUrlDialog.kt#41d64j");
@@ -652,15 +651,15 @@ public final class AddSkillFromUrlDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromUrlDialog$lambda$30$lambda$29$lambda$28$lambda$27$lambda$24$lambda$23 */
+    
+    
     public static final Unit m426x7821fe65(Function0 $onDismissRequest) {
         $onDismissRequest.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromUrlDialog$lambda$30$lambda$29$lambda$28$lambda$27$lambda$26$lambda$25 */
+    
+    
     public static final Unit m427xa1eb63e9(Function1 $validateAndAddSkill, MutableState $textFieldValue$delegate, MutableState $showDisclaimerDialog$delegate) {
         String url = AddSkillFromUrlDialog$lambda$3($textFieldValue$delegate).getText();
         if (isHostApproved(url)) {
@@ -671,13 +670,13 @@ public final class AddSkillFromUrlDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromUrlDialog$lambda$32$lambda$31(MutableState $showDisclaimerDialog$delegate) {
         AddSkillFromUrlDialog$lambda$7($showDisclaimerDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromUrlDialog$lambda$34$lambda$33(Function1 $validateAndAddSkill, MutableState $showDisclaimerDialog$delegate, MutableState $textFieldValue$delegate) {
         AddSkillFromUrlDialog$lambda$7($showDisclaimerDialog$delegate, false);
         $validateAndAddSkill.invoke(AddSkillFromUrlDialog$lambda$3($textFieldValue$delegate).getText());

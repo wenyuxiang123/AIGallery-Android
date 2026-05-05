@@ -5,7 +5,7 @@ import com.google.ai.edge.gallery.data.DataStoreRepository;
 import dagger.internal.Factory;
 import dagger.internal.Provider;
 
-/* JADX INFO: loaded from: classes14.dex */
+
 public final class SkillManagerViewModel_Factory implements Factory<SkillManagerViewModel> {
     private final Provider<Context> contextProvider;
     private final Provider<DataStoreRepository> dataStoreRepositoryProvider;

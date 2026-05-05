@@ -2,7 +2,6 @@ package com.google.ai.edge.gallery.customtasks.tinygarden;
 
 import android.content.Context;
 import android.util.Log;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelKt;
 import com.google.ai.edge.gallery.C2421R;
@@ -49,9 +48,9 @@ import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
 
-/* JADX INFO: compiled from: TinyGardenViewModel.kt */
-/* JADX INFO: loaded from: classes8.dex */
-@Metadata(m921d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B\u001b\b\u0007\u0012\b\b\u0001\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J>\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0012\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\u00170\u001d2\u0012\u0010\u001e\u001a\u000e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\u00170\u001dJ\u000e\u0010\u001f\u001a\u00020\u00172\u0006\u0010 \u001a\u00020!J\u0006\u0010\"\u001a\u00020\u0017J\u000e\u0010#\u001a\u00020\u00172\u0006\u0010$\u001a\u00020\u0014J\u000e\u0010%\u001a\u00020\u00172\u0006\u0010&\u001a\u00020\u0014J\u0006\u0010'\u001a\u00020\u0017J\u0006\u0010(\u001a\u00020\u0017JG\u0010)\u001a\u00020\u00172\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0018\u001a\u00020\u00192\f\u0010*\u001a\b\u0012\u0004\u0012\u00020,0+2!\u0010\u001e\u001a\u001d\u0012\u0013\u0012\u00110\u001b¢\u0006\f\b-\u0012\b\b.\u0012\u0004\b\b(/\u0012\u0004\u0012\u00020\u00170\u001dJ4\u00100\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00192\f\u0010*\u001a\b\u0012\u0004\u0012\u00020,0+2\u0006\u00101\u001a\u00020\u001b2\u0006\u00102\u001a\u00020\u001b2\u0006\u00103\u001a\u00020\u001bR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000bX\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0017\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\f0\u0010¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0014\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00140\u0010X\u0082\u0004¢\u0006\u0002\n\u0000¨\u00064"}, m922d2 = {"Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenViewModel;", "Landroidx/lifecycle/ViewModel;", "context", "Landroid/content/Context;", "dataStoreRepository", "Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "<init>", "(Landroid/content/Context;Lcom/google/ai/edge/gallery/data/DataStoreRepository;)V", "getDataStoreRepository", "()Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "_uiState", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenUiState;", "get_uiState", "()Lkotlinx/coroutines/flow/MutableStateFlow;", "uiState", "Lkotlinx/coroutines/flow/StateFlow;", "getUiState", "()Lkotlinx/coroutines/flow/StateFlow;", "_isResettingConversation", "", "isResettingConversation", "getCommand", "", "model", "Lcom/google/ai/edge/gallery/data/Model;", "instructionText", "", "onDone", "Lkotlin/Function1;", "onError", "addMessage", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessage;", "clearMessages", "setProcessing", "processing", "setResettingEngine", "resetting", "incrementNumTurns", "resetNumTurns", "resetEngine", "tools", "", "Lcom/google/ai/edge/litertlm/ToolProvider;", "Lkotlin/ParameterName;", "name", "error", "resetConversation", "prevSeed", "prevPlots", "prevAction", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u00020\u00172\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0018\u001a\u00020\u00192\f\u0010*\u001a\b\u0012\u0004\u0012\u00020,0+2!\u0010\u001e\u001a\u001d\u0012\u0013\u0012\u00110\u001b¢\u0006\f\b-\u0012\b\b.\u0012\u0004\b\b(/\u0012\u0004\u0012\u00020\u00170\u001dJ4\u00100\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00192\f\u0010*\u001a\b\u0012\u0004\u0012\u00020,0+2\u0006\u00101\u001a\u00020\u001b2\u0006\u00102\u001a\u00020\u001b2\u0006\u00103\u001a\u00020\u001bR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000bX\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0017\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\f0\u0010¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0014\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00140\u0010X\u0082\u0004¢\u0006\u0002\n\u0000¨\u00064"}, m922d2 = {"Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenViewModel;", "Landroidx/lifecycle/ViewModel;", "context", "Landroid/content/Context;", "dataStoreRepository", "Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "<init>", "(Landroid/content/Context;Lcom/google/ai/edge/gallery/data/DataStoreRepository;)V", "getDataStoreRepository", "()Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "_uiState", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenUiState;", "get_uiState", "()Lkotlinx/coroutines/flow/MutableStateFlow;", "uiState", "Lkotlinx/coroutines/flow/StateFlow;", "getUiState", "()Lkotlinx/coroutines/flow/StateFlow;", "_isResettingConversation", "", "isResettingConversation", "getCommand", "", "model", "Lcom/google/ai/edge/gallery/data/Model;", "instructionText", "", "onDone", "Lkotlin/Function1;", "onError", "addMessage", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessage;", "clearMessages", "setProcessing", "processing", "setResettingEngine", "resetting", "incrementNumTurns", "resetNumTurns", "resetEngine", "tools", "", "Lcom/google/ai/edge/litertlm/ToolProvider;", "Lkotlin/ParameterName;", "name", "error", "resetConversation", "prevSeed", "prevPlots", "prevAction", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class TinyGardenViewModel extends ViewModel {
     public static final int $stable = 8;
     private final MutableStateFlow<Boolean> _isResettingConversation;
@@ -100,9 +99,9 @@ public final class TinyGardenViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getDefault(), null, new C25521(instructionText, this, model, onDone, onError, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel$getCommand$1 */
-    /* JADX INFO: compiled from: TinyGardenViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel$getCommand$1", m932f = "TinyGardenViewModel.kt", m933i = {}, m934l = {105}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25521 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ String $instructionText;
@@ -186,9 +185,9 @@ public final class TinyGardenViewModel extends ViewModel {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel$getCommand$1$1, reason: invalid class name */
-        /* JADX INFO: compiled from: TinyGardenViewModel.kt */
-        @Metadata(m921d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0001H\n"}, m922d2 = {"<anonymous>", "", "it"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+        
+        
+        
         @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel$getCommand$1$1", m932f = "TinyGardenViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
         static final class AnonymousClass1 extends SuspendLambda implements Function2<Boolean, Continuation<? super Boolean>, Object> {
             /* synthetic */ boolean Z$0;
@@ -297,9 +296,9 @@ public final class TinyGardenViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getDefault(), null, new C25541(model, context, tools, onError, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel$resetEngine$1 */
-    /* JADX INFO: compiled from: TinyGardenViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel$resetEngine$1", m932f = "TinyGardenViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25541 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Context $context;
@@ -354,7 +353,7 @@ public final class TinyGardenViewModel extends ViewModel {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public static final Unit invokeSuspend$lambda$1(final Context $context, Model $model, List $tools, final TinyGardenViewModel this$0, final Function1 $onError) {
             LlmModelHelper.initialize$default(LlmChatModelHelper.INSTANCE, $context, $model, false, false, new Function1() { // from class: com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel$resetEngine$1$$ExternalSyntheticLambda1
                 @Override // kotlin.jvm.functions.Function1
@@ -365,7 +364,7 @@ public final class TinyGardenViewModel extends ViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public static final Unit invokeSuspend$lambda$1$lambda$0(TinyGardenViewModel this$0, Function1 $onError, Context $context, String error) {
             this$0.setResettingEngine(false);
             if (error.length() > 0) {
@@ -388,9 +387,9 @@ public final class TinyGardenViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getDefault(), null, new C25531(prevSeed, prevPlots, prevAction, model, tools, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel$resetConversation$1 */
-    /* JADX INFO: compiled from: TinyGardenViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel$resetConversation$1", m932f = "TinyGardenViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25531 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Model $model;

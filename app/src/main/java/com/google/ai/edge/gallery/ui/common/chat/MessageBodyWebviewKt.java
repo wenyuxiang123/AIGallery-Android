@@ -29,7 +29,6 @@ import androidx.compose.p000ui.graphics.Shape;
 import androidx.compose.p000ui.graphics.SolidColor;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -55,13 +54,13 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: MessageBodyWebview.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000 \n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\u001a\u001f\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u0007H\u0007¢\u0006\u0002\u0010\b\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\t²\u0006\n\u0010\n\u001a\u00020\u000bX\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "MessageBodyWebview", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageWebView;", "modifier", "Landroidx/compose/ui/Modifier;", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageWebView;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug", "showBottomSheet", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "showBottomSheet", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageBodyWebviewKt {
     private static final String TAG = "AGMessageBodyWebview";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyWebview$lambda$12(ChatMessageWebView chatMessageWebView, Modifier modifier, int i, int i2, Composer composer, int i3) {
         MessageBodyWebview(chatMessageWebView, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -228,24 +227,24 @@ public final class MessageBodyWebviewKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void MessageBodyWebview$lambda$2(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyWebview$lambda$5$lambda$4$lambda$3(MutableState $showBottomSheet$delegate) {
         MessageBodyWebview$lambda$2($showBottomSheet$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyWebview$lambda$7$lambda$6(MutableState $showBottomSheet$delegate) {
         MessageBodyWebview$lambda$2($showBottomSheet$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyWebview$lambda$11(ChatMessageWebView $message, final CoroutineScope $scope, final SheetState $sheetState, final MutableState $showBottomSheet$delegate, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Intrinsics.checkNotNullParameter(ModalBottomSheet, "$this$ModalBottomSheet");
@@ -324,7 +323,7 @@ public final class MessageBodyWebviewKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyWebview$lambda$11$lambda$10$lambda$9$lambda$8(CoroutineScope $scope, SheetState $sheetState, MutableState $showBottomSheet$delegate) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new MessageBodyWebviewKt$MessageBodyWebview$3$1$1$1$1($sheetState, $showBottomSheet$delegate, null), 3, null);
         return Unit.INSTANCE;

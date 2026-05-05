@@ -26,7 +26,6 @@ import androidx.compose.p000ui.graphics.drawscope.DrawScope;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.IntOffset;
 import androidx.compose.p000ui.unit.IntSize;
 import androidx.compose.runtime.Applier;
@@ -59,14 +58,14 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: LiveCameraView.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000L\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\u001aY\u0010\u0000\u001a\u00020\u00012\u0018\u0010\u0002\u001a\u0014\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00010\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\t2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\u000eH\u0007¢\u0006\u0002\u0010\u000f\u001aP\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0018\u0010\u0002\u001a\u0014\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00010\u00032\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\u000eH\u0082@¢\u0006\u0002\u0010\u0016¨\u0006\u0017²\u0006\f\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u008a\u008e\u0002²\u0006\f\u0010\u001a\u001a\u0004\u0018\u00010\u0011X\u008a\u008e\u0002"}, m922d2 = {"LiveCameraView", "", "onBitmap", "Lkotlin/Function2;", "Landroid/graphics/Bitmap;", "Landroidx/camera/core/ImageProxy;", "modifier", "Landroidx/compose/ui/Modifier;", "preferredSize", "", "outputImageFormat", "renderPreview", "", "cameraSelector", "Landroidx/camera/core/CameraSelector;", "(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;IIZLandroidx/camera/core/CameraSelector;Landroidx/compose/runtime/Composer;II)V", "startCamera", "Landroidx/camera/lifecycle/ProcessCameraProvider;", "context", "Landroid/content/Context;", "lifecycleOwner", "Landroidx/lifecycle/LifecycleOwner;", "(Landroid/content/Context;Landroidx/lifecycle/LifecycleOwner;Lkotlin/jvm/functions/Function2;IILandroidx/camera/core/CameraSelector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "app_debug", "imageBitmap", "Landroidx/compose/ui/graphics/ImageBitmap;", "cameraProvider"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "startCamera", "Landroidx/camera/lifecycle/ProcessCameraProvider;", "context", "Landroid/content/Context;", "lifecycleOwner", "Landroidx/lifecycle/LifecycleOwner;", "(Landroid/content/Context;Landroidx/lifecycle/LifecycleOwner;Lkotlin/jvm/functions/Function2;IILandroidx/camera/core/CameraSelector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "app_debug", "imageBitmap", "Landroidx/compose/ui/graphics/ImageBitmap;", "cameraProvider"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class LiveCameraViewKt {
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.LiveCameraViewKt$startCamera$1 */
-    /* JADX INFO: compiled from: LiveCameraView.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.LiveCameraViewKt", m932f = "LiveCameraView.kt", m933i = {0, 0, 0, 0, 0, 0}, m934l = {177}, m935m = "startCamera", m936n = {"context", "lifecycleOwner", "onBitmap", "cameraSelector", "preferredSize", "outputImageFormat"}, m938s = {"L$0", "L$1", "L$2", "L$3", "I$0", "I$1"})
     static final class C26731 extends ContinuationImpl {
         int I$0;
@@ -90,7 +89,7 @@ public final class LiveCameraViewKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LiveCameraView$lambda$17(Function2 function2, Modifier modifier, int i, int i2, boolean z, CameraSelector cameraSelector, int i3, int i4, Composer composer, int i5) {
         LiveCameraView(function2, modifier, i, i2, z, cameraSelector, composer, RecomposeScopeImplKt.updateChangedFlags(i3 | 1), i4);
         return Unit.INSTANCE;
@@ -399,13 +398,13 @@ public final class LiveCameraViewKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ProcessCameraProvider LiveCameraView$lambda$4(MutableState<ProcessCameraProvider> mutableState) {
         MutableState<ProcessCameraProvider> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LiveCameraView$lambda$7$lambda$6(Function2 $onBitmap, MutableState $imageBitmap$delegate, Bitmap bitmap, ImageProxy imageProxy) {
         Intrinsics.checkNotNullParameter(bitmap, "bitmap");
         Intrinsics.checkNotNullParameter(imageProxy, "imageProxy");
@@ -414,7 +413,7 @@ public final class LiveCameraViewKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LiveCameraView$lambda$9$lambda$8(CoroutineScope $scope, Context $context, LifecycleOwner $lifecycleOwner, Function2 $onBitmapFn, int $preferredSize, int $outputImageFormat, CameraSelector $cameraSelector, MutableState $cameraProvider$delegate, boolean permissionGranted) {
         if (permissionGranted) {
             BuildersKt__Builders_commonKt.launch$default($scope, null, null, new C2672xfaa47590($context, $lifecycleOwner, $onBitmapFn, $preferredSize, $outputImageFormat, $cameraSelector, $cameraProvider$delegate, null), 3, null);
@@ -422,7 +421,7 @@ public final class LiveCameraViewKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final DisposableEffectResult LiveCameraView$lambda$13$lambda$12(final MutableState $cameraProvider$delegate, DisposableEffectScope DisposableEffect) {
         Intrinsics.checkNotNullParameter(DisposableEffect, "$this$DisposableEffect");
         return new DisposableEffectResult() { // from class: com.google.ai.edge.gallery.ui.common.LiveCameraViewKt$LiveCameraView$lambda$13$lambda$12$$inlined$onDispose$1
@@ -436,7 +435,7 @@ public final class LiveCameraViewKt {
         };
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LiveCameraView$lambda$16$lambda$15$lambda$14(ImageBitmap $ib, DrawScope Canvas) {
         float f;
         Intrinsics.checkNotNullParameter(Canvas, "$this$Canvas");
@@ -478,7 +477,7 @@ public final class LiveCameraViewKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:7:0x0016  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -492,7 +491,7 @@ public final class LiveCameraViewKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.LiveCameraViewKt.startCamera(android.content.Context, androidx.lifecycle.LifecycleOwner, kotlin.jvm.functions.Function2, int, int, androidx.camera.core.CameraSelector, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void startCamera$lambda$19$lambda$18(CameraSelector $cameraSelector, Function2 $onBitmap, ImageProxy imageProxy) {
         Intrinsics.checkNotNullParameter(imageProxy, "imageProxy");
         Bitmap bitmap = imageProxy.toBitmap();

@@ -31,7 +31,6 @@ import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.VectorResources_androidKt;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.style.TextAlign;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.TextUnitKt;
 import androidx.compose.runtime.Applier;
@@ -54,13 +53,13 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: PromoScreenGm4.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u001b\u0010\u0002\u001a\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005H\u0007¢\u0006\u0002\u0010\u0006\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0007"}, m922d2 = {"DISMISS_DELAY_SECONDS", "", "PromoScreenGm4", "", "onDismiss", "Lkotlin/Function0;", "(Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class PromoScreenGm4Kt {
     private static final int DISMISS_DELAY_SECONDS = 5;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit PromoScreenGm4$lambda$5(Function0 function0, int i, Composer composer, int i2) {
         PromoScreenGm4(function0, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -211,7 +210,7 @@ public final class PromoScreenGm4Kt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit PromoScreenGm4$lambda$4$lambda$2$lambda$1(ImageVector $gemmaPromoBg, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha(0.46f);

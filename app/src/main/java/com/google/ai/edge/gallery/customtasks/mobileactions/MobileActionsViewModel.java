@@ -8,7 +8,6 @@ import android.net.Uri;
 import android.provider.CalendarContract;
 import android.util.Log;
 import androidx.autofill.HintConstants;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.core.net.MailTo;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelKt;
@@ -56,9 +55,9 @@ import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
 
-/* JADX INFO: compiled from: MobileActionsViewModel.kt */
-/* JADX INFO: loaded from: classes5.dex */
-@Metadata(m921d1 = {"\u0000r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0012\b\u0007\u0018\u00002\u00020\u0001B\u0013\b\u0007\u0012\b\b\u0001\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0006\u0010\u0012\u001a\u00020\u0013J\u0006\u0010\u0014\u001a\u00020\u0013J\u000e\u0010\u0015\u001a\u00020\u00132\u0006\u0010\u0016\u001a\u00020\u0010J\u000e\u0010\u0017\u001a\u00020\u00132\u0006\u0010\u0018\u001a\u00020\u0010J\u000e\u0010\u0019\u001a\u00020\u00132\u0006\u0010\u001a\u001a\u00020\u001bJ\u000e\u0010\u001c\u001a\u00020\u00132\u0006\u0010\u001d\u001a\u00020\u001bJ\u000e\u0010\u001e\u001a\u00020\u00132\u0006\u0010\u001f\u001a\u00020\u001bJ\u000e\u0010 \u001a\u00020\u00132\u0006\u0010!\u001a\u00020\u001bJ\u0006\u0010\"\u001a\u00020\u0013J\u000e\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0010JU\u0010%\u001a\u00020\u00132\u0006\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020\u001b2\f\u0010)\u001a\b\u0012\u0004\u0012\u00020+0*2\f\u0010,\u001a\b\u0012\u0004\u0012\u00020\u00130-2!\u0010.\u001a\u001d\u0012\u0013\u0012\u00110\u001b¢\u0006\f\b0\u0012\b\b1\u0012\u0004\b\b(2\u0012\u0004\u0012\u00020\u00130/J\u001c\u00103\u001a\u00020\u00132\u0006\u0010&\u001a\u00020'2\f\u0010)\u001a\b\u0012\u0004\u0012\u00020+0*JO\u00104\u001a\u00020\u00132\u0006\u00105\u001a\u00020\u00032\u0006\u0010&\u001a\u00020'2\f\u0010)\u001a\b\u0012\u0004\u0012\u00020+0*2\u0006\u00106\u001a\u0002072!\u0010.\u001a\u001d\u0012\u0013\u0012\u00110\u001b¢\u0006\f\b0\u0012\b\b1\u0012\u0004\b\b(2\u0012\u0004\u0012\u00020\u00130/J\u0016\u00108\u001a\u00020\u001b2\u0006\u00109\u001a\u00020:2\u0006\u00105\u001a\u00020\u0003J\u0018\u0010;\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u00032\u0006\u0010<\u001a\u00020\u0010H\u0002J0\u0010=\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u00032\u0006\u0010>\u001a\u00020\u001b2\u0006\u0010?\u001a\u00020\u001b2\u0006\u0010@\u001a\u00020\u001b2\u0006\u0010A\u001a\u00020\u001bH\u0002J(\u0010B\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u00032\u0006\u0010C\u001a\u00020\u001b2\u0006\u0010D\u001a\u00020\u001b2\u0006\u0010E\u001a\u00020\u001bH\u0002J\u0018\u0010F\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u00032\u0006\u0010G\u001a\u00020\u001bH\u0002J\u0010\u0010H\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u0003H\u0002J \u0010I\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u00032\u0006\u0010J\u001a\u00020\u001b2\u0006\u0010K\u001a\u00020\u001bH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0017\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\b0\f¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0014\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00100\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00100\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006L"}, m922d2 = {"Lcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsViewModel;", "Landroidx/lifecycle/ViewModel;", "appContext", "Landroid/content/Context;", "<init>", "(Landroid/content/Context;)V", "_uiState", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsUiState;", "get_uiState", "()Lkotlinx/coroutines/flow/MutableStateFlow;", "uiState", "Lkotlinx/coroutines/flow/StateFlow;", "getUiState", "()Lkotlinx/coroutines/flow/StateFlow;", "_isResettingConversation", "", "isResettingConversation", "reset", "", "cleanUp", "setShowWelcomeMessage", "showWelcomeMessage", "setProcessing", "processing", "setUserPrompt", "prompt", "", "setModelResponse", "response", "appendModelResponse", "partialResponse", "addFunctionCallDetails", "details", "clearFunctionCallDetails", "setNoFunctionRecognized", "value", "processUserPrompt", "model", "Lcom/google/ai/edge/gallery/data/Model;", "userPrompt", "tools", "", "Lcom/google/ai/edge/litertlm/ToolProvider;", "onProcessDone", "Lkotlin/Function0;", "onError", "Lkotlin/Function1;", "Lkotlin/ParameterName;", "name", "error", "resetConversation", "resetEngine", "context", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "performAction", "action", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/Action;", "setFlashlight", "isEnabled", "createContact", "firstName", "lastName", HintConstants.AUTOFILL_HINT_PHONE_NUMBER, "email", "sendEmail", "to", "subject", "body", "showLocationOnMap", FirebaseAnalytics.Param.LOCATION, "openWifiSettings", "createCalendarEvent", "datetime", "title", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\b\u0012\u0004\u0012\u00020+0*2\f\u0010,\u001a\b\u0012\u0004\u0012\u00020\u00130-2!\u0010.\u001a\u001d\u0012\u0013\u0012\u00110\u001b¢\u0006\f\b0\u0012\b\b1\u0012\u0004\b\b(2\u0012\u0004\u0012\u00020\u00130/J\u001c\u00103\u001a\u00020\u00132\u0006\u0010&\u001a\u00020'2\f\u0010)\u001a\b\u0012\u0004\u0012\u00020+0*JO\u00104\u001a\u00020\u00132\u0006\u00105\u001a\u00020\u00032\u0006\u0010&\u001a\u00020'2\f\u0010)\u001a\b\u0012\u0004\u0012\u00020+0*2\u0006\u00106\u001a\u0002072!\u0010.\u001a\u001d\u0012\u0013\u0012\u00110\u001b¢\u0006\f\b0\u0012\b\b1\u0012\u0004\b\b(2\u0012\u0004\u0012\u00020\u00130/J\u0016\u00108\u001a\u00020\u001b2\u0006\u00109\u001a\u00020:2\u0006\u00105\u001a\u00020\u0003J\u0018\u0010;\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u00032\u0006\u0010<\u001a\u00020\u0010H\u0002J0\u0010=\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u00032\u0006\u0010>\u001a\u00020\u001b2\u0006\u0010?\u001a\u00020\u001b2\u0006\u0010@\u001a\u00020\u001b2\u0006\u0010A\u001a\u00020\u001bH\u0002J(\u0010B\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u00032\u0006\u0010C\u001a\u00020\u001b2\u0006\u0010D\u001a\u00020\u001b2\u0006\u0010E\u001a\u00020\u001bH\u0002J\u0018\u0010F\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u00032\u0006\u0010G\u001a\u00020\u001bH\u0002J\u0010\u0010H\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u0003H\u0002J \u0010I\u001a\u00020\u001b2\u0006\u00105\u001a\u00020\u00032\u0006\u0010J\u001a\u00020\u001b2\u0006\u0010K\u001a\u00020\u001bH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0017\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\b0\f¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0014\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00100\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00100\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006L"}, m922d2 = {"Lcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsViewModel;", "Landroidx/lifecycle/ViewModel;", "appContext", "Landroid/content/Context;", "<init>", "(Landroid/content/Context;)V", "_uiState", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsUiState;", "get_uiState", "()Lkotlinx/coroutines/flow/MutableStateFlow;", "uiState", "Lkotlinx/coroutines/flow/StateFlow;", "getUiState", "()Lkotlinx/coroutines/flow/StateFlow;", "_isResettingConversation", "", "isResettingConversation", "reset", "", "cleanUp", "setShowWelcomeMessage", "showWelcomeMessage", "setProcessing", "processing", "setUserPrompt", "prompt", "", "setModelResponse", "response", "appendModelResponse", "partialResponse", "addFunctionCallDetails", "details", "clearFunctionCallDetails", "setNoFunctionRecognized", "value", "processUserPrompt", "model", "Lcom/google/ai/edge/gallery/data/Model;", "userPrompt", "tools", "", "Lcom/google/ai/edge/litertlm/ToolProvider;", "onProcessDone", "Lkotlin/Function0;", "onError", "Lkotlin/Function1;", "Lkotlin/ParameterName;", "name", "error", "resetConversation", "resetEngine", "context", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "performAction", "action", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/Action;", "setFlashlight", "isEnabled", "createContact", "firstName", "lastName", HintConstants.AUTOFILL_HINT_PHONE_NUMBER, "email", "sendEmail", "to", "subject", "body", "showLocationOnMap", FirebaseAnalytics.Param.LOCATION, "openWifiSettings", "createCalendarEvent", "datetime", "title", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MobileActionsViewModel extends ViewModel {
     public static final int $stable = 8;
     private final MutableStateFlow<Boolean> _isResettingConversation;
@@ -185,9 +184,9 @@ public final class MobileActionsViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$processUserPrompt$1 */
-    /* JADX INFO: compiled from: MobileActionsViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$processUserPrompt$1", m932f = "MobileActionsViewModel.kt", m933i = {1, 1, 1}, m934l = {153, 175}, m935m = "invokeSuspend", m936n = {"instance", "conversation", "contents"}, m938s = {"L$0", "L$1", "L$2"})
     static final class C25431 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Model $model;
@@ -240,9 +239,9 @@ public final class MobileActionsViewModel extends ViewModel {
             throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel.C25431.invokeSuspend(java.lang.Object):java.lang.Object");
         }
 
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$processUserPrompt$1$1, reason: invalid class name */
-        /* JADX INFO: compiled from: MobileActionsViewModel.kt */
-        @Metadata(m921d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0001H\n"}, m922d2 = {"<anonymous>", "", "it"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+        
+        
+        
         @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$processUserPrompt$1$1", m932f = "MobileActionsViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
         static final class AnonymousClass1 extends SuspendLambda implements Function2<Boolean, Continuation<? super Boolean>, Object> {
             /* synthetic */ boolean Z$0;
@@ -282,9 +281,9 @@ public final class MobileActionsViewModel extends ViewModel {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$processUserPrompt$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: MobileActionsViewModel.kt */
-        @Metadata(m921d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0003\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\u0004\u001a\u00020\u0005H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/flow/FlowCollector;", "Lcom/google/ai/edge/litertlm/Message;", "it", ""}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+        
+        
+        
         @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$processUserPrompt$1$2", m932f = "MobileActionsViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
         static final class AnonymousClass2 extends SuspendLambda implements Function3<FlowCollector<? super Message>, Throwable, Continuation<? super Unit>, Object> {
             final /* synthetic */ Function1<String, Unit> $onError;
@@ -326,9 +325,9 @@ public final class MobileActionsViewModel extends ViewModel {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$processUserPrompt$1$3, reason: invalid class name */
-        /* JADX INFO: compiled from: MobileActionsViewModel.kt */
-        @Metadata(m921d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0003\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u00022\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/flow/FlowCollector;", "Lcom/google/ai/edge/litertlm/Message;", "it", ""}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+        
+        
+        
         @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$processUserPrompt$1$3", m932f = "MobileActionsViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
         static final class AnonymousClass3 extends SuspendLambda implements Function3<FlowCollector<? super Message>, Throwable, Continuation<? super Unit>, Object> {
             final /* synthetic */ Model $model;
@@ -387,9 +386,9 @@ public final class MobileActionsViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getDefault(), null, new C25441(modelManagerViewModel, model, context, tools, onError, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$resetEngine$1 */
-    /* JADX INFO: compiled from: MobileActionsViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$resetEngine$1", m932f = "MobileActionsViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25441 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Context $context;
@@ -446,7 +445,7 @@ public final class MobileActionsViewModel extends ViewModel {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public static final Unit invokeSuspend$lambda$1(Context $context, final Model $model, List $tools, final ModelManagerViewModel $modelManagerViewModel, final Function1 $onError) {
             LlmModelHelper.initialize$default(LlmChatModelHelper.INSTANCE, $context, $model, false, false, new Function1() { // from class: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel$resetEngine$1$$ExternalSyntheticLambda0
                 @Override // kotlin.jvm.functions.Function1
@@ -457,7 +456,7 @@ public final class MobileActionsViewModel extends ViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public static final Unit invokeSuspend$lambda$1$lambda$0(ModelManagerViewModel $modelManagerViewModel, Model $model, Function1 $onError, String error) {
             $modelManagerViewModel.setInitializationStatus($model, new ModelInitializationStatus(ModelInitializationStatusType.INITIALIZED, null, null, 6, null));
             if (error.length() > 0) {

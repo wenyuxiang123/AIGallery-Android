@@ -15,7 +15,6 @@ import androidx.compose.p000ui.Modifier;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.StringResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -33,17 +32,17 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MessageSender.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000$\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a)\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u0007H\u0007¢\u0006\u0002\u0010\b\u001a%\u0010\t\u001a\u00020\n2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0003¢\u0006\u0002\u0010\u000b¨\u0006\f"}, m922d2 = {"MessageSender", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessage;", "agentName", "", "imageHistoryCurIndex", "", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessage;Ljava/lang/String;ILandroidx/compose/runtime/Composer;II)V", "getMessageLayoutConfig", "Lcom/google/ai/edge/gallery/ui/common/chat/MessageLayoutConfig;", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessage;Ljava/lang/String;ILandroidx/compose/runtime/Composer;I)Lcom/google/ai/edge/gallery/ui/common/chat/MessageLayoutConfig;", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u0007H\u0007¢\u0006\u0002\u0010\b\u001a%\u0010\t\u001a\u00020\n2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0003¢\u0006\u0002\u0010\u000b¨\u0006\f"}, m922d2 = {"MessageSender", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessage;", "agentName", "", "imageHistoryCurIndex", "", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessage;Ljava/lang/String;ILandroidx/compose/runtime/Composer;II)V", "getMessageLayoutConfig", "Lcom/google/ai/edge/gallery/ui/common/chat/MessageLayoutConfig;", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessage;Ljava/lang/String;ILandroidx/compose/runtime/Composer;I)Lcom/google/ai/edge/gallery/ui/common/chat/MessageLayoutConfig;", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageSenderKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageSender$lambda$0(ChatMessage chatMessage, String str, int i, int i2, int i3, Composer composer, int i4) {
         MessageSender(chatMessage, str, i, composer, RecomposeScopeImplKt.updateChangedFlags(i2 | 1), i3);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageSender$lambda$3(ChatMessage chatMessage, String str, int i, int i2, int i3, Composer composer, int i4) {
         MessageSender(chatMessage, str, i, composer, RecomposeScopeImplKt.updateChangedFlags(i2 | 1), i3);
         return Unit.INSTANCE;

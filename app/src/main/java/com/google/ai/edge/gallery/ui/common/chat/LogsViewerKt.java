@@ -48,7 +48,6 @@ import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.input.VisualTransformation;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -86,13 +85,13 @@ import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: LogsViewer.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000(\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\"\n\u0002\u0018\u0002\u001a)\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u0006H\u0007¢\u0006\u0002\u0010\u0007\u001a\u0015\u0010\b\u001a\u00020\u00012\u0006\u0010\t\u001a\u00020\u0004H\u0003¢\u0006\u0002\u0010\n¨\u0006\u000b²\u0006\n\u0010\f\u001a\u00020\rX\u008a\u008e\u0002²\u0006\u0010\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00100\u000fX\u008a\u008e\u0002"}, m922d2 = {"LogsViewer", "", "logs", "", "Lcom/google/ai/edge/gallery/ui/common/chat/LogMessage;", "onDismissRequest", "Lkotlin/Function0;", "(Ljava/util/List;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "LogItem", "log", "(Lcom/google/ai/edge/gallery/ui/common/chat/LogMessage;Landroidx/compose/runtime/Composer;I)V", "app_debug", "filterText", "", "selectedLevels", "", "Lcom/google/ai/edge/gallery/ui/common/chat/LogMessageLevel;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u0006H\u0007¢\u0006\u0002\u0010\u0007\u001a\u0015\u0010\b\u001a\u00020\u00012\u0006\u0010\t\u001a\u00020\u0004H\u0003¢\u0006\u0002\u0010\n¨\u0006\u000b²\u0006\n\u0010\f\u001a\u00020\rX\u008a\u008e\u0002²\u0006\u0010\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00100\u000fX\u008a\u008e\u0002"}, m922d2 = {"LogsViewer", "", "logs", "", "Lcom/google/ai/edge/gallery/ui/common/chat/LogMessage;", "onDismissRequest", "Lkotlin/Function0;", "(Ljava/util/List;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "LogItem", "log", "(Lcom/google/ai/edge/gallery/ui/common/chat/LogMessage;Landroidx/compose/runtime/Composer;I)V", "app_debug", "filterText", "", "selectedLevels", "", "Lcom/google/ai/edge/gallery/ui/common/chat/LogMessageLevel;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class LogsViewerKt {
 
-    /* JADX INFO: compiled from: LogsViewer.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -114,13 +113,13 @@ public final class LogsViewerKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LogItem$lambda$29(LogMessage logMessage, int i, Composer composer, int i2) {
         LogItem(logMessage, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LogsViewer$lambda$26(List list, Function0 function0, int i, Composer composer, int i2) {
         LogsViewer(list, function0, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -181,7 +180,7 @@ public final class LogsViewerKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LogsViewer$lambda$25(List $logs, final CoroutineScope $scope, final SheetState $sheetState, final Function0 $onDismissRequest, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -387,7 +386,7 @@ public final class LogsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LogsViewer$lambda$25$lambda$24$lambda$2$lambda$1$lambda$0(CoroutineScope $scope, SheetState $sheetState, Function0 $onDismissRequest) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new LogsViewerKt$LogsViewer$1$1$1$1$1$1($sheetState, $onDismissRequest, null), 3, null);
         return Unit.INSTANCE;
@@ -398,14 +397,14 @@ public final class LogsViewerKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LogsViewer$lambda$25$lambda$24$lambda$7$lambda$6(MutableState $filterText$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $filterText$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LogsViewer$lambda$25$lambda$24$lambda$10(final MutableState $filterText$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C:LogsViewer.kt#ouynps");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -442,7 +441,7 @@ public final class LogsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LogsViewer$lambda$25$lambda$24$lambda$10$lambda$9$lambda$8(MutableState $filterText$delegate) {
         $filterText$delegate.setValue("");
         return Unit.INSTANCE;
@@ -453,7 +452,7 @@ public final class LogsViewerKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LogsViewer$lambda$25$lambda$24$lambda$18(final MutableState $selectedLevels$delegate, MultiChoiceSegmentedButtonRowScope MultiChoiceSegmentedButtonRow, Composer $composer, int $changed) {
         Composer composer = $composer;
         Intrinsics.checkNotNullParameter(MultiChoiceSegmentedButtonRow, "$this$MultiChoiceSegmentedButtonRow");
@@ -512,8 +511,8 @@ public final class LogsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: LogsViewer$lambda$25$lambda$24$lambda$18$lambda$17$lambda$15$lambda$14 */
+    
+    
     public static final Unit m495x3930b0(LogMessageLevel $level, MutableState $selectedLevels$delegate, boolean it) {
         Set setPlus;
         if (LogsViewer$lambda$25$lambda$24$lambda$12($selectedLevels$delegate).contains($level)) {
@@ -525,7 +524,7 @@ public final class LogsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LogsViewer$lambda$25$lambda$24$lambda$18$lambda$17$lambda$16(LogMessageLevel $level, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C149@5982L16:LogsViewer.kt#ouynps");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -542,7 +541,7 @@ public final class LogsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LogsViewer$lambda$25$lambda$24$lambda$23$lambda$22(final List $filteredLogs, LazyListScope LazyColumn) {
         Intrinsics.checkNotNullParameter(LazyColumn, "$this$LazyColumn");
         if ($filteredLogs.isEmpty()) {
@@ -605,7 +604,7 @@ public final class LogsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void LogItem(final LogMessage log, Composer $composer, final int $changed) {
         Composer $composer2;
         Function0<ComposeUiNode> function0;

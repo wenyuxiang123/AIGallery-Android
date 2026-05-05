@@ -81,9 +81,9 @@ import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.CoroutineScopeKt;
 
-/* JADX INFO: compiled from: AudioPlaybackPanel.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000P\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0012\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0010\u0007\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\u001a9\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u00032\u0006\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\rH\u0007¢\u0006\u0002\u0010\u0011\u001a7\u0010\u0012\u001a\u00020\b2\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00150\u00142\u0006\u0010\u0016\u001a\u00020\u00152\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\rH\u0003¢\u0006\u0002\u0010\u0017\u001aP\u0010\u0018\u001a\u00020\b2\u000e\u0010\u0019\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u001b0\u001a2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u00032\u0012\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\b0\u001d2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\b0\u001fH\u0082@¢\u0006\u0002\u0010 \u001a\u0018\u0010!\u001a\u00020\b2\u000e\u0010\u0019\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u001b0\u001aH\u0002\u001a\u001e\u0010\"\u001a\b\u0012\u0004\u0012\u00020\u00150\u00142\u0006\u0010\t\u001a\u00020\n2\u0006\u0010#\u001a\u00020\u0003H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000¨\u0006$²\u0006\n\u0010%\u001a\u00020\rX\u008a\u008e\u0002²\u0006\n\u0010&\u001a\u00020\u0015X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "BAR_SPACE", "", "BAR_WIDTH", "MIN_BAR_COUNT", "MAX_BAR_COUNT", "AudioPlaybackPanel", "", "audioData", "", "sampleRate", "isRecording", "", "modifier", "Landroidx/compose/ui/Modifier;", "onDarkBg", "([BIZLandroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V", "AmplitudeBarGraph", "amplitudeLevels", "", "", NotificationCompat.CATEGORY_PROGRESS, "(Ljava/util/List;FLandroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V", "playAudio", "audioTrackState", "Landroidx/compose/runtime/MutableState;", "Landroid/media/AudioTrack;", "onProgress", "Lkotlin/Function1;", "onCompletion", "Lkotlin/Function0;", "(Landroidx/compose/runtime/MutableState;[BILkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "stopPlayAudio", "generateAmplitudeLevels", "barCount", "app_debug", "isPlaying", "playbackProgress"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 48)
+
+
+V", "AmplitudeBarGraph", "amplitudeLevels", "", "", NotificationCompat.CATEGORY_PROGRESS, "(Ljava/util/List;FLandroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V", "playAudio", "audioTrackState", "Landroidx/compose/runtime/MutableState;", "Landroid/media/AudioTrack;", "onProgress", "Lkotlin/Function1;", "onCompletion", "Lkotlin/Function0;", "(Landroidx/compose/runtime/MutableState;[BILkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "stopPlayAudio", "generateAmplitudeLevels", "barCount", "app_debug", "isPlaying", "playbackProgress"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 48)
 public final class AudioPlaybackPanelKt {
     private static final int BAR_SPACE = 2;
     private static final int BAR_WIDTH = 2;
@@ -91,9 +91,9 @@ public final class AudioPlaybackPanelKt {
     private static final int MIN_BAR_COUNT = 16;
     private static final String TAG = "AGAudioPlaybackPanel";
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.AudioPlaybackPanelKt$playAudio$1 */
-    /* JADX INFO: compiled from: AudioPlaybackPanel.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = 48)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.chat.AudioPlaybackPanelKt", m932f = "AudioPlaybackPanel.kt", m933i = {0, 0, 0, 0, 0}, m934l = {236}, m935m = "playAudio", m936n = {"audioTrackState", "audioData", "onProgress", "onCompletion", "sampleRate"}, m938s = {"L$0", "L$1", "L$2", "L$3", "I$0"})
     static final class C26811 extends ContinuationImpl {
         int I$0;
@@ -116,13 +116,13 @@ public final class AudioPlaybackPanelKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AmplitudeBarGraph$lambda$23(List list, float f, Modifier modifier, boolean z, int i, int i2, Composer composer, int i3) {
         AmplitudeBarGraph(list, f, modifier, z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AudioPlaybackPanel$lambda$18(byte[] bArr, int i, boolean z, Modifier modifier, boolean z2, int i2, int i3, Composer composer, int i4) {
         AudioPlaybackPanel(bArr, i, z, modifier, z2, composer, RecomposeScopeImplKt.updateChangedFlags(i2 | 1), i3);
         return Unit.INSTANCE;
@@ -401,13 +401,13 @@ public final class AudioPlaybackPanelKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean AudioPlaybackPanel$lambda$1(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void AudioPlaybackPanel$lambda$2(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -417,7 +417,7 @@ public final class AudioPlaybackPanelKt {
         return $this$getValue$iv.getFloatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final DisposableEffectResult AudioPlaybackPanel$lambda$13$lambda$12(final MutableState $audioTrackState, DisposableEffectScope DisposableEffect) {
         Intrinsics.checkNotNullParameter(DisposableEffect, "$this$DisposableEffect");
         return new DisposableEffectResult() { // from class: com.google.ai.edge.gallery.ui.common.chat.AudioPlaybackPanelKt$AudioPlaybackPanel$lambda$13$lambda$12$$inlined$onDispose$1
@@ -434,13 +434,13 @@ public final class AudioPlaybackPanelKt {
         };
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AudioPlaybackPanel$lambda$17$lambda$15$lambda$14(CoroutineScope $coroutineScope, MutableState $audioTrackState, byte[] $audioData, int $sampleRate, MutableState $isPlaying$delegate, MutableFloatState $playbackProgress$delegate) {
         BuildersKt__Builders_commonKt.launch$default($coroutineScope, null, null, new AudioPlaybackPanelKt$AudioPlaybackPanel$3$1$1$1($audioTrackState, $audioData, $sampleRate, $isPlaying$delegate, $playbackProgress$delegate, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AudioPlaybackPanel$lambda$17$lambda$16(boolean $onDarkBg, MutableState $isPlaying$delegate, Composer $composer, int $changed) {
         long primary;
         ComposerKt.sourceInformation($composer, "C150@5242L118,147@5125L325:AudioPlaybackPanel.kt#ouynps");
@@ -567,7 +567,7 @@ public final class AudioPlaybackPanelKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AmplitudeBarGraph$lambda$22$lambda$21(List $amplitudeLevels, float $progress, long $progressColor, long $barColor, DrawScope Canvas) {
         Intrinsics.checkNotNullParameter(Canvas, "$this$Canvas");
         int barCount = $amplitudeLevels.size();
@@ -615,7 +615,7 @@ public final class AudioPlaybackPanelKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:7:0x0016  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -629,9 +629,9 @@ public final class AudioPlaybackPanelKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.chat.AudioPlaybackPanelKt.playAudio(androidx.compose.runtime.MutableState, byte[], int, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function0, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.AudioPlaybackPanelKt$playAudio$2 */
-    /* JADX INFO: compiled from: AudioPlaybackPanel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = 48)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.chat.AudioPlaybackPanelKt$playAudio$2", m932f = "AudioPlaybackPanel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C26822 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ byte[] $audioData;
@@ -701,7 +701,7 @@ public final class AudioPlaybackPanelKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void stopPlayAudio(MutableState<AudioTrack> mutableState) {
         Log.d(TAG, "Stopping playing audio...");
         AudioTrack audioTrack = mutableState.getValue();

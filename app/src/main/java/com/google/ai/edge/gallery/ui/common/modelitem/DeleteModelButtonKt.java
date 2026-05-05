@@ -9,7 +9,6 @@ import androidx.compose.p000ui.ComposedModifierKt;
 import androidx.compose.p000ui.Modifier;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
 import androidx.compose.runtime.Composer;
@@ -30,13 +29,13 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: DeleteModelButton.kt */
-/* JADX INFO: loaded from: classes13.dex */
-@Metadata(m921d1 = {"\u0000(\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u001a;\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u000bH\u0007¢\u0006\u0002\u0010\f¨\u0006\r²\u0006\n\u0010\u000e\u001a\u00020\u000bX\u008a\u008e\u0002"}, m922d2 = {"DeleteModelButton", "", "model", "Lcom/google/ai/edge/gallery/data/Model;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "downloadStatus", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;", "modifier", "Landroidx/compose/ui/Modifier;", "showDeleteButton", "", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;Landroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V", "app_debug", "showConfirmDeleteDialog"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "showConfirmDeleteDialog"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class DeleteModelButtonKt {
 
-    /* JADX INFO: compiled from: DeleteModelButton.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -50,7 +49,7 @@ public final class DeleteModelButtonKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DeleteModelButton$lambda$10(Model model, ModelManagerViewModel modelManagerViewModel, ModelDownloadStatus modelDownloadStatus, Modifier modifier, boolean z, int i, int i2, Composer composer, int i3) {
         DeleteModelButton(model, modelManagerViewModel, modelDownloadStatus, modifier, z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -265,20 +264,20 @@ public final class DeleteModelButtonKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DeleteModelButton$lambda$5$lambda$4$lambda$3(MutableState $showConfirmDeleteDialog$delegate) {
         DeleteModelButton$lambda$2($showConfirmDeleteDialog$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DeleteModelButton$lambda$7$lambda$6(ModelManagerViewModel $modelManagerViewModel, Model $model, MutableState $showConfirmDeleteDialog$delegate) {
         $modelManagerViewModel.deleteModel($model);
         DeleteModelButton$lambda$2($showConfirmDeleteDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DeleteModelButton$lambda$9$lambda$8(MutableState $showConfirmDeleteDialog$delegate) {
         DeleteModelButton$lambda$2($showConfirmDeleteDialog$delegate, false);
         return Unit.INSTANCE;

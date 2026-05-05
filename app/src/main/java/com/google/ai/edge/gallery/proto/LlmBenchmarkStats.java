@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class LlmBenchmarkStats extends GeneratedMessageLite<LlmBenchmarkStats, Builder> implements LlmBenchmarkStatsOrBuilder {
     public static final int DECODE_SPEED_FIELD_NUMBER = 2;
     private static final LlmBenchmarkStats DEFAULT_INSTANCE;
@@ -41,14 +41,14 @@ public final class LlmBenchmarkStats extends GeneratedMessageLite<LlmBenchmarkSt
         return this.prefillSpeed_ == null ? ValueSeries.getDefaultInstance() : this.prefillSpeed_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setPrefillSpeed(ValueSeries value) {
         value.getClass();
         this.prefillSpeed_ = value;
         this.bitField0_ |= 1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void mergePrefillSpeed(ValueSeries value) {
         value.getClass();
         if (this.prefillSpeed_ != null && this.prefillSpeed_ != ValueSeries.getDefaultInstance()) {
@@ -59,7 +59,7 @@ public final class LlmBenchmarkStats extends GeneratedMessageLite<LlmBenchmarkSt
         this.bitField0_ |= 1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearPrefillSpeed() {
         this.prefillSpeed_ = null;
         this.bitField0_ &= -2;
@@ -75,14 +75,14 @@ public final class LlmBenchmarkStats extends GeneratedMessageLite<LlmBenchmarkSt
         return this.decodeSpeed_ == null ? ValueSeries.getDefaultInstance() : this.decodeSpeed_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setDecodeSpeed(ValueSeries value) {
         value.getClass();
         this.decodeSpeed_ = value;
         this.bitField0_ |= 2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void mergeDecodeSpeed(ValueSeries value) {
         value.getClass();
         if (this.decodeSpeed_ != null && this.decodeSpeed_ != ValueSeries.getDefaultInstance()) {
@@ -93,7 +93,7 @@ public final class LlmBenchmarkStats extends GeneratedMessageLite<LlmBenchmarkSt
         this.bitField0_ |= 2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearDecodeSpeed() {
         this.decodeSpeed_ = null;
         this.bitField0_ &= -3;
@@ -109,14 +109,14 @@ public final class LlmBenchmarkStats extends GeneratedMessageLite<LlmBenchmarkSt
         return this.timeToFirstToken_ == null ? ValueSeries.getDefaultInstance() : this.timeToFirstToken_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setTimeToFirstToken(ValueSeries value) {
         value.getClass();
         this.timeToFirstToken_ = value;
         this.bitField0_ |= 4;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void mergeTimeToFirstToken(ValueSeries value) {
         value.getClass();
         if (this.timeToFirstToken_ != null && this.timeToFirstToken_ != ValueSeries.getDefaultInstance()) {
@@ -127,7 +127,7 @@ public final class LlmBenchmarkStats extends GeneratedMessageLite<LlmBenchmarkSt
         this.bitField0_ |= 4;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearTimeToFirstToken() {
         this.timeToFirstToken_ = null;
         this.bitField0_ &= -5;
@@ -138,12 +138,12 @@ public final class LlmBenchmarkStats extends GeneratedMessageLite<LlmBenchmarkSt
         return this.firstInitTimeMs_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setFirstInitTimeMs(double value) {
         this.firstInitTimeMs_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearFirstInitTimeMs() {
         this.firstInitTimeMs_ = AudioStats.AUDIO_AMPLITUDE_NONE;
     }
@@ -158,14 +158,14 @@ public final class LlmBenchmarkStats extends GeneratedMessageLite<LlmBenchmarkSt
         return this.nonFirstInitTimeMs_ == null ? ValueSeries.getDefaultInstance() : this.nonFirstInitTimeMs_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setNonFirstInitTimeMs(ValueSeries value) {
         value.getClass();
         this.nonFirstInitTimeMs_ = value;
         this.bitField0_ |= 8;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void mergeNonFirstInitTimeMs(ValueSeries value) {
         value.getClass();
         if (this.nonFirstInitTimeMs_ != null && this.nonFirstInitTimeMs_ != ValueSeries.getDefaultInstance()) {
@@ -176,7 +176,7 @@ public final class LlmBenchmarkStats extends GeneratedMessageLite<LlmBenchmarkSt
         this.bitField0_ |= 8;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearNonFirstInitTimeMs() {
         this.nonFirstInitTimeMs_ = null;
         this.bitField0_ &= -9;

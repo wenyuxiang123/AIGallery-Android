@@ -1,12 +1,11 @@
 package com.google.ai.edge.gallery.ui.home;
 
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: NewReleaseNotification.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0087\b\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\t\u0010\n\u001a\u00020\u0003HÆ\u0003J\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\u001d\u0010\f\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0010\u001a\u00020\u0011HÖ\u0001J\t\u0010\u0012\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\b¨\u0006\u0013"}, m922d2 = {"Lcom/google/ai/edge/gallery/ui/home/ReleaseInfo;", "", "html_url", "", "tag_name", "<init>", "(Ljava/lang/String;Ljava/lang/String;)V", "getHtml_url", "()Ljava/lang/String;", "getTag_name", "component1", "component2", "copy", "equals", "", "other", "hashCode", "", "toString", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "getHtml_url", "()Ljava/lang/String;", "getTag_name", "component1", "component2", "copy", "equals", "", "other", "hashCode", "", "toString", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final /* data */ class ReleaseInfo {
     public static final int $stable = 0;
     private final String html_url;
@@ -22,12 +21,12 @@ public final /* data */ class ReleaseInfo {
         return releaseInfo.copy(str, str2);
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    
     public final String getHtml_url() {
         return this.html_url;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    
     public final String getTag_name() {
         return this.tag_name;
     }

@@ -1,7 +1,6 @@
 package com.google.ai.edge.gallery.ui.common.chat;
 
 import androidx.compose.animation.AnimatedVisibilityScope;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.ComposerKt;
 import androidx.compose.runtime.RecomposeScopeImplKt;
@@ -14,11 +13,11 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: ModelDownloadStatusInfoPanel.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\u001a%\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0007¢\u0006\u0002\u0010\b¨\u0006\t²\u0006\n\u0010\n\u001a\u00020\u000bX\u008a\u0084\u0002"}, m922d2 = {"ModelDownloadStatusInfoPanel", "", "model", "Lcom/google/ai/edge/gallery/data/Model;", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Landroidx/compose/runtime/Composer;I)V", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ModelDownloadStatusInfoPanelKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelDownloadStatusInfoPanel$lambda$7(Model model, Task task, ModelManagerViewModel modelManagerViewModel, int i, Composer composer, int i2) {
         ModelDownloadStatusInfoPanel(model, task, modelManagerViewModel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -55,7 +54,7 @@ public final class ModelDownloadStatusInfoPanelKt {
         return (ModelManagerUiState) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelDownloadStatusInfoPanel$lambda$6$lambda$2$lambda$1(Model $model, Task $task, ModelManagerViewModel $modelManagerViewModel, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
         ComposerKt.sourceInformation($composer, "C76@3180L141:ModelDownloadStatusInfoPanel.kt#ouynps");

@@ -39,7 +39,6 @@ import androidx.compose.p000ui.text.AnnotatedString;
 import androidx.compose.p000ui.text.TextLayoutResult;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.style.TextOverflow;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -73,17 +72,17 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: PromptTemplatesPanel.kt */
-/* JADX INFO: loaded from: classes15.dex */
-@Metadata(m921d1 = {"\u0000h\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\u001af\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102!\u0010\u0011\u001a\u001d\u0012\u0013\u0012\u00110\u0004¢\u0006\f\b\u0013\u0012\b\b\u0014\u0012\u0004\b\b(\u0015\u0012\u0004\u0012\u00020\n0\u00122\u0012\u0010\u0016\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\n0\u00122\b\b\u0002\u0010\u0017\u001a\u00020\u0018H\u0007¢\u0006\u0002\u0010\u0019\"\u0014\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00040\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u0010\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0007\"\u000e\u0010\b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u001a²\u0006\n\u0010\u001b\u001a\u00020\u001cX\u008a\u0084\u0002²\u0006\n\u0010\u001d\u001a\u00020\u001eX\u008a\u0084\u0002²\u0006\n\u0010\u001f\u001a\u00020 X\u008a\u008e\u0002²\u0006\n\u0010!\u001a\u00020\u0004X\u008a\u008e\u0002²\u0006\n\u0010\u0015\u001a\u00020\"X\u008a\u0084\u0002²\u0006\n\u0010#\u001a\u00020$X\u008a\u008e\u0002²\u0006\f\u0010%\u001a\u0004\u0018\u00010&X\u008a\u008e\u0002"}, m922d2 = {"promptTemplateTypes", "", "Lcom/google/ai/edge/gallery/ui/llmsingleturn/PromptTemplateType;", "TAB_TITLES", "", "ICON_BUTTON_SIZE", "Landroidx/compose/ui/unit/Dp;", "F", "FULL_PROMPT_SWITCH_KEY", "PromptTemplatesPanel", "", "model", "Lcom/google/ai/edge/gallery/data/Model;", "viewModel", "Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnViewModel;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "onSend", "Lkotlin/Function1;", "Lkotlin/ParameterName;", "name", "fullPrompt", "onStopButtonClicked", "modifier", "Landroidx/compose/ui/Modifier;", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnViewModel;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnUiState;", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "selectedTabIndex", "", "curTextInputContent", "Landroidx/compose/ui/text/AnnotatedString;", "showExamplePromptBottomSheet", "", "textLayoutResultState", "Landroidx/compose/ui/text/TextLayoutResult;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnUiState;", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "selectedTabIndex", "", "curTextInputContent", "Landroidx/compose/ui/text/AnnotatedString;", "showExamplePromptBottomSheet", "", "textLayoutResultState", "Landroidx/compose/ui/text/TextLayoutResult;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class PromptTemplatesPanelKt {
     public static final String FULL_PROMPT_SWITCH_KEY = "full_prompt";
     private static final float ICON_BUTTON_SIZE;
     private static final List<String> TAB_TITLES;
     private static final List<PromptTemplateType> promptTemplateTypes = PromptTemplateType.getEntries();
 
-    /* JADX INFO: compiled from: PromptTemplatesPanel.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -97,7 +96,7 @@ public final class PromptTemplatesPanelKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit PromptTemplatesPanel$lambda$72(Model model, LlmSingleTurnViewModel llmSingleTurnViewModel, ModelManagerViewModel modelManagerViewModel, Function1 function1, Function1 function12, Modifier modifier, int i, int i2, Composer composer, int i3) {
         PromptTemplatesPanel(model, llmSingleTurnViewModel, modelManagerViewModel, function1, function12, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -1175,13 +1174,13 @@ public final class PromptTemplatesPanelKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final AnnotatedString PromptTemplatesPanel$lambda$12(State<AnnotatedString> state) {
         Object thisObj$iv = state.getValue();
         return (AnnotatedString) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final AnnotatedString PromptTemplatesPanel$lambda$11$lambda$10(SnapshotStateMap $inputEditorValues, State $uiState$delegate, MutableState $curTextInputContent$delegate) {
         return PromptTemplatesPanel$lambda$1($uiState$delegate).getSelectedPromptTemplateType().getGenFullPrompt().invoke(PromptTemplatesPanel$lambda$7($curTextInputContent$delegate), $inputEditorValues);
     }
@@ -1191,12 +1190,12 @@ public final class PromptTemplatesPanelKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void PromptTemplatesPanel$lambda$19(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit PromptTemplatesPanel$lambda$49$lambda$24(final boolean $inProgress, final LlmSingleTurnViewModel $viewModel, final Model $model, final MutableIntState $selectedTabIndex$delegate, final SnapshotStateMap $inputEditorValues, final MutableState $curTextInputContent$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C*159@7203L386,171@7608L312,156@7097L834:PromptTemplatesPanel.kt#32uq7b");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1244,8 +1243,8 @@ public final class PromptTemplatesPanelKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$49$lambda$24$lambda$23$lambda$21$lambda$20 */
+    
+    
     public static final Unit m554xdc1d4831(SnapshotStateMap $inputEditorValues, int $index, LlmSingleTurnViewModel $viewModel, Model $model, MutableState $curTextInputContent$delegate, MutableIntState $selectedTabIndex$delegate) {
         $curTextInputContent$delegate.setValue("");
         $inputEditorValues.put(FULL_PROMPT_SWITCH_KEY, false);
@@ -1254,7 +1253,7 @@ public final class PromptTemplatesPanelKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit PromptTemplatesPanel$lambda$49$lambda$24$lambda$23$lambda$22(String $title, boolean $inProgress, int $index, MutableIntState $selectedTabIndex$delegate, Composer $composer, int $changed) {
         long j;
         ComposerKt.sourceInformation($composer, "C172@7622L286:PromptTemplatesPanel.kt#32uq7b");
@@ -1286,81 +1285,81 @@ public final class PromptTemplatesPanelKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$49$lambda$48$lambda$27$lambda$26$lambda$25 */
+    
+    
     public static final Unit m555x5afc3cc1(SnapshotStateMap $inputEditorValues, PromptTemplateInputEditor $inputEditor, String option) {
         Intrinsics.checkNotNullParameter(option, "option");
         $inputEditorValues.put(((PromptTemplateSingleSelectInputEditor) $inputEditor).getLabel(), option);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$49$lambda$48$lambda$47$lambda$29$lambda$28 */
+    
+    
     public static final Unit m556x26b5ca45(FocusRequester $focusRequester) {
         FocusRequester.m6575requestFocus3ESFkO8$default($focusRequester, 0, 1, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$49$lambda$48$lambda$47$lambda$34$lambda$33$lambda$32 */
+    
+    
     public static final Unit m558x7c5d4771(MutableState $curTextInputContent$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $curTextInputContent$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$49$lambda$48$lambda$47$lambda$34$lambda$31$lambda$30 */
+    
+    
     public static final Unit m557x5293e1ed(String $cdContentInput, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setContentDescription(semantics, $cdContentInput);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$49$lambda$48$lambda$47$lambda$46$lambda$36$lambda$35 */
+    
+    
     public static final Unit m559xdac30558(SnapshotStateMap $inputEditorValues) {
         Intrinsics.checkNotNull($inputEditorValues.get(FULL_PROMPT_SWITCH_KEY), "null cannot be cast to non-null type kotlin.Boolean");
         $inputEditorValues.put(FULL_PROMPT_SWITCH_KEY, Boolean.valueOf(!((Boolean) r2).booleanValue()));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$49$lambda$48$lambda$47$lambda$46$lambda$39$lambda$38 */
+    
+    
     public static final Unit m560x99711d9e(CoroutineScope $scope, Clipboard $clipboard, State $fullPrompt$delegate) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new PromptTemplatesPanelKt$PromptTemplatesPanel$2$2$2$3$3$1$1($clipboard, $fullPrompt$delegate, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$49$lambda$48$lambda$47$lambda$46$lambda$41$lambda$40 */
+    
+    
     public static final Unit m561xf9fd2d0c(MutableState $showExamplePromptBottomSheet$delegate) {
         PromptTemplatesPanel$lambda$19($showExamplePromptBottomSheet$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$49$lambda$48$lambda$47$lambda$46$lambda$43$lambda$42 */
+    
+    
     public static final Unit m562x23c69290(Function1 $onStopButtonClicked, Model $model) {
         $onStopButtonClicked.invoke($model);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$49$lambda$48$lambda$47$lambda$46$lambda$45$lambda$44 */
+    
+    
     public static final Unit m563x4d8ff814(FocusManager $focusManager, Function1 $onSend, State $fullPrompt$delegate) {
         FocusManager.clearFocus$default($focusManager, false, 1, null);
         $onSend.invoke(PromptTemplatesPanel$lambda$12($fullPrompt$delegate).getText());
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit PromptTemplatesPanel$lambda$51$lambda$50(MutableState $showExamplePromptBottomSheet$delegate) {
         PromptTemplatesPanel$lambda$19($showExamplePromptBottomSheet$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Type inference fix 'apply assigned field type' failed
     java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$PrimitiveArg
     	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:593)
@@ -1845,30 +1844,30 @@ public final class PromptTemplatesPanelKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit PromptTemplatesPanel$lambda$71$lambda$70$lambda$57$lambda$56(String $prompt, CoroutineScope $scope, MutableState $curTextInputContent$delegate, MutableState $showExamplePromptBottomSheet$delegate) {
         $curTextInputContent$delegate.setValue($prompt);
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new PromptTemplatesPanelKt$PromptTemplatesPanel$4$1$1$1$1($showExamplePromptBottomSheet$delegate, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$71$lambda$70$lambda$69$lambda$60$lambda$59$lambda$58 */
+    
+    
     public static final Unit m564xc2db557c(MutableState $textLayoutResultState$delegate, TextLayoutResult it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $textLayoutResultState$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$71$lambda$70$lambda$69$lambda$64$lambda$62$lambda$61 */
+    
+    
     public static final Unit m565xeaafedb0(SnapshotStateMap $expandedStates, String $prompt) {
         $expandedStates.put($prompt, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: PromptTemplatesPanel$lambda$71$lambda$70$lambda$69$lambda$68$lambda$66$lambda$65 */
+    
+    
     public static final Unit m566x70a68ebc(SnapshotStateMap $expandedStates, String $prompt) {
         $expandedStates.put($prompt, false);
         return Unit.INSTANCE;

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.util.Log;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.compose.material.MenuKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import com.google.android.gms.common.internal.ImagesContract;
 import com.google.firebase.messaging.Constants;
 import com.google.ai.edge.gallery.common.AgentAction;
@@ -38,9 +37,9 @@ import kotlinx.coroutines.channels.Channel;
 import kotlinx.coroutines.channels.ChannelKt;
 import kotlinx.coroutines.channels.ReceiveChannel;
 
-/* JADX INFO: compiled from: AgentTools.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0002\b\u0002\b\u0007\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u001e\u0010#\u001a\u000e\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020%0$2\b\b\u0001\u0010&\u001a\u00020%H\u0007J2\u0010'\u001a\u000e\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020(0$2\b\b\u0001\u0010&\u001a\u00020%2\b\b\u0001\u0010)\u001a\u00020%2\b\b\u0001\u0010*\u001a\u00020%H\u0007J(\u0010+\u001a\u000e\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020%0$2\b\b\u0001\u0010,\u001a\u00020%2\b\b\u0001\u0010-\u001a\u00020%H\u0007J\u000e\u0010.\u001a\u00020/2\u0006\u00100\u001a\u00020\u0012R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u000bX\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u0014\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u0017\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u0014¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u001c\u0010\u0017\u001a\u0004\u0018\u00010\u0018X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001cR\u001c\u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010 \"\u0004\b!\u0010\"¨\u00061"}, m922d2 = {"Lcom/google/ai/edge/gallery/customtasks/agentchat/AgentTools;", "Lcom/google/ai/edge/litertlm/ToolSet;", "<init>", "()V", "context", "Landroid/content/Context;", "getContext", "()Landroid/content/Context;", "setContext", "(Landroid/content/Context;)V", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "getSkillManagerViewModel", "()Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "setSkillManagerViewModel", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;)V", "_actionChannel", "Lkotlinx/coroutines/channels/Channel;", "Lcom/google/ai/edge/gallery/common/AgentAction;", "actionChannel", "Lkotlinx/coroutines/channels/ReceiveChannel;", "getActionChannel", "()Lkotlinx/coroutines/channels/ReceiveChannel;", "resultImageToShow", "Lcom/google/ai/edge/gallery/common/CallJsSkillResultImage;", "getResultImageToShow", "()Lcom/google/ai/edge/gallery/common/CallJsSkillResultImage;", "setResultImageToShow", "(Lcom/google/ai/edge/gallery/common/CallJsSkillResultImage;)V", "resultWebviewToShow", "Lcom/google/ai/edge/gallery/common/CallJsSkillResultWebview;", "getResultWebviewToShow", "()Lcom/google/ai/edge/gallery/common/CallJsSkillResultWebview;", "setResultWebviewToShow", "(Lcom/google/ai/edge/gallery/common/CallJsSkillResultWebview;)V", "loadSkill", "", "", "skillName", "runJs", "", "scriptName", Constants.ScionAnalytics.MessageType.DATA_MESSAGE, "runIntent", "intent", "parameters", "sendAgentAction", "", "action", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u00020%2\b\b\u0001\u0010*\u001a\u00020%H\u0007J(\u0010+\u001a\u000e\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020%0$2\b\b\u0001\u0010,\u001a\u00020%2\b\b\u0001\u0010-\u001a\u00020%H\u0007J\u000e\u0010.\u001a\u00020/2\u0006\u00100\u001a\u00020\u0012R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u000bX\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u0014\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u0017\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u0014¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u001c\u0010\u0017\u001a\u0004\u0018\u00010\u0018X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001cR\u001c\u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010 \"\u0004\b!\u0010\"¨\u00061"}, m922d2 = {"Lcom/google/ai/edge/gallery/customtasks/agentchat/AgentTools;", "Lcom/google/ai/edge/litertlm/ToolSet;", "<init>", "()V", "context", "Landroid/content/Context;", "getContext", "()Landroid/content/Context;", "setContext", "(Landroid/content/Context;)V", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "getSkillManagerViewModel", "()Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "setSkillManagerViewModel", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;)V", "_actionChannel", "Lkotlinx/coroutines/channels/Channel;", "Lcom/google/ai/edge/gallery/common/AgentAction;", "actionChannel", "Lkotlinx/coroutines/channels/ReceiveChannel;", "getActionChannel", "()Lkotlinx/coroutines/channels/ReceiveChannel;", "resultImageToShow", "Lcom/google/ai/edge/gallery/common/CallJsSkillResultImage;", "getResultImageToShow", "()Lcom/google/ai/edge/gallery/common/CallJsSkillResultImage;", "setResultImageToShow", "(Lcom/google/ai/edge/gallery/common/CallJsSkillResultImage;)V", "resultWebviewToShow", "Lcom/google/ai/edge/gallery/common/CallJsSkillResultWebview;", "getResultWebviewToShow", "()Lcom/google/ai/edge/gallery/common/CallJsSkillResultWebview;", "setResultWebviewToShow", "(Lcom/google/ai/edge/gallery/common/CallJsSkillResultWebview;)V", "loadSkill", "", "", "skillName", "runJs", "", "scriptName", Constants.ScionAnalytics.MessageType.DATA_MESSAGE, "runIntent", "intent", "parameters", "sendAgentAction", "", "action", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AgentTools implements ToolSet {
     public static final int $stable = 8;
     private final Channel<AgentAction> _actionChannel = ChannelKt.Channel$default(Integer.MAX_VALUE, null, null, 6, null);
@@ -98,9 +97,9 @@ public final class AgentTools implements ToolSet {
         this.resultWebviewToShow = callJsSkillResultWebview;
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.AgentTools$loadSkill$1 */
-    /* JADX INFO: compiled from: AgentTools.kt */
-    @Metadata(m921d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\u0010\u0000\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00020\u0001*\u00020\u0003H\n"}, m922d2 = {"<anonymous>", "", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.AgentTools$loadSkill$1", m932f = "AgentTools.kt", m933i = {0, 0, 0, 1, 1, 1}, m934l = {65, MenuKt.OutTransitionDuration}, m935m = "invokeSuspend", m936n = {"skills", "skill", "skillContent", "skills", "skill", "skillContent"}, m938s = {"L$0", "L$1", "L$2", "L$0", "L$1", "L$2"})
     static final class C24321 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Map<String, ? extends String>>, Object> {
         final /* synthetic */ String $skillName;
@@ -125,7 +124,7 @@ public final class AgentTools implements ToolSet {
             return invoke2(coroutineScope, (Continuation<? super Map<String, String>>) continuation);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        
         public final Object invoke2(CoroutineScope coroutineScope, Continuation<? super Map<String, String>> continuation) {
             return ((C24321) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
@@ -210,9 +209,9 @@ public final class AgentTools implements ToolSet {
         return (Map) BuildersKt.runBlocking(Dispatchers.getIO(), new C24321(skillName, null));
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.AgentTools$runJs$1 */
-    /* JADX INFO: compiled from: AgentTools.kt */
-    @Metadata(m921d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\u0010\u0000\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00020\u0001*\u00020\u0003H\n"}, m922d2 = {"<anonymous>", "", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.AgentTools$runJs$1", m932f = "AgentTools.kt", m933i = {0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5}, m934l = {AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY, 137, 138, 162, 175, 176}, m935m = "invokeSuspend", m936n = {"$this$runBlocking", "skills", "skill", "$this$runBlocking", "skills", "skill", "secret", "savedSecret", "action", "$this$runBlocking", "skills", "skill", "secret", "savedSecret", "action", "$this$runBlocking", "skills", "skill", "secret", ImagesContract.URL, "$this$runBlocking", "skills", "skill", "secret", ImagesContract.URL, "action", "$this$runBlocking", "skills", "skill", "secret", ImagesContract.URL, "action"}, m938s = {"L$0", "L$1", "L$2", "L$0", "L$1", "L$2", "L$3", "L$4", "L$5", "L$0", "L$1", "L$2", "L$3", "L$4", "L$5", "L$0", "L$1", "L$2", "L$3", "L$4", "L$0", "L$1", "L$2", "L$3", "L$4", "L$5", "L$0", "L$1", "L$2", "L$3", "L$4", "L$5"})
     static final class C24341 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Map<String, ? extends String>>, Object> {
         final /* synthetic */ String $data;
@@ -248,7 +247,7 @@ public final class AgentTools implements ToolSet {
             return invoke2(coroutineScope, (Continuation<? super Map<String, String>>) continuation);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        
         public final Object invoke2(CoroutineScope coroutineScope, Continuation<? super Map<String, String>> continuation) {
             return ((C24341) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
@@ -293,9 +292,9 @@ public final class AgentTools implements ToolSet {
         return (Map) BuildersKt.runBlocking(Dispatchers.getIO(), new C24341(skillName, scriptName, data, this, null));
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.AgentTools$runIntent$1 */
-    /* JADX INFO: compiled from: AgentTools.kt */
-    @Metadata(m921d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\u0010\u0000\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00020\u0001*\u00020\u0003H\n"}, m922d2 = {"<anonymous>", "", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.AgentTools$runIntent$1", m932f = "AgentTools.kt", m933i = {}, m934l = {234}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C24331 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Map<String, ? extends String>>, Object> {
         final /* synthetic */ String $intent;
@@ -321,7 +320,7 @@ public final class AgentTools implements ToolSet {
             return invoke2(coroutineScope, (Continuation<? super Map<String, String>>) continuation);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        
         public final Object invoke2(CoroutineScope coroutineScope, Continuation<? super Map<String, String>> continuation) {
             return ((C24331) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
@@ -363,9 +362,9 @@ public final class AgentTools implements ToolSet {
         return (Map) BuildersKt.runBlocking(Dispatchers.getIO(), new C24331(intent, parameters, this, null));
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.AgentTools$sendAgentAction$1 */
-    /* JADX INFO: compiled from: AgentTools.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.AgentTools$sendAgentAction$1", m932f = "AgentTools.kt", m933i = {}, m934l = {259}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C24351 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ AgentAction $action;

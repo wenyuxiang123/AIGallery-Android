@@ -11,7 +11,7 @@ import dagger.hilt.android.internal.managers.SavedStateHandleHolder;
 import dagger.hilt.internal.GeneratedComponentManagerHolder;
 import dagger.hilt.internal.UnsafeCasts;
 
-/* JADX INFO: loaded from: classes3.dex */
+
 public abstract class Hilt_MainActivity extends ComponentActivity implements GeneratedComponentManagerHolder {
     private volatile ActivityComponentManager componentManager;
     private final Object componentManagerLock;

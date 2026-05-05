@@ -16,7 +16,6 @@ import androidx.activity.compose.ManagedActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.compose.p000ui.Modifier;
 import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.viewinterop.AndroidView_androidKt;
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.ComposerKt;
@@ -37,14 +36,14 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: GalleryWebView.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000>\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a\u0099\u0001\u0010\u0003\u001a\u00020\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00012\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\t2\b\b\u0002\u0010\u000b\u001a\u00020\t2\u0016\b\u0002\u0010\f\u001a\u0010\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u0004\u0018\u00010\r2\u0018\b\u0002\u0010\u000f\u001a\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0010\u0012\u0004\u0012\u00020\u0004\u0018\u00010\r2\u0018\b\u0002\u0010\u0011\u001a\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u0012\u0012\u0004\u0012\u00020\u0004\u0018\u00010\r2\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0014H\u0007¢\u0006\u0002\u0010\u0015\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0016²\u0006\f\u0010\u0017\u001a\u0004\u0018\u00010\u0012X\u008a\u008e\u0002²\u0006\f\u0010\u0018\u001a\u0004\u0018\u00010\u0012X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "iframeWrapper", "GalleryWebView", "", "modifier", "Landroidx/compose/ui/Modifier;", "initialUrl", "useIframeWrapper", "", "preventParentScrolling", "allowRequestPermission", "onWebViewCreated", "Lkotlin/Function1;", "Landroid/webkit/WebView;", "onConsoleMessage", "Landroid/webkit/ConsoleMessage;", "onPermissionRequest", "Landroid/webkit/PermissionRequest;", "customWebViewClient", "Landroid/webkit/WebViewClient;", "(Landroidx/compose/ui/Modifier;Ljava/lang/String;ZZZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroid/webkit/WebViewClient;Landroidx/compose/runtime/Composer;II)V", "app_debug", "pendingCameraPermissionRequest", "pendingAudioPermissionRequest"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "pendingCameraPermissionRequest", "pendingAudioPermissionRequest"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class GalleryWebViewKt {
     private static final String TAG = "AGGalleryWebView";
     private static final String iframeWrapper = "<html>\n  <body style=\"margin:0;padding:0;\">\n    <iframe\n        width=\"100%\"\n        height=\"100%\"\n        src=\"___\"\n        frameborder=\"0\"\n        style=\"border:0;\">\n    </iframe>\n  </body>\n</html>";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryWebView$lambda$21(Modifier modifier, String str, boolean z, boolean z2, boolean z3, Function1 function1, Function1 function12, Function1 function13, WebViewClient webViewClient, int i, int i2, Composer composer, int i3) {
         GalleryWebView(modifier, str, z, z2, z3, function1, function12, function13, webViewClient, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -358,7 +357,7 @@ public final class GalleryWebViewKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryWebView$lambda$9$lambda$8(MutableState $pendingCameraPermissionRequest$delegate, boolean isGranted) {
         PermissionRequest request = GalleryWebView$lambda$2($pendingCameraPermissionRequest$delegate);
         if (request != null) {
@@ -370,7 +369,7 @@ public final class GalleryWebViewKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryWebView$lambda$12$lambda$11(MutableState $pendingAudioPermissionRequest$delegate, boolean isGranted) {
         PermissionRequest request = GalleryWebView$lambda$5($pendingAudioPermissionRequest$delegate);
         if (request != null) {
@@ -382,7 +381,7 @@ public final class GalleryWebViewKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final WebView GalleryWebView$lambda$18$lambda$17(boolean $preventParentScrolling, WebViewClient $curWebViewClient, String $initialUrl, Function1 $onWebViewCreated, final Function1 $onConsoleMessage, final boolean $allowRequestPermission, final Function1 $onPermissionRequest, final ManagedActivityResultLauncher $cameraPermissionLauncher, final ManagedActivityResultLauncher $audioPermissionLauncher, final MutableState $pendingCameraPermissionRequest$delegate, final MutableState $pendingAudioPermissionRequest$delegate, boolean $useIframeWrapper, Context ctx) {
         Intrinsics.checkNotNullParameter(ctx, "ctx");
         WebView $this$GalleryWebView_u24lambda_u2418_u24lambda_u2417_u24lambda_u2416 = new WebView(ctx);
@@ -506,13 +505,13 @@ public final class GalleryWebViewKt {
         return $this$GalleryWebView_u24lambda_u2418_u24lambda_u2417_u24lambda_u2416;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean GalleryWebView$lambda$18$lambda$17$lambda$16$lambda$14(View v, MotionEvent event) {
         v.getParent().requestDisallowInterceptTouchEvent(true);
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryWebView$lambda$20$lambda$19(WebView webView) {
         Intrinsics.checkNotNullParameter(webView, "webView");
         webView.stopLoading();

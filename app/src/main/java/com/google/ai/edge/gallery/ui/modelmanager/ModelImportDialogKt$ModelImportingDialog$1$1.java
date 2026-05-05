@@ -2,7 +2,6 @@ package com.google.ai.edge.gallery.ui.modelmanager;
 
 import android.content.Context;
 import android.net.Uri;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.MutableFloatState;
 import androidx.compose.runtime.MutableState;
 import com.google.ai.edge.gallery.proto.ImportedModel;
@@ -19,9 +18,9 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: ModelImportDialog.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.modelmanager.ModelImportDialogKt$ModelImportingDialog$1$1", m932f = "ModelImportDialog.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
 final class ModelImportDialogKt$ModelImportingDialog$1$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Context $context;
@@ -96,19 +95,19 @@ final class ModelImportDialogKt$ModelImportingDialog$1$1 extends SuspendLambda i
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit invokeSuspend$lambda$0(Function1 $onDone, ImportedModel $info) {
         $onDone.invoke($info);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit invokeSuspend$lambda$1(MutableFloatState $progress$delegate, float it) {
         $progress$delegate.setFloatValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit invokeSuspend$lambda$2(MutableState $error$delegate, String it) {
         $error$delegate.setValue(it);
         return Unit.INSTANCE;

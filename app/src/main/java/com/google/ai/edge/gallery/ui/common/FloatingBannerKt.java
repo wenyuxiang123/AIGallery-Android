@@ -16,7 +16,6 @@ import androidx.compose.p000ui.ComposedModifierKt;
 import androidx.compose.p000ui.Modifier;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -34,11 +33,11 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: FloatingBanner.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000\u001c\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a'\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u0007H\u0007¢\u0006\u0002\u0010\b¨\u0006\t"}, m922d2 = {"FloatingBanner", "", "visible", "", "text", "", "modifier", "Landroidx/compose/ui/Modifier;", "(ZLjava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class FloatingBannerKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit FloatingBanner$lambda$2(boolean z, String str, Modifier modifier, int i, int i2, Composer composer, int i3) {
         FloatingBanner(z, str, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -98,7 +97,7 @@ public final class FloatingBannerKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit FloatingBanner$lambda$1(String $text, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");

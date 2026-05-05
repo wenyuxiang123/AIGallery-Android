@@ -1,7 +1,6 @@
 package com.google.ai.edge.gallery.data;
 
 import android.content.Context;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.core.view.accessibility.AccessibilityEventCompat;
 import com.google.android.gms.common.internal.ImagesContract;
 import com.google.common.primitives.Ints;
@@ -16,9 +15,8 @@ import kotlin.collections.MapsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: Model.kt */
-/* JADX INFO: loaded from: classes12.dex */
-@Metadata(m921d1 = {"\u0000 \u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010$\n\u0002\b\\\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b6\b\u0087\b\u0018\u00002\u00020\u0001B¿\u0004\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0003\u0012\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\b\b\u0002\u0010\t\u001a\u00020\u0003\u0012\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00030\u0007\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f\u0012\b\b\u0002\u0010\r\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u000e\u001a\u00020\u000f\u0012\b\b\u0002\u0010\u0010\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0011\u001a\u00020\u0003\u0012\u000e\b\u0002\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00130\u0007\u0012\b\b\u0002\u0010\u0014\u001a\u00020\u0015\u0012\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u0017\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u0003\u0012\u000e\b\u0002\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001d0\u0007\u0012\b\b\u0002\u0010\u001e\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u001f\u001a\u00020 \u0012\b\b\u0002\u0010!\u001a\u00020\u0003\u0012\b\b\u0002\u0010\"\u001a\u00020\u0003\u0012\b\b\u0002\u0010#\u001a\u00020\u0015\u0012\b\b\u0002\u0010$\u001a\u00020\u0015\u0012\b\b\u0002\u0010%\u001a\u00020\u0015\u0012\b\b\u0002\u0010&\u001a\u00020\u0003\u0012\u000e\b\u0002\u0010'\u001a\b\u0012\u0004\u0012\u00020(0\u0007\u0012\b\b\u0002\u0010)\u001a\u00020\u0015\u0012\b\b\u0002\u0010*\u001a\u00020\u0015\u0012\b\b\u0002\u0010+\u001a\u00020\u0015\u0012\b\b\u0002\u0010,\u001a\u00020\u0015\u0012\u000e\b\u0002\u0010-\u001a\b\u0012\u0004\u0012\u00020.0\u0007\u0012\b\b\u0002\u0010/\u001a\u00020\f\u0012\u000e\b\u0002\u00100\u001a\b\u0012\u0004\u0012\u0002010\u0007\u0012\b\b\u0002\u00102\u001a\u000201\u0012\b\b\u0002\u00103\u001a\u00020\u0015\u0012\u001a\b\u0002\u00104\u001a\u0014\u0012\u0004\u0012\u00020.\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u000705\u0012\b\b\u0002\u00106\u001a\u00020\u0003\u0012\n\b\u0002\u00107\u001a\u0004\u0018\u00010\u0001\u0012\b\b\u0002\u00108\u001a\u00020\u0015\u0012\b\b\u0002\u00109\u001a\u00020\u0015\u0012\u0014\b\u0002\u0010:\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000105\u0012\u0014\b\u0002\u0010;\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000105\u0012\b\b\u0002\u0010<\u001a\u00020\u000f\u0012\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010>\u001a\u00020\u0015\u0012\n\b\u0002\u0010?\u001a\u0004\u0018\u00010\u001d¢\u0006\u0004\b@\u0010AJ\b\u0010\u0091\u0001\u001a\u00030\u0092\u0001J\u001c\u0010\u0093\u0001\u001a\u00020\u00032\b\u0010\u0094\u0001\u001a\u00030\u0095\u00012\t\b\u0002\u0010\u0096\u0001\u001a\u00020\u0003J\u001c\u0010\u0097\u0001\u001a\u00020\f2\b\u0010\u0098\u0001\u001a\u00030\u0099\u00012\t\b\u0002\u0010\u009a\u0001\u001a\u00020\fJ\u001e\u0010\u009b\u0001\u001a\u00030\u009c\u00012\b\u0010\u0098\u0001\u001a\u00030\u0099\u00012\n\b\u0002\u0010\u009a\u0001\u001a\u00030\u009c\u0001J\u001c\u0010\u009d\u0001\u001a\u00020\u00152\b\u0010\u0098\u0001\u001a\u00030\u0099\u00012\t\b\u0002\u0010\u009a\u0001\u001a\u00020\u0015J\u001c\u0010\u009e\u0001\u001a\u00020\u00032\b\u0010\u0098\u0001\u001a\u00030\u0099\u00012\t\b\u0002\u0010\u009a\u0001\u001a\u00020\u0003J\u0011\u0010\u009f\u0001\u001a\u0004\u0018\u00010\u00132\u0006\u0010\u0002\u001a\u00020\u0003J&\u0010 \u0001\u001a\u00020\u00012\b\u0010\u0098\u0001\u001a\u00030\u0099\u00012\b\u0010¡\u0001\u001a\u00030¢\u00012\u0007\u0010\u009a\u0001\u001a\u00020\u0001H\u0002J\n\u0010£\u0001\u001a\u00020\u0003HÆ\u0003J\n\u0010¤\u0001\u001a\u00020\u0003HÆ\u0003J\n\u0010¥\u0001\u001a\u00020\u0003HÆ\u0003J\u0010\u0010¦\u0001\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0003J\n\u0010§\u0001\u001a\u00020\u0003HÆ\u0003J\u0010\u0010¨\u0001\u001a\b\u0012\u0004\u0012\u00020\u00030\u0007HÆ\u0003J\u0011\u0010©\u0001\u001a\u0004\u0018\u00010\fHÆ\u0003¢\u0006\u0002\u0010MJ\n\u0010ª\u0001\u001a\u00020\u0003HÆ\u0003J\n\u0010«\u0001\u001a\u00020\u000fHÆ\u0003J\n\u0010¬\u0001\u001a\u00020\u0003HÆ\u0003J\n\u0010\u00ad\u0001\u001a\u00020\u0003HÆ\u0003J\u0010\u0010®\u0001\u001a\b\u0012\u0004\u0012\u00020\u00130\u0007HÆ\u0003J\n\u0010¯\u0001\u001a\u00020\u0015HÆ\u0003J\f\u0010°\u0001\u001a\u0004\u0018\u00010\u0017HÆ\u0003J\f\u0010±\u0001\u001a\u0004\u0018\u00010\u0019HÆ\u0003J\f\u0010²\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\f\u0010³\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u0010\u0010´\u0001\u001a\b\u0012\u0004\u0012\u00020\u001d0\u0007HÆ\u0003J\n\u0010µ\u0001\u001a\u00020\u0003HÆ\u0003J\n\u0010¶\u0001\u001a\u00020 HÆ\u0003J\n\u0010·\u0001\u001a\u00020\u0003HÆ\u0003J\n\u0010¸\u0001\u001a\u00020\u0003HÆ\u0003J\n\u0010¹\u0001\u001a\u00020\u0015HÆ\u0003J\n\u0010º\u0001\u001a\u00020\u0015HÆ\u0003J\n\u0010»\u0001\u001a\u00020\u0015HÆ\u0003J\n\u0010¼\u0001\u001a\u00020\u0003HÆ\u0003J\u0010\u0010½\u0001\u001a\b\u0012\u0004\u0012\u00020(0\u0007HÆ\u0003J\n\u0010¾\u0001\u001a\u00020\u0015HÆ\u0003J\n\u0010¿\u0001\u001a\u00020\u0015HÆ\u0003J\n\u0010À\u0001\u001a\u00020\u0015HÆ\u0003J\n\u0010Á\u0001\u001a\u00020\u0015HÆ\u0003J\u0010\u0010Â\u0001\u001a\b\u0012\u0004\u0012\u00020.0\u0007HÆ\u0003J\n\u0010Ã\u0001\u001a\u00020\fHÆ\u0003J\u0010\u0010Ä\u0001\u001a\b\u0012\u0004\u0012\u0002010\u0007HÆ\u0003J\n\u0010Å\u0001\u001a\u000201HÆ\u0003J\n\u0010Æ\u0001\u001a\u00020\u0015HÆ\u0003J\u001c\u0010Ç\u0001\u001a\u0014\u0012\u0004\u0012\u00020.\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u000705HÆ\u0003J\n\u0010È\u0001\u001a\u00020\u0003HÆ\u0003J\f\u0010É\u0001\u001a\u0004\u0018\u00010\u0001HÆ\u0003J\n\u0010Ê\u0001\u001a\u00020\u0015HÆ\u0003J\n\u0010Ë\u0001\u001a\u00020\u0015HÆ\u0003J\u0016\u0010Ì\u0001\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000105HÆ\u0003J\u0016\u0010Í\u0001\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000105HÆ\u0003J\n\u0010Î\u0001\u001a\u00020\u000fHÆ\u0003J\f\u0010Ï\u0001\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\n\u0010Ð\u0001\u001a\u00020\u0015HÆ\u0003J\f\u0010Ñ\u0001\u001a\u0004\u0018\u00010\u001dHÆ\u0003JÊ\u0004\u0010Ò\u0001\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\b\b\u0002\u0010\t\u001a\u00020\u00032\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\b\u0002\u0010\r\u001a\u00020\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\u00032\b\b\u0002\u0010\u0011\u001a\u00020\u00032\u000e\b\u0002\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00130\u00072\b\b\u0002\u0010\u0014\u001a\u00020\u00152\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u00172\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\n\b\u0002\u0010\u001a\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00032\u000e\b\u0002\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001d0\u00072\b\b\u0002\u0010\u001e\u001a\u00020\u00032\b\b\u0002\u0010\u001f\u001a\u00020 2\b\b\u0002\u0010!\u001a\u00020\u00032\b\b\u0002\u0010\"\u001a\u00020\u00032\b\b\u0002\u0010#\u001a\u00020\u00152\b\b\u0002\u0010$\u001a\u00020\u00152\b\b\u0002\u0010%\u001a\u00020\u00152\b\b\u0002\u0010&\u001a\u00020\u00032\u000e\b\u0002\u0010'\u001a\b\u0012\u0004\u0012\u00020(0\u00072\b\b\u0002\u0010)\u001a\u00020\u00152\b\b\u0002\u0010*\u001a\u00020\u00152\b\b\u0002\u0010+\u001a\u00020\u00152\b\b\u0002\u0010,\u001a\u00020\u00152\u000e\b\u0002\u0010-\u001a\b\u0012\u0004\u0012\u00020.0\u00072\b\b\u0002\u0010/\u001a\u00020\f2\u000e\b\u0002\u00100\u001a\b\u0012\u0004\u0012\u0002010\u00072\b\b\u0002\u00102\u001a\u0002012\b\b\u0002\u00103\u001a\u00020\u00152\u001a\b\u0002\u00104\u001a\u0014\u0012\u0004\u0012\u00020.\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u0007052\b\b\u0002\u00106\u001a\u00020\u00032\n\b\u0002\u00107\u001a\u0004\u0018\u00010\u00012\b\b\u0002\u00108\u001a\u00020\u00152\b\b\u0002\u00109\u001a\u00020\u00152\u0014\b\u0002\u0010:\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0001052\u0014\b\u0002\u0010;\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0001052\b\b\u0002\u0010<\u001a\u00020\u000f2\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010>\u001a\u00020\u00152\n\b\u0002\u0010?\u001a\u0004\u0018\u00010\u001dHÆ\u0001¢\u0006\u0003\u0010Ó\u0001J\u0015\u0010Ô\u0001\u001a\u00020\u00152\t\u0010Õ\u0001\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\n\u0010Ö\u0001\u001a\u00020\fHÖ\u0001J\n\u0010×\u0001\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\bB\u0010CR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\bD\u0010CR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\bE\u0010CR \u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bF\u0010G\"\u0004\bH\u0010IR\u0011\u0010\t\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\bJ\u0010CR\u0017\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00030\u0007¢\u0006\b\n\u0000\u001a\u0004\bK\u0010GR\u0015\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\n\n\u0002\u0010N\u001a\u0004\bL\u0010MR\u0011\u0010\r\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\bO\u0010CR\u0011\u0010\u000e\u001a\u00020\u000f¢\u0006\b\n\u0000\u001a\u0004\bP\u0010QR\u001a\u0010\u0010\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bR\u0010C\"\u0004\bS\u0010TR\u001a\u0010\u0011\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bU\u0010C\"\u0004\bV\u0010TR\u0017\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00130\u0007¢\u0006\b\n\u0000\u001a\u0004\bW\u0010GR\u0011\u0010\u0014\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010XR\u0013\u0010\u0016\u001a\u0004\u0018\u00010\u0017¢\u0006\b\n\u0000\u001a\u0004\bY\u0010ZR\u0013\u0010\u0018\u001a\u0004\u0018\u00010\u0019¢\u0006\b\n\u0000\u001a\u0004\b[\u0010\\R\u0013\u0010\u001a\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b]\u0010CR\u0013\u0010\u001b\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b^\u0010CR\u0017\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001d0\u0007¢\u0006\b\n\u0000\u001a\u0004\b_\u0010GR\u0011\u0010\u001e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b`\u0010CR\u0011\u0010\u001f\u001a\u00020 ¢\u0006\b\n\u0000\u001a\u0004\ba\u0010bR\u0011\u0010!\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\bc\u0010CR\u0011\u0010\"\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\bd\u0010CR\u0011\u0010#\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\be\u0010XR\u0011\u0010$\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\bf\u0010XR\u0011\u0010%\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b%\u0010XR\u0011\u0010&\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\bg\u0010CR\u0017\u0010'\u001a\b\u0012\u0004\u0012\u00020(0\u0007¢\u0006\b\n\u0000\u001a\u0004\bh\u0010GR\u0011\u0010)\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\bi\u0010XR\u0011\u0010*\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\bj\u0010XR\u0011\u0010+\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\bk\u0010XR\u0011\u0010,\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\bl\u0010XR\u0017\u0010-\u001a\b\u0012\u0004\u0012\u00020.0\u0007¢\u0006\b\n\u0000\u001a\u0004\bm\u0010GR\u0011\u0010/\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\bn\u0010oR\u0017\u00100\u001a\b\u0012\u0004\u0012\u0002010\u0007¢\u0006\b\n\u0000\u001a\u0004\bp\u0010GR\u0011\u00102\u001a\u000201¢\u0006\b\n\u0000\u001a\u0004\bq\u0010rR\u0011\u00103\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\bs\u0010XR#\u00104\u001a\u0014\u0012\u0004\u0012\u00020.\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00030\u000705¢\u0006\b\n\u0000\u001a\u0004\bt\u0010uR\u001a\u00106\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bv\u0010C\"\u0004\bw\u0010TR\u001c\u00107\u001a\u0004\u0018\u00010\u0001X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bx\u0010y\"\u0004\bz\u0010{R\u001a\u00108\u001a\u00020\u0015X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b|\u0010X\"\u0004\b}\u0010~R\u001b\u00109\u001a\u00020\u0015X\u0086\u000e¢\u0006\u000f\n\u0000\u001a\u0004\b\u007f\u0010X\"\u0005\b\u0080\u0001\u0010~R)\u0010:\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000105X\u0086\u000e¢\u0006\u0011\n\u0000\u001a\u0005\b\u0081\u0001\u0010u\"\u0006\b\u0082\u0001\u0010\u0083\u0001R)\u0010;\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000105X\u0086\u000e¢\u0006\u0011\n\u0000\u001a\u0005\b\u0084\u0001\u0010u\"\u0006\b\u0085\u0001\u0010\u0083\u0001R\u001d\u0010<\u001a\u00020\u000fX\u0086\u000e¢\u0006\u0011\n\u0000\u001a\u0005\b\u0086\u0001\u0010Q\"\u0006\b\u0087\u0001\u0010\u0088\u0001R\u001e\u0010=\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u0089\u0001\u0010C\"\u0005\b\u008a\u0001\u0010TR\u001c\u0010>\u001a\u00020\u0015X\u0086\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u008b\u0001\u0010X\"\u0005\b\u008c\u0001\u0010~R \u0010?\u001a\u0004\u0018\u00010\u001dX\u0086\u000e¢\u0006\u0012\n\u0000\u001a\u0006\b\u008d\u0001\u0010\u008e\u0001\"\u0006\b\u008f\u0001\u0010\u0090\u0001¨\u0006Ø\u0001"}, m922d2 = {"Lcom/google/ai/edge/gallery/data/Model;", "", "name", "", "displayName", "info", "configs", "", "Lcom/google/ai/edge/gallery/data/Config;", "learnMoreUrl", "bestForTaskIds", "minDeviceMemoryInGb", "", ImagesContract.URL, "sizeInBytes", "", "downloadFileName", "version", "extraDataFiles", "Lcom/google/ai/edge/gallery/data/ModelDataFile;", "isLlm", "", "aicoreReleaseStage", "Lcom/google/ai/edge/gallery/data/AICoreModelReleaseStage;", "aicorePreference", "Lcom/google/ai/edge/gallery/data/AICoreModelPreference;", "parentModelName", "variantLabel", "updatableModelFiles", "Lcom/google/ai/edge/gallery/data/ModelFile;", "updateInfo", "runtimeType", "Lcom/google/ai/edge/gallery/data/RuntimeType;", "localFileRelativeDirPathOverride", "localModelFilePathOverride", "showRunAgainButton", "showBenchmarkButton", "isZip", "unzipDir", "llmPromptTemplates", "Lcom/google/ai/edge/gallery/data/PromptTemplate;", "llmSupportImage", "llmSupportAudio", "llmSupportTinyGarden", "llmSupportMobileActions", "capabilities", "Lcom/google/ai/edge/gallery/data/ModelCapability;", "llmMaxToken", "accelerators", "Lcom/google/ai/edge/gallery/data/Accelerator;", "visionAccelerator", "imported", "capabilityToTaskTypes", "", "normalizedName", "instance", "initializing", "cleanUpAfterInit", "configValues", "prevConfigValues", "totalBytes", "accessToken", "updatable", "latestModelFile", "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/lang/Integer;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/util/List;ZLcom/google/ai/edge/gallery/data/AICoreModelReleaseStage;Lcom/google/ai/edge/gallery/data/AICoreModelPreference;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/google/ai/edge/gallery/data/RuntimeType;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/String;Ljava/util/List;ZZZZLjava/util/List;ILjava/util/List;Lcom/google/ai/edge/gallery/data/Accelerator;ZLjava/util/Map;Ljava/lang/String;Ljava/lang/Object;ZZLjava/util/Map;Ljava/util/Map;JLjava/lang/String;ZLcom/google/ai/edge/gallery/data/ModelFile;)V", "getName", "()Ljava/lang/String;", "getDisplayName", "getInfo", "getConfigs", "()Ljava/util/List;", "setConfigs", "(Ljava/util/List;)V", "getLearnMoreUrl", "getBestForTaskIds", "getMinDeviceMemoryInGb", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getUrl", "getSizeInBytes", "()J", "getDownloadFileName", "setDownloadFileName", "(Ljava/lang/String;)V", "getVersion", "setVersion", "getExtraDataFiles", "()Z", "getAicoreReleaseStage", "()Lcom/google/ai/edge/gallery/data/AICoreModelReleaseStage;", "getAicorePreference", "()Lcom/google/ai/edge/gallery/data/AICoreModelPreference;", "getParentModelName", "getVariantLabel", "getUpdatableModelFiles", "getUpdateInfo", "getRuntimeType", "()Lcom/google/ai/edge/gallery/data/RuntimeType;", "getLocalFileRelativeDirPathOverride", "getLocalModelFilePathOverride", "getShowRunAgainButton", "getShowBenchmarkButton", "getUnzipDir", "getLlmPromptTemplates", "getLlmSupportImage", "getLlmSupportAudio", "getLlmSupportTinyGarden", "getLlmSupportMobileActions", "getCapabilities", "getLlmMaxToken", "()I", "getAccelerators", "getVisionAccelerator", "()Lcom/google/ai/edge/gallery/data/Accelerator;", "getImported", "getCapabilityToTaskTypes", "()Ljava/util/Map;", "getNormalizedName", "setNormalizedName", "getInstance", "()Ljava/lang/Object;", "setInstance", "(Ljava/lang/Object;)V", "getInitializing", "setInitializing", "(Z)V", "getCleanUpAfterInit", "setCleanUpAfterInit", "getConfigValues", "setConfigValues", "(Ljava/util/Map;)V", "getPrevConfigValues", "setPrevConfigValues", "getTotalBytes", "setTotalBytes", "(J)V", "getAccessToken", "setAccessToken", "getUpdatable", "setUpdatable", "getLatestModelFile", "()Lcom/google/ai/edge/gallery/data/ModelFile;", "setLatestModelFile", "(Lcom/google/ai/edge/gallery/data/ModelFile;)V", "preProcess", "", "getPath", "context", "Landroid/content/Context;", "fileName", "getIntConfigValue", "key", "Lcom/google/ai/edge/gallery/data/ConfigKey;", "defaultValue", "getFloatConfigValue", "", "getBooleanConfigValue", "getStringConfigValue", "getExtraDataFile", "getTypedConfigValue", "valueType", "Lcom/google/ai/edge/gallery/data/ValueType;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component20", "component21", "component22", "component23", "component24", "component25", "component26", "component27", "component28", "component29", "component30", "component31", "component32", "component33", "component34", "component35", "component36", "component37", "component38", "component39", "component40", "component41", "component42", "component43", "component44", "component45", "component46", "component47", "copy", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/util/List;Ljava/lang/Integer;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/util/List;ZLcom/google/ai/edge/gallery/data/AICoreModelReleaseStage;Lcom/google/ai/edge/gallery/data/AICoreModelPreference;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/google/ai/edge/gallery/data/RuntimeType;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/String;Ljava/util/List;ZZZZLjava/util/List;ILjava/util/List;Lcom/google/ai/edge/gallery/data/Accelerator;ZLjava/util/Map;Ljava/lang/String;Ljava/lang/Object;ZZLjava/util/Map;Ljava/util/Map;JLjava/lang/String;ZLcom/google/ai/edge/gallery/data/ModelFile;)Lcom/google/ai/edge/gallery/data/Model;", "equals", "other", "hashCode", "toString", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
 public final /* data */ class Model {
     public static final int $stable = 8;
     private final List<Accelerator> accelerators;
@@ -69,17 +67,17 @@ public final /* data */ class Model {
     private String version;
     private final Accelerator visionAccelerator;
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    
     public final String getName() {
         return this.name;
     }
 
-    /* JADX INFO: renamed from: component10, reason: from getter */
+    
     public final String getDownloadFileName() {
         return this.downloadFileName;
     }
 
-    /* JADX INFO: renamed from: component11, reason: from getter */
+    
     public final String getVersion() {
         return this.version;
     }
@@ -88,27 +86,27 @@ public final /* data */ class Model {
         return this.extraDataFiles;
     }
 
-    /* JADX INFO: renamed from: component13, reason: from getter */
+    
     public final boolean getIsLlm() {
         return this.isLlm;
     }
 
-    /* JADX INFO: renamed from: component14, reason: from getter */
+    
     public final AICoreModelReleaseStage getAicoreReleaseStage() {
         return this.aicoreReleaseStage;
     }
 
-    /* JADX INFO: renamed from: component15, reason: from getter */
+    
     public final AICoreModelPreference getAicorePreference() {
         return this.aicorePreference;
     }
 
-    /* JADX INFO: renamed from: component16, reason: from getter */
+    
     public final String getParentModelName() {
         return this.parentModelName;
     }
 
-    /* JADX INFO: renamed from: component17, reason: from getter */
+    
     public final String getVariantLabel() {
         return this.variantLabel;
     }
@@ -117,47 +115,47 @@ public final /* data */ class Model {
         return this.updatableModelFiles;
     }
 
-    /* JADX INFO: renamed from: component19, reason: from getter */
+    
     public final String getUpdateInfo() {
         return this.updateInfo;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    
     public final String getDisplayName() {
         return this.displayName;
     }
 
-    /* JADX INFO: renamed from: component20, reason: from getter */
+    
     public final RuntimeType getRuntimeType() {
         return this.runtimeType;
     }
 
-    /* JADX INFO: renamed from: component21, reason: from getter */
+    
     public final String getLocalFileRelativeDirPathOverride() {
         return this.localFileRelativeDirPathOverride;
     }
 
-    /* JADX INFO: renamed from: component22, reason: from getter */
+    
     public final String getLocalModelFilePathOverride() {
         return this.localModelFilePathOverride;
     }
 
-    /* JADX INFO: renamed from: component23, reason: from getter */
+    
     public final boolean getShowRunAgainButton() {
         return this.showRunAgainButton;
     }
 
-    /* JADX INFO: renamed from: component24, reason: from getter */
+    
     public final boolean getShowBenchmarkButton() {
         return this.showBenchmarkButton;
     }
 
-    /* JADX INFO: renamed from: component25, reason: from getter */
+    
     public final boolean getIsZip() {
         return this.isZip;
     }
 
-    /* JADX INFO: renamed from: component26, reason: from getter */
+    
     public final String getUnzipDir() {
         return this.unzipDir;
     }
@@ -166,27 +164,27 @@ public final /* data */ class Model {
         return this.llmPromptTemplates;
     }
 
-    /* JADX INFO: renamed from: component28, reason: from getter */
+    
     public final boolean getLlmSupportImage() {
         return this.llmSupportImage;
     }
 
-    /* JADX INFO: renamed from: component29, reason: from getter */
+    
     public final boolean getLlmSupportAudio() {
         return this.llmSupportAudio;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    
     public final String getInfo() {
         return this.info;
     }
 
-    /* JADX INFO: renamed from: component30, reason: from getter */
+    
     public final boolean getLlmSupportTinyGarden() {
         return this.llmSupportTinyGarden;
     }
 
-    /* JADX INFO: renamed from: component31, reason: from getter */
+    
     public final boolean getLlmSupportMobileActions() {
         return this.llmSupportMobileActions;
     }
@@ -195,7 +193,7 @@ public final /* data */ class Model {
         return this.capabilities;
     }
 
-    /* JADX INFO: renamed from: component33, reason: from getter */
+    
     public final int getLlmMaxToken() {
         return this.llmMaxToken;
     }
@@ -204,12 +202,12 @@ public final /* data */ class Model {
         return this.accelerators;
     }
 
-    /* JADX INFO: renamed from: component35, reason: from getter */
+    
     public final Accelerator getVisionAccelerator() {
         return this.visionAccelerator;
     }
 
-    /* JADX INFO: renamed from: component36, reason: from getter */
+    
     public final boolean getImported() {
         return this.imported;
     }
@@ -218,12 +216,12 @@ public final /* data */ class Model {
         return this.capabilityToTaskTypes;
     }
 
-    /* JADX INFO: renamed from: component38, reason: from getter */
+    
     public final String getNormalizedName() {
         return this.normalizedName;
     }
 
-    /* JADX INFO: renamed from: component39, reason: from getter */
+    
     public final Object getInstance() {
         return this.instance;
     }
@@ -232,12 +230,12 @@ public final /* data */ class Model {
         return this.configs;
     }
 
-    /* JADX INFO: renamed from: component40, reason: from getter */
+    
     public final boolean getInitializing() {
         return this.initializing;
     }
 
-    /* JADX INFO: renamed from: component41, reason: from getter */
+    
     public final boolean getCleanUpAfterInit() {
         return this.cleanUpAfterInit;
     }
@@ -250,27 +248,27 @@ public final /* data */ class Model {
         return this.prevConfigValues;
     }
 
-    /* JADX INFO: renamed from: component44, reason: from getter */
+    
     public final long getTotalBytes() {
         return this.totalBytes;
     }
 
-    /* JADX INFO: renamed from: component45, reason: from getter */
+    
     public final String getAccessToken() {
         return this.accessToken;
     }
 
-    /* JADX INFO: renamed from: component46, reason: from getter */
+    
     public final boolean getUpdatable() {
         return this.updatable;
     }
 
-    /* JADX INFO: renamed from: component47, reason: from getter */
+    
     public final ModelFile getLatestModelFile() {
         return this.latestModelFile;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    
     public final String getLearnMoreUrl() {
         return this.learnMoreUrl;
     }
@@ -279,17 +277,17 @@ public final /* data */ class Model {
         return this.bestForTaskIds;
     }
 
-    /* JADX INFO: renamed from: component7, reason: from getter */
+    
     public final Integer getMinDeviceMemoryInGb() {
         return this.minDeviceMemoryInGb;
     }
 
-    /* JADX INFO: renamed from: component8, reason: from getter */
+    
     public final String getUrl() {
         return this.url;
     }
 
-    /* JADX INFO: renamed from: component9, reason: from getter */
+    
     public final long getSizeInBytes() {
         return this.sizeInBytes;
     }

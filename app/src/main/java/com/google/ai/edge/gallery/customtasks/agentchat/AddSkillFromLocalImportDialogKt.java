@@ -37,7 +37,6 @@ import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
 import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.style.TextOverflow;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.window.AndroidDialog_androidKt;
 import androidx.compose.runtime.Applier;
@@ -63,13 +62,13 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: AddSkillFromLocalImportDialog.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000&\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\u001a1\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00030\u0007H\u0007¢\u0006\u0002\u0010\t\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\n²\u0006\n\u0010\u000b\u001a\u00020\fX\u008a\u0084\u0002²\u0006\n\u0010\r\u001a\u00020\u000eX\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "AddSkillFromLocalImportDialog", "", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "onDismissRequest", "Lkotlin/Function0;", "onSuccess", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;", "showReplaceSkillConfirmationDialog", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;", "showReplaceSkillConfirmationDialog", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AddSkillFromLocalImportDialogKt {
     private static final String TAG = "AGAddSkillFromLocalImportDialog";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromLocalImportDialog$lambda$34(SkillManagerViewModel skillManagerViewModel, Function0 function0, Function0 function02, int i, Composer composer, int i2) {
         AddSkillFromLocalImportDialog(skillManagerViewModel, function0, function02, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -215,14 +214,14 @@ public final class AddSkillFromLocalImportDialogKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromLocalImportDialog$lambda$5$lambda$4(SkillManagerViewModel $skillManagerViewModel, Uri uri) {
         $skillManagerViewModel.setImportDirectoryUri(uri);
         $skillManagerViewModel.setValidationError(null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromLocalImportDialog$lambda$23(final boolean $validating, final String $validationError, final ManagedActivityResultLauncher $directoryPickerLauncher, final Uri $directoryUri, final Context $context, final Function0 $onDismissRequest, final SkillManagerViewModel $skillManagerViewModel, final Function0 $onSuccess, final MutableState $showReplaceSkillConfirmationDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C81@3369L4019,81@3293L4095:AddSkillFromLocalImportDialog.kt#41d64j");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -244,7 +243,7 @@ public final class AddSkillFromLocalImportDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromLocalImportDialog$lambda$23$lambda$22(boolean $validating, String $validationError, final ManagedActivityResultLauncher $directoryPickerLauncher, final Uri $directoryUri, Context $context, final Function0 $onDismissRequest, final SkillManagerViewModel $skillManagerViewModel, final Function0 $onSuccess, final MutableState $showReplaceSkillConfirmationDialog$delegate, ColumnScope Card, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -660,15 +659,15 @@ public final class AddSkillFromLocalImportDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromLocalImportDialog$lambda$23$lambda$22$lambda$21$lambda$13$lambda$11$lambda$10$lambda$9 */
+    
+    
     public static final Unit m418x7f9a930b(ManagedActivityResultLauncher $directoryPickerLauncher) {
         $directoryPickerLauncher.launch(null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromLocalImportDialog$lambda$23$lambda$22$lambda$21$lambda$20$lambda$19$lambda$18 */
+    
+    
     public static final Unit m419x1c91eb81(Uri $directoryUri, SkillManagerViewModel $skillManagerViewModel, MutableState $showReplaceSkillConfirmationDialog$delegate, final Function0 $onDismissRequest, final Function0 $onSuccess) {
         if ($directoryUri != null) {
             if ($skillManagerViewModel.checkLocalSkillExisted($directoryUri)) {
@@ -690,28 +689,28 @@ public final class AddSkillFromLocalImportDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromLocalImportDialog$lambda$23$lambda$22$lambda$21$lambda$20$lambda$19$lambda$18$lambda$17$lambda$15 */
+    
+    
     public static final Unit m420x965a3f3d(Function0 $onDismissRequest, Function0 $onSuccess) {
         $onDismissRequest.invoke();
         $onSuccess.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromLocalImportDialog$lambda$23$lambda$22$lambda$21$lambda$20$lambda$19$lambda$18$lambda$17$lambda$16 */
+    
+    
     public static final Unit m421x965a3f3e(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromLocalImportDialog$lambda$25$lambda$24(MutableState $showReplaceSkillConfirmationDialog$delegate) {
         AddSkillFromLocalImportDialog$lambda$3($showReplaceSkillConfirmationDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromLocalImportDialog$lambda$30(final SkillManagerViewModel $skillManagerViewModel, final Function0 $onDismissRequest, final Function0 $onSuccess, final MutableState $showReplaceSkillConfirmationDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C201@7743L298,200@7715L397:AddSkillFromLocalImportDialog.kt#41d64j");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -742,7 +741,7 @@ public final class AddSkillFromLocalImportDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromLocalImportDialog$lambda$30$lambda$29$lambda$28(SkillManagerViewModel $skillManagerViewModel, MutableState $showReplaceSkillConfirmationDialog$delegate, final Function0 $onDismissRequest, final Function0 $onSuccess) {
         AddSkillFromLocalImportDialog$lambda$3($showReplaceSkillConfirmationDialog$delegate, false);
         $skillManagerViewModel.validateAndAddSkillFromLocalImport(new Function0() { // from class: com.google.ai.edge.gallery.customtasks.agentchat.AddSkillFromLocalImportDialogKt$$ExternalSyntheticLambda7
@@ -759,22 +758,22 @@ public final class AddSkillFromLocalImportDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromLocalImportDialog$lambda$30$lambda$29$lambda$28$lambda$26 */
+    
+    
     public static final Unit m422x5dc748b0(Function0 $onDismissRequest, Function0 $onSuccess) {
         $onDismissRequest.invoke();
         $onSuccess.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromLocalImportDialog$lambda$30$lambda$29$lambda$28$lambda$27 */
+    
+    
     public static final Unit m423x5dc748b1(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromLocalImportDialog$lambda$33(final MutableState $showReplaceSkillConfirmationDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C216@8179L46,216@8154L132:AddSkillFromLocalImportDialog.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -804,7 +803,7 @@ public final class AddSkillFromLocalImportDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromLocalImportDialog$lambda$33$lambda$32$lambda$31(MutableState $showReplaceSkillConfirmationDialog$delegate) {
         AddSkillFromLocalImportDialog$lambda$3($showReplaceSkillConfirmationDialog$delegate, false);
         return Unit.INSTANCE;

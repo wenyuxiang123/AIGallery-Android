@@ -25,7 +25,6 @@ import androidx.compose.p000ui.Modifier;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.StringResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.TextUnitKt;
 import androidx.compose.runtime.Applier;
@@ -65,17 +64,17 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KClass;
 
-/* JADX INFO: compiled from: DownloadModelPanel.kt */
-/* JADX INFO: loaded from: classes13.dex */
-@Metadata(m921d1 = {"\u0000R\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a\u0081\u0001\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00010\u00132\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00152\b\b\u0002\u0010\u0016\u001a\u00020\u00172\b\b\u0002\u0010\u0018\u001a\u00020\u0019H\u0007¢\u0006\u0004\b\u001a\u0010\u001b¨\u0006\u001c"}, m922d2 = {"DownloadModelPanel", "", "model", "Lcom/google/ai/edge/gallery/data/Model;", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "downloadStatus", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatusType;", "downloadProgress", "", "isExpanded", "", "sharedTransitionScope", "Landroidx/compose/animation/SharedTransitionScope;", "animatedVisibilityScope", "Landroidx/compose/animation/AnimatedVisibilityScope;", "onTryItClicked", "Lkotlin/Function0;", "tosViewModel", "Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;", "modifier", "Landroidx/compose/ui/Modifier;", "downloadButtonBackgroundColor", "Landroidx/compose/ui/graphics/Color;", "DownloadModelPanel-KNANIv4", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lcom/google/ai/edge/gallery/data/ModelDownloadStatusType;FZLandroidx/compose/animation/SharedTransitionScope;Landroidx/compose/animation/AnimatedVisibilityScope;Lkotlin/jvm/functions/Function0;Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;Landroidx/compose/ui/Modifier;JLandroidx/compose/runtime/Composer;III)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class DownloadModelPanelKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadModelPanel_KNANIv4$lambda$7(Model model, Task task, ModelManagerViewModel modelManagerViewModel, ModelDownloadStatusType modelDownloadStatusType, float f, boolean z, SharedTransitionScope sharedTransitionScope, AnimatedVisibilityScope animatedVisibilityScope, Function0 function0, TosViewModel tosViewModel, Modifier modifier, long j, int i, int i2, int i3, Composer composer, int i4) {
         m11023DownloadModelPanelKNANIv4(model, task, modelManagerViewModel, modelDownloadStatusType, f, z, sharedTransitionScope, animatedVisibilityScope, function0, tosViewModel, modifier, j, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), RecomposeScopeImplKt.updateChangedFlags(i2), i3);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: DownloadModelPanel-KNANIv4, reason: not valid java name */
+    
     public static final void m11023DownloadModelPanelKNANIv4(final Model model, final Task task, final ModelManagerViewModel modelManagerViewModel, final ModelDownloadStatusType downloadStatus, final float downloadProgress, final boolean isExpanded, final SharedTransitionScope sharedTransitionScope, final AnimatedVisibilityScope animatedVisibilityScope, final Function0<Unit> onTryItClicked, TosViewModel tosViewModel, Modifier modifier, long downloadButtonBackgroundColor, Composer $composer, final int $changed, final int $changed1, final int i) {
         Composer $composer2;
         TosViewModel tosViewModel2;
@@ -303,14 +302,14 @@ public final class DownloadModelPanelKt {
         }
     }
 
-    /* JADX INFO: renamed from: DownloadModelPanel_KNANIv4$lambda$6$lambda$5$isDownloadButtonEnabled */
+    
     private static final boolean m515x4b3a66d3(ModelDownloadStatusType downloadStatus, Model model) {
         boolean downloadFailed = downloadStatus == ModelDownloadStatusType.FAILED;
         boolean isLitertLm = model.getRuntimeType() == RuntimeType.LITERT_LM;
         return !downloadFailed || isLitertLm;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadModelPanel_KNANIv4$lambda$6$lambda$5$lambda$2$lambda$1(Model $model, ModelManagerViewModel $modelManagerViewModel, Task $task) {
         ModelFile it = $model.getLatestModelFile();
         if (it != null) {
@@ -322,7 +321,7 @@ public final class DownloadModelPanelKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadModelPanel_KNANIv4$lambda$6$lambda$5$lambda$4(boolean $isExpanded, RowScope Button, Composer $composer, int $changed) {
         Composer $composer2;
         Intrinsics.checkNotNullParameter(Button, "$this$Button");

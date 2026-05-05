@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class LlmBenchmarkBasicInfo extends GeneratedMessageLite<LlmBenchmarkBasicInfo, Builder> implements LlmBenchmarkBasicInfoOrBuilder {
     public static final int ACCELERATOR_FIELD_NUMBER = 4;
     public static final int APP_VERSION_FIELD_NUMBER = 8;
@@ -39,12 +39,12 @@ public final class LlmBenchmarkBasicInfo extends GeneratedMessageLite<LlmBenchma
         return this.startMs_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setStartMs(long value) {
         this.startMs_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearStartMs() {
         this.startMs_ = 0L;
     }
@@ -54,12 +54,12 @@ public final class LlmBenchmarkBasicInfo extends GeneratedMessageLite<LlmBenchma
         return this.endMs_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setEndMs(long value) {
         this.endMs_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearEndMs() {
         this.endMs_ = 0L;
     }
@@ -74,18 +74,18 @@ public final class LlmBenchmarkBasicInfo extends GeneratedMessageLite<LlmBenchma
         return ByteString.copyFromUtf8(this.modelName_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setModelName(String value) {
         value.getClass();
         this.modelName_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearModelName() {
         this.modelName_ = getDefaultInstance().getModelName();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setModelNameBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.modelName_ = value.toStringUtf8();
@@ -101,18 +101,18 @@ public final class LlmBenchmarkBasicInfo extends GeneratedMessageLite<LlmBenchma
         return ByteString.copyFromUtf8(this.accelerator_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setAccelerator(String value) {
         value.getClass();
         this.accelerator_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearAccelerator() {
         this.accelerator_ = getDefaultInstance().getAccelerator();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setAcceleratorBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.accelerator_ = value.toStringUtf8();
@@ -123,12 +123,12 @@ public final class LlmBenchmarkBasicInfo extends GeneratedMessageLite<LlmBenchma
         return this.prefillTokens_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setPrefillTokens(int value) {
         this.prefillTokens_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearPrefillTokens() {
         this.prefillTokens_ = 0;
     }
@@ -138,12 +138,12 @@ public final class LlmBenchmarkBasicInfo extends GeneratedMessageLite<LlmBenchma
         return this.decodeTokens_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setDecodeTokens(int value) {
         this.decodeTokens_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearDecodeTokens() {
         this.decodeTokens_ = 0;
     }
@@ -153,12 +153,12 @@ public final class LlmBenchmarkBasicInfo extends GeneratedMessageLite<LlmBenchma
         return this.numberOfRuns_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setNumberOfRuns(int value) {
         this.numberOfRuns_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearNumberOfRuns() {
         this.numberOfRuns_ = 0;
     }
@@ -173,18 +173,18 @@ public final class LlmBenchmarkBasicInfo extends GeneratedMessageLite<LlmBenchma
         return ByteString.copyFromUtf8(this.appVersion_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setAppVersion(String value) {
         value.getClass();
         this.appVersion_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearAppVersion() {
         this.appVersion_ = getDefaultInstance().getAppVersion();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setAppVersionBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.appVersion_ = value.toStringUtf8();

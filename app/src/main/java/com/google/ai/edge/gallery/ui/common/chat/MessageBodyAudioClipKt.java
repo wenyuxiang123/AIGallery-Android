@@ -2,7 +2,6 @@ package com.google.ai.edge.gallery.ui.common.chat;
 
 import androidx.compose.foundation.layout.PaddingKt;
 import androidx.compose.p000ui.Modifier;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.ComposerKt;
@@ -13,11 +12,11 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MessageBodyAudioClip.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u001f\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005H\u0007¢\u0006\u0002\u0010\u0006¨\u0006\u0007"}, m922d2 = {"MessageBodyAudioClip", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageAudioClip;", "modifier", "Landroidx/compose/ui/Modifier;", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageAudioClip;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageBodyAudioClipKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyAudioClip$lambda$0(ChatMessageAudioClip chatMessageAudioClip, Modifier modifier, int i, int i2, Composer composer, int i3) {
         MessageBodyAudioClip(chatMessageAudioClip, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;

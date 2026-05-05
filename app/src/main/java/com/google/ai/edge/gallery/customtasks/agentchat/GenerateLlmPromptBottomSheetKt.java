@@ -26,7 +26,6 @@ import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.Clipboard;
 import androidx.compose.p000ui.platform.CompositionLocalsKt;
 import androidx.compose.p000ui.res.StringResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -54,13 +53,13 @@ import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: GenerateLlmPromptBottomSheet.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000 \n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a\u008b\u0001\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00012\u0006\u0010\u0005\u001a\u00020\u00012\u0012\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00030\u00072\u0006\u0010\b\u001a\u00020\u00012\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00030\u00072\u0006\u0010\n\u001a\u00020\u00012\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00030\u00072\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00030\r2\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00030\u0007H\u0007¢\u0006\u0002\u0010\u000f\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0010"}, m922d2 = {"PROMPT_TEMPLATE", "", "GenerateLlmPromptBottomSheet", "", "curDescription", "requirements", "onRequirementsChange", "Lkotlin/Function1;", "inputData", "onInputDataChange", "outputData", "onOutputDataChange", "onDismiss", "Lkotlin/Function0;", "onLlmPromptGenerated", "(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class GenerateLlmPromptBottomSheetKt {
     private static final String PROMPT_TEMPLATE = "# Task: Custom HTML/JS Implementation\nGenerate a single, self-contained HTML file that implements a specific feature or logic as described below.\n\n## 1. Requirement\nThe implementation must fulfill the following:\n> ___requirement___\n\n## 2. Technical Specifications\n* **Structure:** A complete, valid HTML5 document.\n* **Head (Dependencies):** If third-party JS libraries (e.g., Three.js, D3, Lodash, GSAP) are required, include them via CDN using `<script src=\"...\" defer>` tags inside the `<head>`. Do not put implementation logic here.\n* **Body (Implementation):** Place the actual logic implementation inside a single `<script>` tag at the very end of the `<body>`.\n* **Global Interface:** Within the body script, you must expose an `async` function to the global `window` object named: `window['ai_edge_gallery_get_result']`.\n\n## 3. Data Interface & Serialization\n* **Parameter 1 (`data`):** A **JSON-stringified string**.\n    * Once parsed, the input object follows this schema: `___input_data_schema___`\n* **Parameter 2 (`secret`):** A **string** representing a sensitive token or API key (e.g., Bearer token, private key). The implementation should use this if the requirement involves authenticated API calls or encrypted operations.\n* **Output (return value):** The function must return a **JSON-stringified string** with the following exact structure:\n    ```json\n    {\n      \"result\": \"___output_data_schema___\",\n      \"image\": { \"base64\": \"data:image/png;base64,...\" },\n      \"error\": \"Error message string or null\"\n    }\n    ```\n    **CRITICAL RULES:**\n    1. **Dual Output:** The `\"result\"` and `\"image\"` fields can and should coexist in the same response if the requirement involves returning both data/text and a visual asset.\n    2. **Result Serialization:** The value for `\"result\"` must be a JSON-stringified representation of the output data. Set to `null` only if no data is produced.\n    3. **Image Serialization:** The `\"image.base64\"` field must contain a full Data URI. Set the entire `\"image\"` object to `null` only if no image is produced.\n\n## 4. Error Handling\n* Wrap the entire function logic in a `try/catch` block.\n* If an error occurs, the function should return a JSON string where `result` is `null` and `error` contains the error message.\n\n## 5. Response Constraints\n* Return the **raw HTML code only**.\n* Do not provide any introductory text, markdown backticks, or concluding remarks.\n* Start the response immediately with `<!DOCTYPE html>`.\n* Put the output code into a Markdown code block so I can easily copy.";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GenerateLlmPromptBottomSheet$lambda$8(String str, String str2, Function1 function1, String str3, Function1 function12, String str4, Function1 function13, Function0 function0, Function1 function14, int i, Composer composer, int i2) {
         GenerateLlmPromptBottomSheet(str, str2, function1, str3, function12, str4, function13, function0, function14, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -160,7 +159,7 @@ public final class GenerateLlmPromptBottomSheetKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GenerateLlmPromptBottomSheet$lambda$7(final String $requirements, Function1 $onRequirementsChange, final String $inputData, Function1 $onInputDataChange, final String $outputData, Function1 $onOutputDataChange, final CoroutineScope $scope, final Clipboard $clipboard, final Function1 $onLlmPromptGenerated, final SheetState $sheetState, final Function0 $onDismiss, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -368,8 +367,8 @@ public final class GenerateLlmPromptBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: GenerateLlmPromptBottomSheet$lambda$7$lambda$6$lambda$5$lambda$4$lambda$3$lambda$2 */
+    
+    
     public static final Unit m429xef618ef5(String $requirements, String $inputData, String $outputData, CoroutineScope $scope, Clipboard $clipboard, Function1 $onLlmPromptGenerated, SheetState $sheetState, Function0 $onDismiss) {
         String prompt = StringsKt.replace$default(StringsKt.replace$default(StringsKt.replace$default(PROMPT_TEMPLATE, "___requirement___", $requirements, false, 4, (Object) null), "___input_data_schema___", $inputData, false, 4, (Object) null), "___output_data_schema___", $outputData, false, 4, (Object) null);
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new C2500x4c804858(prompt, $clipboard, $onLlmPromptGenerated, $sheetState, $onDismiss, null), 3, null);

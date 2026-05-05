@@ -2,7 +2,7 @@ package com.google.ai.edge.gallery.ui.llmchat;
 
 import dagger.internal.Factory;
 
-/* JADX INFO: loaded from: classes11.dex */
+
 public final class LlmChatViewModel_Factory implements Factory<LlmChatViewModel> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public LlmChatViewModel get() {

@@ -3,7 +3,6 @@ package com.google.ai.edge.gallery.runtime.aicore;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.Log;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.core.app.NotificationCompat;
 import com.google.mlkit.genai.common.DownloadStatus;
 import com.google.mlkit.genai.prompt.GenerateContentRequest;
@@ -43,17 +42,17 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.FlowCollector;
 
-/* JADX INFO: compiled from: AICoreModelHelper.kt */
-/* JADX INFO: loaded from: classes7.dex */
-@Metadata(m921d1 = {"\u0000¸\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0012\n\u0000\n\u0002\u0010$\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003Jf\u0010\n\u001a\u00020\b2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00102\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\b0\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u00152\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00180\u00172\u0006\u0010\u0019\u001a\u00020\u00102\b\u0010\u001a\u001a\u0004\u0018\u00010\u001bH\u0016JZ\u0010\u001c\u001a\u00020\b2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\r\u001a\u00020\u000e2\u0018\u0010\u001d\u001a\u0014\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020\b0\u001e2\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\u0012\u0010 \u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\b0\u0013J\u0016\u0010!\u001a\u00020\u00102\u0006\u0010\r\u001a\u00020\u000eH\u0086@¢\u0006\u0002\u0010\"J@\u0010#\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00102\b\u0010\u0014\u001a\u0004\u0018\u00010\u00152\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00180\u00172\u0006\u0010\u0019\u001a\u00020\u0010H\u0016J\u001e\u0010$\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000e2\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\b0\u0007H\u0016J\u0010\u0010%\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000eH\u0016JÜ\u0001\u0010&\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010'\u001a\u00020\u00062Q\u0010(\u001aM\u0012\u0013\u0012\u00110\u0006¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(,\u0012\u0013\u0012\u00110\u0010¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(-\u0012\u0015\u0012\u0013\u0018\u00010\u0006¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(.\u0012\u0004\u0012\u00020\b0)j\u0002`/2\u0010\u00100\u001a\f\u0012\u0004\u0012\u00020\b0\u0007j\u0002`\t2!\u0010 \u001a\u001d\u0012\u0013\u0012\u00110\u0006¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(1\u0012\u0004\u0012\u00020\b0\u00132\f\u00102\u001a\b\u0012\u0004\u0012\u0002030\u00172\f\u00104\u001a\b\u0012\u0004\u0012\u0002050\u00172\b\u0010\u001a\u001a\u0004\u0018\u00010\u001b2\u0014\u00106\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0006\u0018\u000107H\u0016Jº\u0001\u00108\u001a\u00020\b2\u0006\u00109\u001a\u00020:2\u0006\u0010;\u001a\u00020\u00062\u0006\u0010<\u001a\u00020=2\u0006\u0010>\u001a\u00020?2\f\u00102\u001a\b\u0012\u0004\u0012\u0002030\u00172\u0006\u0010'\u001a\u00020\u00062Q\u0010(\u001aM\u0012\u0013\u0012\u00110\u0006¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(,\u0012\u0013\u0012\u00110\u0010¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(-\u0012\u0015\u0012\u0013\u0018\u00010\u0006¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(.\u0012\u0004\u0012\u00020\b0)j\u0002`/2!\u0010 \u001a\u001d\u0012\u0013\u0012\u00110\u0006¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(1\u0012\u0004\u0012\u00020\b0\u0013H\u0082@¢\u0006\u0002\u0010@J\u001e\u0010A\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010B\u001a\u00020CH\u0082@¢\u0006\u0002\u0010DJ\u0010\u0010E\u001a\u00020C2\u0006\u0010\r\u001a\u00020\u000eH\u0002J\f\u0010F\u001a\u00020G*\u00020\u000eH\u0002J\u001e\u0010H\u001a\u00020\u00062\f\u0010I\u001a\b\u0012\u0004\u0012\u00020J0\u00172\u0006\u0010'\u001a\u00020\u0006H\u0002R$\u0010\u0004\u001a\u0018\u0012\u0004\u0012\u00020\u0006\u0012\u000e\u0012\f\u0012\u0004\u0012\u00020\b0\u0007j\u0002`\t0\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006K"}, m922d2 = {"Lcom/google/ai/edge/gallery/runtime/aicore/AICoreModelHelper;", "Lcom/google/ai/edge/gallery/runtime/LlmModelHelper;", "<init>", "()V", "cleanUpListeners", "", "", "Lkotlin/Function0;", "", "Lcom/google/ai/edge/gallery/runtime/CleanUpListener;", "initialize", "context", "Landroid/content/Context;", "model", "Lcom/google/ai/edge/gallery/data/Model;", "supportImage", "", "supportAudio", "onDone", "Lkotlin/Function1;", "systemInstruction", "Lcom/google/ai/edge/litertlm/Contents;", "tools", "", "Lcom/google/ai/edge/litertlm/ToolProvider;", "enableConversationConstrainedDecoding", "coroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "downloadModel", "onProgress", "Lkotlin/Function2;", "", "onError", "isModelDownloaded", "(Lcom/google/ai/edge/gallery/data/Model;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "resetConversation", "cleanUp", "stopResponse", "runInference", "input", "resultListener", "Lkotlin/Function3;", "Lkotlin/ParameterName;", "name", "partialResult", "done", "partialThinkingResult", "Lcom/google/ai/edge/gallery/runtime/ResultListener;", "cleanUpListener", "message", "images", "Landroid/graphics/Bitmap;", "audioClips", "", "extraContext", "", "executeRunInference", "instance", "Lcom/google/ai/edge/gallery/runtime/aicore/AICoreModelInstance;", "prompt", "temperature", "", "topK", "", "(Lcom/google/ai/edge/gallery/runtime/aicore/AICoreModelInstance;Ljava/lang/String;FILjava/util/List;Ljava/lang/String;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "updateTokenLimit", "generativeModel", "Lcom/google/mlkit/genai/prompt/GenerativeModel;", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/mlkit/genai/prompt/GenerativeModel;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getGenerativeModel", "toAICoreModelConfig", "Lcom/google/mlkit/genai/prompt/ModelConfig;", "formatChatPrompt", "chatHistory", "Lcom/google/ai/edge/gallery/runtime/aicore/AICoreChatMessage;", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+j\u0002`/2\u0010\u00100\u001a\f\u0012\u0004\u0012\u00020\b0\u0007j\u0002`\t2!\u0010 \u001a\u001d\u0012\u0013\u0012\u00110\u0006¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(1\u0012\u0004\u0012\u00020\b0\u00132\f\u00102\u001a\b\u0012\u0004\u0012\u0002030\u00172\f\u00104\u001a\b\u0012\u0004\u0012\u0002050\u00172\b\u0010\u001a\u001a\u0004\u0018\u00010\u001b2\u0014\u00106\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0006\u0018\u000107H\u0016Jº\u0001\u00108\u001a\u00020\b2\u0006\u00109\u001a\u00020:2\u0006\u0010;\u001a\u00020\u00062\u0006\u0010<\u001a\u00020=2\u0006\u0010>\u001a\u00020?2\f\u00102\u001a\b\u0012\u0004\u0012\u0002030\u00172\u0006\u0010'\u001a\u00020\u00062Q\u0010(\u001aM\u0012\u0013\u0012\u00110\u0006¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(,\u0012\u0013\u0012\u00110\u0010¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(-\u0012\u0015\u0012\u0013\u0018\u00010\u0006¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(.\u0012\u0004\u0012\u00020\b0)j\u0002`/2!\u0010 \u001a\u001d\u0012\u0013\u0012\u00110\u0006¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(1\u0012\u0004\u0012\u00020\b0\u0013H\u0082@¢\u0006\u0002\u0010@J\u001e\u0010A\u001a\u00020\b2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010B\u001a\u00020CH\u0082@¢\u0006\u0002\u0010DJ\u0010\u0010E\u001a\u00020C2\u0006\u0010\r\u001a\u00020\u000eH\u0002J\f\u0010F\u001a\u00020G*\u00020\u000eH\u0002J\u001e\u0010H\u001a\u00020\u00062\f\u0010I\u001a\b\u0012\u0004\u0012\u00020J0\u00172\u0006\u0010'\u001a\u00020\u0006H\u0002R$\u0010\u0004\u001a\u0018\u0012\u0004\u0012\u00020\u0006\u0012\u000e\u0012\f\u0012\u0004\u0012\u00020\b0\u0007j\u0002`\t0\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006K"}, m922d2 = {"Lcom/google/ai/edge/gallery/runtime/aicore/AICoreModelHelper;", "Lcom/google/ai/edge/gallery/runtime/LlmModelHelper;", "<init>", "()V", "cleanUpListeners", "", "", "Lkotlin/Function0;", "", "Lcom/google/ai/edge/gallery/runtime/CleanUpListener;", "initialize", "context", "Landroid/content/Context;", "model", "Lcom/google/ai/edge/gallery/data/Model;", "supportImage", "", "supportAudio", "onDone", "Lkotlin/Function1;", "systemInstruction", "Lcom/google/ai/edge/litertlm/Contents;", "tools", "", "Lcom/google/ai/edge/litertlm/ToolProvider;", "enableConversationConstrainedDecoding", "coroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "downloadModel", "onProgress", "Lkotlin/Function2;", "", "onError", "isModelDownloaded", "(Lcom/google/ai/edge/gallery/data/Model;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "resetConversation", "cleanUp", "stopResponse", "runInference", "input", "resultListener", "Lkotlin/Function3;", "Lkotlin/ParameterName;", "name", "partialResult", "done", "partialThinkingResult", "Lcom/google/ai/edge/gallery/runtime/ResultListener;", "cleanUpListener", "message", "images", "Landroid/graphics/Bitmap;", "audioClips", "", "extraContext", "", "executeRunInference", "instance", "Lcom/google/ai/edge/gallery/runtime/aicore/AICoreModelInstance;", "prompt", "temperature", "", "topK", "", "(Lcom/google/ai/edge/gallery/runtime/aicore/AICoreModelInstance;Ljava/lang/String;FILjava/util/List;Ljava/lang/String;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "updateTokenLimit", "generativeModel", "Lcom/google/mlkit/genai/prompt/GenerativeModel;", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/mlkit/genai/prompt/GenerativeModel;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getGenerativeModel", "toAICoreModelConfig", "Lcom/google/mlkit/genai/prompt/ModelConfig;", "formatChatPrompt", "chatHistory", "Lcom/google/ai/edge/gallery/runtime/aicore/AICoreChatMessage;", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AICoreModelHelper implements LlmModelHelper {
     public static final AICoreModelHelper INSTANCE = new AICoreModelHelper();
     private static final Map<String, Function0<Unit>> cleanUpListeners = new LinkedHashMap();
     public static final int $stable = 8;
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$executeRunInference$1 */
-    /* JADX INFO: compiled from: AICoreModelHelper.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper", m932f = "AICoreModelHelper.kt", m933i = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, m934l = {312}, m935m = "executeRunInference", m936n = {"instance", "prompt", "images", "input", "resultListener", "onError", "request", "flow", "fullResponse", "temperature", "topK"}, m938s = {"L$0", "L$1", "L$2", "L$3", "L$4", "L$5", "L$6", "L$7", "L$8", "F$0", "I$0"})
     static final class C26121 extends ContinuationImpl {
         float F$0;
@@ -82,9 +81,9 @@ public final class AICoreModelHelper implements LlmModelHelper {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$isModelDownloaded$1 */
-    /* JADX INFO: compiled from: AICoreModelHelper.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper", m932f = "AICoreModelHelper.kt", m933i = {0, 0}, m934l = {183}, m935m = "isModelDownloaded", m936n = {"model", "generativeModel"}, m938s = {"L$0", "L$1"})
     static final class C26151 extends ContinuationImpl {
         Object L$0;
@@ -104,9 +103,9 @@ public final class AICoreModelHelper implements LlmModelHelper {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$updateTokenLimit$1 */
-    /* JADX INFO: compiled from: AICoreModelHelper.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper", m932f = "AICoreModelHelper.kt", m933i = {0, 0}, m934l = {340}, m935m = "updateTokenLimit", m936n = {"model", "generativeModel"}, m938s = {"L$0", "L$1"})
     static final class C26171 extends ContinuationImpl {
         Object L$0;
@@ -144,9 +143,9 @@ public final class AICoreModelHelper implements LlmModelHelper {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$initialize$1 */
-    /* JADX INFO: compiled from: AICoreModelHelper.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$initialize$1", m932f = "AICoreModelHelper.kt", m933i = {1, 2, 3}, m934l = {83, 86, 87, 93}, m935m = "invokeSuspend", m936n = {NotificationCompat.CATEGORY_STATUS, NotificationCompat.CATEGORY_STATUS, NotificationCompat.CATEGORY_STATUS}, m938s = {"I$0", "I$0", "I$0"})
     static final class C26141 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ GenerativeModel $generativeModel;
@@ -213,9 +212,9 @@ public final class AICoreModelHelper implements LlmModelHelper {
             throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.C26141.invokeSuspend(java.lang.Object):java.lang.Object");
         }
 
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$initialize$1$1, reason: invalid class name */
-        /* JADX INFO: compiled from: AICoreModelHelper.kt */
-        @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+        
+        
+        
         static final class AnonymousClass1<T> implements FlowCollector {
             final /* synthetic */ GenerativeModel $generativeModel;
             final /* synthetic */ Model $model;
@@ -260,9 +259,9 @@ public final class AICoreModelHelper implements LlmModelHelper {
         BuildersKt__Builders_commonKt.launch$default(coroutineScope, null, null, new C26111(generativeModel, onDone, model, onError, onProgress, null), 3, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$downloadModel$1 */
-    /* JADX INFO: compiled from: AICoreModelHelper.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$downloadModel$1", m932f = "AICoreModelHelper.kt", m933i = {1, 1}, m934l = {139, 147}, m935m = "invokeSuspend", m936n = {"totalBytesToDownload", NotificationCompat.CATEGORY_STATUS}, m938s = {"L$0", "I$0"})
     static final class C26111 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ GenerativeModel $generativeModel;
@@ -507,9 +506,9 @@ public final class AICoreModelHelper implements LlmModelHelper {
         instance.setInferenceJob(BuildersKt__Builders_commonKt.launch$default(coroutineScope, null, null, new C26161(instance, prompt, temperature, topK, images, input, resultListener, onError, null), 3, null));
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$runInference$1 */
-    /* JADX INFO: compiled from: AICoreModelHelper.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$runInference$1", m932f = "AICoreModelHelper.kt", m933i = {}, m934l = {269}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C26161 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ List<Bitmap> $images;
@@ -567,7 +566,7 @@ public final class AICoreModelHelper implements LlmModelHelper {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:7:0x001e  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -581,7 +580,7 @@ public final class AICoreModelHelper implements LlmModelHelper {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.executeRunInference(com.google.ai.edge.gallery.runtime.aicore.AICoreModelInstance, java.lang.String, float, int, java.util.List, java.lang.String, kotlin.jvm.functions.Function3, kotlin.jvm.functions.Function1, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit executeRunInference$lambda$0(float $temperature, int $topK, GenerateContentRequest.Builder generateContentRequest) {
         Intrinsics.checkNotNullParameter(generateContentRequest, "$this$generateContentRequest");
         generateContentRequest.setTemperature(Float.valueOf($temperature));
@@ -589,7 +588,7 @@ public final class AICoreModelHelper implements LlmModelHelper {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit executeRunInference$lambda$1(float $temperature, int $topK, GenerateContentRequest.Builder generateContentRequest) {
         Intrinsics.checkNotNullParameter(generateContentRequest, "$this$generateContentRequest");
         generateContentRequest.setTemperature(Float.valueOf($temperature));
@@ -597,7 +596,7 @@ public final class AICoreModelHelper implements LlmModelHelper {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:7:0x0014  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -689,7 +688,7 @@ public final class AICoreModelHelper implements LlmModelHelper {
         }));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit getGenerativeModel$lambda$2(Model $model, GenerationConfig.Builder generationConfig) {
         Intrinsics.checkNotNullParameter(generationConfig, "$this$generationConfig");
         generationConfig.setModelConfig(INSTANCE.toAICoreModelConfig($model));
@@ -705,7 +704,7 @@ public final class AICoreModelHelper implements LlmModelHelper {
         });
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit toAICoreModelConfig$lambda$3(Model $this_toAICoreModelConfig, ModelConfig.Builder modelConfig) {
         int i;
         Intrinsics.checkNotNullParameter(modelConfig, "$this$modelConfig");

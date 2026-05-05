@@ -11,7 +11,7 @@ import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 import dagger.internal.Provider;
 
-/* JADX INFO: loaded from: classes10.dex */
+
 public final class AppModule_ProvideDataStoreRepositoryFactory implements Factory<DataStoreRepository> {
     private final Provider<DataStore<BenchmarkResults>> benchmarkResultsStoreProvider;
     private final Provider<DataStore<CutoutCollection>> cutoutsDataStoreProvider;

@@ -34,7 +34,6 @@ import androidx.compose.p000ui.semantics.LiveRegionMode;
 import androidx.compose.p000ui.semantics.SemanticsModifierKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertiesKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -71,13 +70,13 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: ResponsePanel.kt */
-/* JADX INFO: loaded from: classes15.dex */
-@Metadata(m921d1 = {"\u0000>\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\u001a7\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\b\b\u0002\u0010\f\u001a\u00020\rH\u0007¢\u0006\u0002\u0010\u000e\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u000f²\u0006\n\u0010\u0010\u001a\u00020\u0011X\u008a\u0084\u0002²\u0006\n\u0010\u0012\u001a\u00020\u0013X\u008a\u0084\u0002²\u0006\n\u0010\u0014\u001a\u00020\u0015X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "ResponsePanel", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "model", "Lcom/google/ai/edge/gallery/data/Model;", "viewModel", "Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnViewModel;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "modifier", "Landroidx/compose/ui/Modifier;", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnViewModel;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnUiState;", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "selectedOptionIndex", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnUiState;", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "selectedOptionIndex", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ResponsePanelKt {
     private static final String TAG = "AGResponsePanel";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ResponsePanel$lambda$21(Task task, Model model, LlmSingleTurnViewModel llmSingleTurnViewModel, ModelManagerViewModel modelManagerViewModel, Modifier modifier, int i, int i2, Composer composer, int i3) {
         ResponsePanel(task, model, llmSingleTurnViewModel, modelManagerViewModel, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -262,12 +261,12 @@ public final class ResponsePanelKt {
         return $this$getValue$iv.getIntValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int ResponsePanel$lambda$6$lambda$5(Task $task) {
         return $task.getModels().size();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Type update failed for variable: r108v0 ??, new type: androidx.compose.runtime.Composer
     jadx.core.utils.exceptions.JadxOverflowException: Type inference error: updates count limit reached with updateSeq = 22061. Try increasing type updates limit count.
     	at jadx.core.dex.visitors.typeinference.TypeUpdateInfo.requestUpdate(TypeUpdateInfo.java:37)
@@ -2281,8 +2280,8 @@ public final class ResponsePanelKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ResponsePanel$lambda$20$lambda$19$lambda$18$lambda$15$lambda$14$lambda$13 */
+    
+    
     public static final Unit m567xed65c66f(boolean $inProgress, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         if (!$inProgress) {
@@ -2291,7 +2290,7 @@ public final class ResponsePanelKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ResponsePanel$lambda$20$lambda$19$lambda$18$lambda$17$lambda$16(CoroutineScope $scope, String $response, Clipboard $clipboard) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new ResponsePanelKt$ResponsePanel$4$4$1$2$1$1($response, $clipboard, null), 3, null);
         return Unit.INSTANCE;

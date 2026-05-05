@@ -44,7 +44,6 @@ import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
 import androidx.compose.p000ui.text.TextLayoutResult;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.input.VisualTransformation;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -74,11 +73,11 @@ import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: TextAndVoiceInput.kt */
-/* JADX INFO: loaded from: classes5.dex */
-@Metadata(m921d1 = {"\u00008\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0005\u001ak\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00010\t2\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\u00010\t2\b\b\u0002\u0010\r\u001a\u00020\u000e2\b\b\u0002\u0010\u000f\u001a\u00020\u00102\b\b\u0002\u0010\u0011\u001a\u00020\u0005H\u0007¢\u0006\u0002\u0010\u0012¨\u0006\u0013²\u0006\n\u0010\u0014\u001a\u00020\u0005X\u008a\u008e\u0002²\u0006\n\u0010\u0015\u001a\u00020\nX\u008a\u008e\u0002"}, m922d2 = {"TextAndVoiceInput", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "processing", "", "holdToDictateViewModel", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;", "onDone", "Lkotlin/Function1;", "", "onAmplitudeChanged", "", "modifier", "Landroidx/compose/ui/Modifier;", "clearTextTrigger", "", "defaultTextInputMode", "(Lcom/google/ai/edge/gallery/data/Task;ZLcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;JZLandroidx/compose/runtime/Composer;II)V", "app_debug", "textInputMode", "curTextInput"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "textInputMode", "curTextInput"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class TextAndVoiceInputKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextAndVoiceInput$lambda$31(Task task, boolean z, HoldToDictateViewModel holdToDictateViewModel, Function1 function1, Function1 function12, Modifier modifier, long j, boolean z2, int i, int i2, Composer composer, int i3) {
         TextAndVoiceInput(task, z, holdToDictateViewModel, function1, function12, modifier, j, z2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -338,21 +337,21 @@ public final class TextAndVoiceInputKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextAndVoiceInput$lambda$30$lambda$8$lambda$7(MutableState $curTextInput$delegate, MutableState $textInputMode$delegate) {
         $curTextInput$delegate.setValue("");
         TextAndVoiceInput$lambda$30$lambda$2($textInputMode$delegate, !TextAndVoiceInput$lambda$30$lambda$1($textInputMode$delegate));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextAndVoiceInput$lambda$30$lambda$10$lambda$9(boolean $processing, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha(!$processing ? 1.0f : 0.5f);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextAndVoiceInput$lambda$30$lambda$29(RowScope $this_Row, final Task $task, HoldToDictateViewModel $holdToDictateViewModel, final Function1 $onDone, final Function1 $onAmplitudeChanged, final boolean $processing, final MutableState $curTextInput$delegate, AnimatedContentScope AnimatedContent, boolean showTextInput, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
@@ -488,23 +487,23 @@ public final class TextAndVoiceInputKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: TextAndVoiceInput$lambda$30$lambda$29$lambda$24$lambda$15$lambda$14 */
+    
+    
     public static final Unit m523x6972fb4c(MutableState $curTextInput$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $curTextInput$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: TextAndVoiceInput$lambda$30$lambda$29$lambda$24$lambda$13$lambda$12 */
+    
+    
     public static final Unit m522x3fa995c8(String $cdPromptInput, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setContentDescription(semantics, $cdPromptInput);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextAndVoiceInput$lambda$30$lambda$29$lambda$24$lambda$23(final boolean $processing, final Function1 $onDone, Task $task, final MutableState $curTextInput$delegate, Function2 innerTextField, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -701,29 +700,29 @@ public final class TextAndVoiceInputKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: TextAndVoiceInput$lambda$30$lambda$29$lambda$24$lambda$23$lambda$22$lambda$18$lambda$17 */
+    
+    
     public static final Unit m524xfcffad45(Function1 $onDone, MutableState $curTextInput$delegate) {
         $onDone.invoke(TextAndVoiceInput$lambda$30$lambda$4($curTextInput$delegate));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: TextAndVoiceInput$lambda$30$lambda$29$lambda$24$lambda$23$lambda$22$lambda$20$lambda$19 */
+    
+    
     public static final Unit m525x5d8bbc9e(boolean $processing, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha(!$processing ? 1.0f : 0.5f);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextAndVoiceInput$lambda$30$lambda$29$lambda$26$lambda$25(Function1 $onDone, String text) {
         Intrinsics.checkNotNullParameter(text, "text");
         $onDone.invoke(text);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextAndVoiceInput$lambda$30$lambda$29$lambda$28$lambda$27(Function1 $onAmplitudeChanged, int it) {
         $onAmplitudeChanged.invoke(Integer.valueOf(it));
         return Unit.INSTANCE;

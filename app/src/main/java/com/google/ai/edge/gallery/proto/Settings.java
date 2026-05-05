@@ -20,7 +20,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class Settings extends GeneratedMessageLite<Settings, Builder> implements SettingsOrBuilder {
     public static final int ACCESS_TOKEN_DATA_FIELD_NUMBER = 2;
     private static final Settings DEFAULT_INSTANCE;
@@ -60,17 +60,17 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         return result == null ? Theme.UNRECOGNIZED : result;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setThemeValue(int value) {
         this.theme_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setTheme(Theme value) {
         this.theme_ = value.getNumber();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearTheme() {
         this.theme_ = 0;
     }
@@ -85,14 +85,14 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         return this.accessTokenData_ == null ? AccessTokenData.getDefaultInstance() : this.accessTokenData_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setAccessTokenData(AccessTokenData value) {
         value.getClass();
         this.accessTokenData_ = value;
         this.bitField0_ |= 1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void mergeAccessTokenData(AccessTokenData value) {
         value.getClass();
         if (this.accessTokenData_ != null && this.accessTokenData_ != AccessTokenData.getDefaultInstance()) {
@@ -103,7 +103,7 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         this.bitField0_ |= 1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearAccessTokenData() {
         this.accessTokenData_ = null;
         this.bitField0_ &= -2;
@@ -136,32 +136,32 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setTextInputHistory(int index, String value) {
         value.getClass();
         ensureTextInputHistoryIsMutable();
         this.textInputHistory_.set(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addTextInputHistory(String value) {
         value.getClass();
         ensureTextInputHistoryIsMutable();
         this.textInputHistory_.add(value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addAllTextInputHistory(Iterable<String> values) {
         ensureTextInputHistoryIsMutable();
         AbstractMessageLite.addAll(values, this.textInputHistory_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearTextInputHistory() {
         this.textInputHistory_ = GeneratedMessageLite.emptyProtobufList();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addTextInputHistoryBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         ensureTextInputHistoryIsMutable();
@@ -198,39 +198,39 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setImportedModel(int index, ImportedModel value) {
         value.getClass();
         ensureImportedModelIsMutable();
         this.importedModel_.set(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addImportedModel(ImportedModel value) {
         value.getClass();
         ensureImportedModelIsMutable();
         this.importedModel_.add(value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addImportedModel(int index, ImportedModel value) {
         value.getClass();
         ensureImportedModelIsMutable();
         this.importedModel_.add(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addAllImportedModel(Iterable<? extends ImportedModel> values) {
         ensureImportedModelIsMutable();
         AbstractMessageLite.addAll(values, this.importedModel_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearImportedModel() {
         this.importedModel_ = emptyProtobufList();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void removeImportedModel(int index) {
         ensureImportedModelIsMutable();
         this.importedModel_.remove(index);
@@ -241,12 +241,12 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         return this.isTosAccepted_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setIsTosAccepted(boolean value) {
         this.isTosAccepted_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearIsTosAccepted() {
         this.isTosAccepted_ = false;
     }
@@ -256,12 +256,12 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         return this.hasRunTinyGarden_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setHasRunTinyGarden(boolean value) {
         this.hasRunTinyGarden_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearHasRunTinyGarden() {
         this.hasRunTinyGarden_ = false;
     }
@@ -271,12 +271,12 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         return this.hasSeenBenchmarkComparisonHelp_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setHasSeenBenchmarkComparisonHelp(boolean value) {
         this.hasSeenBenchmarkComparisonHelp_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearHasSeenBenchmarkComparisonHelp() {
         this.hasSeenBenchmarkComparisonHelp_ = false;
     }
@@ -286,12 +286,12 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         return this.isGemmaTermsAccepted_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setIsGemmaTermsAccepted(boolean value) {
         this.isGemmaTermsAccepted_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearIsGemmaTermsAccepted() {
         this.isGemmaTermsAccepted_ = false;
     }
@@ -353,7 +353,7 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         return map.get(key).booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public Map<String, Boolean> getMutableFeatureFlagsMap() {
         return internalGetMutableFeatureFlags();
     }
@@ -385,32 +385,32 @@ public final class Settings extends GeneratedMessageLite<Settings, Builder> impl
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setViewedPromoId(int index, String value) {
         value.getClass();
         ensureViewedPromoIdIsMutable();
         this.viewedPromoId_.set(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addViewedPromoId(String value) {
         value.getClass();
         ensureViewedPromoIdIsMutable();
         this.viewedPromoId_.add(value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addAllViewedPromoId(Iterable<String> values) {
         ensureViewedPromoIdIsMutable();
         AbstractMessageLite.addAll(values, this.viewedPromoId_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearViewedPromoId() {
         this.viewedPromoId_ = GeneratedMessageLite.emptyProtobufList();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addViewedPromoIdBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         ensureViewedPromoIdIsMutable();

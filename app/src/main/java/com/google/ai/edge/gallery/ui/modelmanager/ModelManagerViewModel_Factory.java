@@ -9,7 +9,7 @@ import dagger.internal.Factory;
 import dagger.internal.Provider;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+
 public final class ModelManagerViewModel_Factory implements Factory<ModelManagerViewModel> {
     private final Provider<Context> contextProvider;
     private final Provider<Set<CustomTask>> customTasksProvider;

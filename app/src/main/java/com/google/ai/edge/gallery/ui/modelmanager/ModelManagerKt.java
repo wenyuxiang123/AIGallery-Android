@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.PaddingValues;
 import androidx.compose.foundation.layout.SizeKt;
 import androidx.compose.material3.ScaffoldKt;
 import androidx.compose.p000ui.Modifier;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.ComposerKt;
 import androidx.compose.runtime.EffectsKt;
@@ -30,17 +29,17 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: ModelManager.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u00006\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\b\u001ag\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\t2\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\u00010\u000b2\b\b\u0002\u0010\r\u001a\u00020\u000e2\u0014\b\u0002\u0010\u000f\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\u00010\u000bH\u0007¢\u0006\u0002\u0010\u0010¨\u0006\u0011²\u0006\n\u0010\u0012\u001a\u00020\u0013X\u008a\u0084\u0002"}, m922d2 = {"ModelManager", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "viewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "enableAnimation", "", "navigateUp", "Lkotlin/Function0;", "onModelClicked", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/data/Model;", "modifier", "Landroidx/compose/ui/Modifier;", "onBenchmarkClicked", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V", "app_debug", "modelCount", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "modelCount", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ModelManagerKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelManager$lambda$10(Task task, ModelManagerViewModel modelManagerViewModel, boolean z, Function0 function0, Function1 function1, Modifier modifier, Function1 function12, int i, int i2, Composer composer, int i3) {
         ModelManager(task, modelManagerViewModel, z, function0, function1, modifier, function12, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelManager$lambda$1$lambda$0(Model it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
@@ -194,13 +193,13 @@ public final class ModelManagerKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int ModelManager$lambda$4(State<Integer> state) {
         Object thisObj$iv = state.getValue();
         return ((Number) thisObj$iv).intValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int ModelManager$lambda$3$lambda$2(Task $task) {
         long trigger = $task.getUpdateTrigger().getValue().longValue();
         if (trigger >= 0) {
@@ -209,13 +208,13 @@ public final class ModelManagerKt {
         return -1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelManager$lambda$7$lambda$6(Function0 $navigateUp) {
         $navigateUp.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelManager$lambda$8(String $title, Function0 $navigateUp, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C78@2455L149:ModelManager.kt#ahf767");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -232,7 +231,7 @@ public final class ModelManagerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelManager$lambda$9(Task $task, ModelManagerViewModel $viewModel, boolean $enableAnimation, Function1 $onModelClicked, Function1 $onBenchmarkClicked, PaddingValues innerPadding, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(innerPadding, "innerPadding");
         ComposerKt.sourceInformation($composer, "C84@2638L281:ModelManager.kt#ahf767");

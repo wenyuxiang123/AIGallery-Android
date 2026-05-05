@@ -2,7 +2,7 @@ package com.google.ai.edge.gallery.proto;
 
 import com.google.protobuf.Internal;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public enum Theme implements Internal.EnumLite {
     THEME_UNSPECIFIED(0),
     THEME_LIGHT(1),

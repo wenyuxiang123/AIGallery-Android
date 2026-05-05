@@ -8,7 +8,7 @@ import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 import dagger.internal.Provider;
 
-/* JADX INFO: loaded from: classes10.dex */
+
 public final class AppModule_ProvideSkillsDataStoreFactory implements Factory<DataStore<Skills>> {
     private final Provider<Context> contextProvider;
     private final Provider<Serializer<Skills>> skillsSerializerProvider;

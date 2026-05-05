@@ -4,7 +4,7 @@ import android.content.Context;
 import dagger.internal.Factory;
 import dagger.internal.Provider;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class HoldToDictateViewModel_Factory implements Factory<HoldToDictateViewModel> {
     private final Provider<Context> contextProvider;
 

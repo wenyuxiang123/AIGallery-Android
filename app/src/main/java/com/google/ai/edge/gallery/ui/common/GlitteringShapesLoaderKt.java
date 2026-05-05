@@ -22,7 +22,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.layout.OnRemeasuredModifierKt;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.PainterResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.IntSize;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -52,9 +51,9 @@ import kotlin.random.Random;
 import kotlinx.coroutines.CoroutineScope;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: compiled from: GlitteringShapesLoader.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000:\n\u0000\n\u0002\u0010 \n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\u001a\r\u0010\u000e\u001a\u00020\u000fH\u0007¢\u0006\u0002\u0010\u0010\u001a\u001f\u0010\u0011\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0003¢\u0006\u0004\b\u0016\u0010\u0017\"\u0014\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0002X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0002X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0002X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0002X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0002X\u0082T¢\u0006\u0002\n\u0000\"\u001a\u0010\b\u001a\u00020\tX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\r¨\u0006\u0018²\u0006\u0010\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00130\u0001X\u008a\u008e\u0002²\u0006\n\u0010\u0014\u001a\u00020\u0015X\u008a\u008e\u0002²\u0006\n\u0010\u001a\u001a\u00020\u001bX\u008a\u008e\u0002²\u0006\n\u0010\u001c\u001a\u00020\u001dX\u008a\u0084\u0002²\u0006\n\u0010\u001e\u001a\u00020\u001bX\u008a\u008e\u0002²\u0006\n\u0010\u001f\u001a\u00020\u001dX\u008a\u0084\u0002"}, m922d2 = {"SHAPES", "", "", "PARTICLE_ANIMATION_DURATION", "PARTICLE_ALIVE_MS", "PARTICLE_BASE_SIZE", "BATCH_SIZE", "BATCH_INTERVAL_MS", "curId", "", "getCurId", "()J", "setCurId", "(J)V", "GlitteringShapesLoader", "", "(Landroidx/compose/runtime/Composer;I)V", "Particle", "shape", "Lcom/google/ai/edge/gallery/ui/common/Shape;", "boxSize", "Landroidx/compose/ui/unit/IntSize;", "Particle-95KtPRI", "(Lcom/google/ai/edge/gallery/ui/common/Shape;JLandroidx/compose/runtime/Composer;I)V", "app_debug", "shapes", "enterAnimation", "", "enterProgress", "", "exitAnimation", "exitProgress"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+J", "setCurId", "(J)V", "GlitteringShapesLoader", "", "(Landroidx/compose/runtime/Composer;I)V", "Particle", "shape", "Lcom/google/ai/edge/gallery/ui/common/Shape;", "boxSize", "Landroidx/compose/ui/unit/IntSize;", "Particle-95KtPRI", "(Lcom/google/ai/edge/gallery/ui/common/Shape;JLandroidx/compose/runtime/Composer;I)V", "app_debug", "shapes", "enterAnimation", "", "enterProgress", "", "exitAnimation", "exitProgress"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class GlitteringShapesLoaderKt {
     private static final int BATCH_INTERVAL_MS = 300;
     private static final int BATCH_SIZE = 5;
@@ -64,13 +63,13 @@ public final class GlitteringShapesLoaderKt {
     private static final List<Integer> SHAPES = CollectionsKt.listOf((Object[]) new Integer[]{Integer.valueOf(C2421R.drawable.circle), Integer.valueOf(C2421R.drawable.double_circle), Integer.valueOf(C2421R.drawable.pantegon), Integer.valueOf(C2421R.drawable.four_circle)});
     private static long curId;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GlitteringShapesLoader$lambda$10(int i, Composer composer, int i2) throws XmlPullParserException {
         GlitteringShapesLoader(composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit Particle_95KtPRI$lambda$24(Shape shape, long j, int i, Composer composer, int i2) throws XmlPullParserException {
         m10878Particle95KtPRI(shape, j, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -204,7 +203,7 @@ public final class GlitteringShapesLoaderKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final List<Shape> GlitteringShapesLoader$lambda$1(MutableState<List<Shape>> mutableState) {
         MutableState<List<Shape>> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
@@ -219,13 +218,13 @@ public final class GlitteringShapesLoaderKt {
         mutableState.setValue(IntSize.m9951boximpl(j));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GlitteringShapesLoader$lambda$8$lambda$7(MutableState $boxSize$delegate, IntSize it) {
         GlitteringShapesLoader$lambda$5($boxSize$delegate, it.m9963unboximpl());
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: Particle-95KtPRI, reason: not valid java name */
+    
     private static final void m10878Particle95KtPRI(final Shape shape, final long boxSize, Composer $composer, final int $changed) throws XmlPullParserException {
         String str;
         boolean z;
@@ -348,7 +347,7 @@ public final class GlitteringShapesLoaderKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void Particle_95KtPRI$lambda$13(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -363,7 +362,7 @@ public final class GlitteringShapesLoaderKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void Particle_95KtPRI$lambda$19(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -373,7 +372,7 @@ public final class GlitteringShapesLoaderKt {
         return ((Number) thisObj$iv).floatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit Particle_95KtPRI$lambda$23$lambda$22(long $boxSize, Shape $shape, float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setTranslationX(((int) ($boxSize >> 32)) * $shape.getRelativeX());

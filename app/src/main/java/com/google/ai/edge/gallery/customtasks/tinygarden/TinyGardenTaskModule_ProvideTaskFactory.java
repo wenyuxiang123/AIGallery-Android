@@ -4,7 +4,7 @@ import com.google.ai.edge.gallery.customtasks.common.CustomTask;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 
-/* JADX INFO: loaded from: classes8.dex */
+
 public final class TinyGardenTaskModule_ProvideTaskFactory implements Factory<CustomTask> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public CustomTask get() {

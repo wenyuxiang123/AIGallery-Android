@@ -17,7 +17,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.style.TextOverflow;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -42,17 +41,17 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: ModelNameAndStatus.kt */
-/* JADX INFO: loaded from: classes13.dex */
-@Metadata(m921d1 = {"\u0000(\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u001aE\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u000b2\b\b\u0002\u0010\f\u001a\u00020\tH\u0007¢\u0006\u0002\u0010\r\u001a;\u0010\u000e\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u000bH\u0007¢\u0006\u0002\u0010\u000f¨\u0006\u0010²\u0006\n\u0010\u0011\u001a\u00020\tX\u008a\u008e\u0002"}, m922d2 = {"ModelNameAndStatus", "", "model", "Lcom/google/ai/edge/gallery/data/Model;", "task", "Lcom/google/ai/edge/gallery/data/Task;", "downloadStatus", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;", "isExpanded", "", "modifier", "Landroidx/compose/ui/Modifier;", "showModelSizeAndDownloadProgressLabel", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;ZLandroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V", "ModelStatusDetails", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;ZLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug", "showUpdateDialog"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "ModelStatusDetails", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;ZLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug", "showUpdateDialog"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ModelNameAndStatusKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelNameAndStatus$lambda$16(Model model, Task task, ModelDownloadStatus modelDownloadStatus, boolean z, Modifier modifier, boolean z2, int i, int i2, Composer composer, int i3) {
         ModelNameAndStatus(model, task, modelDownloadStatus, z, modifier, z2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelStatusDetails$lambda$20(Model model, Task task, ModelDownloadStatus modelDownloadStatus, boolean z, Modifier modifier, int i, int i2, Composer composer, int i3) {
         ModelStatusDetails(model, task, modelDownloadStatus, z, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -90,19 +89,19 @@ public final class ModelNameAndStatusKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelNameAndStatus$lambda$15$lambda$5$lambda$4(MutableState $showUpdateDialog$delegate) {
         ModelNameAndStatus$lambda$2($showUpdateDialog$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelNameAndStatus$lambda$15$lambda$8$lambda$7(MutableState $showUpdateDialog$delegate) {
         ModelNameAndStatus$lambda$2($showUpdateDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelNameAndStatus$lambda$15$lambda$12(Model $model, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C138@5285L22:ModelNameAndStatus.kt#13a6jo");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -119,7 +118,7 @@ public final class ModelNameAndStatusKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelNameAndStatus$lambda$15$lambda$11(final MutableState $showUpdateDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C140@5368L28,140@5347L118:ModelNameAndStatus.kt#13a6jo");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -149,7 +148,7 @@ public final class ModelNameAndStatusKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelNameAndStatus$lambda$15$lambda$11$lambda$10$lambda$9(MutableState $showUpdateDialog$delegate) {
         ModelNameAndStatus$lambda$2($showUpdateDialog$delegate, false);
         return Unit.INSTANCE;

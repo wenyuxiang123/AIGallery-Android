@@ -4,7 +4,7 @@ import android.content.Context;
 import dagger.internal.Factory;
 import dagger.internal.Provider;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class MobileActionsViewModel_Factory implements Factory<MobileActionsViewModel> {
     private final Provider<Context> appContextProvider;
 

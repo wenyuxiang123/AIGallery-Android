@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class AccessTokenData extends GeneratedMessageLite<AccessTokenData, Builder> implements AccessTokenDataOrBuilder {
     public static final int ACCESS_TOKEN_FIELD_NUMBER = 1;
     private static final AccessTokenData DEFAULT_INSTANCE;
@@ -34,18 +34,18 @@ public final class AccessTokenData extends GeneratedMessageLite<AccessTokenData,
         return ByteString.copyFromUtf8(this.accessToken_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setAccessToken(String value) {
         value.getClass();
         this.accessToken_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearAccessToken() {
         this.accessToken_ = getDefaultInstance().getAccessToken();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setAccessTokenBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.accessToken_ = value.toStringUtf8();
@@ -61,18 +61,18 @@ public final class AccessTokenData extends GeneratedMessageLite<AccessTokenData,
         return ByteString.copyFromUtf8(this.refreshToken_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setRefreshToken(String value) {
         value.getClass();
         this.refreshToken_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearRefreshToken() {
         this.refreshToken_ = getDefaultInstance().getRefreshToken();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setRefreshTokenBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.refreshToken_ = value.toStringUtf8();
@@ -83,12 +83,12 @@ public final class AccessTokenData extends GeneratedMessageLite<AccessTokenData,
         return this.expiresAtMs_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setExpiresAtMs(long value) {
         this.expiresAtMs_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearExpiresAtMs() {
         this.expiresAtMs_ = 0L;
     }

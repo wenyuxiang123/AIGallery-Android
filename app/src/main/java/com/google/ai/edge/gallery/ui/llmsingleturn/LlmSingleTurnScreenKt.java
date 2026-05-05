@@ -27,7 +27,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
 import androidx.compose.p000ui.platform.CompositionLocalsKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.LayoutDirection;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -89,13 +88,13 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.Job;
 
-/* JADX INFO: compiled from: LlmSingleTurnScreen.kt */
-/* JADX INFO: loaded from: classes15.dex */
-@Metadata(m921d1 = {"\u0000@\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0007\u001a7\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u000bH\u0007¢\u0006\u0002\u0010\f\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\r²\u0006\n\u0010\u000e\u001a\u00020\u000fX\u008a\u0084\u0002²\u0006\n\u0010\u0010\u001a\u00020\u0011X\u008a\u0084\u0002²\u0006\n\u0010\u0012\u001a\u00020\u0013X\u008a\u008e\u0002²\u0006\n\u0010\u0014\u001a\u00020\u0013X\u008a\u008e\u0002²\u0006\n\u0010\u0015\u001a\u00020\u0013X\u008a\u008e\u0002²\u0006\n\u0010\u0016\u001a\u00020\u0017X\u008a\u0084\u0002"}, m922d2 = {"TAG", "", "LlmSingleTurnScreen", "", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "navigateUp", "Lkotlin/Function0;", "modifier", "Landroidx/compose/ui/Modifier;", "viewModel", "Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnViewModel;", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnViewModel;Landroidx/compose/runtime/Composer;II)V", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "uiState", "Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnUiState;", "navigatingUp", "", "showErrorDialog", "mainUiVisible", "animatedAlpha", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "uiState", "Lcom/google/ai/edge/gallery/ui/llmsingleturn/LlmSingleTurnUiState;", "navigatingUp", "", "showErrorDialog", "mainUiVisible", "animatedAlpha", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class LlmSingleTurnScreenKt {
     private static final String TAG = "AGLlmSingleTurnScreen";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$42(ModelManagerViewModel modelManagerViewModel, Function0 function0, Modifier modifier, LlmSingleTurnViewModel llmSingleTurnViewModel, int i, int i2, Composer composer, int i3) {
         LlmSingleTurnScreen(modelManagerViewModel, function0, modifier, llmSingleTurnViewModel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -369,7 +368,7 @@ public final class LlmSingleTurnScreenKt {
         return (LlmSingleTurnUiState) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean LlmSingleTurnScreen$lambda$3(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().booleanValue();
@@ -384,19 +383,19 @@ public final class LlmSingleTurnScreenKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void LlmSingleTurnScreen$lambda$7(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Job LlmSingleTurnScreen$lambda$9$lambda$8(Function0 $navigateUp, CoroutineScope $scope, MutableState $navigatingUp$delegate, Task $task, ModelManagerViewModel $modelManagerViewModel, Context $context) {
         LlmSingleTurnScreen$lambda$4($navigatingUp$delegate, true);
         $navigateUp.invoke();
         return BuildersKt__Builders_commonKt.launch$default($scope, Dispatchers.getDefault(), null, new LlmSingleTurnScreenKt$LlmSingleTurnScreen$handleNavigateUp$1$1$1($task, $modelManagerViewModel, $context, null), 2, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$11$lambda$10(Model $selectedModel, Function0 $handleNavigateUp, State $modelManagerUiState$delegate, State $uiState$delegate) {
         ModelInitializationStatus modelInitializationStatus = LlmSingleTurnScreen$lambda$0($modelManagerUiState$delegate).getModelInitializationStatus().get($selectedModel.getName());
         boolean isModelInitializing = (modelInitializationStatus != null ? modelInitializationStatus.getStatus() : null) == ModelInitializationStatusType.INITIALIZING;
@@ -406,7 +405,7 @@ public final class LlmSingleTurnScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$20(final Task $task, Model $selectedModel, final ModelManagerViewModel $modelManagerViewModel, final Function0 $handleNavigateUp, final CoroutineScope $scope, final Context $context, State $uiState$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C133@5254L22,134@5304L422,132@5217L11,126@4982L753:LlmSingleTurnScreen.kt#32uq7b");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -468,20 +467,20 @@ public final class LlmSingleTurnScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$20$lambda$19$lambda$18(Map map, Map map2) {
         Intrinsics.checkNotNullParameter(map, "<unused var>");
         Intrinsics.checkNotNullParameter(map2, "<unused var>");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$20$lambda$15$lambda$14(Function0 $handleNavigateUp) {
         $handleNavigateUp.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$20$lambda$17$lambda$16(CoroutineScope $scope, ModelManagerViewModel $modelManagerViewModel, Context $context, Task $task, Model prevModel, Model newSelectedModel) {
         Intrinsics.checkNotNullParameter(prevModel, "prevModel");
         Intrinsics.checkNotNullParameter(newSelectedModel, "newSelectedModel");
@@ -489,7 +488,7 @@ public final class LlmSingleTurnScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$41(ModelDownloadStatus $curDownloadStatus, ModelInitializationStatus $modelInitializationStatus, final Model $selectedModel, final LlmSingleTurnViewModel $viewModel, final ModelManagerViewModel $modelManagerViewModel, final Task $task, final MutableState $showErrorDialog$delegate, final PaddingValues innerPadding, Composer $composer, int $changed) {
         LlmSingleTurnScreenKt$LlmSingleTurnScreen$5$1$1$1 value$iv;
         Function0<ComposeUiNode> function0;
@@ -702,7 +701,7 @@ public final class LlmSingleTurnScreenKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void LlmSingleTurnScreen$lambda$41$lambda$40$lambda$23(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -712,14 +711,14 @@ public final class LlmSingleTurnScreenKt {
         return ((Number) thisObj$iv).floatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$41$lambda$40$lambda$27$lambda$26(State $animatedAlpha$delegate, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha(LlmSingleTurnScreen$lambda$41$lambda$40$lambda$25($animatedAlpha$delegate));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$41$lambda$40$lambda$35$lambda$32(final Model $selectedModel, final LlmSingleTurnViewModel $viewModel, ModelManagerViewModel $modelManagerViewModel, final Task $task, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C176@7034L337,184@7409L50,172@6854L669:LlmSingleTurnScreen.kt#32uq7b");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -765,8 +764,8 @@ public final class LlmSingleTurnScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: LlmSingleTurnScreen$lambda$41$lambda$40$lambda$35$lambda$32$lambda$29$lambda$28 */
+    
+    
     public static final Unit m552x7b723b(LlmSingleTurnViewModel $viewModel, Task $task, Model $selectedModel, String fullPrompt) {
         Intrinsics.checkNotNullParameter(fullPrompt, "fullPrompt");
         $viewModel.generateResponse($task, $selectedModel, fullPrompt);
@@ -777,15 +776,15 @@ public final class LlmSingleTurnScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: LlmSingleTurnScreen$lambda$41$lambda$40$lambda$35$lambda$32$lambda$31$lambda$30 */
+    
+    
     public static final Unit m553x610781a9(LlmSingleTurnViewModel $viewModel, Model model) {
         Intrinsics.checkNotNullParameter(model, "model");
         $viewModel.stopResponse(model);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$41$lambda$40$lambda$35$lambda$34(Task $task, Model $selectedModel, LlmSingleTurnViewModel $viewModel, ModelManagerViewModel $modelManagerViewModel, PaddingValues $innerPadding, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         ComposerKt.sourceInformation($composer, "C192@7725L12,189@7574L647:LlmSingleTurnScreen.kt#32uq7b");
@@ -850,7 +849,7 @@ public final class LlmSingleTurnScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$41$lambda$40$lambda$37(Model $selectedModel, Task $task, ModelManagerViewModel $modelManagerViewModel, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
         ComposerKt.sourceInformation($composer, "C219@8743L152:LlmSingleTurnScreen.kt#32uq7b");
@@ -864,7 +863,7 @@ public final class LlmSingleTurnScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmSingleTurnScreen$lambda$41$lambda$40$lambda$39$lambda$38(MutableState $showErrorDialog$delegate) {
         LlmSingleTurnScreen$lambda$7($showErrorDialog$delegate, false);
         return Unit.INSTANCE;

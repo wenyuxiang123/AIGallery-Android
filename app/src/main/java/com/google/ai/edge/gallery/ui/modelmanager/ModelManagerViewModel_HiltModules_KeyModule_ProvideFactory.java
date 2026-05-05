@@ -3,7 +3,7 @@ package com.google.ai.edge.gallery.ui.modelmanager;
 import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel_HiltModules;
 import dagger.internal.Factory;
 
-/* JADX INFO: loaded from: classes4.dex */
+
 public final class ModelManagerViewModel_HiltModules_KeyModule_ProvideFactory implements Factory<Boolean> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public Boolean get() {

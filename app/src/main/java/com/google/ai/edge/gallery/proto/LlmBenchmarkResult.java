@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class LlmBenchmarkResult extends GeneratedMessageLite<LlmBenchmarkResult, Builder> implements LlmBenchmarkResultOrBuilder {
     public static final int BAISC_INFO_FIELD_NUMBER = 2;
     private static final LlmBenchmarkResult DEFAULT_INSTANCE;
@@ -35,14 +35,14 @@ public final class LlmBenchmarkResult extends GeneratedMessageLite<LlmBenchmarkR
         return this.baiscInfo_ == null ? LlmBenchmarkBasicInfo.getDefaultInstance() : this.baiscInfo_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setBaiscInfo(LlmBenchmarkBasicInfo value) {
         value.getClass();
         this.baiscInfo_ = value;
         this.bitField0_ |= 1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void mergeBaiscInfo(LlmBenchmarkBasicInfo value) {
         value.getClass();
         if (this.baiscInfo_ != null && this.baiscInfo_ != LlmBenchmarkBasicInfo.getDefaultInstance()) {
@@ -53,7 +53,7 @@ public final class LlmBenchmarkResult extends GeneratedMessageLite<LlmBenchmarkR
         this.bitField0_ |= 1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearBaiscInfo() {
         this.baiscInfo_ = null;
         this.bitField0_ &= -2;
@@ -69,14 +69,14 @@ public final class LlmBenchmarkResult extends GeneratedMessageLite<LlmBenchmarkR
         return this.stats_ == null ? LlmBenchmarkStats.getDefaultInstance() : this.stats_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setStats(LlmBenchmarkStats value) {
         value.getClass();
         this.stats_ = value;
         this.bitField0_ |= 2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void mergeStats(LlmBenchmarkStats value) {
         value.getClass();
         if (this.stats_ != null && this.stats_ != LlmBenchmarkStats.getDefaultInstance()) {
@@ -87,7 +87,7 @@ public final class LlmBenchmarkResult extends GeneratedMessageLite<LlmBenchmarkR
         this.bitField0_ |= 2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearStats() {
         this.stats_ = null;
         this.bitField0_ &= -3;

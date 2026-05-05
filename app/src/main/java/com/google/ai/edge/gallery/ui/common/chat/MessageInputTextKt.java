@@ -61,7 +61,6 @@ import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
 import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertiesKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -118,36 +117,36 @@ import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: MessageInputText.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000~\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001aò\u0002\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00012\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000f\u001a\u00020\n2\b\b\u0001\u0010\u0010\u001a\u00020\r2\u0012\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00030\u00122\u0018\u0010\u0013\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00150\u0014\u0012\u0004\u0012\u00020\u00030\u00122\b\b\u0002\u0010\u0016\u001a\u00020\n2\u000e\b\u0002\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00030\u00182\u000e\b\u0002\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00030\u00182#\b\u0002\u0010\u001a\u001a\u001d\u0012\u0013\u0012\u00110\n¢\u0006\f\b\u001b\u0012\b\b\u001c\u0012\u0004\b\b(\u001d\u0012\u0004\u0012\u00020\u00030\u00122\u0012\u0010\u001e\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\u00122\u000e\b\u0002\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\u00030\u00182\u001a\b\u0002\u0010 \u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020!0\u0014\u0012\u0004\u0012\u00020\u00030\u00122\u001a\b\u0002\u0010\"\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020#0\u0014\u0012\u0004\u0012\u00020\u00030\u00122\b\b\u0002\u0010$\u001a\u00020\n2\b\b\u0002\u0010%\u001a\u00020\n2\b\b\u0002\u0010&\u001a\u00020\n2\b\b\u0002\u0010'\u001a\u00020\n2\b\b\u0002\u0010(\u001a\u00020\n2\u000e\b\u0002\u0010)\u001a\b\u0012\u0004\u0012\u00020\u00030\u0018H\u0007¢\u0006\u0002\u0010*\u001a\u001b\u0010+\u001a\u00020\u00032\f\u0010,\u001a\b\u0012\u0004\u0012\u00020\u00030\u0018H\u0003¢\u0006\u0002\u0010-\u001a8\u0010.\u001a\u00020\u00032\u0006\u0010/\u001a\u0002002\f\u00101\u001a\b\u0012\u0004\u0012\u0002020\u00142\u0018\u00103\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020!0\u0014\u0012\u0004\u0012\u00020\u00030\u0012H\u0002\u001a,\u00104\u001a\u00020\u00032\u0006\u0010/\u001a\u0002002\u0006\u00105\u001a\u0002022\u0012\u00106\u001a\u000e\u0012\u0004\u0012\u00020#\u0012\u0004\u0012\u00020\u00030\u0012H\u0002\u001a\u001a\u00107\u001a\u00020!2\u0006\u00108\u001a\u00020!2\b\b\u0002\u00109\u001a\u00020\rH\u0002\u001a$\u0010:\u001a\u00020\u00032\u0006\u0010/\u001a\u0002002\u0012\u0010;\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00030\u0012H\u0002\u001a2\u0010<\u001a\b\u0012\u0004\u0012\u00020\u00150\u00142\f\u0010=\u001a\b\u0012\u0004\u0012\u00020!0\u00142\f\u0010>\u001a\b\u0012\u0004\u0012\u00020#0\u00142\u0006\u0010?\u001a\u00020\u0001H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006@²\u0006\n\u0010A\u001a\u00020BX\u008a\u0084\u0002²\u0006\n\u0010C\u001a\u00020\nX\u008a\u008e\u0002²\u0006\n\u0010D\u001a\u00020\nX\u008a\u008e\u0002²\u0006\n\u0010E\u001a\u00020\nX\u008a\u008e\u0002²\u0006\n\u0010F\u001a\u00020\nX\u008a\u008e\u0002²\u0006\u0010\u0010=\u001a\b\u0012\u0004\u0012\u00020!0\u0014X\u008a\u008e\u0002²\u0006\u0010\u0010G\u001a\b\u0012\u0004\u0012\u00020#0\u0014X\u008a\u008e\u0002²\u0006\n\u0010H\u001a\u00020\nX\u008a\u008e\u0002²\u0006\f\u0010I\u001a\u0004\u0018\u00010JX\u008a\u008e\u0002²\u0006\f\u0010K\u001a\u0004\u0018\u00010LX\u008a\u008e\u0002²\u0006\n\u0010M\u001a\u00020\rX\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "MessageInputText", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "curMessage", "isResettingSession", "", "inProgress", "imageCount", "", "audioClipMessageCount", "modelInitializing", "textFieldPlaceHolderRes", "onValueChanged", "Lkotlin/Function1;", "onSendMessage", "", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessage;", "modelPreparing", "onOpenPromptTemplatesClicked", "Lkotlin/Function0;", "onStopButtonClicked", "onSetAudioRecorderVisible", "Lkotlin/ParameterName;", "name", "visible", "onAmplitudeChanged", "onSkillsClicked", "onPickedImagesChanged", "Landroid/graphics/Bitmap;", "onPickedAudioClipsChanged", "Lcom/google/ai/edge/gallery/common/AudioClip;", "showPromptTemplatesInMenu", "showSkillsPicker", "showImagePicker", "showAudioPicker", "showStopButtonWhenInProgress", "onImageLimitExceeded", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Ljava/lang/String;ZZIIZILkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ZZZZZLkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;IIII)V", "MediaPanelCloseButton", "onClicked", "(Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "handleImagesSelected", "context", "Landroid/content/Context;", "uris", "Landroid/net/Uri;", "onImagesSelected", "handleAudioWavSelected", "uri", "onAudioSelected", "resizeBitmap", "originalBitmap", "size", "checkFrontCamera", "callback", "createMessagesToSend", "pickedImages", "audioClips", "text", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "showAddContentMenu", "showTextInputHistorySheet", "showCameraCaptureBottomSheet", "showAudioRecorder", "pickedAudioClips", "hasFrontCamera", "cameraProvider", "Landroidx/camera/lifecycle/ProcessCameraProvider;", "cameraControl", "Landroidx/camera/core/CameraControl;", "cameraSide"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\b\u0012\u0004\u0012\u00020\u00030\u0018H\u0007¢\u0006\u0002\u0010*\u001a\u001b\u0010+\u001a\u00020\u00032\f\u0010,\u001a\b\u0012\u0004\u0012\u00020\u00030\u0018H\u0003¢\u0006\u0002\u0010-\u001a8\u0010.\u001a\u00020\u00032\u0006\u0010/\u001a\u0002002\f\u00101\u001a\b\u0012\u0004\u0012\u0002020\u00142\u0018\u00103\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020!0\u0014\u0012\u0004\u0012\u00020\u00030\u0012H\u0002\u001a,\u00104\u001a\u00020\u00032\u0006\u0010/\u001a\u0002002\u0006\u00105\u001a\u0002022\u0012\u00106\u001a\u000e\u0012\u0004\u0012\u00020#\u0012\u0004\u0012\u00020\u00030\u0012H\u0002\u001a\u001a\u00107\u001a\u00020!2\u0006\u00108\u001a\u00020!2\b\b\u0002\u00109\u001a\u00020\rH\u0002\u001a$\u0010:\u001a\u00020\u00032\u0006\u0010/\u001a\u0002002\u0012\u0010;\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00030\u0012H\u0002\u001a2\u0010<\u001a\b\u0012\u0004\u0012\u00020\u00150\u00142\f\u0010=\u001a\b\u0012\u0004\u0012\u00020!0\u00142\f\u0010>\u001a\b\u0012\u0004\u0012\u00020#0\u00142\u0006\u0010?\u001a\u00020\u0001H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006@²\u0006\n\u0010A\u001a\u00020BX\u008a\u0084\u0002²\u0006\n\u0010C\u001a\u00020\nX\u008a\u008e\u0002²\u0006\n\u0010D\u001a\u00020\nX\u008a\u008e\u0002²\u0006\n\u0010E\u001a\u00020\nX\u008a\u008e\u0002²\u0006\n\u0010F\u001a\u00020\nX\u008a\u008e\u0002²\u0006\u0010\u0010=\u001a\b\u0012\u0004\u0012\u00020!0\u0014X\u008a\u008e\u0002²\u0006\u0010\u0010G\u001a\b\u0012\u0004\u0012\u00020#0\u0014X\u008a\u008e\u0002²\u0006\n\u0010H\u001a\u00020\nX\u008a\u008e\u0002²\u0006\f\u0010I\u001a\u0004\u0018\u00010JX\u008a\u008e\u0002²\u0006\f\u0010K\u001a\u0004\u0018\u00010LX\u008a\u008e\u0002²\u0006\n\u0010M\u001a\u00020\rX\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "MessageInputText", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "curMessage", "isResettingSession", "", "inProgress", "imageCount", "", "audioClipMessageCount", "modelInitializing", "textFieldPlaceHolderRes", "onValueChanged", "Lkotlin/Function1;", "onSendMessage", "", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessage;", "modelPreparing", "onOpenPromptTemplatesClicked", "Lkotlin/Function0;", "onStopButtonClicked", "onSetAudioRecorderVisible", "Lkotlin/ParameterName;", "name", "visible", "onAmplitudeChanged", "onSkillsClicked", "onPickedImagesChanged", "Landroid/graphics/Bitmap;", "onPickedAudioClipsChanged", "Lcom/google/ai/edge/gallery/common/AudioClip;", "showPromptTemplatesInMenu", "showSkillsPicker", "showImagePicker", "showAudioPicker", "showStopButtonWhenInProgress", "onImageLimitExceeded", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Ljava/lang/String;ZZIIZILkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ZZZZZLkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;IIII)V", "MediaPanelCloseButton", "onClicked", "(Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "handleImagesSelected", "context", "Landroid/content/Context;", "uris", "Landroid/net/Uri;", "onImagesSelected", "handleAudioWavSelected", "uri", "onAudioSelected", "resizeBitmap", "originalBitmap", "size", "checkFrontCamera", "callback", "createMessagesToSend", "pickedImages", "audioClips", "text", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "showAddContentMenu", "showTextInputHistorySheet", "showCameraCaptureBottomSheet", "showAudioRecorder", "pickedAudioClips", "hasFrontCamera", "cameraProvider", "Landroidx/camera/lifecycle/ProcessCameraProvider;", "cameraControl", "Landroidx/camera/core/CameraControl;", "cameraSide"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageInputTextKt {
     private static final String TAG = "AGMessageInputText";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MediaPanelCloseButton$lambda$144(Function0 function0, int i, Composer composer, int i2) {
         MediaPanelCloseButton(function0, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$140(Task task, ModelManagerViewModel modelManagerViewModel, String str, boolean z, boolean z2, int i, int i2, boolean z3, int i3, Function1 function1, Function1 function12, boolean z4, Function0 function0, Function0 function02, Function1 function13, Function1 function14, Function0 function03, Function1 function15, Function1 function16, boolean z5, boolean z6, boolean z7, boolean z8, boolean z9, Function0 function04, int i4, int i5, int i6, int i7, Composer composer, int i8) {
         MessageInputText(task, modelManagerViewModel, str, z, z2, i, i2, z3, i3, function1, function12, z4, function0, function02, function13, function14, function03, function15, function16, z5, z6, z7, z8, z9, function04, composer, RecomposeScopeImplKt.updateChangedFlags(i4 | 1), RecomposeScopeImplKt.updateChangedFlags(i5), RecomposeScopeImplKt.updateChangedFlags(i6), i7);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$5$lambda$4(boolean it) {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$9$lambda$8(List it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$11$lambda$10(List it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
@@ -1350,7 +1349,7 @@ public final class MessageInputTextKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void MessageInputText$lambda$23(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -1360,18 +1359,18 @@ public final class MessageInputTextKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void MessageInputText$lambda$26(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final List<Bitmap> MessageInputText$lambda$28(MutableState<List<Bitmap>> mutableState) {
         MutableState<List<Bitmap>> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final List<AudioClip> MessageInputText$lambda$31(MutableState<List<AudioClip>> mutableState) {
         MutableState<List<AudioClip>> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
@@ -1382,12 +1381,12 @@ public final class MessageInputTextKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void MessageInputText$lambda$35(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$38$lambda$37(int $imageCount, CoroutineScope $scope, State $modelManagerUiState$delegate, MutableState $pickedImages$delegate, Function0 $onImageLimitExceeded, List bitmaps) {
         List listTake;
         Intrinsics.checkNotNullParameter(bitmaps, "bitmaps");
@@ -1411,7 +1410,7 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$40$lambda$39(int $audioClipMessageCount, MutableState $pickedAudioClips$delegate, List audioDataList) {
         List listTake;
         Intrinsics.checkNotNullParameter(audioDataList, "audioDataList");
@@ -1427,7 +1426,7 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$45$lambda$44(MutableState $showAddContentMenu$delegate, MutableState $showCameraCaptureBottomSheet$delegate, boolean permissionGranted) {
         if (permissionGranted) {
             MessageInputText$lambda$17($showAddContentMenu$delegate, false);
@@ -1436,7 +1435,7 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$47$lambda$46(Function1 $onSetAudioRecorderVisible, MutableState $showAddContentMenu$delegate, MutableState $showAudioRecorder$delegate) {
         MessageInputText$lambda$17($showAddContentMenu$delegate, false);
         MessageInputText$lambda$26($showAudioRecorder$delegate, true);
@@ -1444,7 +1443,7 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$49$lambda$48(Function0 $handleClickRecordAudioClip, boolean permissionGranted) {
         if (permissionGranted) {
             $handleClickRecordAudioClip.invoke();
@@ -1452,7 +1451,7 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$51$lambda$50(CoroutineScope $scope, Context $context, Function1 $updatePickedImages, List uris) {
         Intrinsics.checkNotNullParameter(uris, "uris");
         if (!uris.isEmpty()) {
@@ -1461,7 +1460,7 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$54$lambda$53(CoroutineScope $scope, Context $context, Function1 $updatePickedAudioClips, ActivityResult result) {
         Uri uri;
         Intrinsics.checkNotNullParameter(result, "result");
@@ -1477,7 +1476,7 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final DisposableEffectResult MessageInputText$lambda$57$lambda$56(final LifecycleOwner $lifecycleOwner, final SensorObserver $sensorObserver, DisposableEffectScope DisposableEffect) {
         Intrinsics.checkNotNullParameter(DisposableEffect, "$this$DisposableEffect");
         $lifecycleOwner.getLifecycle().addObserver($sensorObserver);
@@ -1489,8 +1488,8 @@ public final class MessageInputTextKt {
         };
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$67$lambda$61$lambda$60$lambda$59 */
+    
+    
     public static final Unit m500x3f372dc6(MutableState $pickedImages$delegate, Bitmap $image) {
         Iterable $this$filter$iv = MessageInputText$lambda$28($pickedImages$delegate);
         Collection destination$iv$iv = new ArrayList();
@@ -1504,8 +1503,8 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$67$lambda$66$lambda$65$lambda$64 */
+    
+    
     public static final Unit m501x66ab772a(MutableState $pickedAudioClips$delegate, int $index) {
         Iterable $this$filterIndexed$iv = MessageInputText$lambda$31($pickedAudioClips$delegate);
         Collection destination$iv$iv = new ArrayList();
@@ -1527,7 +1526,7 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:108:0x0a69  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1541,16 +1540,16 @@ public final class MessageInputTextKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.chat.MessageInputTextKt.MessageInputText$lambda$100$lambda$99$lambda$98(com.google.ai.edge.gallery.data.Task, kotlin.jvm.functions.Function1, kotlinx.coroutines.CoroutineScope, kotlin.jvm.functions.Function1, androidx.compose.material3.SheetState, kotlin.jvm.functions.Function1, java.lang.String, kotlin.jvm.functions.Function1, int, boolean, boolean, boolean, boolean, kotlin.jvm.functions.Function0, boolean, kotlin.jvm.functions.Function1, boolean, kotlin.jvm.functions.Function0, androidx.compose.runtime.MutableState, boolean, int, kotlin.jvm.functions.Function0, android.content.Context, androidx.activity.compose.ManagedActivityResultLauncher, androidx.activity.compose.ManagedActivityResultLauncher, boolean, int, kotlin.jvm.functions.Function0, androidx.activity.compose.ManagedActivityResultLauncher, androidx.activity.compose.ManagedActivityResultLauncher, androidx.compose.runtime.State, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.animation.AnimatedContentScope, boolean, androidx.compose.runtime.Composer, int):kotlin.Unit");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$71$lambda$69$lambda$68 */
+    
+    
     public static final Unit m502x98060696(String $cdPromptInput, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setContentDescription(semantics, $cdPromptInput);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$71$lambda$70 */
+    
+    
     public static final Unit m503x3531db51(int $textFieldPlaceHolderRes, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C392@16121L39,392@16116L45:MessageInputText.kt#ouynps");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1567,22 +1566,22 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$92$lambda$89$lambda$88$lambda$73$lambda$72 */
+    
+    
     public static final Unit m504x8dac9dfa(MutableState $showAddContentMenu$delegate) {
         MessageInputText$lambda$17($showAddContentMenu$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$92$lambda$89$lambda$88$lambda$75$lambda$74 */
+    
+    
     public static final Unit m505xb776037e(MutableState $showAddContentMenu$delegate) {
         MessageInputText$lambda$17($showAddContentMenu$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$92$lambda$89$lambda$88$lambda$87 */
+    
+    
     public static final Unit m506x1ae40469(boolean $showImagePicker, int $imageCount, final Function0 $onImageLimitExceeded, final Context $context, final ManagedActivityResultLauncher $takePicturePermissionLauncher, final ManagedActivityResultLauncher $pickMedia, boolean $showAudioPicker, int $audioClipMessageCount, final Function0 $handleClickRecordAudioClip, final ManagedActivityResultLauncher $recordAudioClipsPermissionLauncher, final ManagedActivityResultLauncher $pickWav, State $modelManagerUiState$delegate, MutableState $pickedImages$delegate, final MutableState $showAddContentMenu$delegate, final MutableState $showCameraCaptureBottomSheet$delegate, MutableState $pickedAudioClips$delegate, final MutableState $showTextInputHistorySheet$delegate, ColumnScope DropdownMenu, Composer $composer, int $changed) {
         String str;
         Composer composer;
@@ -1714,8 +1713,8 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$92$lambda$89$lambda$88$lambda$87$lambda$77$lambda$76 */
+    
+    
     public static final Unit m507x2778b51a(boolean $isImageLimitExceededForAiCore, Function0 $onImageLimitExceeded, Context $context, ManagedActivityResultLauncher $takePicturePermissionLauncher, MutableState $showAddContentMenu$delegate, MutableState $showCameraCaptureBottomSheet$delegate) {
         if ($isImageLimitExceededForAiCore) {
             $onImageLimitExceeded.invoke();
@@ -1731,8 +1730,8 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$92$lambda$89$lambda$88$lambda$87$lambda$79$lambda$78 */
+    
+    
     public static final Unit m508x51421a9e(boolean $isImageLimitExceededForAiCore, Function0 $onImageLimitExceeded, ManagedActivityResultLauncher $pickMedia, MutableState $showAddContentMenu$delegate) {
         if ($isImageLimitExceededForAiCore) {
             $onImageLimitExceeded.invoke();
@@ -1744,8 +1743,8 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$92$lambda$89$lambda$88$lambda$87$lambda$81$lambda$80 */
+    
+    
     public static final Unit m509xb1ce2a0c(Context $context, Function0 $handleClickRecordAudioClip, ManagedActivityResultLauncher $recordAudioClipsPermissionLauncher) {
         if (ContextCompat.checkSelfPermission($context, "android.permission.RECORD_AUDIO") == 0) {
             $handleClickRecordAudioClip.invoke();
@@ -1755,8 +1754,8 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$92$lambda$89$lambda$88$lambda$87$lambda$84$lambda$83 */
+    
+    
     public static final Unit m510x707c4252(ManagedActivityResultLauncher $pickWav, MutableState $showAddContentMenu$delegate) {
         MessageInputText$lambda$17($showAddContentMenu$delegate, false);
         Intent $this$MessageInputText_u24lambda_u24100_u24lambda_u2499_u24lambda_u2498_u24lambda_u2493_u24lambda_u2492_u24lambda_u2489_u24lambda_u2488_u24lambda_u2487_u24lambda_u2484_u24lambda_u2483_u24lambda_u2482 = new Intent("android.intent.action.GET_CONTENT");
@@ -1769,16 +1768,16 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$92$lambda$89$lambda$88$lambda$87$lambda$86$lambda$85 */
+    
+    
     public static final Unit m511x9a45a7d6(MutableState $showAddContentMenu$delegate, MutableState $showTextInputHistorySheet$delegate) {
         MessageInputText$lambda$17($showAddContentMenu$delegate, false);
         MessageInputText$lambda$20($showTextInputHistorySheet$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$93$lambda$92$lambda$91$lambda$90 */
+    
+    
     public static final Unit m512x2199cbbf(String $curMessage, Function1 $onSendMessage, MutableState $pickedImages$delegate, MutableState $pickedAudioClips$delegate) {
         String message = StringsKt.trim((CharSequence) $curMessage).toString();
         $onSendMessage.invoke(createMessagesToSend(MessageInputText$lambda$28($pickedImages$delegate), MessageInputText$lambda$31($pickedAudioClips$delegate), message));
@@ -1787,29 +1786,29 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$95$lambda$94 */
+    
+    
     public static final Unit m513xece5d2a2(CoroutineScope $scope, Function1 $updatePickedAudioClips, SheetState $audioRecorderSheetState, Function1 $onSetAudioRecorderVisible, MutableState $showAudioRecorder$delegate, byte[] audioData) {
         Intrinsics.checkNotNullParameter(audioData, "audioData");
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new MessageInputTextKt$MessageInputText$12$2$1$2$1$1($updatePickedAudioClips, audioData, $audioRecorderSheetState, $onSetAudioRecorderVisible, $showAudioRecorder$delegate, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageInputText$lambda$100$lambda$99$lambda$98$lambda$97$lambda$96 */
+    
+    
     public static final Unit m514x16af3826(Function1 $onSetAudioRecorderVisible, MutableState $showAudioRecorder$delegate) {
         MessageInputText$lambda$26($showAudioRecorder$delegate, false);
         $onSetAudioRecorderVisible.invoke(false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$108$lambda$107(MutableState $showTextInputHistorySheet$delegate) {
         MessageInputText$lambda$20($showTextInputHistorySheet$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$102$lambda$101(Function1 $onSendMessage, ModelManagerViewModel $modelManagerViewModel, MutableState $pickedImages$delegate, MutableState $pickedAudioClips$delegate, String item) {
         Intrinsics.checkNotNullParameter(item, "item");
         $onSendMessage.invoke(createMessagesToSend(MessageInputText$lambda$28($pickedImages$delegate), MessageInputText$lambda$31($pickedAudioClips$delegate), item));
@@ -1819,26 +1818,26 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$104$lambda$103(ModelManagerViewModel $modelManagerViewModel, String item) {
         Intrinsics.checkNotNullParameter(item, "item");
         $modelManagerViewModel.deleteTextInputHistory(item);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$106$lambda$105(ModelManagerViewModel $modelManagerViewModel) {
         $modelManagerViewModel.clearTextInputHistory();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$110$lambda$109(MutableState $showCameraCaptureBottomSheet$delegate) {
         MessageInputText$lambda$23($showCameraCaptureBottomSheet$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:90:0x05ed  */
     /* JADX WARN: Removed duplicated region for block: B:95:0x0691  */
     /* JADX WARN: Removed duplicated region for block: B:98:0x06b7  */
@@ -1854,7 +1853,7 @@ public final class MessageInputTextKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.chat.MessageInputTextKt.MessageInputText$lambda$139(kotlinx.coroutines.CoroutineScope, androidx.compose.material3.SheetState, com.google.ai.edge.gallery.ui.common.chat.SensorObserver, kotlin.jvm.functions.Function1, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, int):kotlin.Unit");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ProcessCameraProvider MessageInputText$lambda$139$lambda$114(MutableState<ProcessCameraProvider> mutableState) {
         MutableState<ProcessCameraProvider> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
@@ -1870,7 +1869,7 @@ public final class MessageInputTextKt {
         return $this$getValue$iv.getIntValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void MessageInputText$lambda$139$rebindCameraProvider(MutableState<ProcessCameraProvider> mutableState, LifecycleOwner lifecycleOwner, Preview previewUseCase, ImageCapture imageCaptureUseCase, MutableIntState cameraSide$delegate, MutableState<CameraControl> mutableState2) {
         ProcessCameraProvider cameraProvider = MessageInputText$lambda$139$lambda$114(mutableState);
         if (cameraProvider != null) {
@@ -1887,7 +1886,7 @@ public final class MessageInputTextKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final DisposableEffectResult MessageInputText$lambda$139$lambda$128$lambda$127(final ExecutorService $executor, final MutableState $cameraProvider$delegate, DisposableEffectScope DisposableEffect) {
         Intrinsics.checkNotNullParameter(DisposableEffect, "$this$DisposableEffect");
         return new DisposableEffectResult() { // from class: com.google.ai.edge.gallery.ui.common.chat.MessageInputTextKt$MessageInputText$lambda$139$lambda$128$lambda$127$$inlined$onDispose$1
@@ -1905,7 +1904,7 @@ public final class MessageInputTextKt {
         };
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final PreviewView MessageInputText$lambda$139$lambda$138$lambda$131$lambda$130(Preview $previewUseCase, MutableState $cameraProvider$delegate, LifecycleOwner $lifecycleOwner, ImageCapture $imageCaptureUseCase, MutableIntState $cameraSide$delegate, MutableState $cameraControl$delegate, Context ctx) {
         Intrinsics.checkNotNullParameter(ctx, "ctx");
         PreviewView it = new PreviewView(ctx);
@@ -1914,13 +1913,13 @@ public final class MessageInputTextKt {
         return it;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$139$lambda$138$lambda$133$lambda$132(CoroutineScope $scope, SheetState $cameraCaptureSheetState, MutableState $showCameraCaptureBottomSheet$delegate) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new MessageInputTextKt$MessageInputText$18$4$2$1$1($cameraCaptureSheetState, $showCameraCaptureBottomSheet$delegate, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$139$lambda$138$lambda$135$lambda$134(ImageCapture $imageCaptureUseCase, ExecutorService $executor, final SensorObserver $sensorObserver, final Function1 $updatePickedImages, final CoroutineScope $scope, final SheetState $cameraCaptureSheetState, final MutableState $showCameraCaptureBottomSheet$delegate) {
         $imageCaptureUseCase.m1025lambda$takePicture$1$androidxcameracoreImageCapture($executor, new ImageCapture.OnImageCapturedCallback() { // from class: com.google.ai.edge.gallery.ui.common.chat.MessageInputTextKt$MessageInputText$18$4$3$1$callback$1
             @Override // androidx.camera.core.ImageCapture.OnImageCapturedCallback
@@ -1963,7 +1962,7 @@ public final class MessageInputTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageInputText$lambda$139$lambda$138$lambda$137$lambda$136(MutableIntState $cameraSide$delegate) {
         $cameraSide$delegate.setIntValue(MessageInputText$lambda$139$lambda$120($cameraSide$delegate) == 1 ? 0 : 1);
         return Unit.INSTANCE;
@@ -2055,13 +2054,13 @@ public final class MessageInputTextKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MediaPanelCloseButton$lambda$142$lambda$141(Function0 $onClicked) {
         $onClicked.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void handleImagesSelected(Context context, List<? extends Uri> list, Function1<? super List<Bitmap>, Unit> function1) {
         FileInputStream inputStream;
         List images = new ArrayList();
@@ -2098,7 +2097,7 @@ public final class MessageInputTextKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void handleAudioWavSelected(Context context, Uri uri, Function1<? super AudioClip, Unit> function1) {
         AudioClip audioClip = UtilsKt.convertWavToMonoWithMaxSeconds$default(context, uri, 0, 4, null);
         if (audioClip != null) {
@@ -2135,7 +2134,7 @@ public final class MessageInputTextKt {
         return Bitmap.createScaledBitmap(originalBitmap, width$iv, height$iv, true);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void checkFrontCamera(Context context, final Function1<? super Boolean, Unit> function1) {
         final ListenableFuture<ProcessCameraProvider> companion = ProcessCameraProvider.INSTANCE.getInstance(context);
         companion.addListener(new Runnable() { // from class: com.google.ai.edge.gallery.ui.common.chat.MessageInputTextKt$$ExternalSyntheticLambda0
@@ -2146,7 +2145,7 @@ public final class MessageInputTextKt {
         }, ContextCompat.getMainExecutor(context));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Multi-variable type inference failed */
     public static final void checkFrontCamera$lambda$147(ListenableFuture $cameraProviderFuture, Function1 $callback) {
         ProcessCameraProvider cameraProvider = (ProcessCameraProvider) $cameraProviderFuture.get();

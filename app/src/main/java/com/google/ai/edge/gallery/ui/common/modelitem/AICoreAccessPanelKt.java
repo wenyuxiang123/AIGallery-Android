@@ -22,7 +22,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
 import androidx.compose.p000ui.res.StringResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -39,11 +38,11 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 
-/* JADX INFO: compiled from: AICoreAccessPanel.kt */
-/* JADX INFO: loaded from: classes13.dex */
-@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u001a\r\u0010\u0000\u001a\u00020\u0001H\u0007¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, m922d2 = {"AICoreAccessPanel", "", "(Landroidx/compose/runtime/Composer;I)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AICoreAccessPanelKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AICoreAccessPanel$lambda$3(int i, Composer composer, int i2) {
         AICoreAccessPanel(composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -146,7 +145,7 @@ public final class AICoreAccessPanelKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AICoreAccessPanel$lambda$2$lambda$1$lambda$0(Context $context) {
         Intent intent = new Intent("android.intent.action.VIEW", Uri.parse("https://developers.google.com/ml-kit/genai/aicore-dev-preview"));
         $context.startActivity(intent);

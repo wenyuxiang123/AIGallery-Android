@@ -28,7 +28,6 @@ import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertiesKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
 import androidx.compose.p000ui.text.TextStyle;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -64,9 +63,8 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: ModelList.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000\\\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010$\u001a_\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0012\u0010\u0016\u001a\u000e\u0012\u0004\u0012\u00020\u0018\u0012\u0004\u0012\u00020\r0\u00172\u0012\u0010\u0019\u001a\u000e\u0012\u0004\u0012\u00020\u0018\u0012\u0004\u0012\u00020\r0\u00172\b\b\u0002\u0010\u001a\u001a\u00020\u001bH\u0007¢\u0006\u0002\u0010\u001c\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u0010\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0004\"\u000e\u0010\u0005\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000¨\u0006\u001d²\u0006\u0010\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u00180\u001fX\u008a\u0084\u0002²\u0006\u0010\u0010 \u001a\b\u0012\u0004\u0012\u00020\u00180\u001fX\u008a\u0084\u0002²\u0006\u001c\u0010!\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00180\u001f0\"X\u008a\u0084\u0002"}, m922d2 = {"TAG", "", "CONTENT_ANIMATION_OFFSET", "Landroidx/compose/ui/unit/Dp;", "F", "ANIMATION_INIT_DELAY", "", "TASK_DESCRIPTION_SECTION_ANIMATION_START", "", "MODEL_LIST_ANIMATION_START", "DEFAULT_ANIMATION_DURATION", "TASK_ICON_ANIMATION_DURATION", "ModelList", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "contentPadding", "Landroidx/compose/foundation/layout/PaddingValues;", "enableAnimation", "", "onModelClicked", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/data/Model;", "onBenchmarkClicked", "modifier", "Landroidx/compose/ui/Modifier;", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Landroidx/compose/foundation/layout/PaddingValues;ZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug", "models", "", "importedModels", "modelVariants", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
 public final class ModelListKt {
     private static final long ANIMATION_INIT_DELAY = 80;
     private static final float CONTENT_ANIMATION_OFFSET = C1654Dp.m9788constructorimpl(16);
@@ -76,7 +74,7 @@ public final class ModelListKt {
     private static final int TASK_DESCRIPTION_SECTION_ANIMATION_START = 400;
     private static final int TASK_ICON_ANIMATION_DURATION = 1100;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelList$lambda$46(Task task, ModelManagerViewModel modelManagerViewModel, PaddingValues paddingValues, boolean z, Function1 function1, Function1 function12, Modifier modifier, int i, int i2, Composer composer, int i3) {
         ModelList(task, modelManagerViewModel, paddingValues, z, function1, function12, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -381,7 +379,7 @@ public final class ModelListKt {
         return (List) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final List ModelList$lambda$2$lambda$1(Task $task) {
         long trigger = $task.getUpdateTrigger().getValue().longValue();
         if (trigger >= 0) {
@@ -403,7 +401,7 @@ public final class ModelListKt {
         return (List) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final List ModelList$lambda$6$lambda$5(Task $task) {
         long trigger = $task.getUpdateTrigger().getValue().longValue();
         if (trigger >= 0) {
@@ -420,13 +418,13 @@ public final class ModelListKt {
         return CollectionsKt.emptyList();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Map<String, List<Model>> ModelList$lambda$12(State<? extends Map<String, ? extends List<Model>>> state) {
         Object thisObj$iv = state.getValue();
         return (Map) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Map ModelList$lambda$11$lambda$10(Task $task) {
         Object answer$iv$iv$iv;
         long trigger = $task.getUpdateTrigger().getValue().longValue();
@@ -461,7 +459,7 @@ public final class ModelListKt {
         return MapsKt.emptyMap();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelList$lambda$45$lambda$44$lambda$43(final Task $task, final float $taskIconProgress, final float $descriptionProgress, final float $taskLabelProgress, final State $models$delegate, final State $importedModels$delegate, final float $modelListProgress, final SnapshotStateMap $modelItemExpandedStates, final ModelManagerViewModel $modelManagerViewModel, final Function1 $onModelClicked, final Function1 $onBenchmarkClicked, final State $modelVariants$delegate, LazyListScope LazyColumn) {
         Intrinsics.checkNotNullParameter(LazyColumn, "$this$LazyColumn");
         LazyListScope.item$default(LazyColumn, "taskHeader", null, ComposableLambdaKt.composableLambdaInstance(-176736355, true, new Function3() { // from class: com.google.ai.edge.gallery.ui.modelmanager.ModelListKt$$ExternalSyntheticLambda13
@@ -547,7 +545,7 @@ public final class ModelListKt {
                                 return Unit.INSTANCE;
                             }
 
-                            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                            
                             public final void invoke2(GraphicsLayerScope graphicsLayer) {
                                 Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
                                 graphicsLayer.setAlpha(f);
@@ -717,7 +715,7 @@ public final class ModelListKt {
                             return Unit.INSTANCE;
                         }
 
-                        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                        
                         public final void invoke2(GraphicsLayerScope graphicsLayer) {
                             Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
                             graphicsLayer.setAlpha(f);
@@ -746,7 +744,7 @@ public final class ModelListKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:112:0x09a2  */
     /* JADX WARN: Removed duplicated region for block: B:115:0x0a02  */
     /* JADX WARN: Removed duplicated region for block: B:70:0x05f2  */
@@ -762,16 +760,16 @@ public final class ModelListKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.modelmanager.ModelListKt.ModelList$lambda$45$lambda$44$lambda$43$lambda$29(com.google.ai.edge.gallery.data.Task, float, float, float, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.foundation.lazy.LazyItemScope, androidx.compose.runtime.Composer, int):kotlin.Unit");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelList$lambda$45$lambda$44$lambda$43$lambda$29$lambda$28$lambda$15$lambda$14 */
+    
+    
     public static final Unit m577x1e061dca(Task $task, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setContentDescription(semantics, $task.getLabel());
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelList$lambda$45$lambda$44$lambda$43$lambda$29$lambda$28$lambda$19$lambda$18$lambda$17 */
+    
+    
     public static final Unit m578x2fa642d1(float $descriptionProgress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($descriptionProgress);
@@ -780,8 +778,8 @@ public final class ModelListKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelList$lambda$45$lambda$44$lambda$43$lambda$29$lambda$28$lambda$21$lambda$20 */
+    
+    
     public static final Unit m579xd224f840(float $descriptionProgress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($descriptionProgress);
@@ -790,8 +788,8 @@ public final class ModelListKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelList$lambda$45$lambda$44$lambda$43$lambda$29$lambda$28$lambda$23$lambda$22 */
+    
+    
     public static final Unit m580xfbee5dc4(float $descriptionProgress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($descriptionProgress);
@@ -800,8 +798,8 @@ public final class ModelListKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelList$lambda$45$lambda$44$lambda$43$lambda$29$lambda$28$lambda$27$lambda$26 */
+    
+    
     public static final Unit m581x4f8128cc(float $descriptionProgress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha(0.6f * $descriptionProgress);
@@ -810,7 +808,7 @@ public final class ModelListKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelList$lambda$45$lambda$44$lambda$43$lambda$32(final float $modelListProgress, LazyItemScope item, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(item, "$this$item");
         ComposerKt.sourceInformation($composer, "C313@11181L60,314@11277L11,315@11334L10,317@11462L150,312@11163L462:ModelList.kt#ahf767");
@@ -846,8 +844,8 @@ public final class ModelListKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelList$lambda$45$lambda$44$lambda$43$lambda$32$lambda$31$lambda$30 */
+    
+    
     public static final Unit m582x414ad537(float $modelListProgress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($modelListProgress);
@@ -856,7 +854,7 @@ public final class ModelListKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelList$lambda$45$lambda$44$lambda$43$lambda$38(final float $modelListProgress, LazyItemScope item, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(item, "$this$item");
         ComposerKt.sourceInformation($composer, "C352@12700L57,353@12793L11,354@12850L10,358@13031L156,351@12682L518:ModelList.kt#ahf767");
@@ -892,8 +890,8 @@ public final class ModelListKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelList$lambda$45$lambda$44$lambda$43$lambda$38$lambda$37$lambda$36 */
+    
+    
     public static final Unit m583xa3cc6c9(float $modelListProgress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($modelListProgress);
@@ -902,7 +900,7 @@ public final class ModelListKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Object ModelList$lambda$45$lambda$44$lambda$43$lambda$39(Model it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return it.getName();

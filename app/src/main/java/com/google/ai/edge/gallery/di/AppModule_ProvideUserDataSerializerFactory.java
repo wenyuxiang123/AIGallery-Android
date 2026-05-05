@@ -5,7 +5,7 @@ import com.google.ai.edge.gallery.proto.UserData;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 
-/* JADX INFO: loaded from: classes10.dex */
+
 public final class AppModule_ProvideUserDataSerializerFactory implements Factory<Serializer<UserData>> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public Serializer<UserData> get() {

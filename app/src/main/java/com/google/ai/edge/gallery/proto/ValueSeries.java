@@ -15,7 +15,7 @@ import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class ValueSeries extends GeneratedMessageLite<ValueSeries, Builder> implements ValueSeriesOrBuilder {
     public static final int AVG_FIELD_NUMBER = 4;
     private static final ValueSeries DEFAULT_INSTANCE;
@@ -60,25 +60,25 @@ public final class ValueSeries extends GeneratedMessageLite<ValueSeries, Builder
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setValue(int index, double value) {
         ensureValueIsMutable();
         this.value_.setDouble(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addValue(double value) {
         ensureValueIsMutable();
         this.value_.addDouble(value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addAllValue(Iterable<? extends Double> values) {
         ensureValueIsMutable();
         AbstractMessageLite.addAll(values, this.value_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearValue() {
         this.value_ = emptyDoubleList();
     }
@@ -88,12 +88,12 @@ public final class ValueSeries extends GeneratedMessageLite<ValueSeries, Builder
         return this.min_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setMin(double value) {
         this.min_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearMin() {
         this.min_ = AudioStats.AUDIO_AMPLITUDE_NONE;
     }
@@ -103,12 +103,12 @@ public final class ValueSeries extends GeneratedMessageLite<ValueSeries, Builder
         return this.max_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setMax(double value) {
         this.max_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearMax() {
         this.max_ = AudioStats.AUDIO_AMPLITUDE_NONE;
     }
@@ -118,12 +118,12 @@ public final class ValueSeries extends GeneratedMessageLite<ValueSeries, Builder
         return this.avg_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setAvg(double value) {
         this.avg_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearAvg() {
         this.avg_ = AudioStats.AUDIO_AMPLITUDE_NONE;
     }
@@ -133,12 +133,12 @@ public final class ValueSeries extends GeneratedMessageLite<ValueSeries, Builder
         return this.medium_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setMedium(double value) {
         this.medium_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearMedium() {
         this.medium_ = AudioStats.AUDIO_AMPLITUDE_NONE;
     }
@@ -148,12 +148,12 @@ public final class ValueSeries extends GeneratedMessageLite<ValueSeries, Builder
         return this.pct25_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setPct25(double value) {
         this.pct25_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearPct25() {
         this.pct25_ = AudioStats.AUDIO_AMPLITUDE_NONE;
     }
@@ -163,12 +163,12 @@ public final class ValueSeries extends GeneratedMessageLite<ValueSeries, Builder
         return this.pct75_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setPct75(double value) {
         this.pct75_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearPct75() {
         this.pct75_ = AudioStats.AUDIO_AMPLITUDE_NONE;
     }

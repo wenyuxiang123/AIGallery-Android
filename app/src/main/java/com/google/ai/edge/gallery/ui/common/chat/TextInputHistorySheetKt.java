@@ -32,7 +32,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.text.style.TextAlign;
 import androidx.compose.p000ui.text.style.TextOverflow;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -66,17 +65,17 @@ import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.DelayKt;
 
-/* JADX INFO: compiled from: TextInputHistorySheet.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000&\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\u001a_\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u0012\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00010\u00062\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00010\u00062\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\t2\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00010\tH\u0007¢\u0006\u0002\u0010\u000b\u001a_\u0010\f\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u0012\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00010\u00062\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00010\u00062\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\t2\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00010\tH\u0003¢\u0006\u0002\u0010\u000b¨\u0006\r²\u0006\n\u0010\u000e\u001a\u00020\u000fX\u008a\u008e\u0002"}, m922d2 = {"TextInputHistorySheet", "", "history", "", "", "onHistoryItemClicked", "Lkotlin/Function1;", "onHistoryItemDeleted", "onHistoryItemsDeleteAll", "Lkotlin/Function0;", "onDismissed", "(Ljava/util/List;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "SheetContent", "app_debug", "showConfirmDeleteDialog", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "SheetContent", "app_debug", "showConfirmDeleteDialog", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class TextInputHistorySheetKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SheetContent$lambda$30(List list, Function1 function1, Function1 function12, Function0 function0, Function0 function02, int i, Composer composer, int i2) {
         SheetContent(list, function1, function12, function0, function02, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextInputHistorySheet$lambda$7(List list, Function1 function1, Function1 function12, Function0 function0, Function0 function02, int i, Composer composer, int i2) {
         TextInputHistorySheet(list, function1, function12, function0, function02, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -150,7 +149,7 @@ public final class TextInputHistorySheetKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextInputHistorySheet$lambda$6(List $history, final CoroutineScope $scope, final SheetState $sheetState, final Function1 $onHistoryItemClicked, final Function0 $onDismissed, Function1 $onHistoryItemDeleted, final Function0 $onHistoryItemsDeleteAll, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(ModalBottomSheet, "$this$ModalBottomSheet");
         ComposerKt.sourceInformation($composer, "C82@3275L160,91@3520L130,98@3672L94,80@3207L566:TextInputHistorySheet.kt#ouynps");
@@ -212,20 +211,20 @@ public final class TextInputHistorySheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextInputHistorySheet$lambda$6$lambda$1$lambda$0(CoroutineScope $scope, SheetState $sheetState, Function1 $onHistoryItemClicked, Function0 $onDismissed, String item) {
         Intrinsics.checkNotNullParameter(item, "item");
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new TextInputHistorySheetKt$TextInputHistorySheet$1$1$1$1($sheetState, $onHistoryItemClicked, item, $onDismissed, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextInputHistorySheet$lambda$6$lambda$3$lambda$2(CoroutineScope $scope, SheetState $sheetState, Function0 $onDismissed, Function0 $onHistoryItemsDeleteAll) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new TextInputHistorySheetKt$TextInputHistorySheet$1$2$1$1($sheetState, $onDismissed, $onHistoryItemsDeleteAll, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TextInputHistorySheet$lambda$6$lambda$5$lambda$4(CoroutineScope $scope, SheetState $sheetState, Function0 $onDismissed) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new TextInputHistorySheetKt$TextInputHistorySheet$1$3$1$1($sheetState, $onDismissed, null), 3, null);
         return Unit.INSTANCE;
@@ -451,13 +450,13 @@ public final class TextInputHistorySheetKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SheetContent$lambda$21$lambda$13$lambda$12$lambda$11(MutableState $showConfirmDeleteDialog$delegate) {
         SheetContent$lambda$10($showConfirmDeleteDialog$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SheetContent$lambda$21$lambda$20$lambda$19(final List $history, final Function1 $onHistoryItemClicked, final CoroutineScope $scope, final Function1 $onHistoryItemDeleted, LazyListScope LazyColumn) {
         Intrinsics.checkNotNullParameter(LazyColumn, "$this$LazyColumn");
         final Function1 key$iv = new Function1() { // from class: com.google.ai.edge.gallery.ui.common.chat.TextInputHistorySheetKt$$ExternalSyntheticLambda11
@@ -536,7 +535,7 @@ public final class TextInputHistorySheetKt {
                             return Unit.INSTANCE;
                         }
 
-                        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                        
                         public final void invoke2() {
                             function1.invoke(item);
                         }
@@ -595,9 +594,9 @@ public final class TextInputHistorySheetKt {
                     final Function1 function12 = $onHistoryItemDeleted;
                     Object value$iv2 = (Function0) new Function0<Unit>() { // from class: com.google.ai.edge.gallery.ui.common.chat.TextInputHistorySheetKt$SheetContent$1$2$1$2$2$1$1
 
-                        /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.TextInputHistorySheetKt$SheetContent$1$2$1$2$2$1$1$1 */
-                        /* JADX INFO: compiled from: TextInputHistorySheet.kt */
-                        @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+                        
+                        
+                        
                         @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.chat.TextInputHistorySheetKt$SheetContent$1$2$1$2$2$1$1$1", m932f = "TextInputHistorySheet.kt", m933i = {}, m934l = {161}, m935m = "invokeSuspend", m936n = {}, m938s = {})
                         static final class C27331 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                             final /* synthetic */ String $item;
@@ -650,7 +649,7 @@ public final class TextInputHistorySheetKt {
                             return Unit.INSTANCE;
                         }
 
-                        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                        
                         public final void invoke2() {
                             BuildersKt__Builders_commonKt.launch$default(coroutineScope, null, null, new C27331(function12, item, null), 3, null);
                         }
@@ -675,19 +674,19 @@ public final class TextInputHistorySheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Object SheetContent$lambda$21$lambda$20$lambda$19$lambda$14(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return it;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SheetContent$lambda$23$lambda$22(MutableState $showConfirmDeleteDialog$delegate) {
         SheetContent$lambda$10($showConfirmDeleteDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SheetContent$lambda$26(final Function0 $onHistoryItemsDeleteAll, final MutableState $showConfirmDeleteDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C182@6220L95,181@6192L189:TextInputHistorySheet.kt#ouynps");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -718,14 +717,14 @@ public final class TextInputHistorySheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SheetContent$lambda$26$lambda$25$lambda$24(Function0 $onHistoryItemsDeleteAll, MutableState $showConfirmDeleteDialog$delegate) {
         SheetContent$lambda$10($showConfirmDeleteDialog$delegate, false);
         $onHistoryItemsDeleteAll.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SheetContent$lambda$29(final MutableState $showConfirmDeleteDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C191@6444L35,191@6423L117:TextInputHistorySheet.kt#ouynps");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -755,7 +754,7 @@ public final class TextInputHistorySheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SheetContent$lambda$29$lambda$28$lambda$27(MutableState $showConfirmDeleteDialog$delegate) {
         SheetContent$lambda$10($showConfirmDeleteDialog$delegate, false);
         return Unit.INSTANCE;

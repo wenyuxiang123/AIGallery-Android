@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class BenchmarkResult extends GeneratedMessageLite<BenchmarkResult, Builder> implements BenchmarkResultOrBuilder {
     private static final BenchmarkResult DEFAULT_INSTANCE;
     public static final int LLM_RESULT_FIELD_NUMBER = 2;
@@ -59,7 +59,7 @@ public final class BenchmarkResult extends GeneratedMessageLite<BenchmarkResult,
         return ResultCase.forNumber(this.resultCase_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearResult() {
         this.resultCase_ = 0;
         this.result_ = null;
@@ -78,14 +78,14 @@ public final class BenchmarkResult extends GeneratedMessageLite<BenchmarkResult,
         return LlmBenchmarkResult.getDefaultInstance();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setLlmResult(LlmBenchmarkResult value) {
         value.getClass();
         this.result_ = value;
         this.resultCase_ = 2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void mergeLlmResult(LlmBenchmarkResult value) {
         value.getClass();
         if (this.resultCase_ == 2 && this.result_ != LlmBenchmarkResult.getDefaultInstance()) {
@@ -96,7 +96,7 @@ public final class BenchmarkResult extends GeneratedMessageLite<BenchmarkResult,
         this.resultCase_ = 2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearLlmResult() {
         if (this.resultCase_ == 2) {
             this.resultCase_ = 0;

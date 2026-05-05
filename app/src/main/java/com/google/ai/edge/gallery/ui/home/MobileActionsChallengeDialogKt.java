@@ -34,7 +34,6 @@ import androidx.compose.p000ui.text.style.BaselineShift;
 import androidx.compose.p000ui.text.style.TextAlign;
 import androidx.compose.p000ui.text.style.TextDecoration;
 import androidx.compose.p000ui.text.style.TextGeometricTransform;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.TextUnitKt;
 import androidx.compose.runtime.Applier;
@@ -56,11 +55,11 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MobileActionsChallengeDialog.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a7\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u0003H\u0007¢\u0006\u0002\u0010\u0006¨\u0006\u0007"}, m922d2 = {"MobileActionsChallengeDialog", "", "onDismiss", "Lkotlin/Function0;", "onLoadModel", "onSendEmail", "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MobileActionsChallengeDialogKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MobileActionsChallengeDialog$lambda$6(Function0 function0, Function0 function02, Function0 function03, int i, Composer composer, int i2) {
         MobileActionsChallengeDialog(function0, function02, function03, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -115,7 +114,7 @@ public final class MobileActionsChallengeDialogKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Unreachable blocks removed: 2, instructions: 5 */
     public static final Unit MobileActionsChallengeDialog$lambda$5(String $guideUrl, Function0 $onSendEmail, Function0 $onLoadModel, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;

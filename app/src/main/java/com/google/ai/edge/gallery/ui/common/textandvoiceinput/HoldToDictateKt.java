@@ -28,7 +28,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
 import androidx.compose.p000ui.res.StringResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -64,13 +63,13 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: HoldToDictate.kt */
-/* JADX INFO: loaded from: classes5.dex */
-@Metadata(m921d1 = {"\u0000:\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\u001aW\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00030\t2\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00030\t2\u0006\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000fH\u0007¢\u0006\u0002\u0010\u0010\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0011²\u0006\n\u0010\u0012\u001a\u00020\u0013X\u008a\u0084\u0002²\u0006\n\u0010\u0014\u001a\u00020\rX\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "HoldToDictate", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "viewModel", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;", "onDone", "Lkotlin/Function1;", "onAmplitudeChanged", "", "enabled", "", "modifier", "Landroidx/compose/ui/Modifier;", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ZLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateUiState;", "recordAudioPermissionGranted"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateUiState;", "recordAudioPermissionGranted"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class HoldToDictateKt {
     private static final String TAG = "AGHoldToDictate";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HoldToDictate$lambda$11(Task task, HoldToDictateViewModel holdToDictateViewModel, Function1 function1, Function1 function12, boolean z, Modifier modifier, int i, int i2, Composer composer, int i3) {
         HoldToDictate(task, holdToDictateViewModel, function1, function12, z, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -179,9 +178,9 @@ public final class HoldToDictateKt {
                     if (invalid$iv2 || it$iv2 == Composer.INSTANCE.getEmpty()) {
                         Object value$iv4 = (PointerInputEventHandler) new PointerInputEventHandler() { // from class: com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateKt$HoldToDictate$2$1
 
-                            /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateKt$HoldToDictate$2$1$1 */
-                            /* JADX INFO: compiled from: HoldToDictate.kt */
-                            @Metadata(m921d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\n"}, m922d2 = {"<anonymous>", "", "Landroidx/compose/foundation/gestures/PressGestureScope;", "it", "Landroidx/compose/ui/geometry/Offset;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+                            
+                            
+                            
                             @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateKt$HoldToDictate$2$1$1", m932f = "HoldToDictate.kt", m933i = {0}, m934l = {AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY}, m935m = "invokeSuspend", m936n = {"$this$detectTapGestures"}, m938s = {"L$0"})
                             static final class C27471 extends SuspendLambda implements Function3<PressGestureScope, Offset, Continuation<? super Unit>, Object> {
                                 final /* synthetic */ Function1<Integer, Unit> $onAmplitudeChanged;
@@ -346,12 +345,12 @@ public final class HoldToDictateKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void HoldToDictate$lambda$3(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HoldToDictate$lambda$5$lambda$4(MutableState $recordAudioPermissionGranted$delegate, boolean permissionGranted) {
         if (permissionGranted) {
             HoldToDictate$lambda$3($recordAudioPermissionGranted$delegate, true);
@@ -359,7 +358,7 @@ public final class HoldToDictateKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HoldToDictate$lambda$9$lambda$8(boolean $enabled, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($enabled ? 1.0f : 0.5f);

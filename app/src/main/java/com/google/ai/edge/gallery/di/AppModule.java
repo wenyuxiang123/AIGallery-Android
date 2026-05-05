@@ -1,7 +1,6 @@
 package com.google.ai.edge.gallery.di;
 
 import android.content.Context;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.datastore.DataStoreFile;
 import androidx.datastore.core.DataStore;
 import androidx.datastore.core.DataStoreFactory;
@@ -31,9 +30,9 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: AppModule.kt */
-/* JADX INFO: loaded from: classes10.dex */
-@Metadata(m921d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\bÁ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005H\u0007J\u000e\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\b0\u0005H\u0007J\u000e\u0010\t\u001a\b\u0012\u0004\u0012\u00020\n0\u0005H\u0007J\u000e\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\f0\u0005H\u0007J\u000e\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000e0\u0005H\u0007J&\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00060\u00102\b\b\u0001\u0010\u0011\u001a\u00020\u00122\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005H\u0007J&\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\b0\u00102\b\b\u0001\u0010\u0011\u001a\u00020\u00122\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\b0\u0005H\u0007J&\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\n0\u00102\b\b\u0001\u0010\u0011\u001a\u00020\u00122\f\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\n0\u0005H\u0007J&\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\f0\u00102\b\b\u0001\u0010\u0011\u001a\u00020\u00122\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\f0\u0005H\u0007J&\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u000e0\u00102\b\b\u0001\u0010\u0011\u001a\u00020\u00122\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u000e0\u0005H\u0007J\b\u0010\u001c\u001a\u00020\u001dH\u0007JN\u0010\u001e\u001a\u00020\u001f2\f\u0010 \u001a\b\u0012\u0004\u0012\u00020\u00060\u00102\f\u0010!\u001a\b\u0012\u0004\u0012\u00020\n0\u00102\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\b0\u00102\f\u0010#\u001a\b\u0012\u0004\u0012\u00020\f0\u00102\f\u0010$\u001a\b\u0012\u0004\u0012\u00020\u000e0\u0010H\u0007J\u001a\u0010%\u001a\u00020&2\b\b\u0001\u0010\u0011\u001a\u00020\u00122\u0006\u0010'\u001a\u00020\u001dH\u0007¨\u0006("}, m922d2 = {"Lcom/google/ai/edge/gallery/di/AppModule;", "", "<init>", "()V", "provideSettingsSerializer", "Landroidx/datastore/core/Serializer;", "Lcom/google/ai/edge/gallery/proto/Settings;", "provideCutoutSerializer", "Lcom/google/ai/edge/gallery/proto/CutoutCollection;", "provideUserDataSerializer", "Lcom/google/ai/edge/gallery/proto/UserData;", "provideBenchmarkResultsSerializer", "Lcom/google/ai/edge/gallery/proto/BenchmarkResults;", "provideSkillsSerializer", "Lcom/google/ai/edge/gallery/proto/Skills;", "provideSettingsDataStore", "Landroidx/datastore/core/DataStore;", "context", "Landroid/content/Context;", "settingsSerializer", "provideCutoutsDataStore", "cutoutsSerializer", "provideUserDataDataStore", "userDataSerializer", "provideBenchmarkResultsDataStore", "benchmarkResultsSerializer", "provideSkillsDataStore", "skillsSerializer", "provideAppLifecycleProvider", "Lcom/google/ai/edge/gallery/AppLifecycleProvider;", "provideDataStoreRepository", "Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "dataStore", "userDataDataStore", "cutoutsDataStore", "benchmarkResultsStore", "skillsDataStore", "provideDownloadRepository", "Lcom/google/ai/edge/gallery/data/DownloadRepository;", "lifecycleProvider", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "provideSettingsSerializer", "Landroidx/datastore/core/Serializer;", "Lcom/google/ai/edge/gallery/proto/Settings;", "provideCutoutSerializer", "Lcom/google/ai/edge/gallery/proto/CutoutCollection;", "provideUserDataSerializer", "Lcom/google/ai/edge/gallery/proto/UserData;", "provideBenchmarkResultsSerializer", "Lcom/google/ai/edge/gallery/proto/BenchmarkResults;", "provideSkillsSerializer", "Lcom/google/ai/edge/gallery/proto/Skills;", "provideSettingsDataStore", "Landroidx/datastore/core/DataStore;", "context", "Landroid/content/Context;", "settingsSerializer", "provideCutoutsDataStore", "cutoutsSerializer", "provideUserDataDataStore", "userDataSerializer", "provideBenchmarkResultsDataStore", "benchmarkResultsSerializer", "provideSkillsDataStore", "skillsSerializer", "provideAppLifecycleProvider", "Lcom/google/ai/edge/gallery/AppLifecycleProvider;", "provideDataStoreRepository", "Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "dataStore", "userDataDataStore", "cutoutsDataStore", "benchmarkResultsStore", "skillsDataStore", "provideDownloadRepository", "Lcom/google/ai/edge/gallery/data/DownloadRepository;", "lifecycleProvider", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 @Module
 public final class AppModule {
     public static final int $stable = 0;
@@ -85,7 +84,7 @@ public final class AppModule {
         }, 14, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final File provideSettingsDataStore$lambda$0(Context $context) {
         return DataStoreFile.dataStoreFile($context, "settings.pb");
     }
@@ -103,7 +102,7 @@ public final class AppModule {
         }, 14, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final File provideCutoutsDataStore$lambda$1(Context $context) {
         return DataStoreFile.dataStoreFile($context, "cutouts.pb");
     }
@@ -121,7 +120,7 @@ public final class AppModule {
         }, 14, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final File provideUserDataDataStore$lambda$2(Context $context) {
         return DataStoreFile.dataStoreFile($context, "user_data.pb");
     }
@@ -139,7 +138,7 @@ public final class AppModule {
         }, 14, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final File provideBenchmarkResultsDataStore$lambda$3(Context $context) {
         return DataStoreFile.dataStoreFile($context, "benchmark_results.pb");
     }
@@ -157,7 +156,7 @@ public final class AppModule {
         }, 14, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final File provideSkillsDataStore$lambda$4(Context $context) {
         return DataStoreFile.dataStoreFile($context, "skills.pb");
     }

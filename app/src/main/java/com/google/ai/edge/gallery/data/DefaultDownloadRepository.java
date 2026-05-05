@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.util.Log;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -39,9 +38,9 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: DownloadRepository.kt */
-/* JADX INFO: loaded from: classes12.dex */
-@Metadata(m921d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\b\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007JR\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u00102\u0006\u0010\u0011\u001a\u00020\u001226\u0010\u0013\u001a2\u0012\u0013\u0012\u00110\u0012¢\u0006\f\b\u0015\u0012\b\b\u0016\u0012\u0004\b\b(\u0011\u0012\u0013\u0012\u00110\u0017¢\u0006\f\b\u0015\u0012\b\b\u0016\u0012\u0004\b\b(\u0018\u0012\u0004\u0012\u00020\u000e0\u0014H\u0016J\u0010\u0010\u0019\u001a\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u0016\u0010\u001a\u001a\u00020\u000e2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u000e0\u001cH\u0016JZ\u0010\u001d\u001a\u00020\u000e2\u0006\u0010\u001e\u001a\u00020\u001f2\b\u0010\u000f\u001a\u0004\u0018\u00010\u00102\u0006\u0010\u0011\u001a\u00020\u001226\u0010\u0013\u001a2\u0012\u0013\u0012\u00110\u0012¢\u0006\f\b\u0015\u0012\b\b\u0016\u0012\u0004\b\b(\u0011\u0012\u0013\u0012\u00110\u0017¢\u0006\f\b\u0015\u0012\b\b\u0016\u0012\u0004\b\b(\u0018\u0012\u0004\u0012\u00020\u000e0\u0014H\u0016J(\u0010 \u001a\u00020\u000e2\u0006\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\"2\u0006\u0010$\u001a\u00020\"2\u0006\u0010%\u001a\u00020\"H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\n\u001a\n \f*\u0004\u0018\u00010\u000b0\u000bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006&"}, m922d2 = {"Lcom/google/ai/edge/gallery/data/DefaultDownloadRepository;", "Lcom/google/ai/edge/gallery/data/DownloadRepository;", "context", "Landroid/content/Context;", "lifecycleProvider", "Lcom/google/ai/edge/gallery/AppLifecycleProvider;", "<init>", "(Landroid/content/Context;Lcom/google/ai/edge/gallery/AppLifecycleProvider;)V", "workManager", "Landroidx/work/WorkManager;", "downloadStartTimeSharedPreferences", "Landroid/content/SharedPreferences;", "kotlin.jvm.PlatformType", "downloadModel", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "model", "Lcom/google/ai/edge/gallery/data/Model;", "onStatusUpdated", "Lkotlin/Function2;", "Lkotlin/ParameterName;", "name", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;", NotificationCompat.CATEGORY_STATUS, "cancelDownloadModel", "cancelAll", "onComplete", "Lkotlin/Function0;", "observerWorkerProgress", "workerId", "Ljava/util/UUID;", "sendNotification", "title", "", "text", "taskId", "modelName", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "workManager", "Landroidx/work/WorkManager;", "downloadStartTimeSharedPreferences", "Landroid/content/SharedPreferences;", "kotlin.jvm.PlatformType", "downloadModel", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "model", "Lcom/google/ai/edge/gallery/data/Model;", "onStatusUpdated", "Lkotlin/Function2;", "Lkotlin/ParameterName;", "name", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;", NotificationCompat.CATEGORY_STATUS, "cancelDownloadModel", "cancelAll", "onComplete", "Lkotlin/Function0;", "observerWorkerProgress", "workerId", "Ljava/util/UUID;", "sendNotification", "title", "", "text", "taskId", "modelName", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class DefaultDownloadRepository implements DownloadRepository {
     public static final int $stable = 8;
     private final Context context;
@@ -49,8 +48,8 @@ public final class DefaultDownloadRepository implements DownloadRepository {
     private final AppLifecycleProvider lifecycleProvider;
     private final WorkManager workManager;
 
-    /* JADX INFO: compiled from: DownloadRepository.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -129,13 +128,13 @@ public final class DefaultDownloadRepository implements DownloadRepository {
         observerWorkerProgress(workerId, task, model, onStatusUpdated);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final CharSequence downloadModel$lambda$1(ModelDataFile it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return it.getUrl();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final CharSequence downloadModel$lambda$2(ModelDataFile it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return it.getDownloadFileName();
@@ -171,7 +170,7 @@ public final class DefaultDownloadRepository implements DownloadRepository {
         }));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit observerWorkerProgress$lambda$7(DefaultDownloadRepository this$0, Model $model, Function2 $onStatusUpdated, UUID $workerId, Task $task, WorkInfo workInfo) {
         String id;
         if (workInfo != null) {

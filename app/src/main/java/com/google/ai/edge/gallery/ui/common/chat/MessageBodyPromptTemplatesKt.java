@@ -35,7 +35,6 @@ import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.font.FontWeight;
 import androidx.compose.p000ui.text.style.TextAlign;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -59,19 +58,19 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MessageBodyPromptTemplates.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000&\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a3\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0014\b\u0002\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00030\tH\u0007¢\u0006\u0002\u0010\u000b\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\f"}, m922d2 = {"CARD_HEIGHT", "", "MessageBodyPromptTemplates", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessagePromptTemplates;", "task", "Lcom/google/ai/edge/gallery/data/Task;", "onPromptClicked", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/data/PromptTemplate;", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessagePromptTemplates;Lcom/google/ai/edge/gallery/data/Task;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageBodyPromptTemplatesKt {
     private static final int CARD_HEIGHT = 100;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyPromptTemplates$lambda$9(ChatMessagePromptTemplates chatMessagePromptTemplates, Task task, Function1 function1, int i, int i2, Composer composer, int i3) {
         MessageBodyPromptTemplates(chatMessagePromptTemplates, task, function1, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyPromptTemplates$lambda$1$lambda$0(PromptTemplate it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
@@ -233,7 +232,7 @@ public final class MessageBodyPromptTemplatesKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyPromptTemplates$lambda$8$lambda$7$lambda$6(ChatMessagePromptTemplates $message, final long $color, final Function1 $onPromptClicked, LazyListScope LazyColumn) {
         Intrinsics.checkNotNullParameter(LazyColumn, "$this$LazyColumn");
         final List<PromptTemplate> templates = $message.getTemplates();
@@ -299,7 +298,7 @@ public final class MessageBodyPromptTemplatesKt {
                                 return Unit.INSTANCE;
                             }
 
-                            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                            
                             public final void invoke2() {
                                 function1.invoke(template);
                             }

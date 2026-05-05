@@ -22,7 +22,6 @@ import androidx.compose.p000ui.text.style.TextDecoration;
 import androidx.compose.p000ui.text.style.TextGeometricTransform;
 import androidx.compose.p000ui.text.style.TextIndent;
 import androidx.compose.p000ui.text.style.TextMotion;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.TextUnit;
 import androidx.compose.p000ui.unit.TextUnitKt;
 import androidx.compose.runtime.Composer;
@@ -46,17 +45,17 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MarkdownText.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a?\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\tH\u0007¢\u0006\u0004\b\u000b\u0010\f¨\u0006\r"}, m922d2 = {"MarkdownText", "", "text", "", "modifier", "Landroidx/compose/ui/Modifier;", "smallFontSize", "", "textColor", "Landroidx/compose/ui/graphics/Color;", "linkColor", "MarkdownText-jA1GFJw", "(Ljava/lang/String;Landroidx/compose/ui/Modifier;ZJJLandroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MarkdownTextKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MarkdownText_jA1GFJw$lambda$3(String str, Modifier modifier, boolean z, long j, long j2, int i, int i2, Composer composer, int i3) {
         m10879MarkdownTextjA1GFJw(str, modifier, z, j, j2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: MarkdownText-jA1GFJw, reason: not valid java name */
+    
     public static final void m10879MarkdownTextjA1GFJw(final String text, Modifier modifier, boolean smallFontSize, long textColor, long linkColor, Composer $composer, final int $changed, final int i) {
         Modifier modifier2;
         boolean z;
@@ -218,7 +217,7 @@ public final class MarkdownTextKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MarkdownText_jA1GFJw$lambda$2(long $fontSize, boolean $smallFontSize, long $textColor, final Modifier $modifier, final long $linkColor, final String $text, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C57@2139L653,49@1909L883:MarkdownText.kt#t7sjiu");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -242,7 +241,7 @@ public final class MarkdownTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MarkdownText_jA1GFJw$lambda$2$lambda$1(Modifier $modifier, long $linkColor, final String $text, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C66@2388L10,68@2521L10,74@2744L42,58@2147L639:MarkdownText.kt#t7sjiu");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -268,7 +267,7 @@ public final class MarkdownTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MarkdownText_jA1GFJw$lambda$2$lambda$1$lambda$0(String $text, RichTextScope RichText, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(RichText, "$this$RichText");
         ComposerKt.sourceInformation($composer, "C75@2754L24:MarkdownText.kt#t7sjiu");

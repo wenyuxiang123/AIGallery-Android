@@ -1,13 +1,12 @@
 package com.google.ai.edge.gallery.data;
 
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import com.google.gson.annotations.SerializedName;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: ModelAllowlist.kt */
-/* JADX INFO: loaded from: classes12.dex */
-@Metadata(m921d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u001b\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0087\b\u0018\u00002\u00020\u0001BM\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\f\u0010\rJ\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u000fJ\u0010\u0010\u001b\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u0012J\u0010\u0010\u001c\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u0012J\u000b\u0010\u001d\u001a\u0004\u0018\u00010\bHÆ\u0003J\u000b\u0010\u001e\u001a\u0004\u0018\u00010\bHÆ\u0003J\u0010\u0010\u001f\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u000fJ\u0010\u0010 \u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u000fJb\u0010!\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0002\u0010\"J\u0013\u0010#\u001a\u00020$2\b\u0010%\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010&\u001a\u00020\u0003HÖ\u0001J\t\u0010'\u001a\u00020\bHÖ\u0001R\u001a\u0010\u0002\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\n\n\u0002\u0010\u0010\u001a\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0004\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0011\u0010\u0012R\u001a\u0010\u0006\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\n\n\u0002\u0010\u0013\u001a\u0004\b\u0014\u0010\u0012R\u0018\u0010\u0007\u001a\u0004\u0018\u00010\b8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0018\u0010\t\u001a\u0004\u0018\u00010\b8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0016R\u001a\u0010\n\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\n\n\u0002\u0010\u0010\u001a\u0004\b\u0018\u0010\u000fR\u001a\u0010\u000b\u001a\u0004\u0018\u00010\u00038\u0006X\u0087\u0004¢\u0006\n\n\u0002\u0010\u0010\u001a\u0004\b\u0019\u0010\u000f¨\u0006("}, m922d2 = {"Lcom/google/ai/edge/gallery/data/DefaultConfig;", "", "topK", "", "topP", "", "temperature", "accelerators", "", "visionAccelerator", "maxContextLength", "maxTokens", "<init>", "(Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)V", "getTopK", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getTopP", "()Ljava/lang/Float;", "Ljava/lang/Float;", "getTemperature", "getAccelerators", "()Ljava/lang/String;", "getVisionAccelerator", "getMaxContextLength", "getMaxTokens", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "(Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)Lcom/google/ai/edge/gallery/data/DefaultConfig;", "equals", "", "other", "hashCode", "toString", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "getTopK", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getTopP", "()Ljava/lang/Float;", "Ljava/lang/Float;", "getTemperature", "getAccelerators", "()Ljava/lang/String;", "getVisionAccelerator", "getMaxContextLength", "getMaxTokens", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "(Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)Lcom/google/ai/edge/gallery/data/DefaultConfig;", "equals", "", "other", "hashCode", "toString", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final /* data */ class DefaultConfig {
     public static final int $stable = 0;
 
@@ -62,37 +61,37 @@ public final /* data */ class DefaultConfig {
         return defaultConfig.copy(num, f3, f4, str3, str4, num4, num3);
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    
     public final Integer getTopK() {
         return this.topK;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    
     public final Float getTopP() {
         return this.topP;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    
     public final Float getTemperature() {
         return this.temperature;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    
     public final String getAccelerators() {
         return this.accelerators;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    
     public final String getVisionAccelerator() {
         return this.visionAccelerator;
     }
 
-    /* JADX INFO: renamed from: component6, reason: from getter */
+    
     public final Integer getMaxContextLength() {
         return this.maxContextLength;
     }
 
-    /* JADX INFO: renamed from: component7, reason: from getter */
+    
     public final Integer getMaxTokens() {
         return this.maxTokens;
     }

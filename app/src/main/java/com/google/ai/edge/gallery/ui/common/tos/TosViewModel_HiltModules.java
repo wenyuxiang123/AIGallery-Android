@@ -7,7 +7,7 @@ import dagger.Provides;
 import dagger.multibindings.IntoMap;
 import dagger.multibindings.LazyClassKey;
 
-/* JADX INFO: loaded from: classes3.dex */
+
 public final class TosViewModel_HiltModules {
     private TosViewModel_HiltModules() {
     }

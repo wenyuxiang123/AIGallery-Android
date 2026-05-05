@@ -2,7 +2,6 @@ package com.google.ai.edge.gallery.customtasks.agentchat;
 
 import androidx.compose.material3.AndroidAlertDialog_androidKt;
 import androidx.compose.material3.ButtonKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.ComposerKt;
 import androidx.compose.runtime.RecomposeScopeImplKt;
@@ -14,11 +13,11 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: AddSkillDisclaimerDialog.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a)\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00010\u0003H\u0007¢\u0006\u0002\u0010\u0005¨\u0006\u0006"}, m922d2 = {"AddSkillDisclaimerDialog", "", "onDismiss", "Lkotlin/Function0;", "onConfirm", "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00010\u0003H\u0007¢\u0006\u0002\u0010\u0005¨\u0006\u0006"}, m922d2 = {"AddSkillDisclaimerDialog", "", "onDismiss", "Lkotlin/Function0;", "onConfirm", "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AddSkillDisclaimerDialogKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillDisclaimerDialog$lambda$2(Function0 function0, Function0 function02, int i, Composer composer, int i2) {
         AddSkillDisclaimerDialog(function0, function02, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -72,7 +71,7 @@ public final class AddSkillDisclaimerDialogKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillDisclaimerDialog$lambda$0(Function0 $onConfirm, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C33@1265L86:AddSkillDisclaimerDialog.kt#41d64j");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -89,7 +88,7 @@ public final class AddSkillDisclaimerDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillDisclaimerDialog$lambda$1(Function0 $onDismiss, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C36@1387L77:AddSkillDisclaimerDialog.kt#41d64j");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {

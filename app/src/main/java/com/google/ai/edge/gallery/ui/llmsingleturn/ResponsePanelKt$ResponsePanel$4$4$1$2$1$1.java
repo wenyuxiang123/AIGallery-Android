@@ -3,7 +3,6 @@ package com.google.ai.edge.gallery.ui.llmsingleturn;
 import android.content.ClipData;
 import androidx.compose.p000ui.platform.ClipEntry;
 import androidx.compose.p000ui.platform.Clipboard;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
@@ -16,9 +15,9 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: ResponsePanel.kt */
-/* JADX INFO: loaded from: classes15.dex */
-@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.llmsingleturn.ResponsePanelKt$ResponsePanel$4$4$1$2$1$1", m932f = "ResponsePanel.kt", m933i = {0, 0}, m934l = {172}, m935m = "invokeSuspend", m936n = {"clipData", "clipEntry"}, m938s = {"L$0", "L$1"})
 final class ResponsePanelKt$ResponsePanel$4$4$1$2$1$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Clipboard $clipboard;

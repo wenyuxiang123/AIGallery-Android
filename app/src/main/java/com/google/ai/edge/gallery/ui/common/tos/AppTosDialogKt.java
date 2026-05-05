@@ -25,7 +25,6 @@ import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.text.TextLayoutResult;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.font.FontWeight;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.TextUnitKt;
 import androidx.compose.p000ui.window.AndroidDialog_androidKt;
@@ -51,11 +50,11 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: AppTosDialog.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u001a%\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005H\u0007¢\u0006\u0002\u0010\u0006¨\u0006\u0007"}, m922d2 = {"AppTosDialog", "", "onTosAccepted", "Lkotlin/Function0;", "viewingMode", "", "(Lkotlin/jvm/functions/Function0;ZLandroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AppTosDialogKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AppTosDialog$lambda$8(Function0 function0, boolean z, int i, int i2, Composer composer, int i3) {
         AppTosDialog(function0, z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -126,7 +125,7 @@ public final class AppTosDialogKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AppTosDialog$lambda$1$lambda$0(boolean $viewingMode, Function0 $onTosAccepted) {
         if ($viewingMode) {
             $onTosAccepted.invoke();
@@ -134,7 +133,7 @@ public final class AppTosDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AppTosDialog$lambda$7(final Function0 $onTosAccepted, final boolean $viewingMode, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C51@2184L1768,51@2144L1808:AppTosDialog.kt#8d38sg");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -156,7 +155,7 @@ public final class AppTosDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AppTosDialog$lambda$7$lambda$6(Function0 $onTosAccepted, final boolean $viewingMode, ColumnScope Card, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -283,7 +282,7 @@ public final class AppTosDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AppTosDialog$lambda$7$lambda$6$lambda$5$lambda$4(boolean $viewingMode, RowScope Button, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(Button, "$this$Button");
         ComposerKt.sourceInformation($composer, "C86@3769L147,85@3751L177:AppTosDialog.kt#8d38sg");

@@ -18,7 +18,6 @@ import androidx.compose.p000ui.ComposedModifierKt;
 import androidx.compose.p000ui.Modifier;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.window.AndroidDialog_androidKt;
 import androidx.compose.runtime.Applier;
@@ -37,11 +36,11 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: ErrorDialog.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a#\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00010\u0005H\u0007¢\u0006\u0002\u0010\u0006¨\u0006\u0007"}, m922d2 = {"ErrorDialog", "", "error", "", "onDismiss", "Lkotlin/Function0;", "(Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ErrorDialogKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ErrorDialog$lambda$4(String str, Function0 function0, int i, Composer composer, int i2) {
         ErrorDialog(str, function0, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -87,7 +86,7 @@ public final class ErrorDialogKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ErrorDialog$lambda$3(final String $error, final Function0 $onDismiss, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C36@1467L633,36@1391L709:ErrorDialog.kt#t7sjiu");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -109,7 +108,7 @@ public final class ErrorDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ErrorDialog$lambda$3$lambda$2(String $error, Function0 $onDismiss, ColumnScope Card, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;

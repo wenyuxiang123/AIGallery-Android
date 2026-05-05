@@ -60,7 +60,6 @@ import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.style.TextAlign;
 import androidx.compose.p000ui.text.style.TextOverflow;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -115,13 +114,13 @@ import kotlin.jvm.internal.StringCompanionObject;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: BenchmarkResultsViewer.kt */
-/* JADX INFO: loaded from: classes6.dex */
-@Metadata(m921d1 = {"\u0000V\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\u001a3\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\tH\u0007¢\u0006\u0002\u0010\n\u001aG\u0010\u000b\u001a\u00020\u00012\u0006\u0010\f\u001a\u00020\u00032\u0006\u0010\r\u001a\u00020\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\u00032\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00122\b\b\u0002\u0010\u0013\u001a\u00020\u0014H\u0003¢\u0006\u0002\u0010\u0015\u001a[\u0010\u0016\u001a\u00020\u00012\u0006\u0010\f\u001a\u00020\u00032\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\u00032\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00182\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u001a2\b\b\u0002\u0010\u0013\u001a\u00020\u0014H\u0003¢\u0006\u0002\u0010\u001d\u001a\u0018\u0010\u001e\u001a\u00020\u00032\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010\u0019\u001a\u00020\u001aH\u0002\u001a\u0018\u0010!\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH\u0002¨\u0006\"²\u0006\n\u0010#\u001a\u00020$X\u008a\u0084\u0002²\u0006\n\u0010%\u001a\u00020\u0014X\u008a\u008e\u0002²\u0006\n\u0010&\u001a\u00020\u0014X\u008a\u008e\u0002²\u0006\n\u0010'\u001a\u00020\u0014X\u008a\u008e\u0002²\u0006\n\u0010(\u001a\u00020\u0003X\u008a\u008e\u0002²\u0006\n\u0010)\u001a\u00020\u0003X\u008a\u008e\u0002²\u0006\n\u0010*\u001a\u00020\u0014X\u008a\u008e\u0002²\u0006\n\u0010+\u001a\u00020\u0014X\u008a\u008e\u0002"}, m922d2 = {"BenchmarkResultsViewer", "", "initialModelName", "", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "viewModel", "Lcom/google/ai/edge/gallery/ui/benchmark/BenchmarkViewModel;", "onClose", "Lkotlin/Function0;", "(Ljava/lang/String;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lcom/google/ai/edge/gallery/ui/benchmark/BenchmarkViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "StatRow", Constants.ScionAnalytics.PARAM_LABEL, "value", "modifier", "Landroidx/compose/ui/Modifier;", "unit", "baselineValue", "", "lessIsBetter", "", "(Ljava/lang/String;Ljava/lang/String;Landroidx/compose/ui/Modifier;Ljava/lang/String;Ljava/lang/Double;ZLandroidx/compose/runtime/Composer;II)V", "ValueSeriesRow", "valueSeries", "Lcom/google/ai/edge/gallery/proto/ValueSeries;", "aggregation", "Lcom/google/ai/edge/gallery/ui/benchmark/Aggregation;", "baselineValueSeries", "baselineAggregation", "(Ljava/lang/String;Lcom/google/ai/edge/gallery/proto/ValueSeries;Lcom/google/ai/edge/gallery/ui/benchmark/Aggregation;Landroidx/compose/ui/Modifier;Ljava/lang/String;Lcom/google/ai/edge/gallery/proto/ValueSeries;Lcom/google/ai/edge/gallery/ui/benchmark/Aggregation;ZLandroidx/compose/runtime/Composer;II)V", "getBenchmarkResultCsv", "llmResult", "Lcom/google/ai/edge/gallery/proto/LlmBenchmarkResult;", "getAggregationValue", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/benchmark/BenchmarkUiState;", "showConfirmDeleteDialog", "showLazyListPlacementAnimation", "showBenchmarkComparisonHelpBottomSheet", "benchmarkResultIdToDelete", "selectedModelName", "showAggregationDropdown", "showValueSeriesBottomSheet"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u00020\u0003X\u008a\u008e\u0002²\u0006\n\u0010*\u001a\u00020\u0014X\u008a\u008e\u0002²\u0006\n\u0010+\u001a\u00020\u0014X\u008a\u008e\u0002"}, m922d2 = {"BenchmarkResultsViewer", "", "initialModelName", "", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "viewModel", "Lcom/google/ai/edge/gallery/ui/benchmark/BenchmarkViewModel;", "onClose", "Lkotlin/Function0;", "(Ljava/lang/String;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lcom/google/ai/edge/gallery/ui/benchmark/BenchmarkViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "StatRow", Constants.ScionAnalytics.PARAM_LABEL, "value", "modifier", "Landroidx/compose/ui/Modifier;", "unit", "baselineValue", "", "lessIsBetter", "", "(Ljava/lang/String;Ljava/lang/String;Landroidx/compose/ui/Modifier;Ljava/lang/String;Ljava/lang/Double;ZLandroidx/compose/runtime/Composer;II)V", "ValueSeriesRow", "valueSeries", "Lcom/google/ai/edge/gallery/proto/ValueSeries;", "aggregation", "Lcom/google/ai/edge/gallery/ui/benchmark/Aggregation;", "baselineValueSeries", "baselineAggregation", "(Ljava/lang/String;Lcom/google/ai/edge/gallery/proto/ValueSeries;Lcom/google/ai/edge/gallery/ui/benchmark/Aggregation;Landroidx/compose/ui/Modifier;Ljava/lang/String;Lcom/google/ai/edge/gallery/proto/ValueSeries;Lcom/google/ai/edge/gallery/ui/benchmark/Aggregation;ZLandroidx/compose/runtime/Composer;II)V", "getBenchmarkResultCsv", "llmResult", "Lcom/google/ai/edge/gallery/proto/LlmBenchmarkResult;", "getAggregationValue", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/benchmark/BenchmarkUiState;", "showConfirmDeleteDialog", "showLazyListPlacementAnimation", "showBenchmarkComparisonHelpBottomSheet", "benchmarkResultIdToDelete", "selectedModelName", "showAggregationDropdown", "showValueSeriesBottomSheet"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class BenchmarkResultsViewerKt {
 
-    /* JADX INFO: compiled from: BenchmarkResultsViewer.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -147,19 +146,19 @@ public final class BenchmarkResultsViewerKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$74(String str, ModelManagerViewModel modelManagerViewModel, BenchmarkViewModel benchmarkViewModel, Function0 function0, int i, Composer composer, int i2) {
         BenchmarkResultsViewer(str, modelManagerViewModel, benchmarkViewModel, function0, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit StatRow$lambda$81(String str, String str2, Modifier modifier, String str3, Double d, boolean z, int i, int i2, Composer composer, int i3) {
         StatRow(str, str2, modifier, str3, d, z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ValueSeriesRow$lambda$98(String str, ValueSeries valueSeries, Aggregation aggregation, Modifier modifier, String str2, ValueSeries valueSeries2, Aggregation aggregation2, boolean z, int i, int i2, Composer composer, int i3) {
         ValueSeriesRow(str, valueSeries, aggregation, modifier, str2, valueSeries2, aggregation2, z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -182,7 +181,7 @@ public final class BenchmarkResultsViewerKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.benchmark.BenchmarkResultsViewerKt.BenchmarkResultsViewer(java.lang.String, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, com.google.ai.edge.gallery.ui.benchmark.BenchmarkViewModel, kotlin.jvm.functions.Function0, androidx.compose.runtime.Composer, int):void");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final BenchmarkUiState BenchmarkResultsViewer$lambda$0(State<BenchmarkUiState> state) {
         Object thisObj$iv = state.getValue();
         return (BenchmarkUiState) thisObj$iv;
@@ -193,18 +192,18 @@ public final class BenchmarkResultsViewerKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void BenchmarkResultsViewer$lambda$3(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean BenchmarkResultsViewer$lambda$5(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void BenchmarkResultsViewer$lambda$6(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -214,7 +213,7 @@ public final class BenchmarkResultsViewerKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void BenchmarkResultsViewer$lambda$9(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -224,13 +223,13 @@ public final class BenchmarkResultsViewerKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String BenchmarkResultsViewer$lambda$15(MutableState<String> mutableState) {
         MutableState<String> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$23$lambda$22(Function0 $onClose, State $uiState$delegate) {
         if (!BenchmarkResultsViewer$lambda$0($uiState$delegate).getRunning()) {
             $onClose.invoke();
@@ -238,7 +237,7 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$32(final State $uiState$delegate, final SnapshotStateList $filterableModelNames, final CoroutineScope $scope, final MutableState $selectedModelName$delegate, final MutableState $showLazyListPlacementAnimation$delegate, final SnapshotStateList $filteredResults, final MutableState $showBenchmarkComparisonHelpBottomSheet$delegate, final Function0 $onClose, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C177@7417L863,201@8307L400,214@8756L208,175@7353L1620:BenchmarkResultsViewer.kt#aos0mq");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -270,7 +269,7 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$32$lambda$27(State $uiState$delegate, SnapshotStateList $filterableModelNames, final CoroutineScope $scope, final MutableState $selectedModelName$delegate, final MutableState $showLazyListPlacementAnimation$delegate, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Object value$iv;
@@ -357,8 +356,8 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkResultsViewer$lambda$32$lambda$27$lambda$26$lambda$25$lambda$24 */
+    
+    
     public static final Unit m466x2879635(CoroutineScope $scope, MutableState $showLazyListPlacementAnimation$delegate, MutableState $selectedModelName$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         BenchmarkResultsViewer$lambda$6($showLazyListPlacementAnimation$delegate, true);
@@ -367,7 +366,7 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$32$lambda$30(SnapshotStateList $filteredResults, final MutableState $showBenchmarkComparisonHelpBottomSheet$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C:BenchmarkResultsViewer.kt#aos0mq");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -407,13 +406,13 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$32$lambda$30$lambda$29$lambda$28(MutableState $showBenchmarkComparisonHelpBottomSheet$delegate) {
         BenchmarkResultsViewer$lambda$9($showBenchmarkComparisonHelpBottomSheet$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$32$lambda$31(Function0 $onClose, State $uiState$delegate, RowScope CenterAlignedTopAppBar, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(CenterAlignedTopAppBar, "$this$CenterAlignedTopAppBar");
         ComposerKt.sourceInformation($composer, "C:BenchmarkResultsViewer.kt#aos0mq");
@@ -438,7 +437,7 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$58(final State $uiState$delegate, final SnapshotStateList $filteredResults, final BenchmarkViewModel $viewModel, final CoroutineScope $scope, final MutableState $showLazyListPlacementAnimation$delegate, final MutableState $benchmarkResultIdToDelete$delegate, final MutableState $showConfirmDeleteDialog$delegate, final PaddingValues innerPadding, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(innerPadding, "innerPadding");
         ComposerKt.sourceInformation($composer, "C225@9046L23593:BenchmarkResultsViewer.kt#aos0mq");
@@ -518,7 +517,7 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Multi-variable type inference failed */
     public static final ContentTransform BenchmarkResultsViewer$lambda$58$lambda$57$lambda$36$lambda$35(AnimatedContentTransitionScope AnimatedContent) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
@@ -538,19 +537,19 @@ public final class BenchmarkResultsViewerKt {
         }, 1, null).plus(EnterExitTransitionKt.fadeOut$default(null, 0.0f, 3, null)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkResultsViewer$lambda$58$lambda$57$lambda$36$lambda$35$lambda$33 */
+    
+    
     public static final int m467x83db2232(int it) {
         return 40;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkResultsViewer$lambda$58$lambda$57$lambda$36$lambda$35$lambda$34 */
+    
+    
     public static final int m468x83db2233(int it) {
         return 40;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$58$lambda$57$lambda$56(final PaddingValues $innerPadding, final State $uiState$delegate, final SnapshotStateList $filteredResults, final BenchmarkViewModel $viewModel, final CoroutineScope $scope, final MutableState $showLazyListPlacementAnimation$delegate, final MutableState $benchmarkResultIdToDelete$delegate, final MutableState $showConfirmDeleteDialog$delegate, AnimatedContentScope AnimatedContent, boolean running, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -856,8 +855,8 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkResultsViewer$lambda$58$lambda$57$lambda$56$lambda$55$lambda$54$lambda$53$lambda$52 */
+    
+    
     public static final Unit m469x7cb1531a(final SnapshotStateList $filteredResults, final BenchmarkViewModel $viewModel, final MutableState $showLazyListPlacementAnimation$delegate, final State $uiState$delegate, final CoroutineScope $scope, final MutableState $benchmarkResultIdToDelete$delegate, final MutableState $showConfirmDeleteDialog$delegate, final PaddingValues $innerPadding, LazyListScope LazyColumn) {
         Intrinsics.checkNotNullParameter(LazyColumn, "$this$LazyColumn");
         LazyListScope.item$default(LazyColumn, null, null, ComposableSingletons$BenchmarkResultsViewerKt.INSTANCE.m10806getLambda$1266842233$app_debug(), 3, null);
@@ -1002,7 +1001,7 @@ public final class BenchmarkResultsViewerKt {
                                                     return Unit.INSTANCE;
                                                 }
 
-                                                /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                                
                                                 public final void invoke2() {
                                                     benchmarkViewModel3.setBaseline(benchmarkResultInfo.getId());
                                                 }
@@ -1403,7 +1402,7 @@ public final class BenchmarkResultsViewerKt {
                                             return Unit.INSTANCE;
                                         }
 
-                                        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                        
                                         public final void invoke2() {
                                             mutableState3.setValue(benchmarkResultInfo.getId());
                                             BenchmarkResultsViewerKt.BenchmarkResultsViewer$lambda$3(mutableState4, true);
@@ -1431,9 +1430,9 @@ public final class BenchmarkResultsViewerKt {
                                     $composer$iv$iv$iv3 = $composer3;
                                     value$iv5 = new Function0<Unit>() { // from class: com.google.ai.edge.gallery.ui.benchmark.BenchmarkResultsViewerKt$BenchmarkResultsViewer$7$1$2$2$1$2$1$3$1$3$1$6$2$1
 
-                                        /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.benchmark.BenchmarkResultsViewerKt$BenchmarkResultsViewer$7$1$2$2$1$2$1$3$1$3$1$6$2$1$1, reason: invalid class name */
-                                        /* JADX INFO: compiled from: BenchmarkResultsViewer.kt */
-                                        @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+                                        
+                                        
+                                        
                                         @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.benchmark.BenchmarkResultsViewerKt$BenchmarkResultsViewer$7$1$2$2$1$2$1$3$1$3$1$6$2$1$1", m932f = "BenchmarkResultsViewer.kt", m933i = {0, 0, 0}, m934l = {640}, m935m = "invokeSuspend", m936n = {"csv", "clipData", "clipEntry"}, m938s = {"L$0", "L$1", "L$2"})
                                         static final class AnonymousClass1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                                             final /* synthetic */ Clipboard $clipboard;
@@ -1498,7 +1497,7 @@ public final class BenchmarkResultsViewerKt {
                                             return Unit.INSTANCE;
                                         }
 
-                                        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                        
                                         public final void invoke2() {
                                             BuildersKt__Builders_commonKt.launch$default(coroutineScope2, null, null, new AnonymousClass1(llmBenchmarkResult, benchmarkResultInfo, str3, clipboard, null), 3, null);
                                         }
@@ -1560,8 +1559,8 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkResultsViewer$lambda$58$lambda$57$lambda$56$lambda$55$lambda$54$lambda$53$lambda$52$lambda$46 */
+    
+    
     public static final Unit m470xcf147375(final BenchmarkViewModel $viewModel, LazyItemScope item, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Object value$iv;
@@ -1653,29 +1652,29 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkResultsViewer$lambda$58$lambda$57$lambda$56$lambda$55$lambda$54$lambda$53$lambda$52$lambda$46$lambda$45$lambda$42$lambda$41 */
+    
+    
     public static final Unit m471x8c0c117c(BenchmarkViewModel $viewModel) {
         $viewModel.expandAll();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkResultsViewer$lambda$58$lambda$57$lambda$56$lambda$55$lambda$54$lambda$53$lambda$52$lambda$46$lambda$45$lambda$44$lambda$43 */
+    
+    
     public static final Unit m472xb5d57700(BenchmarkViewModel $viewModel) {
         $viewModel.collapseAll();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkResultsViewer$lambda$58$lambda$57$lambda$56$lambda$55$lambda$54$lambda$53$lambda$52$lambda$47 */
+    
+    
     public static final Object m473xcf147376(int index, BenchmarkResultInfo item) {
         Intrinsics.checkNotNullParameter(item, "item");
         return item.getId();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkResultsViewer$lambda$58$lambda$57$lambda$56$lambda$55$lambda$54$lambda$53$lambda$52$lambda$51 */
+    
+    
     public static final Unit m474xcf14738f(PaddingValues $innerPadding, LazyItemScope item, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(item, "$this$item");
         ComposerKt.sourceInformation($composer, "C672@32004L73:BenchmarkResultsViewer.kt#aos0mq");
@@ -1693,13 +1692,13 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$60$lambda$59(MutableState $showConfirmDeleteDialog$delegate) {
         BenchmarkResultsViewer$lambda$3($showConfirmDeleteDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$63(final BenchmarkViewModel $viewModel, final CoroutineScope $scope, final MutableState $showLazyListPlacementAnimation$delegate, final MutableState $showConfirmDeleteDialog$delegate, final MutableState $benchmarkResultIdToDelete$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C702@32992L303,701@32964L459:BenchmarkResultsViewer.kt#aos0mq");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1730,7 +1729,7 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$63$lambda$62$lambda$61(BenchmarkViewModel $viewModel, CoroutineScope $scope, MutableState $showLazyListPlacementAnimation$delegate, MutableState $showConfirmDeleteDialog$delegate, MutableState $benchmarkResultIdToDelete$delegate) {
         BenchmarkResultsViewer$lambda$6($showLazyListPlacementAnimation$delegate, true);
         BenchmarkResultsViewer$lambda$3($showConfirmDeleteDialog$delegate, false);
@@ -1739,7 +1738,7 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$66(final MutableState $showConfirmDeleteDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C719@33501L35,718@33465L199:BenchmarkResultsViewer.kt#aos0mq");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1769,19 +1768,19 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$66$lambda$65$lambda$64(MutableState $showConfirmDeleteDialog$delegate) {
         BenchmarkResultsViewer$lambda$3($showConfirmDeleteDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$68$lambda$67(MutableState $showBenchmarkComparisonHelpBottomSheet$delegate) {
         BenchmarkResultsViewer$lambda$9($showBenchmarkComparisonHelpBottomSheet$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$73(final CoroutineScope $scope, final SheetState $sheetState, final MutableState $showBenchmarkComparisonHelpBottomSheet$delegate, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -1902,13 +1901,13 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkResultsViewer$lambda$73$lambda$72$lambda$71$lambda$70(CoroutineScope $scope, SheetState $sheetState, MutableState $showBenchmarkComparisonHelpBottomSheet$delegate) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new BenchmarkResultsViewerKt$BenchmarkResultsViewer$12$1$2$1$1($sheetState, $showBenchmarkComparisonHelpBottomSheet$delegate, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void StatRow(final String label, final String value, Modifier modifier, String unit, Double baselineValue, boolean lessIsBetter, Composer $composer, final int $changed, final int i) {
         Modifier modifier2;
         String str;
@@ -2179,13 +2178,13 @@ public final class BenchmarkResultsViewerKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ContentTransform StatRow$lambda$80$lambda$79$lambda$78$lambda$76$lambda$75(AnimatedContentTransitionScope AnimatedContent) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
         return AnimatedContentKt.togetherWith(EnterExitTransitionKt.fadeIn$default(null, 0.0f, 3, null), EnterExitTransitionKt.fadeOut$default(null, 0.0f, 3, null));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit StatRow$lambda$80$lambda$79$lambda$78$lambda$77(String $value, boolean $lessIsBetter, AnimatedContentScope AnimatedContent, Double curBaselineValue, Composer $composer, int $changed) {
         long color;
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
@@ -2228,7 +2227,7 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void ValueSeriesRow(final String label, final ValueSeries valueSeries, final Aggregation aggregation, Modifier modifier, String unit, ValueSeries baselineValueSeries, Aggregation baselineAggregation, boolean lessIsBetter, Composer $composer, final int $changed, final int i) {
         Modifier modifier2;
         String unit2;
@@ -2638,7 +2637,7 @@ public final class BenchmarkResultsViewerKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ValueSeriesRow$lambda$95$lambda$94$lambda$93$lambda$86$lambda$85(long $linkColor, DrawScope drawBehind) {
         Intrinsics.checkNotNullParameter(drawBehind, "$this$drawBehind");
         int bits$iv$iv$iv = (int) (drawBehind.mo7496getSizeNHjbRc() & 4294967295L);
@@ -2655,13 +2654,13 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ValueSeriesRow$lambda$95$lambda$94$lambda$93$lambda$88$lambda$87(MutableState $showValueSeriesBottomSheet$delegate) {
         ValueSeriesRow$lambda$84($showValueSeriesBottomSheet$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ValueSeriesRow$lambda$95$lambda$94$lambda$93$lambda$89(Modifier $textModifier, long $textColor, AnimatedContentScope AnimatedContent, double curValue, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
         ComposerKt.sourceInformation($composer, "C901@39550L10,899@39444L287:BenchmarkResultsViewer.kt#aos0mq");
@@ -2678,13 +2677,13 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ContentTransform ValueSeriesRow$lambda$95$lambda$94$lambda$93$lambda$91$lambda$90(AnimatedContentTransitionScope AnimatedContent) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
         return AnimatedContentKt.togetherWith(EnterExitTransitionKt.fadeIn$default(null, 0.0f, 3, null), EnterExitTransitionKt.fadeOut$default(null, 0.0f, 3, null));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ValueSeriesRow$lambda$95$lambda$94$lambda$93$lambda$92(double $value, boolean $lessIsBetter, AnimatedContentScope AnimatedContent, Double curBaselineValue, Composer $composer, int $changed) {
         long color;
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
@@ -2726,13 +2725,13 @@ public final class BenchmarkResultsViewerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ValueSeriesRow$lambda$97$lambda$96(MutableState $showValueSeriesBottomSheet$delegate) {
         ValueSeriesRow$lambda$84($showValueSeriesBottomSheet$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String getBenchmarkResultCsv(LlmBenchmarkResult llmResult, Aggregation aggregation) {
         LlmBenchmarkBasicInfo basicInfo = llmResult.getBaiscInfo();
         LlmBenchmarkStats stats = llmResult.getStats();

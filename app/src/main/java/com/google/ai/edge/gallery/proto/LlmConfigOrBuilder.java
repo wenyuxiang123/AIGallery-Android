@@ -4,7 +4,7 @@ import com.google.protobuf.ByteString;
 import com.google.protobuf.MessageLiteOrBuilder;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public interface LlmConfigOrBuilder extends MessageLiteOrBuilder {
     String getCompatibleAccelerators(int i);
 

@@ -2,7 +2,7 @@ package com.google.ai.edge.gallery.customtasks.mobileactions;
 
 import dagger.internal.Factory;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class MobileActionsTask_Factory implements Factory<MobileActionsTask> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public MobileActionsTask get() {

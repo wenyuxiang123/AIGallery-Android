@@ -2,7 +2,6 @@ package com.google.ai.edge.gallery.ui.home;
 
 import android.util.Log;
 import androidx.browser.trusted.sharing.ShareTarget;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.MutableState;
 import com.google.gson.Gson;
 import com.google.ai.edge.gallery.BuildConfig;
@@ -30,9 +29,9 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: NewReleaseNotification.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.home.NewReleaseNotificationKt$NewReleaseNotification$1$1$observer$1$1", m932f = "NewReleaseNotification.kt", m933i = {}, m934l = {74}, m935m = "invokeSuspend", m936n = {}, m938s = {})
 final class NewReleaseNotificationKt$NewReleaseNotification$1$1$observer$1$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ MutableState<String> $newReleaseUrl$delegate;
@@ -56,9 +55,9 @@ final class NewReleaseNotificationKt$NewReleaseNotification$1$1$observer$1$1 ext
         return ((NewReleaseNotificationKt$NewReleaseNotification$1$1$observer$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.home.NewReleaseNotificationKt$NewReleaseNotification$1$1$observer$1$1$1 */
-    /* JADX INFO: compiled from: NewReleaseNotification.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.home.NewReleaseNotificationKt$NewReleaseNotification$1$1$observer$1$1$1", m932f = "NewReleaseNotification.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C27561 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ MutableState<String> $newReleaseUrl$delegate;

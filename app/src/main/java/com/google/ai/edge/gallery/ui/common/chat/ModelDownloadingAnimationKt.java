@@ -17,7 +17,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.text.style.TextAlign;
 import androidx.compose.p000ui.text.style.TextOverflow;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -44,11 +43,11 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: ModelDownloadingAnimation.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000&\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u001a%\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0007¢\u0006\u0002\u0010\b¨\u0006\t²\u0006\n\u0010\n\u001a\u00020\u000bX\u008a\u0084\u0002²\u0006\f\u0010\f\u001a\u0004\u0018\u00010\rX\u008a\u0084\u0002"}, m922d2 = {"ModelDownloadingAnimation", "", "model", "Lcom/google/ai/edge/gallery/data/Model;", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Landroidx/compose/runtime/Composer;I)V", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "downloadStatus", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "downloadStatus", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ModelDownloadingAnimationKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelDownloadingAnimation$lambda$6(Model model, Task task, ModelManagerViewModel modelManagerViewModel, int i, Composer composer, int i2) {
         ModelDownloadingAnimation(model, task, modelManagerViewModel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -255,7 +254,7 @@ public final class ModelDownloadingAnimationKt {
         return (ModelDownloadStatus) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ModelDownloadStatus ModelDownloadingAnimation$lambda$2$lambda$1(Model $model, State $modelManagerUiState$delegate) {
         return ModelDownloadingAnimation$lambda$0($modelManagerUiState$delegate).getModelDownloadStatus().get($model.getName());
     }

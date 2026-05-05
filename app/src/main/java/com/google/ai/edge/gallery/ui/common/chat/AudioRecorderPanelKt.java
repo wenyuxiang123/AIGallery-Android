@@ -34,7 +34,6 @@ import androidx.compose.p000ui.semantics.LiveRegionMode;
 import androidx.compose.p000ui.semantics.SemanticsModifierKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertiesKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -83,16 +82,16 @@ import kotlinx.coroutines.CoroutineScopeKt;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.Job;
 
-/* JADX INFO: compiled from: AudioRecorderPanel.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000`\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0012\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\u001aU\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\b0\f2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\b0\f2\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\b0\u00102\b\b\u0002\u0010\u0011\u001a\u00020\u0012H\u0007¢\u0006\u0002\u0010\u0013\u001aX\u0010\u0014\u001a\u00020\b2\u0006\u0010\u0015\u001a\u00020\u00162\u000e\u0010\u0017\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00190\u00182\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001d2\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\b0\f2\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\b0\u0010H\u0083@¢\u0006\u0002\u0010\u001f\u001a \u0010 \u001a\u00020\u000e2\u000e\u0010\u0017\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00190\u00182\u0006\u0010\u001a\u001a\u00020\u001bH\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000¨\u0006!²\u0006\n\u0010\"\u001a\u00020#X\u008a\u008e\u0002²\u0006\n\u0010$\u001a\u00020\u0001X\u008a\u0084\u0002"}, m922d2 = {"TAG", "", "CHANNEL_CONFIG", "", "AUDIO_FORMAT", "PANEL_ALPHA", "", "AudioRecorderPanel", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "onAmplitudeChanged", "Lkotlin/Function1;", "onSendAudioClip", "", "onClose", "Lkotlin/Function0;", "modifier", "Landroidx/compose/ui/Modifier;", "(Lcom/google/ai/edge/gallery/data/Task;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "startRecording", "context", "Landroid/content/Context;", "audioRecordState", "Landroidx/compose/runtime/MutableState;", "Landroid/media/AudioRecord;", "audioStream", "Ljava/io/ByteArrayOutputStream;", "elapsedMs", "Landroidx/compose/runtime/MutableLongState;", "onMaxDurationReached", "(Landroid/content/Context;Landroidx/compose/runtime/MutableState;Ljava/io/ByteArrayOutputStream;Landroidx/compose/runtime/MutableLongState;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "stopRecording", "app_debug", "isRecording", "", "elapsedSeconds"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "startRecording", "context", "Landroid/content/Context;", "audioRecordState", "Landroidx/compose/runtime/MutableState;", "Landroid/media/AudioRecord;", "audioStream", "Ljava/io/ByteArrayOutputStream;", "elapsedMs", "Landroidx/compose/runtime/MutableLongState;", "onMaxDurationReached", "(Landroid/content/Context;Landroidx/compose/runtime/MutableState;Ljava/io/ByteArrayOutputStream;Landroidx/compose/runtime/MutableLongState;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "stopRecording", "app_debug", "isRecording", "", "elapsedSeconds"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AudioRecorderPanelKt {
     private static final int AUDIO_FORMAT = 2;
     private static final int CHANNEL_CONFIG = 16;
     private static final float PANEL_ALPHA = 0.7f;
     private static final String TAG = "AGAudioRecorderPanel";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AudioRecorderPanel$lambda$22(Task task, Function1 function1, Function1 function12, Function0 function0, Modifier modifier, int i, int i2, Composer composer, int i3) {
         AudioRecorderPanel(task, function1, function12, function0, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -460,13 +459,13 @@ public final class AudioRecorderPanelKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean AudioRecorderPanel$lambda$1(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void AudioRecorderPanel$lambda$2(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -476,14 +475,14 @@ public final class AudioRecorderPanelKt {
         return (String) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String AudioRecorderPanel$lambda$7$lambda$6(MutableLongState $elapsedMs) {
         String str = String.format("%.1f", Arrays.copyOf(new Object[]{Float.valueOf($elapsedMs.getLongValue() / 1000.0f)}, 1));
         Intrinsics.checkNotNullExpressionValue(str, "format(...)");
         return str;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final DisposableEffectResult AudioRecorderPanel$lambda$11$lambda$10(final MutableState $audioRecordState, DisposableEffectScope DisposableEffect) {
         Intrinsics.checkNotNullParameter(DisposableEffect, "$this$DisposableEffect");
         return new DisposableEffectResult() { // from class: com.google.ai.edge.gallery.ui.common.chat.AudioRecorderPanelKt$AudioRecorderPanel$lambda$11$lambda$10$$inlined$onDispose$1
@@ -497,7 +496,7 @@ public final class AudioRecorderPanelKt {
         };
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AudioRecorderPanel$lambda$21$lambda$13$lambda$12(MutableState $audioRecordState, ByteArrayOutputStream $audioStream, Function0 $onClose, MutableState $isRecording$delegate) {
         if (AudioRecorderPanel$lambda$1($isRecording$delegate)) {
             stopRecording($audioRecordState, $audioStream);
@@ -507,20 +506,20 @@ public final class AudioRecorderPanelKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AudioRecorderPanel$lambda$21$lambda$20$lambda$16$lambda$15(SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.m8951setLiveRegionhR3wRGc(semantics, LiveRegionMode.INSTANCE.m8924getAssertive0phEisY());
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AudioRecorderPanel$lambda$21$lambda$20$lambda$18$lambda$17(CoroutineScope $coroutineScope, Context $context, MutableState $audioRecordState, ByteArrayOutputStream $audioStream, MutableLongState $elapsedMs, Function1 $onAmplitudeChanged, Function1 $onSendAudioClip, MutableState $isRecording$delegate) {
         BuildersKt__Builders_commonKt.launch$default($coroutineScope, null, null, new AudioRecorderPanelKt$AudioRecorderPanel$2$2$3$1$1($context, $audioRecordState, $audioStream, $elapsedMs, $onAmplitudeChanged, $onSendAudioClip, $isRecording$delegate, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AudioRecorderPanel$lambda$21$lambda$20$lambda$19(MutableState $isRecording$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C211@8128L126,208@8002L293:AudioRecorderPanel.kt#ouynps");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -537,7 +536,7 @@ public final class AudioRecorderPanelKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Object startRecording(Context context, MutableState<AudioRecord> mutableState, ByteArrayOutputStream audioStream, MutableLongState elapsedMs, Function1<? super Integer, Unit> function1, Function0<Unit> function0, Continuation<? super Unit> continuation) {
         Log.d(TAG, "Start recording...");
         int minBufferSize = AudioRecord.getMinBufferSize(ConstsKt.SAMPLE_RATE, 16, 2);
@@ -552,9 +551,9 @@ public final class AudioRecorderPanelKt {
         return objCoroutineScope == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objCoroutineScope : Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.AudioRecorderPanelKt$startRecording$2 */
-    /* JADX INFO: compiled from: AudioRecorderPanel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "Lkotlinx/coroutines/Job;", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.chat.AudioRecorderPanelKt$startRecording$2", m932f = "AudioRecorderPanel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C26852 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Job>, Object> {
         final /* synthetic */ MutableState<AudioRecord> $audioRecordState;
@@ -592,9 +591,9 @@ public final class AudioRecorderPanelKt {
             return ((C26852) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.AudioRecorderPanelKt$startRecording$2$1, reason: invalid class name */
-        /* JADX INFO: compiled from: AudioRecorderPanel.kt */
-        @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+        
+        
+        
         @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.chat.AudioRecorderPanelKt$startRecording$2$1", m932f = "AudioRecorderPanel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
         static final class AnonymousClass1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
             final /* synthetic */ MutableState<AudioRecord> $audioRecordState;
@@ -674,7 +673,7 @@ public final class AudioRecorderPanelKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final byte[] stopRecording(MutableState<AudioRecord> mutableState, ByteArrayOutputStream audioStream) {
         Log.d(TAG, "Stopping recording...");
         AudioRecord recorder = mutableState.getValue();

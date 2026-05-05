@@ -7,7 +7,7 @@ import dagger.Provides;
 import dagger.multibindings.IntoMap;
 import dagger.multibindings.LazyClassKey;
 
-/* JADX INFO: loaded from: classes8.dex */
+
 public final class TinyGardenViewModel_HiltModules {
     private TinyGardenViewModel_HiltModules() {
     }

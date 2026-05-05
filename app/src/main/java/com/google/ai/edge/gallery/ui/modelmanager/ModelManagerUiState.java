@@ -1,6 +1,5 @@
 package com.google.ai.edge.gallery.ui.modelmanager;
 
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import com.google.ai.edge.gallery.data.Model;
 import com.google.ai.edge.gallery.data.ModelDownloadStatus;
 import com.google.ai.edge.gallery.data.ModelKt;
@@ -12,9 +11,9 @@ import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: ModelManagerViewModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b$\n\u0002\u0010\b\n\u0002\b\u0002\b\u0087\b\u0018\u00002\u00020\u0001B\u0099\u0001\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0018\u0010\u0005\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00030\u0006\u0012\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\t0\u0006\u0012\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000b0\u0006\u0012\b\b\u0002\u0010\f\u001a\u00020\r\u0012\b\b\u0002\u0010\u000e\u001a\u00020\u0007\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u0010\u0012\u000e\b\u0002\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00070\u0003\u0012\b\b\u0002\u0010\u0012\u001a\u00020\u0013\u0012\b\b\u0002\u0010\u0014\u001a\u00020\u0013¢\u0006\u0004\b\u0015\u0010\u0016J\u000e\u0010'\u001a\u00020\r2\u0006\u0010(\u001a\u00020\u0010J\u000e\u0010)\u001a\u00020\r2\u0006\u0010(\u001a\u00020\u0010J\u000f\u0010*\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u001b\u0010+\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00030\u0006HÆ\u0003J\u0015\u0010,\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\t0\u0006HÆ\u0003J\u0015\u0010-\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000b0\u0006HÆ\u0003J\t\u0010.\u001a\u00020\rHÆ\u0003J\t\u0010/\u001a\u00020\u0007HÆ\u0003J\t\u00100\u001a\u00020\u0010HÆ\u0003J\u000f\u00101\u001a\b\u0012\u0004\u0012\u00020\u00070\u0003HÆ\u0003J\t\u00102\u001a\u00020\u0013HÆ\u0003J\t\u00103\u001a\u00020\u0013HÆ\u0003J£\u0001\u00104\u001a\u00020\u00002\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u001a\b\u0002\u0010\u0005\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00030\u00062\u0014\b\u0002\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\t0\u00062\u0014\b\u0002\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000b0\u00062\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u00072\b\b\u0002\u0010\u000f\u001a\u00020\u00102\u000e\b\u0002\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00070\u00032\b\b\u0002\u0010\u0012\u001a\u00020\u00132\b\b\u0002\u0010\u0014\u001a\u00020\u0013HÆ\u0001J\u0013\u00105\u001a\u00020\r2\b\u00106\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00107\u001a\u000208HÖ\u0001J\t\u00109\u001a\u00020\u0007HÖ\u0001R\u0017\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R#\u0010\u0005\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00030\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u001d\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\t0\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001aR\u001d\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000b0\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001aR\u0011\u0010\f\u001a\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0011\u0010\u000e\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\u0011\u0010\u000f\u001a\u00020\u0010¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\"R\u0017\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00070\u0003¢\u0006\b\n\u0000\u001a\u0004\b#\u0010\u0018R\u0011\u0010\u0012\u001a\u00020\u0013¢\u0006\b\n\u0000\u001a\u0004\b$\u0010%R\u0011\u0010\u0014\u001a\u00020\u0013¢\u0006\b\n\u0000\u001a\u0004\b&\u0010%¨\u0006:"}, m922d2 = {"Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "", "tasks", "", "Lcom/google/ai/edge/gallery/data/Task;", "tasksByCategory", "", "", "modelDownloadStatus", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;", "modelInitializationStatus", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelInitializationStatus;", "loadingModelAllowlist", "", "loadingModelAllowlistError", "selectedModel", "Lcom/google/ai/edge/gallery/data/Model;", "textInputHistory", "configValuesUpdateTrigger", "", "modelImportingUpdateTrigger", "<init>", "(Ljava/util/List;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;ZLjava/lang/String;Lcom/google/ai/edge/gallery/data/Model;Ljava/util/List;JJ)V", "getTasks", "()Ljava/util/List;", "getTasksByCategory", "()Ljava/util/Map;", "getModelDownloadStatus", "getModelInitializationStatus", "getLoadingModelAllowlist", "()Z", "getLoadingModelAllowlistError", "()Ljava/lang/String;", "getSelectedModel", "()Lcom/google/ai/edge/gallery/data/Model;", "getTextInputHistory", "getConfigValuesUpdateTrigger", "()J", "getModelImportingUpdateTrigger", "isModelInitialized", "model", "isModelInitializing", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "copy", "equals", "other", "hashCode", "", "toString", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u00020\r2\u0006\u0010(\u001a\u00020\u0010J\u000f\u0010*\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u001b\u0010+\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00030\u0006HÆ\u0003J\u0015\u0010,\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\t0\u0006HÆ\u0003J\u0015\u0010-\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000b0\u0006HÆ\u0003J\t\u0010.\u001a\u00020\rHÆ\u0003J\t\u0010/\u001a\u00020\u0007HÆ\u0003J\t\u00100\u001a\u00020\u0010HÆ\u0003J\u000f\u00101\u001a\b\u0012\u0004\u0012\u00020\u00070\u0003HÆ\u0003J\t\u00102\u001a\u00020\u0013HÆ\u0003J\t\u00103\u001a\u00020\u0013HÆ\u0003J£\u0001\u00104\u001a\u00020\u00002\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u001a\b\u0002\u0010\u0005\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00030\u00062\u0014\b\u0002\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\t0\u00062\u0014\b\u0002\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000b0\u00062\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u00072\b\b\u0002\u0010\u000f\u001a\u00020\u00102\u000e\b\u0002\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00070\u00032\b\b\u0002\u0010\u0012\u001a\u00020\u00132\b\b\u0002\u0010\u0014\u001a\u00020\u0013HÆ\u0001J\u0013\u00105\u001a\u00020\r2\b\u00106\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00107\u001a\u000208HÖ\u0001J\t\u00109\u001a\u00020\u0007HÖ\u0001R\u0017\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R#\u0010\u0005\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00030\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u001d\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\t0\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001aR\u001d\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000b0\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001aR\u0011\u0010\f\u001a\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0011\u0010\u000e\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010 R\u0011\u0010\u000f\u001a\u00020\u0010¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\"R\u0017\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00070\u0003¢\u0006\b\n\u0000\u001a\u0004\b#\u0010\u0018R\u0011\u0010\u0012\u001a\u00020\u0013¢\u0006\b\n\u0000\u001a\u0004\b$\u0010%R\u0011\u0010\u0014\u001a\u00020\u0013¢\u0006\b\n\u0000\u001a\u0004\b&\u0010%¨\u0006:"}, m922d2 = {"Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "", "tasks", "", "Lcom/google/ai/edge/gallery/data/Task;", "tasksByCategory", "", "", "modelDownloadStatus", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;", "modelInitializationStatus", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelInitializationStatus;", "loadingModelAllowlist", "", "loadingModelAllowlistError", "selectedModel", "Lcom/google/ai/edge/gallery/data/Model;", "textInputHistory", "configValuesUpdateTrigger", "", "modelImportingUpdateTrigger", "<init>", "(Ljava/util/List;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;ZLjava/lang/String;Lcom/google/ai/edge/gallery/data/Model;Ljava/util/List;JJ)V", "getTasks", "()Ljava/util/List;", "getTasksByCategory", "()Ljava/util/Map;", "getModelDownloadStatus", "getModelInitializationStatus", "getLoadingModelAllowlist", "()Z", "getLoadingModelAllowlistError", "()Ljava/lang/String;", "getSelectedModel", "()Lcom/google/ai/edge/gallery/data/Model;", "getTextInputHistory", "getConfigValuesUpdateTrigger", "()J", "getModelImportingUpdateTrigger", "isModelInitialized", "model", "isModelInitializing", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "copy", "equals", "other", "hashCode", "", "toString", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final /* data */ class ModelManagerUiState {
     public static final int $stable = 8;
     private final long configValuesUpdateTrigger;
@@ -32,7 +31,7 @@ public final /* data */ class ModelManagerUiState {
         return this.tasks;
     }
 
-    /* JADX INFO: renamed from: component10, reason: from getter */
+    
     public final long getModelImportingUpdateTrigger() {
         return this.modelImportingUpdateTrigger;
     }
@@ -49,17 +48,17 @@ public final /* data */ class ModelManagerUiState {
         return this.modelInitializationStatus;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    
     public final boolean getLoadingModelAllowlist() {
         return this.loadingModelAllowlist;
     }
 
-    /* JADX INFO: renamed from: component6, reason: from getter */
+    
     public final String getLoadingModelAllowlistError() {
         return this.loadingModelAllowlistError;
     }
 
-    /* JADX INFO: renamed from: component7, reason: from getter */
+    
     public final Model getSelectedModel() {
         return this.selectedModel;
     }
@@ -68,7 +67,7 @@ public final /* data */ class ModelManagerUiState {
         return this.textInputHistory;
     }
 
-    /* JADX INFO: renamed from: component9, reason: from getter */
+    
     public final long getConfigValuesUpdateTrigger() {
         return this.configValuesUpdateTrigger;
     }

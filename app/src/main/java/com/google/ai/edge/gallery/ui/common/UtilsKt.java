@@ -33,7 +33,6 @@ import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.text.AnnotatedString;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.style.TextAlign;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -75,26 +74,26 @@ import kotlin.text.Regex;
 import kotlinx.coroutines.CoroutineScope;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: compiled from: Utils.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000\u0090\u0001\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a\u001e\u0010\u0006\u001a\u00020\u0001*\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\t\u001a\n\u0010\u000b\u001a\u00020\u0001*\u00020\f\u001a\n\u0010\r\u001a\u00020\u0001*\u00020\u0007\u001a\u0013\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0011¢\u0006\u0002\u0010\u0012\u001a\u001e\u0010\u0013\u001a\u00020\u0014*\u00020\u00152\b\b\u0002\u0010\u0016\u001a\u00020\u00012\b\b\u0002\u0010\u0017\u001a\u00020\u0001\u001a<\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00152\u0012\u0010\u001b\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t0\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010 2\u0006\u0010!\u001a\u00020\"\u001a\u000e\u0010#\u001a\u00020\u00012\u0006\u0010\u0016\u001a\u00020\u0001\u001aO\u0010$\u001a\u00020\u00192\u0006\u0010%\u001a\u00020\u00012\u0006\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020\u000f2\b\b\u0002\u0010)\u001a\u00020*2\b\b\u0002\u0010+\u001a\u00020\u00072\b\b\u0002\u0010,\u001a\u00020\u00112\b\b\u0002\u0010-\u001a\u00020\fH\u0007¢\u0006\u0004\b.\u0010/\u001a]\u00100\u001a\u00020\u00192\u0006\u0010%\u001a\u00020\u00012\u0006\u0010&\u001a\u00020'2\b\b\u0002\u0010)\u001a\u00020*2\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u0010+\u001a\u00020\u00072\b\b\u0002\u0010,\u001a\u00020\u00112\b\b\u0002\u0010-\u001a\u00020\f2\b\b\u0002\u00103\u001a\u000204H\u0007¢\u0006\u0004\b5\u00106\u001aG\u00100\u001a\u00020\u00192\u0006\u0010%\u001a\u00020\u00012\u0006\u0010&\u001a\u00020'2\u0006\u00107\u001a\u00020\f2\b\b\u0002\u0010)\u001a\u00020*2\n\b\u0002\u00108\u001a\u0004\u0018\u0001092\b\b\u0002\u0010-\u001a\u00020\fH\u0007¢\u0006\u0004\b:\u0010;\u001a1\u0010<\u001a\u00020\f2\b\b\u0002\u0010=\u001a\u00020\u00072\u0006\u0010,\u001a\u00020\u00112\u0006\u0010>\u001a\u00020\u00012\b\b\u0002\u0010?\u001a\u00020@H\u0007¢\u0006\u0002\u0010A\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0004\u0010\u0005¨\u0006B²\u0006\n\u0010C\u001a\u00020\tX\u008a\u008e\u0002²\u0006\n\u0010D\u001a\u00020\fX\u008a\u0084\u0002"}, m922d2 = {"TAG", "", "SMALL_BUTTON_CONTENT_PADDING", "Landroidx/compose/foundation/layout/PaddingValues;", "getSMALL_BUTTON_CONTENT_PADDING", "()Landroidx/compose/foundation/layout/PaddingValues;", "humanReadableSize", "", "si", "", "extraDecimalForGbAndAbove", "humanReadableDuration", "", "formatToHourMinSecond", "getDistinctiveColor", "Landroidx/compose/ui/graphics/Color;", FirebaseAnalytics.Param.INDEX, "", "(I)J", "createTempPictureUri", "Landroid/net/Uri;", "Landroid/content/Context;", "fileName", "fileExtension", "checkNotificationPermissionAndStartDownload", "", "context", "launcher", "Landroidx/activity/compose/ManagedActivityResultLauncher;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "task", "Lcom/google/ai/edge/gallery/data/Task;", "model", "Lcom/google/ai/edge/gallery/data/Model;", "ensureValidFileName", "SwipingText", "text", "style", "Landroidx/compose/ui/text/TextStyle;", "color", "modifier", "Landroidx/compose/ui/Modifier;", "animationDelay", "animationDurationMs", "edgeGradientRelativeSize", "SwipingText-TgFrcIs", "(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;JLandroidx/compose/ui/Modifier;JIFLandroidx/compose/runtime/Composer;II)V", "RevealingText", "annotatedText", "Landroidx/compose/ui/text/AnnotatedString;", "extraTextPadding", "Landroidx/compose/ui/unit/Dp;", "RevealingText-egy_3UM", "(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/text/AnnotatedString;JIFFLandroidx/compose/runtime/Composer;II)V", "animationProgress", "textAlign", "Landroidx/compose/ui/text/style/TextAlign;", "RevealingText-UkQjaSs", "(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;FLandroidx/compose/ui/Modifier;Landroidx/compose/ui/text/style/TextAlign;FLandroidx/compose/runtime/Composer;II)V", "rememberDelayedAnimationProgress", "initialDelay", "animationLabel", "easing", "Landroidx/compose/animation/core/Easing;", "(JILjava/lang/String;Landroidx/compose/animation/core/Easing;Landroidx/compose/runtime/Composer;II)F", "app_debug", "startAnimation", NotificationCompat.CATEGORY_PROGRESS}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u00020*2\b\b\u0002\u0010+\u001a\u00020\u00072\b\b\u0002\u0010,\u001a\u00020\u00112\b\b\u0002\u0010-\u001a\u00020\fH\u0007¢\u0006\u0004\b.\u0010/\u001a]\u00100\u001a\u00020\u00192\u0006\u0010%\u001a\u00020\u00012\u0006\u0010&\u001a\u00020'2\b\b\u0002\u0010)\u001a\u00020*2\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u0010+\u001a\u00020\u00072\b\b\u0002\u0010,\u001a\u00020\u00112\b\b\u0002\u0010-\u001a\u00020\f2\b\b\u0002\u00103\u001a\u000204H\u0007¢\u0006\u0004\b5\u00106\u001aG\u00100\u001a\u00020\u00192\u0006\u0010%\u001a\u00020\u00012\u0006\u0010&\u001a\u00020'2\u0006\u00107\u001a\u00020\f2\b\b\u0002\u0010)\u001a\u00020*2\n\b\u0002\u00108\u001a\u0004\u0018\u0001092\b\b\u0002\u0010-\u001a\u00020\fH\u0007¢\u0006\u0004\b:\u0010;\u001a1\u0010<\u001a\u00020\f2\b\b\u0002\u0010=\u001a\u00020\u00072\u0006\u0010,\u001a\u00020\u00112\u0006\u0010>\u001a\u00020\u00012\b\b\u0002\u0010?\u001a\u00020@H\u0007¢\u0006\u0002\u0010A\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0004\u0010\u0005¨\u0006B²\u0006\n\u0010C\u001a\u00020\tX\u008a\u008e\u0002²\u0006\n\u0010D\u001a\u00020\fX\u008a\u0084\u0002"}, m922d2 = {"TAG", "", "SMALL_BUTTON_CONTENT_PADDING", "Landroidx/compose/foundation/layout/PaddingValues;", "getSMALL_BUTTON_CONTENT_PADDING", "()Landroidx/compose/foundation/layout/PaddingValues;", "humanReadableSize", "", "si", "", "extraDecimalForGbAndAbove", "humanReadableDuration", "", "formatToHourMinSecond", "getDistinctiveColor", "Landroidx/compose/ui/graphics/Color;", FirebaseAnalytics.Param.INDEX, "", "(I)J", "createTempPictureUri", "Landroid/net/Uri;", "Landroid/content/Context;", "fileName", "fileExtension", "checkNotificationPermissionAndStartDownload", "", "context", "launcher", "Landroidx/activity/compose/ManagedActivityResultLauncher;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "task", "Lcom/google/ai/edge/gallery/data/Task;", "model", "Lcom/google/ai/edge/gallery/data/Model;", "ensureValidFileName", "SwipingText", "text", "style", "Landroidx/compose/ui/text/TextStyle;", "color", "modifier", "Landroidx/compose/ui/Modifier;", "animationDelay", "animationDurationMs", "edgeGradientRelativeSize", "SwipingText-TgFrcIs", "(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;JLandroidx/compose/ui/Modifier;JIFLandroidx/compose/runtime/Composer;II)V", "RevealingText", "annotatedText", "Landroidx/compose/ui/text/AnnotatedString;", "extraTextPadding", "Landroidx/compose/ui/unit/Dp;", "RevealingText-egy_3UM", "(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/text/AnnotatedString;JIFFLandroidx/compose/runtime/Composer;II)V", "animationProgress", "textAlign", "Landroidx/compose/ui/text/style/TextAlign;", "RevealingText-UkQjaSs", "(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;FLandroidx/compose/ui/Modifier;Landroidx/compose/ui/text/style/TextAlign;FLandroidx/compose/runtime/Composer;II)V", "rememberDelayedAnimationProgress", "initialDelay", "animationLabel", "easing", "Landroidx/compose/animation/core/Easing;", "(JILjava/lang/String;Landroidx/compose/animation/core/Easing;Landroidx/compose/runtime/Composer;II)F", "app_debug", "startAnimation", NotificationCompat.CATEGORY_PROGRESS}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class UtilsKt {
     private static final PaddingValues SMALL_BUTTON_CONTENT_PADDING = PaddingKt.m1984PaddingValuesa9UjIt4(C1654Dp.m9788constructorimpl(16), C1654Dp.m9788constructorimpl(8), C1654Dp.m9788constructorimpl(16), C1654Dp.m9788constructorimpl(8));
     private static final String TAG = "AGUtils";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit RevealingText_UkQjaSs$lambda$11(String str, TextStyle textStyle, float f, Modifier modifier, TextAlign textAlign, float f2, int i, int i2, Composer composer, int i3) {
         m10903RevealingTextUkQjaSs(str, textStyle, f, modifier, textAlign, f2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit RevealingText_egy_3UM$lambda$7(String str, TextStyle textStyle, Modifier modifier, AnnotatedString annotatedString, long j, int i, float f, float f2, int i2, int i3, Composer composer, int i4) {
         m10904RevealingTextegy_3UM(str, textStyle, modifier, annotatedString, j, i, f, f2, composer, RecomposeScopeImplKt.updateChangedFlags(i2 | 1), i3);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SwipingText_TgFrcIs$lambda$3(String str, TextStyle textStyle, long j, Modifier modifier, long j2, int i, float f, int i2, int i3, Composer composer, int i4) {
         m10905SwipingTextTgFrcIs(str, textStyle, j, modifier, j2, i, f, composer, RecomposeScopeImplKt.updateChangedFlags(i2 | 1), i3);
         return Unit.INSTANCE;
@@ -222,7 +221,7 @@ public final class UtilsKt {
         return new Regex("[^a-zA-Z0-9._-]").replace(fileName, "_");
     }
 
-    /* JADX INFO: renamed from: SwipingText-TgFrcIs, reason: not valid java name */
+    
     public static final void m10905SwipingTextTgFrcIs(final String text, final TextStyle style, final long color, Modifier modifier, long animationDelay, int animationDurationMs, float edgeGradientRelativeSize, Composer $composer, final int $changed, final int i) {
         Modifier modifier2;
         long j;
@@ -341,14 +340,14 @@ public final class UtilsKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SwipingText_TgFrcIs$lambda$2$lambda$1(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($progress);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: RevealingText-egy_3UM, reason: not valid java name */
+    
     public static final void m10904RevealingTextegy_3UM(final String text, final TextStyle style, Modifier modifier, AnnotatedString annotatedText, long animationDelay, int animationDurationMs, float edgeGradientRelativeSize, float extraTextPadding, Composer $composer, final int $changed, final int i) {
         Modifier modifier2;
         AnnotatedString annotatedString;
@@ -570,7 +569,7 @@ public final class UtilsKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit RevealingText_egy_3UM$lambda$5$lambda$4(Brush $maskBrush, ContentDrawScope drawWithContent) {
         Intrinsics.checkNotNullParameter(drawWithContent, "$this$drawWithContent");
         drawWithContent.drawContent();
@@ -578,7 +577,7 @@ public final class UtilsKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: RevealingText-UkQjaSs, reason: not valid java name */
+    
     public static final void m10903RevealingTextUkQjaSs(final String text, final TextStyle style, final float animationProgress, Modifier modifier, TextAlign textAlign, float edgeGradientRelativeSize, Composer $composer, final int $changed, final int i) {
         Modifier modifier2;
         TextAlign textAlign2;
@@ -734,7 +733,7 @@ public final class UtilsKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit RevealingText_UkQjaSs$lambda$9$lambda$8(Brush $maskBrush, ContentDrawScope drawWithContent) {
         Intrinsics.checkNotNullParameter(drawWithContent, "$this$drawWithContent");
         drawWithContent.drawContent();
@@ -794,7 +793,7 @@ public final class UtilsKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void rememberDelayedAnimationProgress$lambda$14(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }

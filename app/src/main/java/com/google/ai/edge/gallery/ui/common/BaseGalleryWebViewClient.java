@@ -5,7 +5,6 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.webkit.WebViewAssetLoader;
 import androidx.webkit.internal.AssetHelper;
 import com.google.ai.edge.gallery.common.UtilsKt;
@@ -14,9 +13,9 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: GalleryWebView.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0017\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u001e\u0010\t\u001a\u0004\u0018\u00010\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0013\u0010\u0006\u001a\u00070\u0007¢\u0006\u0002\b\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f"}, m922d2 = {"Lcom/google/ai/edge/gallery/ui/common/BaseGalleryWebViewClient;", "Landroid/webkit/WebViewClient;", "context", "Landroid/content/Context;", "<init>", "(Landroid/content/Context;)V", "localFileAssetsLoader", "Landroidx/webkit/WebViewAssetLoader;", "Lorg/jspecify/annotations/NonNull;", "shouldInterceptRequest", "Landroid/webkit/WebResourceResponse;", "view", "Landroid/webkit/WebView;", "request", "Landroid/webkit/WebResourceRequest;", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "localFileAssetsLoader", "Landroidx/webkit/WebViewAssetLoader;", "Lorg/jspecify/annotations/NonNull;", "shouldInterceptRequest", "Landroid/webkit/WebResourceResponse;", "view", "Landroid/webkit/WebView;", "request", "Landroid/webkit/WebResourceRequest;", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public class BaseGalleryWebViewClient extends WebViewClient {
     public static final int $stable = 8;
     private final Context context;

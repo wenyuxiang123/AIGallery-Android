@@ -19,7 +19,6 @@ import androidx.compose.animation.core.EasingKt;
 import androidx.compose.foundation.layout.SizeKt;
 import androidx.compose.material3.SurfaceKt;
 import androidx.compose.p000ui.Modifier;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.ComposerKt;
 import androidx.compose.runtime.EffectsKt;
@@ -58,15 +57,15 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.DelayKt;
 import okhttp3.internal.p013ws.WebSocketProtocol;
 
-/* JADX INFO: compiled from: MainActivity.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u0000 \u00152\u00020\u0001:\u0001\u0015B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u0012\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010H\u0014J\u0010\u0010\u0011\u001a\u00020\u000e2\u0006\u0010\u0012\u001a\u00020\u0013H\u0014J\b\u0010\u0014\u001a\u00020\u000eH\u0014R\u001b\u0010\u0004\u001a\u00020\u00058BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\b\u0010\t\u001a\u0004\b\u0006\u0010\u0007R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0016²\u0006\n\u0010\u0017\u001a\u00020\u000bX\u008a\u008e\u0002"}, m922d2 = {"Lcom/google/ai/edge/gallery/MainActivity;", "Landroidx/activity/ComponentActivity;", "<init>", "()V", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "getModelManagerViewModel", "()Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "modelManagerViewModel$delegate", "Lkotlin/Lazy;", "splashScreenAboutToExit", "", "contentSet", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onNewIntent", "intent", "Landroid/content/Intent;", "onResume", "Companion", "app_debug", "startMaskFadeout"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "getModelManagerViewModel", "()Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "modelManagerViewModel$delegate", "Lkotlin/Lazy;", "splashScreenAboutToExit", "", "contentSet", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onNewIntent", "intent", "Landroid/content/Intent;", "onResume", "Companion", "app_debug", "startMaskFadeout"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 @AndroidEntryPoint
 public final class MainActivity extends Hilt_MainActivity {
     private static final String TAG = "AGMainActivity";
     private boolean contentSet;
 
-    /* JADX INFO: renamed from: modelManagerViewModel$delegate, reason: from kotlin metadata */
+    
     private final Lazy modelManagerViewModel;
     private boolean splashScreenAboutToExit;
     public static final int $stable = 8;
@@ -147,7 +146,7 @@ public final class MainActivity extends Hilt_MainActivity {
         getWindow().addFlags(128);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void onCreate$setContent(final MainActivity this$0) {
         if (this$0.contentSet) {
             return;
@@ -162,7 +161,7 @@ public final class MainActivity extends Hilt_MainActivity {
         this$0.contentSet = true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit onCreate$setContent$lambda$8(final MainActivity this$0, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C98@3778L831,98@3765L844:MainActivity.kt#9ty9oh");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -184,7 +183,7 @@ public final class MainActivity extends Hilt_MainActivity {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit onCreate$setContent$lambda$8$lambda$7(final MainActivity this$0, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C99@3833L766,99@3790L809:MainActivity.kt#9ty9oh");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -206,7 +205,7 @@ public final class MainActivity extends Hilt_MainActivity {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit onCreate$setContent$lambda$8$lambda$7$lambda$6(MainActivity this$0, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C100@3847L57,104@4087L34,105@4155L27,105@4134L48,106@4195L392:MainActivity.kt#9ty9oh");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -248,14 +247,14 @@ public final class MainActivity extends Hilt_MainActivity {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void onCreate$setContent$lambda$8$lambda$7$lambda$6$lambda$4(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.MainActivity$onCreate$3 */
-    /* JADX INFO: compiled from: MainActivity.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.MainActivity$onCreate$3", m932f = "MainActivity.kt", m933i = {}, m934l = {137}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C24203 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
@@ -298,7 +297,7 @@ public final class MainActivity extends Hilt_MainActivity {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void onCreate$lambda$10(MainActivity this$0, final SplashScreenViewProvider splashScreenView) {
         Intrinsics.checkNotNullParameter(splashScreenView, "splashScreenView");
         this$0.splashScreenAboutToExit = true;

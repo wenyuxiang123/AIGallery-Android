@@ -38,7 +38,6 @@ import androidx.compose.p000ui.semantics.SemanticsPropertiesKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.style.TextOverflow;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.Density;
 import androidx.compose.runtime.Applier;
@@ -71,11 +70,11 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: ModelPickerChip.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u00000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\u001ae\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t26\u0010\n\u001a2\u0012\u0013\u0012\u00110\u0007¢\u0006\f\b\f\u0012\b\b\r\u0012\u0004\b\b(\u000e\u0012\u0013\u0012\u00110\u0007¢\u0006\f\b\f\u0012\b\b\r\u0012\u0004\b\b(\u000f\u0012\u0004\u0012\u00020\u00010\u000bH\u0007¢\u0006\u0002\u0010\u0010¨\u0006\u0011²\u0006\n\u0010\u0012\u001a\u00020\u0003X\u008a\u008e\u0002²\u0006\f\u0010\u0013\u001a\u0004\u0018\u00010\u0007X\u008a\u008e\u0002²\u0006\n\u0010\u0014\u001a\u00020\u0015X\u008a\u0084\u0002"}, m922d2 = {"ModelPickerChip", "", "enabled", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "initialModel", "Lcom/google/ai/edge/gallery/data/Model;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "onModelSelected", "Lkotlin/Function2;", "Lkotlin/ParameterName;", "name", "prev", "cur", "(ZLcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V", "app_debug", "showModelPicker", "modelPickerModel", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "showModelPicker", "modelPickerModel", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ModelPickerChipKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPickerChip$lambda$27(boolean z, Task task, Model model, ModelManagerViewModel modelManagerViewModel, Function2 function2, int i, Composer composer, int i2) {
         ModelPickerChip(z, task, model, modelManagerViewModel, function2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -450,41 +449,41 @@ public final class ModelPickerChipKt {
         return (ModelManagerUiState) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPickerChip$lambda$21$lambda$20$lambda$11$lambda$10(Model $initialModel, MutableState $modelPickerModel$delegate, MutableState $showModelPicker$delegate) {
         $modelPickerModel$delegate.setValue($initialModel);
         ModelPickerChip$lambda$2($showModelPicker$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPickerChip$lambda$21$lambda$20$lambda$13$lambda$12(boolean $enabled, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($enabled ? 1.0f : 0.6f);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPickerChip$lambda$21$lambda$20$lambda$15$lambda$14(String $cdChangeModel, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setContentDescription(semantics, $cdChangeModel);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelPickerChip$lambda$21$lambda$20$lambda$19$lambda$18$lambda$17 */
+    
+    
     public static final Unit m489xe50112(SemanticsPropertyReceiver clearAndSetSemantics) {
         Intrinsics.checkNotNullParameter(clearAndSetSemantics, "$this$clearAndSetSemantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPickerChip$lambda$23$lambda$22(MutableState $showModelPicker$delegate) {
         ModelPickerChip$lambda$2($showModelPicker$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPickerChip$lambda$26(Task $task, ModelManagerViewModel $modelManagerViewModel, final State $modelManagerUiState$delegate, final Function2 $onModelSelected, final MutableState $showModelPicker$delegate, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(ModalBottomSheet, "$this$ModalBottomSheet");
         ComposerKt.sourceInformation($composer, "C155@6427L190,152@6312L314:ModelPickerChip.kt#t7sjiu");
@@ -516,7 +515,7 @@ public final class ModelPickerChipKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPickerChip$lambda$26$lambda$25$lambda$24(Function2 $onModelSelected, MutableState $showModelPicker$delegate, State $modelManagerUiState$delegate, Model selectedModel) {
         Intrinsics.checkNotNullParameter(selectedModel, "selectedModel");
         ModelPickerChip$lambda$2($showModelPicker$delegate, false);

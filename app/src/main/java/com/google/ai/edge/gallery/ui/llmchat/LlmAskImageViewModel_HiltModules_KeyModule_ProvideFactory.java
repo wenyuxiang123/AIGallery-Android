@@ -3,7 +3,7 @@ package com.google.ai.edge.gallery.ui.llmchat;
 import com.google.ai.edge.gallery.ui.llmchat.LlmAskImageViewModel_HiltModules;
 import dagger.internal.Factory;
 
-/* JADX INFO: loaded from: classes11.dex */
+
 public final class LlmAskImageViewModel_HiltModules_KeyModule_ProvideFactory implements Factory<Boolean> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public Boolean get() {

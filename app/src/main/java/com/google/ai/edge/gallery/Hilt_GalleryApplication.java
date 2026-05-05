@@ -7,7 +7,7 @@ import dagger.hilt.android.internal.modules.ApplicationContextModule;
 import dagger.hilt.internal.GeneratedComponentManagerHolder;
 import dagger.hilt.internal.UnsafeCasts;
 
-/* JADX INFO: loaded from: classes3.dex */
+
 public abstract class Hilt_GalleryApplication extends Application implements GeneratedComponentManagerHolder {
     private boolean injected = false;
     private final ApplicationComponentManager componentManager = new ApplicationComponentManager(new ComponentSupplier() { // from class: com.google.ai.edge.gallery.Hilt_GalleryApplication.1

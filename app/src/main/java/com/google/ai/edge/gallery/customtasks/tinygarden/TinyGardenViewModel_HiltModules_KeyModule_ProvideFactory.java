@@ -3,7 +3,7 @@ package com.google.ai.edge.gallery.customtasks.tinygarden;
 import com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel_HiltModules;
 import dagger.internal.Factory;
 
-/* JADX INFO: loaded from: classes8.dex */
+
 public final class TinyGardenViewModel_HiltModules_KeyModule_ProvideFactory implements Factory<Boolean> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public Boolean get() {

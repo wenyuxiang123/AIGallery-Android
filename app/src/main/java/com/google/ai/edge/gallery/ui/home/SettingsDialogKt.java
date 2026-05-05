@@ -40,7 +40,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.CompositionLocalsKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.window.AndroidDialog_androidKt;
 import androidx.compose.runtime.Applier;
@@ -76,14 +75,14 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: SettingsDialog.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u00008\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\u001a+\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u00072\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00040\tH\u0007¢\u0006\u0002\u0010\n\u001a\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u0002H\u0002\"\u0014\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000e²\u0006\n\u0010\u000f\u001a\u00020\u0002X\u008a\u008e\u0002²\u0006\f\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u008a\u008e\u0002²\u0006\n\u0010\u0012\u001a\u00020\fX\u008a\u008e\u0002²\u0006\n\u0010\u0013\u001a\u00020\u0014X\u008a\u008e\u0002²\u0006\n\u0010\u0015\u001a\u00020\u0014X\u008a\u008e\u0002"}, m922d2 = {"THEME_OPTIONS", "", "Lcom/google/ai/edge/gallery/proto/Theme;", "SettingsDialog", "", "curThemeOverride", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "onDismissed", "Lkotlin/Function0;", "(Lcom/google/ai/edge/gallery/proto/Theme;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "themeLabel", "", "theme", "app_debug", "selectedTheme", "hfToken", "Lcom/google/ai/edge/gallery/proto/AccessTokenData;", "customHfToken", "isFocused", "", "showTos"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "themeLabel", "", "theme", "app_debug", "selectedTheme", "hfToken", "Lcom/google/ai/edge/gallery/proto/AccessTokenData;", "customHfToken", "isFocused", "", "showTos"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class SettingsDialogKt {
     private static final List<Theme> THEME_OPTIONS = CollectionsKt.listOf((Object[]) new Theme[]{Theme.THEME_AUTO, Theme.THEME_LIGHT, Theme.THEME_DARK});
 
-    /* JADX INFO: compiled from: SettingsDialog.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -105,7 +104,7 @@ public final class SettingsDialogKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SettingsDialog$lambda$66(Theme theme, ModelManagerViewModel modelManagerViewModel, Function0 function0, int i, Composer composer, int i2) {
         SettingsDialog(theme, modelManagerViewModel, function0, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -281,7 +280,7 @@ public final class SettingsDialogKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SettingsDialog$lambda$63(MutableInteractionSource $interactionSource, final ModelManagerViewModel $modelManagerViewModel, final MutableState $selectedTheme$delegate, final DateTimeFormatter $dateFormatter, final MutableState $hfToken$delegate, final FocusRequester $focusRequester, final MutableState $customHfToken$delegate, final MutableState $isFocused$delegate, final MutableState $showTos$delegate, final Function0 $onDismissed, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C110@4810L7,116@5005L47,120@5101L9394,111@4822L9673:SettingsDialog.kt#lrhf9m");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -323,13 +322,13 @@ public final class SettingsDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SettingsDialog$lambda$63$lambda$19$lambda$18(FocusManager $focusManager) {
         FocusManager.clearFocus$default($focusManager, false, 1, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:102:0x0c32  */
     /* JADX WARN: Removed duplicated region for block: B:103:0x0c44  */
     /* JADX WARN: Removed duplicated region for block: B:106:0x0cc9  */
@@ -365,15 +364,15 @@ public final class SettingsDialogKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.home.SettingsDialogKt.SettingsDialog$lambda$63$lambda$62(com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, androidx.compose.runtime.MutableState, java.time.format.DateTimeFormatter, androidx.compose.runtime.MutableState, androidx.compose.ui.focus.FocusManager, androidx.compose.ui.focus.FocusRequester, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, kotlin.jvm.functions.Function0, androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, int):kotlin.Unit");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$22$lambda$21 */
+    
+    
     public static final Unit m536x21f7ba16(SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$28$lambda$27 */
+    
+    
     public static final Unit m537x9f53eaa2(final ModelManagerViewModel $modelManagerViewModel, final Context $context, final MutableState $selectedTheme$delegate, MultiChoiceSegmentedButtonRowScope MultiChoiceSegmentedButtonRow, Composer $composer, int $changed) {
         Composer composer = $composer;
         Intrinsics.checkNotNullParameter(MultiChoiceSegmentedButtonRow, "$this$MultiChoiceSegmentedButtonRow");
@@ -432,8 +431,8 @@ public final class SettingsDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$28$lambda$27$lambda$26$lambda$24$lambda$23 */
+    
+    
     public static final Unit m538xa00016b4(Theme $theme, ModelManagerViewModel $modelManagerViewModel, Context $context, MutableState $selectedTheme$delegate, boolean it) {
         $selectedTheme$delegate.setValue($theme);
         ThemeSettings.INSTANCE.getThemeOverride().setValue($theme);
@@ -451,8 +450,8 @@ public final class SettingsDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$28$lambda$27$lambda$26$lambda$25 */
+    
+    
     public static final Unit m539x9dab569b(Theme $theme, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C183@7783L23:SettingsDialog.kt#lrhf9m");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -469,23 +468,23 @@ public final class SettingsDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$30$lambda$29 */
+    
+    
     public static final Unit m540xffdff9fb(SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$46$lambda$45$lambda$32$lambda$31 */
+    
+    
     public static final Unit m541x2c32aa89(ModelManagerViewModel $modelManagerViewModel, MutableState $hfToken$delegate) {
         $modelManagerViewModel.clearAccessToken();
         $hfToken$delegate.setValue(null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$46$lambda$45$lambda$34$lambda$33 */
+    
+    
     public static final Unit m542x55fc100d(ModelManagerViewModel $modelManagerViewModel, FocusManager $focusManager, MutableState $customHfToken$delegate, MutableState $hfToken$delegate) {
         $modelManagerViewModel.saveAccessToken(SettingsDialog$lambda$8($customHfToken$delegate), "", System.currentTimeMillis() + 315360000000L);
         $hfToken$delegate.setValue($modelManagerViewModel.getTokenStatusAndData().getData());
@@ -493,32 +492,32 @@ public final class SettingsDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$46$lambda$45$lambda$36$lambda$35 */
+    
+    
     public static final Unit m543x7fc57591(Function0 $handleSaveToken, KeyboardActionScope KeyboardActions) {
         Intrinsics.checkNotNullParameter(KeyboardActions, "$this$KeyboardActions");
         $handleSaveToken.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$46$lambda$45$lambda$38$lambda$37 */
+    
+    
     public static final Unit m544xa98edb15(MutableState $isFocused$delegate, FocusState it) {
         Intrinsics.checkNotNullParameter(it, "it");
         SettingsDialog$lambda$12($isFocused$delegate, it.isFocused());
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$46$lambda$45$lambda$40$lambda$39 */
+    
+    
     public static final Unit m545xa1aea6e(MutableState $customHfToken$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $customHfToken$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$46$lambda$45$lambda$44 */
+    
+    
     public static final Unit m546x6798b073(MutableState $isFocused$delegate, Function0 $handleSaveToken, MutableState $customHfToken$delegate, Function2 innerTextField, Composer $composer, int $changed) {
         long outline;
         Function0<ComposeUiNode> function0;
@@ -694,43 +693,43 @@ public final class SettingsDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$48$lambda$47 */
+    
+    
     public static final Unit m547xaeb7359e(SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$51$lambda$50$lambda$49 */
+    
+    
     public static final Unit m548xce5bc72c(Context $context) {
         Intent intent = new Intent($context, (Class<?>) OssLicensesMenuActivity.class);
         $context.startActivity(intent);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$53$lambda$52 */
+    
+    
     public static final Unit m549xcdf15d52(SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$57$lambda$56$lambda$55$lambda$54 */
+    
+    
     public static final Unit m550xf5d01090(MutableState $showTos$delegate) {
         SettingsDialog$lambda$17($showTos$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SettingsDialog$lambda$63$lambda$62$lambda$61$lambda$60$lambda$59$lambda$58 */
+    
+    
     public static final Unit m551x79a491f6(Function0 $onDismissed) {
         $onDismissed.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SettingsDialog$lambda$65$lambda$64(MutableState $showTos$delegate) {
         SettingsDialog$lambda$17($showTos$delegate, false);
         return Unit.INSTANCE;

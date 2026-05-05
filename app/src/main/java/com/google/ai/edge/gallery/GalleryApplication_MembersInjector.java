@@ -4,7 +4,7 @@ import com.google.ai.edge.gallery.data.DataStoreRepository;
 import dagger.MembersInjector;
 import dagger.internal.Provider;
 
-/* JADX INFO: loaded from: classes3.dex */
+
 public final class GalleryApplication_MembersInjector implements MembersInjector<GalleryApplication> {
     private final Provider<DataStoreRepository> dataStoreRepositoryProvider;
 

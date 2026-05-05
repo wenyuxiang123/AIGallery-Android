@@ -34,7 +34,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.text.TextStyle;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.TextUnitKt;
 import androidx.compose.runtime.Applier;
@@ -72,17 +71,17 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.StringCompanionObject;
 
-/* JADX INFO: compiled from: BenchmarkValueSeriesViewer.kt */
-/* JADX INFO: loaded from: classes6.dex */
-@Metadata(m921d1 = {"\u0000$\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0006\n\u0002\b\u0003\u001a+\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00010\u0007H\u0007¢\u0006\u0002\u0010\b\u001a\u001d\u0010\t\u001a\u00020\u00012\u0006\u0010\n\u001a\u00020\u00032\u0006\u0010\u000b\u001a\u00020\fH\u0003¢\u0006\u0002\u0010\r¨\u0006\u000e²\u0006\f\u0010\u000f\u001a\u0004\u0018\u00010\fX\u008a\u008e\u0002"}, m922d2 = {"BenchmarkValueSeriesViewer", "", "title", "", "valueSeries", "Lcom/google/ai/edge/gallery/proto/ValueSeries;", "onDismiss", "Lkotlin/Function0;", "(Ljava/lang/String;Lcom/google/ai/edge/gallery/proto/ValueSeries;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "StatCell", "key", "value", "", "(Ljava/lang/String;DLandroidx/compose/runtime/Composer;I)V", "app_debug", "tappedValue"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "StatCell", "key", "value", "", "(Ljava/lang/String;DLandroidx/compose/runtime/Composer;I)V", "app_debug", "tappedValue"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class BenchmarkValueSeriesViewerKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkValueSeriesViewer$lambda$11(String str, ValueSeries valueSeries, Function0 function0, int i, Composer composer, int i2) {
         BenchmarkValueSeriesViewer(str, valueSeries, function0, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit StatCell$lambda$13(String str, double d, int i, Composer composer, int i2) {
         StatCell(str, d, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -136,7 +135,7 @@ public final class BenchmarkValueSeriesViewerKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkValueSeriesViewer$lambda$10(String $title, ValueSeries $valueSeries, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         String str;
@@ -295,9 +294,9 @@ public final class BenchmarkValueSeriesViewerKt {
                 if (invalid$iv || it$iv == Composer.INSTANCE.getEmpty()) {
                     Object value$iv2 = (PointerInputEventHandler) new PointerInputEventHandler() { // from class: com.google.ai.edge.gallery.ui.benchmark.BenchmarkValueSeriesViewerKt$BenchmarkValueSeriesViewer$1$1$1$1$1
 
-                        /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.benchmark.BenchmarkValueSeriesViewerKt$BenchmarkValueSeriesViewer$1$1$1$1$1$1, reason: invalid class name */
-                        /* JADX INFO: compiled from: BenchmarkValueSeriesViewer.kt */
-                        @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+                        
+                        
+                        
                         @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.benchmark.BenchmarkValueSeriesViewerKt$BenchmarkValueSeriesViewer$1$1$1$1$1$1", m932f = "BenchmarkValueSeriesViewer.kt", m933i = {0}, m934l = {113}, m935m = "invokeSuspend", m936n = {"$this$awaitPointerEventScope"}, m938s = {"L$0"})
                         static final class AnonymousClass1 extends RestrictedSuspendLambda implements Function2<AwaitPointerEventScope, Continuation<? super Unit>, Object> {
                             final /* synthetic */ double $effectiveMin;
@@ -456,8 +455,8 @@ public final class BenchmarkValueSeriesViewerKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkValueSeriesViewer$lambda$10$lambda$9$lambda$7$lambda$6$lambda$5 */
+    
+    
     public static final Unit m478x10890af2(List $values, long $lineColor, long $dotBgColor, long $dotBorderColor, double $effectiveMin, double $scaledYRange, long $tappedLineColor, MutableState $tappedValue$delegate, DrawScope Canvas) {
         Intrinsics.checkNotNullParameter(Canvas, "$this$Canvas");
         float horizontalPaddingDp = C1654Dp.m9788constructorimpl(12);

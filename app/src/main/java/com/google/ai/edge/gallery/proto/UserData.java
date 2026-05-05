@@ -16,7 +16,7 @@ import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class UserData extends GeneratedMessageLite<UserData, Builder> implements UserDataOrBuilder {
     public static final int ACCESS_TOKEN_DATA_FIELD_NUMBER = 1;
     private static final UserData DEFAULT_INSTANCE;
@@ -39,14 +39,14 @@ public final class UserData extends GeneratedMessageLite<UserData, Builder> impl
         return this.accessTokenData_ == null ? AccessTokenData.getDefaultInstance() : this.accessTokenData_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setAccessTokenData(AccessTokenData value) {
         value.getClass();
         this.accessTokenData_ = value;
         this.bitField0_ |= 1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void mergeAccessTokenData(AccessTokenData value) {
         value.getClass();
         if (this.accessTokenData_ != null && this.accessTokenData_ != AccessTokenData.getDefaultInstance()) {
@@ -57,7 +57,7 @@ public final class UserData extends GeneratedMessageLite<UserData, Builder> impl
         this.bitField0_ |= 1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearAccessTokenData() {
         this.accessTokenData_ = null;
         this.bitField0_ &= -2;
@@ -120,7 +120,7 @@ public final class UserData extends GeneratedMessageLite<UserData, Builder> impl
         return map.get(key);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public Map<String, String> getMutableSecretsMap() {
         return internalGetMutableSecrets();
     }

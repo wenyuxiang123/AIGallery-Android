@@ -5,7 +5,7 @@ import com.google.ai.edge.gallery.proto.CutoutCollection;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 
-/* JADX INFO: loaded from: classes10.dex */
+
 public final class AppModule_ProvideCutoutSerializerFactory implements Factory<Serializer<CutoutCollection>> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public Serializer<CutoutCollection> get() {

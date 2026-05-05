@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 import androidx.activity.result.ActivityResult;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.core.app.NotificationCompat;
 import androidx.core.view.PointerIconCompat;
 import androidx.lifecycle.ViewModel;
@@ -97,9 +96,9 @@ import net.openid.appauth.AuthorizationService;
 import net.openid.appauth.ResponseTypeValues;
 import net.openid.appauth.TokenResponse;
 
-/* JADX INFO: compiled from: ModelManagerViewModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000þ\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010$\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0017\u0018\u00002\u00020\u0001B>\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0011\u0010\b\u001a\r\u0012\t\u0012\u00070\n¢\u0006\u0002\b\u000b0\t\u0012\b\b\u0001\u0010\f\u001a\u00020\r¢\u0006\u0004\b\u000e\u0010\u000fJ\b\u0010.\u001a\u00020/H\u0014J\u0010\u00100\u001a\u0004\u0018\u0001012\u0006\u00102\u001a\u00020)J\u001a\u00103\u001a\b\u0012\u0004\u0012\u0002010!2\f\u00104\u001a\b\u0012\u0004\u0012\u00020)0\tJ\u0010\u00105\u001a\u0004\u0018\u00010\n2\u0006\u00102\u001a\u00020)J\f\u00106\u001a\b\u0012\u0004\u0012\u00020\n0!J\b\u00107\u001a\u0004\u0018\u00010\u001fJ\u0010\u00108\u001a\u0004\u0018\u00010\u001f2\u0006\u00109\u001a\u00020)J\f\u0010:\u001a\b\u0012\u0004\u0012\u00020\u001f0!J\f\u0010;\u001a\b\u0012\u0004\u0012\u00020\u001f0!J\u0006\u0010<\u001a\u00020/J\u0006\u0010=\u001a\u00020/J\u000e\u0010>\u001a\u00020/2\u0006\u0010?\u001a\u00020\u001fJ\u001a\u0010@\u001a\u00020/2\b\u0010A\u001a\u0004\u0018\u0001012\u0006\u0010?\u001a\u00020\u001fH\u0016J\u000e\u0010B\u001a\u00020/2\u0006\u0010?\u001a\u00020\u001fJ\u000e\u0010C\u001a\u00020/2\u0006\u0010?\u001a\u00020\u001fJ8\u0010D\u001a\u00020/2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010A\u001a\u0002012\u0006\u0010?\u001a\u00020\u001f2\b\b\u0002\u0010E\u001a\u00020F2\u000e\b\u0002\u0010G\u001a\b\u0012\u0004\u0012\u00020/0HJ:\u0010I\u001a\u00020/2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010A\u001a\u0002012\u0006\u0010?\u001a\u00020\u001f2\n\b\u0002\u0010J\u001a\u0004\u0018\u00010K2\u000e\b\u0002\u0010G\u001a\b\u0012\u0004\u0012\u00020/0HJ\u0016\u0010L\u001a\u00020/2\u0006\u0010M\u001a\u00020\u001f2\u0006\u0010N\u001a\u00020OJ\u0016\u0010P\u001a\u00020/2\u0006\u0010?\u001a\u00020\u001f2\u0006\u0010N\u001a\u00020QJ\u000e\u0010R\u001a\u00020/2\u0006\u0010S\u001a\u00020)J\u000e\u0010T\u001a\u00020/2\u0006\u0010S\u001a\u00020)J\u000e\u0010U\u001a\u00020/2\u0006\u0010S\u001a\u00020)J\u0006\u0010V\u001a\u00020/J\u0006\u0010W\u001a\u00020XJ\u000e\u0010Y\u001a\u00020/2\u0006\u0010Z\u001a\u00020XJ\u001a\u0010[\u001a\u00020\\2\u0006\u0010?\u001a\u00020\u001f2\n\b\u0002\u0010]\u001a\u0004\u0018\u00010)J\u000e\u0010^\u001a\u00020/2\u0006\u0010_\u001a\u00020`J\u0006\u0010a\u001a\u00020bJ\u0006\u0010c\u001a\u00020dJ\"\u0010e\u001a\u00020/2\u0006\u0010f\u001a\u00020g2\u0012\u0010h\u001a\u000e\u0012\u0004\u0012\u00020j\u0012\u0004\u0012\u00020/0iJ\u001e\u0010k\u001a\u00020/2\u0006\u0010]\u001a\u00020)2\u0006\u0010l\u001a\u00020)2\u0006\u0010m\u001a\u00020nJ\u0006\u0010o\u001a\u00020/J\b\u0010p\u001a\u00020/H\u0002J\b\u0010q\u001a\u00020/H\u0002J\u0006\u0010r\u001a\u00020/J\u0006\u0010s\u001a\u00020/J\u000e\u0010t\u001a\u00020/2\u0006\u0010u\u001a\u00020FJ\u0010\u0010v\u001a\u00020/2\u0006\u0010w\u001a\u00020)H\u0002J\u0014\u0010x\u001a\u0004\u0018\u00010y2\b\b\u0002\u0010z\u001a\u00020)H\u0002J\u0010\u0010{\u001a\u00020F2\u0006\u0010?\u001a\u00020\u001fH\u0002J\b\u0010|\u001a\u00020\u0016H\u0002J\b\u0010}\u001a\u00020\u0016H\u0002J\u0010\u0010~\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020`H\u0002J\u001b\u0010\u007f\u001a\u0015\u0012\u0004\u0012\u00020)\u0012\n\u0012\b\u0012\u0004\u0012\u0002010!0\u0080\u0001H\u0002J\u001b\u0010\u0081\u0001\u001a\u00020)2\u0006\u0010\f\u001a\u00020\r2\b\u0010\u0082\u0001\u001a\u00030\u0083\u0001H\u0002J\u0011\u0010\u0084\u0001\u001a\u00020O2\u0006\u0010?\u001a\u00020\u001fH\u0002J\u0011\u0010\u0085\u0001\u001a\u00020F2\u0006\u0010z\u001a\u00020)H\u0002J\u0011\u0010\u0086\u0001\u001a\u00020F2\u0006\u0010z\u001a\u00020)H\u0002J\u0011\u0010\u0087\u0001\u001a\u00020/2\u0006\u0010z\u001a\u00020)H\u0002J\u0011\u0010\u0088\u0001\u001a\u00020/2\u0006\u0010z\u001a\u00020)H\u0002J\u0012\u0010\u0089\u0001\u001a\u00020/2\u0007\u0010\u008a\u0001\u001a\u00020)H\u0002J%\u0010\u008b\u0001\u001a\u00020/2\u0006\u0010?\u001a\u00020\u001f2\u0007\u0010N\u001a\u00030\u008c\u00012\t\b\u0002\u0010\u008d\u0001\u001a\u00020)H\u0002J\u0011\u0010\u008e\u0001\u001a\u00020F2\u0006\u0010?\u001a\u00020\u001fH\u0007J$\u0010\u008f\u0001\u001a\u00020F2\u0006\u0010?\u001a\u00020\u001f2\u0007\u0010\u0090\u0001\u001a\u00020)2\b\b\u0002\u0010z\u001a\u00020)H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0019\u0010\b\u001a\r\u0012\t\u0012\u00070\n¢\u0006\u0002\b\u000b0\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00160\u0015X\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u001a\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00160\u001aX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0014\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\u001f0\u001eX\u0082\u000e¢\u0006\u0002\n\u0000R\u0017\u0010 \u001a\b\u0012\u0004\u0012\u00020\u001f0!8F¢\u0006\u0006\u001a\u0004\b\"\u0010#R\u0011\u0010$\u001a\u00020%¢\u0006\b\n\u0000\u001a\u0004\b&\u0010'R\u001a\u0010(\u001a\u00020)X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b*\u0010+\"\u0004\b,\u0010-¨\u0006\u0091\u0001²\u0006\u000b\u0010\u0092\u0001\u001a\u00020FX\u008a\u0084\u0002"}, m922d2 = {"Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "Landroidx/lifecycle/ViewModel;", "downloadRepository", "Lcom/google/ai/edge/gallery/data/DownloadRepository;", "dataStoreRepository", "Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "lifecycleProvider", "Lcom/google/ai/edge/gallery/AppLifecycleProvider;", "customTasks", "", "Lcom/google/ai/edge/gallery/customtasks/common/CustomTask;", "Lkotlin/jvm/JvmSuppressWildcards;", "context", "Landroid/content/Context;", "<init>", "(Lcom/google/ai/edge/gallery/data/DownloadRepository;Lcom/google/ai/edge/gallery/data/DataStoreRepository;Lcom/google/ai/edge/gallery/AppLifecycleProvider;Ljava/util/Set;Landroid/content/Context;)V", "getDataStoreRepository", "()Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "externalFilesDir", "Ljava/io/File;", "_uiState", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "get_uiState", "()Lkotlinx/coroutines/flow/MutableStateFlow;", "uiState", "Lkotlinx/coroutines/flow/StateFlow;", "getUiState", "()Lkotlinx/coroutines/flow/StateFlow;", "_allowlistModels", "", "Lcom/google/ai/edge/gallery/data/Model;", "allowlistModels", "", "getAllowlistModels", "()Ljava/util/List;", "authService", "Lnet/openid/appauth/AuthorizationService;", "getAuthService", "()Lnet/openid/appauth/AuthorizationService;", "curAccessToken", "", "getCurAccessToken", "()Ljava/lang/String;", "setCurAccessToken", "(Ljava/lang/String;)V", "onCleared", "", "getTaskById", "Lcom/google/ai/edge/gallery/data/Task;", "id", "getTasksByIds", "ids", "getCustomTaskByTaskId", "getActiveCustomTasks", "getSelectedModel", "getModelByName", "name", "getAllModels", "getAllDownloadedModels", "processTasks", "updateConfigValuesUpdateTrigger", "selectModel", "model", "downloadModel", "task", "cancelDownloadModel", "deleteModel", "initializeModel", "force", "", "onDone", "Lkotlin/Function0;", "cleanupModel", "instanceToCleanUp", "", "setDownloadStatus", "curModel", NotificationCompat.CATEGORY_STATUS, "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;", "setInitializationStatus", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelInitializationStatus;", "addTextInputHistory", "text", "promoteTextInputHistoryItem", "deleteTextInputHistory", "clearTextInputHistory", "readThemeOverride", "Lcom/google/ai/edge/gallery/proto/Theme;", "saveThemeOverride", "theme", "getModelUrlResponse", "", "accessToken", "addImportedLlmModel", "info", "Lcom/google/ai/edge/gallery/proto/ImportedModel;", "getTokenStatusAndData", "Lcom/google/ai/edge/gallery/ui/modelmanager/TokenStatusAndData;", "getAuthorizationRequest", "Lnet/openid/appauth/AuthorizationRequest;", "handleAuthResult", "result", "Landroidx/activity/result/ActivityResult;", "onTokenRequested", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/ui/modelmanager/TokenRequestResult;", "saveAccessToken", "refreshToken", "expiresAt", "", "clearAccessToken", "checkAICoreModelStatuses", "processPendingDownloads", "loadModelAllowlist", "clearLoadModelAllowlistError", "setAppInForeground", "foreground", "saveModelAllowlistToDisk", "modelAllowlistContent", "readModelAllowlistFromDisk", "Lcom/google/ai/edge/gallery/data/ModelAllowlist;", "fileName", "isModelPartiallyDownloaded", "createEmptyUiState", "createUiState", "createModelFromImportedModelInfo", "groupTasksByCategory", "", "getCategoryLabel", "category", "Lcom/google/ai/edge/gallery/data/CategoryInfo;", "getModelDownloadStatus", "isFileInExternalFilesDir", "isFileInDataLocalTmpDir", "deleteFileFromExternalFilesDir", "deleteFilesFromImportDir", "deleteDirFromExternalFilesDir", "dir", "updateModelInitializationStatus", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelInitializationStatusType;", "error", "isModelDownloaded", "checkIfModelDownloaded", "version", "app_debug", "isAICoreAvailable"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+J\u001a\u00103\u001a\b\u0012\u0004\u0012\u0002010!2\f\u00104\u001a\b\u0012\u0004\u0012\u00020)0\tJ\u0010\u00105\u001a\u0004\u0018\u00010\n2\u0006\u00102\u001a\u00020)J\f\u00106\u001a\b\u0012\u0004\u0012\u00020\n0!J\b\u00107\u001a\u0004\u0018\u00010\u001fJ\u0010\u00108\u001a\u0004\u0018\u00010\u001f2\u0006\u00109\u001a\u00020)J\f\u0010:\u001a\b\u0012\u0004\u0012\u00020\u001f0!J\f\u0010;\u001a\b\u0012\u0004\u0012\u00020\u001f0!J\u0006\u0010<\u001a\u00020/J\u0006\u0010=\u001a\u00020/J\u000e\u0010>\u001a\u00020/2\u0006\u0010?\u001a\u00020\u001fJ\u001a\u0010@\u001a\u00020/2\b\u0010A\u001a\u0004\u0018\u0001012\u0006\u0010?\u001a\u00020\u001fH\u0016J\u000e\u0010B\u001a\u00020/2\u0006\u0010?\u001a\u00020\u001fJ\u000e\u0010C\u001a\u00020/2\u0006\u0010?\u001a\u00020\u001fJ8\u0010D\u001a\u00020/2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010A\u001a\u0002012\u0006\u0010?\u001a\u00020\u001f2\b\b\u0002\u0010E\u001a\u00020F2\u000e\b\u0002\u0010G\u001a\b\u0012\u0004\u0012\u00020/0HJ:\u0010I\u001a\u00020/2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010A\u001a\u0002012\u0006\u0010?\u001a\u00020\u001f2\n\b\u0002\u0010J\u001a\u0004\u0018\u00010K2\u000e\b\u0002\u0010G\u001a\b\u0012\u0004\u0012\u00020/0HJ\u0016\u0010L\u001a\u00020/2\u0006\u0010M\u001a\u00020\u001f2\u0006\u0010N\u001a\u00020OJ\u0016\u0010P\u001a\u00020/2\u0006\u0010?\u001a\u00020\u001f2\u0006\u0010N\u001a\u00020QJ\u000e\u0010R\u001a\u00020/2\u0006\u0010S\u001a\u00020)J\u000e\u0010T\u001a\u00020/2\u0006\u0010S\u001a\u00020)J\u000e\u0010U\u001a\u00020/2\u0006\u0010S\u001a\u00020)J\u0006\u0010V\u001a\u00020/J\u0006\u0010W\u001a\u00020XJ\u000e\u0010Y\u001a\u00020/2\u0006\u0010Z\u001a\u00020XJ\u001a\u0010[\u001a\u00020\\2\u0006\u0010?\u001a\u00020\u001f2\n\b\u0002\u0010]\u001a\u0004\u0018\u00010)J\u000e\u0010^\u001a\u00020/2\u0006\u0010_\u001a\u00020`J\u0006\u0010a\u001a\u00020bJ\u0006\u0010c\u001a\u00020dJ\"\u0010e\u001a\u00020/2\u0006\u0010f\u001a\u00020g2\u0012\u0010h\u001a\u000e\u0012\u0004\u0012\u00020j\u0012\u0004\u0012\u00020/0iJ\u001e\u0010k\u001a\u00020/2\u0006\u0010]\u001a\u00020)2\u0006\u0010l\u001a\u00020)2\u0006\u0010m\u001a\u00020nJ\u0006\u0010o\u001a\u00020/J\b\u0010p\u001a\u00020/H\u0002J\b\u0010q\u001a\u00020/H\u0002J\u0006\u0010r\u001a\u00020/J\u0006\u0010s\u001a\u00020/J\u000e\u0010t\u001a\u00020/2\u0006\u0010u\u001a\u00020FJ\u0010\u0010v\u001a\u00020/2\u0006\u0010w\u001a\u00020)H\u0002J\u0014\u0010x\u001a\u0004\u0018\u00010y2\b\b\u0002\u0010z\u001a\u00020)H\u0002J\u0010\u0010{\u001a\u00020F2\u0006\u0010?\u001a\u00020\u001fH\u0002J\b\u0010|\u001a\u00020\u0016H\u0002J\b\u0010}\u001a\u00020\u0016H\u0002J\u0010\u0010~\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020`H\u0002J\u001b\u0010\u007f\u001a\u0015\u0012\u0004\u0012\u00020)\u0012\n\u0012\b\u0012\u0004\u0012\u0002010!0\u0080\u0001H\u0002J\u001b\u0010\u0081\u0001\u001a\u00020)2\u0006\u0010\f\u001a\u00020\r2\b\u0010\u0082\u0001\u001a\u00030\u0083\u0001H\u0002J\u0011\u0010\u0084\u0001\u001a\u00020O2\u0006\u0010?\u001a\u00020\u001fH\u0002J\u0011\u0010\u0085\u0001\u001a\u00020F2\u0006\u0010z\u001a\u00020)H\u0002J\u0011\u0010\u0086\u0001\u001a\u00020F2\u0006\u0010z\u001a\u00020)H\u0002J\u0011\u0010\u0087\u0001\u001a\u00020/2\u0006\u0010z\u001a\u00020)H\u0002J\u0011\u0010\u0088\u0001\u001a\u00020/2\u0006\u0010z\u001a\u00020)H\u0002J\u0012\u0010\u0089\u0001\u001a\u00020/2\u0007\u0010\u008a\u0001\u001a\u00020)H\u0002J%\u0010\u008b\u0001\u001a\u00020/2\u0006\u0010?\u001a\u00020\u001f2\u0007\u0010N\u001a\u00030\u008c\u00012\t\b\u0002\u0010\u008d\u0001\u001a\u00020)H\u0002J\u0011\u0010\u008e\u0001\u001a\u00020F2\u0006\u0010?\u001a\u00020\u001fH\u0007J$\u0010\u008f\u0001\u001a\u00020F2\u0006\u0010?\u001a\u00020\u001f2\u0007\u0010\u0090\u0001\u001a\u00020)2\b\b\u0002\u0010z\u001a\u00020)H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0019\u0010\b\u001a\r\u0012\t\u0012\u00070\n¢\u0006\u0002\b\u000b0\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00160\u0015X\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u001a\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00160\u001aX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0014\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\u001f0\u001eX\u0082\u000e¢\u0006\u0002\n\u0000R\u0017\u0010 \u001a\b\u0012\u0004\u0012\u00020\u001f0!8F¢\u0006\u0006\u001a\u0004\b\"\u0010#R\u0011\u0010$\u001a\u00020%¢\u0006\b\n\u0000\u001a\u0004\b&\u0010'R\u001a\u0010(\u001a\u00020)X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b*\u0010+\"\u0004\b,\u0010-¨\u0006\u0091\u0001²\u0006\u000b\u0010\u0092\u0001\u001a\u00020FX\u008a\u0084\u0002"}, m922d2 = {"Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "Landroidx/lifecycle/ViewModel;", "downloadRepository", "Lcom/google/ai/edge/gallery/data/DownloadRepository;", "dataStoreRepository", "Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "lifecycleProvider", "Lcom/google/ai/edge/gallery/AppLifecycleProvider;", "customTasks", "", "Lcom/google/ai/edge/gallery/customtasks/common/CustomTask;", "Lkotlin/jvm/JvmSuppressWildcards;", "context", "Landroid/content/Context;", "<init>", "(Lcom/google/ai/edge/gallery/data/DownloadRepository;Lcom/google/ai/edge/gallery/data/DataStoreRepository;Lcom/google/ai/edge/gallery/AppLifecycleProvider;Ljava/util/Set;Landroid/content/Context;)V", "getDataStoreRepository", "()Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "externalFilesDir", "Ljava/io/File;", "_uiState", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "get_uiState", "()Lkotlinx/coroutines/flow/MutableStateFlow;", "uiState", "Lkotlinx/coroutines/flow/StateFlow;", "getUiState", "()Lkotlinx/coroutines/flow/StateFlow;", "_allowlistModels", "", "Lcom/google/ai/edge/gallery/data/Model;", "allowlistModels", "", "getAllowlistModels", "()Ljava/util/List;", "authService", "Lnet/openid/appauth/AuthorizationService;", "getAuthService", "()Lnet/openid/appauth/AuthorizationService;", "curAccessToken", "", "getCurAccessToken", "()Ljava/lang/String;", "setCurAccessToken", "(Ljava/lang/String;)V", "onCleared", "", "getTaskById", "Lcom/google/ai/edge/gallery/data/Task;", "id", "getTasksByIds", "ids", "getCustomTaskByTaskId", "getActiveCustomTasks", "getSelectedModel", "getModelByName", "name", "getAllModels", "getAllDownloadedModels", "processTasks", "updateConfigValuesUpdateTrigger", "selectModel", "model", "downloadModel", "task", "cancelDownloadModel", "deleteModel", "initializeModel", "force", "", "onDone", "Lkotlin/Function0;", "cleanupModel", "instanceToCleanUp", "", "setDownloadStatus", "curModel", NotificationCompat.CATEGORY_STATUS, "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;", "setInitializationStatus", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelInitializationStatus;", "addTextInputHistory", "text", "promoteTextInputHistoryItem", "deleteTextInputHistory", "clearTextInputHistory", "readThemeOverride", "Lcom/google/ai/edge/gallery/proto/Theme;", "saveThemeOverride", "theme", "getModelUrlResponse", "", "accessToken", "addImportedLlmModel", "info", "Lcom/google/ai/edge/gallery/proto/ImportedModel;", "getTokenStatusAndData", "Lcom/google/ai/edge/gallery/ui/modelmanager/TokenStatusAndData;", "getAuthorizationRequest", "Lnet/openid/appauth/AuthorizationRequest;", "handleAuthResult", "result", "Landroidx/activity/result/ActivityResult;", "onTokenRequested", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/ui/modelmanager/TokenRequestResult;", "saveAccessToken", "refreshToken", "expiresAt", "", "clearAccessToken", "checkAICoreModelStatuses", "processPendingDownloads", "loadModelAllowlist", "clearLoadModelAllowlistError", "setAppInForeground", "foreground", "saveModelAllowlistToDisk", "modelAllowlistContent", "readModelAllowlistFromDisk", "Lcom/google/ai/edge/gallery/data/ModelAllowlist;", "fileName", "isModelPartiallyDownloaded", "createEmptyUiState", "createUiState", "createModelFromImportedModelInfo", "groupTasksByCategory", "", "getCategoryLabel", "category", "Lcom/google/ai/edge/gallery/data/CategoryInfo;", "getModelDownloadStatus", "isFileInExternalFilesDir", "isFileInDataLocalTmpDir", "deleteFileFromExternalFilesDir", "deleteFilesFromImportDir", "deleteDirFromExternalFilesDir", "dir", "updateModelInitializationStatus", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelInitializationStatusType;", "error", "isModelDownloaded", "checkIfModelDownloaded", "version", "app_debug", "isAICoreAvailable"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public class ModelManagerViewModel extends ViewModel {
     public static final int $stable = 8;
     private List<Model> _allowlistModels;
@@ -361,28 +360,28 @@ public class ModelManagerViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit downloadModel$lambda$10(ModelManagerViewModel this$0, Model $model, long downloaded, long total) {
         this$0.setDownloadStatus($model, new ModelDownloadStatus(ModelDownloadStatusType.IN_PROGRESS, total, downloaded, null, 0L, 0L, 56, null));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit downloadModel$lambda$11(ModelManagerViewModel this$0, Model $model) {
         this$0.setDownloadStatus($model, new ModelDownloadStatus(ModelDownloadStatusType.SUCCEEDED, $model.getSizeInBytes(), $model.getSizeInBytes(), null, 0L, 0L, 56, null));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit downloadModel$lambda$12(ModelManagerViewModel this$0, Model $model, String error) {
         Intrinsics.checkNotNullParameter(error, "error");
         this$0.setDownloadStatus($model, new ModelDownloadStatus(ModelDownloadStatusType.FAILED, 0L, 0L, error, 0L, 0L, 54, null));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel$downloadModel$4 */
-    /* JADX INFO: compiled from: ModelManagerViewModel.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     static final /* synthetic */ class C28154 extends FunctionReferenceImpl implements Function2<Model, ModelDownloadStatus, Unit> {
         C28154(Object obj) {
             super(2, obj, ModelManagerViewModel.class, "setDownloadStatus", "setDownloadStatus(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;)V", 0);
@@ -394,7 +393,7 @@ public class ModelManagerViewModel extends ViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        
         public final void invoke2(Model p0, ModelDownloadStatus p1) {
             Intrinsics.checkNotNullParameter(p0, "p0");
             Intrinsics.checkNotNullParameter(p1, "p1");
@@ -490,9 +489,9 @@ public class ModelManagerViewModel extends ViewModel {
         modelManagerViewModel.initializeModel(context, task, model, z2, function02);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel$initializeModel$2 */
-    /* JADX INFO: compiled from: ModelManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel$initializeModel$2", m932f = "ModelManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C28162 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Context $context;
@@ -567,7 +566,7 @@ public class ModelManagerViewModel extends ViewModel {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public static final Unit invokeSuspend$lambda$0(Model $model, ModelManagerViewModel this$0, Context $context, Task $task, Function0 $onDone, String error) {
             $model.setInitializing(false);
             if ($model.getInstance() != null) {
@@ -653,7 +652,7 @@ public class ModelManagerViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit cleanupModel$lambda$18(Model $model, ModelManagerViewModel this$0, Function0 $onDone) {
         $model.setInstance(null);
         $model.setInitializing(false);
@@ -1006,7 +1005,7 @@ public class ModelManagerViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r0v3, types: [T, java.lang.String] */
     public static final void handleAuthResult$lambda$28(Ref.ObjectRef objectRef, ModelManagerViewModel modelManagerViewModel, Function1 function1, TokenResponse tokenResponse, AuthorizationException authorizationException) {
@@ -1053,9 +1052,9 @@ public class ModelManagerViewModel extends ViewModel {
         this.dataStoreRepository.clearAccessTokenData();
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel$checkAICoreModelStatuses$1 */
-    /* JADX INFO: compiled from: ModelManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel$checkAICoreModelStatuses$1", m932f = "ModelManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C28141 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
@@ -1114,12 +1113,12 @@ public class ModelManagerViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void checkAICoreModelStatuses() {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getMain(), null, new C28141(null), 2, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void processPendingDownloads() {
         this.downloadRepository.cancelAll(new Function0() { // from class: com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel$$ExternalSyntheticLambda3
             @Override // kotlin.jvm.functions.Function0
@@ -1129,7 +1128,7 @@ public class ModelManagerViewModel extends ViewModel {
         });
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit processPendingDownloads$lambda$29(ModelManagerViewModel this$0) {
         Log.d("AGModelManagerViewModel", "All workers are cancelled.");
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this$0), Dispatchers.getMain(), null, new ModelManagerViewModel$processPendingDownloads$1$1(this$0, null), 2, null);
@@ -1148,9 +1147,9 @@ public class ModelManagerViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new C28182(null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel$loadModelAllowlist$2 */
-    /* JADX INFO: compiled from: ModelManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel$loadModelAllowlist$2", m932f = "ModelManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C28182 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
@@ -1194,7 +1193,7 @@ public class ModelManagerViewModel extends ViewModel {
             return lazy.getValue().booleanValue();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         /* JADX WARN: Multi-variable type inference failed */
         public static final boolean invokeSuspend$lambda$3(Ref.ObjectRef $modelAllowlist) {
             List<NamedDeviceGroup> allowedDeviceGroups;
@@ -1216,12 +1215,12 @@ public class ModelManagerViewModel extends ViewModel {
             return UtilsKt.isAICoreSupported(allowedDeviceModelsSet);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public static final Iterable invokeSuspend$lambda$3$lambda$1(NamedDeviceGroup it) {
             return it.getDeviceModels();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public static final String invokeSuspend$lambda$3$lambda$2(String it) {
             String lowerCase = it.toLowerCase(Locale.ROOT);
             Intrinsics.checkNotNullExpressionValue(lowerCase, "toLowerCase(...)");
@@ -1251,7 +1250,7 @@ public class ModelManagerViewModel extends ViewModel {
         this.lifecycleProvider.setAppInForeground(foreground);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void saveModelAllowlistToDisk(String modelAllowlistContent) {
         try {
             Log.d("AGModelManagerViewModel", "Saving model allowlist to disk...");
@@ -1273,7 +1272,7 @@ public class ModelManagerViewModel extends ViewModel {
         return modelManagerViewModel.readModelAllowlistFromDisk(str);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final ModelAllowlist readModelAllowlistFromDisk(String fileName) {
         try {
             Log.d("AGModelManagerViewModel", "Reading model allowlist from disk: " + fileName);
@@ -1304,7 +1303,7 @@ public class ModelManagerViewModel extends ViewModel {
         return new ModelManagerUiState(CollectionsKt.emptyList(), MapsKt.emptyMap(), MapsKt.emptyMap(), MapsKt.emptyMap(), false, null, null, null, 0L, 0L, PointerIconCompat.TYPE_TEXT, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final ModelManagerUiState createUiState() {
         Task task;
         List<Model> models;
@@ -1408,7 +1407,7 @@ public class ModelManagerViewModel extends ViewModel {
         return model;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final Map<String, List<Task>> groupTasksByCategory() {
         Object answer$iv$iv$iv;
         Iterable $this$map$iv = getActiveCustomTasks();
@@ -1475,12 +1474,12 @@ public class ModelManagerViewModel extends ViewModel {
         return groupedSortedTasks;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int groupTasksByCategory$lambda$40(Function2 $tmp0, Object p0, Object p1) {
         return ((Number) $tmp0.invoke(p0, p1)).intValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int groupTasksByCategory$lambda$39(String $categoryId, Map $categoryMap, ModelManagerViewModel this$0, Task a, Task b) {
         List order;
         if (Intrinsics.areEqual($categoryId, Category.INSTANCE.getLLM().getId())) {
@@ -1595,7 +1594,7 @@ public class ModelManagerViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean deleteFilesFromImportDir$lambda$41(String $prefixAbsolutePath, File dirFile, String name) {
         String absolutePath = new File(dirFile, name).getAbsolutePath();
         Intrinsics.checkNotNullExpressionValue(absolutePath, "getAbsolutePath(...)");
@@ -1619,7 +1618,7 @@ public class ModelManagerViewModel extends ViewModel {
         modelManagerViewModel.updateModelInitializationStatus(model, modelInitializationStatusType, str);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void updateModelInitializationStatus(Model model, ModelInitializationStatusType status, String error) {
         Set<String> setEmptySet;
         Set<String> setPlus;

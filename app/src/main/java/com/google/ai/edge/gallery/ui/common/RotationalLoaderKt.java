@@ -38,7 +38,6 @@ import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.PainterResources_androidKt;
 import androidx.compose.p000ui.semantics.SemanticsModifierKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -64,20 +63,20 @@ import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.Intrinsics;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: compiled from: RotationalLoader.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000\u0018\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u001a\u0017\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0007¢\u0006\u0004\b\u0007\u0010\b\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\t²\u0006\n\u0010\n\u001a\u00020\u0001X\u008a\u0084\u0002²\u0006\n\u0010\u000b\u001a\u00020\u0001X\u008a\u0084\u0002"}, m922d2 = {"GRID_SPACING_FACTOR", "", "ICON_SIZE_FACTOR", "RotationalLoader", "", "size", "Landroidx/compose/ui/unit/Dp;", "RotationalLoader-8Feqmps", "(FLandroidx/compose/runtime/Composer;I)V", "app_debug", "rotationProgress", "scaleProgress"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "rotationProgress", "scaleProgress"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class RotationalLoaderKt {
     private static final float GRID_SPACING_FACTOR = 0.1f;
     private static final float ICON_SIZE_FACTOR = 0.3f;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit RotationalLoader_8Feqmps$lambda$12(float f, int i, Composer composer, int i2) {
         m10889RotationalLoader8Feqmps(f, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: RotationalLoader-8Feqmps, reason: not valid java name */
+    
     public static final void m10889RotationalLoader8Feqmps(final float size, Composer $composer, final int $changed) {
         Composer $composer2;
         Composer $composer3 = $composer.startRestartGroup(-1624344042);
@@ -177,20 +176,20 @@ public final class RotationalLoaderKt {
         return ((Number) thisObj$iv).floatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit RotationalLoader_8Feqmps$lambda$3$lambda$2(float $curRotationZ, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setRotationZ($curRotationZ);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit RotationalLoader_8Feqmps$lambda$5$lambda$4(SemanticsPropertyReceiver clearAndSetSemantics) {
         Intrinsics.checkNotNullParameter(clearAndSetSemantics, "$this$clearAndSetSemantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit RotationalLoader_8Feqmps$lambda$11$lambda$10(final float $size, final float $gridSpacing, final float $curRotationZ, final float $curScale, LazyGridScope LazyVerticalGrid) {
         Intrinsics.checkNotNullParameter(LazyVerticalGrid, "$this$LazyVerticalGrid");
         final List items$iv = CollectionsKt.listOf((Object[]) new Integer[]{Integer.valueOf(C2421R.drawable.four_circle), Integer.valueOf(C2421R.drawable.circle), Integer.valueOf(C2421R.drawable.double_circle), Integer.valueOf(C2421R.drawable.pantegon)});
@@ -312,7 +311,7 @@ public final class RotationalLoaderKt {
                                 return Unit.INSTANCE;
                             }
 
-                            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                            
                             public final void invoke2(GraphicsLayerScope graphicsLayer) {
                                 Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
                                 graphicsLayer.setAlpha(0.99f);
@@ -337,7 +336,7 @@ public final class RotationalLoaderKt {
                                 return Unit.INSTANCE;
                             }
 
-                            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                            
                             public final void invoke2(ContentDrawScope drawWithContent) {
                                 Intrinsics.checkNotNullParameter(drawWithContent, "$this$drawWithContent");
                                 drawWithContent.drawContent();

@@ -24,7 +24,6 @@ import androidx.compose.p000ui.graphics.vector.ImageVector;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.text.TextStyle;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -40,11 +39,11 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MessageBodyLoading.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\u001a\u0019\u0010\u0000\u001a\u00020\u00012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\u0007¢\u0006\u0002\u0010\u0004¨\u0006\u0005²\u0006\n\u0010\u0006\u001a\u00020\u0007X\u008a\u0084\u0002"}, m922d2 = {"MessageBodyLoading", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageLoading;", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageLoading;Landroidx/compose/runtime/Composer;II)V", "app_debug", "iconAlpha", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "iconAlpha", ""}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageBodyLoadingKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyLoading$lambda$8(ChatMessageLoading chatMessageLoading, int i, int i2, Composer composer, int i3) {
         MessageBodyLoading(chatMessageLoading, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -71,13 +70,13 @@ public final class MessageBodyLoadingKt {
         return ((Number) thisObj$iv).floatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ContentTransform MessageBodyLoading$lambda$7$lambda$2$lambda$1(AnimatedContentTransitionScope AnimatedContent) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
         return AnimatedContentKt.togetherWith(EnterExitTransitionKt.fadeIn$default(null, 0.0f, 3, null), EnterExitTransitionKt.fadeOut$default(null, 0.0f, 3, null));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyLoading$lambda$7$lambda$6(final State $iconAlpha$delegate, AnimatedContentScope AnimatedContent, String label, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
         Intrinsics.checkNotNullParameter(label, "label");
@@ -150,7 +149,7 @@ public final class MessageBodyLoadingKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyLoading$lambda$7$lambda$6$lambda$5$lambda$4$lambda$3(State $iconAlpha$delegate, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha(MessageBodyLoading$lambda$0($iconAlpha$delegate));

@@ -26,7 +26,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
 import androidx.compose.p000ui.res.VectorResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -73,30 +72,30 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: ModelPageAppBar.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000X\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\t\n\u0002\u0018\u0002\u001a¿\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00010\t26\u0010\n\u001a2\u0012\u0013\u0012\u00110\u0005¢\u0006\f\b\f\u0012\b\b\r\u0012\u0004\b\b(\u000e\u0012\u0013\u0012\u00110\u0005¢\u0006\f\b\f\u0012\b\b\r\u0012\u0004\b\b(\u000f\u0012\u0004\u0012\u00020\u00010\u000b2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u00112\b\b\u0002\u0010\u0013\u001a\u00020\u00142\b\b\u0002\u0010\u0015\u001a\u00020\u00112\u0014\b\u0002\u0010\u0016\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00010\u00172\b\b\u0002\u0010\u0018\u001a\u00020\u00112\b\b\u0002\u0010\u0019\u001a\u00020\u00112\b\b\u0002\u0010\u001a\u001a\u00020\u00112P\b\u0002\u0010\u001b\u001aJ\u0012\u001f\u0012\u001d\u0012\u0004\u0012\u00020\u001d\u0012\u0004\u0012\u00020\u001e0\u001c¢\u0006\f\b\f\u0012\b\b\r\u0012\u0004\b\b(\u001f\u0012\u001f\u0012\u001d\u0012\u0004\u0012\u00020\u001d\u0012\u0004\u0012\u00020\u001e0\u001c¢\u0006\f\b\f\u0012\b\b\r\u0012\u0004\b\b( \u0012\u0004\u0012\u00020\u00010\u000b2\b\b\u0002\u0010!\u001a\u00020\u00112\b\b\u0002\u0010\"\u001a\u00020\u001d2\u0014\b\u0002\u0010#\u001a\u000e\u0012\u0004\u0012\u00020\u001d\u0012\u0004\u0012\u00020\u00010\u0017H\u0007¢\u0006\u0002\u0010$¨\u0006%²\u0006\n\u0010&\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010'\u001a\u00020(X\u008a\u0084\u0002"}, m922d2 = {"ModelPageAppBar", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "model", "Lcom/google/ai/edge/gallery/data/Model;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "onBackClicked", "Lkotlin/Function0;", "onModelSelected", "Lkotlin/Function2;", "Lkotlin/ParameterName;", "name", "prev", "cur", "inProgress", "", "modelPreparing", "modifier", "Landroidx/compose/ui/Modifier;", "isResettingSession", "onResetSessionClicked", "Lkotlin/Function1;", "canShowResetSessionButton", "hideModelSelector", "useThemeColor", "onConfigChanged", "", "", "", "oldConfigValues", "newConfigValues", "allowEditingSystemPrompt", "curSystemPrompt", "onSystemPromptChanged", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;ZZLandroidx/compose/ui/Modifier;ZLkotlin/jvm/functions/Function1;ZZZLkotlin/jvm/functions/Function2;ZLjava/lang/String;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;III)V", "app_debug", "showConfigDialog", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "showConfigDialog", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ModelPageAppBarKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$31(Task task, Model model, ModelManagerViewModel modelManagerViewModel, Function0 function0, Function2 function2, boolean z, boolean z2, Modifier modifier, boolean z3, Function1 function1, boolean z4, boolean z5, boolean z6, Function2 function22, boolean z7, String str, Function1 function12, int i, int i2, int i3, Composer composer, int i4) {
         ModelPageAppBar(task, model, modelManagerViewModel, function0, function2, z, z2, modifier, z3, function1, z4, z5, z6, function22, z7, str, function12, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), RecomposeScopeImplKt.updateChangedFlags(i2), i3);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$1$lambda$0(Model it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$3$lambda$2(Map map, Map map2) {
         Intrinsics.checkNotNullParameter(map, "<unused var>");
         Intrinsics.checkNotNullParameter(map2, "<unused var>");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$5$lambda$4(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
@@ -479,7 +478,7 @@ public final class ModelPageAppBarKt {
         return (ModelManagerUiState) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$12(boolean $hideModelSelector, boolean $isModelInitializing, boolean $inProgress, Task $task, Model $model, ModelManagerViewModel $modelManagerViewModel, Function2 $onModelSelected, boolean $useThemeColor, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -620,7 +619,7 @@ public final class ModelPageAppBarKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$13(boolean $isModelInitializing, boolean $inProgress, Function0 $onBackClicked, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C136@5512L238:ModelPageAppBar.kt#t7sjiu");
         boolean enableBackButton = false;
@@ -641,7 +640,7 @@ public final class ModelPageAppBarKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$19(ModelDownloadStatus $curDownloadStatus, final Model $model, boolean $canShowResetSessionButton, boolean $isModelInitializing, boolean $inProgress, boolean $isModelInitialized, boolean $isResettingSession, boolean $modelPreparing, final Function1 $onResetSessionClicked, final MutableState $showConfigDialog$delegate, RowScope CenterAlignedTopAppBar, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         float configButtonOffset;
@@ -767,47 +766,47 @@ public final class ModelPageAppBarKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$19$lambda$18$lambda$15$lambda$14(MutableState $showConfigDialog$delegate) {
         ModelPageAppBar$lambda$8($showConfigDialog$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$19$lambda$18$lambda$17$lambda$16(Function1 $onResetSessionClicked, Model $model) {
         $onResetSessionClicked.invoke($model);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean ModelPageAppBar$lambda$22$lambda$20(Config it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Intrinsics.areEqual(it.getKey(), ConfigKeys.INSTANCE.getRESET_CONVERSATION_TURN_COUNT());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean ModelPageAppBar$lambda$22$lambda$21(Function1 $tmp0, Object p0) {
         return ((Boolean) $tmp0.invoke(p0)).booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean ModelPageAppBar$lambda$25$lambda$23(Config it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Intrinsics.areEqual(it.getKey(), ConfigKeys.INSTANCE.getENABLE_THINKING());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean ModelPageAppBar$lambda$25$lambda$24(Function1 $tmp0, Object p0) {
         return ((Boolean) $tmp0.invoke(p0)).booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$27$lambda$26(MutableState $showConfigDialog$delegate) {
         ModelPageAppBar$lambda$8($showConfigDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$30$lambda$29(List $modelConfigs, Model $model, final Function1 $onSystemPromptChanged, ModelManagerViewModel $modelManagerViewModel, Task $task, Context $context, Function2 $onConfigChanged, MutableState $showConfigDialog$delegate, Map curConfigValues, final String oldSystemPrompt, final String newSystemPrompt) {
         boolean same;
         boolean needReinitialization;
@@ -859,7 +858,7 @@ public final class ModelPageAppBarKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPageAppBar$lambda$30$lambda$29$lambda$28(String $oldSystemPrompt, String $newSystemPrompt, Function1 $onSystemPromptChanged) {
         if (!Intrinsics.areEqual($oldSystemPrompt, $newSystemPrompt)) {
             $onSystemPromptChanged.invoke($newSystemPrompt);

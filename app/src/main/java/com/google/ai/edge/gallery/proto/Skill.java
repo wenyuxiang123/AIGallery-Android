@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class Skill extends GeneratedMessageLite<Skill, Builder> implements SkillOrBuilder {
     public static final int BUILT_IN_FIELD_NUMBER = 4;
     private static final Skill DEFAULT_INSTANCE;
@@ -48,18 +48,18 @@ public final class Skill extends GeneratedMessageLite<Skill, Builder> implements
         return ByteString.copyFromUtf8(this.name_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setName(String value) {
         value.getClass();
         this.name_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearName() {
         this.name_ = getDefaultInstance().getName();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setNameBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.name_ = value.toStringUtf8();
@@ -75,18 +75,18 @@ public final class Skill extends GeneratedMessageLite<Skill, Builder> implements
         return ByteString.copyFromUtf8(this.description_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setDescription(String value) {
         value.getClass();
         this.description_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearDescription() {
         this.description_ = getDefaultInstance().getDescription();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setDescriptionBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.description_ = value.toStringUtf8();
@@ -102,18 +102,18 @@ public final class Skill extends GeneratedMessageLite<Skill, Builder> implements
         return ByteString.copyFromUtf8(this.instructions_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setInstructions(String value) {
         value.getClass();
         this.instructions_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearInstructions() {
         this.instructions_ = getDefaultInstance().getInstructions();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setInstructionsBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.instructions_ = value.toStringUtf8();
@@ -124,12 +124,12 @@ public final class Skill extends GeneratedMessageLite<Skill, Builder> implements
         return this.builtIn_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setBuiltIn(boolean value) {
         this.builtIn_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearBuiltIn() {
         this.builtIn_ = false;
     }
@@ -144,18 +144,18 @@ public final class Skill extends GeneratedMessageLite<Skill, Builder> implements
         return ByteString.copyFromUtf8(this.skillUrl_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setSkillUrl(String value) {
         value.getClass();
         this.skillUrl_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearSkillUrl() {
         this.skillUrl_ = getDefaultInstance().getSkillUrl();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setSkillUrlBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.skillUrl_ = value.toStringUtf8();
@@ -171,18 +171,18 @@ public final class Skill extends GeneratedMessageLite<Skill, Builder> implements
         return ByteString.copyFromUtf8(this.importDirName_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setImportDirName(String value) {
         value.getClass();
         this.importDirName_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearImportDirName() {
         this.importDirName_ = getDefaultInstance().getImportDirName();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setImportDirNameBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.importDirName_ = value.toStringUtf8();
@@ -193,12 +193,12 @@ public final class Skill extends GeneratedMessageLite<Skill, Builder> implements
         return this.selected_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setSelected(boolean value) {
         this.selected_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearSelected() {
         this.selected_ = false;
     }
@@ -208,12 +208,12 @@ public final class Skill extends GeneratedMessageLite<Skill, Builder> implements
         return this.requireSecret_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setRequireSecret(boolean value) {
         this.requireSecret_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearRequireSecret() {
         this.requireSecret_ = false;
     }
@@ -228,18 +228,18 @@ public final class Skill extends GeneratedMessageLite<Skill, Builder> implements
         return ByteString.copyFromUtf8(this.requireSecretDescription_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setRequireSecretDescription(String value) {
         value.getClass();
         this.requireSecretDescription_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearRequireSecretDescription() {
         this.requireSecretDescription_ = getDefaultInstance().getRequireSecretDescription();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setRequireSecretDescriptionBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.requireSecretDescription_ = value.toStringUtf8();
@@ -255,18 +255,18 @@ public final class Skill extends GeneratedMessageLite<Skill, Builder> implements
         return ByteString.copyFromUtf8(this.homepage_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setHomepage(String value) {
         value.getClass();
         this.homepage_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearHomepage() {
         this.homepage_ = getDefaultInstance().getHomepage();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setHomepageBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.homepage_ = value.toStringUtf8();

@@ -1,6 +1,5 @@
 package com.google.ai.edge.gallery.runtime.aicore;
 
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import com.google.mlkit.genai.common.DownloadStatus;
 import com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper;
 import kotlin.Metadata;
@@ -9,9 +8,9 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 
-/* JADX INFO: compiled from: AICoreModelHelper.kt */
-/* JADX INFO: loaded from: classes7.dex */
-@Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 @DebugMetadata(m931c = "com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$initialize$1$1", m932f = "AICoreModelHelper.kt", m933i = {0, 1}, m934l = {105, 106}, m935m = "emit", m936n = {"downloadStatus", "downloadStatus"}, m938s = {"L$0", "L$0"})
 final class AICoreModelHelper$initialize$1$1$emit$1 extends ContinuationImpl {
     Object L$0;

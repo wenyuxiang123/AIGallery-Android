@@ -15,7 +15,7 @@ import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class StrokePath extends GeneratedMessageLite<StrokePath, Builder> implements StrokePathOrBuilder {
     public static final int BLUR_TYPE_FIELD_NUMBER = 5;
     public static final int BRUSH_COLOR_FIELD_NUMBER = 2;
@@ -63,39 +63,39 @@ public final class StrokePath extends GeneratedMessageLite<StrokePath, Builder> 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setPoint(int index, Point value) {
         value.getClass();
         ensurePointIsMutable();
         this.point_.set(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addPoint(Point value) {
         value.getClass();
         ensurePointIsMutable();
         this.point_.add(value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addPoint(int index, Point value) {
         value.getClass();
         ensurePointIsMutable();
         this.point_.add(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addAllPoint(Iterable<? extends Point> values) {
         ensurePointIsMutable();
         AbstractMessageLite.addAll(values, this.point_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearPoint() {
         this.point_ = emptyProtobufList();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void removePoint(int index) {
         ensurePointIsMutable();
         this.point_.remove(index);
@@ -106,12 +106,12 @@ public final class StrokePath extends GeneratedMessageLite<StrokePath, Builder> 
         return this.brushColor_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setBrushColor(int value) {
         this.brushColor_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearBrushColor() {
         this.brushColor_ = 0;
     }
@@ -121,12 +121,12 @@ public final class StrokePath extends GeneratedMessageLite<StrokePath, Builder> 
         return this.brushSize_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setBrushSize(float value) {
         this.brushSize_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearBrushSize() {
         this.brushSize_ = 0.0f;
     }
@@ -136,12 +136,12 @@ public final class StrokePath extends GeneratedMessageLite<StrokePath, Builder> 
         return this.brushSoftness_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setBrushSoftness(float value) {
         this.brushSoftness_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearBrushSoftness() {
         this.brushSoftness_ = 0.0f;
     }
@@ -151,12 +151,12 @@ public final class StrokePath extends GeneratedMessageLite<StrokePath, Builder> 
         return this.blurType_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setBlurType(int value) {
         this.blurType_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearBlurType() {
         this.blurType_ = 0;
     }

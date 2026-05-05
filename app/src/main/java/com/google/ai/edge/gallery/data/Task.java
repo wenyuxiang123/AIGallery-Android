@@ -1,7 +1,6 @@
 package com.google.ai.edge.gallery.data;
 
 import androidx.compose.p000ui.graphics.vector.ImageVector;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.MutableState;
 import androidx.compose.runtime.SnapshotLongStateKt;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -13,9 +12,9 @@ import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: Tasks.kt */
-/* JADX INFO: loaded from: classes12.dex */
-@Metadata(m921d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\b#\n\u0002\u0018\u0002\n\u0002\b\u001c\b\u0087\b\u0018\u00002\u00020\u0001BÛ\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\b\b\u0002\u0010\f\u001a\u00020\u0003\u0012\b\b\u0002\u0010\r\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u000e\u001a\u00020\u0003\u0012\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010\u0012\u000e\b\u0002\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00030\u0013\u0012\b\b\u0002\u0010\u0014\u001a\u00020\u0015\u0012\b\b\u0002\u0010\u0016\u001a\u00020\u0015\u0012\b\b\u0002\u0010\u0017\u001a\u00020\u0015\u0012\b\b\u0002\u0010\u0018\u001a\u00020\u0015\u0012\b\b\u0002\u0010\u0019\u001a\u00020\u0003\u0012\b\b\u0003\u0010\u001a\u001a\u00020\n\u0012\b\b\u0003\u0010\u001b\u001a\u00020\n\u0012\b\b\u0002\u0010\u001c\u001a\u00020\n\u0012\u000e\b\u0002\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\u001f0\u001e¢\u0006\u0004\b \u0010!J\u0016\u0010A\u001a\u00020\u00152\u0006\u0010B\u001a\u00020C2\u0006\u0010D\u001a\u00020\u0011J\t\u0010E\u001a\u00020\u0003HÆ\u0003J\t\u0010F\u001a\u00020\u0003HÆ\u0003J\t\u0010G\u001a\u00020\u0006HÆ\u0003J\u000b\u0010H\u001a\u0004\u0018\u00010\bHÆ\u0003J\u0010\u0010I\u001a\u0004\u0018\u00010\nHÆ\u0003¢\u0006\u0002\u0010*J\t\u0010J\u001a\u00020\u0003HÆ\u0003J\t\u0010K\u001a\u00020\u0003HÆ\u0003J\t\u0010L\u001a\u00020\u0003HÆ\u0003J\t\u0010M\u001a\u00020\u0003HÆ\u0003J\u000f\u0010N\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010HÆ\u0003J\u000f\u0010O\u001a\b\u0012\u0004\u0012\u00020\u00030\u0013HÆ\u0003J\t\u0010P\u001a\u00020\u0015HÆ\u0003J\t\u0010Q\u001a\u00020\u0015HÆ\u0003J\t\u0010R\u001a\u00020\u0015HÆ\u0003J\t\u0010S\u001a\u00020\u0015HÆ\u0003J\t\u0010T\u001a\u00020\u0003HÆ\u0003J\t\u0010U\u001a\u00020\nHÆ\u0003J\t\u0010V\u001a\u00020\nHÆ\u0003J\t\u0010W\u001a\u00020\nHÆ\u0003J\u000f\u0010X\u001a\b\u0012\u0004\u0012\u00020\u001f0\u001eHÆ\u0003Jì\u0001\u0010Y\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\b\b\u0002\u0010\u000b\u001a\u00020\u00032\b\b\u0002\u0010\f\u001a\u00020\u00032\b\b\u0002\u0010\r\u001a\u00020\u00032\b\b\u0002\u0010\u000e\u001a\u00020\u00032\u000e\b\u0002\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u00102\u000e\b\u0002\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00030\u00132\b\b\u0002\u0010\u0014\u001a\u00020\u00152\b\b\u0002\u0010\u0016\u001a\u00020\u00152\b\b\u0002\u0010\u0017\u001a\u00020\u00152\b\b\u0002\u0010\u0018\u001a\u00020\u00152\b\b\u0002\u0010\u0019\u001a\u00020\u00032\b\b\u0003\u0010\u001a\u001a\u00020\n2\b\b\u0003\u0010\u001b\u001a\u00020\n2\b\b\u0002\u0010\u001c\u001a\u00020\n2\u000e\b\u0002\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\u001f0\u001eHÆ\u0001¢\u0006\u0002\u0010ZJ\u0013\u0010[\u001a\u00020\u00152\b\u0010\\\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010]\u001a\u00020\nHÖ\u0001J\t\u0010^\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b$\u0010#R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b%\u0010&R\u0013\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b'\u0010(R\u0015\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\n\n\u0002\u0010+\u001a\u0004\b)\u0010*R\u0011\u0010\u000b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b,\u0010#R\u0011\u0010\f\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b-\u0010#R\u0011\u0010\r\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b.\u0010#R\u0011\u0010\u000e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b/\u0010#R\u0017\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010¢\u0006\b\n\u0000\u001a\u0004\b0\u00101R\u0017\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00030\u0013¢\u0006\b\n\u0000\u001a\u0004\b2\u00101R\u0011\u0010\u0014\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b3\u00104R\u0011\u0010\u0016\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b5\u00104R\u0011\u0010\u0017\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b6\u00104R\u0011\u0010\u0018\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b7\u00104R\u0011\u0010\u0019\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b8\u0010#R\u0011\u0010\u001a\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b9\u0010:R\u0011\u0010\u001b\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b;\u0010:R\u001a\u0010\u001c\u001a\u00020\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b<\u0010:\"\u0004\b=\u0010>R\u0017\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\u001f0\u001e¢\u0006\b\n\u0000\u001a\u0004\b?\u0010@¨\u0006_"}, m922d2 = {"Lcom/google/ai/edge/gallery/data/Task;", "", "id", "", Constants.ScionAnalytics.PARAM_LABEL, "category", "Lcom/google/ai/edge/gallery/data/CategoryInfo;", "icon", "Landroidx/compose/ui/graphics/vector/ImageVector;", "iconVectorResourceId", "", "description", "shortDescription", "docUrl", "sourceCodeUrl", "models", "", "Lcom/google/ai/edge/gallery/data/Model;", "modelNames", "", "handleModelConfigChangesInTask", "", "experimental", "newFeature", "useThemeColor", "defaultSystemPrompt", "agentNameRes", "textInputPlaceHolderRes", FirebaseAnalytics.Param.INDEX, "updateTrigger", "Landroidx/compose/runtime/MutableState;", "", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lcom/google/ai/edge/gallery/data/CategoryInfo;Landroidx/compose/ui/graphics/vector/ImageVector;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZZZZLjava/lang/String;IIILandroidx/compose/runtime/MutableState;)V", "getId", "()Ljava/lang/String;", "getLabel", "getCategory", "()Lcom/google/ai/edge/gallery/data/CategoryInfo;", "getIcon", "()Landroidx/compose/ui/graphics/vector/ImageVector;", "getIconVectorResourceId", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getDescription", "getShortDescription", "getDocUrl", "getSourceCodeUrl", "getModels", "()Ljava/util/List;", "getModelNames", "getHandleModelConfigChangesInTask", "()Z", "getExperimental", "getNewFeature", "getUseThemeColor", "getDefaultSystemPrompt", "getAgentNameRes", "()I", "getTextInputPlaceHolderRes", "getIndex", "setIndex", "(I)V", "getUpdateTrigger", "()Landroidx/compose/runtime/MutableState;", "allowCapability", "capability", "Lcom/google/ai/edge/gallery/data/ModelCapability;", "model", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component20", "copy", "(Ljava/lang/String;Ljava/lang/String;Lcom/google/ai/edge/gallery/data/CategoryInfo;Landroidx/compose/ui/graphics/vector/ImageVector;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZZZZLjava/lang/String;IIILandroidx/compose/runtime/MutableState;)Lcom/google/ai/edge/gallery/data/Task;", "equals", "other", "hashCode", "toString", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u0010*R\u0011\u0010\u000b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b,\u0010#R\u0011\u0010\f\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b-\u0010#R\u0011\u0010\r\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b.\u0010#R\u0011\u0010\u000e\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b/\u0010#R\u0017\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010¢\u0006\b\n\u0000\u001a\u0004\b0\u00101R\u0017\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00030\u0013¢\u0006\b\n\u0000\u001a\u0004\b2\u00101R\u0011\u0010\u0014\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b3\u00104R\u0011\u0010\u0016\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b5\u00104R\u0011\u0010\u0017\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b6\u00104R\u0011\u0010\u0018\u001a\u00020\u0015¢\u0006\b\n\u0000\u001a\u0004\b7\u00104R\u0011\u0010\u0019\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b8\u0010#R\u0011\u0010\u001a\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b9\u0010:R\u0011\u0010\u001b\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b;\u0010:R\u001a\u0010\u001c\u001a\u00020\nX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b<\u0010:\"\u0004\b=\u0010>R\u0017\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\u001f0\u001e¢\u0006\b\n\u0000\u001a\u0004\b?\u0010@¨\u0006_"}, m922d2 = {"Lcom/google/ai/edge/gallery/data/Task;", "", "id", "", Constants.ScionAnalytics.PARAM_LABEL, "category", "Lcom/google/ai/edge/gallery/data/CategoryInfo;", "icon", "Landroidx/compose/ui/graphics/vector/ImageVector;", "iconVectorResourceId", "", "description", "shortDescription", "docUrl", "sourceCodeUrl", "models", "", "Lcom/google/ai/edge/gallery/data/Model;", "modelNames", "", "handleModelConfigChangesInTask", "", "experimental", "newFeature", "useThemeColor", "defaultSystemPrompt", "agentNameRes", "textInputPlaceHolderRes", FirebaseAnalytics.Param.INDEX, "updateTrigger", "Landroidx/compose/runtime/MutableState;", "", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lcom/google/ai/edge/gallery/data/CategoryInfo;Landroidx/compose/ui/graphics/vector/ImageVector;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZZZZLjava/lang/String;IIILandroidx/compose/runtime/MutableState;)V", "getId", "()Ljava/lang/String;", "getLabel", "getCategory", "()Lcom/google/ai/edge/gallery/data/CategoryInfo;", "getIcon", "()Landroidx/compose/ui/graphics/vector/ImageVector;", "getIconVectorResourceId", "()Ljava/lang/Integer;", "Ljava/lang/Integer;", "getDescription", "getShortDescription", "getDocUrl", "getSourceCodeUrl", "getModels", "()Ljava/util/List;", "getModelNames", "getHandleModelConfigChangesInTask", "()Z", "getExperimental", "getNewFeature", "getUseThemeColor", "getDefaultSystemPrompt", "getAgentNameRes", "()I", "getTextInputPlaceHolderRes", "getIndex", "setIndex", "(I)V", "getUpdateTrigger", "()Landroidx/compose/runtime/MutableState;", "allowCapability", "capability", "Lcom/google/ai/edge/gallery/data/ModelCapability;", "model", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component20", "copy", "(Ljava/lang/String;Ljava/lang/String;Lcom/google/ai/edge/gallery/data/CategoryInfo;Landroidx/compose/ui/graphics/vector/ImageVector;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZZZZLjava/lang/String;IIILandroidx/compose/runtime/MutableState;)Lcom/google/ai/edge/gallery/data/Task;", "equals", "other", "hashCode", "toString", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final /* data */ class Task {
     public static final int $stable = 8;
     private final int agentNameRes;
@@ -39,7 +38,7 @@ public final /* data */ class Task {
     private final MutableState<Long> updateTrigger;
     private final boolean useThemeColor;
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    
     public final String getId() {
         return this.id;
     }
@@ -52,47 +51,47 @@ public final /* data */ class Task {
         return this.modelNames;
     }
 
-    /* JADX INFO: renamed from: component12, reason: from getter */
+    
     public final boolean getHandleModelConfigChangesInTask() {
         return this.handleModelConfigChangesInTask;
     }
 
-    /* JADX INFO: renamed from: component13, reason: from getter */
+    
     public final boolean getExperimental() {
         return this.experimental;
     }
 
-    /* JADX INFO: renamed from: component14, reason: from getter */
+    
     public final boolean getNewFeature() {
         return this.newFeature;
     }
 
-    /* JADX INFO: renamed from: component15, reason: from getter */
+    
     public final boolean getUseThemeColor() {
         return this.useThemeColor;
     }
 
-    /* JADX INFO: renamed from: component16, reason: from getter */
+    
     public final String getDefaultSystemPrompt() {
         return this.defaultSystemPrompt;
     }
 
-    /* JADX INFO: renamed from: component17, reason: from getter */
+    
     public final int getAgentNameRes() {
         return this.agentNameRes;
     }
 
-    /* JADX INFO: renamed from: component18, reason: from getter */
+    
     public final int getTextInputPlaceHolderRes() {
         return this.textInputPlaceHolderRes;
     }
 
-    /* JADX INFO: renamed from: component19, reason: from getter */
+    
     public final int getIndex() {
         return this.index;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    
     public final String getLabel() {
         return this.label;
     }
@@ -101,37 +100,37 @@ public final /* data */ class Task {
         return this.updateTrigger;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    
     public final CategoryInfo getCategory() {
         return this.category;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    
     public final ImageVector getIcon() {
         return this.icon;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    
     public final Integer getIconVectorResourceId() {
         return this.iconVectorResourceId;
     }
 
-    /* JADX INFO: renamed from: component6, reason: from getter */
+    
     public final String getDescription() {
         return this.description;
     }
 
-    /* JADX INFO: renamed from: component7, reason: from getter */
+    
     public final String getShortDescription() {
         return this.shortDescription;
     }
 
-    /* JADX INFO: renamed from: component8, reason: from getter */
+    
     public final String getDocUrl() {
         return this.docUrl;
     }
 
-    /* JADX INFO: renamed from: component9, reason: from getter */
+    
     public final String getSourceCodeUrl() {
         return this.sourceCodeUrl;
     }

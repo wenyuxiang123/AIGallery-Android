@@ -4,7 +4,7 @@ import com.google.ai.edge.gallery.data.DataStoreRepository;
 import dagger.internal.Factory;
 import dagger.internal.Provider;
 
-/* JADX INFO: loaded from: classes3.dex */
+
 public final class TosViewModel_Factory implements Factory<TosViewModel> {
     private final Provider<DataStoreRepository> dataStoreRepositoryProvider;
 

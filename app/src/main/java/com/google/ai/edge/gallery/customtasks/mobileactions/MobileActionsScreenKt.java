@@ -57,7 +57,6 @@ import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
 import androidx.compose.p000ui.text.TextLayoutResult;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.font.FontWeight;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.TextUnitKt;
 import androidx.compose.runtime.Applier;
@@ -105,22 +104,22 @@ import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: MobileActionsScreen.kt */
-/* JADX INFO: loaded from: classes5.dex */
-@Metadata(m921d1 = {"\u0000\u008e\u0001\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0002\b\u0004\u001ao\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\b\b\u0002\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0012\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\n0\u00142\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00180\u00172\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u001a0\u00032\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\n0\u001cH\u0007¢\u0006\u0004\b\u001d\u0010\u001e\u001aw\u0010\u001f\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u001a0\u00032\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010 \u001a\u00020\u00102\u0012\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\n0\u00142\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00180\u00172\b\b\u0002\u0010!\u001a\u00020\"2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\n0\u001cH\u0007¢\u0006\u0004\b#\u0010$\u001a\u0018\u0010%\u001a\u00020\u00012\u0006\u0010&\u001a\u00020\u00182\u0006\u0010'\u001a\u00020(H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u0014\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000\"\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00060\u0003X\u0082\u0004¢\u0006\u0002\n\u0000\"\u0014\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\b0\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006)²\u0006\n\u0010*\u001a\u00020\u0015X\u008a\u008e\u0002²\u0006\n\u0010+\u001a\u00020,X\u008a\u0084\u0002²\u0006\n\u0010-\u001a\u00020.X\u008a\u0084\u0002²\u0006\n\u0010/\u001a\u000200X\u008a\u0084\u0002²\u0006\n\u00101\u001a\u000202X\u008a\u008e\u0002²\u0006\n\u00103\u001a\u000204X\u008a\u008e\u0002²\u0006\n\u00105\u001a\u000202X\u008a\u008e\u0002²\u0006\n\u00106\u001a\u00020\u0015X\u008a\u008e\u0002²\u0006\n\u00107\u001a\u00020\u0015X\u008a\u008e\u0002²\u0006\n\u00108\u001a\u00020\u0001X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "PROMPT_TEMPLATES", "", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/PromptTemplate;", "SAMPLE_ACTION_ITEMS", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/SampleActionItem;", "TABS", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/Tab;", "MobileActionsScreen", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "mobileActionsViewModel", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsViewModel;", "bottomPadding", "Landroidx/compose/ui/unit/Dp;", "setAppBarControlsDisabled", "Lkotlin/Function1;", "", "curActions", "Landroidx/compose/runtime/snapshots/SnapshotStateList;", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/Action;", "tools", "Lcom/google/ai/edge/litertlm/ToolProvider;", "onProcessingStarted", "Lkotlin/Function0;", "MobileActionsScreen-aA_HZ9I", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsViewModel;FLkotlin/jvm/functions/Function1;Landroidx/compose/runtime/snapshots/SnapshotStateList;Ljava/util/List;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V", "MainUi", "viewModel", "holdToDictateViewModel", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;", "MainUi-_-WMjBM", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Ljava/util/List;FLcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsViewModel;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/snapshots/SnapshotStateList;Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V", "genFormattedFunctionCall", "action", "resources", "Landroid/content/res/Resources;", "app_debug", "recordAudioPermissionGranted", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "holdToDictateUiState", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateUiState;", "uiState", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsUiState;", "curAmplitude", "", "clearInputTextTrigger", "", "selectedTabIndex", "doneGeneratingResponse", "showErrorDialog", "errorDialogContent"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+²\u0006\n\u0010*\u001a\u00020\u0015X\u008a\u008e\u0002²\u0006\n\u0010+\u001a\u00020,X\u008a\u0084\u0002²\u0006\n\u0010-\u001a\u00020.X\u008a\u0084\u0002²\u0006\n\u0010/\u001a\u000200X\u008a\u0084\u0002²\u0006\n\u00101\u001a\u000202X\u008a\u008e\u0002²\u0006\n\u00103\u001a\u000204X\u008a\u008e\u0002²\u0006\n\u00105\u001a\u000202X\u008a\u008e\u0002²\u0006\n\u00106\u001a\u00020\u0015X\u008a\u008e\u0002²\u0006\n\u00107\u001a\u00020\u0015X\u008a\u008e\u0002²\u0006\n\u00108\u001a\u00020\u0001X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "PROMPT_TEMPLATES", "", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/PromptTemplate;", "SAMPLE_ACTION_ITEMS", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/SampleActionItem;", "TABS", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/Tab;", "MobileActionsScreen", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "mobileActionsViewModel", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsViewModel;", "bottomPadding", "Landroidx/compose/ui/unit/Dp;", "setAppBarControlsDisabled", "Lkotlin/Function1;", "", "curActions", "Landroidx/compose/runtime/snapshots/SnapshotStateList;", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/Action;", "tools", "Lcom/google/ai/edge/litertlm/ToolProvider;", "onProcessingStarted", "Lkotlin/Function0;", "MobileActionsScreen-aA_HZ9I", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsViewModel;FLkotlin/jvm/functions/Function1;Landroidx/compose/runtime/snapshots/SnapshotStateList;Ljava/util/List;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V", "MainUi", "viewModel", "holdToDictateViewModel", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;", "MainUi-_-WMjBM", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Ljava/util/List;FLcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsViewModel;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/snapshots/SnapshotStateList;Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V", "genFormattedFunctionCall", "action", "resources", "Landroid/content/res/Resources;", "app_debug", "recordAudioPermissionGranted", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "holdToDictateUiState", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateUiState;", "uiState", "Lcom/google/ai/edge/gallery/customtasks/mobileactions/MobileActionsUiState;", "curAmplitude", "", "clearInputTextTrigger", "", "selectedTabIndex", "doneGeneratingResponse", "showErrorDialog", "errorDialogContent"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MobileActionsScreenKt {
     private static final List<PromptTemplate> PROMPT_TEMPLATES = CollectionsKt.listOf((Object[]) new PromptTemplate[]{new PromptTemplate(C2421R.string.prompt_template_label_flash_on, "Turn on flashlight"), new PromptTemplate(C2421R.string.prompt_template_label_flash_off, "Turn off flashlight"), new PromptTemplate(C2421R.string.prompt_template_label_create_contact, "Create contact John Smith with email address js@example.com and phone number 123 456 7890."), new PromptTemplate(C2421R.string.prompt_template_label_send_email, "Send an email to js@example.com with subject \"Meeting\" and body \"Hi John, let's meet at 3pm tomorrow.\""), new PromptTemplate(C2421R.string.prompt_template_label_create_calendar_event, "Create a calendar event at 2:30pm tomorrow for \"team meeting\""), new PromptTemplate(C2421R.string.prompt_template_label_show_location_on_map, "Show Googleplex on map"), new PromptTemplate(C2421R.string.prompt_template_label_open_wifi_settings, "Open WIFI settings")});
     private static final List<SampleActionItem> SAMPLE_ACTION_ITEMS = CollectionsKt.listOf((Object[]) new SampleActionItem[]{new SampleActionItem(C2421R.string.prompt_template_label_flash_on_off, FlashlightOnKt.getFlashlightOn(Icons.Outlined.INSTANCE)), new SampleActionItem(C2421R.string.prompt_template_label_create_contact, PersonAddKt.getPersonAdd(Icons.Outlined.INSTANCE)), new SampleActionItem(C2421R.string.prompt_template_label_send_email, EmailKt.getEmail(Icons.Outlined.INSTANCE)), new SampleActionItem(C2421R.string.prompt_template_label_create_calendar_event, CalendarMonthKt.getCalendarMonth(Icons.Outlined.INSTANCE)), new SampleActionItem(C2421R.string.prompt_template_label_show_location_on_map, MapKt.getMap(Icons.Outlined.INSTANCE)), new SampleActionItem(C2421R.string.prompt_template_label_open_wifi_settings, WifiKt.getWifi(Icons.Outlined.INSTANCE))});
     private static final List<Tab> TABS = CollectionsKt.listOf((Object[]) new Tab[]{new Tab(C2421R.string.mobile_actions_tab_model_response, ArticleKt.getArticle(Icons.AutoMirrored.Rounded.INSTANCE)), new Tab(C2421R.string.mobile_actions_tab_function_called, FunctionsKt.getFunctions(Icons.Rounded.INSTANCE))});
     private static final String TAG = "AGMAScreen";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$95(Task task, ModelManagerViewModel modelManagerViewModel, List list, float f, MobileActionsViewModel mobileActionsViewModel, Function1 function1, SnapshotStateList snapshotStateList, HoldToDictateViewModel holdToDictateViewModel, Function0 function0, int i, int i2, Composer composer, int i3) {
         m10520MainUi_WMjBM(task, modelManagerViewModel, list, f, mobileActionsViewModel, function1, snapshotStateList, holdToDictateViewModel, function0, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MobileActionsScreen_aA_HZ9I$lambda$7(Task task, ModelManagerViewModel modelManagerViewModel, MobileActionsViewModel mobileActionsViewModel, float f, Function1 function1, SnapshotStateList snapshotStateList, List list, Function0 function0, int i, int i2, Composer composer, int i3) {
         m10521MobileActionsScreenaA_HZ9I(task, modelManagerViewModel, mobileActionsViewModel, f, function1, snapshotStateList, list, function0, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -145,7 +144,7 @@ public final class MobileActionsScreenKt {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: MobileActionsScreen-aA_HZ9I, reason: not valid java name */
+    
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -163,12 +162,12 @@ public final class MobileActionsScreenKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void MobileActionsScreen_aA_HZ9I$lambda$2(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MobileActionsScreen_aA_HZ9I$lambda$4$lambda$3(MutableState $recordAudioPermissionGranted$delegate, boolean permissionGranted) {
         if (permissionGranted) {
             MobileActionsScreen_aA_HZ9I$lambda$2($recordAudioPermissionGranted$delegate, true);
@@ -236,7 +235,7 @@ public final class MobileActionsScreenKt {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: MainUi-_-WMjBM, reason: not valid java name */
+    
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -302,7 +301,7 @@ public final class MobileActionsScreenKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final DisposableEffectResult MainUi___WMjBM$lambda$34$lambda$33(final MobileActionsViewModel $viewModel, DisposableEffectScope DisposableEffect) {
         Intrinsics.checkNotNullParameter(DisposableEffect, "$this$DisposableEffect");
         return new DisposableEffectResult() { // from class: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsScreenKt$MainUi___WMjBM$lambda$34$lambda$33$$inlined$onDispose$1
@@ -313,7 +312,7 @@ public final class MobileActionsScreenKt {
         };
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$40$lambda$39(final CoroutineScope $scope, Function0 $onProcessingStarted, final MobileActionsViewModel $viewModel, Model $model, List $tools, FocusManager $focusManager, MutableIntState $selectedTabIndex$delegate, MutableLongState $clearInputTextTrigger$delegate, final MutableState $doneGeneratingResponse$delegate, final SnapshotStateList $curActions, final Context $context, final Resources $resources, final SnackbarHostState $snackbarHostState, final String $noFunctionCallSnackbarMessage, final MutableState $errorDialogContent$delegate, final MutableState $showErrorDialog$delegate, Task $task, String text) {
         Intrinsics.checkNotNullParameter(text, "text");
         BuildersKt__Builders_commonKt.launch$default($scope, Dispatchers.getMain(), null, new MobileActionsScreenKt$MainUi$send$1$1$1($focusManager, $selectedTabIndex$delegate, $clearInputTextTrigger$delegate, null), 2, null);
@@ -342,7 +341,7 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$40$lambda$39$lambda$36(SnapshotStateList $curActions, MobileActionsViewModel $viewModel, Context $context, Resources $resources, CoroutineScope $scope, MutableState $doneGeneratingResponse$delegate, SnackbarHostState $snackbarHostState, String $noFunctionCallSnackbarMessage) {
         MainUi___WMjBM$lambda$23($doneGeneratingResponse$delegate, true);
         Log.d(TAG, "Actions count: " + $curActions.size());
@@ -368,7 +367,7 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$40$lambda$39$lambda$37(MutableState $doneGeneratingResponse$delegate, MutableState $errorDialogContent$delegate, MutableState $showErrorDialog$delegate, String error) {
         Intrinsics.checkNotNullParameter(error, "error");
         MainUi___WMjBM$lambda$23($doneGeneratingResponse$delegate, true);
@@ -377,15 +376,15 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$46$lambda$45$lambda$44$lambda$42$lambda$41 */
+    
+    
     public static final Unit m453xa50680f0(GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha(0.7f);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$84$lambda$82$lambda$58$lambda$49(long $taskColor, MutableIntState $selectedTabIndex$delegate, TabIndicatorScope PrimaryTabRow, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(PrimaryTabRow, "$this$PrimaryTabRow");
         ComposerKt.sourceInformation($composer, "C508@19604L245:MobileActionsScreen.kt#okf2md");
@@ -399,7 +398,7 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$84$lambda$82$lambda$58$lambda$57(State $uiState$delegate, final MutableIntState $selectedTabIndex$delegate, final long $taskColor, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C*522@20270L37,521@20186L28,523@20336L1371,518@20054L1674:MobileActionsScreen.kt#okf2md");
         boolean z = true;
@@ -461,22 +460,22 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$58$lambda$57$lambda$53$lambda$52 */
+    
+    
     public static final Unit m455x9e54a959(int $index, MutableIntState $selectedTabIndex$delegate) {
         $selectedTabIndex$delegate.setIntValue($index);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$58$lambda$57$lambda$51$lambda$50 */
+    
+    
     public static final Unit m454x748b43d5(boolean $enabled, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($enabled ? 1.0f : 0.3f);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$84$lambda$82$lambda$58$lambda$57$lambda$56(int $index, long $taskColor, Tab $tab, MutableIntState $selectedTabIndex$delegate, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         final long titleColor;
@@ -562,7 +561,7 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Multi-variable type inference failed */
     public static final ContentTransform MainUi___WMjBM$lambda$84$lambda$82$lambda$70$lambda$64$lambda$63(AnimatedContentTransitionScope AnimatedContent) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
@@ -592,31 +591,31 @@ public final class MobileActionsScreenKt {
         }, 1, null).plus(EnterExitTransitionKt.fadeOut$default(AnimationSpecKt.tween$default(50, 0, null, 6, null), 0.0f, 2, null)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$70$lambda$64$lambda$63$lambda$59 */
+    
+    
     public static final int m456x6fdb6691(int it) {
         return 40;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$70$lambda$64$lambda$63$lambda$60 */
+    
+    
     public static final int m457x6fdb66a7(int it) {
         return -40;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$70$lambda$64$lambda$63$lambda$61 */
+    
+    
     public static final int m458x6fdb66a8(int it) {
         return -40;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$70$lambda$64$lambda$63$lambda$62 */
+    
+    
     public static final int m459x6fdb66a9(int it) {
         return 40;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$84$lambda$82$lambda$70$lambda$69(MutableIntState $selectedTabIndex$delegate, State $uiState$delegate, final MutableState $doneGeneratingResponse$delegate, AnimatedContentScope AnimatedContent, int it, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         int $changed$iv;
@@ -782,8 +781,8 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$70$lambda$69$lambda$67$lambda$66$lambda$65 */
+    
+    
     public static final Unit m460x69452ace(String $cdResponse, MutableState $doneGeneratingResponse$delegate, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setContentDescription(semantics, $cdResponse);
@@ -793,36 +792,36 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$84$lambda$82$lambda$81$lambda$72$lambda$71(State $uiState$delegate, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha(MainUi___WMjBM$lambda$11($uiState$delegate).getProcessing() ? 0.5f : 1.0f);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$81$lambda$75$lambda$74$lambda$73 */
+    
+    
     public static final Unit m461x3ca97729(Function1 $send, PromptTemplate $item) {
         $send.invoke($item.getPrompt());
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$81$lambda$80$lambda$77$lambda$76 */
+    
+    
     public static final Unit m462x42e07e89(Function1 $send, String text) {
         Intrinsics.checkNotNullParameter(text, "text");
         $send.invoke(text);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$84$lambda$82$lambda$81$lambda$80$lambda$79$lambda$78 */
+    
+    
     public static final Unit m463x6ca9e40d(MutableIntState $curAmplitude$delegate, int it) {
         $curAmplitude$delegate.setIntValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$84$lambda$83(Task $task, HoldToDictateViewModel $holdToDictateViewModel, float $bottomPadding, MutableIntState $curAmplitude$delegate, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
         ComposerKt.sourceInformation($composer, "C684@26877L182:MobileActionsScreen.kt#okf2md");
@@ -836,7 +835,7 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$94(MutableState $errorDialogContent$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C702@27407L10,702@27360L69:MobileActionsScreen.kt#okf2md");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -853,14 +852,14 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$86$lambda$85(MutableState $showErrorDialog$delegate, MutableState $errorDialogContent$delegate) {
         MainUi___WMjBM$lambda$26($showErrorDialog$delegate, false);
         $errorDialogContent$delegate.setValue("");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$93(final MutableState $showErrorDialog$delegate, final MutableState $errorDialogContent$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C709@27597L85,708@27565L187:MobileActionsScreen.kt#okf2md");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -890,14 +889,14 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$93$lambda$92$lambda$91(MutableState $showErrorDialog$delegate, MutableState $errorDialogContent$delegate) {
         MainUi___WMjBM$lambda$26($showErrorDialog$delegate, false);
         $errorDialogContent$delegate.setValue("");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$90(final MobileActionsViewModel $viewModel, final Context $context, final Model $model, final List $tools, final ModelManagerViewModel $modelManagerViewModel, long $taskColor, final MutableState $showErrorDialog$delegate, final MutableState $errorDialogContent$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C719@27822L409,734@28267L40,718@27794L604:MobileActionsScreen.kt#okf2md");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -927,7 +926,7 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$90$lambda$89$lambda$88(MobileActionsViewModel $viewModel, Context $context, Model $model, List $tools, ModelManagerViewModel $modelManagerViewModel, final MutableState $showErrorDialog$delegate, final MutableState $errorDialogContent$delegate) {
         MainUi___WMjBM$lambda$26($showErrorDialog$delegate, false);
         $errorDialogContent$delegate.setValue("");
@@ -940,7 +939,7 @@ public final class MobileActionsScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$90$lambda$89$lambda$88$lambda$87(MutableState $errorDialogContent$delegate, MutableState $showErrorDialog$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $errorDialogContent$delegate.setValue(it);
@@ -967,7 +966,7 @@ public final class MobileActionsScreenKt {
         return content;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final CharSequence genFormattedFunctionCall$lambda$96(Pair it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return "- " + it.getFirst() + ": \"" + it.getSecond() + "\"";

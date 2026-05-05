@@ -5,7 +5,6 @@ import androidx.compose.p000ui.geometry.Offset;
 import androidx.compose.p000ui.input.pointer.PointerInputChange;
 import androidx.compose.p000ui.input.pointer.PointerInputEventHandler;
 import androidx.compose.p000ui.input.pointer.PointerInputScope;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.Density;
 import androidx.compose.runtime.MutableFloatState;
@@ -19,9 +18,9 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: VerticalSplitView.kt */
-/* JADX INFO: loaded from: classes15.dex */
-@Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 final class VerticalSplitViewKt$VerticalSplitView$2$2$1 implements PointerInputEventHandler {
     final /* synthetic */ MutableState<C1654Dp> $columnHeightDp$delegate;
     final /* synthetic */ MutableFloatState $columnHeightPx$delegate;
@@ -71,7 +70,7 @@ final class VerticalSplitViewKt$VerticalSplitView$2$2$1 implements PointerInputE
         return objDetectDragGestures == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objDetectDragGestures : Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit invoke$lambda$1(Density $localDensity, float $minTopHeight, float $minBottomHeight, MutableFloatState $columnHeightPx$delegate, MutableFloatState $splitRatio$delegate, MutableState $columnHeightDp$delegate, PointerInputChange change, Offset dragAmount) {
         Intrinsics.checkNotNullParameter(change, "change");
         float fVerticalSplitView_ugZX9yg$lambda$4 = VerticalSplitViewKt.VerticalSplitView_ugZX9yg$lambda$4($columnHeightPx$delegate) * VerticalSplitViewKt.VerticalSplitView_ugZX9yg$lambda$1($splitRatio$delegate);

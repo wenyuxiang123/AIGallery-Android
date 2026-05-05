@@ -25,7 +25,6 @@ import androidx.compose.p000ui.input.pointer.SuspendingPointerInputFilterKt;
 import androidx.compose.p000ui.layout.ContentScale;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -58,17 +57,17 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.DelayKt;
 
-/* JADX INFO: compiled from: ZoomableImage.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000<\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\t\u001a¶\u0001\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\b\u0002\u0010\r\u001a\u00020\u000e2\b\b\u0002\u0010\u000f\u001a\u00020\u000e2\b\b\u0002\u0010\u0010\u001a\u00020\u000e2M\b\u0002\u0010\u0011\u001aG\u0012\u0013\u0012\u00110\u0007¢\u0006\f\b\u0013\u0012\b\b\u0014\u0012\u0004\b\b(\u0015\u0012\u0013\u0012\u00110\u0007¢\u0006\f\b\u0013\u0012\b\b\u0014\u0012\u0004\b\b(\u0016\u0012\u0013\u0012\u00110\u0007¢\u0006\f\b\u0013\u0012\b\b\u0014\u0012\u0004\b\b(\u0017\u0012\u0004\u0012\u00020\u00010\u0012H\u0007¢\u0006\u0002\u0010\u0018\u001a\u001a\u0010\u0019\u001a\u00020\u0001*\u00020\f2\u0006\u0010\u001a\u001a\u00020\u000eH\u0086@¢\u0006\u0002\u0010\u001b¨\u0006\u001c"}, m922d2 = {"ZoomableImage", "", "bitmap", "Landroidx/compose/ui/graphics/ImageBitmap;", "modifier", "Landroidx/compose/ui/Modifier;", "minScale", "", "maxScale", "contentScale", "Landroidx/compose/ui/layout/ContentScale;", "pagerState", "Landroidx/compose/foundation/pager/PagerState;", "resetOnImageUpdate", "", "enabled", "twoFingerOnly", "onTransformed", "Lkotlin/Function3;", "Lkotlin/ParameterName;", "name", "offsetX", "offsetY", "scale", "(Landroidx/compose/ui/graphics/ImageBitmap;Landroidx/compose/ui/Modifier;FFLandroidx/compose/ui/layout/ContentScale;Landroidx/compose/foundation/pager/PagerState;ZZZLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V", "setScrolling", "value", "(Landroidx/compose/foundation/pager/PagerState;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "setScrolling", "value", "(Landroidx/compose/foundation/pager/PagerState;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ZoomableImageKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ZoomableImage$lambda$10(ImageBitmap imageBitmap, Modifier modifier, float f, float f2, ContentScale contentScale, PagerState pagerState, boolean z, boolean z2, boolean z3, Function3 function3, int i, int i2, Composer composer, int i3) {
         ZoomableImage(imageBitmap, modifier, f, f2, contentScale, pagerState, z, z2, z3, function3, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ZoomableImage$lambda$1$lambda$0(float f, float f2, float f3) {
         return Unit.INSTANCE;
     }
@@ -246,9 +245,9 @@ public final class ZoomableImageKt {
                     final PagerState pagerState4 = pagerState3;
                     Object value$iv6 = (PointerInputEventHandler) new PointerInputEventHandler() { // from class: com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$ZoomableImage$gestureModifier$1$1
 
-                        /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$ZoomableImage$gestureModifier$1$1$1 */
-                        /* JADX INFO: compiled from: ZoomableImage.kt */
-                        @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+                        
+                        
+                        
                         @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$ZoomableImage$gestureModifier$1$1$1", m932f = "ZoomableImage.kt", m933i = {0, 1}, m934l = {93, 95}, m935m = "invokeSuspend", m936n = {"$this$awaitEachGesture", "$this$awaitEachGesture"}, m938s = {"L$0", "L$0"})
                         static final class C27381 extends RestrictedSuspendLambda implements Function2<AwaitPointerEventScope, Continuation<? super Unit>, Object> {
                             final /* synthetic */ CoroutineScope $coroutineScope;
@@ -327,9 +326,9 @@ public final class ZoomableImageKt {
                                 throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$ZoomableImage$gestureModifier$1$1.C27381.invokeSuspend(java.lang.Object):java.lang.Object");
                             }
 
-                            /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$ZoomableImage$gestureModifier$1$1$1$1, reason: invalid class name */
-                            /* JADX INFO: compiled from: ZoomableImage.kt */
-                            @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+                            
+                            
+                            
                             @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$ZoomableImage$gestureModifier$1$1$1$1", m932f = "ZoomableImage.kt", m933i = {}, m934l = {100}, m935m = "invokeSuspend", m936n = {}, m938s = {})
                             static final class AnonymousClass1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                                 final /* synthetic */ PagerState $pagerState;
@@ -375,9 +374,9 @@ public final class ZoomableImageKt {
                                 }
                             }
 
-                            /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$ZoomableImage$gestureModifier$1$1$1$3, reason: invalid class name */
-                            /* JADX INFO: compiled from: ZoomableImage.kt */
-                            @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+                            
+                            
+                            
                             @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$ZoomableImage$gestureModifier$1$1$1$3", m932f = "ZoomableImage.kt", m933i = {}, m934l = {110}, m935m = "invokeSuspend", m936n = {}, m938s = {})
                             static final class AnonymousClass3 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                                 final /* synthetic */ PagerState $pagerState;
@@ -535,7 +534,7 @@ public final class ZoomableImageKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ZoomableImage$lambda$9$lambda$8$lambda$7(float $minScale, float $maxScale, MutableFloatState $scale, MutableFloatState $offsetX, MutableFloatState $offsetY, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setScaleX(Math.max($minScale, Math.min($maxScale, $scale.getFloatValue())));
@@ -545,9 +544,9 @@ public final class ZoomableImageKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$setScrolling$2 */
-    /* JADX INFO: compiled from: ZoomableImage.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Landroidx/compose/foundation/gestures/ScrollScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.chat.ZoomableImageKt$setScrolling$2", m932f = "ZoomableImage.kt", m933i = {}, m934l = {151}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C27392 extends SuspendLambda implements Function2<ScrollScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ boolean $value;

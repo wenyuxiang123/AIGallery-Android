@@ -2,7 +2,7 @@ package com.google.ai.edge.gallery.customtasks.agentchat;
 
 import dagger.internal.Factory;
 
-/* JADX INFO: loaded from: classes14.dex */
+
 public final class AgentChatTask_Factory implements Factory<AgentChatTask> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public AgentChatTask get() {

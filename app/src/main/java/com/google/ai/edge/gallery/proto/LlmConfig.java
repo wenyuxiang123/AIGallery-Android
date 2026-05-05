@@ -14,7 +14,7 @@ import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> implements LlmConfigOrBuilder {
     public static final int COMPATIBLE_ACCELERATORS_FIELD_NUMBER = 1;
     private static final LlmConfig DEFAULT_INSTANCE;
@@ -69,32 +69,32 @@ public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> im
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setCompatibleAccelerators(int index, String value) {
         value.getClass();
         ensureCompatibleAcceleratorsIsMutable();
         this.compatibleAccelerators_.set(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addCompatibleAccelerators(String value) {
         value.getClass();
         ensureCompatibleAcceleratorsIsMutable();
         this.compatibleAccelerators_.add(value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addAllCompatibleAccelerators(Iterable<String> values) {
         ensureCompatibleAcceleratorsIsMutable();
         AbstractMessageLite.addAll(values, this.compatibleAccelerators_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearCompatibleAccelerators() {
         this.compatibleAccelerators_ = GeneratedMessageLite.emptyProtobufList();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addCompatibleAcceleratorsBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         ensureCompatibleAcceleratorsIsMutable();
@@ -106,12 +106,12 @@ public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> im
         return this.defaultMaxTokens_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setDefaultMaxTokens(int value) {
         this.defaultMaxTokens_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearDefaultMaxTokens() {
         this.defaultMaxTokens_ = 0;
     }
@@ -121,12 +121,12 @@ public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> im
         return this.defaultTopk_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setDefaultTopk(int value) {
         this.defaultTopk_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearDefaultTopk() {
         this.defaultTopk_ = 0;
     }
@@ -136,12 +136,12 @@ public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> im
         return this.defaultTopp_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setDefaultTopp(float value) {
         this.defaultTopp_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearDefaultTopp() {
         this.defaultTopp_ = 0.0f;
     }
@@ -151,12 +151,12 @@ public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> im
         return this.defaultTemperature_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setDefaultTemperature(float value) {
         this.defaultTemperature_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearDefaultTemperature() {
         this.defaultTemperature_ = 0.0f;
     }
@@ -166,12 +166,12 @@ public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> im
         return this.supportImage_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setSupportImage(boolean value) {
         this.supportImage_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearSupportImage() {
         this.supportImage_ = false;
     }
@@ -181,12 +181,12 @@ public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> im
         return this.supportAudio_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setSupportAudio(boolean value) {
         this.supportAudio_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearSupportAudio() {
         this.supportAudio_ = false;
     }
@@ -196,12 +196,12 @@ public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> im
         return this.supportTinyGarden_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setSupportTinyGarden(boolean value) {
         this.supportTinyGarden_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearSupportTinyGarden() {
         this.supportTinyGarden_ = false;
     }
@@ -211,12 +211,12 @@ public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> im
         return this.supportMobileActions_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setSupportMobileActions(boolean value) {
         this.supportMobileActions_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearSupportMobileActions() {
         this.supportMobileActions_ = false;
     }
@@ -226,12 +226,12 @@ public final class LlmConfig extends GeneratedMessageLite<LlmConfig, Builder> im
         return this.supportThinking_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setSupportThinking(boolean value) {
         this.supportThinking_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearSupportThinking() {
         this.supportThinking_ = false;
     }

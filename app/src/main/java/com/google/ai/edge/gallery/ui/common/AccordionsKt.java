@@ -32,7 +32,6 @@ import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.font.FontWeight;
 import androidx.compose.p000ui.text.style.TextOverflow;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -54,17 +53,17 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: Accordions.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u00004\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\u001a\u008d\u0001\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0012\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00010\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u00032\b\b\u0002\u0010\u000b\u001a\u00020\u00052\b\b\u0002\u0010\f\u001a\u00020\r2\u0013\b\u0002\u0010\u000e\u001a\r\u0012\u0004\u0012\u00020\u00010\u000f¢\u0006\u0002\b\u00102\b\b\u0002\u0010\u0011\u001a\u00020\u00052\u0011\u0010\u0012\u001a\r\u0012\u0004\u0012\u00020\u00010\u000f¢\u0006\u0002\b\u0010H\u0007¢\u0006\u0004\b\u0013\u0010\u0014¨\u0006\u0015"}, m922d2 = {"Accordions", "", "title", "", "expanded", "", "onExpandedChange", "Lkotlin/Function1;", "modifier", "Landroidx/compose/ui/Modifier;", "subtitle", "boldTitle", "bgColor", "Landroidx/compose/ui/graphics/Color;", "titleRowAction", "Lkotlin/Function0;", "Landroidx/compose/runtime/Composable;", "hideTitleRowActionOnCollapse", FirebaseAnalytics.Param.CONTENT, "Accordions-ueL0Wzs", "(Ljava/lang/String;ZLkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Ljava/lang/String;ZJLkotlin/jvm/functions/Function2;ZLkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AccordionsKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit Accordions_ueL0Wzs$lambda$8(String str, boolean z, Function1 function1, Modifier modifier, String str2, boolean z2, long j, Function2 function2, boolean z3, Function2 function22, int i, int i2, Composer composer, int i3) {
         m10821AccordionsueL0Wzs(str, z, function1, modifier, str2, z2, j, function2, z3, function22, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: Accordions-ueL0Wzs, reason: not valid java name */
+    
     public static final void m10821AccordionsueL0Wzs(final String title, final boolean expanded, final Function1<? super Boolean, Unit> onExpandedChange, Modifier modifier, String subtitle, boolean boldTitle, long bgColor, Function2<? super Composer, ? super Integer, Unit> function2, boolean hideTitleRowActionOnCollapse, final Function2<? super Composer, ? super Integer, Unit> content, Composer $composer, final int $changed, final int i) {
         String str;
         Composer $composer2;
@@ -417,13 +416,13 @@ public final class AccordionsKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit Accordions_ueL0Wzs$lambda$7$lambda$1$lambda$0(Function1 $onExpandedChange, boolean $expanded) {
         $onExpandedChange.invoke(Boolean.valueOf(!$expanded));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit Accordions_ueL0Wzs$lambda$7$lambda$4$lambda$3(boolean $expanded, Function2 $titleRowAction, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
         ComposerKt.sourceInformation($composer, "C:Accordions.kt#t7sjiu");
@@ -444,7 +443,7 @@ public final class AccordionsKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit Accordions_ueL0Wzs$lambda$7$lambda$6(Function2 $content, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");

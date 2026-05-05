@@ -5,7 +5,7 @@ import com.google.ai.edge.gallery.proto.Skills;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 
-/* JADX INFO: loaded from: classes10.dex */
+
 public final class AppModule_ProvideSkillsSerializerFactory implements Factory<Serializer<Skills>> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public Serializer<Skills> get() {

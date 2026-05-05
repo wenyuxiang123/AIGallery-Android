@@ -50,7 +50,6 @@ import androidx.compose.p000ui.platform.CompositionLocalsKt;
 import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.input.VisualTransformation;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -95,9 +94,9 @@ import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: AddOrEditSkillBottomSheet.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000p\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0011\u001a9\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\f\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\t0\u000f2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\t0\u000fH\u0007¢\u0006\u0002\u0010\u0011\u001aÃ\u0002\u0010\u0012\u001a\u00020\t2\u0006\u0010\u0013\u001a\u00020\u00142\u0012\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00010\u00162\b\u0010\u0017\u001a\u0004\u0018\u00010\u00012\u0014\u0010\u0018\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u0001\u0012\u0004\u0012\u00020\t0\u00192\f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\t0\u000f26\u0010\u001b\u001a2\u0012\u0013\u0012\u00110\u0001¢\u0006\f\b\u001d\u0012\b\b\u001e\u0012\u0004\b\b(\u001e\u0012\u0013\u0012\u00110\u0001¢\u0006\f\b\u001d\u0012\b\b\u001e\u0012\u0004\b\b(\u001f\u0012\u0004\u0012\u00020\t0\u001c2!\u0010 \u001a\u001d\u0012\u0013\u0012\u00110\u0001¢\u0006\f\b\u001d\u0012\b\b\u001e\u0012\u0004\b\b(!\u0012\u0004\u0012\u00020\t0\u00192!\u0010\"\u001a\u001d\u0012\u0013\u0012\u00110\u0001¢\u0006\f\b\u001d\u0012\b\b\u001e\u0012\u0004\b\b(!\u0012\u0004\u0012\u00020\t0\u00192\u0006\u0010#\u001a\u00020\u00012\u0006\u0010$\u001a\u00020\u00012\u0012\u0010%\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t0\u00192\u0006\u0010&\u001a\u00020\u00012\u0012\u0010'\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t0\u00192\u0006\u0010(\u001a\u00020\u00012\u0012\u0010)\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t0\u00192\u0006\u0010*\u001a\u00020+2\b\b\u0002\u0010,\u001a\u00020-H\u0003¢\u0006\u0002\u0010.\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00010\u0004X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006/²\u0006\n\u00100\u001a\u000201X\u008a\u0084\u0002²\u0006\n\u00102\u001a\u000203X\u008a\u008e\u0002²\u0006\f\u00104\u001a\u0004\u0018\u000105X\u008a\u008e\u0002²\u0006\n\u0010\u001e\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00106\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00107\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00108\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u00109\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010:\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u0010;\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u0010<\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010=\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010>\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010?\u001a\u000203X\u008a\u008e\u0002²\u0006\f\u0010\u0017\u001a\u0004\u0018\u00010\u0001X\u008a\u008e\u0002²\u0006\n\u0010@\u001a\u00020\rX\u008a\u008e\u0002²\u0006\n\u0010A\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010B\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u0010C\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u0010D\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u0010E\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010F\u001a\u000203X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "DEFAULT_SCRIPT_NAME", "TABS", "", "CALL_JS_INSTRUCTIONS_TEMPLATE", "INPUT_DATA_PLACEHOLDER", "OUTPUT_DATA_PLACEHOLDER", "AddOrEditSkillBottomSheet", "", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "skillIndex", "", "onDismiss", "Lkotlin/Function0;", "onSuccess", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;ILkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "ScriptsTabContent", "scope", "Lkotlinx/coroutines/CoroutineScope;", "scriptContents", "", "selectedScript", "onScriptSelected", "Lkotlin/Function1;", "onAddDefaultScript", "onScriptChanged", "Lkotlin/Function2;", "Lkotlin/ParameterName;", "name", FirebaseAnalytics.Param.CONTENT, "onScriptAdded", "scriptName", "onScriptDeleted", "curDescription", "requirements", "onRequirementsChange", "inputData", "onInputDataChange", "outputData", "onOutputDataChange", "snackbarHostState", "Landroidx/compose/material3/SnackbarHostState;", "modifier", "Landroidx/compose/ui/Modifier;", "(Lkotlinx/coroutines/CoroutineScope;Ljava/util/Map;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Landroidx/compose/material3/SnackbarHostState;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;III)V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;", "cancelClicked", "", "skill", "Lcom/google/ai/edge/gallery/proto/Skill;", "description", "instructions", "showErrorDialog", "errorMessage", "edited", "showDiscardDialog", "llmPromptGeneratorRequirements", "llmPromptGeneratorInputData", "llmPromptGeneratorOutputData", "scriptsLoading", "selectedTabIndex", "scriptContent", "showAddScriptDialog", "showDeleteConfirmation", "showGenerateLlmPromptBottomSheet", "newScriptName", "expanded"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t0\u00192\u0006\u0010*\u001a\u00020+2\b\b\u0002\u0010,\u001a\u00020-H\u0003¢\u0006\u0002\u0010.\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00010\u0004X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006/²\u0006\n\u00100\u001a\u000201X\u008a\u0084\u0002²\u0006\n\u00102\u001a\u000203X\u008a\u008e\u0002²\u0006\f\u00104\u001a\u0004\u0018\u000105X\u008a\u008e\u0002²\u0006\n\u0010\u001e\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00106\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00107\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00108\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u00109\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010:\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u0010;\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u0010<\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010=\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010>\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010?\u001a\u000203X\u008a\u008e\u0002²\u0006\f\u0010\u0017\u001a\u0004\u0018\u00010\u0001X\u008a\u008e\u0002²\u0006\n\u0010@\u001a\u00020\rX\u008a\u008e\u0002²\u0006\n\u0010A\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010B\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u0010C\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u0010D\u001a\u000203X\u008a\u008e\u0002²\u0006\n\u0010E\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010F\u001a\u000203X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "DEFAULT_SCRIPT_NAME", "TABS", "", "CALL_JS_INSTRUCTIONS_TEMPLATE", "INPUT_DATA_PLACEHOLDER", "OUTPUT_DATA_PLACEHOLDER", "AddOrEditSkillBottomSheet", "", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "skillIndex", "", "onDismiss", "Lkotlin/Function0;", "onSuccess", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;ILkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "ScriptsTabContent", "scope", "Lkotlinx/coroutines/CoroutineScope;", "scriptContents", "", "selectedScript", "onScriptSelected", "Lkotlin/Function1;", "onAddDefaultScript", "onScriptChanged", "Lkotlin/Function2;", "Lkotlin/ParameterName;", "name", FirebaseAnalytics.Param.CONTENT, "onScriptAdded", "scriptName", "onScriptDeleted", "curDescription", "requirements", "onRequirementsChange", "inputData", "onInputDataChange", "outputData", "onOutputDataChange", "snackbarHostState", "Landroidx/compose/material3/SnackbarHostState;", "modifier", "Landroidx/compose/ui/Modifier;", "(Lkotlinx/coroutines/CoroutineScope;Ljava/util/Map;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Landroidx/compose/material3/SnackbarHostState;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;III)V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;", "cancelClicked", "", "skill", "Lcom/google/ai/edge/gallery/proto/Skill;", "description", "instructions", "showErrorDialog", "errorMessage", "edited", "showDiscardDialog", "llmPromptGeneratorRequirements", "llmPromptGeneratorInputData", "llmPromptGeneratorOutputData", "scriptsLoading", "selectedTabIndex", "scriptContent", "showAddScriptDialog", "showDeleteConfirmation", "showGenerateLlmPromptBottomSheet", "newScriptName", "expanded"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AddOrEditSkillBottomSheetKt {
     private static final String DEFAULT_SCRIPT_NAME = "index.html";
     private static final String TAG = "AGAddOrEditSkill";
@@ -106,13 +105,13 @@ public final class AddOrEditSkillBottomSheetKt {
     private static final String INPUT_DATA_PLACEHOLDER = "- [fieldName]: [Data type (String, Number, Array)] - [short description]";
     private static final String OUTPUT_DATA_PLACEHOLDER = "- [fieldName]: [Data type (String, Number, Array)] - [short description]";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddOrEditSkillBottomSheet$lambda$109(SkillManagerViewModel skillManagerViewModel, int i, Function0 function0, Function0 function02, int i2, Composer composer, int i3) {
         AddOrEditSkillBottomSheet(skillManagerViewModel, i, function0, function02, composer, RecomposeScopeImplKt.updateChangedFlags(i2 | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$182(CoroutineScope coroutineScope, Map map, String str, Function1 function1, Function0 function0, Function2 function2, Function1 function12, Function1 function13, String str2, String str3, Function1 function14, String str4, Function1 function15, String str5, Function1 function16, SnackbarHostState snackbarHostState, Modifier modifier, int i, int i2, int i3, Composer composer, int i4) {
         ScriptsTabContent(coroutineScope, map, str, function1, function0, function2, function12, function13, str2, str3, function14, str4, function15, str5, function16, snackbarHostState, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), RecomposeScopeImplKt.updateChangedFlags(i2), i3);
         return Unit.INSTANCE;
@@ -463,7 +462,7 @@ public final class AddOrEditSkillBottomSheetKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Skill AddOrEditSkillBottomSheet$lambda$5(MutableState<Skill> mutableState) {
         MutableState<Skill> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
@@ -536,7 +535,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void AddOrEditSkillBottomSheet$lambda$40(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -546,7 +545,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:99:0x07bf  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -560,14 +559,14 @@ public final class AddOrEditSkillBottomSheetKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.AddOrEditSkillBottomSheetKt.AddOrEditSkillBottomSheet$lambda$94(androidx.compose.material3.SnackbarHostState, boolean, com.google.ai.edge.gallery.proto.Skill, int, androidx.compose.runtime.State, kotlinx.coroutines.CoroutineScope, androidx.compose.runtime.snapshots.SnapshotStateMap, com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.material3.SheetState, kotlin.jvm.functions.Function0, kotlin.jvm.functions.Function0, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, int):kotlin.Unit");
     }
 
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$47 */
+    
     private static final int m384x15f61ca6(MutableIntState $selectedTabIndex$delegate) {
         MutableIntState $this$getValue$iv = $selectedTabIndex$delegate;
         return $this$getValue$iv.getIntValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$52 */
+    
+    
     public static final Unit m386x15f61cc0(final MutableIntState $selectedTabIndex$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C*203@8391L28,204@8444L15,201@8306L170:AddOrEditSkillBottomSheet.kt#41d64j");
         boolean z = true;
@@ -613,15 +612,15 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$52$lambda$50$lambda$49 */
+    
+    
     public static final Unit m387x62e60d92(int $index, MutableIntState $selectedTabIndex$delegate) {
         $selectedTabIndex$delegate.setIntValue($index);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$52$lambda$51 */
+    
+    
     public static final Unit m388xbffde5b5(String $title, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C204@8446L11:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -638,8 +637,8 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82 */
+    
+    
     public static final Unit m389x15f61d1d(ColumnScope $this_Column, CoroutineScope $scope, final SnapshotStateMap $scriptContents, final SkillManagerViewModel $skillManagerViewModel, SnackbarHostState $snackbarHostState, MutableIntState $selectedTabIndex$delegate, boolean $viewingMode, final MutableState $name$delegate, final MutableState $edited$delegate, final MutableState $description$delegate, final MutableState $instructions$delegate, MutableState $scriptsLoading$delegate, final MutableState $selectedScript$delegate, final MutableState $llmPromptGeneratorRequirements$delegate, final MutableState $llmPromptGeneratorInputData$delegate, final MutableState $llmPromptGeneratorOutputData$delegate, final MutableState $skill$delegate, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Composer $composer$iv$iv$iv;
@@ -1081,8 +1080,8 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$62$lambda$54$lambda$53 */
+    
+    
     public static final Unit m390x6a101273(MutableState $edited$delegate, MutableState $name$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         if (!AddOrEditSkillBottomSheet$lambda$23($edited$delegate)) {
@@ -1092,8 +1091,8 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$62$lambda$56$lambda$55 */
+    
+    
     public static final Unit m391x93d977f7(MutableState $edited$delegate, MutableState $description$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         if (!AddOrEditSkillBottomSheet$lambda$23($edited$delegate)) {
@@ -1103,16 +1102,16 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$62$lambda$59$lambda$58$lambda$57 */
+    
+    
     public static final Unit m392xab46e0f8(MutableState $edited$delegate, MutableState $instructions$delegate) {
         AddOrEditSkillBottomSheet$lambda$24($edited$delegate, true);
         $instructions$delegate.setValue(CALL_JS_INSTRUCTIONS_TEMPLATE);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$62$lambda$61$lambda$60 */
+    
+    
     public static final Unit m393xb3139fab(MutableState $edited$delegate, MutableState $instructions$delegate, String newText) {
         Intrinsics.checkNotNullParameter(newText, "newText");
         if (!AddOrEditSkillBottomSheet$lambda$23($edited$delegate)) {
@@ -1122,15 +1121,15 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$65$lambda$64 */
+    
+    
     public static final Unit m394x6de7dcde(MutableState $selectedScript$delegate, String it) {
         $selectedScript$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$67$lambda$66 */
+    
+    
     public static final Unit m395x97b14262(SnapshotStateMap $scriptContents, MutableState $selectedScript$delegate, MutableState $edited$delegate) {
         $scriptContents.put(DEFAULT_SCRIPT_NAME, "");
         $selectedScript$delegate.setValue(DEFAULT_SCRIPT_NAME);
@@ -1138,8 +1137,8 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$69$lambda$68 */
+    
+    
     public static final Unit m396xc17aa7e6(SnapshotStateMap $scriptContents, MutableState $edited$delegate, String name, String content) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(content, "content");
@@ -1150,8 +1149,8 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$71$lambda$70 */
+    
+    
     public static final Unit m397x2206b754(SnapshotStateMap $scriptContents, MutableState $selectedScript$delegate, MutableState $edited$delegate, String scriptName) {
         Intrinsics.checkNotNullParameter(scriptName, "scriptName");
         $scriptContents.put(scriptName, "");
@@ -1160,8 +1159,8 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$74$lambda$73 */
+    
+    
     public static final Unit m398xe0b4cf9a(SnapshotStateMap $scriptContents, MutableState $selectedScript$delegate, MutableState $skill$delegate, SkillManagerViewModel $skillManagerViewModel, MutableState $edited$delegate, String scriptName) {
         Intrinsics.checkNotNullParameter(scriptName, "scriptName");
         $scriptContents.remove(scriptName);
@@ -1176,40 +1175,40 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$76$lambda$75 */
+    
+    
     public static final Unit m399xa7e351e(MutableState $llmPromptGeneratorRequirements$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $llmPromptGeneratorRequirements$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$78$lambda$77 */
+    
+    
     public static final Unit m400x34479aa2(MutableState $llmPromptGeneratorInputData$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $llmPromptGeneratorInputData$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$82$lambda$81$lambda$80$lambda$79 */
+    
+    
     public static final Unit m401x94d3a9fb(MutableState $llmPromptGeneratorOutputData$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $llmPromptGeneratorOutputData$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$91$lambda$84$lambda$83 */
+    
+    
     public static final Unit m402xdb0bbe24(CoroutineScope $scope, MutableState $cancelClicked$delegate, SheetState $sheetState, Function0 $onDismiss) {
         AddOrEditSkillBottomSheet$lambda$3($cancelClicked$delegate, true);
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new C2423x2ce95c65($sheetState, $onDismiss, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$91$lambda$86$lambda$85 */
+    
+    
     public static final Unit m403x4d523a8(CoroutineScope $scope, MutableState $edited$delegate, MutableState $showDiscardDialog$delegate, MutableState $cancelClicked$delegate, SheetState $sheetState, Function0 $onDismiss) {
         if (AddOrEditSkillBottomSheet$lambda$23($edited$delegate)) {
             AddOrEditSkillBottomSheet$lambda$27($showDiscardDialog$delegate, true);
@@ -1220,8 +1219,8 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$91$lambda$90$lambda$89 */
+    
+    
     public static final Unit m404x8f2a9885(SkillManagerViewModel $skillManagerViewModel, int $skillIndex, SnapshotStateMap $scriptContents, MutableState $name$delegate, MutableState $description$delegate, MutableState $instructions$delegate, final Function0 $onDismiss, final Function0 $onSuccess, final MutableState $errorMessage$delegate, final MutableState $showErrorDialog$delegate) {
         $skillManagerViewModel.saveSkillEdit($skillIndex, AddOrEditSkillBottomSheet$lambda$8($name$delegate), AddOrEditSkillBottomSheet$lambda$11($description$delegate), AddOrEditSkillBottomSheet$lambda$14($instructions$delegate), $scriptContents, new Function0() { // from class: com.google.ai.edge.gallery.customtasks.agentchat.AddOrEditSkillBottomSheetKt$$ExternalSyntheticLambda56
             @Override // kotlin.jvm.functions.Function0
@@ -1237,8 +1236,8 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$91$lambda$90$lambda$89$lambda$88 */
+    
+    
     public static final Unit m406xbe122f9e(MutableState $errorMessage$delegate, MutableState $showErrorDialog$delegate, String error) {
         Intrinsics.checkNotNullParameter(error, "error");
         $errorMessage$delegate.setValue(error);
@@ -1246,21 +1245,21 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddOrEditSkillBottomSheet$lambda$94$lambda$93$lambda$92$lambda$91$lambda$90$lambda$89$lambda$87 */
+    
+    
     public static final Unit m405xbe122f9d(Function0 $onDismiss, Function0 $onSuccess) {
         $onDismiss.invoke();
         $onSuccess.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddOrEditSkillBottomSheet$lambda$96$lambda$95(MutableState $showErrorDialog$delegate) {
         AddOrEditSkillBottomSheet$lambda$18($showErrorDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddOrEditSkillBottomSheet$lambda$100(MutableState $errorMessage$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C428@16833L18:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1277,7 +1276,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddOrEditSkillBottomSheet$lambda$99(final MutableState $showErrorDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C430@16904L27,430@16887L83:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1307,19 +1306,19 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddOrEditSkillBottomSheet$lambda$99$lambda$98$lambda$97(MutableState $showErrorDialog$delegate) {
         AddOrEditSkillBottomSheet$lambda$18($showErrorDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddOrEditSkillBottomSheet$lambda$102$lambda$101(MutableState $showDiscardDialog$delegate) {
         AddOrEditSkillBottomSheet$lambda$27($showDiscardDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddOrEditSkillBottomSheet$lambda$105(final CoroutineScope $scope, final SheetState $sheetState, final Function0 $onDismiss, final MutableState $cancelClicked$delegate, final MutableState $showDiscardDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C442@17310L183,452@17600L12,451@17541L143,441@17282L474:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1350,7 +1349,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddOrEditSkillBottomSheet$lambda$105$lambda$104$lambda$103(CoroutineScope $scope, MutableState $cancelClicked$delegate, SheetState $sheetState, Function0 $onDismiss, MutableState $showDiscardDialog$delegate) {
         AddOrEditSkillBottomSheet$lambda$3($cancelClicked$delegate, true);
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new AddOrEditSkillBottomSheetKt$AddOrEditSkillBottomSheet$7$1$1$1($sheetState, $onDismiss, null), 3, null);
@@ -1358,7 +1357,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddOrEditSkillBottomSheet$lambda$108(final MutableState $showDiscardDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C460@17819L29,460@17798L111:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1388,7 +1387,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddOrEditSkillBottomSheet$lambda$108$lambda$107$lambda$106(MutableState $showDiscardDialog$delegate) {
         AddOrEditSkillBottomSheet$lambda$27($showDiscardDialog$delegate, false);
         return Unit.INSTANCE;
@@ -2031,13 +2030,13 @@ public final class AddOrEditSkillBottomSheetKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$155$lambda$146$lambda$131$lambda$130(MutableState $expanded$delegate, boolean it) {
         ScriptsTabContent$lambda$155$lambda$146$lambda$129($expanded$delegate, !ScriptsTabContent$lambda$155$lambda$146$lambda$128($expanded$delegate));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$155$lambda$146$lambda$141(String $selectedScript, final MutableState $expanded$delegate, final List $scripts, final Function1 $onScriptSelected, ExposedDropdownMenuBoxScope ExposedDropdownMenuBox, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(ExposedDropdownMenuBox, "$this$ExposedDropdownMenuBox");
         ComposerKt.sourceInformation($composer, "C529@20247L2,532@20377L65,527@20158L441,537@20670L20,537@20692L279,537@20610L361:AddOrEditSkillBottomSheet.kt#41d64j");
@@ -2100,14 +2099,14 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ScriptsTabContent$lambda$155$lambda$146$lambda$141$lambda$133$lambda$132 */
+    
+    
     public static final Unit m407x21531626(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$155$lambda$146$lambda$141$lambda$134(MutableState $expanded$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C532@20407L33:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2124,14 +2123,14 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ScriptsTabContent$lambda$155$lambda$146$lambda$141$lambda$136$lambda$135 */
+    
+    
     public static final Unit m408x38680646(MutableState $expanded$delegate) {
         ScriptsTabContent$lambda$155$lambda$146$lambda$129($expanded$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$155$lambda$146$lambda$141$lambda$140(List $scripts, final Function1 $onScriptSelected, final MutableState $expanded$delegate, ColumnScope ExposedDropdownMenu, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(ExposedDropdownMenu, "$this$ExposedDropdownMenu");
         ComposerKt.sourceInformation($composer, "C*540@20787L16,541@20831L97,539@20746L199:AddOrEditSkillBottomSheet.kt#41d64j");
@@ -2175,8 +2174,8 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ScriptsTabContent$lambda$155$lambda$146$lambda$141$lambda$140$lambda$137 */
+    
+    
     public static final Unit m409xf8c12c8f(String $script, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C540@20789L12:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2193,39 +2192,39 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ScriptsTabContent$lambda$155$lambda$146$lambda$141$lambda$140$lambda$139$lambda$138 */
+    
+    
     public static final Unit m410xf0cc55ec(Function1 $onScriptSelected, String $script, MutableState $expanded$delegate) {
         $onScriptSelected.invoke($script);
         ScriptsTabContent$lambda$155$lambda$146$lambda$129($expanded$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$155$lambda$146$lambda$143$lambda$142(MutableState $showAddScriptDialog$delegate) {
         ScriptsTabContent$lambda$115($showAddScriptDialog$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$155$lambda$146$lambda$145$lambda$144(MutableState $showDeleteConfirmation$delegate) {
         ScriptsTabContent$lambda$118($showDeleteConfirmation$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$155$lambda$151$lambda$148$lambda$147(MutableState $showGenerateLlmPromptBottomSheet$delegate) {
         ScriptsTabContent$lambda$121($showGenerateLlmPromptBottomSheet$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$155$lambda$151$lambda$150$lambda$149(CoroutineScope $scope, Clipboard $clipboard, String $selectedScript, Function2 $onScriptChanged) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new AddOrEditSkillBottomSheetKt$ScriptsTabContent$3$2$2$1$1($clipboard, $selectedScript, $onScriptChanged, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$155$lambda$154$lambda$153(String $selectedScript, Function2 $onScriptChanged, String newContent) {
         Intrinsics.checkNotNullParameter(newContent, "newContent");
         if ($selectedScript != null) {
@@ -2234,13 +2233,13 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$157$lambda$156(MutableState $showAddScriptDialog$delegate) {
         ScriptsTabContent$lambda$115($showAddScriptDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$167(final Map $scriptContents, final MutableState $newScriptName$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C642@23977L22,645@24157L246,640@23899L515:AddOrEditSkillBottomSheet.kt#41d64j");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2277,14 +2276,14 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$167$lambda$165$lambda$164(MutableState $newScriptName$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $newScriptName$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$167$lambda$166(Map $scriptContents, MutableState $newScriptName$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2309,7 +2308,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$160(final Function1 $onScriptAdded, Map $scriptContents, final MutableState $newScriptName$delegate, final MutableState $showAddScriptDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C657@24484L174,656@24456L364:AddOrEditSkillBottomSheet.kt#41d64j");
         boolean z = false;
@@ -2345,7 +2344,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$160$lambda$159$lambda$158(Function1 $onScriptAdded, MutableState $newScriptName$delegate, MutableState $showAddScriptDialog$delegate) {
         String trimmedName = StringsKt.trim((CharSequence) ScriptsTabContent$lambda$123($newScriptName$delegate)).toString();
         $onScriptAdded.invoke(trimmedName);
@@ -2354,7 +2353,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$163(final MutableState $showAddScriptDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C669@24883L31,669@24862L113:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2384,19 +2383,19 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$163$lambda$162$lambda$161(MutableState $showAddScriptDialog$delegate) {
         ScriptsTabContent$lambda$115($showAddScriptDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$169$lambda$168(MutableState $showDeleteConfirmation$delegate) {
         ScriptsTabContent$lambda$118($showDeleteConfirmation$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$177(String $selectedScript, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C681@25230L58:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2413,7 +2412,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$173(final String $selectedScript, final Function1 $onScriptDeleted, final MutableState $showDeleteConfirmation$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C684@25352L148,690@25607L12,689@25548L143,683@25324L438:AddOrEditSkillBottomSheet.kt#41d64j");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2444,7 +2443,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$173$lambda$172$lambda$171(String $selectedScript, Function1 $onScriptDeleted, MutableState $showDeleteConfirmation$delegate) {
         if ($selectedScript != null) {
             $onScriptDeleted.invoke($selectedScript);
@@ -2453,7 +2452,7 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$176(final MutableState $showDeleteConfirmation$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C698@25825L34,698@25804L116:AddOrEditSkillBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2483,19 +2482,19 @@ public final class AddOrEditSkillBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$176$lambda$175$lambda$174(MutableState $showDeleteConfirmation$delegate) {
         ScriptsTabContent$lambda$118($showDeleteConfirmation$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$179$lambda$178(MutableState $showGenerateLlmPromptBottomSheet$delegate) {
         ScriptsTabContent$lambda$121($showGenerateLlmPromptBottomSheet$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ScriptsTabContent$lambda$181$lambda$180(CoroutineScope $scope, SnackbarHostState $snackbarHostState, String $promptCopiedMessage, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new AddOrEditSkillBottomSheetKt$ScriptsTabContent$13$1$1($snackbarHostState, $promptCopiedMessage, null), 3, null);

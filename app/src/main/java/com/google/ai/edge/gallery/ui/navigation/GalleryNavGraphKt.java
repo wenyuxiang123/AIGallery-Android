@@ -39,7 +39,6 @@ import androidx.compose.p000ui.layout.OnGloballyPositionedModifierKt;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
 import androidx.compose.p000ui.platform.CompositionLocalsKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.Density;
 import androidx.compose.p000ui.unit.IntOffset;
@@ -130,9 +129,9 @@ import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: GalleryNavGraph.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000\u0084\u0001\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a\u000e\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00100\u000fH\u0002\u001a\u000e\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00100\u000fH\u0002\u001a\u0010\u0010\u0012\u001a\u00020\u0013*\u0006\u0012\u0002\b\u00030\u0014H\u0002\u001a\u0010\u0010\u0015\u001a\u00020\u0016*\u0006\u0012\u0002\b\u00030\u0014H\u0002\u001a\u0010\u0010\u0017\u001a\u00020\u0013*\u0006\u0012\u0002\b\u00030\u0014H\u0002\u001a\u0010\u0010\u0018\u001a\u00020\u0016*\u0006\u0012\u0002\b\u00030\u0014H\u0002\u001a'\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\b\b\u0002\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 H\u0007¢\u0006\u0002\u0010!\u001ak\u0010\"\u001a\u00020\u001a2\u0006\u0010#\u001a\u00020$2\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020&2\u0006\u0010(\u001a\u00020&2\f\u0010)\u001a\b\u0012\u0004\u0012\u00020\u001a0*2&\u0010+\u001a\"\u0012\u0013\u0012\u00110-¢\u0006\f\b.\u0012\b\b/\u0012\u0004\b\b(0\u0012\u0004\u0012\u00020\u001a0,¢\u0006\u0002\b1H\u0003¢\u0006\u0002\u00102\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\f\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u00063²\u0006\n\u00104\u001a\u00020&X\u008a\u008e\u0002²\u0006\f\u00105\u001a\u0004\u0018\u00010$X\u008a\u008e\u0002²\u0006\n\u00106\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u00107\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u00108\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u00109\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u0010%\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u0010'\u001a\u00020&X\u008a\u008e\u0002²\u0006\u0012\u0010:\u001a\n\u0012\u0004\u0012\u00020\u001a\u0018\u00010*X\u008a\u008e\u0002²\u0006\n\u0010;\u001a\u00020<X\u008a\u0084\u0002²\u0006\n\u0010=\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u0010>\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u0010?\u001a\u00020\bX\u008a\u008e\u0002²\u0006\n\u0010@\u001a\u00020-X\u008a\u0084\u0002"}, m922d2 = {"TAG", "", "ROUTE_HOMESCREEN", "ROUTE_MODEL_LIST", "ROUTE_MODEL", "ROUTE_BENCHMARK", "ROUTE_MODEL_MANAGER", "ENTER_ANIMATION_DURATION_MS", "", "ENTER_ANIMATION_EASING", "Landroidx/compose/animation/core/Easing;", "ENTER_ANIMATION_DELAY_MS", "EXIT_ANIMATION_DURATION_MS", "EXIT_ANIMATION_EASING", "enterTween", "Landroidx/compose/animation/core/FiniteAnimationSpec;", "Landroidx/compose/ui/unit/IntOffset;", "exitTween", "slideEnter", "Landroidx/compose/animation/EnterTransition;", "Landroidx/compose/animation/AnimatedContentTransitionScope;", "slideExit", "Landroidx/compose/animation/ExitTransition;", "slideUpEnter", "slideDownExit", "GalleryNavHost", "", "navController", "Landroidx/navigation/NavHostController;", "modifier", "Landroidx/compose/ui/Modifier;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "(Landroidx/navigation/NavHostController;Landroidx/compose/ui/Modifier;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Landroidx/compose/runtime/Composer;II)V", "CustomTaskScreen", "task", "Lcom/google/ai/edge/gallery/data/Task;", "disableAppBarControls", "", "hideTopBar", "useThemeColor", "onNavigateUp", "Lkotlin/Function0;", FirebaseAnalytics.Param.CONTENT, "Lkotlin/Function1;", "Landroidx/compose/ui/unit/Dp;", "Lkotlin/ParameterName;", "name", "bottomPadding", "Landroidx/compose/runtime/Composable;", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;ZZZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;I)V", "app_debug", "showModelManager", "pickedTask", "enableHomeScreenAnimation", "enableModelListAnimation", "promoDismissed", "startAnimation", "customNavigateUpCallback", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "navigatingUp", "showErrorDialog", "appBarHeight", "animatedTopPadding"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\b\u0012\u0004\u0012\u00020\u001a0*2&\u0010+\u001a\"\u0012\u0013\u0012\u00110-¢\u0006\f\b.\u0012\b\b/\u0012\u0004\b\b(0\u0012\u0004\u0012\u00020\u001a0,¢\u0006\u0002\b1H\u0003¢\u0006\u0002\u00102\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\f\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u00063²\u0006\n\u00104\u001a\u00020&X\u008a\u008e\u0002²\u0006\f\u00105\u001a\u0004\u0018\u00010$X\u008a\u008e\u0002²\u0006\n\u00106\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u00107\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u00108\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u00109\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u0010%\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u0010'\u001a\u00020&X\u008a\u008e\u0002²\u0006\u0012\u0010:\u001a\n\u0012\u0004\u0012\u00020\u001a\u0018\u00010*X\u008a\u008e\u0002²\u0006\n\u0010;\u001a\u00020<X\u008a\u0084\u0002²\u0006\n\u0010=\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u0010>\u001a\u00020&X\u008a\u008e\u0002²\u0006\n\u0010?\u001a\u00020\bX\u008a\u008e\u0002²\u0006\n\u0010@\u001a\u00020-X\u008a\u0084\u0002"}, m922d2 = {"TAG", "", "ROUTE_HOMESCREEN", "ROUTE_MODEL_LIST", "ROUTE_MODEL", "ROUTE_BENCHMARK", "ROUTE_MODEL_MANAGER", "ENTER_ANIMATION_DURATION_MS", "", "ENTER_ANIMATION_EASING", "Landroidx/compose/animation/core/Easing;", "ENTER_ANIMATION_DELAY_MS", "EXIT_ANIMATION_DURATION_MS", "EXIT_ANIMATION_EASING", "enterTween", "Landroidx/compose/animation/core/FiniteAnimationSpec;", "Landroidx/compose/ui/unit/IntOffset;", "exitTween", "slideEnter", "Landroidx/compose/animation/EnterTransition;", "Landroidx/compose/animation/AnimatedContentTransitionScope;", "slideExit", "Landroidx/compose/animation/ExitTransition;", "slideUpEnter", "slideDownExit", "GalleryNavHost", "", "navController", "Landroidx/navigation/NavHostController;", "modifier", "Landroidx/compose/ui/Modifier;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "(Landroidx/navigation/NavHostController;Landroidx/compose/ui/Modifier;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Landroidx/compose/runtime/Composer;II)V", "CustomTaskScreen", "task", "Lcom/google/ai/edge/gallery/data/Task;", "disableAppBarControls", "", "hideTopBar", "useThemeColor", "onNavigateUp", "Lkotlin/Function0;", FirebaseAnalytics.Param.CONTENT, "Lkotlin/Function1;", "Landroidx/compose/ui/unit/Dp;", "Lkotlin/ParameterName;", "name", "bottomPadding", "Landroidx/compose/runtime/Composable;", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;ZZZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;I)V", "app_debug", "showModelManager", "pickedTask", "enableHomeScreenAnimation", "enableModelListAnimation", "promoDismissed", "startAnimation", "customNavigateUpCallback", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "navigatingUp", "showErrorDialog", "appBarHeight", "animatedTopPadding"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class GalleryNavGraphKt {
     private static final int ENTER_ANIMATION_DELAY_MS = 100;
     private static final int ENTER_ANIMATION_DURATION_MS = 500;
@@ -146,8 +145,8 @@ public final class GalleryNavGraphKt {
     private static final Easing ENTER_ANIMATION_EASING = EasingFunctionsKt.getEaseOutExpo();
     private static final Easing EXIT_ANIMATION_EASING = EasingFunctionsKt.getEaseOutExpo();
 
-    /* JADX INFO: compiled from: GalleryNavGraph.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -173,13 +172,13 @@ public final class GalleryNavGraphKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$134(Task task, ModelManagerViewModel modelManagerViewModel, boolean z, boolean z2, boolean z3, Function0 function0, Function3 function3, int i, Composer composer, int i2) {
         CustomTaskScreen(task, modelManagerViewModel, z, z2, z3, function0, function3, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$96(NavHostController navHostController, Modifier modifier, ModelManagerViewModel modelManagerViewModel, int i, int i2, Composer composer, int i3) {
         GalleryNavHost(navHostController, modifier, modelManagerViewModel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -422,7 +421,7 @@ public final class GalleryNavGraphKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final DisposableEffectResult GalleryNavHost$lambda$16$lambda$15(final LifecycleOwner $lifecycleOwner, final ModelManagerViewModel $modelManagerViewModel, DisposableEffectScope DisposableEffect) {
         Intrinsics.checkNotNullParameter(DisposableEffect, "$this$DisposableEffect");
         final LifecycleEventObserver observer = new LifecycleEventObserver() { // from class: com.google.ai.edge.gallery.ui.navigation.GalleryNavGraphKt$$ExternalSyntheticLambda6
@@ -440,7 +439,7 @@ public final class GalleryNavGraphKt {
         };
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void GalleryNavHost$lambda$16$lambda$15$lambda$13(ModelManagerViewModel $modelManagerViewModel, LifecycleOwner lifecycleOwner, Lifecycle.Event event) {
         Intrinsics.checkNotNullParameter(lifecycleOwner, "<unused var>");
         Intrinsics.checkNotNullParameter(event, "event");
@@ -456,19 +455,19 @@ public final class GalleryNavGraphKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final EnterTransition GalleryNavHost$lambda$18$lambda$17(AnimatedContentTransitionScope NavHost) {
         Intrinsics.checkNotNullParameter(NavHost, "$this$NavHost");
         return EnterTransition.INSTANCE.getNone();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ExitTransition GalleryNavHost$lambda$20$lambda$19(AnimatedContentTransitionScope NavHost) {
         Intrinsics.checkNotNullParameter(NavHost, "$this$NavHost");
         return ExitTransition.INSTANCE.getNone();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94(final Modifier $modifier, final ModelManagerViewModel $modelManagerViewModel, final NavHostController $navController, final MutableState $enableHomeScreenAnimation$delegate, final MutableState $pickedTask$delegate, final MutableState $enableModelListAnimation$delegate, final Ref.ObjectRef $lastNavigatedModelName, NavGraphBuilder NavHost) {
         Intrinsics.checkNotNullParameter(NavHost, "$this$NavHost");
         NavGraphBuilderKt.composable$default(NavHost, ROUTE_HOMESCREEN, (List) null, (List) null, (Function1) null, (Function1) null, (Function1) null, (Function1) null, (Function1) null, ComposableLambdaKt.composableLambdaInstance(-381246958, true, new Function4() { // from class: com.google.ai.edge.gallery.ui.navigation.GalleryNavGraphKt$$ExternalSyntheticLambda12
@@ -559,7 +558,7 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$41(Modifier $modifier, final ModelManagerViewModel $modelManagerViewModel, final NavHostController $navController, final MutableState $enableHomeScreenAnimation$delegate, final MutableState $pickedTask$delegate, final MutableState $enableModelListAnimation$delegate, AnimatedContentScope composable, NavBackStackEntry it, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
@@ -578,8 +577,7 @@ public final class GalleryNavGraphKt {
         int compositeKeyHash$iv$iv = Long.hashCode(ComposablesKt.getCurrentCompositeKeyHashCode($composer, 0));
         CompositionLocalMap localMap$iv$iv = $composer.getCurrentCompositionLocalMap();
         Modifier materialized$iv$iv = ComposedModifierKt.materializeModifier($composer, modifier$iv);
-        Function0<ComposeUiNode> constructor = ComposeUiNode.INSTANCE.getConstructor();
-        int $changed$iv$iv$iv = (($changed$iv$iv << 6) & 896) | 6;
+        Function0<ComposeUiNode> consed$iv$iv << 6) & 896) | 6;
         ComposerKt.sourceInformationMarkerStart($composer, -553112988, "CC(ReusableComposeNode)N(factory,update,content)399@15590L9:Composables.kt#9igjgp");
         if (!($composer.getApplier() instanceof Applier)) {
             ComposablesKt.invalidApplier();
@@ -668,7 +666,7 @@ public final class GalleryNavGraphKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$41$lambda$40$lambda$29(ModelManagerViewModel $modelManagerViewModel, final NavHostController $navController, MutableState $enableHomeScreenAnimation$delegate, final MutableState $pickedTask$delegate, final MutableState $enableModelListAnimation$delegate, Composer $composer, int $changed) {
         CreationExtras extras$iv$iv;
         ComposerKt.sourceInformation($composer, "C198@7896L15,200@8005L340,209@8377L47,196@7798L663:GalleryNavGraph.kt#jlis1r");
@@ -734,8 +732,8 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: GalleryNavHost$lambda$94$lambda$41$lambda$40$lambda$29$lambda$26$lambda$25 */
+    
+    
     public static final Unit m584xe72af151(NavHostController $navController, MutableState $pickedTask$delegate, MutableState $enableModelListAnimation$delegate, Task task) {
         Intrinsics.checkNotNullParameter(task, "task");
         $pickedTask$delegate.setValue(task);
@@ -752,20 +750,20 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: GalleryNavHost$lambda$94$lambda$41$lambda$40$lambda$29$lambda$28$lambda$27 */
+    
+    
     public static final Unit m585x10f456d5(NavHostController $navController) {
         NavController.navigate$default((NavController) $navController, ROUTE_MODEL_MANAGER, (NavOptions) null, (Navigator.Extras) null, 6, (Object) null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ContentTransform GalleryNavHost$lambda$94$lambda$41$lambda$40$lambda$31$lambda$30(AnimatedContentTransitionScope AnimatedContent) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
         return AnimatedContentKt.togetherWith(EnterExitTransitionKt.fadeIn$default(null, 0.0f, 3, null), EnterExitTransitionKt.fadeOut$default(null, 0.0f, 3, null));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$41$lambda$40$lambda$39(Function2 $homeScreenContent, final ModelManagerViewModel $modelManagerViewModel, final String $promoId, final MutableState $promoDismissed$delegate, AnimatedContentScope AnimatedContent, boolean dismissed, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
         ComposerKt.sourceInformation($composer, "C:GalleryNavGraph.kt#jlis1r");
@@ -818,12 +816,12 @@ public final class GalleryNavGraphKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void GalleryNavHost$lambda$94$lambda$41$lambda$40$lambda$39$lambda$34(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$41$lambda$40$lambda$39$lambda$38(final ModelManagerViewModel $modelManagerViewModel, final String $promoId, final MutableState $promoDismissed$delegate, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
         ComposerKt.sourceInformation($composer, "C238@9476L161,237@9430L225:GalleryNavGraph.kt#jlis1r");
@@ -851,15 +849,15 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: GalleryNavHost$lambda$94$lambda$41$lambda$40$lambda$39$lambda$38$lambda$37$lambda$36 */
+    
+    
     public static final Unit m586xb325e92e(ModelManagerViewModel $modelManagerViewModel, String $promoId, MutableState $promoDismissed$delegate) {
         $modelManagerViewModel.getDataStoreRepository().addViewedPromoId($promoId);
         GalleryNavHost$lambda$94$lambda$41$lambda$40$lambda$23($promoDismissed$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Multi-variable type inference failed */
     public static final EnterTransition GalleryNavHost$lambda$94$lambda$42(AnimatedContentTransitionScope composable) {
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
@@ -869,7 +867,7 @@ public final class GalleryNavGraphKt {
         return EnterTransition.INSTANCE.getNone();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Multi-variable type inference failed */
     public static final ExitTransition GalleryNavHost$lambda$94$lambda$43(AnimatedContentTransitionScope composable) {
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
@@ -879,7 +877,7 @@ public final class GalleryNavGraphKt {
         return ExitTransition.INSTANCE.getNone();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$52(MutableState $pickedTask$delegate, ModelManagerViewModel $modelManagerViewModel, final NavHostController $navController, MutableState $enableModelListAnimation$delegate, final MutableState $enableHomeScreenAnimation$delegate, AnimatedContentScope composable, NavBackStackEntry it, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -947,14 +945,14 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$52$lambda$51$lambda$47$lambda$46(NavHostController $navController, Task $it, Model model) {
         Intrinsics.checkNotNullParameter(model, "model");
         NavController.navigate$default((NavController) $navController, "route_model/" + $it.getId() + "/" + model.getName(), (NavOptions) null, (Navigator.Extras) null, 6, (Object) null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$52$lambda$51$lambda$50$lambda$49(NavHostController $navController, Model model) {
         Intrinsics.checkNotNullParameter(model, "model");
         FirebaseAnalytics firebaseAnalytics = AnalyticsKt.getFirebaseAnalytics();
@@ -969,40 +967,40 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$52$lambda$51$lambda$45$lambda$44(NavHostController $navController, MutableState $enableHomeScreenAnimation$delegate) {
         GalleryNavHost$lambda$8($enableHomeScreenAnimation$delegate, false);
         $navController.navigateUp();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$53(NavArgumentBuilder navArgument) {
         Intrinsics.checkNotNullParameter(navArgument, "$this$navArgument");
         navArgument.setType(NavType.StringType);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$54(NavArgumentBuilder navArgument) {
         Intrinsics.checkNotNullParameter(navArgument, "$this$navArgument");
         navArgument.setType(NavType.StringType);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final EnterTransition GalleryNavHost$lambda$94$lambda$55(AnimatedContentTransitionScope composable) {
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
         return slideEnter(composable);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ExitTransition GalleryNavHost$lambda$94$lambda$56(AnimatedContentTransitionScope composable) {
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
         return slideExit(composable);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r9v0, types: [T, java.lang.Object, java.lang.String] */
     public static final Unit GalleryNavHost$lambda$94$lambda$76(final ModelManagerViewModel modelManagerViewModel, final Ref.ObjectRef $lastNavigatedModelName, final NavHostController $navController, final MutableState $enableModelListAnimation$delegate, AnimatedContentScope composable, NavBackStackEntry backStackEntry, Composer $composer, int $changed) {
@@ -1118,7 +1116,7 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$57(Ref.ObjectRef $lastNavigatedModelName, NavHostController $navController, MutableState $enableModelListAnimation$delegate) {
         GalleryNavHost$lambda$11($enableModelListAnimation$delegate, false);
         $lastNavigatedModelName.element = "";
@@ -1149,7 +1147,7 @@ public final class GalleryNavGraphKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$67(Ref.ObjectRef $lastNavigatedModelName, NavHostController $navController, CustomTask $customTask, CoroutineScope $scope, MutableState $customNavigateUpCallback$delegate, MutableState $enableModelListAnimation$delegate, ModelManagerViewModel $modelManagerViewModel, Context $context) {
         if (GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$65($customNavigateUpCallback$delegate) != null) {
             Function0<Unit> function0GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$65 = GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$65($customNavigateUpCallback$delegate);
@@ -1168,7 +1166,7 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$74(CustomTask $customTask, ModelManagerViewModel $modelManagerViewModel, final MutableState $disableAppBarControls$delegate, final MutableState $hideTopBar$delegate, final MutableState $customNavigateUpCallback$delegate, C1654Dp bottomPadding, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "CP(0:c#ui.unit.Dp)365@14050L30,366@14121L20,367@14193L33,360@13815L448:GalleryNavGraph.kt#jlis1r");
         int $dirty = $changed;
@@ -1231,28 +1229,28 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$74$lambda$69$lambda$68 */
+    
+    
     public static final Unit m587xfcac9869(MutableState $disableAppBarControls$delegate, boolean it) {
         GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$60($disableAppBarControls$delegate, it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$74$lambda$71$lambda$70 */
+    
+    
     public static final Unit m588x5d38a7d7(MutableState $hideTopBar$delegate, boolean it) {
         GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$63($hideTopBar$delegate, !it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: GalleryNavHost$lambda$94$lambda$76$lambda$75$lambda$74$lambda$73$lambda$72 */
+    
+    
     public static final Unit m589x87020d5b(MutableState $customNavigateUpCallback$delegate, Function0 it) {
         $customNavigateUpCallback$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Multi-variable type inference failed */
     public static final EnterTransition GalleryNavHost$lambda$94$lambda$77(AnimatedContentTransitionScope composable) {
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
@@ -1267,7 +1265,7 @@ public final class GalleryNavGraphKt {
         return slideUpEnter(composable);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Multi-variable type inference failed */
     public static final ExitTransition GalleryNavHost$lambda$94$lambda$78(AnimatedContentTransitionScope composable) {
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
@@ -1282,7 +1280,7 @@ public final class GalleryNavGraphKt {
         return slideDownExit(composable);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$86(ModelManagerViewModel $modelManagerViewModel, final NavHostController $navController, final MutableState $enableHomeScreenAnimation$delegate, AnimatedContentScope composable, NavBackStackEntry backStackEntry, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
         Intrinsics.checkNotNullParameter(backStackEntry, "backStackEntry");
@@ -1341,14 +1339,14 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$86$lambda$80$lambda$79(NavHostController $navController, MutableState $enableHomeScreenAnimation$delegate) {
         GalleryNavHost$lambda$8($enableHomeScreenAnimation$delegate, false);
         $navController.navigateUp();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$86$lambda$82$lambda$81(NavHostController $navController, Task task, Model model) {
         Intrinsics.checkNotNullParameter(task, "task");
         Intrinsics.checkNotNullParameter(model, "model");
@@ -1356,7 +1354,7 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$86$lambda$85$lambda$84(NavHostController $navController, Model model) {
         Intrinsics.checkNotNullParameter(model, "model");
         FirebaseAnalytics firebaseAnalytics = AnalyticsKt.getFirebaseAnalytics();
@@ -1371,26 +1369,26 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$87(NavArgumentBuilder navArgument) {
         Intrinsics.checkNotNullParameter(navArgument, "$this$navArgument");
         navArgument.setType(NavType.StringType);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final EnterTransition GalleryNavHost$lambda$94$lambda$88(AnimatedContentTransitionScope composable) {
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
         return slideEnter(composable);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ExitTransition GalleryNavHost$lambda$94$lambda$89(AnimatedContentTransitionScope composable) {
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
         return slideExit(composable);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$93(ModelManagerViewModel $modelManagerViewModel, final NavHostController $navController, final MutableState $enableModelListAnimation$delegate, AnimatedContentScope composable, NavBackStackEntry backStackEntry, Composer $composer, int $changed) {
         String string;
         Intrinsics.checkNotNullParameter(composable, "$this$composable");
@@ -1433,7 +1431,7 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryNavHost$lambda$94$lambda$93$lambda$92$lambda$91$lambda$90(NavHostController $navController, MutableState $enableModelListAnimation$delegate) {
         GalleryNavHost$lambda$11($enableModelListAnimation$delegate, false);
         $navController.navigateUp();
@@ -1465,7 +1463,7 @@ public final class GalleryNavGraphKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean CustomTaskScreen$lambda$99(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().booleanValue();
@@ -1476,7 +1474,7 @@ public final class GalleryNavGraphKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void CustomTaskScreen$lambda$103(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -1486,20 +1484,20 @@ public final class GalleryNavGraphKt {
         return $this$getValue$iv.getIntValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$108$lambda$107(Function0 $onNavigateUp, MutableState $navigatingUp$delegate) {
         CustomTaskScreen$lambda$100($navigatingUp$delegate, true);
         $onNavigateUp.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$110$lambda$109(Function0 $handleNavigateUp) {
         $handleNavigateUp.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$126(boolean $hideTopBar, final Task $task, final Model $selectedModel, final ModelManagerViewModel $modelManagerViewModel, final Function0 $handleNavigateUp, final CoroutineScope $scope, final Context $context, final boolean $disableAppBarControls, final boolean $useThemeColor, final MutableIntState $appBarHeight$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C512@18901L7,513@18944L7,514@18961L1335,510@18826L1470:GalleryNavGraph.kt#jlis1r");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1549,17 +1547,17 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int CustomTaskScreen$lambda$126$lambda$114$lambda$113(int it) {
         return -it;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int CustomTaskScreen$lambda$126$lambda$116$lambda$115(int it) {
         return -it;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$126$lambda$125(final Task $task, Model $selectedModel, final ModelManagerViewModel $modelManagerViewModel, final Function0 $handleNavigateUp, final CoroutineScope $scope, final Context $context, boolean $disableAppBarControls, boolean $useThemeColor, final MutableIntState $appBarHeight$delegate, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
         ComposerKt.sourceInformation($composer, "C524@19346L57,527@19525L22,528@19577L700,526@19486L11,515@18971L1317:GalleryNavGraph.kt#jlis1r");
@@ -1632,27 +1630,27 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$126$lambda$125$lambda$118$lambda$117(MutableIntState $appBarHeight$delegate, LayoutCoordinates coordinates) {
         Intrinsics.checkNotNullParameter(coordinates, "coordinates");
         $appBarHeight$delegate.setIntValue((int) (4294967295L & coordinates.mo8374getSizeYbymL2g()));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$126$lambda$125$lambda$124$lambda$123(Map map, Map map2) {
         Intrinsics.checkNotNullParameter(map, "<unused var>");
         Intrinsics.checkNotNullParameter(map2, "<unused var>");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$126$lambda$125$lambda$120$lambda$119(Function0 $handleNavigateUp) {
         $handleNavigateUp.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$126$lambda$125$lambda$122$lambda$121(CoroutineScope $scope, ModelManagerViewModel $modelManagerViewModel, Context $context, Task $task, Model prevModel, Model newSelectedModel) {
         Intrinsics.checkNotNullParameter(prevModel, "prevModel");
         Intrinsics.checkNotNullParameter(newSelectedModel, "newSelectedModel");
@@ -1661,7 +1659,7 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$131(boolean $hideTopBar, MutableIntState $appBarHeight$delegate, final Model $selectedModel, State $modelManagerUiState$delegate, final Function3 $content, final Task $task, final ModelManagerViewModel $modelManagerViewModel, final PaddingValues innerPadding, Composer $composer, int $changed) {
         float targetPaddingDp;
         Intrinsics.checkNotNullParameter(innerPadding, "innerPadding");
@@ -1762,7 +1760,7 @@ public final class GalleryNavGraphKt {
         return ((C1654Dp) thisObj$iv).m9802unboximpl();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$131$lambda$130$lambda$129(Function3 $content, PaddingValues $innerPadding, Model $selectedModel, Task $task, ModelManagerViewModel $modelManagerViewModel, AnimatedContentScope AnimatedContent, boolean targetState, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
         ComposerKt.sourceInformation($composer, "C:GalleryNavGraph.kt#jlis1r");
@@ -1791,7 +1789,7 @@ public final class GalleryNavGraphKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CustomTaskScreen$lambda$133$lambda$132(Function0 $onNavigateUp, MutableState $showErrorDialog$delegate) {
         CustomTaskScreen$lambda$103($showErrorDialog$delegate, false);
         $onNavigateUp.invoke();

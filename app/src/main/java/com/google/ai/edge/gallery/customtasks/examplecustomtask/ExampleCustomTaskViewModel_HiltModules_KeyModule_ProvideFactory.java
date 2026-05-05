@@ -3,7 +3,7 @@ package com.google.ai.edge.gallery.customtasks.examplecustomtask;
 import com.google.ai.edge.gallery.customtasks.examplecustomtask.ExampleCustomTaskViewModel_HiltModules;
 import dagger.internal.Factory;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class ExampleCustomTaskViewModel_HiltModules_KeyModule_ProvideFactory implements Factory<Boolean> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public Boolean get() {

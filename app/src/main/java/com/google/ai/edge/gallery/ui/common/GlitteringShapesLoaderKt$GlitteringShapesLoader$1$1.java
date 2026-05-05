@@ -1,7 +1,6 @@
 package com.google.ai.edge.gallery.ui.common;
 
 import androidx.compose.p000ui.graphics.Color;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.MutableState;
 import java.util.List;
 import kotlin.Metadata;
@@ -16,9 +15,9 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: GlitteringShapesLoader.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.GlitteringShapesLoaderKt$GlitteringShapesLoader$1$1", m932f = "GlitteringShapesLoader.kt", m933i = {}, m934l = {82}, m935m = "invokeSuspend", m936n = {}, m938s = {})
 final class GlitteringShapesLoaderKt$GlitteringShapesLoader$1$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ MutableState<List<Shape>> $shapes$delegate;
@@ -42,9 +41,9 @@ final class GlitteringShapesLoaderKt$GlitteringShapesLoader$1$1 extends SuspendL
         return ((GlitteringShapesLoaderKt$GlitteringShapesLoader$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.common.GlitteringShapesLoaderKt$GlitteringShapesLoader$1$1$1 */
-    /* JADX INFO: compiled from: GlitteringShapesLoader.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.common.GlitteringShapesLoaderKt$GlitteringShapesLoader$1$1$1", m932f = "GlitteringShapesLoader.kt", m933i = {0, 0}, m934l = {106}, m935m = "invokeSuspend", m936n = {"newShapes", "curTs"}, m938s = {"L$0", "J$0"})
     static final class C26701 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ MutableState<List<Shape>> $shapes$delegate;

@@ -2,7 +2,7 @@ package com.google.ai.edge.gallery.proto;
 
 import com.google.protobuf.Internal;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public enum FillMode implements Internal.EnumLite {
     FILL_MODE_UNSPECIFIED(0),
     FILL_MODE_DISABLED(1),

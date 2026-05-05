@@ -5,7 +5,6 @@ import androidx.compose.p000ui.geometry.Offset;
 import androidx.compose.p000ui.input.pointer.PointerInputChange;
 import androidx.compose.p000ui.input.pointer.PointerInputEventHandler;
 import androidx.compose.p000ui.input.pointer.PointerInputScope;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.MutableFloatState;
 import androidx.compose.runtime.MutableIntState;
 import kotlin.Metadata;
@@ -17,9 +16,9 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MessageBodyImageWithHistory.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 final class MessageBodyImageWithHistoryKt$MessageBodyImageWithHistory$2$1$1 implements PointerInputEventHandler {
     final /* synthetic */ MutableIntState $imageHistoryCurIndex;
     final /* synthetic */ ChatMessageImageWithHistory $message;
@@ -72,14 +71,14 @@ final class MessageBodyImageWithHistoryKt$MessageBodyImageWithHistory$2$1$1 impl
         return objDetectHorizontalDragGestures == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objDetectHorizontalDragGestures : Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit invoke$lambda$0(MutableIntState $imageHistoryCurIndex, MutableFloatState $value$delegate, MutableIntState $savedIndex$delegate, Offset it) {
         $value$delegate.setFloatValue(0.0f);
         $savedIndex$delegate.setIntValue($imageHistoryCurIndex.getIntValue());
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit invoke$lambda$1(MutableIntState $imageHistoryCurIndex, ChatMessageImageWithHistory $message, MutableFloatState $value$delegate, MutableIntState $savedIndex$delegate, PointerInputChange pointerInputChange, float dragAmount) {
         Intrinsics.checkNotNullParameter(pointerInputChange, "<unused var>");
         $value$delegate.setFloatValue(MessageBodyImageWithHistoryKt.MessageBodyImageWithHistory$lambda$9$lambda$3($value$delegate) + (dragAmount / 20.0f));

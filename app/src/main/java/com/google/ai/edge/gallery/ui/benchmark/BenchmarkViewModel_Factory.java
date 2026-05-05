@@ -5,7 +5,7 @@ import com.google.ai.edge.gallery.data.DataStoreRepository;
 import dagger.internal.Factory;
 import dagger.internal.Provider;
 
-/* JADX INFO: loaded from: classes6.dex */
+
 public final class BenchmarkViewModel_Factory implements Factory<BenchmarkViewModel> {
     private final Provider<Context> appContextProvider;
     private final Provider<DataStoreRepository> dataStoreRepositoryProvider;

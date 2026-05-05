@@ -15,7 +15,7 @@ import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class Skills extends GeneratedMessageLite<Skills, Builder> implements SkillsOrBuilder {
     private static final Skills DEFAULT_INSTANCE;
     private static volatile Parser<Skills> PARSER = null;
@@ -55,39 +55,39 @@ public final class Skills extends GeneratedMessageLite<Skills, Builder> implemen
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setSkill(int index, Skill value) {
         value.getClass();
         ensureSkillIsMutable();
         this.skill_.set(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addSkill(Skill value) {
         value.getClass();
         ensureSkillIsMutable();
         this.skill_.add(value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addSkill(int index, Skill value) {
         value.getClass();
         ensureSkillIsMutable();
         this.skill_.add(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addAllSkill(Iterable<? extends Skill> values) {
         ensureSkillIsMutable();
         AbstractMessageLite.addAll(values, this.skill_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearSkill() {
         this.skill_ = emptyProtobufList();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void removeSkill(int index) {
         ensureSkillIsMutable();
         this.skill_.remove(index);

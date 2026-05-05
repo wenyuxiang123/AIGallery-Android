@@ -17,7 +17,6 @@ import androidx.compose.p000ui.layout.ContentScale;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.StringResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -35,11 +34,11 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MessageBodyImage.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u00002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a]\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032<\u0010\u0004\u001a8\u0012\u0019\u0012\u0017\u0012\u0004\u0012\u00020\u00070\u0006¢\u0006\f\b\b\u0012\b\b\t\u0012\u0004\b\b(\n\u0012\u0013\u0012\u00110\u000b¢\u0006\f\b\b\u0012\b\b\t\u0012\u0004\b\b(\f\u0012\u0004\u0012\u00020\u00010\u00052\b\b\u0002\u0010\r\u001a\u00020\u000eH\u0007¢\u0006\u0002\u0010\u000f¨\u0006\u0010"}, m922d2 = {"MessageBodyImage", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageImage;", "onImageClicked", "Lkotlin/Function2;", "", "Landroid/graphics/Bitmap;", "Lkotlin/ParameterName;", "name", "bitmaps", "", "selectedBitmapIndex", "modifier", "Landroidx/compose/ui/Modifier;", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageImage;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageBodyImageKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyImage$lambda$6(ChatMessageImage chatMessageImage, Function2 function2, Modifier modifier, int i, int i2, Composer composer, int i3) {
         MessageBodyImage(chatMessageImage, function2, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -378,13 +377,13 @@ public final class MessageBodyImageKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyImage$lambda$1$lambda$0(Function2 $onImageClicked, ChatMessageImage $message) {
         $onImageClicked.invoke($message.getBitmaps(), 0);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyImage$lambda$5$lambda$4$lambda$3$lambda$2(Function2 $onImageClicked, ChatMessageImage $message, int $imageIndex) {
         $onImageClicked.invoke($message.getBitmaps(), Integer.valueOf($imageIndex));
         return Unit.INSTANCE;

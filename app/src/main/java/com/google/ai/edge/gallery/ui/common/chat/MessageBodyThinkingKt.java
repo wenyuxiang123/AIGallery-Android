@@ -28,7 +28,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.text.font.FontWeight;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -51,11 +50,11 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MessageBodyThinking.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u001a\u001d\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0007¢\u0006\u0002\u0010\u0006¨\u0006\u0007²\u0006\n\u0010\b\u001a\u00020\u0005X\u008a\u008e\u0002"}, m922d2 = {"MessageBodyThinking", "", "thinkingText", "", "inProgress", "", "(Ljava/lang/String;ZLandroidx/compose/runtime/Composer;I)V", "app_debug", "isExpanded"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "isExpanded"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageBodyThinkingKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyThinking$lambda$11(String str, boolean z, int i, Composer composer, int i2) {
         MessageBodyThinking(str, z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -226,13 +225,13 @@ public final class MessageBodyThinkingKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyThinking$lambda$10$lambda$4$lambda$3(MutableState $isExpanded$delegate) {
         MessageBodyThinking$lambda$2($isExpanded$delegate, !MessageBodyThinking$lambda$1($isExpanded$delegate));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyThinking$lambda$10$lambda$9(String $thinkingText, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
@@ -304,7 +303,7 @@ public final class MessageBodyThinkingKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyThinking$lambda$10$lambda$9$lambda$7$lambda$6(long $lineColor, DrawScope drawBehind) {
         Intrinsics.checkNotNullParameter(drawBehind, "$this$drawBehind");
         long v1$iv$iv = Float.floatToRawIntBits(0.0f);

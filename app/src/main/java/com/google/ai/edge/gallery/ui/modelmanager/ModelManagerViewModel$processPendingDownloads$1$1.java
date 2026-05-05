@@ -1,7 +1,6 @@
 package com.google.ai.edge.gallery.ui.modelmanager;
 
 import android.util.Log;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import com.google.ai.edge.gallery.data.Model;
 import com.google.ai.edge.gallery.data.ModelDownloadStatus;
 import com.google.ai.edge.gallery.data.ModelDownloadStatusType;
@@ -20,9 +19,9 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: ModelManagerViewModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel$processPendingDownloads$1$1", m932f = "ModelManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
 final class ModelManagerViewModel$processPendingDownloads$1$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     int label;
@@ -74,9 +73,9 @@ final class ModelManagerViewModel$processPendingDownloads$1$1 extends SuspendLam
         }
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel$processPendingDownloads$1$1$1 */
-    /* JADX INFO: compiled from: ModelManagerViewModel.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     static final /* synthetic */ class C28221 extends FunctionReferenceImpl implements Function2<Model, ModelDownloadStatus, Unit> {
         C28221(Object obj) {
             super(2, obj, ModelManagerViewModel.class, "setDownloadStatus", "setDownloadStatus(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;)V", 0);
@@ -88,7 +87,7 @@ final class ModelManagerViewModel$processPendingDownloads$1$1 extends SuspendLam
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        
         public final void invoke2(Model p0, ModelDownloadStatus p1) {
             Intrinsics.checkNotNullParameter(p0, "p0");
             Intrinsics.checkNotNullParameter(p1, "p1");

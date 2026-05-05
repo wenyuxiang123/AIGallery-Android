@@ -5,16 +5,15 @@ import androidx.compose.p000ui.focus.FocusManager;
 import androidx.compose.p000ui.geometry.Offset;
 import androidx.compose.p000ui.input.pointer.PointerInputEventHandler;
 import androidx.compose.p000ui.input.pointer.PointerInputScope;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.jvm.functions.Function1;
 
-/* JADX INFO: compiled from: SkillManagerBottomSheet.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 final class SkillManagerBottomSheetKt$SkillManagerBottomSheet$6$1$2$1 implements PointerInputEventHandler {
     final /* synthetic */ FocusManager $focusManager;
 
@@ -22,7 +21,7 @@ final class SkillManagerBottomSheetKt$SkillManagerBottomSheet$6$1$2$1 implements
         this.$focusManager = focusManager;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit invoke$lambda$0(FocusManager $focusManager, Offset it) {
         FocusManager.clearFocus$default($focusManager, false, 1, null);
         return Unit.INSTANCE;

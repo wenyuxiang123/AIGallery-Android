@@ -39,7 +39,6 @@ import androidx.compose.p000ui.platform.CompositionLocalsKt;
 import androidx.compose.p000ui.platform.WindowInfo;
 import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.res.VectorResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.Density;
 import androidx.compose.runtime.Applier;
@@ -118,15 +117,15 @@ import kotlin.text.StringsKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.channels.ReceiveChannel;
 
-/* JADX INFO: compiled from: AgentChatScreen.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000r\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u001aG\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00050\u000b2\u0006\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\u0011H\u0007¢\u0006\u0002\u0010\u0012\u001a \u0010\u0013\u001a\u00020\u00052\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\f\u001a\u00020\rH\u0002\u001aN\u0010\u0016\u001a\u00020\u00052\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0017\u001a\u00020\u00012\u0006\u0010\f\u001a\u00020\r2\u0014\b\u0002\u0010\u0018\u001a\u000e\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\u00050\u0019H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001a²\u0006\n\u0010\u001b\u001a\u00020\u001cX\u008a\u008e\u0002²\u0006\n\u0010\u001d\u001a\u00020\u001cX\u008a\u008e\u0002²\u0006\f\u0010\u001e\u001a\u0004\u0018\u00010\u001fX\u008a\u008e\u0002²\u0006\n\u0010 \u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\f\u0010!\u001a\u0004\u0018\u00010\"X\u008a\u008e\u0002²\u0006\n\u0010\u0017\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\f\u0010#\u001a\u0004\u0018\u00010$X\u008a\u008e\u0002²\u0006\n\u0010%\u001a\u00020\u001cX\u008a\u008e\u0002²\u0006\n\u0010&\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010'\u001a\u00020\u0015X\u008a\u0084\u0002²\u0006\n\u0010(\u001a\u00020)X\u008a\u0084\u0002²\u0006\n\u0010*\u001a\u00020+X\u008a\u0084\u0002"}, m922d2 = {"TAG", "", "chatViewJavascriptInterface", "Lcom/google/ai/edge/gallery/customtasks/agentchat/ChatWebViewJavascriptInterface;", "AgentChatScreen", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "navigateUp", "Lkotlin/Function0;", "agentTools", "Lcom/google/ai/edge/gallery/customtasks/agentchat/AgentTools;", "viewModel", "Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModel;", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Lcom/google/ai/edge/gallery/customtasks/agentchat/AgentTools;Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModel;Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;Landroidx/compose/runtime/Composer;II)V", "updateProgressPanel", "model", "Lcom/google/ai/edge/gallery/data/Model;", "resetSessionWithCurrentSkills", "curSystemPrompt", "onDone", "Lkotlin/Function1;", "app_debug", "showSkillManagerBottomSheet", "", "showAskInfoDialog", "currentAskInfoAction", "Lcom/google/ai/edge/gallery/common/AskInfoAgentAction;", "askInfoInputValue", "webViewRef", "Landroid/webkit/WebView;", "sendMessageTrigger", "Lcom/google/ai/edge/gallery/ui/common/chat/SendMessageTrigger;", "showAlertForDisabledSkill", "disabledSkillName", "currentModel", "uiState", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatUiState;", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+X\u008a\u0084\u0002²\u0006\n\u0010*\u001a\u00020+X\u008a\u0084\u0002"}, m922d2 = {"TAG", "", "chatViewJavascriptInterface", "Lcom/google/ai/edge/gallery/customtasks/agentchat/ChatWebViewJavascriptInterface;", "AgentChatScreen", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "navigateUp", "Lkotlin/Function0;", "agentTools", "Lcom/google/ai/edge/gallery/customtasks/agentchat/AgentTools;", "viewModel", "Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModel;", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Lcom/google/ai/edge/gallery/customtasks/agentchat/AgentTools;Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModel;Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;Landroidx/compose/runtime/Composer;II)V", "updateProgressPanel", "model", "Lcom/google/ai/edge/gallery/data/Model;", "resetSessionWithCurrentSkills", "curSystemPrompt", "onDone", "Lkotlin/Function1;", "app_debug", "showSkillManagerBottomSheet", "", "showAskInfoDialog", "currentAskInfoAction", "Lcom/google/ai/edge/gallery/common/AskInfoAgentAction;", "askInfoInputValue", "webViewRef", "Landroid/webkit/WebView;", "sendMessageTrigger", "Lcom/google/ai/edge/gallery/ui/common/chat/SendMessageTrigger;", "showAlertForDisabledSkill", "disabledSkillName", "currentModel", "uiState", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatUiState;", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AgentChatScreenKt {
     private static final String TAG = "AGAgentChatScreen";
     private static final ChatWebViewJavascriptInterface chatViewJavascriptInterface = new ChatWebViewJavascriptInterface();
 
-    /* JADX INFO: compiled from: AgentChatScreen.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -148,7 +147,7 @@ public final class AgentChatScreenKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$79(Task task, ModelManagerViewModel modelManagerViewModel, Function0 function0, AgentTools agentTools, LlmChatViewModel llmChatViewModel, SkillManagerViewModel skillManagerViewModel, int i, int i2, Composer composer, int i3) {
         AgentChatScreen(task, modelManagerViewModel, function0, agentTools, llmChatViewModel, skillManagerViewModel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -735,7 +734,7 @@ public final class AgentChatScreenKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void AgentChatScreen$lambda$7(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -750,7 +749,7 @@ public final class AgentChatScreenKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final WebView AgentChatScreen$lambda$15(MutableState<WebView> mutableState) {
         MutableState<WebView> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
@@ -780,14 +779,14 @@ public final class AgentChatScreenKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$31$lambda$30(LlmChatViewModel $viewModel, AgentTools $agentTools, Model model) {
         Intrinsics.checkNotNullParameter(model, "model");
         updateProgressPanel($viewModel, model, $agentTools);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$37$lambda$36(AgentTools $agentTools, LlmChatViewModel $viewModel, float $screenWidthDp, Model model) {
         Bitmap bitmap;
         Intrinsics.checkNotNullParameter(model, "model");
@@ -816,7 +815,7 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$41$lambda$40(LlmChatViewModel $viewModel, ModelManagerViewModel $modelManagerViewModel, SkillManagerViewModel $skillManagerViewModel, AgentTools $agentTools, MutableState $curSystemPrompt$delegate, Task task, Model model) {
         Intrinsics.checkNotNullParameter(task, "task");
         Intrinsics.checkNotNullParameter(model, "model");
@@ -824,13 +823,13 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$39$lambda$38(MutableState $showSkillManagerBottomSheet$delegate) {
         AgentChatScreen$lambda$4($showSkillManagerBottomSheet$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final List AgentChatScreen$lambda$64$lambda$63(SkillManagerViewModel $skillManagerViewModel) {
         Iterable $this$map$iv = $skillManagerViewModel.getSelectedSkills();
         Collection destination$iv$iv = new ArrayList(CollectionsKt.collectionSizeOrDefault($this$map$iv, 10));
@@ -841,7 +840,7 @@ public final class AgentChatScreenKt {
         return (List) destination$iv$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$49(AgentTools $agentTools, final LlmChatViewModel $viewModel, ChatWebViewClient $chatWebViewClient, final MutableState $webViewRef$delegate, MutableState $currentAskInfoAction$delegate, MutableState $askInfoInputValue$delegate, MutableState $showAskInfoDialog$delegate, final Model model, Composer $composer, int $changed) {
         String str;
         ReceiveChannel<AgentAction> receiveChannel;
@@ -904,13 +903,13 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Model AgentChatScreen$lambda$49$lambda$42(State<Model> state) {
         Object thisObj$iv = state.getValue();
         return (Model) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$49$lambda$45$lambda$44(MutableState $webViewRef$delegate, WebView webView) {
         Intrinsics.checkNotNullParameter(webView, "webView");
         $webViewRef$delegate.setValue(webView);
@@ -931,7 +930,7 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$49$lambda$48$lambda$47(LlmChatViewModel $viewModel, Model $model, ConsoleMessage consoleMessage) {
         LogMessageLevel logMessageLevel;
         if (consoleMessage != null) {
@@ -962,7 +961,7 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$52$lambda$51(final LlmChatViewModel $viewModel, ModelManagerViewModel $modelManagerViewModel, SkillManagerViewModel $skillManagerViewModel, Task $task, AgentTools $agentTools, MutableState $curSystemPrompt$delegate, final String $systemPromptUpdatedMessage, String newPrompt) {
         Intrinsics.checkNotNullParameter(newPrompt, "newPrompt");
         $curSystemPrompt$delegate.setValue(newPrompt);
@@ -975,14 +974,14 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$52$lambda$51$lambda$50(LlmChatViewModel $viewModel, String $systemPromptUpdatedMessage, Model model) {
         Intrinsics.checkNotNullParameter(model, "model");
         $viewModel.addMessage(model, new ChatMessageInfo($systemPromptUpdatedMessage));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$61(LlmChatViewModel $viewModel, ModelManagerViewModel $modelManagerViewModel, final SkillManagerViewModel $skillManagerViewModel, final MutableState $sendMessageTrigger$delegate, final MutableState $disabledSkillName$delegate, final MutableState $showAlertForDisabledSkill$delegate, final Model model, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -1209,8 +1208,8 @@ public final class AgentChatScreenKt {
         return (ModelManagerUiState) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AgentChatScreen$lambda$61$lambda$60$lambda$59$lambda$57$lambda$56 */
+    
+    
     public static final Unit m428x85340e02(SkillManagerViewModel $skillManagerViewModel, SkillTryOutChip $promptChip, Model $model, MutableState $sendMessageTrigger$delegate, MutableState $disabledSkillName$delegate, MutableState $showAlertForDisabledSkill$delegate) {
         if ($skillManagerViewModel.isSkillSelected($promptChip.getSkillName())) {
             $sendMessageTrigger$delegate.setValue(new SendMessageTrigger($model, CollectionsKt.listOf(new ChatMessageText($promptChip.getPrompt(), ChatSide.USER, 0.0f, false, null, null, false, null, 252, null))));
@@ -1230,7 +1229,7 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$61$lambda$60$lambda$59$lambda$58(SkillTryOutChip $promptChip, RowScope FilledTonalButton, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(FilledTonalButton, "$this$FilledTonalButton");
         ComposerKt.sourceInformation($composer, "C486@20581L81,487@20677L39,488@20731L22:AgentChatScreen.kt#41d64j");
@@ -1250,14 +1249,14 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$66$lambda$65(MutableState $askInfoInputValue$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $askInfoInputValue$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$68$lambda$67(AskInfoAgentAction $action, MutableState $askInfoInputValue$delegate, MutableState $showAskInfoDialog$delegate, MutableState $currentAskInfoAction$delegate) {
         $action.getResult().complete(AgentChatScreen$lambda$12($askInfoInputValue$delegate));
         AgentChatScreen$lambda$7($showAskInfoDialog$delegate, false);
@@ -1265,7 +1264,7 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$70$lambda$69(AskInfoAgentAction $action, MutableState $showAskInfoDialog$delegate, MutableState $currentAskInfoAction$delegate) {
         $action.getResult().complete("");
         AgentChatScreen$lambda$7($showAskInfoDialog$delegate, false);
@@ -1273,7 +1272,7 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$72$lambda$71(LlmChatViewModel $viewModel, ModelManagerViewModel $modelManagerViewModel, SkillManagerViewModel $skillManagerViewModel, Task $task, AgentTools $agentTools, MutableState $showSkillManagerBottomSheet$delegate, MutableState $curSystemPrompt$delegate, boolean selectedSkillsChanged) {
         AgentChatScreen$lambda$4($showSkillManagerBottomSheet$delegate, false);
         if (selectedSkillsChanged) {
@@ -1283,13 +1282,13 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$74$lambda$73(MutableState $showAlertForDisabledSkill$delegate) {
         AgentChatScreen$lambda$26($showAlertForDisabledSkill$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$78(MutableState $disabledSkillName$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C544@22230L62:AgentChatScreen.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1306,7 +1305,7 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$77(final MutableState $showAlertForDisabledSkill$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C547@22422L37,547@22405L111:AgentChatScreen.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1336,7 +1335,7 @@ public final class AgentChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AgentChatScreen$lambda$77$lambda$76$lambda$75(MutableState $showAlertForDisabledSkill$delegate) {
         AgentChatScreen$lambda$26($showAlertForDisabledSkill$delegate, false);
         return Unit.INSTANCE;
@@ -1370,7 +1369,7 @@ public final class AgentChatScreenKt {
         resetSessionWithCurrentSkills(llmChatViewModel, modelManagerViewModel, skillManagerViewModel, task, str, agentTools, function12);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit resetSessionWithCurrentSkills$lambda$80(Model it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
@@ -1386,7 +1385,7 @@ public final class AgentChatScreenKt {
         }, true);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit resetSessionWithCurrentSkills$lambda$81(Function1 $onDone, Model $model) {
         $onDone.invoke($model);
         return Unit.INSTANCE;

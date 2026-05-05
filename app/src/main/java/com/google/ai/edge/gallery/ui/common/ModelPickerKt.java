@@ -28,7 +28,6 @@ import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
 import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.res.VectorResources_androidKt;
 import androidx.compose.p000ui.text.TextStyle;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.TextUnitKt;
 import androidx.compose.runtime.Applier;
@@ -60,11 +59,11 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: ModelPicker.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000,\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u001a1\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0012\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00010\u0007H\u0007¢\u0006\u0002\u0010\t¨\u0006\n²\u0006\n\u0010\u000b\u001a\u00020\fX\u008a\u0084\u0002²\u0006\n\u0010\r\u001a\u00020\u000eX\u008a\u008e\u0002²\u0006\f\u0010\u000f\u001a\u0004\u0018\u00010\bX\u008a\u008e\u0002"}, m922d2 = {"ModelPicker", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "onModelSelected", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/data/Model;", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "showMemoryWarning", "", "modelToPick"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "showMemoryWarning", "", "modelToPick"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ModelPickerKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPicker$lambda$19(Task task, ModelManagerViewModel modelManagerViewModel, Function1 function1, int i, Composer composer, int i2) {
         ModelPicker(task, modelManagerViewModel, function1, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -564,7 +563,7 @@ public final class ModelPickerKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPicker$lambda$14$lambda$9$lambda$8(Context $context, Model $model, Function1 $onModelSelected, MutableState $modelToPick$delegate, MutableState $showMemoryWarning$delegate) {
         if (!MemoryWarningKt.isMemoryLow($context, $model)) {
             $onModelSelected.invoke($model);
@@ -575,7 +574,7 @@ public final class ModelPickerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPicker$lambda$16$lambda$15(Function1 $onModelSelected, MutableState $modelToPick$delegate, MutableState $showMemoryWarning$delegate) {
         Model curModelToPick = ModelPicker$lambda$5($modelToPick$delegate);
         if (curModelToPick != null) {
@@ -585,7 +584,7 @@ public final class ModelPickerKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelPicker$lambda$18$lambda$17(MutableState $showMemoryWarning$delegate) {
         ModelPicker$lambda$3($showMemoryWarning$delegate, false);
         return Unit.INSTANCE;

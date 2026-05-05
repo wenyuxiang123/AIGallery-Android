@@ -12,7 +12,6 @@ import androidx.compose.p000ui.semantics.SemanticsModifierKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertiesKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
 import androidx.compose.p000ui.text.TextStyle;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.ComposerKt;
@@ -27,11 +26,11 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MessageBodyText.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u001a\u001d\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0007¢\u0006\u0002\u0010\u0006¨\u0006\u0007"}, m922d2 = {"MessageBodyText", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageText;", "inProgress", "", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageText;ZLandroidx/compose/runtime/Composer;I)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageBodyTextKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyText$lambda$5(ChatMessageText chatMessageText, boolean z, int i, Composer composer, int i2) {
         MessageBodyText(chatMessageText, z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -75,7 +74,7 @@ public final class MessageBodyTextKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyText$lambda$4(ChatMessageText $message, final boolean $inProgress, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C:MessageBodyText.kt#ouynps");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -150,7 +149,7 @@ public final class MessageBodyTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyText$lambda$4$lambda$1$lambda$0(String $cdResponse, boolean $inProgress, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setContentDescription(semantics, $cdResponse);
@@ -160,7 +159,7 @@ public final class MessageBodyTextKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyText$lambda$4$lambda$3$lambda$2(String $cdResponse, boolean $inProgress, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setContentDescription(semantics, $cdResponse);

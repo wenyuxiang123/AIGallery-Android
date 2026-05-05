@@ -27,7 +27,6 @@ import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.PainterResources_androidKt;
 import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.text.TextLayoutResult;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.TextUnitKt;
 import androidx.compose.runtime.Applier;
@@ -50,13 +49,13 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: GalleryAppTopBar.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000$\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u001aM\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\b\b\u0002\u0010\u000b\u001a\u00020\u0003H\u0007¢\u0006\u0002\u0010\f¨\u0006\r"}, m922d2 = {"GalleryTopAppBar", "", "title", "", "modifier", "Landroidx/compose/ui/Modifier;", "leftAction", "Lcom/google/ai/edge/gallery/data/AppBarAction;", "rightAction", "scrollBehavior", "Landroidx/compose/material3/TopAppBarScrollBehavior;", "subtitle", "(Ljava/lang/String;Landroidx/compose/ui/Modifier;Lcom/google/ai/edge/gallery/data/AppBarAction;Lcom/google/ai/edge/gallery/data/AppBarAction;Landroidx/compose/material3/TopAppBarScrollBehavior;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class GalleryAppTopBarKt {
 
-    /* JADX INFO: compiled from: GalleryAppTopBar.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -78,7 +77,7 @@ public final class GalleryAppTopBarKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryTopAppBar$lambda$6(String str, Modifier modifier, AppBarAction appBarAction, AppBarAction appBarAction2, TopAppBarScrollBehavior topAppBarScrollBehavior, String str2, int i, int i2, Composer composer, int i3) {
         GalleryTopAppBar(str, modifier, appBarAction, appBarAction2, topAppBarScrollBehavior, str2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -228,7 +227,7 @@ public final class GalleryAppTopBarKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryTopAppBar$lambda$3(String $subtitle, String $title, final long $titleColor, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -359,7 +358,7 @@ public final class GalleryAppTopBarKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryTopAppBar$lambda$4(AppBarAction $leftAction, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C:GalleryAppTopBar.kt#9ty9oh");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -394,7 +393,7 @@ public final class GalleryAppTopBarKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryTopAppBar$lambda$5(AppBarAction $rightAction, RowScope CenterAlignedTopAppBar, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(CenterAlignedTopAppBar, "$this$CenterAlignedTopAppBar");
         ComposerKt.sourceInformation($composer, "C:GalleryAppTopBar.kt#9ty9oh");

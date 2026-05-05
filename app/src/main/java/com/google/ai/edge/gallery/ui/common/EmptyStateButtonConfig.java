@@ -1,7 +1,6 @@
 package com.google.ai.edge.gallery.ui.common;
 
 import androidx.compose.p000ui.graphics.vector.ImageVector;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.Composer;
 import kotlin.Metadata;
 import kotlin.Unit;
@@ -10,9 +9,9 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: EmptyState.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001BB\u0012\b\b\u0001\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007\u0012\u0013\b\u0002\u0010\t\u001a\r\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\b\n¢\u0006\u0004\b\u000b\u0010\fJ\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000f\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0003J\u0019\u0010\u0019\u001a\r\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\b\nHÆ\u0003¢\u0006\u0002\u0010\u0014JI\u0010\u001a\u001a\u00020\u00002\b\b\u0003\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\u0013\b\u0002\u0010\t\u001a\r\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\b\nHÆ\u0001¢\u0006\u0002\u0010\u001bJ\u0013\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001f\u001a\u00020\u0003HÖ\u0001J\t\u0010 \u001a\u00020!HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u001e\u0010\t\u001a\r\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\b\n¢\u0006\n\n\u0002\u0010\u0015\u001a\u0004\b\u0013\u0010\u0014¨\u0006\""}, m922d2 = {"Lcom/google/ai/edge/gallery/ui/common/EmptyStateButtonConfig;", "", "buttonLabelResId", "", "buttonIcon", "Landroidx/compose/ui/graphics/vector/ImageVector;", "onButtonClick", "Lkotlin/Function0;", "", "extraContent", "Landroidx/compose/runtime/Composable;", "<init>", "(ILandroidx/compose/ui/graphics/vector/ImageVector;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;)V", "getButtonLabelResId", "()I", "getButtonIcon", "()Landroidx/compose/ui/graphics/vector/ImageVector;", "getOnButtonClick", "()Lkotlin/jvm/functions/Function0;", "getExtraContent", "()Lkotlin/jvm/functions/Function2;", "Lkotlin/jvm/functions/Function2;", "component1", "component2", "component3", "component4", "copy", "(ILandroidx/compose/ui/graphics/vector/ImageVector;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;)Lcom/google/ai/edge/gallery/ui/common/EmptyStateButtonConfig;", "equals", "", "other", "hashCode", "toString", "", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "getButtonLabelResId", "()I", "getButtonIcon", "()Landroidx/compose/ui/graphics/vector/ImageVector;", "getOnButtonClick", "()Lkotlin/jvm/functions/Function0;", "getExtraContent", "()Lkotlin/jvm/functions/Function2;", "Lkotlin/jvm/functions/Function2;", "component1", "component2", "component3", "component4", "copy", "(ILandroidx/compose/ui/graphics/vector/ImageVector;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;)Lcom/google/ai/edge/gallery/ui/common/EmptyStateButtonConfig;", "equals", "", "other", "hashCode", "toString", "", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final /* data */ class EmptyStateButtonConfig {
     public static final int $stable = 0;
     private final ImageVector buttonIcon;
@@ -37,12 +36,12 @@ public final /* data */ class EmptyStateButtonConfig {
         return emptyStateButtonConfig.copy(i, imageVector, function0, function2);
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    
     public final int getButtonLabelResId() {
         return this.buttonLabelResId;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    
     public final ImageVector getButtonIcon() {
         return this.buttonIcon;
     }

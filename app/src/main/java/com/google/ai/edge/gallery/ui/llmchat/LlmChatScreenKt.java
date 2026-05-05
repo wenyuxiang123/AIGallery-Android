@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.compose.p000ui.Modifier;
 import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.ComposerKt;
 import androidx.compose.runtime.ProvidableCompositionLocal;
@@ -51,49 +50,49 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KClass;
 
-/* JADX INFO: compiled from: LlmChatScreen.kt */
-/* JADX INFO: loaded from: classes11.dex */
-@Metadata(m921d1 = {"\u0000t\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a±\u0002\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u00012\u0014\b\u0002\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f2\u0014\b\u0002\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f2\u000e\b\u0002\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\u001c\b\u0002\u0010\u0010\u001a\u0016\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00112\u0019\b\u0002\u0010\u0013\u001a\u0013\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f¢\u0006\u0002\b\u00142\b\b\u0002\u0010\u0015\u001a\u00020\u00162\b\b\u0002\u0010\u0017\u001a\u00020\u00182\b\b\u0002\u0010\u0019\u001a\u00020\u00012\u0014\b\u0002\u0010\u001a\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00030\f2\u0019\b\u0002\u0010\u001b\u001a\u0013\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f¢\u0006\u0002\b\u00142\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u001d2\b\b\u0002\u0010\u001e\u001a\u00020\u00182\b\b\u0002\u0010\u001f\u001a\u00020\u00182\u0014\b\u0002\u0010 \u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00010!0\u0007H\u0007¢\u0006\u0002\u0010\"\u001a7\u0010#\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\u0015\u001a\u00020$H\u0007¢\u0006\u0002\u0010%\u001a7\u0010&\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\u0015\u001a\u00020'H\u0007¢\u0006\u0002\u0010(\u001a\u00ad\u0002\u0010)\u001a\u00020\u00032\u0006\u0010\u0015\u001a\u00020*2\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\u00012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\u000e\b\u0002\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\u0014\b\u0002\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f2\u0014\b\u0002\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f2\u001c\b\u0002\u0010\u0010\u001a\u0016\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00112\u0019\b\u0002\u0010\u0013\u001a\u0013\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f¢\u0006\u0002\b\u00142\u0019\b\u0002\u0010\u001b\u001a\u0013\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f¢\u0006\u0002\b\u00142\b\b\u0002\u0010\u0017\u001a\u00020\u00182\b\b\u0002\u0010\u0019\u001a\u00020\u00012\u0014\b\u0002\u0010\u001a\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00030\f2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u001d2\b\b\u0002\u0010\u001e\u001a\u00020\u00182\b\b\u0002\u0010\u001f\u001a\u00020\u00182\u0014\b\u0002\u0010 \u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00010!0\u0007H\u0007¢\u0006\u0002\u0010+\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006,"}, m922d2 = {"TAG", "", "LlmChatScreen", "", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "navigateUp", "Lkotlin/Function0;", "modifier", "Landroidx/compose/ui/Modifier;", "taskId", "onFirstToken", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/data/Model;", "onGenerateResponseDone", "onSkillClicked", "onResetSessionClickedOverride", "Lkotlin/Function2;", "Lcom/google/ai/edge/gallery/data/Task;", "composableBelowMessageList", "Landroidx/compose/runtime/Composable;", "viewModel", "Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModel;", "allowEditingSystemPrompt", "", "curSystemPrompt", "onSystemPromptChanged", "emptyStateComposable", "sendMessageTrigger", "Lcom/google/ai/edge/gallery/ui/common/chat/SendMessageTrigger;", "showImagePicker", "showAudioPicker", "getActiveSkills", "", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModel;ZLjava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lcom/google/ai/edge/gallery/ui/common/chat/SendMessageTrigger;ZZLkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;III)V", "LlmAskImageScreen", "Lcom/google/ai/edge/gallery/ui/llmchat/LlmAskImageViewModel;", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lcom/google/ai/edge/gallery/ui/llmchat/LlmAskImageViewModel;Landroidx/compose/runtime/Composer;II)V", "LlmAskAudioScreen", "Lcom/google/ai/edge/gallery/ui/llmchat/LlmAskAudioViewModel;", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lcom/google/ai/edge/gallery/ui/llmchat/LlmAskAudioViewModel;Landroidx/compose/runtime/Composer;II)V", "ChatViewWrapper", "Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModelBase;", "(Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModelBase;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;ZLjava/lang/String;Lkotlin/jvm/functions/Function1;Lcom/google/ai/edge/gallery/ui/common/chat/SendMessageTrigger;ZZLkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;III)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u00020\u00032\u0006\u0010\u0015\u001a\u00020*2\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\u00012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\u000e\b\u0002\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00030\u00072\u0014\b\u0002\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f2\u0014\b\u0002\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f2\u001c\b\u0002\u0010\u0010\u001a\u0016\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00112\u0019\b\u0002\u0010\u0013\u001a\u0013\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f¢\u0006\u0002\b\u00142\u0019\b\u0002\u0010\u001b\u001a\u0013\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00030\f¢\u0006\u0002\b\u00142\b\b\u0002\u0010\u0017\u001a\u00020\u00182\b\b\u0002\u0010\u0019\u001a\u00020\u00012\u0014\b\u0002\u0010\u001a\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00030\f2\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u001d2\b\b\u0002\u0010\u001e\u001a\u00020\u00182\b\b\u0002\u0010\u001f\u001a\u00020\u00182\u0014\b\u0002\u0010 \u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00010!0\u0007H\u0007¢\u0006\u0002\u0010+\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006,"}, m922d2 = {"TAG", "", "LlmChatScreen", "", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "navigateUp", "Lkotlin/Function0;", "modifier", "Landroidx/compose/ui/Modifier;", "taskId", "onFirstToken", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/data/Model;", "onGenerateResponseDone", "onSkillClicked", "onResetSessionClickedOverride", "Lkotlin/Function2;", "Lcom/google/ai/edge/gallery/data/Task;", "composableBelowMessageList", "Landroidx/compose/runtime/Composable;", "viewModel", "Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModel;", "allowEditingSystemPrompt", "", "curSystemPrompt", "onSystemPromptChanged", "emptyStateComposable", "sendMessageTrigger", "Lcom/google/ai/edge/gallery/ui/common/chat/SendMessageTrigger;", "showImagePicker", "showAudioPicker", "getActiveSkills", "", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModel;ZLjava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lcom/google/ai/edge/gallery/ui/common/chat/SendMessageTrigger;ZZLkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;III)V", "LlmAskImageScreen", "Lcom/google/ai/edge/gallery/ui/llmchat/LlmAskImageViewModel;", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lcom/google/ai/edge/gallery/ui/llmchat/LlmAskImageViewModel;Landroidx/compose/runtime/Composer;II)V", "LlmAskAudioScreen", "Lcom/google/ai/edge/gallery/ui/llmchat/LlmAskAudioViewModel;", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lcom/google/ai/edge/gallery/ui/llmchat/LlmAskAudioViewModel;Landroidx/compose/runtime/Composer;II)V", "ChatViewWrapper", "Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModelBase;", "(Lcom/google/ai/edge/gallery/ui/llmchat/LlmChatViewModelBase;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;ZLjava/lang/String;Lkotlin/jvm/functions/Function1;Lcom/google/ai/edge/gallery/ui/common/chat/SendMessageTrigger;ZZLkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;III)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class LlmChatScreenKt {
     private static final String TAG = "AGLlmChatScreen";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$37(LlmChatViewModelBase llmChatViewModelBase, ModelManagerViewModel modelManagerViewModel, String str, Function0 function0, Modifier modifier, Function0 function02, Function1 function1, Function1 function12, Function2 function2, Function3 function3, Function3 function32, boolean z, String str2, Function1 function13, SendMessageTrigger sendMessageTrigger, boolean z2, boolean z3, Function0 function03, int i, int i2, int i3, Composer composer, int i4) {
         ChatViewWrapper(llmChatViewModelBase, modelManagerViewModel, str, function0, modifier, function02, function1, function12, function2, function3, function32, z, str2, function13, sendMessageTrigger, z2, z3, function03, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), RecomposeScopeImplKt.updateChangedFlags(i2), i3);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmAskAudioScreen$lambda$12(ModelManagerViewModel modelManagerViewModel, Function0 function0, Modifier modifier, LlmAskAudioViewModel llmAskAudioViewModel, int i, int i2, Composer composer, int i3) {
         LlmAskAudioScreen(modelManagerViewModel, function0, modifier, llmAskAudioViewModel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmAskImageScreen$lambda$11(ModelManagerViewModel modelManagerViewModel, Function0 function0, Modifier modifier, LlmAskImageViewModel llmAskImageViewModel, int i, int i2, Composer composer, int i3) {
         LlmAskImageScreen(modelManagerViewModel, function0, modifier, llmAskImageViewModel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmChatScreen$lambda$10(ModelManagerViewModel modelManagerViewModel, Function0 function0, Modifier modifier, String str, Function1 function1, Function1 function12, Function0 function02, Function2 function2, Function3 function3, LlmChatViewModel llmChatViewModel, boolean z, String str2, Function1 function13, Function3 function32, SendMessageTrigger sendMessageTrigger, boolean z2, boolean z3, Function0 function03, int i, int i2, int i3, Composer composer, int i4) {
         LlmChatScreen(modelManagerViewModel, function0, modifier, str, function1, function12, function02, function2, function3, llmChatViewModel, z, str2, function13, function32, sendMessageTrigger, z2, z3, function03, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), RecomposeScopeImplKt.updateChangedFlags(i2), i3);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmChatScreen$lambda$1$lambda$0(Model it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmChatScreen$lambda$3$lambda$2(Model it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit LlmChatScreen$lambda$7$lambda$6(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
@@ -721,19 +720,19 @@ public final class LlmChatScreenKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$16$lambda$15(Model it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$18$lambda$17(Model it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$20$lambda$19(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         return Unit.INSTANCE;
@@ -1135,7 +1134,7 @@ public final class LlmChatScreenKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$27$lambda$26(final LlmChatViewModelBase $viewModel, final ModelManagerViewModel $modelManagerViewModel, Function1 $onFirstToken, final Task $task, Function0 $getActiveSkills, final Function1 $onGenerateResponseDone, final Context $context, final Model model, List messages) {
         Intrinsics.checkNotNullParameter(model, "model");
         Intrinsics.checkNotNullParameter(messages, "messages");
@@ -1195,20 +1194,20 @@ public final class LlmChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$27$lambda$26$lambda$23(Function1 $onGenerateResponseDone, Model $model) {
         $onGenerateResponseDone.invoke($model);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$27$lambda$26$lambda$24(LlmChatViewModelBase $viewModel, Context $context, Task $task, Model $model, ModelManagerViewModel $modelManagerViewModel, String errorMessage) {
         Intrinsics.checkNotNullParameter(errorMessage, "errorMessage");
         $viewModel.handleError($context, $task, $model, $modelManagerViewModel, errorMessage);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$30$lambda$29(final LlmChatViewModelBase $viewModel, final Task $task, final Context $context, final ModelManagerViewModel $modelManagerViewModel, final Model model, ChatMessage message) {
         Intrinsics.checkNotNullParameter(model, "model");
         Intrinsics.checkNotNullParameter(message, "message");
@@ -1223,21 +1222,21 @@ public final class LlmChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$30$lambda$29$lambda$28(LlmChatViewModelBase $viewModel, Context $context, Task $task, Model $model, ModelManagerViewModel $modelManagerViewModel, String errorMessage) {
         Intrinsics.checkNotNullParameter(errorMessage, "errorMessage");
         $viewModel.handleError($context, $task, $model, $modelManagerViewModel, errorMessage);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$32$lambda$31(Model model, ChatMessage chatMessage, int i, int i2) {
         Intrinsics.checkNotNullParameter(model, "<unused var>");
         Intrinsics.checkNotNullParameter(chatMessage, "<unused var>");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$34$lambda$33(Function2 $onResetSessionClickedOverride, Task $task, LlmChatViewModelBase $viewModel, boolean $showImagePicker, boolean $showAudioPicker, Model model) {
         Intrinsics.checkNotNullParameter(model, "model");
         if ($onResetSessionClickedOverride != null) {
@@ -1248,7 +1247,7 @@ public final class LlmChatScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ChatViewWrapper$lambda$36$lambda$35(LlmChatViewModelBase $viewModel, Model model) {
         Intrinsics.checkNotNullParameter(model, "model");
         $viewModel.stopResponse(model);

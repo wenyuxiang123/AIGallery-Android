@@ -33,7 +33,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.StringResources_androidKt;
 import androidx.compose.p000ui.text.TextStyle;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -91,11 +90,11 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KClass;
 
-/* JADX INFO: compiled from: BenchmarkScreen.kt */
-/* JADX INFO: loaded from: classes6.dex */
-@Metadata(m921d1 = {"\u0000T\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010$\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u001a?\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00010\u000bH\u0007¢\u0006\u0002\u0010\f\u001a$\u0010\r\u001a\u00020\u000e2\u0012\u0010\u000f\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u00110\u00102\u0006\u0010\u0012\u001a\u00020\u0013H\u0002\u001a$\u0010\u0014\u001a\u00020\u00152\u0012\u0010\u000f\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u00110\u00102\u0006\u0010\u0012\u001a\u00020\u0013H\u0002¨\u0006\u0016²\u0006\n\u0010\u0017\u001a\u00020\u0018X\u008a\u0084\u0002²\u0006\n\u0010\u0019\u001a\u00020\u001aX\u008a\u008e\u0002²\u0006\n\u0010\u001b\u001a\u00020\u001aX\u008a\u008e\u0002²\u0006\n\u0010\u001c\u001a\u00020\u000eX\u008a\u008e\u0002²\u0006\n\u0010\u001d\u001a\u00020\u0003X\u008a\u008e\u0002"}, m922d2 = {"BenchmarkScreen", "", "initialModel", "Lcom/google/ai/edge/gallery/data/Model;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "modifier", "Landroidx/compose/ui/Modifier;", "viewModel", "Lcom/google/ai/edge/gallery/ui/benchmark/BenchmarkViewModel;", "onBackClicked", "Lkotlin/Function0;", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Landroidx/compose/ui/Modifier;Lcom/google/ai/edge/gallery/ui/benchmark/BenchmarkViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V", "getStringConfigValue", "", "values", "", "", "key", "Lcom/google/ai/edge/gallery/data/ConfigKey;", "getIntConfigValue", "", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/benchmark/BenchmarkUiState;", "enableBackButton", "", "showRunBenchmarkConfirmationDialog", "selectedModelName", "selectedModel"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "getStringConfigValue", "", "values", "", "", "key", "Lcom/google/ai/edge/gallery/data/ConfigKey;", "getIntConfigValue", "", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/benchmark/BenchmarkUiState;", "enableBackButton", "", "showRunBenchmarkConfirmationDialog", "selectedModelName", "selectedModel"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class BenchmarkScreenKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$57(Model model, ModelManagerViewModel modelManagerViewModel, Modifier modifier, BenchmarkViewModel benchmarkViewModel, Function0 function0, int i, int i2, Composer composer, int i3) {
         BenchmarkScreen(model, modelManagerViewModel, modifier, benchmarkViewModel, function0, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -460,7 +459,7 @@ public final class BenchmarkScreenKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final BenchmarkUiState BenchmarkScreen$lambda$0(State<BenchmarkUiState> state) {
         Object thisObj$iv = state.getValue();
         return (BenchmarkUiState) thisObj$iv;
@@ -480,7 +479,7 @@ public final class BenchmarkScreenKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String BenchmarkScreen$lambda$11(MutableState<String> mutableState) {
         MutableState<String> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
@@ -491,7 +490,7 @@ public final class BenchmarkScreenKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$47$lambda$28(final List $downloadedLlmModelNames, final MutableState $selectedModelName$delegate, final Function0 $onBackClicked, final MutableState $enableBackButton$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C175@6822L598,191@7479L294,173@6745L1104:BenchmarkScreen.kt#aos0mq");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -518,7 +517,7 @@ public final class BenchmarkScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$47$lambda$28$lambda$26(List $downloadedLlmModelNames, final MutableState $selectedModelName$delegate, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         ComposerKt.sourceInformation($composer, "C176@6836L572:BenchmarkScreen.kt#aos0mq");
@@ -592,15 +591,15 @@ public final class BenchmarkScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkScreen$lambda$47$lambda$28$lambda$26$lambda$25$lambda$24$lambda$23 */
+    
+    
     public static final Unit m475x9654a592(MutableState $selectedModelName$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $selectedModelName$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$47$lambda$28$lambda$27(Function0 $onBackClicked, MutableState $enableBackButton$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C192@7493L268:BenchmarkScreen.kt#aos0mq");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -617,7 +616,7 @@ public final class BenchmarkScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$47$lambda$39(SnapshotStateList $configs, SnapshotStateMap $values, int $sumOfPrefillAndDecodeTokens, int $maxToken, SnapshotStateList $filteredResults, final BenchmarkViewModel $viewModel, final ModelManagerViewModel $modelManagerViewModel, MutableState $selectedModelName$delegate, final MutableState $showRunBenchmarkConfirmationDialog$delegate, PaddingValues innerPadding, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -860,8 +859,8 @@ public final class BenchmarkScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkScreen$lambda$47$lambda$39$lambda$38$lambda$37$lambda$36$lambda$32$lambda$31 */
+    
+    
     public static final Unit m476xdbfcbbaa(BenchmarkViewModel $viewModel, MutableState $selectedModelName$delegate) {
         $viewModel.setShowResultsViewer(true);
         FirebaseAnalytics firebaseAnalytics = AnalyticsKt.getFirebaseAnalytics();
@@ -876,8 +875,8 @@ public final class BenchmarkScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: BenchmarkScreen$lambda$47$lambda$39$lambda$38$lambda$37$lambda$36$lambda$35$lambda$34 */
+    
+    
     public static final Unit m477x9aaad3f0(ModelManagerViewModel $modelManagerViewModel, MutableState $selectedModelName$delegate, MutableState $showRunBenchmarkConfirmationDialog$delegate) {
         if ($modelManagerViewModel.getModelByName(BenchmarkScreen$lambda$11($selectedModelName$delegate)) != null) {
             BenchmarkScreen$lambda$6($showRunBenchmarkConfirmationDialog$delegate, true);
@@ -885,17 +884,17 @@ public final class BenchmarkScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int BenchmarkScreen$lambda$47$lambda$41$lambda$40(int fullHeight) {
         return fullHeight;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int BenchmarkScreen$lambda$47$lambda$43$lambda$42(int fullHeight) {
         return fullHeight;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$47$lambda$46(ModelManagerViewModel $modelManagerViewModel, final BenchmarkViewModel $viewModel, MutableState $selectedModelName$delegate, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
         ComposerKt.sourceInformation($composer, "C285@11098L61,281@10924L244:BenchmarkScreen.kt#aos0mq");
@@ -924,19 +923,19 @@ public final class BenchmarkScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$47$lambda$46$lambda$45$lambda$44(BenchmarkViewModel $viewModel) {
         $viewModel.setShowResultsViewer(false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$49$lambda$48(MutableState $showRunBenchmarkConfirmationDialog$delegate) {
         BenchmarkScreen$lambda$6($showRunBenchmarkConfirmationDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$56(final MutableState $showRunBenchmarkConfirmationDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C298@11574L46,297@11538L210:BenchmarkScreen.kt#aos0mq");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -966,13 +965,13 @@ public final class BenchmarkScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$56$lambda$55$lambda$54(MutableState $showRunBenchmarkConfirmationDialog$delegate) {
         BenchmarkScreen$lambda$6($showRunBenchmarkConfirmationDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$53(final BenchmarkViewModel $viewModel, final MutableState $selectedModel$delegate, final SnapshotStateMap $values, final MutableState $selectedModelName$delegate, final MutableState $showRunBenchmarkConfirmationDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C306@11818L805,305@11790L976:BenchmarkScreen.kt#aos0mq");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1003,7 +1002,7 @@ public final class BenchmarkScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit BenchmarkScreen$lambda$53$lambda$52$lambda$51(BenchmarkViewModel $viewModel, SnapshotStateMap $values, MutableState $selectedModel$delegate, MutableState $selectedModelName$delegate, MutableState $showRunBenchmarkConfirmationDialog$delegate) {
         $viewModel.runBenchmark(BenchmarkScreen$lambda$14($selectedModel$delegate), getStringConfigValue($values, ConfigKeys.INSTANCE.getACCELERATOR()), getIntConfigValue($values, ConfigKeys.INSTANCE.getPREFILL_TOKENS()), getIntConfigValue($values, ConfigKeys.INSTANCE.getDECODE_TOKENS()), getIntConfigValue($values, ConfigKeys.INSTANCE.getNUMBER_OF_RUNS()));
         FirebaseAnalytics firebaseAnalytics = AnalyticsKt.getFirebaseAnalytics();

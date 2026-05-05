@@ -1,7 +1,6 @@
 package com.google.ai.edge.gallery.customtasks.agentchat;
 
 import androidx.compose.material3.SheetState;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
@@ -16,9 +15,9 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: SkillManagerBottomSheet.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+
 @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerBottomSheetKt$SkillManagerBottomSheet$6$1$3$2$2$1", m932f = "SkillManagerBottomSheet.kt", m933i = {}, m934l = {333}, m935m = "invokeSuspend", m936n = {}, m938s = {})
 final class SkillManagerBottomSheetKt$SkillManagerBottomSheet$6$1$3$2$2$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
     final /* synthetic */ Function1<Boolean, Unit> $onDismiss;

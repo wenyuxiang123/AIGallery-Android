@@ -36,7 +36,6 @@ import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
 import androidx.compose.p000ui.platform.CompositionLocalsKt;
 import androidx.compose.p000ui.res.StringResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.window.AndroidDialog_androidKt;
 import androidx.compose.p000ui.window.DialogProperties;
@@ -103,21 +102,20 @@ import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: ModelImportDialog.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000h\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u001aM\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\b0\f2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\b0\u000e2\u0014\b\u0002\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00130\u0011H\u0007¢\u0006\u0002\u0010\u0014\u001a?\u0010\u0015\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u0016\u001a\u00020\u000f2\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\b0\f2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\b0\u000eH\u0007¢\u0006\u0002\u0010\u0017\u001af\u0010\u0018\u001a\u00020\b2\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u00012\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010\t\u001a\u00020\n2\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\b0\f2\u0012\u0010 \u001a\u000e\u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020\b0\u000e2\u0012\u0010\"\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\b0\u000eH\u0002\u001a$\u0010#\u001a\u000e\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020\u00010$2\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\t\u001a\u00020\nH\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u0014\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000\"\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00060\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006%²\u0006\n\u0010\u001e\u001a\u00020\u001fX\u008a\u0084\u0002²\u0006\n\u0010\u001d\u001a\u00020\u0001X\u008a\u0084\u0002²\u0006\n\u0010&\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010'\u001a\u00020!X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "SUPPORTED_ACCELERATORS", "", "Lcom/google/ai/edge/gallery/data/Accelerator;", "IMPORT_CONFIGS_LLM", "Lcom/google/ai/edge/gallery/data/Config;", "ModelImportDialog", "", "uri", "Landroid/net/Uri;", "onDismiss", "Lkotlin/Function0;", "onDone", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/proto/ImportedModel;", "defaultValues", "", "Lcom/google/ai/edge/gallery/data/ConfigKey;", "", "(Landroid/net/Uri;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Ljava/util/Map;Landroidx/compose/runtime/Composer;II)V", "ModelImportingDialog", "info", "(Landroid/net/Uri;Lcom/google/ai/edge/gallery/proto/ImportedModel;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V", "importModel", "context", "Landroid/content/Context;", "coroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "fileName", "fileSize", "", "onProgress", "", "onError", "getFileSizeAndDisplayNameFromUri", "Lkotlin/Pair;", "app_debug", "error", NotificationCompat.CATEGORY_PROGRESS}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
 public final class ModelImportDialogKt {
     private static final List<Config> IMPORT_CONFIGS_LLM;
     private static final List<Accelerator> SUPPORTED_ACCELERATORS;
     private static final String TAG = "AGModelImportDialog";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelImportDialog$lambda$22(Uri uri, Function0 function0, Function1 function1, Map map, int i, int i2, Composer composer, int i3) {
         ModelImportDialog(uri, function0, function1, map, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelImportingDialog$lambda$42(Uri uri, ImportedModel importedModel, Function0 function0, Function1 function1, int i, Composer composer, int i2) {
         ModelImportingDialog(uri, importedModel, function0, function1, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -298,7 +296,7 @@ public final class ModelImportDialogKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelImportDialog$lambda$21(MutableInteractionSource $interactionSource, final SnapshotStateMap $values, final Function0 $onDismiss, final Function1 $onDone, final MutableState $fileName$delegate, final MutableLongState $fileSize$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C178@7017L7,184@7212L47,188@7308L4522,179@7029L4801:ModelImportDialog.kt#ahf767");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -340,13 +338,13 @@ public final class ModelImportDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelImportDialog$lambda$21$lambda$12$lambda$11(FocusManager $focusManager) {
         FocusManager.clearFocus$default($focusManager, false, 1, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelImportDialog$lambda$21$lambda$20(final SnapshotStateMap $values, final Function0 $onDismiss, final Function1 $onDone, final MutableState $fileName$delegate, final MutableLongState $fileSize$delegate, ColumnScope Card, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -524,15 +522,15 @@ public final class ModelImportDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelImportDialog$lambda$21$lambda$20$lambda$19$lambda$18$lambda$15$lambda$14 */
+    
+    
     public static final Unit m573xb324ec1f(Function0 $onDismiss) {
         $onDismiss.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelImportDialog$lambda$21$lambda$20$lambda$19$lambda$18$lambda$17$lambda$16 */
+    
+    
     public static final Unit m574xdcee51a3(SnapshotStateMap $values, Function1 $onDone, MutableState $fileName$delegate, MutableLongState $fileSize$delegate) {
         Object obj = $values.get(ConfigKeys.INSTANCE.getCOMPATIBLE_ACCELERATORS().getLabel());
         Intrinsics.checkNotNull(obj);
@@ -704,13 +702,13 @@ public final class ModelImportDialogKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final float ModelImportingDialog$lambda$27(MutableFloatState $progress$delegate) {
         MutableFloatState $this$getValue$iv = $progress$delegate;
         return $this$getValue$iv.getFloatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelImportingDialog$lambda$41(final MutableState $error$delegate, final ImportedModel $info, final MutableFloatState $progress$delegate, final Function0 $onDismiss, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C340@12703L1807,340@12627L1883:ModelImportDialog.kt#ahf767");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -732,7 +730,7 @@ public final class ModelImportDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Type update failed for variable: r107v0 ??, new type: androidx.compose.runtime.Composer
     jadx.core.utils.exceptions.JadxOverflowException: Type inference error: updates count limit reached with updateSeq = 19841. Try increasing type updates limit count.
     	at jadx.core.dex.visitors.typeinference.TypeUpdateInfo.requestUpdate(TypeUpdateInfo.java:37)
@@ -14333,22 +14331,22 @@ public final class ModelImportDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelImportingDialog$lambda$41$lambda$40$lambda$39$lambda$34$lambda$32$lambda$31 */
+    
+    
     public static final float m575x2c3ef84f(Animatable $animatedProgress) {
         return ((Number) $animatedProgress.getValue()).floatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelImportingDialog$lambda$41$lambda$40$lambda$39$lambda$38$lambda$37$lambda$36 */
+    
+    
     public static final Unit m576x471a4c1d(Function0 $onDismiss) {
         $onDismiss.invoke();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.modelmanager.ModelImportDialogKt$importModel$1 */
-    /* JADX INFO: compiled from: ModelImportDialog.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.modelmanager.ModelImportDialogKt$importModel$1", m932f = "ModelImportDialog.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C28051 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Context $context;
@@ -14398,7 +14396,7 @@ public final class ModelImportDialogKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void importModel(Context context, CoroutineScope coroutineScope, String fileName, long fileSize, Uri uri, Function0<Unit> function0, Function1<? super Float, Unit> function1, Function1<? super String, Unit> function12) {
         BuildersKt__Builders_commonKt.launch$default(coroutineScope, Dispatchers.getIO(), null, new C28051(uri, fileName, fileSize, context, function1, function12, function0, null), 2, null);
     }

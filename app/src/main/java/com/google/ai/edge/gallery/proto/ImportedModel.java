@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class ImportedModel extends GeneratedMessageLite<ImportedModel, Builder> implements ImportedModelOrBuilder {
     private static final ImportedModel DEFAULT_INSTANCE;
     public static final int FILE_NAME_FIELD_NUMBER = 1;
@@ -62,7 +62,7 @@ public final class ImportedModel extends GeneratedMessageLite<ImportedModel, Bui
         return ConfigCase.forNumber(this.configCase_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearConfig() {
         this.configCase_ = 0;
         this.config_ = null;
@@ -78,18 +78,18 @@ public final class ImportedModel extends GeneratedMessageLite<ImportedModel, Bui
         return ByteString.copyFromUtf8(this.fileName_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setFileName(String value) {
         value.getClass();
         this.fileName_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearFileName() {
         this.fileName_ = getDefaultInstance().getFileName();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setFileNameBytes(ByteString value) {
         checkByteStringIsUtf8(value);
         this.fileName_ = value.toStringUtf8();
@@ -100,12 +100,12 @@ public final class ImportedModel extends GeneratedMessageLite<ImportedModel, Bui
         return this.fileSize_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setFileSize(long value) {
         this.fileSize_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearFileSize() {
         this.fileSize_ = 0L;
     }
@@ -123,14 +123,14 @@ public final class ImportedModel extends GeneratedMessageLite<ImportedModel, Bui
         return LlmConfig.getDefaultInstance();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setLlmConfig(LlmConfig value) {
         value.getClass();
         this.config_ = value;
         this.configCase_ = 3;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void mergeLlmConfig(LlmConfig value) {
         value.getClass();
         if (this.configCase_ == 3 && this.config_ != LlmConfig.getDefaultInstance()) {
@@ -141,7 +141,7 @@ public final class ImportedModel extends GeneratedMessageLite<ImportedModel, Bui
         this.configCase_ = 3;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearLlmConfig() {
         if (this.configCase_ == 3) {
             this.configCase_ = 0;

@@ -75,7 +75,6 @@ import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.font.FontWeight;
 import androidx.compose.p000ui.text.input.VisualTransformation;
 import androidx.compose.p000ui.text.style.TextDecoration;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -127,16 +126,16 @@ import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: SkillManagerBottomSheet.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000~\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\t\u001a@\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2!\u0010\u000f\u001a\u001d\u0012\u0013\u0012\u00110\u0011¢\u0006\f\b\u0012\u0012\b\b\u0013\u0012\u0004\b\b(\u0014\u0012\u0004\u0012\u00020\n0\u0010H\u0007¢\u0006\u0002\u0010\u0015\u001a\u008d\u0001\u0010\u0016\u001a\u00020\n2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00112\u0006\u0010\u001a\u001a\u00020\u00112\u0012\u0010\u001b\u001a\u000e\u0012\u0004\u0012\u00020\u0011\u0012\u0004\u0012\u00020\n0\u00102\f\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\n0\u001d2\u0012\u0010\u001e\u001a\u000e\u0012\u0004\u0012\u00020\u0011\u0012\u0004\u0012\u00020\n0\u00102\f\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\n0\u001d2\f\u0010 \u001a\b\u0012\u0004\u0012\u00020\n0\u001d2\f\u0010!\u001a\b\u0012\u0004\u0012\u00020\n0\u001d2\u0006\u0010\"\u001a\u00020#H\u0003¢\u0006\u0002\u0010$\u001a\u0018\u0010%\u001a\u00020\n2\u0006\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020)H\u0002\u001a/\u0010*\u001a\u00020\n2\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\n0\u001d2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\n0\u0010H\u0003¢\u0006\u0002\u0010,\"\u0014\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u000e\u0010\u0007\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000¨\u0006-²\u0006\n\u0010.\u001a\u00020/X\u008a\u0084\u0002²\u0006\n\u00100\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00101\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00102\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00103\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00104\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00105\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00106\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00107\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00108\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00109\u001a\u00020\bX\u008a\u008e\u0002²\u0006\f\u0010:\u001a\u0004\u0018\u00010;X\u008a\u008e\u0002²\u0006\f\u0010<\u001a\u0004\u0018\u00010=X\u008a\u008e\u0002²\u0006\n\u0010>\u001a\u00020?X\u008a\u008e\u0002²\u0006\n\u0010@\u001a\u00020\bX\u008a\u008e\u0002²\u0006\u0010\u0010A\u001a\b\u0012\u0004\u0012\u00020\u00180\u0001X\u008a\u008e\u0002²\u0006\n\u0010B\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010C\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010D\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010\u0019\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010E\u001a\u00020\bX\u008a\u008e\u0002²\u0006\n\u0010F\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010G\u001a\u00020?X\u008a\u0084\u0002²\u0006\n\u0010H\u001a\u00020\bX\u008a\u008e\u0002"}, m922d2 = {"ADD_SKILL_OPTIONS", "", "Lcom/google/ai/edge/gallery/customtasks/agentchat/AddSkillOption;", "BUTTON_CONTENT_PADDING", "Landroidx/compose/foundation/layout/PaddingValues;", "getBUTTON_CONTENT_PADDING", "()Landroidx/compose/foundation/layout/PaddingValues;", "TAG", "", "SkillManagerBottomSheet", "", "agentTools", "Lcom/google/ai/edge/gallery/customtasks/agentchat/AgentTools;", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "onDismiss", "Lkotlin/Function1;", "", "Lkotlin/ParameterName;", "name", "selectedSkillsChanged", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/AgentTools;Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V", "SkillItemRow", "skillState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillState;", "inMultiSelectMode", "isSelectedForDeletion", "onSelectionCheckedChange", "onLongClick", "Lkotlin/Function0;", "onSkillEnabledChange", "onViewClick", "onSecretClick", "onDeleteClick", "uriHandler", "Landroidx/compose/ui/platform/UriHandler;", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillState;ZZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/platform/UriHandler;Landroidx/compose/runtime/Composer;I)V", "scrollToBottomOfList", "scope", "Lkotlinx/coroutines/CoroutineScope;", "listState", "Landroidx/compose/foundation/lazy/LazyListState;", "AddSkillOptionsBottomSheet", "onOptionSelected", "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;", "showAddSkillFromUrlDialog", "showAddSkillFromLocalImportDialog", "showAddSkillFromFeaturedListBottomSheet", "showAddOrEditSkillBottomSheet", "showAddSkillOptionsSheet", "showDeleteSkillDialog", "showJsSkillTesterBottomSheet", "showSecretEditorDialog", "showDisclaimerDialog", "skillToDeleteName", "skillToTest", "Lcom/google/ai/edge/gallery/proto/Skill;", "addSkillOptionTypeToConfirm", "Lcom/google/ai/edge/gallery/customtasks/agentchat/AddSkillOptionType;", "skillToEditIndex", "", "searchQuery", "filteredSkills", "hasDeterminedExpansionStates", "isBuiltInExpanded", "isCustomExpanded", "previousSearchQuery", "showSkillLimitBanner", "selectedSkillsCount", "curSecret"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+H\u0002\u001a/\u0010*\u001a\u00020\n2\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\n0\u001d2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\n0\u0010H\u0003¢\u0006\u0002\u0010,\"\u0014\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u000e\u0010\u0007\u001a\u00020\bX\u0082T¢\u0006\u0002\n\u0000¨\u0006-²\u0006\n\u0010.\u001a\u00020/X\u008a\u0084\u0002²\u0006\n\u00100\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00101\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00102\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00103\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00104\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00105\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00106\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00107\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00108\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u00109\u001a\u00020\bX\u008a\u008e\u0002²\u0006\f\u0010:\u001a\u0004\u0018\u00010;X\u008a\u008e\u0002²\u0006\f\u0010<\u001a\u0004\u0018\u00010=X\u008a\u008e\u0002²\u0006\n\u0010>\u001a\u00020?X\u008a\u008e\u0002²\u0006\n\u0010@\u001a\u00020\bX\u008a\u008e\u0002²\u0006\u0010\u0010A\u001a\b\u0012\u0004\u0012\u00020\u00180\u0001X\u008a\u008e\u0002²\u0006\n\u0010B\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010C\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010D\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010\u0019\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010E\u001a\u00020\bX\u008a\u008e\u0002²\u0006\n\u0010F\u001a\u00020\u0011X\u008a\u008e\u0002²\u0006\n\u0010G\u001a\u00020?X\u008a\u0084\u0002²\u0006\n\u0010H\u001a\u00020\bX\u008a\u008e\u0002"}, m922d2 = {"ADD_SKILL_OPTIONS", "", "Lcom/google/ai/edge/gallery/customtasks/agentchat/AddSkillOption;", "BUTTON_CONTENT_PADDING", "Landroidx/compose/foundation/layout/PaddingValues;", "getBUTTON_CONTENT_PADDING", "()Landroidx/compose/foundation/layout/PaddingValues;", "TAG", "", "SkillManagerBottomSheet", "", "agentTools", "Lcom/google/ai/edge/gallery/customtasks/agentchat/AgentTools;", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "onDismiss", "Lkotlin/Function1;", "", "Lkotlin/ParameterName;", "name", "selectedSkillsChanged", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/AgentTools;Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V", "SkillItemRow", "skillState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillState;", "inMultiSelectMode", "isSelectedForDeletion", "onSelectionCheckedChange", "onLongClick", "Lkotlin/Function0;", "onSkillEnabledChange", "onViewClick", "onSecretClick", "onDeleteClick", "uriHandler", "Landroidx/compose/ui/platform/UriHandler;", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillState;ZZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/platform/UriHandler;Landroidx/compose/runtime/Composer;I)V", "scrollToBottomOfList", "scope", "Lkotlinx/coroutines/CoroutineScope;", "listState", "Landroidx/compose/foundation/lazy/LazyListState;", "AddSkillOptionsBottomSheet", "onOptionSelected", "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;", "showAddSkillFromUrlDialog", "showAddSkillFromLocalImportDialog", "showAddSkillFromFeaturedListBottomSheet", "showAddOrEditSkillBottomSheet", "showAddSkillOptionsSheet", "showDeleteSkillDialog", "showJsSkillTesterBottomSheet", "showSecretEditorDialog", "showDisclaimerDialog", "skillToDeleteName", "skillToTest", "Lcom/google/ai/edge/gallery/proto/Skill;", "addSkillOptionTypeToConfirm", "Lcom/google/ai/edge/gallery/customtasks/agentchat/AddSkillOptionType;", "skillToEditIndex", "", "searchQuery", "filteredSkills", "hasDeterminedExpansionStates", "isBuiltInExpanded", "isCustomExpanded", "previousSearchQuery", "showSkillLimitBanner", "selectedSkillsCount", "curSecret"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class SkillManagerBottomSheetKt {
     private static final List<AddSkillOption> ADD_SKILL_OPTIONS = CollectionsKt.listOf((Object[]) new AddSkillOption[]{new AddSkillOption(AddSkillOptionType.RemoteUrl, C2421R.string.add_skill_option_url_title, C2421R.string.add_skill_option_url_description, LinkKt.getLink(Icons.Rounded.INSTANCE)), new AddSkillOption(AddSkillOptionType.LocalImport, C2421R.string.add_skill_option_local_title, C2421R.string.add_skill_option_local_description, DriveFolderUploadKt.getDriveFolderUpload(Icons.Outlined.INSTANCE))});
     private static final PaddingValues BUTTON_CONTENT_PADDING = PaddingKt.m1984PaddingValuesa9UjIt4(C1654Dp.m9788constructorimpl(12), C1654Dp.m9788constructorimpl(2), C1654Dp.m9788constructorimpl(12), C1654Dp.m9788constructorimpl(2));
     private static final String TAG = "AGSkillManagerBottomSheet";
 
-    /* JADX INFO: compiled from: SkillManagerBottomSheet.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -158,19 +157,19 @@ public final class SkillManagerBottomSheetKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillOptionsBottomSheet$lambda$207(Function0 function0, Function1 function1, int i, Composer composer, int i2) {
         AddSkillOptionsBottomSheet(function0, function1, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillItemRow$lambda$196(SkillState skillState, boolean z, boolean z2, Function1 function1, Function0 function0, Function1 function12, Function0 function02, Function0 function03, Function0 function04, UriHandler uriHandler, int i, Composer composer, int i2) {
         SkillItemRow(skillState, z, z2, function1, function0, function12, function02, function03, function04, uriHandler, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$183(AgentTools agentTools, SkillManagerViewModel skillManagerViewModel, Function1 function1, int i, Composer composer, int i2) {
         SkillManagerBottomSheet(agentTools, skillManagerViewModel, function1, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -212,7 +211,7 @@ public final class SkillManagerBottomSheetKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerBottomSheetKt.SkillManagerBottomSheet(com.google.ai.edge.gallery.customtasks.agentchat.AgentTools, com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel, kotlin.jvm.functions.Function1, androidx.compose.runtime.Composer, int):void");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final SkillManagerUiState SkillManagerBottomSheet$lambda$0(State<SkillManagerUiState> state) {
         Object thisObj$iv = state.getValue();
         return (SkillManagerUiState) thisObj$iv;
@@ -250,7 +249,7 @@ public final class SkillManagerBottomSheetKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void SkillManagerBottomSheet$lambda$12(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -269,7 +268,7 @@ public final class SkillManagerBottomSheetKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void SkillManagerBottomSheet$lambda$18(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -288,7 +287,7 @@ public final class SkillManagerBottomSheetKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void SkillManagerBottomSheet$lambda$24(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -322,25 +321,25 @@ public final class SkillManagerBottomSheetKt {
         return $this$getValue$iv.getIntValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String SkillManagerBottomSheet$lambda$41(MutableState<String> mutableState) {
         MutableState<String> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final List<SkillState> SkillManagerBottomSheet$lambda$45(MutableState<List<SkillState>> mutableState) {
         MutableState<List<SkillState>> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean SkillManagerBottomSheet$lambda$48(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void SkillManagerBottomSheet$lambda$49(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -350,7 +349,7 @@ public final class SkillManagerBottomSheetKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void SkillManagerBottomSheet$lambda$52(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -360,46 +359,46 @@ public final class SkillManagerBottomSheetKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void SkillManagerBottomSheet$lambda$55(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean SkillManagerBottomSheet$lambda$57(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void SkillManagerBottomSheet$lambda$58(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String SkillManagerBottomSheet$lambda$61(MutableState<String> mutableState) {
         MutableState<String> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean SkillManagerBottomSheet$lambda$64(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void SkillManagerBottomSheet$lambda$65(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int SkillManagerBottomSheet$lambda$69(State<Integer> state) {
         Object thisObj$iv = state.getValue();
         return ((Number) thisObj$iv).intValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int SkillManagerBottomSheet$lambda$68$lambda$67(State $uiState$delegate) {
         Iterable $this$count$iv = SkillManagerBottomSheet$lambda$0($uiState$delegate).getSkills();
         if (($this$count$iv instanceof Collection) && ((Collection) $this$count$iv).isEmpty()) {
@@ -415,9 +414,9 @@ public final class SkillManagerBottomSheetKt {
         return count$iv;
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerBottomSheetKt$SkillManagerBottomSheet$4 */
-    /* JADX INFO: compiled from: SkillManagerBottomSheet.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerBottomSheetKt$SkillManagerBottomSheet$4", m932f = "SkillManagerBottomSheet.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25014 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Ref.ObjectRef<String> $savedSelectedSkillsNamesAndDescriptions;
@@ -456,13 +455,13 @@ public final class SkillManagerBottomSheetKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$73(Function1 $onDismiss, Ref.ObjectRef $savedSelectedSkillsNamesAndDescriptions, SkillManagerViewModel $skillManagerViewModel) {
         $onDismiss.invoke(Boolean.valueOf(!Intrinsics.areEqual($savedSelectedSkillsNamesAndDescriptions.element, $skillManagerViewModel.getSelectedSkillsNamesAndDescriptions())));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$134(final State $uiState$delegate, final MutableState $inMultiSelectMode$delegate, final SnapshotStateList $selectedCustomSkillNames, final MutableState $showDeleteSkillDialog$delegate, final CoroutineScope $scope, final SheetState $sheetState, final Function1 $onDismiss, final Ref.ObjectRef $savedSelectedSkillsNamesAndDescriptions, final SkillManagerViewModel $skillManagerViewModel, MutableState $searchQuery$delegate, final MutableState $showAddSkillOptionsSheet$delegate, final MutableState $filteredSkills$delegate, final LazyListState $listState, final UriHandler $uriHandler, final MutableState $isBuiltInExpanded$delegate, final MutableIntState $skillToEditIndex$delegate, final MutableState $showAddOrEditSkillBottomSheet$delegate, final MutableState $showSecretEditorDialog$delegate, final MutableState $skillToDeleteName$delegate, final MutableState $isCustomExpanded$delegate, final MutableState $showSkillLimitBanner$delegate, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Composer $composer$iv$iv$iv;
@@ -991,16 +990,16 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$80$lambda$77$lambda$76 */
+    
+    
     public static final Unit m441xb4b44c42(SnapshotStateList $selectedCustomSkillNames, MutableState $inMultiSelectMode$delegate) {
         SkillManagerBottomSheet$lambda$58($inMultiSelectMode$delegate, false);
         $selectedCustomSkillNames.clear();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$80$lambda$79$lambda$78 */
+    
+    
     public static final Unit m442xde7db1c6(SnapshotStateList $selectedCustomSkillNames, MutableState $showDeleteSkillDialog$delegate) {
         if (!$selectedCustomSkillNames.isEmpty()) {
             SkillManagerBottomSheet$lambda$18($showDeleteSkillDialog$delegate, true);
@@ -1008,23 +1007,23 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$83$lambda$82 */
+    
+    
     public static final Unit m443x53ee0fe7(CoroutineScope $scope, SheetState $sheetState, Function1 $onDismiss, Ref.ObjectRef $savedSelectedSkillsNamesAndDescriptions, SkillManagerViewModel $skillManagerViewModel) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new SkillManagerBottomSheetKt$SkillManagerBottomSheet$6$1$3$2$2$1($sheetState, $onDismiss, $savedSelectedSkillsNamesAndDescriptions, $skillManagerViewModel, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$92$lambda$85$lambda$84 */
+    
+    
     public static final Unit m444x325431dd(MutableState $searchQuery$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $searchQuery$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$92$lambda$88 */
+    
+    
     public static final Unit m445xc6bb028b(final MutableState $searchQuery$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C:SkillManagerBottomSheet.kt#41d64j");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -1061,23 +1060,23 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$92$lambda$88$lambda$87$lambda$86 */
+    
+    
     public static final Unit m446x3e6f3ba(MutableState $searchQuery$delegate) {
         $searchQuery$delegate.setValue("");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$92$lambda$90$lambda$89 */
+    
+    
     public static final Unit m447x518e597c(MutableState $searchQuery$delegate, MutableState $showAddSkillOptionsSheet$delegate) {
         $searchQuery$delegate.setValue("");
         SkillManagerBottomSheet$lambda$15($showAddSkillOptionsSheet$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$99 */
+    
+    
     public static final Unit m448xf4e4bfb9(State $uiState$delegate, final SkillManagerViewModel $skillManagerViewModel, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -1208,22 +1207,22 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$99$lambda$98$lambda$97$lambda$94$lambda$93 */
+    
+    
     public static final Unit m449x5bb1340f(SkillManagerViewModel $skillManagerViewModel) {
         $skillManagerViewModel.setAllSkillsSelected(true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$99$lambda$98$lambda$97$lambda$96$lambda$95 */
+    
+    
     public static final Unit m450x857a9993(SkillManagerViewModel $skillManagerViewModel) {
         $skillManagerViewModel.setAllSkillsSelected(false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$131 */
+    
+    
     public static final Unit m433xa7b318d6(ColumnScope $this_Column, MutableState $filteredSkills$delegate, LazyListState $listState, final SkillManagerViewModel $skillManagerViewModel, final State $uiState$delegate, final UriHandler $uriHandler, final MutableState $isBuiltInExpanded$delegate, final MutableState $inMultiSelectMode$delegate, final MutableIntState $skillToEditIndex$delegate, final MutableState $showAddOrEditSkillBottomSheet$delegate, final MutableState $showSecretEditorDialog$delegate, final MutableState $skillToDeleteName$delegate, final MutableState $showDeleteSkillDialog$delegate, final MutableState $isCustomExpanded$delegate, final SnapshotStateList $selectedCustomSkillNames, MutableState $showSkillLimitBanner$delegate, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         ComposerKt.sourceInformation($composer, "C437@17397L71,439@17514L72,441@17600L7018:SkillManagerBottomSheet.kt#41d64j");
@@ -1337,8 +1336,8 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$131$lambda$130$lambda$129$lambda$128 */
+    
+    
     public static final Unit m434x5fa87dde(final List $builtInSkills, final List $customSkills, final MutableState $isBuiltInExpanded$delegate, final SkillManagerViewModel $skillManagerViewModel, final State $uiState$delegate, final UriHandler $uriHandler, final MutableState $inMultiSelectMode$delegate, final MutableIntState $skillToEditIndex$delegate, final MutableState $showAddOrEditSkillBottomSheet$delegate, final MutableState $showSecretEditorDialog$delegate, final MutableState $skillToDeleteName$delegate, final MutableState $showDeleteSkillDialog$delegate, final MutableState $isCustomExpanded$delegate, final SnapshotStateList $selectedCustomSkillNames, LazyListScope LazyColumn) {
         Intrinsics.checkNotNullParameter(LazyColumn, "$this$LazyColumn");
         if (!$builtInSkills.isEmpty()) {
@@ -1437,7 +1436,7 @@ public final class SkillManagerBottomSheetKt {
                                         return Unit.INSTANCE;
                                     }
 
-                                    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                    
                                     public final void invoke2() {
                                     }
                                 };
@@ -1481,7 +1480,7 @@ public final class SkillManagerBottomSheetKt {
                                         return Unit.INSTANCE;
                                     }
 
-                                    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                    
                                     public final void invoke2() {
                                         mutableIntState.setIntValue(SkillManagerBottomSheetKt.SkillManagerBottomSheet$lambda$0(state).getSkills().indexOf(skillState));
                                         SkillManagerBottomSheetKt.SkillManagerBottomSheet$lambda$12(mutableState, true);
@@ -1506,7 +1505,7 @@ public final class SkillManagerBottomSheetKt {
                                         return Unit.INSTANCE;
                                     }
 
-                                    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                    
                                     public final void invoke2() {
                                         mutableIntState2.setIntValue(SkillManagerBottomSheetKt.SkillManagerBottomSheet$lambda$0(state2).getSkills().indexOf(skillState));
                                         SkillManagerBottomSheetKt.SkillManagerBottomSheet$lambda$24(mutableState2, true);
@@ -1530,7 +1529,7 @@ public final class SkillManagerBottomSheetKt {
                                         return Unit.INSTANCE;
                                     }
 
-                                    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                    
                                     public final void invoke2() {
                                         MutableState<String> mutableState5 = mutableState3;
                                         String name = skillState.getSkill().getName();
@@ -1670,7 +1669,7 @@ public final class SkillManagerBottomSheetKt {
                                         return Unit.INSTANCE;
                                     }
 
-                                    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                    
                                     public final void invoke2() {
                                         if (!SkillManagerBottomSheetKt.SkillManagerBottomSheet$lambda$57(mutableState2)) {
                                             SkillManagerBottomSheetKt.SkillManagerBottomSheet$lambda$58(mutableState2, true);
@@ -1721,7 +1720,7 @@ public final class SkillManagerBottomSheetKt {
                                         return Unit.INSTANCE;
                                     }
 
-                                    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                    
                                     public final void invoke2() {
                                         mutableIntState.setIntValue(SkillManagerBottomSheetKt.SkillManagerBottomSheet$lambda$0(state).getSkills().indexOf(skillState));
                                         SkillManagerBottomSheetKt.SkillManagerBottomSheet$lambda$12(mutableState3, true);
@@ -1746,7 +1745,7 @@ public final class SkillManagerBottomSheetKt {
                                         return Unit.INSTANCE;
                                     }
 
-                                    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                    
                                     public final void invoke2() {
                                         mutableIntState2.setIntValue(SkillManagerBottomSheetKt.SkillManagerBottomSheet$lambda$0(state2).getSkills().indexOf(skillState));
                                         SkillManagerBottomSheetKt.SkillManagerBottomSheet$lambda$24(mutableState4, true);
@@ -1770,7 +1769,7 @@ public final class SkillManagerBottomSheetKt {
                                         return Unit.INSTANCE;
                                     }
 
-                                    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                                    
                                     public final void invoke2() {
                                         MutableState<String> mutableState7 = mutableState5;
                                         String name = skillState.getSkill().getName();
@@ -1799,8 +1798,8 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$131$lambda$130$lambda$129$lambda$128$lambda$107 */
+    
+    
     public static final Unit m435x89472221(final MutableState $isBuiltInExpanded$delegate, LazyItemScope item, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         String str;
@@ -1890,15 +1889,15 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$131$lambda$130$lambda$129$lambda$128$lambda$107$lambda$105$lambda$104 */
+    
+    
     public static final Unit m436xc33bbb40(MutableState $isBuiltInExpanded$delegate) {
         SkillManagerBottomSheet$lambda$52($isBuiltInExpanded$delegate, !SkillManagerBottomSheet$lambda$51($isBuiltInExpanded$delegate));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$131$lambda$130$lambda$129$lambda$128$lambda$108 */
+    
+    
     public static final Object m437x89472222(SkillState it) {
         Intrinsics.checkNotNullParameter(it, "it");
         String name = it.getSkill().getName();
@@ -1906,8 +1905,8 @@ public final class SkillManagerBottomSheetKt {
         return name;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$131$lambda$130$lambda$129$lambda$128$lambda$119 */
+    
+    
     public static final Unit m438x89472242(final MutableState $isCustomExpanded$delegate, LazyItemScope item, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         String str;
@@ -1997,15 +1996,15 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$131$lambda$130$lambda$129$lambda$128$lambda$119$lambda$117$lambda$116 */
+    
+    
     public static final Unit m439x5186ce01(MutableState $isCustomExpanded$delegate) {
         SkillManagerBottomSheet$lambda$55($isCustomExpanded$delegate, !SkillManagerBottomSheet$lambda$54($isCustomExpanded$delegate));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillManagerBottomSheet$lambda$134$lambda$133$lambda$132$lambda$131$lambda$130$lambda$129$lambda$128$lambda$120 */
+    
+    
     public static final Object m440x89472258(SkillState it) {
         Intrinsics.checkNotNullParameter(it, "it");
         String name = it.getSkill().getName();
@@ -2013,13 +2012,13 @@ public final class SkillManagerBottomSheetKt {
         return name;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$136$lambda$135(MutableState $showDeleteSkillDialog$delegate) {
         SkillManagerBottomSheet$lambda$18($showDeleteSkillDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$143(MutableState $inMultiSelectMode$delegate, Composer $composer, int $changed) {
         String str;
         ComposerKt.sourceInformation($composer, "C605@24792L168:SkillManagerBottomSheet.kt#41d64j");
@@ -2050,7 +2049,7 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$144(SnapshotStateList $selectedCustomSkillNames, MutableState $inMultiSelectMode$delegate, Composer $composer, int $changed) {
         String str;
         ComposerKt.sourceInformation($composer, "C611@24993L310:SkillManagerBottomSheet.kt#41d64j");
@@ -2081,7 +2080,7 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$139(final SkillManagerViewModel $skillManagerViewModel, final SnapshotStateList $selectedCustomSkillNames, final MutableState $inMultiSelectMode$delegate, final MutableState $skillToDeleteName$delegate, final MutableState $showDeleteSkillDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C623@25373L371,635@25851L12,634@25792L143,622@25345L661:SkillManagerBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2112,7 +2111,7 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$139$lambda$138$lambda$137(SkillManagerViewModel $skillManagerViewModel, SnapshotStateList $selectedCustomSkillNames, MutableState $inMultiSelectMode$delegate, MutableState $skillToDeleteName$delegate, MutableState $showDeleteSkillDialog$delegate) {
         if (SkillManagerBottomSheet$lambda$57($inMultiSelectMode$delegate)) {
             $skillManagerViewModel.deleteSkills(CollectionsKt.toSet($selectedCustomSkillNames));
@@ -2125,7 +2124,7 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$142(final MutableState $showDeleteSkillDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C643@26073L33,643@26048L119:SkillManagerBottomSheet.kt#41d64j");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2155,69 +2154,69 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$142$lambda$141$lambda$140(MutableState $showDeleteSkillDialog$delegate) {
         SkillManagerBottomSheet$lambda$18($showDeleteSkillDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$146$lambda$145(MutableState $showAddSkillFromUrlDialog$delegate) {
         SkillManagerBottomSheet$lambda$3($showAddSkillFromUrlDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$148$lambda$147(CoroutineScope $scope, LazyListState $listState) {
         scrollToBottomOfList($scope, $listState);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$150$lambda$149(MutableState $showAddSkillFromFeaturedListBottomSheet$delegate) {
         SkillManagerBottomSheet$lambda$9($showAddSkillFromFeaturedListBottomSheet$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$152$lambda$151(CoroutineScope $scope, LazyListState $listState) {
         scrollToBottomOfList($scope, $listState);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$154$lambda$153(MutableState $showAddSkillFromLocalImportDialog$delegate) {
         SkillManagerBottomSheet$lambda$6($showAddSkillFromLocalImportDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$156$lambda$155(CoroutineScope $scope, LazyListState $listState) {
         scrollToBottomOfList($scope, $listState);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$158$lambda$157(MutableState $showAddOrEditSkillBottomSheet$delegate, MutableIntState $skillToEditIndex$delegate) {
         SkillManagerBottomSheet$lambda$12($showAddOrEditSkillBottomSheet$delegate, false);
         $skillToEditIndex$delegate.setIntValue(-1);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$160$lambda$159(CoroutineScope $scope, LazyListState $listState, MutableIntState $skillToEditIndex$delegate) {
         scrollToBottomOfList($scope, $listState);
         $skillToEditIndex$delegate.setIntValue(-1);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$162$lambda$161(MutableState $showAddSkillOptionsSheet$delegate) {
         SkillManagerBottomSheet$lambda$15($showAddSkillOptionsSheet$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$164$lambda$163(SkillManagerViewModel $skillManagerViewModel, MutableState $addSkillOptionTypeToConfirm$delegate, MutableState $showAddSkillFromFeaturedListBottomSheet$delegate, MutableState $showAddSkillFromUrlDialog$delegate, MutableState $showDisclaimerDialog$delegate, MutableState $showAddSkillOptionsSheet$delegate, AddSkillOption option) {
         Intrinsics.checkNotNullParameter(option, "option");
         $skillManagerViewModel.setValidationError(null);
@@ -2237,7 +2236,7 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$167$lambda$166$lambda$165(MutableState $showJsSkillTesterBottomSheet$delegate) {
         SkillManagerBottomSheet$lambda$21($showJsSkillTesterBottomSheet$delegate, false);
         return Unit.INSTANCE;
@@ -2248,14 +2247,14 @@ public final class SkillManagerBottomSheetKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$177$lambda$172$lambda$171(MutableState $curSecret$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $curSecret$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$177$lambda$174$lambda$173(SkillManagerViewModel $skillManagerViewModel, SkillState $it, MutableState $curSecret$delegate, MutableState $showSecretEditorDialog$delegate) {
         DataStoreRepository dataStoreRepository = $skillManagerViewModel.getDataStoreRepository();
         String name = $it.getSkill().getName();
@@ -2265,20 +2264,20 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$177$lambda$176$lambda$175(MutableState $showSecretEditorDialog$delegate) {
         SkillManagerBottomSheet$lambda$24($showSecretEditorDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$179$lambda$178(MutableState $showDisclaimerDialog$delegate, MutableState $addSkillOptionTypeToConfirm$delegate) {
         SkillManagerBottomSheet$lambda$27($showDisclaimerDialog$delegate, false);
         $addSkillOptionTypeToConfirm$delegate.setValue(null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillManagerBottomSheet$lambda$182$lambda$181(MutableState $addSkillOptionTypeToConfirm$delegate, MutableState $showAddSkillFromLocalImportDialog$delegate, MutableState $showDisclaimerDialog$delegate) {
         AddSkillOptionType type = SkillManagerBottomSheet$lambda$35($addSkillOptionTypeToConfirm$delegate);
         if (type != null && type == AddSkillOptionType.LocalImport) {
@@ -2289,7 +2288,7 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void SkillItemRow(final SkillState skillState, final boolean inMultiSelectMode, final boolean isSelectedForDeletion, final Function1<? super Boolean, Unit> function1, final Function0<Unit> function0, final Function1<? super Boolean, Unit> function12, final Function0<Unit> function02, final Function0<Unit> function03, final Function0<Unit> function04, final UriHandler uriHandler, Composer $composer, final int $changed) {
         Composer $composer2;
         Skill skill;
@@ -2751,7 +2750,7 @@ public final class SkillManagerBottomSheetKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillItemRow$lambda$185$lambda$184(boolean $inMultiSelectMode, Function1 $onSelectionCheckedChange, boolean $isSelectedForDeletion) {
         if ($inMultiSelectMode) {
             $onSelectionCheckedChange.invoke(Boolean.valueOf(!$isSelectedForDeletion));
@@ -2759,8 +2758,8 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: SkillItemRow$lambda$195$lambda$194$lambda$191$lambda$190$lambda$189$lambda$188$lambda$187$lambda$186 */
+    
+    
     public static final Unit m432xcb019852(UriHandler $uriHandler, Skill $skill) {
         String homepage = $skill.getHomepage();
         Intrinsics.checkNotNullExpressionValue(homepage, "getHomepage(...)");
@@ -2768,7 +2767,7 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit SkillItemRow$lambda$195$lambda$194$lambda$193(Function0 $onViewClick, Skill $skill, Function0 $onSecretClick, Function0 $onDeleteClick, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
@@ -2840,9 +2839,9 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerBottomSheetKt$scrollToBottomOfList$1 */
-    /* JADX INFO: compiled from: SkillManagerBottomSheet.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerBottomSheetKt$scrollToBottomOfList$1", m932f = "SkillManagerBottomSheet.kt", m933i = {}, m934l = {945, 947}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25231 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ LazyListState $listState;
@@ -2977,7 +2976,7 @@ public final class SkillManagerBottomSheetKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillOptionsBottomSheet$lambda$206(Function1 $onOptionSelected, Function0 $onDismiss, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -3277,8 +3276,8 @@ public final class SkillManagerBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillOptionsBottomSheet$lambda$206$lambda$205$lambda$204$lambda$203$lambda$199$lambda$198 */
+    
+    
     public static final Unit m431x5b51e123(Function1 $onOptionSelected, AddSkillOption $option, Function0 $onDismiss) {
         $onOptionSelected.invoke($option);
         FirebaseAnalytics firebaseAnalytics = AnalyticsKt.getFirebaseAnalytics();

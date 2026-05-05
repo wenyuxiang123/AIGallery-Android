@@ -28,7 +28,6 @@ import androidx.compose.p000ui.Modifier;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.StringResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -80,20 +79,20 @@ import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.flow.Flow;
 
-/* JADX INFO: compiled from: TinyGardenScreen.kt */
-/* JADX INFO: loaded from: classes8.dex */
-@Metadata(m921d1 = {"\u0000z\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u001au\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\n2\u0006\u0010\f\u001a\u00020\r2\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00040\u000f2\u0012\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00040\u000f2\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00140\u00132\b\b\u0002\u0010\u0015\u001a\u00020\u0016H\u0007¢\u0006\u0004\b\u0017\u0010\u0018\u001a}\u0010\u0019\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\n2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\u00162\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00040\u000f2\u0012\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00040\u000f2\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00140\u00132\b\b\u0002\u0010\u001a\u001a\u00020\u001bH\u0007¢\u0006\u0004\b\u001c\u0010\u001d\u001a\f\u0010\u001e\u001a\u00020\u0001*\u00020\u0001H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u001f²\u0006\n\u0010 \u001a\u00020!X\u008a\u0084\u0002²\u0006\n\u0010\"\u001a\u00020\u0010X\u008a\u008e\u0002²\u0006\n\u0010#\u001a\u00020$X\u008a\u0084\u0002²\u0006\f\u0010%\u001a\u0004\u0018\u00010&X\u008a\u008e\u0002²\u0006\n\u0010 \u001a\u00020!X\u008a\u0084\u0002²\u0006\n\u0010'\u001a\u00020(X\u008a\u008e\u0002²\u0006\n\u0010)\u001a\u00020*X\u008a\u008e\u0002²\u0006\n\u0010+\u001a\u00020,X\u008a\u0084\u0002²\u0006\n\u0010-\u001a\u00020\u0010X\u008a\u008e\u0002²\u0006\n\u0010.\u001a\u00020\u0010X\u008a\u008e\u0002²\u0006\n\u0010/\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00100\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00101\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00102\u001a\u00020\u0001X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "ASSETS_BASE_URL", "TinyGardenScreen", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "tools", "", "Lcom/google/ai/edge/litertlm/ToolProvider;", "bottomPadding", "Landroidx/compose/ui/unit/Dp;", "setAppBarControlsDisabled", "Lkotlin/Function1;", "", "setTopBarVisible", "commandFlow", "Lkotlinx/coroutines/flow/Flow;", "Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenCommand;", "viewModel", "Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenViewModel;", "TinyGardenScreen-aA_HZ9I", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Ljava/util/List;FLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlinx/coroutines/flow/Flow;Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenViewModel;Landroidx/compose/runtime/Composer;II)V", "MainUi", "holdToDictateViewModel", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;", "MainUi-_-WMjBM", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Ljava/util/List;FLcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenViewModel;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlinx/coroutines/flow/Flow;Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;Landroidx/compose/runtime/Composer;II)V", "sha256", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenUiState;", "recordAudioPermissionGranted", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "webViewRef", "Landroid/webkit/WebView;", "clearTextTrigger", "", "curAmplitude", "", "holdToDictateUiState", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateUiState;", "showConversationHistoryPanel", "showErrorDialog", "errorDialogContent", "prevSeed", "prevPlots", "prevAction"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u00020*X\u008a\u008e\u0002²\u0006\n\u0010+\u001a\u00020,X\u008a\u0084\u0002²\u0006\n\u0010-\u001a\u00020\u0010X\u008a\u008e\u0002²\u0006\n\u0010.\u001a\u00020\u0010X\u008a\u008e\u0002²\u0006\n\u0010/\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00100\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00101\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u00102\u001a\u00020\u0001X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "ASSETS_BASE_URL", "TinyGardenScreen", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "tools", "", "Lcom/google/ai/edge/litertlm/ToolProvider;", "bottomPadding", "Landroidx/compose/ui/unit/Dp;", "setAppBarControlsDisabled", "Lkotlin/Function1;", "", "setTopBarVisible", "commandFlow", "Lkotlinx/coroutines/flow/Flow;", "Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenCommand;", "viewModel", "Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenViewModel;", "TinyGardenScreen-aA_HZ9I", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Ljava/util/List;FLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlinx/coroutines/flow/Flow;Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenViewModel;Landroidx/compose/runtime/Composer;II)V", "MainUi", "holdToDictateViewModel", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;", "MainUi-_-WMjBM", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Ljava/util/List;FLcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenViewModel;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlinx/coroutines/flow/Flow;Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;Landroidx/compose/runtime/Composer;II)V", "sha256", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/customtasks/tinygarden/TinyGardenUiState;", "recordAudioPermissionGranted", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "webViewRef", "Landroid/webkit/WebView;", "clearTextTrigger", "", "curAmplitude", "", "holdToDictateUiState", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateUiState;", "showConversationHistoryPanel", "showErrorDialog", "errorDialogContent", "prevSeed", "prevPlots", "prevAction"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class TinyGardenScreenKt {
     private static final String ASSETS_BASE_URL = "https://appassets.androidplatform.net";
     private static final String TAG = "AGTinyGarden";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$88(Task task, ModelManagerViewModel modelManagerViewModel, List list, float f, TinyGardenViewModel tinyGardenViewModel, Function1 function1, Function1 function12, Flow flow, HoldToDictateViewModel holdToDictateViewModel, int i, int i2, Composer composer, int i3) {
         m10535MainUi_WMjBM(task, modelManagerViewModel, list, f, tinyGardenViewModel, function1, function12, flow, holdToDictateViewModel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TinyGardenScreen_aA_HZ9I$lambda$10(Task task, ModelManagerViewModel modelManagerViewModel, List list, float f, Function1 function1, Function1 function12, Flow flow, TinyGardenViewModel tinyGardenViewModel, int i, int i2, Composer composer, int i3) {
         m10536TinyGardenScreenaA_HZ9I(task, modelManagerViewModel, list, f, function1, function12, flow, tinyGardenViewModel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -118,7 +117,7 @@ public final class TinyGardenScreenKt {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: TinyGardenScreen-aA_HZ9I, reason: not valid java name */
+    
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -141,12 +140,12 @@ public final class TinyGardenScreenKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void TinyGardenScreen_aA_HZ9I$lambda$3(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TinyGardenScreen_aA_HZ9I$lambda$5$lambda$4(MutableState $recordAudioPermissionGranted$delegate, boolean permissionGranted) {
         if (permissionGranted) {
             TinyGardenScreen_aA_HZ9I$lambda$3($recordAudioPermissionGranted$delegate, true);
@@ -208,7 +207,7 @@ public final class TinyGardenScreenKt {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: MainUi-_-WMjBM, reason: not valid java name */
+    
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -226,7 +225,7 @@ public final class TinyGardenScreenKt {
         return (ModelManagerUiState) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final WebView MainUi___WMjBM$lambda$14(MutableState<WebView> mutableState) {
         MutableState<WebView> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
@@ -252,7 +251,7 @@ public final class TinyGardenScreenKt {
         return (HoldToDictateUiState) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean MainUi___WMjBM$lambda$25(MutableState<Boolean> mutableState) {
         MutableState<Boolean> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().booleanValue();
@@ -267,7 +266,7 @@ public final class TinyGardenScreenKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void MainUi___WMjBM$lambda$29(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -277,25 +276,25 @@ public final class TinyGardenScreenKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String MainUi___WMjBM$lambda$35(MutableState<String> mutableState) {
         MutableState<String> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String MainUi___WMjBM$lambda$38(MutableState<String> mutableState) {
         MutableState<String> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String MainUi___WMjBM$lambda$41(MutableState<String> mutableState) {
         MutableState<String> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$44$lambda$43(MutableState $showConversationHistoryPanel$delegate) {
         MainUi___WMjBM$lambda$26($showConversationHistoryPanel$delegate, false);
         return Unit.INSTANCE;
@@ -347,7 +346,7 @@ public final class TinyGardenScreenKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$processInstructionText$lambda$49(TinyGardenViewModel $viewModel, String $noFunctionCallWarningMessage, CoroutineScope $scope, Model $model, List $tools, State $uiState$delegate, SnackbarHostState $snackbarHostState, String $noFunctionCallSnackbarMessage, MutableState $prevSeed$delegate, MutableState $prevPlots$delegate, MutableState $prevAction$delegate, String response) {
         Intrinsics.checkNotNullParameter(response, "response");
         if (((ChatMessage) CollectionsKt.last((List) MainUi___WMjBM$lambda$16($uiState$delegate).getMessages())).getSide() != ChatSide.AGENT) {
@@ -365,7 +364,7 @@ public final class TinyGardenScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$processInstructionText$lambda$50(MutableState $errorDialogContent$delegate, MutableState $showErrorDialog$delegate, String error) {
         Intrinsics.checkNotNullParameter(error, "error");
         $errorDialogContent$delegate.setValue(error);
@@ -373,7 +372,7 @@ public final class TinyGardenScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final WebView MainUi___WMjBM$lambda$76$lambda$67$lambda$58$lambda$57$lambda$56(final TinyGardenViewModel $viewModel, final MutableState $webViewRef$delegate, final CoroutineScope $scope, Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         final WebViewAssetLoader assetLoader = new WebViewAssetLoader.Builder().addPathHandler("/assets/", new WebViewAssetLoader.AssetsPathHandler(context)).build();
@@ -445,27 +444,27 @@ public final class TinyGardenScreenKt {
         return $this$MainUi___WMjBM_u24lambda_u2476_u24lambda_u2467_u24lambda_u2458_u24lambda_u2457_u24lambda_u2456_u24lambda_u2455;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$76$lambda$67$lambda$66$lambda$60$lambda$59(TinyGardenViewModel $viewModel, Model $model, MutableLongState $clearTextTrigger$delegate, MutableState $webViewRef$delegate, String $noFunctionCallWarningMessage, CoroutineScope $scope, List $tools, State $uiState$delegate, SnackbarHostState $snackbarHostState, String $noFunctionCallSnackbarMessage, MutableState $prevSeed$delegate, MutableState $prevPlots$delegate, MutableState $prevAction$delegate, MutableState $errorDialogContent$delegate, MutableState $showErrorDialog$delegate, Task $task, String text) {
         Intrinsics.checkNotNullParameter(text, "text");
         MainUi___WMjBM$processInstructionText($viewModel, $model, $clearTextTrigger$delegate, $webViewRef$delegate, $noFunctionCallWarningMessage, $scope, $tools, $uiState$delegate, $snackbarHostState, $noFunctionCallSnackbarMessage, $prevSeed$delegate, $prevPlots$delegate, $prevAction$delegate, $errorDialogContent$delegate, $showErrorDialog$delegate, $task, text);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$76$lambda$67$lambda$66$lambda$62$lambda$61(MutableIntState $curAmplitude$delegate, int it) {
         $curAmplitude$delegate.setIntValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MainUi___WMjBM$lambda$76$lambda$67$lambda$66$lambda$65$lambda$64$lambda$63 */
+    
+    
     public static final Unit m465x10318e7d(MutableState $showConversationHistoryPanel$delegate) {
         MainUi___WMjBM$lambda$26($showConversationHistoryPanel$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$76$lambda$68(Task $task, HoldToDictateViewModel $holdToDictateViewModel, float $bottomPadding, MutableIntState $curAmplitude$delegate, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
         ComposerKt.sourceInformation($composer, "C655@26196L182:TinyGardenScreen.kt#pwpd1x");
@@ -479,17 +478,17 @@ public final class TinyGardenScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int MainUi___WMjBM$lambda$76$lambda$70$lambda$69(int fullHeight) {
         return fullHeight;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int MainUi___WMjBM$lambda$76$lambda$72$lambda$71(int fullHeight) {
         return fullHeight;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$76$lambda$75(Task $task, float $bottomPadding, TinyGardenViewModel $viewModel, final MutableState $showConversationHistoryPanel$delegate, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedVisibility, "$this$AnimatedVisibility");
         ComposerKt.sourceInformation($composer, "C673@26780L40,669@26635L196:TinyGardenScreen.kt#pwpd1x");
@@ -516,13 +515,13 @@ public final class TinyGardenScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$76$lambda$75$lambda$74$lambda$73(MutableState $showConversationHistoryPanel$delegate) {
         MainUi___WMjBM$lambda$26($showConversationHistoryPanel$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$87(MutableState $errorDialogContent$delegate, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         ComposerKt.sourceInformation($composer, "C683@26972L348:TinyGardenScreen.kt#pwpd1x");
@@ -582,14 +581,14 @@ public final class TinyGardenScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$78$lambda$77(MutableState $showErrorDialog$delegate, MutableState $errorDialogContent$delegate) {
         MainUi___WMjBM$lambda$29($showErrorDialog$delegate, false);
         $errorDialogContent$delegate.setValue("");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$85(final MutableState $showErrorDialog$delegate, final MutableState $errorDialogContent$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C698@27494L85,697@27462L187:TinyGardenScreen.kt#pwpd1x");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -619,14 +618,14 @@ public final class TinyGardenScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$85$lambda$84$lambda$83(MutableState $showErrorDialog$delegate, MutableState $errorDialogContent$delegate) {
         MainUi___WMjBM$lambda$29($showErrorDialog$delegate, false);
         $errorDialogContent$delegate.setValue("");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$82(final TinyGardenViewModel $viewModel, final Context $context, final Model $model, final List $tools, long $taskColor, final MutableState $showErrorDialog$delegate, final MutableState $errorDialogContent$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C708@27719L348,722@28103L40,707@27691L543:TinyGardenScreen.kt#pwpd1x");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -656,7 +655,7 @@ public final class TinyGardenScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$82$lambda$81$lambda$80(TinyGardenViewModel $viewModel, Context $context, Model $model, List $tools, final MutableState $showErrorDialog$delegate, final MutableState $errorDialogContent$delegate) {
         MainUi___WMjBM$lambda$29($showErrorDialog$delegate, false);
         $errorDialogContent$delegate.setValue("");
@@ -669,7 +668,7 @@ public final class TinyGardenScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MainUi___WMjBM$lambda$82$lambda$81$lambda$80$lambda$79(MutableState $errorDialogContent$delegate, MutableState $showErrorDialog$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $errorDialogContent$delegate.setValue(it);

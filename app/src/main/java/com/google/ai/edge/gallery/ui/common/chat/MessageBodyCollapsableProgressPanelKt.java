@@ -41,7 +41,6 @@ import androidx.compose.p000ui.graphics.Shape;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.CompositionLocalsKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.Density;
 import androidx.compose.p000ui.unit.TextUnit;
@@ -68,13 +67,13 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MessageBodyCollapsableProgressPanel.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000\u001c\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\u001a\u0015\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0007¢\u0006\u0002\u0010\u0006\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0007²\u0006\n\u0010\b\u001a\u00020\tX\u008a\u008e\u0002²\u0006\n\u0010\n\u001a\u00020\tX\u008a\u008e\u0002"}, m922d2 = {"MAX_DESCRIPTION_LINES", "", "MessageBodyCollapsableProgressPanel", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageCollapsableProgressPanel;", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageCollapsableProgressPanel;Landroidx/compose/runtime/Composer;I)V", "app_debug", "isExpanded", "", "showLogsViewer"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "isExpanded", "", "showLogsViewer"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageBodyCollapsableProgressPanelKt {
     private static final int MAX_DESCRIPTION_LINES = 5;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyCollapsableProgressPanel$lambda$27(ChatMessageCollapsableProgressPanel chatMessageCollapsableProgressPanel, int i, Composer composer, int i2) {
         MessageBodyCollapsableProgressPanel(chatMessageCollapsableProgressPanel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -432,14 +431,14 @@ public final class MessageBodyCollapsableProgressPanelKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyCollapsableProgressPanel$lambda$7$lambda$6(MutableState $isExpanded$delegate) {
         MessageBodyCollapsableProgressPanel$lambda$2($isExpanded$delegate, !MessageBodyCollapsableProgressPanel$lambda$1($isExpanded$delegate));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageBodyCollapsableProgressPanel$lambda$24$lambda$15$lambda$14$lambda$13$lambda$12$lambda$11 */
+    
+    
     public static final ContentTransform m496xd2d81e70(AnimatedContentTransitionScope AnimatedContent) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
         return AnimatedContentKt.togetherWith(EnterExitTransitionKt.slideInVertically$default(null, new Function1() { // from class: com.google.ai.edge.gallery.ui.common.chat.MessageBodyCollapsableProgressPanelKt$$ExternalSyntheticLambda6
@@ -455,19 +454,19 @@ public final class MessageBodyCollapsableProgressPanelKt {
         }, 1, null).plus(EnterExitTransitionKt.fadeOut$default(null, 0.0f, 3, null)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageBodyCollapsableProgressPanel$lambda$24$lambda$15$lambda$14$lambda$13$lambda$12$lambda$11$lambda$9 */
+    
+    
     public static final int m498xd2fa3e50(int it) {
         return it;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageBodyCollapsableProgressPanel$lambda$24$lambda$15$lambda$14$lambda$13$lambda$12$lambda$11$lambda$10 */
+    
+    
     public static final int m497x8c4d8ae8(int it) {
         return -it;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyCollapsableProgressPanel$lambda$24$lambda$23(ChatMessageCollapsableProgressPanel $message, final MutableState $showLogsViewer$delegate, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         float fM9788constructorimpl;
         Function0<ComposeUiNode> function0;
@@ -752,14 +751,14 @@ public final class MessageBodyCollapsableProgressPanelKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: MessageBodyCollapsableProgressPanel$lambda$24$lambda$23$lambda$22$lambda$21$lambda$20$lambda$19 */
+    
+    
     public static final Unit m499x6a97bc6c(MutableState $showLogsViewer$delegate) {
         MessageBodyCollapsableProgressPanel$lambda$5($showLogsViewer$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyCollapsableProgressPanel$lambda$26$lambda$25(MutableState $showLogsViewer$delegate) {
         MessageBodyCollapsableProgressPanel$lambda$5($showLogsViewer$delegate, false);
         return Unit.INSTANCE;

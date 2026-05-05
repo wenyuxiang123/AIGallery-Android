@@ -28,7 +28,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.semantics.SemanticsPropertiesKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -65,29 +64,29 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.functions.Function4;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: ModelItem.kt */
-/* JADX INFO: loaded from: classes13.dex */
-@Metadata(m921d1 = {"\u0000^\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u001aµ\u0001\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\t2\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\t2\b\b\u0002\u0010\u000b\u001a\u00020\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\b\b\u0002\u0010\u000f\u001a\u00020\u000e2\b\b\u0002\u0010\u0010\u001a\u00020\u000e2\b\b\u0002\u0010\u0011\u001a\u00020\u000e2\u0014\b\u0002\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u00010\t2\u000e\b\u0002\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00030\u00142\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0016H\u0007¢\u0006\u0002\u0010\u0017\u001a{\u0010\u0018\u001a\u00020\u00012\u0006\u0010\u0019\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\u0010\u001a\u001a\u0004\u0018\u00010\u001b2\u0006\u0010\u001c\u001a\u00020\u000e2\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u000e2\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\t2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\u001d\u001a\u00020\f2\b\b\u0002\u0010\u001e\u001a\u00020\fH\u0007¢\u0006\u0002\u0010\u001f\u001aE\u0010 \u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u000e2\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00010!2\u0006\u0010\u000f\u001a\u00020\u000e2\b\b\u0002\u0010\u000b\u001a\u00020\fH\u0007¢\u0006\u0002\u0010\"\u001a\u0010\u0010#\u001a\u00020$2\b\u0010\u001a\u001a\u0004\u0018\u00010\u001b¨\u0006%²\u0006\n\u0010&\u001a\u00020'X\u008a\u0084\u0002²\u0006\f\u0010\u001a\u001a\u0004\u0018\u00010\u001bX\u008a\u0084\u0002²\u0006\n\u0010\u001c\u001a\u00020\u000eX\u008a\u008e\u0002²\u0006\f\u0010(\u001a\u0004\u0018\u00010\u001bX\u008a\u0084\u0002²\u0006\n\u0010)\u001a\u00020\u000eX\u008a\u008e\u0002²\u0006\n\u0010*\u001a\u00020\u000eX\u008a\u008e\u0002"}, m922d2 = {"ModelItem", "", "model", "Lcom/google/ai/edge/gallery/data/Model;", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "onModelClicked", "Lkotlin/Function1;", "onBenchmarkClicked", "modifier", "Landroidx/compose/ui/Modifier;", "expanded", "", "showDeleteButton", "canExpand", "showBenchmarkButton", "onExpanded", "modelVariants", "", "tosViewModel", "Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Ljava/lang/Boolean;ZZZLkotlin/jvm/functions/Function1;Ljava/util/List;Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;Landroidx/compose/runtime/Composer;III)V", "ModelVariantHeader", "variantModel", "downloadStatus", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;", "isExpanded", "labelModifier", "menuModifier", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;ZLcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;ZZLkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;III)V", "ModelItemActionMenu", "Lkotlin/Function0;", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;ZLkotlin/jvm/functions/Function0;ZLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "calculateDownloadProgress", "", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "variantDownloadStatus", "showMenu", "showConfirmDeleteDialog"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u00020\u000eX\u008a\u008e\u0002²\u0006\n\u0010*\u001a\u00020\u000eX\u008a\u008e\u0002"}, m922d2 = {"ModelItem", "", "model", "Lcom/google/ai/edge/gallery/data/Model;", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "onModelClicked", "Lkotlin/Function1;", "onBenchmarkClicked", "modifier", "Landroidx/compose/ui/Modifier;", "expanded", "", "showDeleteButton", "canExpand", "showBenchmarkButton", "onExpanded", "modelVariants", "", "tosViewModel", "Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Ljava/lang/Boolean;ZZZLkotlin/jvm/functions/Function1;Ljava/util/List;Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;Landroidx/compose/runtime/Composer;III)V", "ModelVariantHeader", "variantModel", "downloadStatus", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;", "isExpanded", "labelModifier", "menuModifier", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/data/ModelDownloadStatus;ZLcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;ZZLkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;III)V", "ModelItemActionMenu", "Lkotlin/Function0;", "(Lcom/google/ai/edge/gallery/data/Model;Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;ZLkotlin/jvm/functions/Function0;ZLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "calculateDownloadProgress", "", "app_debug", "modelManagerUiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "variantDownloadStatus", "showMenu", "showConfirmDeleteDialog"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ModelItemKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItem$lambda$36(Model model, Task task, ModelManagerViewModel modelManagerViewModel, Function1 function1, Function1 function12, Modifier modifier, Boolean bool, boolean z, boolean z2, boolean z3, Function1 function13, List list, TosViewModel tosViewModel, int i, int i2, int i3, Composer composer, int i4) {
         ModelItem(model, task, modelManagerViewModel, function1, function12, modifier, bool, z, z2, z3, function13, list, tosViewModel, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), RecomposeScopeImplKt.updateChangedFlags(i2), i3);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItemActionMenu$lambda$62(Model model, ModelManagerViewModel modelManagerViewModel, boolean z, Function0 function0, boolean z2, Modifier modifier, int i, int i2, Composer composer, int i3) {
         ModelItemActionMenu(model, modelManagerViewModel, z, function0, z2, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelVariantHeader$lambda$41(Model model, Task task, ModelDownloadStatus modelDownloadStatus, boolean z, ModelManagerViewModel modelManagerViewModel, boolean z2, boolean z3, Function1 function1, Modifier modifier, Modifier modifier2, Modifier modifier3, int i, int i2, int i3, Composer composer, int i4) {
         ModelVariantHeader(model, task, modelDownloadStatus, z, modelManagerViewModel, z2, z3, function1, modifier, modifier2, modifier3, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), RecomposeScopeImplKt.updateChangedFlags(i2), i3);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItem$lambda$1$lambda$0(boolean it) {
         return Unit.INSTANCE;
     }
@@ -122,7 +121,7 @@ public final class ModelItemKt {
         return (ModelDownloadStatus) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ModelDownloadStatus ModelItem$lambda$4$lambda$3(Model $model, State $modelManagerUiState$delegate) {
         return ModelItem$lambda$2($modelManagerUiState$delegate).getModelDownloadStatus().get($model.getName());
     }
@@ -136,7 +135,7 @@ public final class ModelItemKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItem$lambda$11$lambda$10(Model $model, Function1 $onExpanded, boolean $showBenchmarkButton, Function1 $onModelClicked, MutableState $isExpanded$delegate) {
         if (!$model.getImported()) {
             ModelItem$lambda$8($isExpanded$delegate, !ModelItem$lambda$7($isExpanded$delegate));
@@ -147,21 +146,21 @@ public final class ModelItemKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItem$lambda$35$lambda$34$lambda$13$lambda$12(SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setTraversalGroup(semantics, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelItem$lambda$35$lambda$34$lambda$17$lambda$16$lambda$15$lambda$14 */
+    
+    
     public static final Unit m516xf80d6ce7(Function1 $onBenchmarkClicked, Model $model) {
         $onBenchmarkClicked.invoke($model);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItem$lambda$35$lambda$34$lambda$19(Model $model, boolean $isAicore, boolean $isDownloadFailed, AnimatedContentScope AnimatedContent, boolean targetState, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
@@ -240,7 +239,7 @@ public final class ModelItemKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItem$lambda$35$lambda$34$lambda$33(List $modelVariants, MutableState $isExpanded$delegate, final Model $model, final Task $task, final ModelManagerViewModel $modelManagerViewModel, final Function1 $onModelClicked, final TosViewModel $tosViewModel, final State $downloadStatus$delegate, final State $modelManagerUiState$delegate, final boolean $showBenchmarkButton, final boolean $showDeleteButton, final Function1 $onBenchmarkClicked, final SharedTransitionScope SharedTransitionLayout, Composer $composer, int $changed) {
         boolean showColumnLayout;
         Composer $composer$iv$iv;
@@ -384,7 +383,7 @@ public final class ModelItemKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItem$lambda$35$lambda$34$lambda$33$lambda$22(final Model $model, Task $task, ModelManagerViewModel $modelManagerViewModel, SharedTransitionScope $this_SharedTransitionLayout, final Function1 $onModelClicked, TosViewModel $tosViewModel, State $downloadStatus$delegate, AnimatedContentScope AnimatedContent, boolean targetIsExpanded, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
         ComposerKt.sourceInformation($composer, "C209@8698L25,198@8089L692:ModelItem.kt#13a6jo");
@@ -417,8 +416,8 @@ public final class ModelItemKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelItem$lambda$35$lambda$34$lambda$33$lambda$22$lambda$21$lambda$20 */
+    
+    
     public static final Unit m517xbd0b8ab2(Function1 $onModelClicked, Model $model) {
         $onModelClicked.invoke($model);
         return Unit.INSTANCE;
@@ -429,13 +428,13 @@ public final class ModelItemKt {
         return (ModelDownloadStatus) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelItem$lambda$35$lambda$34$lambda$33$lambda$32$lambda$24$lambda$23 */
+    
+    
     public static final ModelDownloadStatus m518x23f5d97(Model $variantModel, State $modelManagerUiState$delegate) {
         return ModelItem$lambda$2($modelManagerUiState$delegate).getModelDownloadStatus().get($variantModel.getName());
     }
 
-    /* JADX INFO: renamed from: ModelItem$lambda$35$lambda$34$lambda$33$lambda$32$lambda$31$VariantHeader */
+    
     private static final void m521x16dcaf47(Model variantModel, Task $task, boolean targetIsExpanded, ModelManagerViewModel $modelManagerViewModel, boolean $showBenchmarkButton, boolean $showDeleteButton, Function1<? super Model, Unit> function1, SharedTransitionScope $this_SharedTransitionLayout, AnimatedContentScope $this_AnimatedContent, boolean targetShowColumnLayout, State<ModelDownloadStatus> state, Modifier modifier, Composer $composer, int $changed, int i) {
         ComposerKt.sourceInformationMarkerStart($composer, -466715534, "C(VariantHeader)260@11238L70,267@11644L69,243@10262L1573:ModelItem.kt#13a6jo");
         Modifier modifier2 = (i & 1) != 0 ? Modifier.INSTANCE : modifier;
@@ -449,7 +448,7 @@ public final class ModelItemKt {
         ComposerKt.sourceInformationMarkerEnd($composer);
     }
 
-    /* JADX INFO: renamed from: ModelItem$lambda$35$lambda$34$lambda$33$lambda$32$lambda$31$VariantDownloadPanel */
+    
     private static final void m519xf0dfb462(ModelDownloadStatus targetVariantDownloadStatus, final Model variantModel, Task $task, ModelManagerViewModel $modelManagerViewModel, boolean targetIsExpanded, SharedTransitionScope $this_SharedTransitionLayout, AnimatedContentScope $this_AnimatedContent, final Function1<? super Model, Unit> function1, State<ModelDownloadStatus> state, Modifier modifier, Composer $composer, int $changed, int i) {
         ComposerKt.sourceInformationMarkerStart($composer, -1086817741, "C(VariantDownloadPanel)291@13030L11,290@12930L32,275@11975L1108:ModelItem.kt#13a6jo");
         Modifier modifier2 = (i & 1) != 0 ? Modifier.INSTANCE : modifier;
@@ -481,14 +480,14 @@ public final class ModelItemKt {
         ComposerKt.sourceInformationMarkerEnd($composer);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: ModelItem$lambda$35$lambda$34$lambda$33$lambda$32$lambda$31$VariantDownloadPanel$lambda$28$lambda$27 */
+    
+    
     public static final Unit m520x70fa25df(Function1 $onModelClicked, Model $variantModel) {
         $onModelClicked.invoke($variantModel);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItem$lambda$35$lambda$34$lambda$33$lambda$32$lambda$31(SharedTransitionScope $this_SharedTransitionLayout, Model $variantModel, Task $task, ModelManagerViewModel $modelManagerViewModel, boolean $showBenchmarkButton, boolean $showDeleteButton, Function1 $onBenchmarkClicked, State $variantDownloadStatus$delegate, Function1 $onModelClicked, AnimatedContentScope AnimatedContent, Triple destruct$, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Intrinsics.checkNotNullParameter(AnimatedContent, "$this$AnimatedContent");
@@ -612,7 +611,7 @@ public final class ModelItemKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.modelitem.ModelItemKt.ModelVariantHeader(com.google.ai.edge.gallery.data.Model, com.google.ai.edge.gallery.data.Task, com.google.ai.edge.gallery.data.ModelDownloadStatus, boolean, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, boolean, boolean, kotlin.jvm.functions.Function1, androidx.compose.ui.Modifier, androidx.compose.ui.Modifier, androidx.compose.ui.Modifier, androidx.compose.runtime.Composer, int, int, int):void");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelVariantHeader$lambda$40$lambda$39$lambda$38(Function1 $onBenchmarkClicked, Model $variantModel) {
         $onBenchmarkClicked.invoke($variantModel);
         return Unit.INSTANCE;
@@ -823,19 +822,19 @@ public final class ModelItemKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItemActionMenu$lambda$61$lambda$49$lambda$48(MutableState $showMenu$delegate) {
         ModelItemActionMenu$lambda$44($showMenu$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItemActionMenu$lambda$61$lambda$51$lambda$50(MutableState $showMenu$delegate) {
         ModelItemActionMenu$lambda$44($showMenu$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItemActionMenu$lambda$61$lambda$56(boolean $showBenchmarkButton, final Function0 $onBenchmarkClicked, boolean $showDeleteButton, final MutableState $showMenu$delegate, final MutableState $showConfirmDeleteDialog$delegate, ColumnScope DropdownMenu, Composer $composer, int $changed) {
         String str;
         int i;
@@ -904,28 +903,28 @@ public final class ModelItemKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItemActionMenu$lambda$61$lambda$56$lambda$53$lambda$52(Function0 $onBenchmarkClicked, MutableState $showMenu$delegate) {
         $onBenchmarkClicked.invoke();
         ModelItemActionMenu$lambda$44($showMenu$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItemActionMenu$lambda$61$lambda$56$lambda$55$lambda$54(MutableState $showMenu$delegate, MutableState $showConfirmDeleteDialog$delegate) {
         ModelItemActionMenu$lambda$44($showMenu$delegate, false);
         ModelItemActionMenu$lambda$47($showConfirmDeleteDialog$delegate, true);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItemActionMenu$lambda$61$lambda$58$lambda$57(ModelManagerViewModel $modelManagerViewModel, Model $model, MutableState $showConfirmDeleteDialog$delegate) {
         $modelManagerViewModel.deleteModel($model);
         ModelItemActionMenu$lambda$47($showConfirmDeleteDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit ModelItemActionMenu$lambda$61$lambda$60$lambda$59(MutableState $showConfirmDeleteDialog$delegate) {
         ModelItemActionMenu$lambda$47($showConfirmDeleteDialog$delegate, false);
         return Unit.INSTANCE;

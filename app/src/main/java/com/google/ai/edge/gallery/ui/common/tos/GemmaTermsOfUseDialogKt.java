@@ -29,7 +29,6 @@ import androidx.compose.p000ui.text.AnnotatedString;
 import androidx.compose.p000ui.text.TextLayoutResult;
 import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.font.FontWeight;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.TextUnitKt;
 import androidx.compose.p000ui.window.AndroidDialog_androidKt;
@@ -53,11 +52,11 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: GemmaTermsOfUseDialog.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000\u0018\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\u001a5\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u0006H\u0007¢\u0006\u0002\u0010\u0007¨\u0006\b"}, m922d2 = {"GemmaTermsOfUseDialog", "", "onTosAccepted", "Lkotlin/Function0;", "onCancel", "viewingMode", "", "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;ZLandroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class GemmaTermsOfUseDialogKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GemmaTermsOfUseDialog$lambda$10(Function0 function0, Function0 function02, boolean z, int i, int i2, Composer composer, int i3) {
         GemmaTermsOfUseDialog(function0, function02, z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -149,7 +148,7 @@ public final class GemmaTermsOfUseDialogKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GemmaTermsOfUseDialog$lambda$9(final boolean $viewingMode, final Function0 $onCancel, final Function0 $onTosAccepted, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C57@2378L2080,57@2338L2120:GemmaTermsOfUseDialog.kt#8d38sg");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -171,7 +170,7 @@ public final class GemmaTermsOfUseDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GemmaTermsOfUseDialog$lambda$9$lambda$8(final boolean $viewingMode, Function0 $onCancel, Function0 $onTosAccepted, ColumnScope Card, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -357,8 +356,8 @@ public final class GemmaTermsOfUseDialogKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: GemmaTermsOfUseDialog$lambda$9$lambda$8$lambda$7$lambda$6$lambda$5 */
+    
+    
     public static final Unit m526xc0619c4a(boolean $viewingMode, RowScope Button, Composer $composer, int $changed) {
         Intrinsics.checkNotNullParameter(Button, "$this$Button");
         ComposerKt.sourceInformation($composer, "C103@4256L152,102@4236L186:GemmaTermsOfUseDialog.kt#8d38sg");

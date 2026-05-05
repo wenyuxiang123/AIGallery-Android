@@ -60,7 +60,7 @@ import dagger.hilt.components.SingletonComponent;
 import dagger.hilt.internal.GeneratedComponent;
 import jakarta.inject.Singleton;
 
-/* JADX INFO: loaded from: classes3.dex */
+
 public final class GalleryApplication_HiltComponents {
 
     @Subcomponent(modules = {FragmentCBuilderModule.class, ViewCBuilderModule.class, HiltWrapper_ActivityModule.class, HiltWrapper_DefaultViewModelFactories_ActivityModule.class})

@@ -3,7 +3,7 @@ package com.google.ai.edge.gallery.ui.benchmark;
 import com.google.ai.edge.gallery.ui.benchmark.BenchmarkViewModel_HiltModules;
 import dagger.internal.Factory;
 
-/* JADX INFO: loaded from: classes6.dex */
+
 public final class BenchmarkViewModel_HiltModules_KeyModule_ProvideFactory implements Factory<Boolean> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public Boolean get() {

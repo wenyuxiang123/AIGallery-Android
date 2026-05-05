@@ -49,7 +49,6 @@ import androidx.compose.p000ui.text.TextStyle;
 import androidx.compose.p000ui.text.font.FontWeight;
 import androidx.compose.p000ui.text.input.VisualTransformation;
 import androidx.compose.p000ui.text.style.TextDecoration;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -82,17 +81,17 @@ import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: AddSkillFromFeaturedListBottomSheet.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000F\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0010$\n\u0000\n\u0002\u0010\"\n\u0000\n\u0002\u0018\u0002\u001a1\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00010\u00052\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00010\u0005H\u0007¢\u0006\u0002\u0010\u0007\u001aQ\u0010\b\u001a\u00020\u00012\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00010\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\b\b\u0002\u0010\u0011\u001a\u00020\u00122\b\b\u0002\u0010\u0013\u001a\u00020\u0012H\u0003¢\u0006\u0002\u0010\u0014¨\u0006\u0015²\u0006\n\u0010\u0016\u001a\u00020\u0010X\u008a\u008e\u0002²\u0006\n\u0010\u0017\u001a\u00020\u0012X\u008a\u008e\u0002²\u0006\f\u0010\u0018\u001a\u0004\u0018\u00010\nX\u008a\u008e\u0002²\u0006\u0016\u0010\u0019\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00100\u001aX\u008a\u008e\u0002²\u0006\u0010\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u00100\u001cX\u008a\u008e\u0002²\u0006\n\u0010\u001d\u001a\u00020\u001eX\u008a\u0084\u0002"}, m922d2 = {"AddSkillFromFeatureListBottomSheet", "", "skillManagerViewModel", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "onDismiss", "Lkotlin/Function0;", "onSkillAdded", "(Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V", "FeaturedSkillItem", "skill", "Lcom/google/ai/edge/gallery/data/AllowedSkill;", "uriHandler", "Landroidx/compose/ui/platform/UriHandler;", "onAddClick", "Lkotlin/Function1;", "validationError", "", "isAdding", "", "isSkillAdded", "(Lcom/google/ai/edge/gallery/data/AllowedSkill;Landroidx/compose/ui/platform/UriHandler;Lkotlin/jvm/functions/Function1;Ljava/lang/String;ZZLandroidx/compose/runtime/Composer;II)V", "app_debug", "searchQuery", "showDisclaimerDialog", "skillToAdd", "skillValidationErrors", "", "validatingSkills", "", "uiState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "FeaturedSkillItem", "skill", "Lcom/google/ai/edge/gallery/data/AllowedSkill;", "uriHandler", "Landroidx/compose/ui/platform/UriHandler;", "onAddClick", "Lkotlin/Function1;", "validationError", "", "isAdding", "", "isSkillAdded", "(Lcom/google/ai/edge/gallery/data/AllowedSkill;Landroidx/compose/ui/platform/UriHandler;Lkotlin/jvm/functions/Function1;Ljava/lang/String;ZZLandroidx/compose/runtime/Composer;II)V", "app_debug", "searchQuery", "showDisclaimerDialog", "skillToAdd", "skillValidationErrors", "", "validatingSkills", "", "uiState", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class AddSkillFromFeaturedListBottomSheetKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromFeatureListBottomSheet$lambda$47(SkillManagerViewModel skillManagerViewModel, Function0 function0, Function0 function02, int i, Composer composer, int i2) {
         AddSkillFromFeatureListBottomSheet(skillManagerViewModel, function0, function02, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit FeaturedSkillItem$lambda$61(AllowedSkill allowedSkill, UriHandler uriHandler, Function1 function1, String str, boolean z, boolean z2, int i, int i2, Composer composer, int i3) {
         FeaturedSkillItem(allowedSkill, uriHandler, function1, str, z, z2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
@@ -130,13 +129,13 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Map<String, String> AddSkillFromFeatureListBottomSheet$lambda$10(MutableState<Map<String, String>> mutableState) {
         MutableState<Map<String, String>> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Set<String> AddSkillFromFeatureListBottomSheet$lambda$13(MutableState<Set<String>> mutableState) {
         MutableState<Set<String>> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
@@ -147,7 +146,7 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return (SkillManagerUiState) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromFeatureListBottomSheet$lambda$23$lambda$22(SkillManagerViewModel $skillManagerViewModel, final MutableState $validatingSkills$delegate, final Function0 $onDismiss, final Function0 $onSkillAdded, final MutableState $skillValidationErrors$delegate, MutableState $skillToAdd$delegate, MutableState $showDisclaimerDialog$delegate, AllowedSkill skill) {
         Intrinsics.checkNotNullParameter(skill, "skill");
         final String url = skill.getSkillUrl();
@@ -171,7 +170,7 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromFeatureListBottomSheet$lambda$23$lambda$22$lambda$20(String $url, Function0 $onDismiss, Function0 $onSkillAdded, MutableState $validatingSkills$delegate) {
         $validatingSkills$delegate.setValue(SetsKt.minus(AddSkillFromFeatureListBottomSheet$lambda$13($validatingSkills$delegate), $url));
         $onDismiss.invoke();
@@ -179,7 +178,7 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromFeatureListBottomSheet$lambda$23$lambda$22$lambda$21(String $url, MutableState $validatingSkills$delegate, MutableState $skillValidationErrors$delegate, String error) {
         Intrinsics.checkNotNullParameter(error, "error");
         $validatingSkills$delegate.setValue(SetsKt.minus(AddSkillFromFeatureListBottomSheet$lambda$13($validatingSkills$delegate), $url));
@@ -187,7 +186,7 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromFeatureListBottomSheet$lambda$39(final List $filteredSkills, final UriHandler $uriHandler, final Function1 $handleAddSkill, final Set $addedSkillNames, final CoroutineScope $scope, final SheetState $sheetState, final Function0 $onDismiss, State $uiState$delegate, MutableState $searchQuery$delegate, final MutableState $skillValidationErrors$delegate, final MutableState $validatingSkills$delegate, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -497,22 +496,22 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromFeatureListBottomSheet$lambda$39$lambda$38$lambda$27$lambda$26$lambda$25 */
+    
+    
     public static final Unit m411xe76f7d6e(CoroutineScope $scope, SheetState $sheetState, Function0 $onDismiss) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new C2425x66e9efb6($sheetState, $onDismiss, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromFeatureListBottomSheet$lambda$39$lambda$38$lambda$31$lambda$30 */
+    
+    
     public static final Unit m412xb886b844(MutableState $searchQuery$delegate, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         $searchQuery$delegate.setValue(it);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromFeatureListBottomSheet$lambda$39$lambda$38$lambda$34(final MutableState $searchQuery$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C:AddSkillFromFeaturedListBottomSheet.kt#41d64j");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -549,15 +548,15 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromFeatureListBottomSheet$lambda$39$lambda$38$lambda$34$lambda$33$lambda$32 */
+    
+    
     public static final Unit m413x912de4c2(MutableState $searchQuery$delegate) {
         $searchQuery$delegate.setValue("");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromFeatureListBottomSheet$lambda$39$lambda$38$lambda$37$lambda$36 */
+    
+    
     public static final Unit m414x35e2e8d0(final List $filteredSkills, final UriHandler $uriHandler, final Function1 $handleAddSkill, final Set $addedSkillNames, final MutableState $skillValidationErrors$delegate, final MutableState $validatingSkills$delegate, LazyListScope LazyColumn) {
         Intrinsics.checkNotNullParameter(LazyColumn, "$this$LazyColumn");
         final Function1 contentType$iv = new Function1() { // from class: com.google.ai.edge.gallery.customtasks.agentchat.AddSkillFromFeaturedListBottomSheetKt$AddSkillFromFeatureListBottomSheet$lambda$39$lambda$38$lambda$37$lambda$36$$inlined$items$default$1
@@ -617,14 +616,14 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromFeatureListBottomSheet$lambda$41$lambda$40(MutableState $showDisclaimerDialog$delegate, MutableState $skillToAdd$delegate) {
         AddSkillFromFeatureListBottomSheet$lambda$5($showDisclaimerDialog$delegate, false);
         $skillToAdd$delegate.setValue(null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AddSkillFromFeatureListBottomSheet$lambda$46$lambda$45(MutableState $skillToAdd$delegate, SkillManagerViewModel $skillManagerViewModel, final MutableState $validatingSkills$delegate, final Function0 $onDismiss, final Function0 $onSkillAdded, final MutableState $skillValidationErrors$delegate, MutableState $showDisclaimerDialog$delegate) {
         AllowedSkill skill = AddSkillFromFeatureListBottomSheet$lambda$7($skillToAdd$delegate);
         if (skill != null) {
@@ -647,8 +646,8 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromFeatureListBottomSheet$lambda$46$lambda$45$lambda$44$lambda$42 */
+    
+    
     public static final Unit m415x2917373f(String $url, Function0 $onDismiss, Function0 $onSkillAdded, MutableState $validatingSkills$delegate) {
         $validatingSkills$delegate.setValue(SetsKt.minus(AddSkillFromFeatureListBottomSheet$lambda$13($validatingSkills$delegate), $url));
         $onDismiss.invoke();
@@ -656,8 +655,8 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: AddSkillFromFeatureListBottomSheet$lambda$46$lambda$45$lambda$44$lambda$43 */
+    
+    
     public static final Unit m416x29173740(String $url, MutableState $validatingSkills$delegate, MutableState $skillValidationErrors$delegate, String error) {
         Intrinsics.checkNotNullParameter(error, "error");
         $validatingSkills$delegate.setValue(SetsKt.minus(AddSkillFromFeatureListBottomSheet$lambda$13($validatingSkills$delegate), $url));
@@ -665,7 +664,7 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void FeaturedSkillItem(final AllowedSkill skill, final UriHandler uriHandler, final Function1<? super AllowedSkill, Unit> function1, String validationError, boolean isAdding, boolean isSkillAdded, Composer $composer, final int $changed, final int i) {
         String str;
         boolean isAdding2;
@@ -1045,8 +1044,8 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: FeaturedSkillItem$lambda$60$lambda$54$lambda$52$lambda$51$lambda$50$lambda$49 */
+    
+    
     public static final Unit m417x21f1165e(AllowedSkill $skill, UriHandler $uriHandler) {
         String it = $skill.getAttributionUrl();
         if (it != null) {
@@ -1055,7 +1054,7 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit FeaturedSkillItem$lambda$60$lambda$59$lambda$58$lambda$57(Function1 $onAddClick, AllowedSkill $skill) {
         $onAddClick.invoke($skill);
         return Unit.INSTANCE;

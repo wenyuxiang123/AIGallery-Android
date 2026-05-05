@@ -22,7 +22,6 @@ import androidx.compose.p000ui.draw.ClipKt;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.text.style.TextOverflow;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -41,14 +40,14 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: MessageBodyClassification.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u0000$\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u001a)\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\u000eH\u0007¢\u0006\u0002\u0010\u000f\"\u0013\u0010\u0000\u001a\u00020\u0001¢\u0006\n\n\u0002\u0010\u0004\u001a\u0004\b\u0002\u0010\u0003\"\u0013\u0010\u0005\u001a\u00020\u0001¢\u0006\n\n\u0002\u0010\u0004\u001a\u0004\b\u0006\u0010\u0003¨\u0006\u0010"}, m922d2 = {"CLASSIFICATION_BAR_HEIGHT", "Landroidx/compose/ui/unit/Dp;", "getCLASSIFICATION_BAR_HEIGHT", "()F", "F", "CLASSIFICATION_BAR_MAX_WIDTH", "getCLASSIFICATION_BAR_MAX_WIDTH", "MessageBodyClassification", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageClassification;", "modifier", "Landroidx/compose/ui/Modifier;", "oneLineLabel", "", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageClassification;Landroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\u000eH\u0007¢\u0006\u0002\u0010\u000f\"\u0013\u0010\u0000\u001a\u00020\u0001¢\u0006\n\n\u0002\u0010\u0004\u001a\u0004\b\u0002\u0010\u0003\"\u0013\u0010\u0005\u001a\u00020\u0001¢\u0006\n\n\u0002\u0010\u0004\u001a\u0004\b\u0006\u0010\u0003¨\u0006\u0010"}, m922d2 = {"CLASSIFICATION_BAR_HEIGHT", "Landroidx/compose/ui/unit/Dp;", "getCLASSIFICATION_BAR_HEIGHT", "()F", "F", "CLASSIFICATION_BAR_MAX_WIDTH", "getCLASSIFICATION_BAR_MAX_WIDTH", "MessageBodyClassification", "", "message", "Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageClassification;", "modifier", "Landroidx/compose/ui/Modifier;", "oneLineLabel", "", "(Lcom/google/ai/edge/gallery/ui/common/chat/ChatMessageClassification;Landroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class MessageBodyClassificationKt {
     private static final float CLASSIFICATION_BAR_HEIGHT = C1654Dp.m9788constructorimpl(8);
     private static final float CLASSIFICATION_BAR_MAX_WIDTH = C1654Dp.m9788constructorimpl(200);
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit MessageBodyClassification$lambda$3(ChatMessageClassification chatMessageClassification, Modifier modifier, boolean z, int i, int i2, Composer composer, int i3) {
         MessageBodyClassification(chatMessageClassification, modifier, z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;

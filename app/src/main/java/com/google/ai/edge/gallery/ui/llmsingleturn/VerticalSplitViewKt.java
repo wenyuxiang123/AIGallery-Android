@@ -23,7 +23,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.layout.OnGloballyPositionedModifierKt;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.platform.CompositionLocalsKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.Density;
 import androidx.compose.runtime.Applier;
@@ -48,17 +47,17 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: VerticalSplitView.kt */
-/* JADX INFO: loaded from: classes15.dex */
-@Metadata(m921d1 = {"\u0000(\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\u001ag\u0010\u0000\u001a\u00020\u00012\u0011\u0010\u0002\u001a\r\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\u00042\u0011\u0010\u0005\u001a\r\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\u00042\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u000b2\b\b\u0002\u0010\f\u001a\u00020\u000b2\b\b\u0002\u0010\r\u001a\u00020\u000bH\u0007¢\u0006\u0004\b\u000e\u0010\u000f¨\u0006\u0010²\u0006\n\u0010\u0011\u001a\u00020\tX\u008a\u008e\u0002²\u0006\n\u0010\u0012\u001a\u00020\tX\u008a\u008e\u0002²\u0006\n\u0010\u0013\u001a\u00020\u000bX\u008a\u008e\u0002"}, m922d2 = {"VerticalSplitView", "", "topView", "Lkotlin/Function0;", "Landroidx/compose/runtime/Composable;", "bottomView", "modifier", "Landroidx/compose/ui/Modifier;", "initialRatio", "", "minTopHeight", "Landroidx/compose/ui/unit/Dp;", "minBottomHeight", "handleThickness", "VerticalSplitView-ugZX9yg", "(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;FFFFLandroidx/compose/runtime/Composer;II)V", "app_debug", "splitRatio", "columnHeightPx", "columnHeightDp"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "splitRatio", "columnHeightPx", "columnHeightDp"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class VerticalSplitViewKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit VerticalSplitView_ugZX9yg$lambda$17(Function2 function2, Function2 function22, Modifier modifier, float f, float f2, float f3, float f4, int i, int i2, Composer composer, int i3) {
         m11139VerticalSplitViewugZX9yg(function2, function22, modifier, f, f2, f3, f4, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: VerticalSplitView-ugZX9yg, reason: not valid java name */
+    
     public static final void m11139VerticalSplitViewugZX9yg(final Function2<? super Composer, ? super Integer, Unit> topView, final Function2<? super Composer, ? super Integer, Unit> bottomView, Modifier modifier, float initialRatio, float minTopHeight, float minBottomHeight, float handleThickness, Composer $composer, final int $changed, final int i) {
         float initialRatio2;
         float minTopHeight2;
@@ -401,19 +400,19 @@ public final class VerticalSplitViewKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final float VerticalSplitView_ugZX9yg$lambda$1(MutableFloatState $splitRatio$delegate) {
         MutableFloatState $this$getValue$iv = $splitRatio$delegate;
         return $this$getValue$iv.getFloatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final float VerticalSplitView_ugZX9yg$lambda$4(MutableFloatState $columnHeightPx$delegate) {
         MutableFloatState $this$getValue$iv = $columnHeightPx$delegate;
         return $this$getValue$iv.getFloatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final float VerticalSplitView_ugZX9yg$lambda$7(MutableState<C1654Dp> mutableState) {
         MutableState<C1654Dp> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue().m9802unboximpl();
@@ -423,7 +422,7 @@ public final class VerticalSplitViewKt {
         mutableState.setValue(C1654Dp.m9786boximpl(f));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit VerticalSplitView_ugZX9yg$lambda$11$lambda$10(Density $localDensity, MutableFloatState $columnHeightPx$delegate, MutableState $columnHeightDp$delegate, LayoutCoordinates coordinates) {
         Intrinsics.checkNotNullParameter(coordinates, "coordinates");
         $columnHeightPx$delegate.setFloatValue((int) (coordinates.mo8374getSizeYbymL2g() & 4294967295L));

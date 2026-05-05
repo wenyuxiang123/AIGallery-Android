@@ -29,7 +29,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.PainterResources_androidKt;
 import androidx.compose.p000ui.res.VectorResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -55,19 +54,19 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: compiled from: TaskIcon.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u00004\n\u0000\n\u0002\u0010 \n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a5\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\fH\u0007¢\u0006\u0004\b\r\u0010\u000e\u001a\u0015\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0005\u001a\u00020\u0006H\u0003¢\u0006\u0002\u0010\u0011\"\u0014\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0012"}, m922d2 = {"SHAPES", "", "", "TaskIcon", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "modifier", "Landroidx/compose/ui/Modifier;", "width", "Landroidx/compose/ui/unit/Dp;", "animationProgress", "", "TaskIcon-942rkJo", "(Lcom/google/ai/edge/gallery/data/Task;Landroidx/compose/ui/Modifier;FFLandroidx/compose/runtime/Composer;II)V", "getTaskIconBgShape", "Landroidx/compose/ui/graphics/painter/Painter;", "(Lcom/google/ai/edge/gallery/data/Task;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/painter/Painter;", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "getTaskIconBgShape", "Landroidx/compose/ui/graphics/painter/Painter;", "(Lcom/google/ai/edge/gallery/data/Task;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/painter/Painter;", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class TaskIconKt {
     private static final List<Integer> SHAPES = CollectionsKt.listOf((Object[]) new Integer[]{Integer.valueOf(C2421R.drawable.circle), Integer.valueOf(C2421R.drawable.double_circle), Integer.valueOf(C2421R.drawable.pantegon), Integer.valueOf(C2421R.drawable.four_circle)});
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskIcon_942rkJo$lambda$4(Task task, Modifier modifier, float f, float f2, int i, int i2, Composer composer, int i3) {
         m10898TaskIcon942rkJo(task, modifier, f, f2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: TaskIcon-942rkJo, reason: not valid java name */
+    
     public static final void m10898TaskIcon942rkJo(final Task task, Modifier modifier, float width, float animationProgress, Composer $composer, final int $changed, final int i) {
         Modifier modifier2;
         float f;
@@ -235,7 +234,7 @@ public final class TaskIconKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskIcon_942rkJo$lambda$3$lambda$1$lambda$0(Brush $brush, Brush $revealingBrush, ContentDrawScope drawWithContent) {
         Intrinsics.checkNotNullParameter(drawWithContent, "$this$drawWithContent");
         drawWithContent.drawContent();
@@ -244,7 +243,7 @@ public final class TaskIconKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskIcon_942rkJo$lambda$3$lambda$2(Ref.FloatRef $iconAnimationProgress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($iconAnimationProgress.element);

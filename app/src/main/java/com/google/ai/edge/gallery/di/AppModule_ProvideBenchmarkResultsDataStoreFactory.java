@@ -8,7 +8,7 @@ import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 import dagger.internal.Provider;
 
-/* JADX INFO: loaded from: classes10.dex */
+
 public final class AppModule_ProvideBenchmarkResultsDataStoreFactory implements Factory<DataStore<BenchmarkResults>> {
     private final Provider<Serializer<BenchmarkResults>> benchmarkResultsSerializerProvider;
     private final Provider<Context> contextProvider;

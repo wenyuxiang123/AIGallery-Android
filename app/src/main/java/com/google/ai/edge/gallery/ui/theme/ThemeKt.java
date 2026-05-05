@@ -15,7 +15,7 @@ import androidx.compose.p000ui.graphics.Color;
 import androidx.compose.p000ui.graphics.ColorKt;
 import androidx.compose.p000ui.graphics.TileMode;
 import androidx.compose.p000ui.platform.AndroidCompositionLocals_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
+
 import androidx.compose.runtime.Composer;
 import androidx.compose.runtime.ComposerKt;
 import androidx.compose.runtime.CompositionLocalKt;
@@ -43,9 +43,9 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: Theme.kt */
-/* JADX INFO: loaded from: classes9.dex */
-@Metadata(m921d1 = {"\u00008\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u0015\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0007¢\u0006\u0002\u0010\u0015\u001a \u0010\u0016\u001a\u00020\u00122\u0011\u0010\u0017\u001a\r\u0012\u0004\u0012\u00020\u00120\u0018¢\u0006\u0002\b\u0019H\u0007¢\u0006\u0002\u0010\u001a\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u0017\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0011\u0010\b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n\"\u0011\u0010\u000b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\n\"\u0015\u0010\r\u001a\u00020\u0005*\u00020\u000e8G¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0010¨\u0006\u001b"}, m922d2 = {"lightScheme", "Landroidx/compose/material3/ColorScheme;", "darkScheme", "LocalCustomColors", "Landroidx/compose/runtime/ProvidableCompositionLocal;", "Lcom/google/ai/edge/gallery/ui/theme/CustomColors;", "getLocalCustomColors", "()Landroidx/compose/runtime/ProvidableCompositionLocal;", "lightCustomColors", "getLightCustomColors", "()Lcom/google/ai/edge/gallery/ui/theme/CustomColors;", "darkCustomColors", "getDarkCustomColors", "customColors", "Landroidx/compose/material3/MaterialTheme;", "getCustomColors", "(Landroidx/compose/material3/MaterialTheme;Landroidx/compose/runtime/Composer;I)Lcom/google/ai/edge/gallery/ui/theme/CustomColors;", "StatusBarColorController", "", "useDarkTheme", "", "(ZLandroidx/compose/runtime/Composer;I)V", "GalleryTheme", FirebaseAnalytics.Param.CONTENT, "Lkotlin/Function0;", "Landroidx/compose/runtime/Composable;", "(Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+Landroidx/compose/runtime/ProvidableCompositionLocal;", "lightCustomColors", "getLightCustomColors", "()Lcom/google/ai/edge/gallery/ui/theme/CustomColors;", "darkCustomColors", "getDarkCustomColors", "customColors", "Landroidx/compose/material3/MaterialTheme;", "getCustomColors", "(Landroidx/compose/material3/MaterialTheme;Landroidx/compose/runtime/Composer;I)Lcom/google/ai/edge/gallery/ui/theme/CustomColors;", "StatusBarColorController", "", "useDarkTheme", "", "(ZLandroidx/compose/runtime/Composer;I)V", "GalleryTheme", FirebaseAnalytics.Param.CONTENT, "Lkotlin/Function0;", "Landroidx/compose/runtime/Composable;", "(Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V", "app_debug"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class ThemeKt {
     private static final ProvidableCompositionLocal<CustomColors> LocalCustomColors;
     private static final CustomColors darkCustomColors;
@@ -53,13 +53,13 @@ public final class ThemeKt {
     private static final CustomColors lightCustomColors;
     private static final ColorScheme lightScheme;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryTheme$lambda$6(Function2 function2, int i, Composer composer, int i2) {
         GalleryTheme(function2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit StatusBarColorController$lambda$3(boolean z, int i, Composer composer, int i2) {
         StatusBarColorController(z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -205,7 +205,7 @@ public final class ThemeKt {
         darkCustomColors = new CustomColors(listListOf6, jColor16, surfaceContainerHighDark, listListOf7, listListOf8, listListOf9, jColor17, listListOf10, jColor19, jColor18, jColor20, jColor21, jColor22, jColor23, jColor24, jColor25, jColor26, jColor27, jColor28, jColor29, jColor30, jColor31, brushM6876linearGradientmHitzGk2, companion4.m6876linearGradientmHitzGk((Pair<Float, Color>[]) pairArr4, (8 & 2) != 0 ? Offset.INSTANCE.m6686getZeroF1C5BW0() : jM6662constructorimpl3, (8 & 4) != 0 ? Offset.INSTANCE.m6684getInfiniteF1C5BW0() : Offset.m6662constructorimpl((v1$iv$iv8 << 32) | (v2$iv$iv9 & 4294967295L)), (8 & 8) != 0 ? TileMode.INSTANCE.m7312getClamp3opZhB0() : 0), null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final CustomColors LocalCustomColors$lambda$0() {
         return new CustomColors(null, 0L, 0L, null, null, null, 0L, null, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, null, null, ViewCompat.MEASURED_SIZE_MASK, null);
     }
@@ -298,7 +298,7 @@ public final class ThemeKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit StatusBarColorController$lambda$2$lambda$1(Window $currentWindow, View $view, boolean $useDarkTheme) {
         WindowCompat.setDecorFitsSystemWindows($currentWindow, false);
         WindowInsetsControllerCompat controller = WindowCompat.getInsetsController($currentWindow, $view);
@@ -363,7 +363,7 @@ public final class ThemeKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit GalleryTheme$lambda$4(ColorScheme $colorScheme, Function2 $content, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C337@11639L87:Theme.kt#zgnhxe");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {

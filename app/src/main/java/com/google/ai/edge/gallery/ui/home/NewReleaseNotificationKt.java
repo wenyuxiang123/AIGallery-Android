@@ -20,7 +20,6 @@ import androidx.compose.p000ui.Modifier;
 import androidx.compose.p000ui.draw.ClipKt;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -58,15 +57,15 @@ import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: NewReleaseNotification.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000\u001a\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\u001a\r\u0010\u0003\u001a\u00020\u0004H\u0007¢\u0006\u0002\u0010\u0005\u001a\u0018\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00012\u0006\u0010\t\u001a\u00020\u0001H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\n²\u0006\n\u0010\u000b\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010\f\u001a\u00020\u0001X\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "REPO", "NewReleaseNotification", "", "(Landroidx/compose/runtime/Composer;I)V", "isNewerRelease", "", "currentRelease", "newRelease", "app_debug", "newReleaseVersion", "newReleaseUrl"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "isNewerRelease", "", "currentRelease", "newRelease", "app_debug", "newReleaseVersion", "newReleaseUrl"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class NewReleaseNotificationKt {
     private static final String REPO = "google-ai-edge/gallery";
     private static final String TAG = "AGNewReleaseNotifi";
 
-    /* JADX INFO: compiled from: NewReleaseNotification.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -80,7 +79,7 @@ public final class NewReleaseNotificationKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit NewReleaseNotification$lambda$13(int i, Composer composer, int i2) {
         NewReleaseNotification(composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -175,7 +174,7 @@ public final class NewReleaseNotificationKt {
         return $this$getValue$iv.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final DisposableEffectResult NewReleaseNotification$lambda$9$lambda$8(final LifecycleOwner $lifecycleOwner, final CoroutineScope $coroutineScope, final MutableState $newReleaseVersion$delegate, final MutableState $newReleaseUrl$delegate, DisposableEffectScope DisposableEffect) {
         Intrinsics.checkNotNullParameter(DisposableEffect, "$this$DisposableEffect");
         final LifecycleEventObserver observer = new LifecycleEventObserver() { // from class: com.google.ai.edge.gallery.ui.home.NewReleaseNotificationKt$$ExternalSyntheticLambda3
@@ -193,7 +192,7 @@ public final class NewReleaseNotificationKt {
         };
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void NewReleaseNotification$lambda$9$lambda$8$lambda$6(CoroutineScope $coroutineScope, MutableState $newReleaseVersion$delegate, MutableState $newReleaseUrl$delegate, LifecycleOwner lifecycleOwner, Lifecycle.Event event) {
         Intrinsics.checkNotNullParameter(lifecycleOwner, "<unused var>");
         Intrinsics.checkNotNullParameter(event, "event");
@@ -202,7 +201,7 @@ public final class NewReleaseNotificationKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit NewReleaseNotification$lambda$12(MutableState $newReleaseVersion$delegate, MutableState $newReleaseUrl$delegate, AnimatedVisibilityScope AnimatedVisibility, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -302,7 +301,7 @@ public final class NewReleaseNotificationKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final boolean isNewerRelease(String currentRelease, String newRelease) {
         Iterable $this$map$iv = StringsKt.split$default((CharSequence) currentRelease, new char[]{'.'}, false, 0, 6, (Object) null);
         Collection destination$iv$iv = new ArrayList(CollectionsKt.collectionSizeOrDefault($this$map$iv, 10));

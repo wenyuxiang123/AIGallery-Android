@@ -15,7 +15,7 @@ import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class BenchmarkResults extends GeneratedMessageLite<BenchmarkResults, Builder> implements BenchmarkResultsOrBuilder {
     private static final BenchmarkResults DEFAULT_INSTANCE;
     private static volatile Parser<BenchmarkResults> PARSER = null;
@@ -55,39 +55,39 @@ public final class BenchmarkResults extends GeneratedMessageLite<BenchmarkResult
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setResult(int index, BenchmarkResult value) {
         value.getClass();
         ensureResultIsMutable();
         this.result_.set(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addResult(BenchmarkResult value) {
         value.getClass();
         ensureResultIsMutable();
         this.result_.add(value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addResult(int index, BenchmarkResult value) {
         value.getClass();
         ensureResultIsMutable();
         this.result_.add(index, value);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void addAllResult(Iterable<? extends BenchmarkResult> values) {
         ensureResultIsMutable();
         AbstractMessageLite.addAll(values, this.result_);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearResult() {
         this.result_ = emptyProtobufList();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void removeResult(int index) {
         ensureResultIsMutable();
         this.result_.remove(index);

@@ -109,7 +109,7 @@ import dagger.internal.Provider;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+
 public final class DaggerGalleryApplication_HiltComponents_SingletonC {
     private DaggerGalleryApplication_HiltComponents_SingletonC() {
     }
@@ -454,7 +454,7 @@ public final class DaggerGalleryApplication_HiltComponents_SingletonC {
         private static final class SwitchingProvider<T> implements Provider<T> {
             private final ActivityRetainedCImpl activityRetainedCImpl;
 
-            /* JADX INFO: renamed from: id */
+            
             private final int f268id;
             private final SingletonCImpl singletonCImpl;
             private final ViewModelCImpl viewModelCImpl;
@@ -527,7 +527,7 @@ public final class DaggerGalleryApplication_HiltComponents_SingletonC {
         private static final class SwitchingProvider<T> implements Provider<T> {
             private final ActivityRetainedCImpl activityRetainedCImpl;
 
-            /* JADX INFO: renamed from: id */
+            
             private final int f266id;
             private final SingletonCImpl singletonCImpl;
 
@@ -623,7 +623,7 @@ public final class DaggerGalleryApplication_HiltComponents_SingletonC {
 
         private static final class SwitchingProvider<T> implements Provider<T> {
 
-            /* JADX INFO: renamed from: id */
+            
             private final int f267id;
             private final SingletonCImpl singletonCImpl;
 

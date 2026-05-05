@@ -24,7 +24,6 @@ import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.semantics.SemanticsPropertiesKt;
 import androidx.compose.p000ui.semantics.SemanticsPropertyReceiver;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -56,16 +55,16 @@ import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.Job;
 import net.openid.appauth.AuthorizationRequest;
 
-/* JADX INFO: compiled from: DownloadAndTryButton.kt */
-/* JADX INFO: loaded from: classes3.dex */
-@Metadata(m921d1 = {"\u0000Z\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\"\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\t\u001a\u008d\u0001\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u00132\f\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00070\u00152\b\b\u0002\u0010\u0016\u001a\u00020\u00172\b\b\u0002\u0010\u0018\u001a\u00020\u00192\b\b\u0002\u0010\u001a\u001a\u00020\u00172\b\b\u0002\u0010\u001b\u001a\u00020\r2\b\b\u0002\u0010\u001c\u001a\u00020\r2\b\b\u0002\u0010\u001d\u001a\u00020\u001eH\u0007¢\u0006\u0004\b\u001f\u0010 \"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u0014\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00010\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006!²\u0006\n\u0010\"\u001a\u00020\rX\u008a\u008e\u0002²\u0006\n\u0010#\u001a\u00020\rX\u008a\u008e\u0002²\u0006\n\u0010$\u001a\u00020\rX\u008a\u008e\u0002²\u0006\n\u0010%\u001a\u00020\rX\u008a\u008e\u0002²\u0006\n\u0010&\u001a\u00020\rX\u008a\u008e\u0002²\u0006\n\u0010'\u001a\u00020\rX\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "SYSTEM_RESERVED_MEMORY_IN_BYTES", "", "MODEL_NAMES_TO_SHOW_GEMMA_LICENSES", "", "DownloadAndTryButton", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "model", "Lcom/google/ai/edge/gallery/data/Model;", "enabled", "", "downloadStatus", "Lcom/google/ai/edge/gallery/data/ModelDownloadStatusType;", "downloadProgress", "", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "onClicked", "Lkotlin/Function0;", "modifier", "Landroidx/compose/ui/Modifier;", "tosViewModel", "Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;", "modifierWhenExpanded", "compact", "canShowTryIt", "downloadButtonBackgroundColor", "Landroidx/compose/ui/graphics/Color;", "DownloadAndTryButton-cTzpE40", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/data/Model;ZLcom/google/ai/edge/gallery/data/ModelDownloadStatusType;FLcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;Landroidx/compose/ui/Modifier;ZZJLandroidx/compose/runtime/Composer;III)V", "app_debug", "checkingToken", "showAgreementAckSheet", "showErrorDialog", "showMemoryWarning", "showGemmaTermsOfUseDialog", "downloadStarted"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "checkingToken", "showAgreementAckSheet", "showErrorDialog", "showMemoryWarning", "showGemmaTermsOfUseDialog", "downloadStarted"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class DownloadAndTryButtonKt {
     private static final Set<String> MODEL_NAMES_TO_SHOW_GEMMA_LICENSES = SetsKt.setOf((Object[]) new String[]{"Gemma-3n-E2B-it", "Gemma-3n-E4B-it", "Gemma3-1B-IT", "Gemma3-1B-IT NPU"});
     private static final long SYSTEM_RESERVED_MEMORY_IN_BYTES = 3221225472L;
     private static final String TAG = "AGDownloadAndTryButton";
 
-    /* JADX INFO: compiled from: DownloadAndTryButton.kt */
-    @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
     public static final /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
 
@@ -87,7 +86,7 @@ public final class DownloadAndTryButtonKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$65(Task task, Model model, boolean z, ModelDownloadStatusType modelDownloadStatusType, float f, ModelManagerViewModel modelManagerViewModel, Function0 function0, Modifier modifier, TosViewModel tosViewModel, Modifier modifier2, boolean z2, boolean z3, long j, int i, int i2, int i3, Composer composer, int i4) {
         m10870DownloadAndTryButtoncTzpE40(task, model, z, modelDownloadStatusType, f, modelManagerViewModel, function0, modifier, tosViewModel, modifier2, z2, z3, j, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), RecomposeScopeImplKt.updateChangedFlags(i2), i3);
         return Unit.INSTANCE;
@@ -105,7 +104,7 @@ public final class DownloadAndTryButtonKt {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: DownloadAndTryButton-cTzpE40, reason: not valid java name */
+    
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -123,7 +122,7 @@ public final class DownloadAndTryButtonKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void DownloadAndTryButton_cTzpE40$lambda$2(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -133,7 +132,7 @@ public final class DownloadAndTryButtonKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void DownloadAndTryButton_cTzpE40$lambda$5(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -143,7 +142,7 @@ public final class DownloadAndTryButtonKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void DownloadAndTryButton_cTzpE40$lambda$8(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
@@ -171,18 +170,18 @@ public final class DownloadAndTryButtonKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void DownloadAndTryButton_cTzpE40$lambda$17(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$19$lambda$18(ModelManagerViewModel $modelManagerViewModel, Task $task, Model $model, boolean it) {
         $modelManagerViewModel.downloadModel($task, $model);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$21$lambda$20(Model $model, Context $context, ManagedActivityResultLauncher $permissionLauncher, ModelManagerViewModel $modelManagerViewModel, Task $task, MutableState $checkingToken$delegate, String accessToken) {
         $model.setAccessToken(accessToken);
         UtilsKt.checkNotificationPermissionAndStartDownload($context, $permissionLauncher, $modelManagerViewModel, $task, $model);
@@ -190,7 +189,7 @@ public final class DownloadAndTryButtonKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$23$lambda$22(Function1 $startDownload, ModelManagerViewModel $modelManagerViewModel, ActivityResult result) {
         Intrinsics.checkNotNullParameter(result, "result");
         Log.d(TAG, "User closes the browser tab. Try to start downloading.");
@@ -198,7 +197,7 @@ public final class DownloadAndTryButtonKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$26$lambda$25(final ModelManagerViewModel $modelManagerViewModel, final CoroutineScope $scope, final Model $model, final MutableState $showAgreementAckSheet$delegate, final Function1 $startDownload, final MutableState $checkingToken$delegate, final MutableState $downloadStarted$delegate, ActivityResult result) {
         Intrinsics.checkNotNullParameter(result, "result");
         $modelManagerViewModel.handleAuthResult(result, new Function1() { // from class: com.google.ai.edge.gallery.ui.common.DownloadAndTryButtonKt$$ExternalSyntheticLambda15
@@ -210,7 +209,7 @@ public final class DownloadAndTryButtonKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$26$lambda$25$lambda$24(CoroutineScope $scope, ModelManagerViewModel $modelManagerViewModel, Model $model, MutableState $showAgreementAckSheet$delegate, Function1 $startDownload, MutableState $checkingToken$delegate, MutableState $downloadStarted$delegate, TokenRequestResult tokenRequestResult) {
         Intrinsics.checkNotNullParameter(tokenRequestResult, "tokenRequestResult");
         switch (WhenMappings.$EnumSwitchMapping$0[tokenRequestResult.getStatus().ordinal()]) {
@@ -238,7 +237,7 @@ public final class DownloadAndTryButtonKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$28$lambda$27(ModelManagerViewModel $modelManagerViewModel, ManagedActivityResultLauncher $authResultLauncher) {
         AuthorizationRequest authRequest = $modelManagerViewModel.getAuthorizationRequest();
         Intent authIntent = $modelManagerViewModel.getAuthService().getAuthorizationRequestIntent(authRequest);
@@ -247,12 +246,12 @@ public final class DownloadAndTryButtonKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Job DownloadAndTryButton_cTzpE40$lambda$30$lambda$29(CoroutineScope $scope, boolean $needToDownloadFirst, Model $model, ModelManagerViewModel $modelManagerViewModel, MutableState $downloadStarted$delegate, MutableState $checkingToken$delegate, Function1 $startDownload, MutableState $showErrorDialog$delegate, Function0 $startTokenExchange, Function0 $onClicked) {
         return BuildersKt__Builders_commonKt.launch$default($scope, Dispatchers.getIO(), null, new C2669x548ac2d0($needToDownloadFirst, $model, $modelManagerViewModel, $downloadStarted$delegate, $checkingToken$delegate, $startDownload, $showErrorDialog$delegate, $startTokenExchange, $onClicked, null), 2, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Object DownloadAndTryButton_cTzpE40$lambda$32$lambda$31(Context $context, Model $model, Function0 $handleClickButton, MutableState $showMemoryWarning$delegate) {
         if (MemoryWarningKt.isMemoryLow($context, $model)) {
             DownloadAndTryButton_cTzpE40$lambda$11($showMemoryWarning$delegate, true);
@@ -261,7 +260,7 @@ public final class DownloadAndTryButtonKt {
         return $handleClickButton.invoke();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$34$lambda$33(boolean $enabled, Model $model, TosViewModel $tosViewModel, Function0 $checkMemoryAndClickDownloadButton, MutableState $checkingToken$delegate, MutableState $showGemmaTermsOfUseDialog$delegate) {
         if (!$enabled || DownloadAndTryButton_cTzpE40$lambda$1($checkingToken$delegate)) {
             return Unit.INSTANCE;
@@ -274,7 +273,7 @@ public final class DownloadAndTryButtonKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:20:0x008b  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -288,33 +287,33 @@ public final class DownloadAndTryButtonKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.common.DownloadAndTryButtonKt.DownloadAndTryButton_cTzpE40$lambda$36(boolean, boolean, com.google.ai.edge.gallery.data.Model, com.google.ai.edge.gallery.data.Task, boolean, boolean, boolean, androidx.compose.foundation.layout.RowScope, androidx.compose.runtime.Composer, int):kotlin.Unit");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final float DownloadAndTryButton_cTzpE40$lambda$44$lambda$39$lambda$38(Animatable $animatedProgress) {
         return ((Number) $animatedProgress.getValue()).floatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$44$lambda$43$lambda$42(ModelManagerViewModel $modelManagerViewModel, Model $model, MutableState $downloadStarted$delegate) {
         DownloadAndTryButton_cTzpE40$lambda$17($downloadStarted$delegate, false);
         $modelManagerViewModel.cancelDownloadModel($model);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$44$lambda$41$lambda$40(String $cbStop, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setContentDescription(semantics, $cbStop);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$47$lambda$46(MutableState $showAgreementAckSheet$delegate, MutableState $checkingToken$delegate) {
         DownloadAndTryButton_cTzpE40$lambda$5($showAgreementAckSheet$delegate, false);
         DownloadAndTryButton_cTzpE40$lambda$2($checkingToken$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$51(final Model $model, final ActivityResultLauncher $agreementAckLauncher, final MutableState $showAgreementAckSheet$delegate, ColumnScope ModalBottomSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Intrinsics.checkNotNullParameter(ModalBottomSheet, "$this$ModalBottomSheet");
@@ -390,8 +389,8 @@ public final class DownloadAndTryButtonKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: DownloadAndTryButton_cTzpE40$lambda$51$lambda$50$lambda$49$lambda$48 */
+    
+    
     public static final Unit m488xe3d8137d(Model $model, ActivityResultLauncher $agreementAckLauncher, MutableState $showAgreementAckSheet$delegate) {
         int index = StringsKt.indexOf$default((CharSequence) $model.getUrl(), "/resolve/", 0, false, 6, (Object) null);
         if (index >= 0) {
@@ -408,13 +407,13 @@ public final class DownloadAndTryButtonKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$53$lambda$52(MutableState $showErrorDialog$delegate) {
         DownloadAndTryButton_cTzpE40$lambda$8($showErrorDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$56(final MutableState $showErrorDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C559@22354L27,559@22333L67:DownloadAndTryButton.kt#t7sjiu");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -444,26 +443,26 @@ public final class DownloadAndTryButtonKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$56$lambda$55$lambda$54(MutableState $showErrorDialog$delegate) {
         DownloadAndTryButton_cTzpE40$lambda$8($showErrorDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$58$lambda$57(Function0 $handleClickButton, MutableState $showMemoryWarning$delegate) {
         $handleClickButton.invoke();
         DownloadAndTryButton_cTzpE40$lambda$11($showMemoryWarning$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$60$lambda$59(MutableState $showMemoryWarning$delegate) {
         DownloadAndTryButton_cTzpE40$lambda$11($showMemoryWarning$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$62$lambda$61(TosViewModel $tosViewModel, Function0 $checkMemoryAndClickDownloadButton, MutableState $showGemmaTermsOfUseDialog$delegate) {
         DownloadAndTryButton_cTzpE40$lambda$14($showGemmaTermsOfUseDialog$delegate, false);
         $tosViewModel.acceptGemmaTermsOfUse();
@@ -471,7 +470,7 @@ public final class DownloadAndTryButtonKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit DownloadAndTryButton_cTzpE40$lambda$64$lambda$63(MutableState $showGemmaTermsOfUseDialog$delegate) {
         DownloadAndTryButton_cTzpE40$lambda$14($showGemmaTermsOfUseDialog$delegate, false);
         return Unit.INSTANCE;

@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.browser.trusted.sharing.ShareTarget;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.documentfile.provider.DocumentFile;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelKt;
@@ -73,9 +72,8 @@ import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
 
-/* JADX INFO: compiled from: SkillManagerViewModel.kt */
-/* JADX INFO: loaded from: classes14.dex */
-@Metadata(m921d1 = {"\u0000 \u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\"\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010$\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\t\b\u0007\u0018\u00002\u00020\u0001B\u001b\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0001\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\u0014\u0010\u0017\u001a\u00020\u00182\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00180\u001aJ\b\u0010\u001b\u001a\u00020\u0018H\u0002J?\u0010\u001c\u001a\u00020\u00182\u0006\u0010\u001d\u001a\u00020\u001e2\f\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\u00180\u001a2!\u0010 \u001a\u001d\u0012\u0013\u0012\u00110\u001e¢\u0006\f\b\"\u0012\b\b#\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u00180!J\u000e\u0010%\u001a\u00020\u00122\u0006\u0010&\u001a\u00020'J\u000e\u0010(\u001a\u00020\u00122\u0006\u0010&\u001a\u00020'J7\u0010)\u001a\u00020\u00182\f\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\u00180\u001a2!\u0010 \u001a\u001d\u0012\u0013\u0012\u00110\u001e¢\u0006\f\b\"\u0012\b\b#\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u00180!J\u000e\u0010*\u001a\u00020\u00182\u0006\u0010+\u001a\u00020\u0012J\u000e\u0010,\u001a\u00020\u00182\u0006\u0010-\u001a\u00020\u0012J\u0010\u0010.\u001a\u00020\u00182\b\u0010$\u001a\u0004\u0018\u00010\u001eJ\u0010\u0010/\u001a\u00020\u00182\b\u00100\u001a\u0004\u0018\u00010'J\u0016\u00101\u001a\u00020\u00182\u0006\u00102\u001a\u0002032\u0006\u00104\u001a\u00020\u0012J\u000e\u00105\u001a\u00020\u00182\u0006\u0010#\u001a\u00020\u001eJ\u0014\u00106\u001a\u00020\u00182\f\u00107\u001a\b\u0012\u0004\u0012\u00020\u001e08J\u0016\u00109\u001a\u00020\u00182\u0006\u00102\u001a\u00020:2\u0006\u0010;\u001a\u00020\u0012J\u000e\u0010<\u001a\u00020\u00182\u0006\u0010;\u001a\u00020\u0012J\f\u0010=\u001a\b\u0012\u0004\u0012\u0002030>J\u000e\u0010?\u001a\u00020@2\u0006\u0010A\u001a\u00020\u001eJ\u0010\u0010B\u001a\u0004\u0018\u0001032\u0006\u0010#\u001a\u00020\u001eJ\u0018\u0010C\u001a\u0004\u0018\u00010\u001e2\u0006\u0010D\u001a\u00020\u001e2\u0006\u0010E\u001a\u00020\u001eJ\u0016\u0010F\u001a\u00020\u001e2\u0006\u0010D\u001a\u00020\u001e2\u0006\u0010\u001d\u001a\u00020\u001eJ\u0006\u0010G\u001a\u00020\u001eJF\u0010H\u001a\u0016\u0012\u0006\u0012\u0004\u0018\u000103\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001e0>0I2\u0006\u0010J\u001a\u00020\u001e2\u0006\u0010K\u001a\u00020\u00122\u0006\u0010;\u001a\u00020\u00122\b\b\u0002\u0010L\u001a\u00020\u001e2\b\b\u0002\u0010M\u001a\u00020\u001eJk\u0010N\u001a\u00020\u00182\u0006\u0010O\u001a\u00020P2\u0006\u0010#\u001a\u00020\u001e2\u0006\u0010Q\u001a\u00020\u001e2\u0006\u0010R\u001a\u00020\u001e2\u0012\u0010S\u001a\u000e\u0012\u0004\u0012\u00020\u001e\u0012\u0004\u0012\u00020\u001e0T2\f\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\u00180\u001a2!\u0010U\u001a\u001d\u0012\u0013\u0012\u00110\u001e¢\u0006\f\b\"\u0012\b\b#\u0012\u0004\b\b($\u0012\u0004\u0012\u00020\u00180!J.\u0010V\u001a\u00020\u00182\u0006\u00102\u001a\u0002032\u001e\u0010\u0019\u001a\u001a\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u001e\u0012\u0004\u0012\u00020\u001e0T\u0012\u0004\u0012\u00020\u00180!J\u0016\u0010W\u001a\u00020\u00182\u0006\u00102\u001a\u0002032\u0006\u0010E\u001a\u00020\u001eJ\u000e\u0010X\u001a\u00020\u00122\u0006\u0010D\u001a\u00020\u001eJ(\u0010Y\u001a\u00020\u00182\u0006\u0010Z\u001a\u00020[2\u0006\u0010#\u001a\u00020\u001e2\u0006\u0010Q\u001a\u00020\u001e2\u0006\u0010R\u001a\u00020\u001eH\u0002J$\u0010\\\u001a\u00020\u00182\u0006\u0010]\u001a\u00020[2\u0012\u0010S\u001a\u000e\u0012\u0004\u0012\u00020\u001e\u0012\u0004\u0012\u00020\u001e0TH\u0002J\u0018\u0010^\u001a\u00020\u00182\u0006\u0010_\u001a\u00020\u001e2\u0006\u0010`\u001a\u000203H\u0002J\u0010\u0010a\u001a\u00020\u001e2\u0006\u00102\u001a\u000203H\u0002J\u0010\u0010b\u001a\u00020[2\u0006\u0010c\u001a\u00020\u001eH\u0002R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0017\u0010\r\u001a\b\u0012\u0004\u0012\u00020\f0\u000e¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u001a\u0010\u0011\u001a\u00020\u0012X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016¨\u0006d"}, m922d2 = {"Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerViewModel;", "Landroidx/lifecycle/ViewModel;", "dataStoreRepository", "Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "context", "Landroid/content/Context;", "<init>", "(Lcom/google/ai/edge/gallery/data/DataStoreRepository;Landroid/content/Context;)V", "getDataStoreRepository", "()Lcom/google/ai/edge/gallery/data/DataStoreRepository;", "_uiState", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillManagerUiState;", "uiState", "Lkotlinx/coroutines/flow/StateFlow;", "getUiState", "()Lkotlinx/coroutines/flow/StateFlow;", "skillLoaded", "", "getSkillLoaded", "()Z", "setSkillLoaded", "(Z)V", "loadSkills", "", "onDone", "Lkotlin/Function0;", "loadSkillAllowlist", "validateAndAddSkillFromUrl", ImagesContract.URL, "", "onSuccess", "onValidationError", "Lkotlin/Function1;", "Lkotlin/ParameterName;", "name", "error", "checkLocalSkillExisted", "directoryUri", "Landroid/net/Uri;", "checkBuiltInSkillExistedForImportedSkill", "validateAndAddSkillFromLocalImport", "setLoading", "loading", "setValidating", "validating", "setValidationError", "setImportDirectoryUri", "uri", "addSkill", "skill", "Lcom/google/ai/edge/gallery/proto/Skill;", "addToDataStore", "deleteSkill", "deleteSkills", "names", "", "setSkillSelected", "Lcom/google/ai/edge/gallery/customtasks/agentchat/SkillState;", "selected", "setAllSkillsSelected", "getSelectedSkills", "", "getSystemPrompt", "Lcom/google/ai/edge/litertlm/Contents;", "baseSystemPrompt", "getSkill", "getJsSkillUrl", "skillName", "scriptName", "getJsSkillWebviewUrl", "getSelectedSkillsNamesAndDescriptions", "convertSkillMdToProto", "Lkotlin/Pair;", "mdContent", "builtIn", "skillUrl", "importDir", "saveSkillEdit", FirebaseAnalytics.Param.INDEX, "", "description", "instructions", "scriptsContent", "", "onError", "loadSkillScriptsContent", "deleteSkillScript", "isSkillSelected", "writeSkillMd", "skillMdFile", "Ljava/io/File;", "saveScripts", "scriptDestDir", "updateSkillInDataStore", "oldName", "updatedSkill", "getSkillNameForLogging", "getSkillDestinationDir", "originalImportDirName", "app_debug"}, m923k = 1, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
 public final class SkillManagerViewModel extends ViewModel {
     public static final int $stable = 8;
     private final MutableStateFlow<SkillManagerUiState> _uiState;
@@ -124,9 +122,9 @@ public final class SkillManagerViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkills$1 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkills$1", m932f = "SkillManagerViewModel.kt", m933i = {0, 0, 0, 0, 0, 0}, m934l = {232}, m935m = "invokeSuspend", m936n = {"allDataStoreSkills", "dataStoreBuiltInSkills", "dataStoreCustomSkills", "builtInSelectionMap", "builtInSkills", "finalSkills"}, m938s = {"L$0", "L$1", "L$2", "L$3", "L$4", "L$5"})
     static final class C25301 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Function0<Unit> $onDone;
@@ -374,28 +372,28 @@ public final class SkillManagerViewModel extends ViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public static final CharSequence invokeSuspend$lambda$2(Skill it) {
             String name = it.getName();
             Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
             return name;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public static final CharSequence invokeSuspend$lambda$3(Skill it) {
             String name = it.getName();
             Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
             return name;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        
         public static final CharSequence invokeSuspend$lambda$8(Skill it) {
             return it.getName() + "(" + it.getSelected() + ")";
         }
 
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkills$1$7, reason: invalid class name */
-        /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-        @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+        
+        
+        
         @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkills$1$7", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
         static final class AnonymousClass7 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
             final /* synthetic */ Function0<Unit> $onDone;
@@ -432,9 +430,9 @@ public final class SkillManagerViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillAllowlist$2 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillAllowlist$2", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25282 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         int label;
@@ -550,9 +548,9 @@ public final class SkillManagerViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new C25351(url, this, onValidationError, onSuccess, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$validateAndAddSkillFromUrl$1 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$validateAndAddSkillFromUrl$1", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25351 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Function0<Unit> $onSuccess;
@@ -784,9 +782,9 @@ public final class SkillManagerViewModel extends ViewModel {
         onValidationError.invoke("No directory URI set.");
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$validateAndAddSkillFromLocalImport$1 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$validateAndAddSkillFromLocalImport$1", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25341 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Uri $directoryUri;
@@ -1133,9 +1131,9 @@ public final class SkillManagerViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$addSkill$2 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$addSkill$2", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25242 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Skill $skill;
@@ -1224,9 +1222,9 @@ public final class SkillManagerViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new C25253(skill, this, name, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$deleteSkill$3 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$deleteSkill$3", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25253 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ String $name;
@@ -1333,9 +1331,9 @@ public final class SkillManagerViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new C25273(skillsToDelete, this, names, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$deleteSkills$3 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$deleteSkills$3", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {679}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25273 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Set<String> $names;
@@ -1440,9 +1438,9 @@ public final class SkillManagerViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new C25333(skill, selected, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$setSkillSelected$3 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$setSkillSelected$3", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25333 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ boolean $selected;
@@ -1515,9 +1513,9 @@ public final class SkillManagerViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new C25323(selected, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$setAllSkillsSelected$3 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$setAllSkillsSelected$3", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25323 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ boolean $selected;
@@ -1669,7 +1667,7 @@ public final class SkillManagerViewModel extends ViewModel {
         }, 30, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final CharSequence getSelectedSkillsNamesAndDescriptions$lambda$29(Skill skill) {
         Intrinsics.checkNotNullParameter(skill, "skill");
         return "- " + skill.getName() + ": " + skill.getDescription();
@@ -1760,9 +1758,9 @@ public final class SkillManagerViewModel extends ViewModel {
         return new Pair<>(skill, CollectionsKt.emptyList());
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$saveSkillEdit$1 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$saveSkillEdit$1", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25311 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ String $description;
@@ -1994,9 +1992,9 @@ public final class SkillManagerViewModel extends ViewModel {
         BuildersKt__Builders_commonKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new C25311(name, index, this, onError, description, instructions, scriptsContent, onSuccess, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillScriptsContent$1 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillScriptsContent$1", m932f = "SkillManagerViewModel.kt", m933i = {1, 1, 2, 2, 2}, m934l = {1062, 1071, 1088}, m935m = "invokeSuspend", m936n = {"skillDir", "scriptDir", "skillDir", "scriptDir", "scriptsContent"}, m938s = {"L$0", "L$1", "L$0", "L$1", "L$2"})
     static final class C25291 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ Function1<Map<String, String>, Unit> $onDone;
@@ -2040,9 +2038,9 @@ public final class SkillManagerViewModel extends ViewModel {
             throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel.C25291.invokeSuspend(java.lang.Object):java.lang.Object");
         }
 
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillScriptsContent$1$1, reason: invalid class name */
-        /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-        @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+        
+        
+        
         @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillScriptsContent$1$1", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
         static final class AnonymousClass1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
             final /* synthetic */ Function1<Map<String, String>, Unit> $onDone;
@@ -2079,9 +2077,9 @@ public final class SkillManagerViewModel extends ViewModel {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillScriptsContent$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-        @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+        
+        
+        
         @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillScriptsContent$1$2", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
         static final class AnonymousClass2 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
             final /* synthetic */ Function1<Map<String, String>, Unit> $onDone;
@@ -2118,9 +2116,9 @@ public final class SkillManagerViewModel extends ViewModel {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillScriptsContent$1$3, reason: invalid class name */
-        /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-        @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+        
+        
+        
         @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$loadSkillScriptsContent$1$3", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
         static final class AnonymousClass3 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
             final /* synthetic */ Function1<Map<String, String>, Unit> $onDone;
@@ -2178,9 +2176,9 @@ public final class SkillManagerViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$deleteSkillScript$1 */
-    /* JADX INFO: compiled from: SkillManagerViewModel.kt */
-    @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    
+    
+    
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel$deleteSkillScript$1", m932f = "SkillManagerViewModel.kt", m933i = {}, m934l = {}, m935m = "invokeSuspend", m936n = {}, m938s = {})
     static final class C25261 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
         final /* synthetic */ String $scriptName;
@@ -2260,14 +2258,14 @@ public final class SkillManagerViewModel extends ViewModel {
         return (skillState == null || (skill = skillState.getSkill()) == null || !skill.getSelected()) ? false : true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void writeSkillMd(File skillMdFile, String name, String description, String instructions) {
         Log.d("AGSkillManagerVM", "Writing skill.md: " + skillMdFile.getPath());
         String mdContent = StringsKt.trimIndent("\n    ---\n    name: " + name + "\n    description: " + description + "\n    ---\n\n    " + instructions + "\n    ");
         FilesKt.writeText$default(skillMdFile, mdContent, null, 2, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void saveScripts(File scriptDestDir, Map<String, String> scriptsContent) {
         scriptDestDir.mkdirs();
         File[] fileArrListFiles = scriptDestDir.listFiles();
@@ -2290,7 +2288,7 @@ public final class SkillManagerViewModel extends ViewModel {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final void updateSkillInDataStore(String oldName, Skill updatedSkill) {
         Iterable $this$map$iv = this.dataStoreRepository.getAllSkills();
         Collection destination$iv$iv = new ArrayList(CollectionsKt.collectionSizeOrDefault($this$map$iv, 10));
@@ -2305,7 +2303,7 @@ public final class SkillManagerViewModel extends ViewModel {
         this.dataStoreRepository.setSkills(updatedList);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:21:0x005c  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -2382,7 +2380,7 @@ public final class SkillManagerViewModel extends ViewModel {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel.getSkillNameForLogging(com.google.ai.edge.gallery.proto.Skill):java.lang.String");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public final File getSkillDestinationDir(String originalImportDirName) {
         String normalizedDirName = new Regex("\\s+").replace(originalImportDirName, "-");
         String newImportDirName = "skills/" + normalizedDirName;

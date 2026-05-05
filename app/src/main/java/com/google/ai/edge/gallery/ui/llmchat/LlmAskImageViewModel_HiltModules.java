@@ -7,7 +7,7 @@ import dagger.Provides;
 import dagger.multibindings.IntoMap;
 import dagger.multibindings.LazyClassKey;
 
-/* JADX INFO: loaded from: classes11.dex */
+
 public final class LlmAskImageViewModel_HiltModules {
     private LlmAskImageViewModel_HiltModules() {
     }

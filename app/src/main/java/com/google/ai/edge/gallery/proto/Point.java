@@ -10,17 +10,17 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class Point extends GeneratedMessageLite<Point, Builder> implements PointOrBuilder {
     private static final Point DEFAULT_INSTANCE;
     private static volatile Parser<Point> PARSER = null;
     public static final int X_FIELD_NUMBER = 1;
     public static final int Y_FIELD_NUMBER = 2;
 
-    /* JADX INFO: renamed from: x_ */
+    
     private float f287x_;
 
-    /* JADX INFO: renamed from: y_ */
+    
     private float f288y_;
 
     private Point() {
@@ -31,12 +31,12 @@ public final class Point extends GeneratedMessageLite<Point, Builder> implements
         return this.f287x_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setX(float value) {
         this.f287x_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearX() {
         this.f287x_ = 0.0f;
     }
@@ -46,12 +46,12 @@ public final class Point extends GeneratedMessageLite<Point, Builder> implements
         return this.f288y_;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void setY(float value) {
         this.f288y_ = value;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public void clearY() {
         this.f288y_ = 0.0f;
     }

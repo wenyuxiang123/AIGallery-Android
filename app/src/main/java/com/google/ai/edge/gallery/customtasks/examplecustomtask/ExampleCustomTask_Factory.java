@@ -2,7 +2,7 @@ package com.google.ai.edge.gallery.customtasks.examplecustomtask;
 
 import dagger.internal.Factory;
 
-/* JADX INFO: loaded from: classes5.dex */
+
 public final class ExampleCustomTask_Factory implements Factory<ExampleCustomTask> {
     @Override // javax.inject.Provider, jakarta.inject.Provider
     public ExampleCustomTask get() {

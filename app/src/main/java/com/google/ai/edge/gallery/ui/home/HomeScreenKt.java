@@ -82,7 +82,6 @@ import androidx.compose.p000ui.text.intl.LocaleList;
 import androidx.compose.p000ui.text.style.BaselineShift;
 import androidx.compose.p000ui.text.style.TextDecoration;
 import androidx.compose.p000ui.text.style.TextGeometricTransform;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.p000ui.unit.Density;
 import androidx.compose.p000ui.unit.TextUnitKt;
@@ -155,9 +154,9 @@ import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt__Builders_commonKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: HomeScreen.kt */
-/* JADX INFO: loaded from: classes4.dex */
-@Metadata(m921d1 = {"\u0000r\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0002\b\u000b\n\u0002\u0010 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\t\u001a[\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00172\u0012\u0010\u0018\u001a\u000e\u0012\u0004\u0012\u00020\u001a\u0012\u0004\u0012\u00020\u00130\u00192\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u00130\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\b\b\u0002\u0010\u001f\u001a\u00020 2\b\b\u0002\u0010!\u001a\u00020\u001eH\u0007¢\u0006\u0002\u0010\"\u001a\u0015\u0010#\u001a\u00020\u00132\u0006\u0010\u001d\u001a\u00020\u001eH\u0003¢\u0006\u0002\u0010$\u001a\u0015\u0010%\u001a\u00020\u00132\u0006\u0010\u001d\u001a\u00020\u001eH\u0007¢\u0006\u0002\u0010$\u001a\u001d\u0010&\u001a\u00020\u00132\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010!\u001a\u00020\u001eH\u0003¢\u0006\u0002\u0010'\u001a\u0015\u0010(\u001a\u00020\u00132\u0006\u0010\u001d\u001a\u00020\u001eH\u0003¢\u0006\u0002\u0010$\u001a?\u0010)\u001a\u00020\u00132\f\u0010*\u001a\b\u0012\u0004\u0012\u00020+0\u00112\u0006\u0010,\u001a\u00020\u00032\u0006\u0010\u001d\u001a\u00020\u001e2\u0012\u0010-\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00130\u0019H\u0003¢\u0006\u0002\u0010.\u001au\u0010/\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u00100\u001a\u0002012\f\u0010*\u001a\b\u0012\u0004\u0012\u00020+0\u00112\u0018\u00102\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001a0\u0011032\u0006\u0010\u001d\u001a\u00020\u001e2\u0012\u0010\u0018\u001a\u000e\u0012\u0004\u0012\u00020\u001a\u0012\u0004\u0012\u00020\u00130\u00192\b\b\u0002\u0010!\u001a\u00020\u001e2\b\b\u0002\u00104\u001a\u00020\u001eH\u0003¢\u0006\u0002\u00105\u001aQ\u00106\u001a\u00020\u00132\u0006\u00107\u001a\u00020\u001a2\u0006\u00108\u001a\u00020\u00032\u0006\u00109\u001a\u00020\u001e2\f\u0010:\u001a\b\u0012\u0004\u0012\u00020\u00130\u001c2\b\b\u0002\u0010\u001f\u001a\u00020 2\b\b\u0002\u0010;\u001a\u00020\u00012\b\b\u0002\u0010<\u001a\u00020\u001eH\u0003¢\u0006\u0002\u0010=\u001a\u0018\u0010>\u001a\u00020\u00012\u0006\u0010?\u001a\u00020@2\u0006\u0010A\u001a\u00020+H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\b\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\f\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000e\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000f\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u0014\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00010\u0011X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006B²\u0006\n\u0010C\u001a\u00020DX\u008a\u0084\u0002²\u0006\n\u0010E\u001a\u00020\u001eX\u008a\u008e\u0002²\u0006\n\u0010F\u001a\u00020\u001eX\u008a\u008e\u0002²\u0006\n\u0010G\u001a\u00020\u001eX\u008a\u008e\u0002²\u0006\n\u0010H\u001a\u00020\u0003X\u008a\u008e\u0002²\u0006\n\u0010I\u001a\u00020\u001eX\u008a\u008e\u0002²\u0006\n\u0010J\u001a\u00020\u0003X\u008a\u0084\u0002²\u0006\n\u0010K\u001a\u00020\u0001X\u008a\u0084\u0002²\u0006\n\u0010L\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010M\u001a\u00020\u001eX\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "TASK_COUNT_ANIMATION_DURATION", "", "ANIMATION_INIT_DELAY", "", "TOP_APP_BAR_ANIMATION_DURATION", "TITLE_FIRST_LINE_ANIMATION_DURATION", "TITLE_SECOND_LINE_ANIMATION_DURATION", "TITLE_SECOND_LINE_ANIMATION_DURATION2", "TITLE_SECOND_LINE_ANIMATION_START", "TASK_LIST_ANIMATION_START", "TASK_CARD_ANIMATION_DELAY_OFFSET", "TASK_CARD_ANIMATION_DURATION", "CONTENT_COMPOSABLES_ANIMATION_DURATION", "CONTENT_COMPOSABLES_OFFSET_Y", "PREDEFINED_CATEGORY_ORDER", "", "HomeScreen", "", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "tosViewModel", "Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;", "navigateToTaskScreen", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/data/Task;", "onModelsClicked", "Lkotlin/Function0;", "enableAnimation", "", "modifier", "Landroidx/compose/ui/Modifier;", "gm4", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;ZLandroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V", "AppTitle", "(ZLandroidx/compose/runtime/Composer;I)V", "AppTitleGm4", "IntroText", "(ZZLandroidx/compose/runtime/Composer;I)V", "TryGm4IntroText", "CategoryTabHeader", "sortedCategories", "Lcom/google/ai/edge/gallery/data/CategoryInfo;", "selectedIndex", "onCategorySelected", "(Ljava/util/List;IZLkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V", "TaskList", "pagerState", "Landroidx/compose/foundation/pager/PagerState;", "tasksByCategories", "", "grid", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Landroidx/compose/foundation/pager/PagerState;Ljava/util/List;Ljava/util/Map;ZLkotlin/jvm/functions/Function1;ZZLandroidx/compose/runtime/Composer;II)V", "TaskCard", "task", FirebaseAnalytics.Param.INDEX, "animate", "onClick", "description", "square", "(Lcom/google/ai/edge/gallery/data/Task;IZLkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Ljava/lang/String;ZLandroidx/compose/runtime/Composer;II)V", "getCategoryLabel", "context", "Landroid/content/Context;", "category", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "showSettingsDialog", "showTosDialog", "loadingModelAllowlistDelayed", "selectedCategoryIndex", "initialAnimationDone", "modelCount", "modelCountLabel", "curModelCountLabel", "modelCountLabelVisible"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+\u001a\u00020\u00132\f\u0010*\u001a\b\u0012\u0004\u0012\u00020+0\u00112\u0006\u0010,\u001a\u00020\u00032\u0006\u0010\u001d\u001a\u00020\u001e2\u0012\u0010-\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00130\u0019H\u0003¢\u0006\u0002\u0010.\u001au\u0010/\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u00100\u001a\u0002012\f\u0010*\u001a\b\u0012\u0004\u0012\u00020+0\u00112\u0018\u00102\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001a0\u0011032\u0006\u0010\u001d\u001a\u00020\u001e2\u0012\u0010\u0018\u001a\u000e\u0012\u0004\u0012\u00020\u001a\u0012\u0004\u0012\u00020\u00130\u00192\b\b\u0002\u0010!\u001a\u00020\u001e2\b\b\u0002\u00104\u001a\u00020\u001eH\u0003¢\u0006\u0002\u00105\u001aQ\u00106\u001a\u00020\u00132\u0006\u00107\u001a\u00020\u001a2\u0006\u00108\u001a\u00020\u00032\u0006\u00109\u001a\u00020\u001e2\f\u0010:\u001a\b\u0012\u0004\u0012\u00020\u00130\u001c2\b\b\u0002\u0010\u001f\u001a\u00020 2\b\b\u0002\u0010;\u001a\u00020\u00012\b\b\u0002\u0010<\u001a\u00020\u001eH\u0003¢\u0006\u0002\u0010=\u001a\u0018\u0010>\u001a\u00020\u00012\u0006\u0010?\u001a\u00020@2\u0006\u0010A\u001a\u00020+H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\b\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u0005X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\f\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000e\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000f\u001a\u00020\u0003X\u0082T¢\u0006\u0002\n\u0000\"\u0014\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00010\u0011X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006B²\u0006\n\u0010C\u001a\u00020DX\u008a\u0084\u0002²\u0006\n\u0010E\u001a\u00020\u001eX\u008a\u008e\u0002²\u0006\n\u0010F\u001a\u00020\u001eX\u008a\u008e\u0002²\u0006\n\u0010G\u001a\u00020\u001eX\u008a\u008e\u0002²\u0006\n\u0010H\u001a\u00020\u0003X\u008a\u008e\u0002²\u0006\n\u0010I\u001a\u00020\u001eX\u008a\u008e\u0002²\u0006\n\u0010J\u001a\u00020\u0003X\u008a\u0084\u0002²\u0006\n\u0010K\u001a\u00020\u0001X\u008a\u0084\u0002²\u0006\n\u0010L\u001a\u00020\u0001X\u008a\u008e\u0002²\u0006\n\u0010M\u001a\u00020\u001eX\u008a\u008e\u0002"}, m922d2 = {"TAG", "", "TASK_COUNT_ANIMATION_DURATION", "", "ANIMATION_INIT_DELAY", "", "TOP_APP_BAR_ANIMATION_DURATION", "TITLE_FIRST_LINE_ANIMATION_DURATION", "TITLE_SECOND_LINE_ANIMATION_DURATION", "TITLE_SECOND_LINE_ANIMATION_DURATION2", "TITLE_SECOND_LINE_ANIMATION_START", "TASK_LIST_ANIMATION_START", "TASK_CARD_ANIMATION_DELAY_OFFSET", "TASK_CARD_ANIMATION_DURATION", "CONTENT_COMPOSABLES_ANIMATION_DURATION", "CONTENT_COMPOSABLES_OFFSET_Y", "PREDEFINED_CATEGORY_ORDER", "", "HomeScreen", "", "modelManagerViewModel", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;", "tosViewModel", "Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;", "navigateToTaskScreen", "Lkotlin/Function1;", "Lcom/google/ai/edge/gallery/data/Task;", "onModelsClicked", "Lkotlin/Function0;", "enableAnimation", "", "modifier", "Landroidx/compose/ui/Modifier;", "gm4", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Lcom/google/ai/edge/gallery/ui/common/tos/TosViewModel;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;ZLandroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V", "AppTitle", "(ZLandroidx/compose/runtime/Composer;I)V", "AppTitleGm4", "IntroText", "(ZZLandroidx/compose/runtime/Composer;I)V", "TryGm4IntroText", "CategoryTabHeader", "sortedCategories", "Lcom/google/ai/edge/gallery/data/CategoryInfo;", "selectedIndex", "onCategorySelected", "(Ljava/util/List;IZLkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V", "TaskList", "pagerState", "Landroidx/compose/foundation/pager/PagerState;", "tasksByCategories", "", "grid", "(Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerViewModel;Landroidx/compose/foundation/pager/PagerState;Ljava/util/List;Ljava/util/Map;ZLkotlin/jvm/functions/Function1;ZZLandroidx/compose/runtime/Composer;II)V", "TaskCard", "task", FirebaseAnalytics.Param.INDEX, "animate", "onClick", "description", "square", "(Lcom/google/ai/edge/gallery/data/Task;IZLkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Ljava/lang/String;ZLandroidx/compose/runtime/Composer;II)V", "getCategoryLabel", "context", "Landroid/content/Context;", "category", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/modelmanager/ModelManagerUiState;", "showSettingsDialog", "showTosDialog", "loadingModelAllowlistDelayed", "selectedCategoryIndex", "initialAnimationDone", "modelCount", "modelCountLabel", "curModelCountLabel", "modelCountLabelVisible"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class HomeScreenKt {
     private static final long ANIMATION_INIT_DELAY = 0;
     private static final int CONTENT_COMPOSABLES_ANIMATION_DURATION = 1200;
@@ -174,49 +173,49 @@ public final class HomeScreenKt {
     private static final long TITLE_SECOND_LINE_ANIMATION_START = 300;
     private static final int TOP_APP_BAR_ANIMATION_DURATION = 600;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AppTitle$lambda$77(boolean z, int i, Composer composer, int i2) {
         AppTitle(z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AppTitleGm4$lambda$81(boolean z, int i, Composer composer, int i2) {
         AppTitleGm4(z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CategoryTabHeader$lambda$99(List list, int i, boolean z, Function1 function1, int i2, Composer composer, int i3) {
         CategoryTabHeader(list, i, z, function1, composer, RecomposeScopeImplKt.updateChangedFlags(i2 | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$69(ModelManagerViewModel modelManagerViewModel, TosViewModel tosViewModel, Function1 function1, Function0 function0, boolean z, Modifier modifier, boolean z2, int i, int i2, Composer composer, int i3) {
         HomeScreen(modelManagerViewModel, tosViewModel, function1, function0, z, modifier, z2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit IntroText$lambda$85(boolean z, boolean z2, int i, Composer composer, int i2) {
         IntroText(z, z2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskCard$lambda$158(Task task, int i, boolean z, Function0 function0, Modifier modifier, String str, boolean z2, int i2, int i3, Composer composer, int i4) {
         TaskCard(task, i, z, function0, modifier, str, z2, composer, RecomposeScopeImplKt.updateChangedFlags(i2 | 1), i3);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskList$lambda$123(ModelManagerViewModel modelManagerViewModel, PagerState pagerState, List list, Map map, boolean z, Function1 function1, boolean z2, boolean z3, int i, int i2, Composer composer, int i3) {
         TaskList(modelManagerViewModel, pagerState, list, map, z, function1, z2, z3, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TryGm4IntroText$lambda$91(boolean z, int i, Composer composer, int i2) {
         TryGm4IntroText(z, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
         return Unit.INSTANCE;
@@ -682,7 +681,7 @@ public final class HomeScreenKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final ModelManagerUiState HomeScreen$lambda$0(State<ModelManagerUiState> state) {
         Object thisObj$iv = state.getValue();
         return (ModelManagerUiState) thisObj$iv;
@@ -706,12 +705,12 @@ public final class HomeScreenKt {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int HomeScreen$lambda$13$lambda$11(Function2 $tmp0, Object p0, Object p1) {
         return ((Number) $tmp0.invoke(p0, p1)).intValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int HomeScreen$lambda$13$lambda$10(Map $categoryMap, Context $context, String a, String b) {
         int indexA = PREDEFINED_CATEGORY_ORDER.indexOf(a);
         int indexB = PREDEFINED_CATEGORY_ORDER.indexOf(b);
@@ -740,23 +739,23 @@ public final class HomeScreenKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void HomeScreen$lambda$16(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$20$lambda$19(boolean isGranted) {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$23$lambda$22(CoroutineScope $scope, DrawerState $drawerState) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new HomeScreenKt$HomeScreen$4$1$1($drawerState, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$31(final CoroutineScope $scope, final DrawerState $drawerState, final Function0 $onModelsClicked, final MutableState $showSettingsDialog$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C283@12392L1914,283@12375L1931:HomeScreen.kt#lrhf9m");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -778,7 +777,7 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$31$lambda$30(final CoroutineScope $scope, final DrawerState $drawerState, final Function0 $onModelsClicked, final MutableState $showSettingsDialog$delegate, ColumnScope ModalDrawerSheet, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Function0<ComposeUiNode> function02;
@@ -918,23 +917,23 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: HomeScreen$lambda$31$lambda$30$lambda$29$lambda$28$lambda$25$lambda$24 */
+    
+    
     public static final Unit m527x3f24d96e(CoroutineScope $scope, MutableState $showSettingsDialog$delegate, DrawerState $drawerState) {
         HomeScreen$lambda$3($showSettingsDialog$delegate, true);
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new HomeScreenKt$HomeScreen$5$1$1$1$1$1$1($drawerState, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: HomeScreen$lambda$31$lambda$30$lambda$29$lambda$28$lambda$27$lambda$26 */
+    
+    
     public static final Unit m528x68ee3ef2(CoroutineScope $scope, DrawerState $drawerState, Function0 $onModelsClicked) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new HomeScreenKt$HomeScreen$5$1$1$1$2$1$1($drawerState, null), 3, null);
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new HomeScreenKt$HomeScreen$5$1$1$1$2$1$2($onModelsClicked, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$55(final boolean $enableAnimation, final CoroutineScope $scope, final DrawerState $drawerState, final boolean $gm4, final List $sortedCategories, final ModelManagerViewModel $modelManagerViewModel, final Function1 $navigateToTaskScreen, final State $uiState$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C333@14433L11,334@14476L1091,365@15579L5542,332@14382L6739:HomeScreen.kt#lrhf9m");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -961,7 +960,7 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$55$lambda$37(boolean $enableAnimation, final CoroutineScope $scope, final DrawerState $drawerState, Composer $composer, int $changed) {
         final float progress;
         Function0<ComposeUiNode> function0;
@@ -1061,7 +1060,7 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$55$lambda$37$lambda$33$lambda$32(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($progress);
@@ -1070,13 +1069,13 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$55$lambda$37$lambda$36$lambda$35$lambda$34(CoroutineScope $scope, DrawerState $drawerState) {
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new HomeScreenKt$HomeScreen$6$1$2$1$1$1($drawerState, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Type update failed for variable: r127v0 ??, new type: androidx.compose.runtime.Composer
     jadx.core.utils.exceptions.JadxOverflowException: Type inference error: updates count limit reached with updateSeq = 24081. Try increasing type updates limit count.
     	at jadx.core.dex.visitors.typeinference.TypeUpdateInfo.requestUpdate(TypeUpdateInfo.java:37)
@@ -2118,8 +2117,8 @@ public final class HomeScreenKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.home.HomeScreenKt.HomeScreen$lambda$55$lambda$54(boolean, boolean, java.util.List, kotlinx.coroutines.CoroutineScope, com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel, kotlin.jvm.functions.Function1, androidx.compose.runtime.State, androidx.compose.foundation.layout.PaddingValues, androidx.compose.runtime.Composer, int):kotlin.Unit");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: HomeScreen$lambda$55$lambda$54$lambda$53$lambda$52$lambda$39$lambda$38 */
+    
+    
     public static final Unit m529xa8a988e6(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setRotationZ((1.0f - $progress) * 40.0f);
@@ -2129,41 +2128,41 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: HomeScreen$lambda$55$lambda$54$lambda$53$lambda$52$lambda$51$lambda$41 */
+    
     private static final int m530x10e73db4(MutableIntState $selectedCategoryIndex$delegate) {
         MutableIntState $this$getValue$iv = $selectedCategoryIndex$delegate;
         return $this$getValue$iv.getIntValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: HomeScreen$lambda$55$lambda$54$lambda$53$lambda$52$lambda$51$lambda$44$lambda$43 */
+    
+    
     public static final Unit m532xc0af7dcf(SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: HomeScreen$lambda$55$lambda$54$lambda$53$lambda$52$lambda$51$lambda$50$lambda$49 */
+    
+    
     public static final Unit m534x74ce5830(CoroutineScope $scope, MutableIntState $selectedCategoryIndex$delegate, PagerState $pagerState, int index) {
         $selectedCategoryIndex$delegate.setIntValue(index);
         BuildersKt__Builders_commonKt.launch$default($scope, null, null, new HomeScreenKt$HomeScreen$6$2$1$1$2$4$1$1($pagerState, index, null), 3, null);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$57$lambda$56(TosViewModel $tosViewModel, MutableState $showTosDialog$delegate) {
         HomeScreen$lambda$6($showTosDialog$delegate, false);
         $tosViewModel.acceptTos();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$59$lambda$58(MutableState $showSettingsDialog$delegate) {
         HomeScreen$lambda$3($showSettingsDialog$delegate, false);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$68(State $uiState$delegate, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C529@21869L40:HomeScreen.kt#lrhf9m");
         if ($composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2180,13 +2179,13 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$61$lambda$60(ModelManagerViewModel $modelManagerViewModel) {
         $modelManagerViewModel.loadModelAllowlist();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$64(final ModelManagerViewModel $modelManagerViewModel, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C533@22124L46,533@22103L86:HomeScreen.kt#lrhf9m");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2217,13 +2216,13 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$64$lambda$63$lambda$62(ModelManagerViewModel $modelManagerViewModel) {
         $modelManagerViewModel.loadModelAllowlist();
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$67(final ModelManagerViewModel $modelManagerViewModel, Composer $composer, int $changed) {
         ComposerKt.sourceInformation($composer, "C536@22252L56,536@22231L115:HomeScreen.kt#lrhf9m");
         if (!$composer.shouldExecute(($changed & 3) != 2, $changed & 1)) {
@@ -2254,7 +2253,7 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit HomeScreen$lambda$67$lambda$66$lambda$65(ModelManagerViewModel $modelManagerViewModel) {
         $modelManagerViewModel.clearLoadModelAllowlistError();
         return Unit.INSTANCE;
@@ -2462,13 +2461,13 @@ public final class HomeScreenKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AppTitle$lambda$72$lambda$71(SemanticsPropertyReceiver clearAndSetSemantics) {
         Intrinsics.checkNotNullParameter(clearAndSetSemantics, "$this$clearAndSetSemantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit AppTitle$lambda$75$lambda$74(SemanticsPropertyReceiver clearAndSetSemantics) {
         Intrinsics.checkNotNullParameter(clearAndSetSemantics, "$this$clearAndSetSemantics");
         return Unit.INSTANCE;
@@ -2618,7 +2617,7 @@ public final class HomeScreenKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit IntroText$lambda$84$lambda$83(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($progress);
@@ -2747,7 +2746,7 @@ public final class HomeScreenKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TryGm4IntroText$lambda$87$lambda$86(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($progress);
@@ -2756,7 +2755,7 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TryGm4IntroText$lambda$90$lambda$89(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($progress);
@@ -2872,7 +2871,7 @@ public final class HomeScreenKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CategoryTabHeader$lambda$93$lambda$92(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($progress);
@@ -2881,7 +2880,7 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit CategoryTabHeader$lambda$98$lambda$97(final List $sortedCategories, final int $selectedIndex, final Function1 $onCategorySelected, final CoroutineScope $scope, final LazyListState $listState, final Context $context, LazyListScope LazyRow) {
         Intrinsics.checkNotNullParameter(LazyRow, "$this$LazyRow");
         LazyListScope.item$default(LazyRow, "spacer_start", null, ComposableSingletons$HomeScreenKt.INSTANCE.m11051getLambda$1049073026$app_debug(), 2, null);
@@ -2951,15 +2950,15 @@ public final class HomeScreenKt {
                             return Unit.INSTANCE;
                         }
 
-                        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+                        
                         public final void invoke2() {
                             function1.invoke(Integer.valueOf(it));
                             BuildersKt__Builders_commonKt.launch$default(coroutineScope, null, null, new C27521(lazyListState, it, null), 3, null);
                         }
 
-                        /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.home.HomeScreenKt$CategoryTabHeader$2$1$1$1$1$1 */
-                        /* JADX INFO: compiled from: HomeScreen.kt */
-                        @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+                        
+                        
+                        
                         @DebugMetadata(m931c = "com.google.ai.edge.gallery.ui.home.HomeScreenKt$CategoryTabHeader$2$1$1$1$1$1", m932f = "HomeScreen.kt", m933i = {0, 0}, m934l = {799}, m935m = "invokeSuspend", m936n = {"visibleItems", "targetItem"}, m938s = {"L$0", "L$1"})
                         static final class C27521 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                             final /* synthetic */ int $index;
@@ -3354,12 +3353,12 @@ public final class HomeScreenKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void TaskList$lambda$102(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskList$lambda$105$lambda$104(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($progress);
@@ -3368,13 +3367,13 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskList$lambda$108$lambda$107$lambda$106(Function1 $navigateToTaskScreen, Task $task) {
         $navigateToTaskScreen.invoke($task);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     /* JADX WARN: Removed duplicated region for block: B:102:0x064e A[PHI: r46
       0x064e: PHI (r46v3 java.util.Iterator) = (r46v1 java.util.Iterator), (r46v1 java.util.Iterator), (r46v4 java.util.Iterator) binds: [B:99:0x0647, B:100:0x0649, B:95:0x063e] A[DONT_GENERATE, DONT_INLINE]] */
     /*
@@ -3389,7 +3388,7 @@ public final class HomeScreenKt {
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.home.HomeScreenKt.TaskList$lambda$122(java.util.Map, java.util.List, boolean, float, boolean, kotlin.jvm.functions.Function1, androidx.compose.runtime.MutableState, androidx.compose.foundation.pager.PagerScope, int, androidx.compose.runtime.Composer, int):kotlin.Unit");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskList$lambda$122$lambda$110$lambda$109(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         float other$iv = 1 - $progress;
@@ -3397,19 +3396,19 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskList$lambda$122$lambda$116$lambda$115$lambda$112$lambda$111(Function1 $navigateToTaskScreen, List $tasks, int $i) {
         $navigateToTaskScreen.invoke($tasks.get($i));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskList$lambda$122$lambda$116$lambda$115$lambda$114$lambda$113(Function1 $navigateToTaskScreen, List $tasks, int $i) {
         $navigateToTaskScreen.invoke($tasks.get($i + 1));
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskList$lambda$122$lambda$118$lambda$117(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         float other$iv = 1 - $progress;
@@ -3417,7 +3416,7 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskList$lambda$122$lambda$121$lambda$120$lambda$119(Function1 $navigateToTaskScreen, Task $task) {
         $navigateToTaskScreen.invoke($task);
         return Unit.INSTANCE;
@@ -3441,7 +3440,7 @@ public final class HomeScreenKt {
         return ((Number) thisObj$iv).intValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final int TaskCard$lambda$125$lambda$124(Task $task) {
         long trigger = $task.getUpdateTrigger().getValue().longValue();
         if (trigger >= 0) {
@@ -3450,13 +3449,13 @@ public final class HomeScreenKt {
         return 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String TaskCard$lambda$129(State<String> state) {
         Object thisObj$iv = state.getValue();
         return (String) thisObj$iv;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String TaskCard$lambda$128$lambda$127(State $modelCount$delegate) {
         if (TaskCard$lambda$126($modelCount$delegate) == 1) {
             return "1 Model";
@@ -3466,7 +3465,7 @@ public final class HomeScreenKt {
         return str;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String TaskCard$lambda$131(MutableState<String> mutableState) {
         MutableState<String> $this$getValue$iv = mutableState;
         return $this$getValue$iv.getValue();
@@ -3477,26 +3476,26 @@ public final class HomeScreenKt {
         return $this$getValue$iv.getValue().booleanValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final void TaskCard$lambda$135(MutableState<Boolean> mutableState, boolean z) {
         mutableState.setValue(Boolean.valueOf(z));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskCard$lambda$138$lambda$137(float $progress, GraphicsLayerScope graphicsLayer) {
         Intrinsics.checkNotNullParameter(graphicsLayer, "$this$graphicsLayer");
         graphicsLayer.setAlpha($progress);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskCard$lambda$140$lambda$139(String $cbTask, SemanticsPropertyReceiver semantics) {
         Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
         SemanticsPropertiesKt.setContentDescription(semantics, $cbTask);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskCard$lambda$157(boolean $square, Task $task, MutableState $curModelCountLabel$delegate, String $description, ColumnScope Card, Composer $composer, int $changed) {
         Function0<ComposeUiNode> function0;
         Composer $composer$iv$iv$iv;
@@ -3986,31 +3985,31 @@ public final class HomeScreenKt {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskCard$lambda$157$lambda$146$lambda$145$lambda$142$lambda$141(SemanticsPropertyReceiver clearAndSetSemantics) {
         Intrinsics.checkNotNullParameter(clearAndSetSemantics, "$this$clearAndSetSemantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskCard$lambda$157$lambda$146$lambda$145$lambda$144$lambda$143(SemanticsPropertyReceiver clearAndSetSemantics) {
         Intrinsics.checkNotNullParameter(clearAndSetSemantics, "$this$clearAndSetSemantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskCard$lambda$157$lambda$156$lambda$151$lambda$150$lambda$149(SemanticsPropertyReceiver clearAndSetSemantics) {
         Intrinsics.checkNotNullParameter(clearAndSetSemantics, "$this$clearAndSetSemantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit TaskCard$lambda$157$lambda$156$lambda$155$lambda$154$lambda$153(SemanticsPropertyReceiver clearAndSetSemantics) {
         Intrinsics.checkNotNullParameter(clearAndSetSemantics, "$this$clearAndSetSemantics");
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final String getCategoryLabel(Context context, CategoryInfo category) {
         Integer stringRes = category.getLabelStringRes();
         String label = category.getLabel();

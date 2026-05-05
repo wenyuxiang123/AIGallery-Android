@@ -25,7 +25,6 @@ import androidx.compose.p000ui.input.pointer.SuspendingPointerInputFilterKt;
 import androidx.compose.p000ui.layout.MeasurePolicy;
 import androidx.compose.p000ui.node.ComposeUiNode;
 import androidx.compose.p000ui.res.StringResources_androidKt;
-import androidx.compose.p000ui.tooling.preview.AndroidUiModes;
 import androidx.compose.p000ui.unit.C1654Dp;
 import androidx.compose.runtime.Applier;
 import androidx.compose.runtime.ComposablesKt;
@@ -48,19 +47,19 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: VoiceRecognizerOverlay.kt */
-/* JADX INFO: loaded from: classes5.dex */
-@Metadata(m921d1 = {"\u00002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\u001a9\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\b\b\u0002\u0010\f\u001a\u00020\rH\u0007¢\u0006\u0004\b\u000e\u0010\u000f\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0010²\u0006\n\u0010\u0011\u001a\u00020\u0012X\u008a\u0084\u0002"}, m922d2 = {"TAG", "", "VoiceRecognizerOverlay", "", "task", "Lcom/google/ai/edge/gallery/data/Task;", "viewModel", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;", "bottomPadding", "Landroidx/compose/ui/unit/Dp;", "curAmplitude", "", "modifier", "Landroidx/compose/ui/Modifier;", "VoiceRecognizerOverlay-TN_CM5M", "(Lcom/google/ai/edge/gallery/data/Task;Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateViewModel;FILandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+
+
+V", "app_debug", "uiState", "Lcom/google/ai/edge/gallery/ui/common/textandvoiceinput/HoldToDictateUiState;"}, m923k = 2, m924mv = {2, 2, 0}, m926xi = 0x30)
 public final class VoiceRecognizerOverlayKt {
     private static final String TAG = "AGVROverlay";
 
-    /* JADX INFO: Access modifiers changed from: private */
+    
     public static final Unit VoiceRecognizerOverlay_TN_CM5M$lambda$7(Task task, HoldToDictateViewModel holdToDictateViewModel, float f, int i, Modifier modifier, int i2, int i3, Composer composer, int i4) {
         m11045VoiceRecognizerOverlayTN_CM5M(task, holdToDictateViewModel, f, i, modifier, composer, RecomposeScopeImplKt.updateChangedFlags(i2 | 1), i3);
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: VoiceRecognizerOverlay-TN_CM5M, reason: not valid java name */
+    
     public static final void m11045VoiceRecognizerOverlayTN_CM5M(final Task task, final HoldToDictateViewModel viewModel, final float bottomPadding, final int curAmplitude, Modifier modifier, Composer $composer, final int $changed, final int i) {
         Modifier modifier2;
         int $dirty;
