@@ -45,9 +45,8 @@ final class BenchmarkResultsViewerKt$BenchmarkResultsViewer$2$1 extends SuspendL
     /* JADX WARN: Removed duplicated region for block: B:21:0x0073  */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public final java.lang.Object invokeSuspend(java.lang.Object r15) {
         /*
             r14 = this;
@@ -82,19 +81,15 @@ final class BenchmarkResultsViewerKt$BenchmarkResultsViewer$2$1 extends SuspendL
             java.util.Iterator r8 = r6.iterator()
         L38:
             boolean r9 = r8.hasNext()
-            if (r9 == 0) goto L7a
             java.lang.Object r9 = r8.next()
             r10 = r9
             com.google.ai.edge.gallery.ui.benchmark.BenchmarkResultInfo r10 = (com.google.ai.edge.gallery.ui.benchmark.BenchmarkResultInfo) r10
             r11 = 0
             java.lang.String r12 = com.google.ai.edge.gallery.ui.benchmark.BenchmarkResultsViewerKt.access$BenchmarkResultsViewer$lambda$15(r3)
             boolean r12 = kotlin.jvm.internal.Intrinsics.areEqual(r12, r2)
-            if (r12 != 0) goto L73
             com.google.ai.edge.gallery.proto.BenchmarkResult r12 = r10.getBenchmarkResult()
             com.google.ai.edge.gallery.proto.LlmBenchmarkResult r12 = r12.getLlmResult()
-            if (r12 == 0) goto L65
             com.google.ai.edge.gallery.proto.LlmBenchmarkBasicInfo r12 = r12.getBaiscInfo()
-            if (r12 == 0) goto L65
             java.lang.String r12 = r12.getModelName()
             goto L66
         L65:
@@ -102,7 +97,6 @@ final class BenchmarkResultsViewerKt$BenchmarkResultsViewer$2$1 extends SuspendL
         L66:
             java.lang.String r13 = com.google.ai.edge.gallery.ui.benchmark.BenchmarkResultsViewerKt.access$BenchmarkResultsViewer$lambda$15(r3)
             boolean r12 = kotlin.jvm.internal.Intrinsics.areEqual(r12, r13)
-            if (r12 == 0) goto L71
             goto L73
         L71:
             r12 = 0
@@ -110,7 +104,6 @@ final class BenchmarkResultsViewerKt$BenchmarkResultsViewer$2$1 extends SuspendL
         L73:
             r12 = 1
         L74:
-            if (r12 == 0) goto L38
             r5.add(r9)
             goto L38
         L7a:

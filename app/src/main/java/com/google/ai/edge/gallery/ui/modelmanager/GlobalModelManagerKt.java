@@ -859,73 +859,11 @@ public final class GlobalModelManagerKt {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Removed duplicated region for block: B:19:0x006c  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final kotlin.Unit GlobalModelManager$lambda$36$lambda$35(android.content.Context r9, androidx.compose.runtime.MutableState r10, androidx.compose.runtime.MutableState r11, androidx.compose.runtime.MutableState r12, androidx.compose.runtime.MutableState r13, androidx.activity.result.ActivityResult r14) {
-        /*
-            java.lang.String r0 = "result"
-            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r14, r0)
-            int r0 = r14.getResultCode()
-            r1 = -1
-            java.lang.String r2 = "AGGlobalMM"
-            if (r0 != r1) goto L7c
-            android.content.Intent r0 = r14.getData()
-            if (r0 == 0) goto L74
-            android.net.Uri r0 = r0.getData()
-            if (r0 == 0) goto L74
-            r1 = 0
-            java.lang.String r3 = getFileName(r9, r0)
-            java.lang.StringBuilder r4 = new java.lang.StringBuilder
-            r4.<init>()
-            java.lang.String r5 = "Selected file: "
-            java.lang.StringBuilder r4 = r4.append(r5)
-            java.lang.StringBuilder r4 = r4.append(r3)
-            java.lang.String r4 = r4.toString()
-            android.util.Log.d(r2, r4)
-            r2 = 1
-            r4 = 0
-            r5 = 2
-            r6 = 0
-            if (r3 == 0) goto L4f
-            java.lang.String r7 = ".task"
-            boolean r7 = kotlin.text.StringsKt.endsWith$default(r3, r7, r6, r5, r4)
-            if (r7 != 0) goto L4f
-            java.lang.String r7 = ".litertlm"
-            boolean r7 = kotlin.text.StringsKt.endsWith$default(r3, r7, r6, r5, r4)
-            if (r7 != 0) goto L4f
-            GlobalModelManager$lambda$15(r11, r2)
-            goto L72
-        L4f:
-            if (r3 == 0) goto L6c
-            java.util.Locale r7 = java.util.Locale.ROOT
-            java.lang.String r7 = r3.toLowerCase(r7)
-            java.lang.String r8 = "toLowerCase(...)"
-            kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r7, r8)
-            java.lang.CharSequence r7 = (java.lang.CharSequence) r7
-            java.lang.String r8 = "-web"
-            java.lang.CharSequence r8 = (java.lang.CharSequence) r8
-            boolean r4 = kotlin.text.StringsKt.contains$default(r7, r8, r6, r5, r4)
-            if (r4 == 0) goto L6c
-            GlobalModelManager$lambda$18(r12, r2)
-            goto L72
-        L6c:
-            r10.setValue(r0)
-            GlobalModelManager$lambda$23(r13, r2)
-        L72:
-            goto L81
-        L74:
-            r0 = 0
-            java.lang.String r1 = "No file selected or URI is null."
-            android.util.Log.d(r2, r1)
-            goto L81
-        L7c:
-            java.lang.String r0 = "File picking cancelled."
-            android.util.Log.d(r2, r0)
-        L81:
-            kotlin.Unit r0 = kotlin.Unit.INSTANCE
-            return r0
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.ui.modelmanager.GlobalModelManagerKt.GlobalModelManager$lambda$36$lambda$35(android.content.Context, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.compose.runtime.MutableState, androidx.activity.result.ActivityResult):kotlin.Unit");
     }
 

@@ -120,9 +120,8 @@ public final class TinyGardenScreenKt {
      */
     /* JADX INFO: renamed from: TinyGardenScreen-aA_HZ9I, reason: not valid java name */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void m10536TinyGardenScreenaA_HZ9I(final com.google.ai.edge.gallery.data.Task r97, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r98, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r99, final float r100, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r101, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r102, final kotlinx.coroutines.flow.Flow<com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenCommand> r103, com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel r104, androidx.compose.runtime.Composer r105, final int r106, final int r107) {
         /*
     public static final void m10536TinyGardenScreenaA_HZ9I(final com.google.ai.edge.gallery.data.Task r97, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r98, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r99, final float r100, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r101, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r102, final kotlinx.coroutines.flow.Flow<com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenCommand> r103, com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel r104, androidx.compose.runtime.Composer r105, final int r106, final int r107) {
@@ -208,9 +207,8 @@ public final class TinyGardenScreenKt {
      */
     /* JADX INFO: renamed from: MainUi-_-WMjBM, reason: not valid java name */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void m10535MainUi_WMjBM(final com.google.ai.edge.gallery.data.Task r154, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r155, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r156, final float r157, final com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel r158, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r159, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r160, final kotlinx.coroutines.flow.Flow<com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenCommand> r161, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel r162, androidx.compose.runtime.Composer r163, final int r164, final int r165) {
         /*
     public static final void m10535MainUi_WMjBM(final com.google.ai.edge.gallery.data.Task r154, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r155, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r156, final float r157, final com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel r158, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r159, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r160, final kotlinx.coroutines.flow.Flow<com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenCommand> r161, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel r162, androidx.compose.runtime.Composer r163, final int r164, final int r165) {
@@ -687,4 +685,5 @@ public final class TinyGardenScreenKt {
             return "";
         }
     }
+}
 }

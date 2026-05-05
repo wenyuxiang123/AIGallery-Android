@@ -53,9 +53,8 @@ final class C2500x4c804858 extends SuspendLambda implements Function2<CoroutineS
     /* JADX WARN: Removed duplicated region for block: B:15:0x0080  */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public final java.lang.Object invokeSuspend(java.lang.Object r8) {
         /*
             r7 = this;
@@ -106,7 +105,6 @@ final class C2500x4c804858 extends SuspendLambda implements Function2<CoroutineS
             r5 = 1
             r7.label = r5
             java.lang.Object r3 = r3.setClipEntry(r2, r4)
-            if (r3 != r0) goto L5b
             return r0
         L5b:
             r6 = r2
@@ -126,7 +124,6 @@ final class C2500x4c804858 extends SuspendLambda implements Function2<CoroutineS
             r5 = 2
             r7.label = r5
             java.lang.Object r3 = r3.hide(r4)
-            if (r3 != r0) goto L80
             return r0
         L80:
             r0 = r1

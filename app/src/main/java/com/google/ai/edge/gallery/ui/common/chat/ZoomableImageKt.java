@@ -316,9 +316,8 @@ public final class ZoomableImageKt {
                             /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:13:0x004a -> B:15:0x004d). Please report as a decompilation issue!!! */
                             @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
                             /*
-                                Code decompiled incorrectly, please refer to instructions dump.
-                                To view partially-correct add '--show-bad-code' argument
-                            */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
                             public final java.lang.Object invokeSuspend(java.lang.Object r24) {
                                 /*
                             public final java.lang.Object invokeSuspend(java.lang.Object r24) {
@@ -596,4 +595,5 @@ public final class ZoomableImageKt {
         Object objScroll = $this$setScrolling.scroll(MutatePriority.PreventUserInput, new C27392(value, null), continuation);
         return objScroll == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objScroll : Unit.INSTANCE;
     }
+}
 }

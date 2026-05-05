@@ -39,9 +39,8 @@ public final class ModelDownloadStatusInfoPanelKt {
     /* JADX WARN: Removed duplicated region for block: B:79:0x04c9  */
     /* JADX WARN: Removed duplicated region for block: B:82:0x05b8  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void ModelDownloadStatusInfoPanel(final com.google.ai.edge.gallery.data.Model r88, final com.google.ai.edge.gallery.data.Task r89, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r90, androidx.compose.runtime.Composer r91, final int r92) {
         /*
     public static final void ModelDownloadStatusInfoPanel(final com.google.ai.edge.gallery.data.Model r88, final com.google.ai.edge.gallery.data.Task r89, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r90, androidx.compose.runtime.Composer r91, final int r92) {
@@ -66,4 +65,5 @@ public final class ModelDownloadStatusInfoPanelKt {
         }
         return Unit.INSTANCE;
     }
+}
 }

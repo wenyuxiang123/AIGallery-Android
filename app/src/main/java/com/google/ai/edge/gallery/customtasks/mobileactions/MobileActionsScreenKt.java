@@ -147,9 +147,8 @@ public final class MobileActionsScreenKt {
      */
     /* JADX INFO: renamed from: MobileActionsScreen-aA_HZ9I, reason: not valid java name */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void m10521MobileActionsScreenaA_HZ9I(final com.google.ai.edge.gallery.data.Task r48, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r49, com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r50, final float r51, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r52, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r53, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r54, final kotlin.jvm.functions.Function0<kotlin.Unit> r55, androidx.compose.runtime.Composer r56, final int r57, final int r58) {
         /*
     public static final void m10521MobileActionsScreenaA_HZ9I(final com.google.ai.edge.gallery.data.Task r48, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r49, com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r50, final float r51, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r52, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r53, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r54, final kotlin.jvm.functions.Function0<kotlin.Unit> r55, androidx.compose.runtime.Composer r56, final int r57, final int r58) {
@@ -236,9 +235,8 @@ public final class MobileActionsScreenKt {
      */
     /* JADX INFO: renamed from: MainUi-_-WMjBM, reason: not valid java name */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void m10520MainUi_WMjBM(final com.google.ai.edge.gallery.data.Task r237, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r238, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r239, final float r240, final com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r241, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r242, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r243, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel r244, final kotlin.jvm.functions.Function0<kotlin.Unit> r245, androidx.compose.runtime.Composer r246, final int r247, final int r248) {
         /*
     public static final void m10520MainUi_WMjBM(final com.google.ai.edge.gallery.data.Task r237, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r238, final java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r239, final float r240, final com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsViewModel r241, final kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r242, final androidx.compose.runtime.snapshots.SnapshotStateList<com.google.ai.edge.gallery.customtasks.mobileactions.Action> r243, com.google.ai.edge.gallery.ui.common.textandvoiceinput.HoldToDictateViewModel r244, final kotlin.jvm.functions.Function0<kotlin.Unit> r245, androidx.compose.runtime.Composer r246, final int r247, final int r248) {
@@ -969,4 +967,6 @@ public final class MobileActionsScreenKt {
         Intrinsics.checkNotNullParameter(it, "it");
         return "- " + it.getFirst() + ": \"" + it.getSecond() + "\"";
     }
+}
+}
 }

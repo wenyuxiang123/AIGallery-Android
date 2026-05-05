@@ -202,17 +202,8 @@ public final class AICoreModelHelper implements LlmModelHelper {
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object invokeSuspend(java.lang.Object r10) {
-            /*
-        public final java.lang.Object invokeSuspend(java.lang.Object r10) {
-            // Method dump skipped - placeholder implementation
-            return null;
-        }
-
-        /* JADX INFO: renamed from: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$initialize$1$1, reason: invalid class name */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         /* JADX INFO: compiled from: AICoreModelHelper.kt */
         @Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
         static final class AnonymousClass1<T> implements FlowCollector {
@@ -230,18 +221,8 @@ public final class AICoreModelHelper implements LlmModelHelper {
             /* JADX WARN: Removed duplicated region for block: B:30:0x00e8 A[RETURN] */
             /* JADX WARN: Removed duplicated region for block: B:7:0x0014  */
             /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct add '--show-bad-code' argument
-            */
-            public final java.lang.Object emit(com.google.mlkit.genai.common.DownloadStatus r11, kotlin.coroutines.Continuation<? super kotlin.Unit> r12) {
-                /*
-            public final java.lang.Object emit(com.google.mlkit.genai.common.DownloadStatus r11, kotlin.coroutines.Continuation<? super kotlin.Unit> r12) {
-            // Method dump skipped - placeholder implementation
-            return null;
-        }
-
-            @Override // kotlinx.coroutines.flow.FlowCollector
-            public /* bridge */ /* synthetic */ Object emit(Object value, Continuation $completion) {
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
                 return emit((DownloadStatus) value, (Continuation<? super Unit>) $completion);
             }
         }
@@ -319,192 +300,13 @@ public final class AICoreModelHelper implements LlmModelHelper {
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object invokeSuspend(java.lang.Object r9) {
-            /*
-        public final java.lang.Object invokeSuspend(java.lang.Object r9) {
-            // Method dump skipped - placeholder implementation
-            return null;
-        }
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:26:0x0066  */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     /* JADX WARN: Removed duplicated region for block: B:7:0x0014  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object isModelDownloaded(com.google.ai.edge.gallery.data.Model r10, kotlin.coroutines.Continuation<? super java.lang.Boolean> r11) {
-        /*
-            r9 = this;
-            boolean r0 = r11 instanceof com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.C26151
-            if (r0 == 0) goto L14
-            r0 = r11
-            com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$isModelDownloaded$1 r0 = (com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.C26151) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r1 = r0.label
-            int r1 = r1 - r2
-            r0.label = r1
-            goto L19
-        L14:
-            com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$isModelDownloaded$1 r0 = new com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$isModelDownloaded$1
-            r0.<init>(r11)
-        L19:
-            java.lang.Object r1 = r0.result
-            java.lang.Object r2 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r3 = r0.label
-            r4 = 1
-            r5 = 0
-            switch(r3) {
-                case 0: goto L3e;
-                case 1: goto L2e;
-                default: goto L26;
-            }
-        L26:
-            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
-            java.lang.String r1 = "call to 'resume' before 'invoke' with coroutine"
-            r0.<init>(r1)
-            throw r0
-        L2e:
-            java.lang.Object r2 = r0.L$1
-            com.google.mlkit.genai.prompt.GenerativeModel r2 = (com.google.mlkit.genai.prompt.GenerativeModel) r2
-            java.lang.Object r3 = r0.L$0
-            r10 = r3
-            com.google.ai.edge.gallery.data.Model r10 = (com.google.ai.edge.gallery.data.Model) r10
-            kotlin.ResultKt.throwOnFailure(r1)     // Catch: java.lang.Exception -> L3c
-            r6 = r1
-            goto L5c
-        L3c:
-            r3 = move-exception
-            goto L6d
-        L3e:
-            kotlin.ResultKt.throwOnFailure(r1)
-            com.google.mlkit.genai.prompt.GenerativeModel r3 = r9.getGenerativeModel(r10)
-            java.lang.Object r6 = kotlin.coroutines.jvm.internal.SpillingKt.nullOutSpilledVariable(r10)     // Catch: java.lang.Exception -> L69
-            r0.L$0 = r6     // Catch: java.lang.Exception -> L69
-            java.lang.Object r6 = kotlin.coroutines.jvm.internal.SpillingKt.nullOutSpilledVariable(r3)     // Catch: java.lang.Exception -> L69
-            r0.L$1 = r6     // Catch: java.lang.Exception -> L69
-            r0.label = r4     // Catch: java.lang.Exception -> L69
-            java.lang.Object r6 = r3.checkStatus(r0)     // Catch: java.lang.Exception -> L69
-            if (r6 != r2) goto L5b
-            return r2
-        L5b:
-            r2 = r3
-        L5c:
-            java.lang.Number r6 = (java.lang.Number) r6     // Catch: java.lang.Exception -> L3c
-            int r3 = r6.intValue()     // Catch: java.lang.Exception -> L3c
-            r6 = 3
-            if (r3 != r6) goto L66
-            goto L67
-        L66:
-            r4 = r5
-        L67:
-            r5 = r4
-            goto L78
-        L69:
-            r2 = move-exception
-            r8 = r3
-            r3 = r2
-            r2 = r8
-        L6d:
-            java.lang.String r4 = "Failed to check AICore model status"
-            r6 = r3
-            java.lang.Throwable r6 = (java.lang.Throwable) r6
-            java.lang.String r7 = "AICoreModelHelper"
-            android.util.Log.e(r7, r4, r6)
-        L78:
-            java.lang.Boolean r3 = kotlin.coroutines.jvm.internal.Boxing.boxBoolean(r5)
-            return r3
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.isModelDownloaded(com.google.ai.edge.gallery.data.Model, kotlin.coroutines.Continuation):java.lang.Object");
-    }
-
-    @Override // com.google.ai.edge.gallery.runtime.LlmModelHelper
-    public void resetConversation(Model model, boolean supportImage, boolean supportAudio, Contents systemInstruction, List<? extends ToolProvider> tools, boolean enableConversationConstrainedDecoding) {
-        Intrinsics.checkNotNullParameter(model, "model");
-        Intrinsics.checkNotNullParameter(tools, "tools");
-        Log.d("AICoreModelHelper", "Resetting conversation for model '" + model.getName() + "'");
-        Object model2 = model.getInstance();
-        AICoreModelInstance instance = model2 instanceof AICoreModelInstance ? (AICoreModelInstance) model2 : null;
-        if (instance == null) {
-            return;
-        }
-        instance.getChatHistory().clear();
-        Log.d("AICoreModelHelper", "Resetting done");
-    }
-
-    @Override // com.google.ai.edge.gallery.runtime.LlmModelHelper
-    public void cleanUp(Model model, Function0<Unit> onDone) {
-        Intrinsics.checkNotNullParameter(model, "model");
-        Intrinsics.checkNotNullParameter(onDone, "onDone");
-        Object model2 = model.getInstance();
-        AICoreModelInstance instance = model2 instanceof AICoreModelInstance ? (AICoreModelInstance) model2 : null;
-        if (instance != null) {
-            try {
-                instance.getGenerativeModel().close();
-            } catch (Exception e) {
-                Log.e("AICoreModelHelper", "Failed to close the engine: " + e.getMessage());
-            }
-        }
-        Function0<Unit> function0Remove = cleanUpListeners.remove(model.getName());
-        if (function0Remove != null) {
-            function0Remove.invoke();
-        }
-        model.setInstance(null);
-        onDone.invoke();
-        Log.d("AICoreModelHelper", "Clean up done.");
-    }
-
-    @Override // com.google.ai.edge.gallery.runtime.LlmModelHelper
-    public void stopResponse(Model model) {
-        Job inferenceJob;
-        Intrinsics.checkNotNullParameter(model, "model");
-        Object model2 = model.getInstance();
-        AICoreModelInstance instance = model2 instanceof AICoreModelInstance ? (AICoreModelInstance) model2 : null;
-        if (instance != null && (inferenceJob = instance.getInferenceJob()) != null) {
-            Job.DefaultImpls.cancel$default(inferenceJob, (CancellationException) null, 1, (Object) null);
-        }
-    }
-
-    @Override // com.google.ai.edge.gallery.runtime.LlmModelHelper
-    public void runInference(Model model, String input, Function3<? super String, ? super Boolean, ? super String, Unit> resultListener, Function0<Unit> cleanUpListener, Function1<? super String, Unit> onError, List<Bitmap> images, List<byte[]> audioClips, CoroutineScope coroutineScope, Map<String, String> extraContext) {
-        Intrinsics.checkNotNullParameter(model, "model");
-        Intrinsics.checkNotNullParameter(input, "input");
-        Intrinsics.checkNotNullParameter(resultListener, "resultListener");
-        Intrinsics.checkNotNullParameter(cleanUpListener, "cleanUpListener");
-        Intrinsics.checkNotNullParameter(onError, "onError");
-        Intrinsics.checkNotNullParameter(images, "images");
-        Intrinsics.checkNotNullParameter(audioClips, "audioClips");
-        Object model2 = model.getInstance();
-        AICoreModelInstance instance = model2 instanceof AICoreModelInstance ? (AICoreModelInstance) model2 : null;
-        if (instance == null) {
-            onError.invoke("AICore model instance is not initialized.");
-            return;
-        }
-        if (coroutineScope == null) {
-            Log.e("AICoreModelHelper", "CoroutineScope is required for AICoreModelHelper inference");
-            onError.invoke("Inference failed: CoroutineScope is null");
-            return;
-        }
-        if (!cleanUpListeners.containsKey(model.getName())) {
-            cleanUpListeners.put(model.getName(), cleanUpListener);
-        }
-        String prompt = formatChatPrompt(instance.getChatHistory(), input);
-        float temperature = RangesKt.coerceIn(model.getFloatConfigValue(ConfigKeys.INSTANCE.getTEMPERATURE(), 1.0f), 0.0f, 1.0f);
-        int topK = model.getIntConfigValue(ConfigKeys.INSTANCE.getTOPK(), 64);
-        Job inferenceJob = instance.getInferenceJob();
-        if (inferenceJob != null) {
-            Job.DefaultImpls.cancel$default(inferenceJob, (CancellationException) null, 1, (Object) null);
-        }
-        instance.setInferenceJob(BuildersKt__Builders_commonKt.launch$default(coroutineScope, null, null, new C26161(instance, prompt, temperature, topK, images, input, resultListener, onError, null), 3, null));
-    }
-
-    /* JADX INFO: renamed from: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$runInference$1 */
+        // Code decompiled incorrectly - placeholder implementation
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     /* JADX INFO: compiled from: AICoreModelHelper.kt */
     @Metadata(m921d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, m922d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
     @DebugMetadata(m931c = "com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$runInference$1", m932f = "AICoreModelHelper.kt", m933i = {}, m934l = {269}, m935m = "invokeSuspend", m936n = {}, m938s = {})
@@ -567,17 +369,8 @@ public final class AICoreModelHelper implements LlmModelHelper {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Removed duplicated region for block: B:7:0x001e  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object executeRunInference(final com.google.ai.edge.gallery.runtime.aicore.AICoreModelInstance r17, java.lang.String r18, final float r19, final int r20, java.util.List<android.graphics.Bitmap> r21, java.lang.String r22, kotlin.jvm.functions.Function3<? super java.lang.String, ? super java.lang.Boolean, ? super java.lang.String, kotlin.Unit> r23, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r24, kotlin.coroutines.Continuation<? super kotlin.Unit> r25) {
-        /*
-    public final java.lang.Object executeRunInference(final com.google.ai.edge.gallery.runtime.aicore.AICoreModelInstance r17, java.lang.String r18, final float r19, final int r20, java.util.List<android.graphics.Bitmap> r21, java.lang.String r22, kotlin.jvm.functions.Function3<? super java.lang.String, ? super java.lang.Boolean, ? super java.lang.String, kotlin.Unit> r23, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r24, kotlin.coroutines.Continuation<? super kotlin.Unit> r25) {
-            // Method dump skipped - placeholder implementation
-            return false;
-        }
-
-    /* JADX INFO: Access modifiers changed from: private */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final Unit executeRunInference$lambda$0(float $temperature, int $topK, GenerateContentRequest.Builder generateContentRequest) {
         Intrinsics.checkNotNullParameter(generateContentRequest, "$this$generateContentRequest");
         generateContentRequest.setTemperature(Float.valueOf($temperature));
@@ -596,83 +389,8 @@ public final class AICoreModelHelper implements LlmModelHelper {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Removed duplicated region for block: B:7:0x0014  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object updateTokenLimit(com.google.ai.edge.gallery.data.Model r7, com.google.mlkit.genai.prompt.GenerativeModel r8, kotlin.coroutines.Continuation<? super kotlin.Unit> r9) {
-        /*
-            r6 = this;
-            boolean r0 = r9 instanceof com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.C26171
-            if (r0 == 0) goto L14
-            r0 = r9
-            com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$updateTokenLimit$1 r0 = (com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.C26171) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r1 = r0.label
-            int r1 = r1 - r2
-            r0.label = r1
-            goto L19
-        L14:
-            com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$updateTokenLimit$1 r0 = new com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper$updateTokenLimit$1
-            r0.<init>(r9)
-        L19:
-            java.lang.Object r1 = r0.result
-            java.lang.Object r2 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r3 = r0.label
-            switch(r3) {
-                case 0: goto L3b;
-                case 1: goto L2c;
-                default: goto L24;
-            }
-        L24:
-            java.lang.IllegalStateException r0 = new java.lang.IllegalStateException
-            java.lang.String r1 = "call to 'resume' before 'invoke' with coroutine"
-            r0.<init>(r1)
-            throw r0
-        L2c:
-            java.lang.Object r2 = r0.L$1
-            r8 = r2
-            com.google.mlkit.genai.prompt.GenerativeModel r8 = (com.google.mlkit.genai.prompt.GenerativeModel) r8
-            java.lang.Object r2 = r0.L$0
-            r7 = r2
-            com.google.ai.edge.gallery.data.Model r7 = (com.google.ai.edge.gallery.data.Model) r7
-            kotlin.ResultKt.throwOnFailure(r1)     // Catch: java.lang.Exception -> L58
-            r3 = r1
-            goto L51
-        L3b:
-            kotlin.ResultKt.throwOnFailure(r1)
-            r0.L$0 = r7     // Catch: java.lang.Exception -> L58
-            java.lang.Object r3 = kotlin.coroutines.jvm.internal.SpillingKt.nullOutSpilledVariable(r8)     // Catch: java.lang.Exception -> L58
-            r0.L$1 = r3     // Catch: java.lang.Exception -> L58
-            r3 = 1
-            r0.label = r3     // Catch: java.lang.Exception -> L58
-            java.lang.Object r3 = r8.getTokenLimit(r0)     // Catch: java.lang.Exception -> L58
-            if (r3 != r2) goto L51
-            return r2
-        L51:
-            java.lang.Number r3 = (java.lang.Number) r3     // Catch: java.lang.Exception -> L58
-            int r2 = r3.intValue()     // Catch: java.lang.Exception -> L58
-            goto L5b
-        L58:
-            r2 = move-exception
-            r3 = -1
-            r2 = r3
-        L5b:
-            if (r2 <= 0) goto L7b
-            java.util.Map r3 = r7.getConfigValues()
-            java.util.Map r3 = kotlin.collections.MapsKt.toMutableMap(r3)
-            com.google.ai.edge.gallery.data.ConfigKeys r4 = com.google.ai.edge.gallery.data.ConfigKeys.INSTANCE
-            com.google.ai.edge.gallery.data.ConfigKey r4 = r4.getMAX_TOKENS()
-            java.lang.String r4 = r4.getLabel()
-            java.lang.String r5 = java.lang.String.valueOf(r2)
-            r3.put(r4, r5)
-            r7.setConfigValues(r3)
-        L7b:
-            kotlin.Unit r3 = kotlin.Unit.INSTANCE
-            return r3
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         throw new UnsupportedOperationException("Method not decompiled: com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper.updateTokenLimit(com.google.ai.edge.gallery.data.Model, com.google.mlkit.genai.prompt.GenerativeModel, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
@@ -724,4 +442,3 @@ public final class AICoreModelHelper implements LlmModelHelper {
         $this$formatChatPrompt_u24lambda_u244.append("user: ").append(input).append("\nmodel: ");
         return $this$formatChatPrompt_u24lambda_u244.toString();
     }
-}

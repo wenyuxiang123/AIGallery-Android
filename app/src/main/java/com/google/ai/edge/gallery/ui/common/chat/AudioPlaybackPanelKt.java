@@ -618,9 +618,8 @@ public final class AudioPlaybackPanelKt {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Removed duplicated region for block: B:7:0x0016  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final java.lang.Object playAudio(androidx.compose.runtime.MutableState<android.media.AudioTrack> r14, byte[] r15, int r16, kotlin.jvm.functions.Function1<? super java.lang.Float, kotlin.Unit> r17, kotlin.jvm.functions.Function0<kotlin.Unit> r18, kotlin.coroutines.Continuation<? super kotlin.Unit> r19) throws java.lang.Throwable {
         /*
     public static final java.lang.Object playAudio(androidx.compose.runtime.MutableState<android.media.AudioTrack> r14, byte[] r15, int r16, kotlin.jvm.functions.Function1<? super java.lang.Float, kotlin.Unit> r17, kotlin.jvm.functions.Function0<kotlin.Unit> r18, kotlin.coroutines.Continuation<? super kotlin.Unit> r19) throws java.lang.Throwable {
@@ -759,4 +758,5 @@ public final class AudioPlaybackPanelKt {
         }
         return (List) destination$iv$iv;
     }
+}
 }

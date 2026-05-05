@@ -171,9 +171,8 @@ public final class BenchmarkResultsViewerKt {
     /* JADX WARN: Removed duplicated region for block: B:123:0x054c  */
     /* JADX WARN: Removed duplicated region for block: B:126:0x055a  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void BenchmarkResultsViewer(final java.lang.String r46, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r47, final com.google.ai.edge.gallery.ui.benchmark.BenchmarkViewModel r48, final kotlin.jvm.functions.Function0<kotlin.Unit> r49, androidx.compose.runtime.Composer r50, final int r51) {
         /*
     public static final void BenchmarkResultsViewer(final java.lang.String r46, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r47, final com.google.ai.edge.gallery.ui.benchmark.BenchmarkViewModel r48, final kotlin.jvm.functions.Function0<kotlin.Unit> r49, androidx.compose.runtime.Composer r50, final int r51) {

@@ -354,9 +354,8 @@ public final class SettingsDialogKt {
     /* JADX WARN: Removed duplicated region for block: B:82:0x0b0a  */
     /* JADX WARN: Removed duplicated region for block: B:83:0x0b0d  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final kotlin.Unit SettingsDialog$lambda$63$lambda$62(final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r180, final androidx.compose.runtime.MutableState r181, java.time.format.DateTimeFormatter r182, androidx.compose.runtime.MutableState r183, final androidx.compose.p000ui.focus.FocusManager r184, androidx.compose.p000ui.focus.FocusRequester r185, androidx.compose.runtime.MutableState r186, androidx.compose.runtime.MutableState r187, final androidx.compose.runtime.MutableState r188, final kotlin.jvm.functions.Function0 r189, androidx.compose.foundation.layout.ColumnScope r190, androidx.compose.runtime.Composer r191, int r192) {
         /*
     public static final kotlin.Unit SettingsDialog$lambda$63$lambda$62(final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r180, final androidx.compose.runtime.MutableState r181, java.time.format.DateTimeFormatter r182, androidx.compose.runtime.MutableState r183, final androidx.compose.p000ui.focus.FocusManager r184, androidx.compose.p000ui.focus.FocusRequester r185, androidx.compose.runtime.MutableState r186, androidx.compose.runtime.MutableState r187, final androidx.compose.runtime.MutableState r188, final kotlin.jvm.functions.Function0 r189, androidx.compose.foundation.layout.ColumnScope r190, androidx.compose.runtime.Composer r191, int r192) {
@@ -747,4 +746,5 @@ public final class SettingsDialogKt {
                 return "Unknown";
         }
     }
+}
 }

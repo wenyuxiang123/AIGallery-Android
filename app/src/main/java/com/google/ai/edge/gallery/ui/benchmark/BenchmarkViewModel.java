@@ -107,9 +107,8 @@ public final class BenchmarkViewModel extends ViewModel {
         /* JADX WARN: Removed duplicated region for block: B:23:0x01ce  */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         public final java.lang.Object invokeSuspend(java.lang.Object r27) {
             /*
         public final java.lang.Object invokeSuspend(java.lang.Object r27) {
@@ -475,4 +474,5 @@ public final class BenchmarkViewModel extends ViewModel {
         double weight = index - ((double) lower);
         return (list.get(lower).doubleValue() * (((double) 1) - weight)) + (list.get(upper).doubleValue() * weight);
     }
+}
 }

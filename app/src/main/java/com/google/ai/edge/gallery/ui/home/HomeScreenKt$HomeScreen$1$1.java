@@ -41,9 +41,8 @@ final class HomeScreenKt$HomeScreen$1$1 extends SuspendLambda implements Functio
     /* JADX WARN: Removed duplicated region for block: B:14:0x003f  */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public final java.lang.Object invokeSuspend(java.lang.Object r6) {
         /*
             r5 = this;
@@ -68,19 +67,16 @@ final class HomeScreenKt$HomeScreen$1$1 extends SuspendLambda implements Functio
             androidx.compose.runtime.State<com.google.ai.edge.gallery.ui.modelmanager.ModelManagerUiState> r1 = r5.$uiState$delegate
             com.google.ai.edge.gallery.ui.modelmanager.ModelManagerUiState r1 = com.google.ai.edge.gallery.ui.home.HomeScreenKt.access$HomeScreen$lambda$0(r1)
             boolean r1 = r1.getLoadingModelAllowlist()
-            if (r1 == 0) goto L45
             r1 = r5
             kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
             r5.label = r2
             r3 = 200(0xc8, double:9.9E-322)
             java.lang.Object r1 = kotlinx.coroutines.DelayKt.delay(r3, r1)
-            if (r1 != r0) goto L33
             return r0
         L33:
             androidx.compose.runtime.State<com.google.ai.edge.gallery.ui.modelmanager.ModelManagerUiState> r0 = r5.$uiState$delegate
             com.google.ai.edge.gallery.ui.modelmanager.ModelManagerUiState r0 = com.google.ai.edge.gallery.ui.home.HomeScreenKt.access$HomeScreen$lambda$0(r0)
             boolean r0 = r0.getLoadingModelAllowlist()
-            if (r0 == 0) goto L4b
             androidx.compose.runtime.MutableState<java.lang.Boolean> r0 = r5.$loadingModelAllowlistDelayed$delegate
             com.google.ai.edge.gallery.ui.home.HomeScreenKt.access$HomeScreen$lambda$16(r0, r2)
             goto L4b

@@ -351,9 +351,8 @@ public final /* data */ class AllowedModel {
     /* JADX WARN: Removed duplicated region for block: B:129:0x02d3  */
     /* JADX WARN: Removed duplicated region for block: B:134:0x02e6  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public final com.google.ai.edge.gallery.data.Model toModel() {
         /*
     public final com.google.ai.edge.gallery.data.Model toModel() {
@@ -364,4 +363,5 @@ public final /* data */ class AllowedModel {
     public String toString() {
         return this.modelId + "/" + this.modelFile;
     }
+}
 }

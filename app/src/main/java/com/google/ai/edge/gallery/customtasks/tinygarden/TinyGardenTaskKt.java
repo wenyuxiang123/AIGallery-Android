@@ -24,13 +24,13 @@ public final class TinyGardenTaskKt {
 
     /* JADX WARN: Removed duplicated region for block: B:17:0x0045  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final java.lang.String getTinyGardenSystemPrompt(java.lang.String r11, java.lang.String r12, java.lang.String r13) {
         /*
     public static final java.lang.String getTinyGardenSystemPrompt(java.lang.String r11, java.lang.String r12, java.lang.String r13) {
             // Method dump skipped - placeholder implementation
             return "";
         }
+}
 }

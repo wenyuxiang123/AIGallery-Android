@@ -905,9 +905,8 @@ public class ModelManagerViewModel extends ViewModel {
 
     /* JADX WARN: Removed duplicated region for block: B:13:0x0076  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public final com.google.ai.edge.gallery.ui.modelmanager.TokenStatusAndData getTokenStatusAndData() {
         /*
             r11 = this;
@@ -917,19 +916,16 @@ public class ModelManagerViewModel extends ViewModel {
             android.util.Log.d(r2, r1)
             com.google.ai.edge.gallery.data.DataStoreRepository r1 = r11.dataStoreRepository
             com.google.ai.edge.gallery.proto.AccessTokenData r1 = r1.readAccessTokenData()
-            if (r1 == 0) goto L76
             java.lang.String r3 = r1.getAccessToken()
             java.lang.String r4 = "getAccessToken(...)"
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r3, r4)
             java.lang.CharSequence r3 = (java.lang.CharSequence) r3
             int r3 = r3.length()
-            if (r3 <= 0) goto L24
             r3 = 1
             goto L25
         L24:
             r3 = 0
         L25:
-            if (r3 == 0) goto L76
             java.lang.String r3 = "Token exists and loaded."
             android.util.Log.d(r2, r3)
             long r5 = java.lang.System.currentTimeMillis()
@@ -948,7 +944,6 @@ public class ModelManagerViewModel extends ViewModel {
             java.lang.String r3 = r3.toString()
             android.util.Log.d(r2, r3)
             int r3 = (r5 > r7 ? 1 : (r5 == r7 ? 0 : -1))
-            if (r3 < 0) goto L65
             java.lang.String r3 = "Token expired!"
             android.util.Log.d(r2, r3)
             com.google.ai.edge.gallery.ui.modelmanager.TokenStatus r0 = com.google.ai.edge.gallery.ui.modelmanager.TokenStatus.EXPIRED
@@ -1179,9 +1174,8 @@ public class ModelManagerViewModel extends ViewModel {
         /* JADX WARN: Type inference failed for: r2v15, types: [T, com.google.ai.edge.gallery.data.ModelAllowlist] */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         public final java.lang.Object invokeSuspend(java.lang.Object r37) {
             /*
         public final java.lang.Object invokeSuspend(java.lang.Object r37) {
@@ -1672,9 +1666,8 @@ public class ModelManagerViewModel extends ViewModel {
     /* JADX WARN: Removed duplicated region for block: B:22:0x0078  */
     /* JADX WARN: Removed duplicated region for block: B:33:0x00cd  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     private final boolean checkIfModelDownloaded(com.google.ai.edge.gallery.data.Model r26, java.lang.String r27, java.lang.String r28) {
         /*
     private final boolean checkIfModelDownloaded(com.google.ai.edge.gallery.data.Model r26, java.lang.String r27, java.lang.String r28) {

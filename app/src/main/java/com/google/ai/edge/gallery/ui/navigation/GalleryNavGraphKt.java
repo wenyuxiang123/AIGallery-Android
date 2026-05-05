@@ -1445,9 +1445,8 @@ public final class GalleryNavGraphKt {
     /* JADX WARN: Removed duplicated region for block: B:134:0x0416  */
     /* JADX WARN: Removed duplicated region for block: B:137:0x0425  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     private static final void CustomTaskScreen(final com.google.ai.edge.gallery.data.Task r40, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r41, final boolean r42, final boolean r43, final boolean r44, final kotlin.jvm.functions.Function0<kotlin.Unit> r45, final kotlin.jvm.functions.Function3<? super androidx.compose.p000ui.unit.C1654Dp, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> r46, androidx.compose.runtime.Composer r47, final int r48) {
         /*
     private static final void CustomTaskScreen(final com.google.ai.edge.gallery.data.Task r40, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r41, final boolean r42, final boolean r43, final boolean r44, final kotlin.jvm.functions.Function0<kotlin.Unit> r45, final kotlin.jvm.functions.Function3<? super androidx.compose.p000ui.unit.C1654Dp, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> r46, androidx.compose.runtime.Composer r47, final int r48) {

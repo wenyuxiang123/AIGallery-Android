@@ -118,9 +118,8 @@ final class AgentChatScreenKt$AgentChatScreen$5$1$1 extends SuspendLambda implem
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:65:0x02cc -> B:13:0x0066). Please report as a decompilation issue!!! */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public final java.lang.Object invokeSuspend(java.lang.Object r26) {
         /*
     public final java.lang.Object invokeSuspend(java.lang.Object r26) {
@@ -209,4 +208,5 @@ final class AgentChatScreenKt$AgentChatScreen$5$1$1 extends SuspendLambda implem
         }
         return Unit.INSTANCE;
     }
+}
 }

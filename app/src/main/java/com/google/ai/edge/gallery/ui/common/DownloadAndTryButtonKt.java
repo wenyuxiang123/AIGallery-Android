@@ -107,9 +107,8 @@ public final class DownloadAndTryButtonKt {
      */
     /* JADX INFO: renamed from: DownloadAndTryButton-cTzpE40, reason: not valid java name */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void m10870DownloadAndTryButtoncTzpE40(final com.google.ai.edge.gallery.data.Task r130, final com.google.ai.edge.gallery.data.Model r131, final boolean r132, final com.google.ai.edge.gallery.data.ModelDownloadStatusType r133, final float r134, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r135, final kotlin.jvm.functions.Function0<kotlin.Unit> r136, androidx.compose.p000ui.Modifier r137, com.google.ai.edge.gallery.ui.common.tos.TosViewModel r138, androidx.compose.p000ui.Modifier r139, boolean r140, boolean r141, long r142, androidx.compose.runtime.Composer r144, final int r145, final int r146, final int r147) {
         /*
     public static final void m10870DownloadAndTryButtoncTzpE40(final com.google.ai.edge.gallery.data.Task r130, final com.google.ai.edge.gallery.data.Model r131, final boolean r132, final com.google.ai.edge.gallery.data.ModelDownloadStatusType r133, final float r134, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r135, final kotlin.jvm.functions.Function0<kotlin.Unit> r136, androidx.compose.p000ui.Modifier r137, com.google.ai.edge.gallery.ui.common.tos.TosViewModel r138, androidx.compose.p000ui.Modifier r139, boolean r140, boolean r141, long r142, androidx.compose.runtime.Composer r144, final int r145, final int r146, final int r147) {
@@ -275,9 +274,8 @@ public final class DownloadAndTryButtonKt {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Removed duplicated region for block: B:20:0x008b  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final kotlin.Unit DownloadAndTryButton_cTzpE40$lambda$36(boolean r61, boolean r62, com.google.ai.edge.gallery.data.Model r63, com.google.ai.edge.gallery.data.Task r64, boolean r65, boolean r66, boolean r67, androidx.compose.foundation.layout.RowScope r68, androidx.compose.runtime.Composer r69, int r70) {
         /*
     public static final kotlin.Unit DownloadAndTryButton_cTzpE40$lambda$36(boolean r61, boolean r62, com.google.ai.edge.gallery.data.Model r63, com.google.ai.edge.gallery.data.Task r64, boolean r65, boolean r66, boolean r67, androidx.compose.foundation.layout.RowScope r68, androidx.compose.runtime.Composer r69, int r70) {
@@ -473,4 +471,6 @@ public final class DownloadAndTryButtonKt {
         DownloadAndTryButton_cTzpE40$lambda$14($showGemmaTermsOfUseDialog$delegate, false);
         return Unit.INSTANCE;
     }
+}
+}
 }

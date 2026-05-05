@@ -272,9 +272,8 @@ public final class AgentTools implements ToolSet {
         /* JADX WARN: Removed duplicated region for block: B:95:0x04e8  */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         public final java.lang.Object invokeSuspend(java.lang.Object r38) {
             /*
         public final java.lang.Object invokeSuspend(java.lang.Object r38) {
@@ -413,4 +412,6 @@ public final class AgentTools implements ToolSet {
         // FIXED: Security fix - Changed from Dispatchers.getDefault() to Dispatchers.IO
         BuildersKt.runBlocking(Dispatchers.getIO(), new C24351(action, null));
     }
+}
+}
 }

@@ -100,9 +100,8 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
 
     /* JADX WARN: Removed duplicated region for block: B:86:0x0357  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void AddSkillFromFeatureListBottomSheet(final com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel r53, final kotlin.jvm.functions.Function0<kotlin.Unit> r54, final kotlin.jvm.functions.Function0<kotlin.Unit> r55, androidx.compose.runtime.Composer r56, int r57) {
         /*
     public static final void AddSkillFromFeatureListBottomSheet(final com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerViewModel r53, final kotlin.jvm.functions.Function0<kotlin.Unit> r54, final kotlin.jvm.functions.Function0<kotlin.Unit> r55, androidx.compose.runtime.Composer r56, int r57) {
@@ -1058,4 +1057,5 @@ public final class AddSkillFromFeaturedListBottomSheetKt {
         $onAddClick.invoke($skill);
         return Unit.INSTANCE;
     }
+}
 }

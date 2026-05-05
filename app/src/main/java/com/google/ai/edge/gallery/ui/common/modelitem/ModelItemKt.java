@@ -101,9 +101,8 @@ public final class ModelItemKt {
     /* JADX WARN: Removed duplicated region for block: B:296:0x09db  */
     /* JADX WARN: Removed duplicated region for block: B:299:0x0ad1  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void ModelItem(final com.google.ai.edge.gallery.data.Model r136, final com.google.ai.edge.gallery.data.Task r137, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r138, final kotlin.jvm.functions.Function1<? super com.google.ai.edge.gallery.data.Model, kotlin.Unit> r139, final kotlin.jvm.functions.Function1<? super com.google.ai.edge.gallery.data.Model, kotlin.Unit> r140, androidx.compose.p000ui.Modifier r141, java.lang.Boolean r142, boolean r143, boolean r144, boolean r145, kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r146, java.util.List<com.google.ai.edge.gallery.data.Model> r147, com.google.ai.edge.gallery.ui.common.tos.TosViewModel r148, androidx.compose.runtime.Composer r149, final int r150, final int r151, final int r152) {
         /*
     public static final void ModelItem(final com.google.ai.edge.gallery.data.Model r136, final com.google.ai.edge.gallery.data.Task r137, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r138, final kotlin.jvm.functions.Function1<? super com.google.ai.edge.gallery.data.Model, kotlin.Unit> r139, final kotlin.jvm.functions.Function1<? super com.google.ai.edge.gallery.data.Model, kotlin.Unit> r140, androidx.compose.p000ui.Modifier r141, java.lang.Boolean r142, boolean r143, boolean r144, boolean r145, kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r146, java.util.List<com.google.ai.edge.gallery.data.Model> r147, com.google.ai.edge.gallery.ui.common.tos.TosViewModel r148, androidx.compose.runtime.Composer r149, final int r150, final int r151, final int r152) {
@@ -599,9 +598,8 @@ public final class ModelItemKt {
     /* JADX WARN: Removed duplicated region for block: B:148:0x049d  */
     /* JADX WARN: Removed duplicated region for block: B:152:0x04c4  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void ModelVariantHeader(final com.google.ai.edge.gallery.data.Model r97, final com.google.ai.edge.gallery.data.Task r98, final com.google.ai.edge.gallery.data.ModelDownloadStatus r99, final boolean r100, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r101, final boolean r102, final boolean r103, final kotlin.jvm.functions.Function1<? super com.google.ai.edge.gallery.data.Model, kotlin.Unit> r104, androidx.compose.p000ui.Modifier r105, androidx.compose.p000ui.Modifier r106, androidx.compose.p000ui.Modifier r107, androidx.compose.runtime.Composer r108, final int r109, final int r110, final int r111) {
         /*
     public static final void ModelVariantHeader(final com.google.ai.edge.gallery.data.Model r97, final com.google.ai.edge.gallery.data.Task r98, final com.google.ai.edge.gallery.data.ModelDownloadStatus r99, final boolean r100, final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r101, final boolean r102, final boolean r103, final kotlin.jvm.functions.Function1<? super com.google.ai.edge.gallery.data.Model, kotlin.Unit> r104, androidx.compose.p000ui.Modifier r105, androidx.compose.p000ui.Modifier r106, androidx.compose.p000ui.Modifier r107, androidx.compose.runtime.Composer r108, final int r109, final int r110, final int r111) {
@@ -935,4 +933,7 @@ public final class ModelItemKt {
         }
         return receivedBytes / totalBytes;
     }
+}
+}
+}
 }

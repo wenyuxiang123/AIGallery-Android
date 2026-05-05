@@ -46,9 +46,8 @@ final class TextInputHistorySheetKt$TextInputHistorySheet$1$1$1$1 extends Suspen
     /* JADX WARN: Removed duplicated region for block: B:13:0x0039 A[RETURN] */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public final java.lang.Object invokeSuspend(java.lang.Object r5) {
         /*
             r4 = this;
@@ -79,7 +78,6 @@ final class TextInputHistorySheetKt$TextInputHistorySheet$1$1$1$1 extends Suspen
             r3 = 1
             r4.label = r3
             java.lang.Object r1 = r1.hide(r2)
-            if (r1 != r0) goto L2b
             return r0
         L2b:
             r1 = r4
@@ -88,7 +86,6 @@ final class TextInputHistorySheetKt$TextInputHistorySheet$1$1$1$1 extends Suspen
             r4.label = r2
             r2 = 100
             java.lang.Object r1 = kotlinx.coroutines.DelayKt.delay(r2, r1)
-            if (r1 != r0) goto L3a
             return r0
         L3a:
             kotlin.jvm.functions.Function1<java.lang.String, kotlin.Unit> r0 = r4.$onHistoryItemClicked

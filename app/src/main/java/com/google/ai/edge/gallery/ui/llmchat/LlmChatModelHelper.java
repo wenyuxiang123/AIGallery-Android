@@ -47,9 +47,8 @@ public final class LlmChatModelHelper implements LlmModelHelper {
     /* JADX WARN: Removed duplicated region for block: B:66:0x026b  */
     @Override // com.google.ai.edge.gallery.runtime.LlmModelHelper
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public void initialize(android.content.Context r33, com.google.ai.edge.gallery.data.Model r34, boolean r35, boolean r36, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r37, com.google.ai.edge.litertlm.Contents r38, java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r39, boolean r40, kotlinx.coroutines.CoroutineScope r41) {
         /*
     public void initialize(android.content.Context r33, com.google.ai.edge.gallery.data.Model r34, boolean r35, boolean r36, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> r37, com.google.ai.edge.litertlm.Contents r38, java.util.List<? extends com.google.ai.edge.litertlm.ToolProvider> r39, boolean r40, kotlinx.coroutines.CoroutineScope r41) {
@@ -199,4 +198,5 @@ public final class LlmChatModelHelper implements LlmModelHelper {
         Intrinsics.checkNotNullExpressionValue(byteArray, "toByteArray(...)");
         return byteArray;
     }
+}
 }

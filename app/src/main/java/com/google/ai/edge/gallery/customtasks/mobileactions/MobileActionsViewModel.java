@@ -229,9 +229,8 @@ public final class MobileActionsViewModel extends ViewModel {
         /* JADX WARN: Removed duplicated region for block: B:19:0x011b  */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         public final java.lang.Object invokeSuspend(java.lang.Object r14) {
             /*
         public final java.lang.Object invokeSuspend(java.lang.Object r14) {
@@ -657,4 +656,5 @@ public final class MobileActionsViewModel extends ViewModel {
             return string;
         }
     }
+}
 }

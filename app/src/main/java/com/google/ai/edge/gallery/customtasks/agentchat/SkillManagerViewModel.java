@@ -2029,9 +2029,8 @@ public final class SkillManagerViewModel extends ViewModel {
         /* JADX WARN: Removed duplicated region for block: B:55:0x010a A[EXC_TOP_SPLITTER, SYNTHETIC] */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         public final java.lang.Object invokeSuspend(java.lang.Object r18) {
             /*
         public final java.lang.Object invokeSuspend(java.lang.Object r18) {
@@ -2307,9 +2306,8 @@ public final class SkillManagerViewModel extends ViewModel {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Removed duplicated region for block: B:21:0x005c  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public final java.lang.String getSkillNameForLogging(com.google.ai.edge.gallery.proto.Skill r11) {
         /*
             r10 = this;
@@ -2320,13 +2318,11 @@ public final class SkillManagerViewModel extends ViewModel {
             int r0 = r0.length()
             r1 = 1
             r2 = 0
-            if (r0 <= 0) goto L15
             r0 = r1
             goto L16
         L15:
             r0 = r2
         L16:
-            if (r0 == 0) goto L5c
             kotlinx.coroutines.flow.MutableStateFlow<com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerUiState> r0 = r10._uiState
             java.lang.Object r0 = r0.getValue()
             com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerUiState r0 = (com.google.ai.edge.gallery.customtasks.agentchat.SkillManagerUiState) r0
@@ -2334,18 +2330,15 @@ public final class SkillManagerViewModel extends ViewModel {
             java.lang.Iterable r0 = (java.lang.Iterable) r0
             r3 = 0
             boolean r4 = r0 instanceof java.util.Collection
-            if (r4 == 0) goto L36
             r4 = r0
             java.util.Collection r4 = (java.util.Collection) r4
             boolean r4 = r4.isEmpty()
-            if (r4 == 0) goto L36
             r0 = r2
             goto L59
         L36:
             java.util.Iterator r4 = r0.iterator()
         L3a:
             boolean r5 = r4.hasNext()
-            if (r5 == 0) goto L58
             java.lang.Object r5 = r4.next()
             r6 = r5
             com.google.ai.edge.gallery.data.AllowedSkill r6 = (com.google.ai.edge.gallery.data.AllowedSkill) r6
@@ -2353,21 +2346,17 @@ public final class SkillManagerViewModel extends ViewModel {
             java.lang.String r8 = r6.getSkillUrl()
             java.lang.String r9 = r11.getSkillUrl()
             boolean r6 = kotlin.jvm.internal.Intrinsics.areEqual(r8, r9)
-            if (r6 == 0) goto L3a
             r0 = r1
             goto L59
         L58:
             r0 = r2
         L59:
-            if (r0 == 0) goto L5c
             goto L5d
         L5c:
             r1 = r2
         L5d:
             r0 = r1
             boolean r1 = r11.getBuiltIn()
-            if (r1 != 0) goto L6a
-            if (r0 == 0) goto L67
             goto L6a
         L67:
             java.lang.String r1 = "custom_skill"

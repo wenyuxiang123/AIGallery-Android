@@ -751,9 +751,8 @@ public final class ModelListKt {
     /* JADX WARN: Removed duplicated region for block: B:115:0x0a02  */
     /* JADX WARN: Removed duplicated region for block: B:70:0x05f2  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final kotlin.Unit ModelList$lambda$45$lambda$44$lambda$43$lambda$29(final com.google.ai.edge.gallery.data.Task r115, float r116, final float r117, float r118, androidx.compose.runtime.State r119, androidx.compose.runtime.State r120, androidx.compose.foundation.lazy.LazyItemScope r121, androidx.compose.runtime.Composer r122, int r123) {
         /*
     public static final kotlin.Unit ModelList$lambda$45$lambda$44$lambda$43$lambda$29(final com.google.ai.edge.gallery.data.Task r115, float r116, final float r117, float r118, androidx.compose.runtime.State r119, androidx.compose.runtime.State r120, androidx.compose.foundation.lazy.LazyItemScope r121, androidx.compose.runtime.Composer r122, int r123) {
@@ -906,4 +905,5 @@ public final class ModelListKt {
         Intrinsics.checkNotNullParameter(it, "it");
         return it.getName();
     }
+}
 }

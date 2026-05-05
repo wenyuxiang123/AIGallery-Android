@@ -55,9 +55,8 @@ public final class MessageBodyLoadingKt {
     /* JADX WARN: Removed duplicated region for block: B:50:0x0247  */
     /* JADX WARN: Removed duplicated region for block: B:53:0x0289  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void MessageBodyLoading(com.google.ai.edge.gallery.ui.common.chat.ChatMessageLoading r47, androidx.compose.runtime.Composer r48, final int r49, final int r50) {
         /*
     public static final void MessageBodyLoading(com.google.ai.edge.gallery.ui.common.chat.ChatMessageLoading r47, androidx.compose.runtime.Composer r48, final int r49, final int r50) {
@@ -154,4 +153,5 @@ public final class MessageBodyLoadingKt {
         graphicsLayer.setAlpha(MessageBodyLoading$lambda$0($iconAlpha$delegate));
         return Unit.INSTANCE;
     }
+}
 }

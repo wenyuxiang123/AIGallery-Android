@@ -77,9 +77,8 @@ final class GlitteringShapesLoaderKt$GlitteringShapesLoader$1$1 extends SuspendL
         /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:22:0x00ea -> B:23:0x00f0). Please report as a decompilation issue!!! */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         public final java.lang.Object invokeSuspend(java.lang.Object r21) {
             /*
         public final java.lang.Object invokeSuspend(java.lang.Object r21) {
@@ -107,4 +106,5 @@ final class GlitteringShapesLoaderKt$GlitteringShapesLoader$1$1 extends SuspendL
         }
         return Unit.INSTANCE;
     }
+}
 }

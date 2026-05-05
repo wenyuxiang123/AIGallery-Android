@@ -481,9 +481,8 @@ public final class LiveCameraViewKt {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Removed duplicated region for block: B:7:0x0016  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final java.lang.Object startCamera(android.content.Context r18, androidx.lifecycle.LifecycleOwner r19, kotlin.jvm.functions.Function2<? super android.graphics.Bitmap, ? super androidx.camera.core.ImageProxy, kotlin.Unit> r20, int r21, int r22, androidx.camera.core.CameraSelector r23, kotlin.coroutines.Continuation<? super androidx.camera.lifecycle.ProcessCameraProvider> r24) {
         /*
     public static final java.lang.Object startCamera(android.content.Context r18, androidx.lifecycle.LifecycleOwner r19, kotlin.jvm.functions.Function2<? super android.graphics.Bitmap, ? super androidx.camera.core.ImageProxy, kotlin.Unit> r20, int r21, int r22, androidx.camera.core.CameraSelector r23, kotlin.coroutines.Continuation<? super androidx.camera.lifecycle.ProcessCameraProvider> r24) {
@@ -508,4 +507,5 @@ public final class LiveCameraViewKt {
         Intrinsics.checkNotNullExpressionValue(bitmap2, "createBitmap(...)");
         $onBitmap.invoke(bitmap2, imageProxy);
     }
+}
 }

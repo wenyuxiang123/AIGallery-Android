@@ -70,9 +70,8 @@ public final class ModelNameAndStatusKt {
     /* JADX WARN: Removed duplicated region for block: B:156:0x09db  */
     /* JADX WARN: Removed duplicated region for block: B:99:0x0433  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void ModelNameAndStatus(final com.google.ai.edge.gallery.data.Model r103, final com.google.ai.edge.gallery.data.Task r104, final com.google.ai.edge.gallery.data.ModelDownloadStatus r105, final boolean r106, androidx.compose.p000ui.Modifier r107, boolean r108, androidx.compose.runtime.Composer r109, final int r110, final int r111) {
         /*
     public static final void ModelNameAndStatus(final com.google.ai.edge.gallery.data.Model r103, final com.google.ai.edge.gallery.data.Task r104, final com.google.ai.edge.gallery.data.ModelDownloadStatus r105, final boolean r106, androidx.compose.p000ui.Modifier r107, boolean r108, androidx.compose.runtime.Composer r109, final int r110, final int r111) {
@@ -389,4 +388,5 @@ public final class ModelNameAndStatusKt {
             });
         }
     }
+}
 }

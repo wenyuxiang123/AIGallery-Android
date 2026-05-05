@@ -57,9 +57,8 @@ public final class ExampleCustomTaskScreenKt {
     	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void ExampleCustomTaskScreen(final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r126, com.google.ai.edge.gallery.customtasks.examplecustomtask.ExampleCustomTaskViewModel r127, androidx.compose.runtime.Composer r128, final int r129, final int r130) {
         /*
     public static final void ExampleCustomTaskScreen(final com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel r126, com.google.ai.edge.gallery.customtasks.examplecustomtask.ExampleCustomTaskViewModel r127, androidx.compose.runtime.Composer r128, final int r129, final int r130) {
@@ -86,4 +85,5 @@ public final class ExampleCustomTaskScreenKt {
         $viewModel.m10505updateTextColor8_81llA($color);
         return Unit.INSTANCE;
     }
+}
 }

@@ -87,9 +87,8 @@ public final class LlmSingleTurnViewModel extends ViewModel {
         /* JADX WARN: Removed duplicated region for block: B:37:0x00b2  */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         public final java.lang.Object invokeSuspend(java.lang.Object r20) {
             /*
         public final java.lang.Object invokeSuspend(java.lang.Object r20) {
@@ -242,4 +241,5 @@ public final class LlmSingleTurnViewModel extends ViewModel {
         Map responsesByModel = new LinkedHashMap();
         return new LlmSingleTurnUiState(false, false, responsesByModel, null, 11, null);
     }
+}
 }

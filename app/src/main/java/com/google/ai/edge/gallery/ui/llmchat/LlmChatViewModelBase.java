@@ -118,9 +118,8 @@ public class LlmChatViewModelBase extends ChatViewModel {
         /* JADX WARN: Removed duplicated region for block: B:55:0x00c7 A[EXC_TOP_SPLITTER, SYNTHETIC] */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         public final java.lang.Object invokeSuspend(java.lang.Object r21) {
             /*
         public final java.lang.Object invokeSuspend(java.lang.Object r21) {
@@ -137,9 +136,8 @@ public class LlmChatViewModelBase extends ChatViewModel {
         /* JADX WARN: Removed duplicated region for block: B:87:0x0153  */
         /* JADX WARN: Removed duplicated region for block: B:89:0x0157  */
         /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
         public static final kotlin.Unit invokeSuspend$lambda$0(com.google.ai.edge.gallery.ui.llmchat.LlmChatViewModelBase r26, com.google.ai.edge.gallery.data.Model r27, java.lang.String r28, long r29, kotlin.jvm.internal.Ref.BooleanRef r31, kotlin.jvm.functions.Function1 r32, kotlin.jvm.functions.Function0 r33, java.lang.String r34, boolean r35, java.lang.String r36) {
             /*
         public static final kotlin.Unit invokeSuspend$lambda$0(com.google.ai.edge.gallery.ui.llmchat.LlmChatViewModelBase r26, com.google.ai.edge.gallery.data.Model r27, java.lang.String r28, long r29, kotlin.jvm.internal.Ref.BooleanRef r31, kotlin.jvm.functions.Function1 r32, kotlin.jvm.functions.Function0 r33, java.lang.String r34, boolean r35, java.lang.String r36) {
@@ -439,4 +437,6 @@ public class LlmChatViewModelBase extends ChatViewModel {
             return Unit.INSTANCE;
         }
     }
+}
+}
 }

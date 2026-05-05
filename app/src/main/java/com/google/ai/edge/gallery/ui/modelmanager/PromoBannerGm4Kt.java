@@ -41,9 +41,8 @@ public final class PromoBannerGm4Kt {
     /* JADX WARN: Removed duplicated region for block: B:79:0x06a3  */
     /* JADX WARN: Removed duplicated region for block: B:82:0x0742  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final void PromoBannerGm4(final kotlin.jvm.functions.Function0<kotlin.Unit> r127, androidx.compose.p000ui.Modifier r128, androidx.compose.runtime.Composer r129, final int r130, final int r131) {
         /*
     public static final void PromoBannerGm4(final kotlin.jvm.functions.Function0<kotlin.Unit> r127, androidx.compose.p000ui.Modifier r128, androidx.compose.runtime.Composer r129, final int r130, final int r131) {
@@ -79,4 +78,5 @@ public final class PromoBannerGm4Kt {
         $uriHandler.openUri("https://ai.google.dev/gemma");
         return Unit.INSTANCE;
     }
+}
 }

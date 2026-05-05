@@ -3377,9 +3377,8 @@ public final class HomeScreenKt {
     /* JADX WARN: Removed duplicated region for block: B:102:0x064e A[PHI: r46
       0x064e: PHI (r46v3 java.util.Iterator) = (r46v1 java.util.Iterator), (r46v1 java.util.Iterator), (r46v4 java.util.Iterator) binds: [B:99:0x0647, B:100:0x0649, B:95:0x063e] A[DONT_GENERATE, DONT_INLINE]] */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public static final kotlin.Unit TaskList$lambda$122(java.util.Map r83, java.util.List r84, boolean r85, final float r86, boolean r87, final kotlin.jvm.functions.Function1 r88, androidx.compose.runtime.MutableState r89, androidx.compose.foundation.pager.PagerScope r90, int r91, androidx.compose.runtime.Composer r92, int r93) {
         /*
     public static final kotlin.Unit TaskList$lambda$122(java.util.Map r83, java.util.List r84, boolean r85, final float r86, boolean r87, final kotlin.jvm.functions.Function1 r88, androidx.compose.runtime.MutableState r89, androidx.compose.foundation.pager.PagerScope r90, int r91, androidx.compose.runtime.Composer r92, int r93) {
@@ -3423,9 +3422,8 @@ public final class HomeScreenKt {
 
     /* JADX WARN: Removed duplicated region for block: B:131:0x0398  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     private static final void TaskCard(final com.google.ai.edge.gallery.data.Task r33, final int r34, final boolean r35, final kotlin.jvm.functions.Function0<kotlin.Unit> r36, androidx.compose.p000ui.Modifier r37, java.lang.String r38, boolean r39, androidx.compose.runtime.Composer r40, final int r41, final int r42) {
         /*
     private static final void TaskCard(final com.google.ai.edge.gallery.data.Task r33, final int r34, final boolean r35, final kotlin.jvm.functions.Function0<kotlin.Unit> r36, androidx.compose.p000ui.Modifier r37, java.lang.String r38, boolean r39, androidx.compose.runtime.Composer r40, final int r41, final int r42) {

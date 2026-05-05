@@ -46,9 +46,8 @@ public final class TinyGardenTools implements ToolSet {
     /* JADX WARN: Removed duplicated region for block: B:26:0x0090  */
     @com.google.ai.edge.litertlm.Tool(description = "Plant a seed in one or more garden plots.")
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public final java.util.Map<java.lang.String, java.lang.Object> plantSeed(@com.google.ai.edge.litertlm.ToolParam(description = "The name of the seed to plant.") java.lang.String r14, @com.google.ai.edge.litertlm.ToolParam(description = "The IDs of the plots to plant a seed in.") java.util.List<java.lang.Integer> r15) {
         /*
     public final java.util.Map<java.lang.String, java.lang.Object> plantSeed(@com.google.ai.edge.litertlm.ToolParam(description = "The name of the seed to plant.") java.lang.String r14, @com.google.ai.edge.litertlm.ToolParam(description = "The IDs of the plots to plant a seed in.") java.util.List<java.lang.Integer> r15) {
@@ -63,4 +62,5 @@ public final class TinyGardenTools implements ToolSet {
         this.onFunctionCalled.invoke(new TinyGardenCommand(TinyGardenItem.SCYTHE.ordinal() + 1, plots, 0L, 4, null));
         return MapsKt.mapOf(TuplesKt.m929to("result", FirebaseAnalytics.Param.SUCCESS), TuplesKt.m929to("plots", plots));
     }
+}
 }

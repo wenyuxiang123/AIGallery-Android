@@ -63,13 +63,13 @@ final class SkillManagerBottomSheetKt$SkillManagerBottomSheet$3$1 extends Suspen
     /* JADX WARN: Type inference failed for: r3v35 */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
     public final java.lang.Object invokeSuspend(java.lang.Object r21) {
         /*
     public final java.lang.Object invokeSuspend(java.lang.Object r21) {
             // Method dump skipped - placeholder implementation
             return null;
         }
+}
 }

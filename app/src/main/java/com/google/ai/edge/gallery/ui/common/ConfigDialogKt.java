@@ -5631,9 +5631,8 @@ public final class ConfigDialogKt {
                                 /* JADX WARN: Removed duplicated region for block: B:13:0x0039 A[RETURN] */
                                 @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
                                 /*
-                                    Code decompiled incorrectly, please refer to instructions dump.
-                                    To view partially-correct add '--show-bad-code' argument
-                                */
+        // Code decompiled incorrectly - placeholder implementation
+        return null;
                                 public final java.lang.Object invokeSuspend(java.lang.Object r5) {
                                     /*
                                         r4 = this;
@@ -5664,7 +5663,6 @@ public final class ConfigDialogKt {
                                         r4.label = r2
                                         r2 = 200(0xc8, double:9.9E-322)
                                         java.lang.Object r1 = kotlinx.coroutines.DelayKt.delay(r2, r1)
-                                        if (r1 != r0) goto L2b
                                         return r0
                                     L2b:
                                         androidx.compose.material3.SheetState r1 = r4.$sheetState
@@ -5673,7 +5671,6 @@ public final class ConfigDialogKt {
                                         r3 = 2
                                         r4.label = r3
                                         java.lang.Object r1 = r1.hide(r2)
-                                        if (r1 != r0) goto L3a
                                         return r0
                                     L3a:
                                         androidx.compose.runtime.MutableState<java.lang.Boolean> r0 = r4.$showBottomSheet$delegate
