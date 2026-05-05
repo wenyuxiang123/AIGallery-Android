@@ -1,0 +1,27 @@
+package com.google.ai.edge.gallery.customtasks.tinygarden;
+
+import com.google.ai.edge.gallery.customtasks.tinygarden.TinyGardenViewModel_HiltModules;
+import dagger.internal.Factory;
+
+/* JADX INFO: loaded from: classes8.dex */
+public final class TinyGardenViewModel_HiltModules_KeyModule_ProvideFactory implements Factory<Boolean> {
+    @Override // javax.inject.Provider, jakarta.inject.Provider
+    public Boolean get() {
+        return Boolean.valueOf(provide());
+    }
+
+    public static TinyGardenViewModel_HiltModules_KeyModule_ProvideFactory create() {
+        return InstanceHolder.INSTANCE;
+    }
+
+    public static boolean provide() {
+        return TinyGardenViewModel_HiltModules.KeyModule.provide();
+    }
+
+    private static final class InstanceHolder {
+        static final TinyGardenViewModel_HiltModules_KeyModule_ProvideFactory INSTANCE = new TinyGardenViewModel_HiltModules_KeyModule_ProvideFactory();
+
+        private InstanceHolder() {
+        }
+    }
+}

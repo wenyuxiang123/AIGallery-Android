@@ -1,0 +1,24 @@
+package com.google.ai.edge.gallery.proto;
+
+import com.google.protobuf.MessageLiteOrBuilder;
+
+/* JADX INFO: loaded from: classes5.dex */
+public interface LlmBenchmarkStatsOrBuilder extends MessageLiteOrBuilder {
+    ValueSeries getDecodeSpeed();
+
+    double getFirstInitTimeMs();
+
+    ValueSeries getNonFirstInitTimeMs();
+
+    ValueSeries getPrefillSpeed();
+
+    ValueSeries getTimeToFirstToken();
+
+    boolean hasDecodeSpeed();
+
+    boolean hasNonFirstInitTimeMs();
+
+    boolean hasPrefillSpeed();
+
+    boolean hasTimeToFirstToken();
+}
