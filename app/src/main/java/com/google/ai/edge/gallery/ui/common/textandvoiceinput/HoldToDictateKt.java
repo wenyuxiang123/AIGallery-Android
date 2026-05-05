@@ -203,9 +203,6 @@ public final class HoldToDictateKt {
                                 public /* bridge */ /* synthetic */ Object invoke(PressGestureScope pressGestureScope, Offset offset, Continuation<? super Unit> continuation) {
                                     return m11039invoked4ec7I(pressGestureScope, offset.m6680unboximpl(), continuation);
                                 }
-
-        // smali code - placeholder
-        return null;
                                 public final Object m11039invoked4ec7I(PressGestureScope pressGestureScope, long j, Continuation<? super Unit> continuation) {
                                     C27471 c27471 = new C27471(this.$viewModel, this.$onDone, this.$onAmplitudeChanged, continuation);
                                     c27471.L$0 = pressGestureScope;

@@ -227,8 +227,6 @@ public final class GemmaTermsOfUseDialogKt {
             if (invalid$iv || it$iv == Composer.INSTANCE.getEmpty()) {
                 Object value$iv = (ColorProducer) new ColorProducer() { // from class: com.google.ai.edge.gallery.ui.common.tos.GemmaTermsOfUseDialogKt$GemmaTermsOfUseDialog$2$1$1$1$1
                     @Override // androidx.compose.p000ui.graphics.ColorProducer
-        // smali code - placeholder
-        return null;
                     public final long mo3149invoke0d7_KjU() {
                         return titleColor;
                     }

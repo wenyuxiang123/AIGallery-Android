@@ -321,8 +321,6 @@ public final class GalleryAppTopBarKt {
             if (invalid$iv || it$iv == Composer.INSTANCE.getEmpty()) {
                 Object value$iv = (ColorProducer) new ColorProducer() { // from class: com.google.ai.edge.gallery.GalleryAppTopBarKt$GalleryTopAppBar$1$1$1$1$1
                     @Override // androidx.compose.p000ui.graphics.ColorProducer
-        // smali code - placeholder
-        return null;
                     public final long mo3149invoke0d7_KjU() {
                         return $titleColor;
                     }

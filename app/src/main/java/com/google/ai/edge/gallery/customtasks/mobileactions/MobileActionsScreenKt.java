@@ -538,8 +538,6 @@ public final class MobileActionsScreenKt {
             if (invalid$iv || it$iv == Composer.INSTANCE.getEmpty()) {
                 Object value$iv = (ColorProducer) new ColorProducer() { // from class: com.google.ai.edge.gallery.customtasks.mobileactions.MobileActionsScreenKt$MainUi$4$1$4$2$3$1$1$1
                     @Override // androidx.compose.p000ui.graphics.ColorProducer
-        // smali code - placeholder
-        return null;
                     public final long mo3149invoke0d7_KjU() {
                         return titleColor;
                     }
