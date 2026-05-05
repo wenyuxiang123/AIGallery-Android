@@ -8,22 +8,4 @@ import kotlin.jvm.functions.Function1;
 /* JADX INFO: renamed from: com.google.ai.edge.gallery.ui.benchmark.BenchmarkModelPickerKt$BenchmarkModelPicker$lambda$14$lambda$13$lambda$12$lambda$11$$inlined$items$default$2 */
 /* JADX INFO: compiled from: LazyDsl.kt */
 /* JADX INFO: loaded from: classes6.dex */
-@Metadata(m923k = 3, m924mv = {2, 2, 0}, m926xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
-public final class C2620x74a9932d implements Function1<Integer, Object> {
-    final /* synthetic */ List $items;
-    final /* synthetic */ Function1 $key;
-
-    public C2620x74a9932d(Function1 function1, List list) {
-        this.$key = function1;
-        this.$items = list;
-    }
-
-    @Override // kotlin.jvm.functions.Function1
-    public /* bridge */ /* synthetic */ Object invoke(Integer num) {
-        return invoke(num.intValue());
-    }
-
-    public final Object invoke(int index) {
-        return this.$key.invoke(this.$items.get(index));
-    }
-}
+@Metadata(m923k = 3, m924mv = {2, 2, 0}
